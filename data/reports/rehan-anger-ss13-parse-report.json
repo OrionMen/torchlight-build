@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "hero_id": "rehan-anger",
+  "season": "ss13",
+  "success": true,
+  "raw_sha256_verified": true,
+  "node_count": 6,
+  "node_names": [
+    "怒火",
+    "义愤填膺",
+    "怒不可遏",
+    "顾此失彼",
+    "尽情挥发",
+    "暴怒原罪"
+  ],
+  "nodes_with_required_level": 6,
+  "nodes_with_explicit_levels": 1,
+  "total_effect_lines": 46,
+  "skill_shop_excluded": true,
+  "summary_clean": true,
+  "recommended_skill_found": true,
+  "portrait_found": true,
+  "nodes_with_multiple_effect_lines": 5,
+  "warnings": [],
+  "errors": []
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "hero_id": "rehan-anger",
+  "season": "ss13",
+  "source_url": "https://tlidb.com/cn/Anger",
+  "fetched_at": "2026-07-29T09:02:43.967653+00:00",
+  "http_status": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "encoding": "utf-8",
+  "byte_count": 170922,
+  "sha256": "d7631b0076aed0a78399a174ed9fa715ce0add221d82304fc0277245e21481ad"
+}
