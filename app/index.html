@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Torchlight Build · Hero Viewer</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-content">
+        <div>
+          <p class="eyebrow">Torchlight Build</p>
+          <h1>英雄数据浏览器 <span>· SS13</span></h1>
+        </div>
+        <span class="status-badge">Parsed Data</span>
+      </div>
+      <p class="site-note">当前页面展示从 tlidb 原始网页提取出的事实数据，尚未进行完整游戏语义建模。</p>
+    </header>
+
+    <main class="page-shell">
+      <p id="loading" class="notice" role="status">正在读取英雄数据……</p>
+      <section id="error" class="notice notice-error" role="alert" hidden>
+        <strong>无法读取英雄数据。</strong>
+        <span>请从仓库根目录运行：<code>python3 -m http.server 8000</code></span>
+      </section>
+
+      <div id="content" hidden>
+        <section id="hero" class="hero-card" aria-labelledby="hero-title"></section>
+        <section aria-labelledby="stats-title">
+          <h2 id="stats-title" class="section-title">数据概览</h2>
+          <div id="stats" class="stats-grid"></div>
+        </section>
+        <section aria-labelledby="nodes-title">
+          <div class="section-heading">
+            <h2 id="nodes-title" class="section-title">英雄节点</h2>
+            <span id="node-summary" class="section-meta"></span>
+          </div>
+          <div id="nodes" class="nodes-list"></div>
+        </section>
+      </div>
+
+      <noscript>
+        <p class="notice notice-error">此页面需要启用 JavaScript 才能读取英雄数据。</p>
+      </noscript>
+    </main>
+  </body>
+</html>

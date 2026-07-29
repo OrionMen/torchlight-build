@@ -28,3 +28,23 @@
 - `data/parsed/`：从网页提取的结构化事实数据
 - `data/modeled/`：人工理解和分类后的语义数据
 - `data/reports/`：数据处理与验证报告
+
+## 本地查看英雄数据
+
+运行：
+
+```bash
+cd ~/Documents/torchlight-build
+python3 -m http.server 8000
+```
+
+浏览器打开：
+
+http://localhost:8000/app/
+
+说明：
+
+- 当前页面展示 parsed JSON
+- 当前只包含“狂人·雷恩｜怒火”
+- 页面是只读开发工具
+- 不代表最终产品界面
