@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "spec": "R001_HIT_DAMAGE_v1",
+  "cases": [
+    {
+      "id": "A_additive_increased",
+      "tags": ["attack", "melee", "hit"],
+      "components": [
+        {"base_value": 100, "current_type": "physical", "source_type_history": ["physical"]}
+      ],
+      "modifiers": [
+        {"kind": "increased", "value": 0.5, "required_tags": [], "required_damage_types": ["physical"], "owner_scope": "character_global", "owner_id": null, "extra_group": null},
+        {"kind": "increased", "value": 0.3, "required_tags": ["attack"], "required_damage_types": [], "owner_scope": "character_global", "owner_id": null, "extra_group": null}
+      ],
+      "conversion": null,
+      "expected": {"by_type": {"physical": 180.0}, "total_value": 180.0}
+    },
+    {
+      "id": "B_tags_not_multipliers",
+      "tags": ["attack", "melee", "area", "hit"],
+      "components": [
+        {"base_value": 100, "current_type": "physical", "source_type_history": ["physical"]}
+      ],
+      "modifiers": [
+        {"kind": "increased", "value": 0.5, "required_tags": ["attack"], "required_damage_types": [], "owner_scope": "character_global", "owner_id": null, "extra_group": null},
+        {"kind": "increased", "value": 0.4, "required_tags": ["melee"], "required_damage_types": [], "owner_scope": "character_global", "owner_id": null, "extra_group": null},
+        {"kind": "increased", "value": 0.3, "required_tags": ["area"], "required_damage_types": [], "owner_scope": "character_global", "owner_id": null, "extra_group": null}
+      ],
+      "conversion": null,
+      "expected": {"by_type": {"physical": 220.0}, "total_value": 220.0}
+    },
+    {
+      "id": "C_full_conversion_history",
+      "tags": ["attack", "hit"],
+      "components": [
+        {"base_value": 100, "current_type": "physical", "source_type_history": ["physical"]}
+      ],
+      "modifiers": [
+        {"kind": "increased", "value": 1.0, "required_tags": [], "required_damage_types": ["physical"], "owner_scope": "character_global", "owner_id": null, "extra_group": null},
+        {"kind": "increased", "value": 1.0, "required_tags": [], "required_damage_types": ["fire"], "owner_scope": "character_global", "owner_id": null, "extra_group": null}
+      ],
+      "conversion": {"from_type": "physical", "to_type": "fire", "ratio": 1.0},
+      "expected": {"by_type": {"fire": 300.0}, "total_value": 300.0, "history": {"fire": ["physical", "fire"]}}
+    },
+    {
+      "id": "D_partial_conversion",
+      "tags": ["attack", "hit"],
+      "components": [
+        {"base_value": 100, "current_type": "physical", "source_type_history": ["physical"]}
+      ],
+      "modifiers": [
+        {"kind": "increased", "value": 1.0, "required_tags": [], "required_damage_types": ["physical"], "owner_scope": "character_global", "owner_id": null, "extra_group": null},
+        {"kind": "increased", "value": 0.5, "required_tags": [], "required_damage_types": ["fire"], "owner_scope": "character_global", "owner_id": null, "extra_group": null}
+      ],
+      "conversion": {"from_type": "physical", "to_type": "fire", "ratio": 0.5},
+      "expected": {"by_type": {"physical": 100.0, "fire": 125.0}, "total_value": 225.0}
+    },
+    {
+      "id": "E_extra_groups",
+      "tags": ["attack", "hit"],
+      "components": [
+        {"base_value": 100, "current_type": "physical", "source_type_history": ["physical"]}
+      ],
+      "modifiers": [
+        {"kind": "increased", "value": 0.5, "required_tags": [], "required_damage_types": ["physical"], "owner_scope": "character_global", "owner_id": null, "extra_group": null},
+        {"kind": "extra", "value": 0.2, "required_tags": [], "required_damage_types": [], "owner_scope": "character_global", "owner_id": null, "extra_group": "hero"},
+        {"kind": "extra", "value": 0.3, "required_tags": [], "required_damage_types": [], "owner_scope": "skill_local", "owner_id": "test_skill", "extra_group": "skill"}
+      ],
+      "conversion": null,
+      "expected": {"by_type": {"physical": 234.0}, "total_value": 234.0}
+    }
+  ]
+}

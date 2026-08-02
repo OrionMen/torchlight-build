@@ -1,0 +1,33 @@
+{
+  "task_id": "R001_ENGINE_V1",
+  "title": "Implement R001 hit damage prototype",
+  "spec_file": "spec/R001_HIT_DAMAGE.md",
+  "knowledge_file": "knowledge/damage/R001_HIT_DAMAGE_KNOWLEDGE.md",
+  "test_case_file": "tests/spec_cases/R001_hit_damage_cases.json",
+  "allowed_write_paths": [
+    "engine/damage/",
+    "tests/engine/damage/",
+    "PROJECT_STATE.md"
+  ],
+  "allowed_read_paths": [
+    "spec/R001_HIT_DAMAGE.md",
+    "tasks/TASK_R001_ENGINE.md",
+    "tasks/task_r001.json",
+    "tests/spec_cases/R001_hit_damage_cases.json",
+    "PROJECT_STATE.md",
+    "engine/damage/",
+    "tests/engine/damage/"
+  ],
+  "forbidden_actions": [
+    "scan_full_repository",
+    "modify_spec",
+    "modify_knowledge",
+    "modify_raw_data",
+    "modify_parsed_data",
+    "modify_ui",
+    "install_dependencies",
+    "git_commit",
+    "git_push"
+  ],
+  "required_test_command": "python3 -m unittest discover -s tests/engine/damage -p 'test_*.py'"
+}
