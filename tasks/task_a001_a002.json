@@ -1,0 +1,29 @@
+{
+  "task_id": "A001_A002_STATIC_MODEL",
+  "status": "frozen",
+  "read_files": [
+    "architecture/A001_STATIC_BUILD_CALCULATION_MODEL.md",
+    "spec/A002_MODIFIER_AND_MECHANIC_CAPABILITY_SCHEMA.md",
+    "tests/spec_cases/A001_A002_static_model_cases.json",
+    "tasks/TASK_A001_A002_STATIC_MODEL.md"
+  ],
+  "allowed_read_paths": [
+    "engine/damage/",
+    "tests/engine/damage/",
+    "PROJECT_STATE.md"
+  ],
+  "allowed_write_paths": [
+    "engine/static_model/",
+    "tests/engine/static_model/",
+    "PROJECT_STATE.md"
+  ],
+  "forbidden": [
+    "full repository scan",
+    "modify frozen specs",
+    "implement UI",
+    "implement runtime simulation",
+    "install dependencies",
+    "git commit",
+    "git push"
+  ]
+}

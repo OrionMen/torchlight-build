@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0",
+  "language": "zh-CN",
+  "concepts": [
+    {
+      "id": "concept.modifier",
+      "name_zh": "修正项",
+      "description_zh": "英雄、装备、技能等来源对某个计算节点的写入声明。修正项本身不完成最终计算。",
+      "design_notes_zh": ["必须保留来源和原文", "必须先过滤后聚合"],
+      "confidence": 1.0,
+      "version": "architecture-v1"
+    },
+    {
+      "id": "concept.calculation_node",
+      "name_zh": "计算节点",
+      "description_zh": "接收已匹配修正项并按节点规则完成聚合和输出的计算单元。",
+      "design_notes_zh": ["target_node 决定路由目标", "aggregation_key 决定节点内分组"],
+      "confidence": 1.0,
+      "version": "architecture-v1"
+    },
+    {
+      "id": "concept.skill_tag",
+      "name_zh": "技能标签",
+      "description_zh": "描述技能身份并用于规则匹配的独立元数据，可被部分辅助或机制修改。",
+      "design_notes_zh": ["与伤害类型完全独立"],
+      "confidence": 1.0,
+      "version": "architecture-v1"
+    },
+    {
+      "id": "concept.damage_type",
+      "name_zh": "伤害类型",
+      "description_zh": "描述伤害组件当前类型的数据，例如物理、火焰、冰冷、闪电、腐蚀。",
+      "design_notes_zh": ["不能从技能标签自动推导"],
+      "confidence": 1.0,
+      "version": "architecture-v1"
+    },
+    {
+      "id": "concept.mechanic_capability",
+      "name_zh": "机制获取能力",
+      "description_zh": "表示当前配装是否存在获得某种祝福、战意、迷踪等机制的有效来源。",
+      "design_notes_zh": ["提高上限不等于具备获取能力"],
+      "confidence": 1.0,
+      "version": "architecture-v1"
+    },
+    {
+      "id": "concept.max_reachable_assumption",
+      "name_zh": "可达最大值假设",
+      "description_zh": "第一阶段静态计算策略：具备获取能力时按有效上限计算，否则按零计算。",
+      "design_notes_zh": ["不模拟获取过程和覆盖率"],
+      "confidence": 1.0,
+      "version": "architecture-v1"
+    }
+  ]
+}

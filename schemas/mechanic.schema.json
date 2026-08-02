@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "schemas/mechanic.schema.json",
+  "title": "Torchlight Static Mechanic",
+  "type": "object",
+  "required": ["id", "name_zh", "base_maximum", "capability_id", "maximum_node", "assumption_policy", "confidence", "version"],
+  "properties": {
+    "id": {"type": "string"},
+    "name_zh": {"type": "string"},
+    "description_zh": {"type": "string"},
+    "base_maximum": {"type": "number", "minimum": 0},
+    "capability_id": {"type": "string"},
+    "maximum_node": {"type": "string"},
+    "assumption_policy": {"const": "max_reachable"},
+    "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+    "version": {"type": "string"},
+    "source_notes_zh": {"type": "string"}
+  },
+  "additionalProperties": false
+}

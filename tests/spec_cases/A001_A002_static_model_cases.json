@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "cases": [
+    {
+      "id": "critical_damage_skill_tag_filter",
+      "description_zh": "物理技能暴击伤害只检查技能有效标签。",
+      "context": {"effective_skill_tags": ["physical", "attack"], "damage_type": "fire"},
+      "modifiers": [
+        {"id": "global", "target_node": "stat.critical_damage", "aggregation_key": "stat.critical_damage", "operation": "add", "value": 0.20, "filters": {}},
+        {"id": "physical_skill", "target_node": "stat.critical_damage", "aggregation_key": "stat.critical_damage", "operation": "add", "value": 0.30, "filters": {"skill_tags_all": ["physical"]}},
+        {"id": "fire_damage", "target_node": "stat.critical_damage", "aggregation_key": "stat.critical_damage", "operation": "add", "value": 0.40, "filters": {"damage_types": ["fire"]}}
+      ],
+      "expected": {"stat.critical_damage": 0.90}
+    },
+    {
+      "id": "tag_and_damage_type_independent",
+      "description_zh": "技能没有火焰标签但伤害组件为火焰时，火焰伤害类型过滤仍可生效。",
+      "context": {"effective_skill_tags": ["physical", "attack"], "damage_type": "fire"},
+      "modifiers": [
+        {"id": "fire_skill", "target_node": "stat.critical_damage", "aggregation_key": "stat.critical_damage", "operation": "add", "value": 0.50, "filters": {"skill_tags_all": ["fire"]}},
+        {"id": "fire_damage", "target_node": "stat.critical_damage", "aggregation_key": "stat.critical_damage", "operation": "add", "value": 0.40, "filters": {"damage_types": ["fire"]}}
+      ],
+      "expected": {"stat.critical_damage": 0.40}
+    },
+    {
+      "id": "mechanic_without_capability_is_zero",
+      "description_zh": "只有祝福上限加成但没有获取来源时，静态假设值仍为零。",
+      "mechanic": {"id": "mechanic.focus_blessing", "base_maximum": 4},
+      "capability_sources": [],
+      "maximum_modifiers": [2],
+      "expected": {"capability_available": false, "effective_maximum": 6, "assumed_value": 0}
+    },
+    {
+      "id": "mechanic_with_capability_uses_maximum",
+      "description_zh": "存在获取来源时，祝福按最终上限计算。",
+      "mechanic": {"id": "mechanic.focus_blessing", "base_maximum": 4},
+      "capability_sources": ["skill.example.acquire_focus_blessing"],
+      "maximum_modifiers": [2, 1],
+      "expected": {"capability_available": true, "effective_maximum": 7, "assumed_value": 7}
+    },
+    {
+      "id": "more_groups_are_independent",
+      "description_zh": "不同 aggregation_key 的额外伤害组独立相乘。",
+      "groups": {
+        "hero_trait.one": [0.20, 0.10],
+        "hero_trait.two": [0.40]
+      },
+      "expected_multiplier": 1.82
+    }
+  ]
+}
