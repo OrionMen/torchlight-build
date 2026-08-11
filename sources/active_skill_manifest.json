@@ -1,0 +1,2474 @@
+{
+  "schema_version": 1,
+  "source": {
+    "site": "tlidb",
+    "locale": "cn",
+    "index_url": "https://tlidb.com/cn/Active_Skill",
+    "fetched_at": "2026-08-06T13:40:16.494971+00:00",
+    "http_status": 200,
+    "html_sha256": "f715539691ba30ba066e8624b11daf76dc58e6a6a058c723259ec631211cc5c8"
+  },
+  "system_id": "active_skill",
+  "entity_type": "active_skill",
+  "displayed_entry_count": 204,
+  "unique_entry_count": 204,
+  "duplicate_occurrence_count": 0,
+  "discovery_confidence": 0.99,
+  "quality": {
+    "displayed_entry_count": 204,
+    "unique_entry_count": 204,
+    "duplicate_occurrence_count": 0,
+    "discovery_confidence": 0.99,
+    "warnings": []
+  },
+  "entries": [
+    {
+      "id": "Leap_Attack",
+      "slug": "Leap_Attack",
+      "name_zh": "跃击",
+      "url": "https://tlidb.com/cn/Leap_Attack",
+      "source_order": 0,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "跃击"
+      }
+    },
+    {
+      "id": "Ice_Shot",
+      "slug": "Ice_Shot",
+      "name_zh": "寒冰射击",
+      "url": "https://tlidb.com/cn/Ice_Shot",
+      "source_order": 1,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "寒冰射击"
+      }
+    },
+    {
+      "id": "Hammer_of_Ash",
+      "slug": "Hammer_of_Ash",
+      "name_zh": "灰烬之锤",
+      "url": "https://tlidb.com/cn/Hammer_of_Ash",
+      "source_order": 2,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "灰烬之锤"
+      }
+    },
+    {
+      "id": "Chromatic_Shot",
+      "slug": "Chromatic_Shot",
+      "name_zh": "五彩魔矢",
+      "url": "https://tlidb.com/cn/Chromatic_Shot",
+      "source_order": 3,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "五彩魔矢"
+      }
+    },
+    {
+      "id": "Resurrection_Warcry",
+      "slug": "Resurrection_Warcry",
+      "name_zh": "复苏战吼",
+      "url": "https://tlidb.com/cn/Resurrection_Warcry",
+      "source_order": 4,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "复苏战吼"
+      }
+    },
+    {
+      "id": "Whirlwind",
+      "slug": "Whirlwind",
+      "name_zh": "旋风斩",
+      "url": "https://tlidb.com/cn/Whirlwind",
+      "source_order": 5,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "旋风斩"
+      }
+    },
+    {
+      "id": "Focused_Slash",
+      "slug": "Focused_Slash",
+      "name_zh": "专注斩",
+      "url": "https://tlidb.com/cn/Focused_Slash",
+      "source_order": 6,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "专注斩"
+      }
+    },
+    {
+      "id": "Stoneskin",
+      "slug": "Stoneskin",
+      "name_zh": "石肤术",
+      "url": "https://tlidb.com/cn/Stoneskin",
+      "source_order": 7,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "石肤术"
+      }
+    },
+    {
+      "id": "Thundercloud",
+      "slug": "Thundercloud",
+      "name_zh": "雷云放射",
+      "url": "https://tlidb.com/cn/Thundercloud",
+      "source_order": 8,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "雷云放射"
+      }
+    },
+    {
+      "id": "Blink",
+      "slug": "Blink",
+      "name_zh": "闪现",
+      "url": "https://tlidb.com/cn/Blink",
+      "source_order": 9,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "闪现"
+      }
+    },
+    {
+      "id": "Bombard",
+      "slug": "Bombard",
+      "name_zh": "炮轰",
+      "url": "https://tlidb.com/cn/Bombard",
+      "source_order": 10,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "炮轰"
+      }
+    },
+    {
+      "id": "Shadow_Shot",
+      "slug": "Shadow_Shot",
+      "name_zh": "暗影弹",
+      "url": "https://tlidb.com/cn/Shadow_Shot",
+      "source_order": 11,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "暗影弹"
+      }
+    },
+    {
+      "id": "Shadow_Swamp",
+      "slug": "Shadow_Swamp",
+      "name_zh": "暗影之沼",
+      "url": "https://tlidb.com/cn/Shadow_Swamp",
+      "source_order": 12,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "暗影之沼"
+      }
+    },
+    {
+      "id": "Marked_Rain_of_Arrows",
+      "slug": "Marked_Rain_of_Arrows",
+      "name_zh": "标记箭雨",
+      "url": "https://tlidb.com/cn/Marked_Rain_of_Arrows",
+      "source_order": 13,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "标记箭雨"
+      }
+    },
+    {
+      "id": "Bulls_Rage",
+      "slug": "Bulls_Rage",
+      "name_zh": "公牛之怒",
+      "url": "https://tlidb.com/cn/Bulls_Rage",
+      "source_order": 14,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "公牛之怒"
+      }
+    },
+    {
+      "id": "Shadow_Dash",
+      "slug": "Shadow_Dash",
+      "name_zh": "暗影冲刺",
+      "url": "https://tlidb.com/cn/Shadow_Dash",
+      "source_order": 15,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "暗影冲刺"
+      }
+    },
+    {
+      "id": "Frost_Shield",
+      "slug": "Frost_Shield",
+      "name_zh": "寒冰盾",
+      "url": "https://tlidb.com/cn/Frost_Shield",
+      "source_order": 16,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "寒冰盾"
+      }
+    },
+    {
+      "id": "Rocket_Jump",
+      "slug": "Rocket_Jump",
+      "name_zh": "火箭跳",
+      "url": "https://tlidb.com/cn/Rocket_Jump",
+      "source_order": 17,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "火箭跳"
+      }
+    },
+    {
+      "id": "Split_Firebolt",
+      "slug": "Split_Firebolt",
+      "name_zh": "裂变火球",
+      "url": "https://tlidb.com/cn/Split_Firebolt",
+      "source_order": 18,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "裂变火球"
+      }
+    },
+    {
+      "id": "Blizzard",
+      "slug": "Blizzard",
+      "name_zh": "暴风雪",
+      "url": "https://tlidb.com/cn/Blizzard",
+      "source_order": 19,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "暴风雪"
+      }
+    },
+    {
+      "id": "Obscure",
+      "slug": "Obscure",
+      "name_zh": "模糊",
+      "url": "https://tlidb.com/cn/Obscure",
+      "source_order": 20,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "模糊"
+      }
+    },
+    {
+      "id": "Mana_Boil",
+      "slug": "Mana_Boil",
+      "name_zh": "魔力沸腾",
+      "url": "https://tlidb.com/cn/Mana_Boil",
+      "source_order": 21,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "魔力沸腾"
+      }
+    },
+    {
+      "id": "Frost_Impact",
+      "slug": "Frost_Impact",
+      "name_zh": "寒霜破击",
+      "url": "https://tlidb.com/cn/Frost_Impact",
+      "source_order": 22,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "寒霜破击"
+      }
+    },
+    {
+      "id": "Path_of_Flames",
+      "slug": "Path_of_Flames",
+      "name_zh": "烈焰之径",
+      "url": "https://tlidb.com/cn/Path_of_Flames",
+      "source_order": 23,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "烈焰之径"
+      }
+    },
+    {
+      "id": "Berserking_Blade",
+      "slug": "Berserking_Blade",
+      "name_zh": "暴走巨刃",
+      "url": "https://tlidb.com/cn/Berserking_Blade",
+      "source_order": 24,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "暴走巨刃"
+      }
+    },
+    {
+      "id": "Charged_Pummel",
+      "slug": "Charged_Pummel",
+      "name_zh": "充能猛击",
+      "url": "https://tlidb.com/cn/Charged_Pummel",
+      "source_order": 25,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "充能猛击"
+      }
+    },
+    {
+      "id": "Chain_Lightning",
+      "slug": "Chain_Lightning",
+      "name_zh": "闪电链",
+      "url": "https://tlidb.com/cn/Chain_Lightning",
+      "source_order": 26,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "闪电链"
+      }
+    },
+    {
+      "id": "Double_Thrusts",
+      "slug": "Double_Thrusts",
+      "name_zh": "双重突刺",
+      "url": "https://tlidb.com/cn/Double_Thrusts",
+      "source_order": 27,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "双重突刺"
+      }
+    },
+    {
+      "id": "Mind_Control",
+      "slug": "Mind_Control",
+      "name_zh": "摄念夺识",
+      "url": "https://tlidb.com/cn/Mind_Control",
+      "source_order": 28,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "摄念夺识"
+      }
+    },
+    {
+      "id": "Ring_of_Ice",
+      "slug": "Ring_of_Ice",
+      "name_zh": "冰环术",
+      "url": "https://tlidb.com/cn/Ring_of_Ice",
+      "source_order": 29,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "冰环术"
+      }
+    },
+    {
+      "id": "Split_Shot",
+      "slug": "Split_Shot",
+      "name_zh": "分裂射击",
+      "url": "https://tlidb.com/cn/Split_Shot",
+      "source_order": 30,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "分裂射击"
+      }
+    },
+    {
+      "id": "Flame_Slash",
+      "slug": "Flame_Slash",
+      "name_zh": "烈焰斩",
+      "url": "https://tlidb.com/cn/Flame_Slash",
+      "source_order": 31,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "烈焰斩"
+      }
+    },
+    {
+      "id": "Icy_Blade",
+      "slug": "Icy_Blade",
+      "name_zh": "冰凌斩",
+      "url": "https://tlidb.com/cn/Icy_Blade",
+      "source_order": 32,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "冰凌斩"
+      }
+    },
+    {
+      "id": "Frost_Spike",
+      "slug": "Frost_Spike",
+      "name_zh": "碎冰刺击",
+      "url": "https://tlidb.com/cn/Frost_Spike",
+      "source_order": 33,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "碎冰刺击"
+      }
+    },
+    {
+      "id": "Wilt_Spike",
+      "slug": "Wilt_Spike",
+      "name_zh": "凋零刺击",
+      "url": "https://tlidb.com/cn/Wilt_Spike",
+      "source_order": 34,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "凋零刺击"
+      }
+    },
+    {
+      "id": "Lightning_Shot",
+      "slug": "Lightning_Shot",
+      "name_zh": "闪电射击",
+      "url": "https://tlidb.com/cn/Lightning_Shot",
+      "source_order": 35,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "闪电射击"
+      }
+    },
+    {
+      "id": "Corrosive_Shot",
+      "slug": "Corrosive_Shot",
+      "name_zh": "侵蚀弹",
+      "url": "https://tlidb.com/cn/Corrosive_Shot",
+      "source_order": 36,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "侵蚀弹"
+      }
+    },
+    {
+      "id": "Burning_Shot",
+      "slug": "Burning_Shot",
+      "name_zh": "燃烧射击",
+      "url": "https://tlidb.com/cn/Burning_Shot",
+      "source_order": 37,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "燃烧射击"
+      }
+    },
+    {
+      "id": "Electrifying_Shot",
+      "slug": "Electrifying_Shot",
+      "name_zh": "电光弹",
+      "url": "https://tlidb.com/cn/Electrifying_Shot",
+      "source_order": 38,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "电光弹"
+      }
+    },
+    {
+      "id": "Corrosive_Throw",
+      "slug": "Corrosive_Throw",
+      "name_zh": "侵蚀投掷",
+      "url": "https://tlidb.com/cn/Corrosive_Throw",
+      "source_order": 39,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "侵蚀投掷"
+      }
+    },
+    {
+      "id": "Inexhaustible_Barrage",
+      "slug": "Inexhaustible_Barrage",
+      "name_zh": "不竭弹雨",
+      "url": "https://tlidb.com/cn/Inexhaustible_Barrage",
+      "source_order": 40,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "不竭弹雨"
+      }
+    },
+    {
+      "id": "Rain_of_Arrows",
+      "slug": "Rain_of_Arrows",
+      "name_zh": "箭雨",
+      "url": "https://tlidb.com/cn/Rain_of_Arrows",
+      "source_order": 41,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "箭雨"
+      }
+    },
+    {
+      "id": "Savage_Charge",
+      "slug": "Savage_Charge",
+      "name_zh": "野蛮冲锋",
+      "url": "https://tlidb.com/cn/Savage_Charge",
+      "source_order": 42,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "野蛮冲锋"
+      }
+    },
+    {
+      "id": "Ice_Lances",
+      "slug": "Ice_Lances",
+      "name_zh": "冰锥术",
+      "url": "https://tlidb.com/cn/Ice_Lances",
+      "source_order": 43,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "冰锥术"
+      }
+    },
+    {
+      "id": "Sparkle",
+      "slug": "Sparkle",
+      "name_zh": "电火花",
+      "url": "https://tlidb.com/cn/Sparkle",
+      "source_order": 44,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "电火花"
+      }
+    },
+    {
+      "id": "Ring_of_Blades",
+      "slug": "Ring_of_Blades",
+      "name_zh": "环绕飞刃",
+      "url": "https://tlidb.com/cn/Ring_of_Blades",
+      "source_order": 45,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "环绕飞刃"
+      }
+    },
+    {
+      "id": "Flame_Core",
+      "slug": "Flame_Core",
+      "name_zh": "聚焰之核",
+      "url": "https://tlidb.com/cn/Flame_Core",
+      "source_order": 46,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "聚焰之核"
+      }
+    },
+    {
+      "id": "Lightning_Storm",
+      "slug": "Lightning_Storm",
+      "name_zh": "闪电风暴",
+      "url": "https://tlidb.com/cn/Lightning_Storm",
+      "source_order": 47,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "闪电风暴"
+      }
+    },
+    {
+      "id": "Flame_Jet",
+      "slug": "Flame_Jet",
+      "name_zh": "烈焰释放",
+      "url": "https://tlidb.com/cn/Flame_Jet",
+      "source_order": 48,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "烈焰释放"
+      }
+    },
+    {
+      "id": "Frost_Terra",
+      "slug": "Frost_Terra",
+      "name_zh": "寒霜地面",
+      "url": "https://tlidb.com/cn/Frost_Terra",
+      "source_order": 49,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "寒霜地面"
+      }
+    },
+    {
+      "id": "Scorching_Beam",
+      "slug": "Scorching_Beam",
+      "name_zh": "灼热射线",
+      "url": "https://tlidb.com/cn/Scorching_Beam",
+      "source_order": 50,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "灼热射线"
+      }
+    },
+    {
+      "id": "Wilting_Beam",
+      "slug": "Wilting_Beam",
+      "name_zh": "枯萎射线",
+      "url": "https://tlidb.com/cn/Wilting_Beam",
+      "source_order": 51,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "枯萎射线"
+      }
+    },
+    {
+      "id": "Frigid_Transmission",
+      "slug": "Frigid_Transmission",
+      "name_zh": "寒冰传送",
+      "url": "https://tlidb.com/cn/Frigid_Transmission",
+      "source_order": 52,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "寒冰传送"
+      }
+    },
+    {
+      "id": "Forced_Start",
+      "slug": "Forced_Start",
+      "name_zh": "强制启动",
+      "url": "https://tlidb.com/cn/Forced_Start",
+      "source_order": 53,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "强制启动"
+      }
+    },
+    {
+      "id": "Aegis_of_Fire",
+      "slug": "Aegis_of_Fire",
+      "name_zh": "烈火神盾",
+      "url": "https://tlidb.com/cn/Aegis_of_Fire",
+      "source_order": 54,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "烈火神盾"
+      }
+    },
+    {
+      "id": "Delayed_Pain",
+      "slug": "Delayed_Pain",
+      "name_zh": "痛觉延迟",
+      "url": "https://tlidb.com/cn/Delayed_Pain",
+      "source_order": 55,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "痛觉延迟"
+      }
+    },
+    {
+      "id": "Defensive_Buffer",
+      "slug": "Defensive_Buffer",
+      "name_zh": "缓冲防御",
+      "url": "https://tlidb.com/cn/Defensive_Buffer",
+      "source_order": 56,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "缓冲防御"
+      }
+    },
+    {
+      "id": "Brisk_Wind",
+      "slug": "Brisk_Wind",
+      "name_zh": "迅疾之风",
+      "url": "https://tlidb.com/cn/Brisk_Wind",
+      "source_order": 57,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "迅疾之风"
+      }
+    },
+    {
+      "id": "Burst_of_Anger",
+      "slug": "Burst_of_Anger",
+      "name_zh": "怒火狂飙",
+      "url": "https://tlidb.com/cn/Burst_of_Anger",
+      "source_order": 58,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "怒火狂飙"
+      }
+    },
+    {
+      "id": "Scorching_Pulse",
+      "slug": "Scorching_Pulse",
+      "name_zh": "灼热波纹",
+      "url": "https://tlidb.com/cn/Scorching_Pulse",
+      "source_order": 59,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "灼热波纹"
+      }
+    },
+    {
+      "id": "Fixate",
+      "slug": "Fixate",
+      "name_zh": "聚焦",
+      "url": "https://tlidb.com/cn/Fixate",
+      "source_order": 60,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "聚焦"
+      }
+    },
+    {
+      "id": "Secret_Origin_Unleash",
+      "slug": "Secret_Origin_Unleash",
+      "name_zh": "秘源释放",
+      "url": "https://tlidb.com/cn/Secret_Origin_Unleash",
+      "source_order": 61,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "秘源释放"
+      }
+    },
+    {
+      "id": "Aim",
+      "slug": "Aim",
+      "name_zh": "瞄准",
+      "url": "https://tlidb.com/cn/Aim",
+      "source_order": 62,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "瞄准"
+      }
+    },
+    {
+      "id": "Swiftness_Dew",
+      "slug": "Swiftness_Dew",
+      "name_zh": "疾速滴露",
+      "url": "https://tlidb.com/cn/Swiftness_Dew",
+      "source_order": 63,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "疾速滴露"
+      }
+    },
+    {
+      "id": "Groundshaker",
+      "slug": "Groundshaker",
+      "name_zh": "震撼大地",
+      "url": "https://tlidb.com/cn/Groundshaker",
+      "source_order": 64,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "震撼大地"
+      }
+    },
+    {
+      "id": "Focused_Shot",
+      "slug": "Focused_Shot",
+      "name_zh": "专注射击",
+      "url": "https://tlidb.com/cn/Focused_Shot",
+      "source_order": 65,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "专注射击"
+      }
+    },
+    {
+      "id": "Fire_Burst",
+      "slug": "Fire_Burst",
+      "name_zh": "爆炎术",
+      "url": "https://tlidb.com/cn/Fire_Burst",
+      "source_order": 66,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "爆炎术"
+      }
+    },
+    {
+      "id": "Thunderbolt_Overload",
+      "slug": "Thunderbolt_Overload",
+      "name_zh": "超载雷球",
+      "url": "https://tlidb.com/cn/Thunderbolt_Overload",
+      "source_order": 67,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "超载雷球"
+      }
+    },
+    {
+      "id": "Fearless_Warcry",
+      "slug": "Fearless_Warcry",
+      "name_zh": "狂猛战吼",
+      "url": "https://tlidb.com/cn/Fearless_Warcry",
+      "source_order": 68,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "狂猛战吼"
+      }
+    },
+    {
+      "id": "Raging_Warcry",
+      "slug": "Raging_Warcry",
+      "name_zh": "暴怒战吼",
+      "url": "https://tlidb.com/cn/Raging_Warcry",
+      "source_order": 69,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "暴怒战吼"
+      }
+    },
+    {
+      "id": "Charging_Warcry",
+      "slug": "Charging_Warcry",
+      "name_zh": "冲锋战吼",
+      "url": "https://tlidb.com/cn/Charging_Warcry",
+      "source_order": 70,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "冲锋战吼"
+      }
+    },
+    {
+      "id": "Black_Hole",
+      "slug": "Black_Hole",
+      "name_zh": "黑洞",
+      "url": "https://tlidb.com/cn/Black_Hole",
+      "source_order": 71,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "黑洞"
+      }
+    },
+    {
+      "id": "Summon_Machine_Guard",
+      "slug": "Summon_Machine_Guard",
+      "name_zh": "召唤机械警卫",
+      "url": "https://tlidb.com/cn/Summon_Machine_Guard",
+      "source_order": 72,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "召唤机械警卫"
+      }
+    },
+    {
+      "id": "Summon_Spider_Tank",
+      "slug": "Summon_Spider_Tank",
+      "name_zh": "召唤蜘蛛坦克",
+      "url": "https://tlidb.com/cn/Summon_Spider_Tank",
+      "source_order": 73,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "召唤蜘蛛坦克"
+      }
+    },
+    {
+      "id": "Timid",
+      "slug": "Timid",
+      "name_zh": "胆怯",
+      "url": "https://tlidb.com/cn/Timid",
+      "source_order": 74,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "胆怯"
+      }
+    },
+    {
+      "id": "Electrocute",
+      "slug": "Electrocute",
+      "name_zh": "感电",
+      "url": "https://tlidb.com/cn/Electrocute",
+      "source_order": 75,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "感电"
+      }
+    },
+    {
+      "id": "Vulnerability",
+      "slug": "Vulnerability",
+      "name_zh": "易伤",
+      "url": "https://tlidb.com/cn/Vulnerability",
+      "source_order": 76,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "易伤"
+      }
+    },
+    {
+      "id": "Scorch",
+      "slug": "Scorch",
+      "name_zh": "炽热",
+      "url": "https://tlidb.com/cn/Scorch",
+      "source_order": 77,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "炽热"
+      }
+    },
+    {
+      "id": "Entangled_Pain",
+      "slug": "Entangled_Pain",
+      "name_zh": "苦痛纠缠",
+      "url": "https://tlidb.com/cn/Entangled_Pain",
+      "source_order": 78,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "苦痛纠缠"
+      }
+    },
+    {
+      "id": "Biting_Cold",
+      "slug": "Biting_Cold",
+      "name_zh": "蚀骨之寒",
+      "url": "https://tlidb.com/cn/Biting_Cold",
+      "source_order": 79,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "蚀骨之寒"
+      }
+    },
+    {
+      "id": "Corruption",
+      "slug": "Corruption",
+      "name_zh": "邪恶侵蚀",
+      "url": "https://tlidb.com/cn/Corruption",
+      "source_order": 80,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "邪恶侵蚀"
+      }
+    },
+    {
+      "id": "Life_Tonic",
+      "slug": "Life_Tonic",
+      "name_zh": "生命药水",
+      "url": "https://tlidb.com/cn/Life_Tonic",
+      "source_order": 81,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "生命药水"
+      }
+    },
+    {
+      "id": "Mana_Tonic",
+      "slug": "Mana_Tonic",
+      "name_zh": "魔力药水",
+      "url": "https://tlidb.com/cn/Mana_Tonic",
+      "source_order": 82,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "魔力药水"
+      }
+    },
+    {
+      "id": "Elemental_Shock",
+      "slug": "Elemental_Shock",
+      "name_zh": "元素震荡",
+      "url": "https://tlidb.com/cn/Elemental_Shock",
+      "source_order": 83,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "元素震荡"
+      }
+    },
+    {
+      "id": "Machine_Army",
+      "slug": "Machine_Army",
+      "name_zh": "机械行军",
+      "url": "https://tlidb.com/cn/Machine_Army",
+      "source_order": 84,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "机械行军"
+      }
+    },
+    {
+      "id": "Prayer",
+      "slug": "Prayer",
+      "name_zh": "祈愿",
+      "url": "https://tlidb.com/cn/Prayer",
+      "source_order": 85,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "祈愿"
+      }
+    },
+    {
+      "id": "Dark_Gate",
+      "slug": "Dark_Gate",
+      "name_zh": "黑暗之门",
+      "url": "https://tlidb.com/cn/Dark_Gate",
+      "source_order": 86,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "黑暗之门"
+      }
+    },
+    {
+      "id": "Thunderlight_Bond",
+      "slug": "Thunderlight_Bond",
+      "name_zh": "雷光羁绊",
+      "url": "https://tlidb.com/cn/Thunderlight_Bond",
+      "source_order": 87,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "雷光羁绊"
+      }
+    },
+    {
+      "id": "Arcane_Circle",
+      "slug": "Arcane_Circle",
+      "name_zh": "秘法阵",
+      "url": "https://tlidb.com/cn/Arcane_Circle",
+      "source_order": 88,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "秘法阵"
+      }
+    },
+    {
+      "id": "Ice_Bond",
+      "slug": "Ice_Bond",
+      "name_zh": "冰霜羁绊",
+      "url": "https://tlidb.com/cn/Ice_Bond",
+      "source_order": 89,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "冰霜羁绊"
+      }
+    },
+    {
+      "id": "Thirst_Dew",
+      "slug": "Thirst_Dew",
+      "name_zh": "渴饮滴露",
+      "url": "https://tlidb.com/cn/Thirst_Dew",
+      "source_order": 90,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "渴饮滴露"
+      }
+    },
+    {
+      "id": "Reform",
+      "slug": "Reform",
+      "name_zh": "重整阵势",
+      "url": "https://tlidb.com/cn/Reform",
+      "source_order": 91,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "重整阵势"
+      }
+    },
+    {
+      "id": "Centralized_Loading",
+      "slug": "Centralized_Loading",
+      "name_zh": "集中上膛",
+      "url": "https://tlidb.com/cn/Centralized_Loading",
+      "source_order": 92,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "集中上膛"
+      }
+    },
+    {
+      "id": "Blink_Arrow",
+      "slug": "Blink_Arrow",
+      "name_zh": "瞬闪弓",
+      "url": "https://tlidb.com/cn/Blink_Arrow",
+      "source_order": 93,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "瞬闪弓"
+      }
+    },
+    {
+      "id": "Swift_Shadow_Raid",
+      "slug": "Swift_Shadow_Raid",
+      "name_zh": "迅影奔袭",
+      "url": "https://tlidb.com/cn/Swift_Shadow_Raid",
+      "source_order": 94,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "迅影奔袭"
+      }
+    },
+    {
+      "id": "Safeguard_Ring",
+      "slug": "Safeguard_Ring",
+      "name_zh": "绝境阵",
+      "url": "https://tlidb.com/cn/Safeguard_Ring",
+      "source_order": 95,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "绝境阵"
+      }
+    },
+    {
+      "id": "Icebound_Beam",
+      "slug": "Icebound_Beam",
+      "name_zh": "冰魄射线",
+      "url": "https://tlidb.com/cn/Icebound_Beam",
+      "source_order": 96,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "冰魄射线"
+      }
+    },
+    {
+      "id": "Spiral_Strike",
+      "slug": "Spiral_Strike",
+      "name_zh": "螺旋击",
+      "url": "https://tlidb.com/cn/Spiral_Strike",
+      "source_order": 97,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "螺旋击"
+      }
+    },
+    {
+      "id": "Compound_Tonic",
+      "slug": "Compound_Tonic",
+      "name_zh": "复合药水",
+      "url": "https://tlidb.com/cn/Compound_Tonic",
+      "source_order": 98,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "复合药水"
+      }
+    },
+    {
+      "id": "Moon_Strike",
+      "slug": "Moon_Strike",
+      "name_zh": "月华斩",
+      "url": "https://tlidb.com/cn/Moon_Strike",
+      "source_order": 99,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "月华斩"
+      }
+    },
+    {
+      "id": "Howling_Gale",
+      "slug": "Howling_Gale",
+      "name_zh": "呼啸烈风",
+      "url": "https://tlidb.com/cn/Howling_Gale",
+      "source_order": 100,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "呼啸烈风"
+      }
+    },
+    {
+      "id": "Blazing_Bullet",
+      "slug": "Blazing_Bullet",
+      "name_zh": "炽炎穿弹",
+      "url": "https://tlidb.com/cn/Blazing_Bullet",
+      "source_order": 101,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "炽炎穿弹"
+      }
+    },
+    {
+      "id": "Thunder_Slash",
+      "slug": "Thunder_Slash",
+      "name_zh": "雷影斩",
+      "url": "https://tlidb.com/cn/Thunder_Slash",
+      "source_order": 102,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "雷影斩"
+      }
+    },
+    {
+      "id": "Thunder_Spike",
+      "slug": "Thunder_Spike",
+      "name_zh": "雷光刺击",
+      "url": "https://tlidb.com/cn/Thunder_Spike",
+      "source_order": 103,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "雷光刺击"
+      }
+    },
+    {
+      "id": "Haunting_Abomination",
+      "slug": "Haunting_Abomination",
+      "name_zh": "恶煞缠身",
+      "url": "https://tlidb.com/cn/Haunting_Abomination",
+      "source_order": 104,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "恶煞缠身"
+      }
+    },
+    {
+      "id": "Frost_Core",
+      "slug": "Frost_Core",
+      "name_zh": "寒霜之核",
+      "url": "https://tlidb.com/cn/Frost_Core",
+      "source_order": 105,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "寒霜之核"
+      }
+    },
+    {
+      "id": "Thunder_Core",
+      "slug": "Thunder_Core",
+      "name_zh": "雷降之核",
+      "url": "https://tlidb.com/cn/Thunder_Core",
+      "source_order": 106,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "雷降之核"
+      }
+    },
+    {
+      "id": "Ghost_Blade_Einherjar",
+      "slug": "Ghost_Blade_Einherjar",
+      "name_zh": "幽刃英灵",
+      "url": "https://tlidb.com/cn/Ghost_Blade_Einherjar",
+      "source_order": 107,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "幽刃英灵"
+      }
+    },
+    {
+      "id": "Arrow_Einherjar",
+      "slug": "Arrow_Einherjar",
+      "name_zh": "飞箭英灵",
+      "url": "https://tlidb.com/cn/Arrow_Einherjar",
+      "source_order": 108,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "飞箭英灵"
+      }
+    },
+    {
+      "id": "Summon_Grim_Phantom",
+      "slug": "Summon_Grim_Phantom",
+      "name_zh": "召唤幽浮魅影",
+      "url": "https://tlidb.com/cn/Summon_Grim_Phantom",
+      "source_order": 109,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "召唤幽浮魅影"
+      }
+    },
+    {
+      "id": "Overpower",
+      "slug": "Overpower",
+      "name_zh": "压制重击",
+      "url": "https://tlidb.com/cn/Overpower",
+      "source_order": 110,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "压制重击"
+      }
+    },
+    {
+      "id": "Onslaught_Punch",
+      "slug": "Onslaught_Punch",
+      "name_zh": "进击之拳",
+      "url": "https://tlidb.com/cn/Onslaught_Punch",
+      "source_order": 111,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "进击之拳"
+      }
+    },
+    {
+      "id": "Aimed_Shot",
+      "slug": "Aimed_Shot",
+      "name_zh": "瞄准射击",
+      "url": "https://tlidb.com/cn/Aimed_Shot",
+      "source_order": 112,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "瞄准射击"
+      }
+    },
+    {
+      "id": "Blazing_Dance",
+      "slug": "Blazing_Dance",
+      "name_zh": "烈焰挥舞",
+      "url": "https://tlidb.com/cn/Blazing_Dance",
+      "source_order": 113,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "烈焰挥舞"
+      }
+    },
+    {
+      "id": "Blazing_Spin",
+      "slug": "Blazing_Spin",
+      "name_zh": "烈焰飞旋",
+      "url": "https://tlidb.com/cn/Blazing_Spin",
+      "source_order": 114,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "烈焰飞旋"
+      }
+    },
+    {
+      "id": "Blazing_Incineration",
+      "slug": "Blazing_Incineration",
+      "name_zh": "烈焰暴燃",
+      "url": "https://tlidb.com/cn/Blazing_Incineration",
+      "source_order": 115,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "烈焰暴燃"
+      }
+    },
+    {
+      "id": "Molten_Rising",
+      "slug": "Molten_Rising",
+      "name_zh": "熔火升腾",
+      "url": "https://tlidb.com/cn/Molten_Rising",
+      "source_order": 116,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "熔火升腾"
+      }
+    },
+    {
+      "id": "Glacier_Ripples",
+      "slug": "Glacier_Ripples",
+      "name_zh": "冰川涟漪",
+      "url": "https://tlidb.com/cn/Glacier_Ripples",
+      "source_order": 117,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "冰川涟漪"
+      }
+    },
+    {
+      "id": "Frost_Release",
+      "slug": "Frost_Release",
+      "name_zh": "寒潮缓释",
+      "url": "https://tlidb.com/cn/Frost_Release",
+      "source_order": 118,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "寒潮缓释"
+      }
+    },
+    {
+      "id": "Permafrost_Cast",
+      "slug": "Permafrost_Cast",
+      "name_zh": "冰浇雪铸",
+      "url": "https://tlidb.com/cn/Permafrost_Cast",
+      "source_order": 119,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "冰浇雪铸"
+      }
+    },
+    {
+      "id": "Ice_Earthshaker",
+      "slug": "Ice_Earthshaker",
+      "name_zh": "撼地冰暴",
+      "url": "https://tlidb.com/cn/Ice_Earthshaker",
+      "source_order": 120,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "撼地冰暴"
+      }
+    },
+    {
+      "id": "Lightning_Star",
+      "slug": "Lightning_Star",
+      "name_zh": "闪电流星",
+      "url": "https://tlidb.com/cn/Lightning_Star",
+      "source_order": 121,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "闪电流星"
+      }
+    },
+    {
+      "id": "Thunderlight_Arrow",
+      "slug": "Thunderlight_Arrow",
+      "name_zh": "雷光飞矢",
+      "url": "https://tlidb.com/cn/Thunderlight_Arrow",
+      "source_order": 122,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "雷光飞矢"
+      }
+    },
+    {
+      "id": "Thundercloud_Surge",
+      "slug": "Thundercloud_Surge",
+      "name_zh": "雷云激荡",
+      "url": "https://tlidb.com/cn/Thundercloud_Surge",
+      "source_order": 123,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "雷云激荡"
+      }
+    },
+    {
+      "id": "Lightning_Surge",
+      "slug": "Lightning_Surge",
+      "name_zh": "雷驰电涌",
+      "url": "https://tlidb.com/cn/Lightning_Surge",
+      "source_order": 124,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "雷驰电涌"
+      }
+    },
+    {
+      "id": "High_Energy_Beam",
+      "slug": "High_Energy_Beam",
+      "name_zh": "高能光束",
+      "url": "https://tlidb.com/cn/High_Energy_Beam",
+      "source_order": 125,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "高能光束"
+      }
+    },
+    {
+      "id": "Destructive_Light_Cannon",
+      "slug": "Destructive_Light_Cannon",
+      "name_zh": "毁灭光炮",
+      "url": "https://tlidb.com/cn/Destructive_Light_Cannon",
+      "source_order": 126,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "毁灭光炮"
+      }
+    },
+    {
+      "id": "Whirlwind_Blade",
+      "slug": "Whirlwind_Blade",
+      "name_zh": "刀锋回旋",
+      "url": "https://tlidb.com/cn/Whirlwind_Blade",
+      "source_order": 127,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "刀锋回旋"
+      }
+    },
+    {
+      "id": "Lightning_Beam",
+      "slug": "Lightning_Beam",
+      "name_zh": "雷暴射线",
+      "url": "https://tlidb.com/cn/Lightning_Beam",
+      "source_order": 128,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "雷暴射线"
+      }
+    },
+    {
+      "id": "Speed_Phantom",
+      "slug": "Speed_Phantom",
+      "name_zh": "迅法幻身",
+      "url": "https://tlidb.com/cn/Speed_Phantom",
+      "source_order": 129,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "迅法幻身"
+      }
+    },
+    {
+      "id": "Archery_Bond",
+      "slug": "Archery_Bond",
+      "name_zh": "射术羁绊",
+      "url": "https://tlidb.com/cn/Archery_Bond",
+      "source_order": 130,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "射术羁绊"
+      }
+    },
+    {
+      "id": "Nourishment_of_Life",
+      "slug": "Nourishment_of_Life",
+      "name_zh": "生息滋养",
+      "url": "https://tlidb.com/cn/Nourishment_of_Life",
+      "source_order": 131,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "生息滋养"
+      }
+    },
+    {
+      "id": "Dazzling_Bloom",
+      "slug": "Dazzling_Bloom",
+      "name_zh": "夺目绽放",
+      "url": "https://tlidb.com/cn/Dazzling_Bloom",
+      "source_order": 132,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "夺目绽放"
+      }
+    },
+    {
+      "id": "Star_Stalker",
+      "slug": "Star_Stalker",
+      "name_zh": "追猎星芒",
+      "url": "https://tlidb.com/cn/Star_Stalker",
+      "source_order": 133,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "追猎星芒"
+      }
+    },
+    {
+      "id": "Harmonious_Field",
+      "slug": "Harmonious_Field",
+      "name_zh": "调谐力场",
+      "url": "https://tlidb.com/cn/Harmonious_Field",
+      "source_order": 134,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "调谐力场"
+      }
+    },
+    {
+      "id": "Shackles_of_Malice",
+      "slug": "Shackles_of_Malice",
+      "name_zh": "恶意枷锁",
+      "url": "https://tlidb.com/cn/Shackles_of_Malice",
+      "source_order": 135,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "恶意枷锁"
+      }
+    },
+    {
+      "id": "Shattered_Stone",
+      "slug": "Shattered_Stone",
+      "name_zh": "裂石打击",
+      "url": "https://tlidb.com/cn/Shattered_Stone",
+      "source_order": 136,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "裂石打击"
+      }
+    },
+    {
+      "id": "Gold_Rush",
+      "slug": "Gold_Rush",
+      "name_zh": "聚石碎金",
+      "url": "https://tlidb.com/cn/Gold_Rush",
+      "source_order": 137,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "聚石碎金"
+      }
+    },
+    {
+      "id": "Rock_Blast",
+      "slug": "Rock_Blast",
+      "name_zh": "乱石横飞",
+      "url": "https://tlidb.com/cn/Rock_Blast",
+      "source_order": 138,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "乱石横飞"
+      }
+    },
+    {
+      "id": "Towering_Mountains",
+      "slug": "Towering_Mountains",
+      "name_zh": "群峰压顶",
+      "url": "https://tlidb.com/cn/Towering_Mountains",
+      "source_order": 139,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "群峰压顶"
+      }
+    },
+    {
+      "id": "Scattered_Mud",
+      "slug": "Scattered_Mud",
+      "name_zh": "零落成泥",
+      "url": "https://tlidb.com/cn/Scattered_Mud",
+      "source_order": 140,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "零落成泥"
+      }
+    },
+    {
+      "id": "Withering_Payback",
+      "slug": "Withering_Payback",
+      "name_zh": "凋敝奉还",
+      "url": "https://tlidb.com/cn/Withering_Payback",
+      "source_order": 141,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "凋敝奉还"
+      }
+    },
+    {
+      "id": "Bleak_Grass",
+      "slug": "Bleak_Grass",
+      "name_zh": "哀草丛生",
+      "url": "https://tlidb.com/cn/Bleak_Grass",
+      "source_order": 142,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "哀草丛生"
+      }
+    },
+    {
+      "id": "World_of_Thorns",
+      "slug": "World_of_Thorns",
+      "name_zh": "荆天棘地",
+      "url": "https://tlidb.com/cn/World_of_Thorns",
+      "source_order": 143,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "荆天棘地"
+      }
+    },
+    {
+      "id": "Rising_Edge",
+      "slug": "Rising_Edge",
+      "name_zh": "新锐崛起",
+      "url": "https://tlidb.com/cn/Rising_Edge",
+      "source_order": 144,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "新锐崛起"
+      }
+    },
+    {
+      "id": "Crescent_Slash",
+      "slug": "Crescent_Slash",
+      "name_zh": "碎月弧光斩",
+      "url": "https://tlidb.com/cn/Crescent_Slash",
+      "source_order": 145,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "碎月弧光斩"
+      }
+    },
+    {
+      "id": "Serpent_Beam",
+      "slug": "Serpent_Beam",
+      "name_zh": "流焰炎蛇引",
+      "url": "https://tlidb.com/cn/Serpent_Beam",
+      "source_order": 146,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "流焰炎蛇引"
+      }
+    },
+    {
+      "id": "Gale_Slash",
+      "slug": "Gale_Slash",
+      "name_zh": "疾风裂地斩",
+      "url": "https://tlidb.com/cn/Gale_Slash",
+      "source_order": 147,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "疾风裂地斩"
+      }
+    },
+    {
+      "id": "Spectral_Slash",
+      "slug": "Spectral_Slash",
+      "name_zh": "分身灵爆斩",
+      "url": "https://tlidb.com/cn/Spectral_Slash",
+      "source_order": 148,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "分身灵爆斩"
+      }
+    },
+    {
+      "id": "Vendetta",
+      "slug": "Vendetta",
+      "name_zh": "寻仇",
+      "url": "https://tlidb.com/cn/Vendetta",
+      "source_order": 149,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "寻仇"
+      }
+    },
+    {
+      "id": "Shockwave_Warcry",
+      "slug": "Shockwave_Warcry",
+      "name_zh": "破势战吼",
+      "url": "https://tlidb.com/cn/Shockwave_Warcry",
+      "source_order": 150,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "破势战吼"
+      }
+    },
+    {
+      "id": "Endless_Vendetta",
+      "slug": "Endless_Vendetta",
+      "name_zh": "无尽寻仇",
+      "url": "https://tlidb.com/cn/Endless_Vendetta",
+      "source_order": 151,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "无尽寻仇"
+      }
+    },
+    {
+      "id": "Frostclaw",
+      "slug": "Frostclaw",
+      "name_zh": "霜爪",
+      "url": "https://tlidb.com/cn/Frostclaw",
+      "source_order": 152,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "霜爪"
+      }
+    },
+    {
+      "id": "Firebird",
+      "slug": "Firebird",
+      "name_zh": "炎鸟",
+      "url": "https://tlidb.com/cn/Firebird",
+      "source_order": 153,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "炎鸟"
+      }
+    },
+    {
+      "id": "Earthshatter",
+      "slug": "Earthshatter",
+      "name_zh": "崩山击",
+      "url": "https://tlidb.com/cn/Earthshatter",
+      "source_order": 154,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "崩山击"
+      }
+    },
+    {
+      "id": "Aember_Rain",
+      "slug": "Aember_Rain",
+      "name_zh": "灾烬雨",
+      "url": "https://tlidb.com/cn/Aember_Rain",
+      "source_order": 155,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "灾烬雨"
+      }
+    },
+    {
+      "id": "Molten_Barrage",
+      "slug": "Molten_Barrage",
+      "name_zh": "熔火旋弹",
+      "url": "https://tlidb.com/cn/Molten_Barrage",
+      "source_order": 156,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "熔火旋弹"
+      }
+    },
+    {
+      "id": "All-Out_Volley",
+      "slug": "All-Out_Volley",
+      "name_zh": "集火齐射",
+      "url": "https://tlidb.com/cn/All-Out_Volley",
+      "source_order": 157,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "集火齐射"
+      }
+    },
+    {
+      "id": "Rockfall",
+      "slug": "Rockfall",
+      "name_zh": "落石术",
+      "url": "https://tlidb.com/cn/Rockfall",
+      "source_order": 158,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "落石术"
+      }
+    },
+    {
+      "id": "Thunderfall",
+      "slug": "Thunderfall",
+      "name_zh": "雷降",
+      "url": "https://tlidb.com/cn/Thunderfall",
+      "source_order": 159,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "雷降"
+      }
+    },
+    {
+      "id": "Kinetic_Thrust",
+      "slug": "Kinetic_Thrust",
+      "name_zh": "动能戳刺",
+      "url": "https://tlidb.com/cn/Kinetic_Thrust",
+      "source_order": 160,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "动能戳刺"
+      }
+    },
+    {
+      "id": "Groundslam",
+      "slug": "Groundslam",
+      "name_zh": "势能砸击",
+      "url": "https://tlidb.com/cn/Groundslam",
+      "source_order": 161,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "势能砸击"
+      }
+    },
+    {
+      "id": "Overstrike",
+      "slug": "Overstrike",
+      "name_zh": "高能跃击",
+      "url": "https://tlidb.com/cn/Overstrike",
+      "source_order": 162,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "高能跃击"
+      }
+    },
+    {
+      "id": "Searing_Crush",
+      "slug": "Searing_Crush",
+      "name_zh": "高温碾压",
+      "url": "https://tlidb.com/cn/Searing_Crush",
+      "source_order": 163,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "高温碾压"
+      }
+    },
+    {
+      "id": "Sweep",
+      "slug": "Sweep",
+      "name_zh": "横扫",
+      "url": "https://tlidb.com/cn/Sweep",
+      "source_order": 164,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "横扫"
+      }
+    },
+    {
+      "id": "Rootsurge",
+      "slug": "Rootsurge",
+      "name_zh": "深根",
+      "url": "https://tlidb.com/cn/Rootsurge",
+      "source_order": 165,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "深根"
+      }
+    },
+    {
+      "id": "Blitz_Strike",
+      "slug": "Blitz_Strike",
+      "name_zh": "闪击",
+      "url": "https://tlidb.com/cn/Blitz_Strike",
+      "source_order": 166,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "闪击"
+      }
+    },
+    {
+      "id": "Burst_Hammer",
+      "slug": "Burst_Hammer",
+      "name_zh": "爆裂锤",
+      "url": "https://tlidb.com/cn/Burst_Hammer",
+      "source_order": 167,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "爆裂锤"
+      }
+    },
+    {
+      "id": "Firebomb",
+      "slug": "Firebomb",
+      "name_zh": "投弹",
+      "url": "https://tlidb.com/cn/Firebomb",
+      "source_order": 168,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "投弹"
+      }
+    },
+    {
+      "id": "Pyromania",
+      "slug": "Pyromania",
+      "name_zh": "纵火",
+      "url": "https://tlidb.com/cn/Pyromania",
+      "source_order": 169,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "纵火"
+      }
+    },
+    {
+      "id": "Flickering_Shadow",
+      "slug": "Flickering_Shadow",
+      "name_zh": "往昔之影",
+      "url": "https://tlidb.com/cn/Flickering_Shadow",
+      "source_order": 170,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "往昔之影"
+      }
+    },
+    {
+      "id": "Sin_of_the_Fallen",
+      "slug": "Sin_of_the_Fallen",
+      "name_zh": "陷落之罪",
+      "url": "https://tlidb.com/cn/Sin_of_the_Fallen",
+      "source_order": 171,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "陷落之罪"
+      }
+    },
+    {
+      "id": "Blade_of_Glory",
+      "slug": "Blade_of_Glory",
+      "name_zh": "荣耀利刃",
+      "url": "https://tlidb.com/cn/Blade_of_Glory",
+      "source_order": 172,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "荣耀利刃"
+      }
+    },
+    {
+      "id": "High_Court_Covenant",
+      "slug": "High_Court_Covenant",
+      "name_zh": "圣庭誓约",
+      "url": "https://tlidb.com/cn/High_Court_Covenant",
+      "source_order": 173,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "圣庭誓约"
+      }
+    },
+    {
+      "id": "Ravaging_Slash",
+      "slug": "Ravaging_Slash",
+      "name_zh": "暴虐斩",
+      "url": "https://tlidb.com/cn/Ravaging_Slash",
+      "source_order": 174,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "暴虐斩"
+      }
+    },
+    {
+      "id": "Auric_Shot",
+      "slug": "Auric_Shot",
+      "name_zh": "流金弹",
+      "url": "https://tlidb.com/cn/Auric_Shot",
+      "source_order": 175,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "流金弹"
+      }
+    },
+    {
+      "id": "Gravelshot",
+      "slug": "Gravelshot",
+      "name_zh": "砂石砸击",
+      "url": "https://tlidb.com/cn/Gravelshot",
+      "source_order": 176,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "砂石砸击"
+      }
+    },
+    {
+      "id": "Divine_Judgment",
+      "slug": "Divine_Judgment",
+      "name_zh": "炽烈天罚",
+      "url": "https://tlidb.com/cn/Divine_Judgment",
+      "source_order": 177,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "炽烈天罚"
+      }
+    },
+    {
+      "id": "Javelin_of_Judgment",
+      "slug": "Javelin_of_Judgment",
+      "name_zh": "审判标枪",
+      "url": "https://tlidb.com/cn/Javelin_of_Judgment",
+      "source_order": 178,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "审判标枪"
+      }
+    },
+    {
+      "id": "Spikeburst",
+      "slug": "Spikeburst",
+      "name_zh": "投刺",
+      "url": "https://tlidb.com/cn/Spikeburst",
+      "source_order": 179,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "投刺"
+      }
+    },
+    {
+      "id": "Tailsweep",
+      "slug": "Tailsweep",
+      "name_zh": "扫尾",
+      "url": "https://tlidb.com/cn/Tailsweep",
+      "source_order": 180,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "扫尾"
+      }
+    },
+    {
+      "id": "Impaling_Thrust",
+      "slug": "Impaling_Thrust",
+      "name_zh": "突刺斩",
+      "url": "https://tlidb.com/cn/Impaling_Thrust",
+      "source_order": 181,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "突刺斩"
+      }
+    },
+    {
+      "id": "Twinstrike",
+      "slug": "Twinstrike",
+      "name_zh": "双刃斩",
+      "url": "https://tlidb.com/cn/Twinstrike",
+      "source_order": 182,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "双刃斩"
+      }
+    },
+    {
+      "id": "Undercurrent",
+      "slug": "Undercurrent",
+      "name_zh": "暗涌",
+      "url": "https://tlidb.com/cn/Undercurrent",
+      "source_order": 183,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "暗涌"
+      }
+    },
+    {
+      "id": "Resistance_Dew",
+      "slug": "Resistance_Dew",
+      "name_zh": "抵抗滴露",
+      "url": "https://tlidb.com/cn/Resistance_Dew",
+      "source_order": 184,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "抵抗滴露"
+      }
+    },
+    {
+      "id": "Steadfast_Dew",
+      "slug": "Steadfast_Dew",
+      "name_zh": "坚固滴露",
+      "url": "https://tlidb.com/cn/Steadfast_Dew",
+      "source_order": 185,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "坚固滴露"
+      }
+    },
+    {
+      "id": "Nimbleness_Dew",
+      "slug": "Nimbleness_Dew",
+      "name_zh": "灵敏滴露",
+      "url": "https://tlidb.com/cn/Nimbleness_Dew",
+      "source_order": 186,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "灵敏滴露"
+      }
+    },
+    {
+      "id": "Tenacity_Dew",
+      "slug": "Tenacity_Dew",
+      "name_zh": "韧性滴露",
+      "url": "https://tlidb.com/cn/Tenacity_Dew",
+      "source_order": 187,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "韧性滴露"
+      }
+    },
+    {
+      "id": "Tortoise_Shell_Distillate",
+      "slug": "Tortoise_Shell_Distillate",
+      "name_zh": "陆龟壳凝萃",
+      "url": "https://tlidb.com/cn/Tortoise_Shell_Distillate",
+      "source_order": 188,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "陆龟壳凝萃"
+      }
+    },
+    {
+      "id": "Scorpion_Stinger_Distillate",
+      "slug": "Scorpion_Stinger_Distillate",
+      "name_zh": "蝎尾针凝萃",
+      "url": "https://tlidb.com/cn/Scorpion_Stinger_Distillate",
+      "source_order": 189,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "蝎尾针凝萃"
+      }
+    },
+    {
+      "id": "Putrid_Toad_Distillate",
+      "slug": "Putrid_Toad_Distillate",
+      "name_zh": "腐蟾蜍凝萃",
+      "url": "https://tlidb.com/cn/Putrid_Toad_Distillate",
+      "source_order": 190,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "腐蟾蜍凝萃"
+      }
+    },
+    {
+      "id": "Saltpeter_Mushroom_Distillate",
+      "slug": "Saltpeter_Mushroom_Distillate",
+      "name_zh": "硝石菇凝萃",
+      "url": "https://tlidb.com/cn/Saltpeter_Mushroom_Distillate",
+      "source_order": 191,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "硝石菇凝萃"
+      }
+    },
+    {
+      "id": "Fire_Lizard_Distillate",
+      "slug": "Fire_Lizard_Distillate",
+      "name_zh": "火蜥蜴凝萃",
+      "url": "https://tlidb.com/cn/Fire_Lizard_Distillate",
+      "source_order": 192,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "火蜥蜴凝萃"
+      }
+    },
+    {
+      "id": "White_Rhino_Distillate",
+      "slug": "White_Rhino_Distillate",
+      "name_zh": "白犀牛凝萃",
+      "url": "https://tlidb.com/cn/White_Rhino_Distillate",
+      "source_order": 193,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "白犀牛凝萃"
+      }
+    },
+    {
+      "id": "Thunder_Wood_Distillate",
+      "slug": "Thunder_Wood_Distillate",
+      "name_zh": "雷击木凝萃",
+      "url": "https://tlidb.com/cn/Thunder_Wood_Distillate",
+      "source_order": 194,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "雷击木凝萃"
+      }
+    },
+    {
+      "id": "Ominous",
+      "slug": "Ominous",
+      "name_zh": "不祥",
+      "url": "https://tlidb.com/cn/Ominous",
+      "source_order": 195,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "不祥"
+      }
+    },
+    {
+      "id": "Thornfield",
+      "slug": "Thornfield",
+      "name_zh": "荆棘之域",
+      "url": "https://tlidb.com/cn/Thornfield",
+      "source_order": 196,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "荆棘之域"
+      }
+    },
+    {
+      "id": "Tidewell",
+      "slug": "Tidewell",
+      "name_zh": "潮汐之泉",
+      "url": "https://tlidb.com/cn/Tidewell",
+      "source_order": 197,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "潮汐之泉"
+      }
+    },
+    {
+      "id": "Fallen_Star",
+      "slug": "Fallen_Star",
+      "name_zh": "陨星",
+      "url": "https://tlidb.com/cn/Fallen_Star",
+      "source_order": 198,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "陨星"
+      }
+    },
+    {
+      "id": "Storm_Field",
+      "slug": "Storm_Field",
+      "name_zh": "雷暴地带",
+      "url": "https://tlidb.com/cn/Storm_Field",
+      "source_order": 199,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "雷暴地带"
+      }
+    },
+    {
+      "id": "Nether_Grasp",
+      "slug": "Nether_Grasp",
+      "name_zh": "冥渊之手",
+      "url": "https://tlidb.com/cn/Nether_Grasp",
+      "source_order": 200,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "冥渊之手"
+      }
+    },
+    {
+      "id": "Commanding_Warcry",
+      "slug": "Commanding_Warcry",
+      "name_zh": "统帅战吼",
+      "url": "https://tlidb.com/cn/Commanding_Warcry",
+      "source_order": 201,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "统帅战吼"
+      }
+    },
+    {
+      "id": "Agony_Dew",
+      "slug": "Agony_Dew",
+      "name_zh": "痛楚滴露",
+      "url": "https://tlidb.com/cn/Agony_Dew",
+      "source_order": 202,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "痛楚滴露"
+      }
+    },
+    {
+      "id": "Prism_Butterfly_Distillate",
+      "slug": "Prism_Butterfly_Distillate",
+      "name_zh": "幻彩蝶凝萃",
+      "url": "https://tlidb.com/cn/Prism_Butterfly_Distillate",
+      "source_order": 203,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "主动技能 Tag /204",
+        "link_text": "幻彩蝶凝萃"
+      }
+    }
+  ]
+}

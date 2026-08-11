@@ -1,0 +1,4097 @@
+{
+  "schema_version": 1,
+  "source": {
+    "site": "tlidb",
+    "locale": "cn",
+    "index_url": "https://tlidb.com/cn/Legendary_Gear",
+    "fetched_at": "2026-08-06T13:40:09.132211+00:00",
+    "http_status": 200,
+    "html_sha256": "292b8bc3e8a8c89820bd4e308617ecffae6a15ebc32c116d067fa626ea2608c5"
+  },
+  "system_id": "legendary_gear",
+  "entity_type": "legendary_gear",
+  "displayed_entry_count": 341,
+  "unique_entry_count": 339,
+  "duplicate_occurrence_count": 2,
+  "discovery_confidence": 0.85,
+  "quality": {
+    "displayed_entry_count": 341,
+    "unique_entry_count": 339,
+    "duplicate_occurrence_count": 2,
+    "discovery_confidence": 0.85,
+    "warnings": [
+      "2 duplicate link occurrence(s) removed",
+      "displayed count 341 does not match unique count 339"
+    ]
+  },
+  "entries": [
+    {
+      "id": "Sparks_of_Moth_Fire",
+      "slug": "Sparks_of_Moth_Fire",
+      "name_zh": "星星蛾火",
+      "url": "https://tlidb.com/cn/Sparks_of_Moth_Fire",
+      "source_order": 0,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "星星蛾火"
+      }
+    },
+    {
+      "id": "Fallen_Starlight",
+      "slug": "Fallen_Starlight",
+      "name_zh": "群星辉陨",
+      "url": "https://tlidb.com/cn/Fallen_Starlight",
+      "source_order": 1,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "群星辉陨"
+      }
+    },
+    {
+      "id": "A_Corner_of_Divinity",
+      "slug": "A_Corner_of_Divinity",
+      "name_zh": "神性一角",
+      "url": "https://tlidb.com/cn/A_Corner_of_Divinity",
+      "source_order": 2,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "神性一角"
+      }
+    },
+    {
+      "id": "Space_Rift",
+      "slug": "Space_Rift",
+      "name_zh": "寰空神隙",
+      "url": "https://tlidb.com/cn/Space_Rift",
+      "source_order": 3,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "寰空神隙"
+      }
+    },
+    {
+      "id": "Pedigree_of_Gods",
+      "slug": "Pedigree_of_Gods",
+      "name_zh": "神之谱系",
+      "url": "https://tlidb.com/cn/Pedigree_of_Gods",
+      "source_order": 4,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "神之谱系"
+      }
+    },
+    {
+      "id": "Residence_of_Stars",
+      "slug": "Residence_of_Stars",
+      "name_zh": "众星归所",
+      "url": "https://tlidb.com/cn/Residence_of_Stars",
+      "source_order": 5,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "众星归所"
+      }
+    },
+    {
+      "id": "When_Sparks_Set_the_Prairie_Ablaze",
+      "slug": "When_Sparks_Set_the_Prairie_Ablaze",
+      "name_zh": "蛾火燎原之刻",
+      "url": "https://tlidb.com/cn/When_Sparks_Set_the_Prairie_Ablaze",
+      "source_order": 6,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "蛾火燎原之刻"
+      }
+    },
+    {
+      "id": "Crosser",
+      "slug": "Crosser",
+      "name_zh": "交错者",
+      "url": "https://tlidb.com/cn/Crosser",
+      "source_order": 7,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "交错者"
+      }
+    },
+    {
+      "id": "Frozen_Sight",
+      "slug": "Frozen_Sight",
+      "name_zh": "冰冻目光",
+      "url": "https://tlidb.com/cn/Frozen_Sight",
+      "source_order": 8,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "冰冻目光"
+      }
+    },
+    {
+      "id": "Glorious_Journey",
+      "slug": "Glorious_Journey",
+      "name_zh": "辉煌旅途",
+      "url": "https://tlidb.com/cn/Glorious_Journey",
+      "source_order": 9,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "辉煌旅途"
+      }
+    },
+    {
+      "id": "Omniscient_Prototype",
+      "slug": "Omniscient_Prototype",
+      "name_zh": "全知的雏形",
+      "url": "https://tlidb.com/cn/Omniscient_Prototype",
+      "source_order": 10,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "全知的雏形"
+      }
+    },
+    {
+      "id": "Awaiting",
+      "slug": "Awaiting",
+      "name_zh": "失期",
+      "url": "https://tlidb.com/cn/Awaiting",
+      "source_order": 11,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "失期"
+      }
+    },
+    {
+      "id": "Enamor",
+      "slug": "Enamor",
+      "name_zh": "泛泛倾心",
+      "url": "https://tlidb.com/cn/Enamor",
+      "source_order": 12,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "泛泛倾心"
+      }
+    },
+    {
+      "id": "Rock_Lizards_Skull",
+      "slug": "Rock_Lizards_Skull",
+      "name_zh": "岩石巨蜥之颅",
+      "url": "https://tlidb.com/cn/Rock_Lizards_Skull",
+      "source_order": 13,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "岩石巨蜥之颅"
+      }
+    },
+    {
+      "id": "Siren_Faceguard",
+      "slug": "Siren_Faceguard",
+      "name_zh": "海妖面甲",
+      "url": "https://tlidb.com/cn/Siren_Faceguard",
+      "source_order": 14,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "海妖面甲"
+      }
+    },
+    {
+      "id": "Lone_Survivor",
+      "slug": "Lone_Survivor",
+      "name_zh": "独活",
+      "url": "https://tlidb.com/cn/Lone_Survivor",
+      "source_order": 15,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "独活"
+      }
+    },
+    {
+      "id": "Lonesome",
+      "slug": "Lonesome",
+      "name_zh": "孤胆",
+      "url": "https://tlidb.com/cn/Lonesome",
+      "source_order": 16,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "孤胆"
+      }
+    },
+    {
+      "id": "Spring_Resurrection",
+      "slug": "Spring_Resurrection",
+      "name_zh": "春日复苏",
+      "url": "https://tlidb.com/cn/Spring_Resurrection",
+      "source_order": 17,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "春日复苏"
+      }
+    },
+    {
+      "id": "Shamed",
+      "slug": "Shamed",
+      "name_zh": "荣辱",
+      "url": "https://tlidb.com/cn/Shamed",
+      "source_order": 18,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "荣辱"
+      }
+    },
+    {
+      "id": "Scorching_Words",
+      "slug": "Scorching_Words",
+      "name_zh": "炽热真言",
+      "url": "https://tlidb.com/cn/Scorching_Words",
+      "source_order": 19,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "炽热真言"
+      }
+    },
+    {
+      "id": "Eternal_Moon",
+      "slug": "Eternal_Moon",
+      "name_zh": "不落之月",
+      "url": "https://tlidb.com/cn/Eternal_Moon",
+      "source_order": 20,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "不落之月"
+      }
+    },
+    {
+      "id": "Phantasm",
+      "slug": "Phantasm",
+      "name_zh": "幻躯",
+      "url": "https://tlidb.com/cn/Phantasm",
+      "source_order": 21,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "幻躯"
+      }
+    },
+    {
+      "id": "Dragon_Scale_Shoes",
+      "slug": "Dragon_Scale_Shoes",
+      "name_zh": "龙鳞轻履",
+      "url": "https://tlidb.com/cn/Dragon_Scale_Shoes",
+      "source_order": 22,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "龙鳞轻履"
+      }
+    },
+    {
+      "id": "Shield_of_Judgment",
+      "slug": "Shield_of_Judgment",
+      "name_zh": "裁决之盾",
+      "url": "https://tlidb.com/cn/Shield_of_Judgment",
+      "source_order": 23,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "裁决之盾"
+      }
+    },
+    {
+      "id": "Last_Stand",
+      "slug": "Last_Stand",
+      "name_zh": "背水一战",
+      "url": "https://tlidb.com/cn/Last_Stand",
+      "source_order": 24,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "背水一战"
+      }
+    },
+    {
+      "id": "Blessing_Pendant",
+      "slug": "Blessing_Pendant",
+      "name_zh": "灵佑之坠",
+      "url": "https://tlidb.com/cn/Blessing_Pendant",
+      "source_order": 25,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "灵佑之坠"
+      }
+    },
+    {
+      "id": "Elemental_Whisper_Belt",
+      "slug": "Elemental_Whisper_Belt",
+      "name_zh": "元素秘语腰带",
+      "url": "https://tlidb.com/cn/Elemental_Whisper_Belt",
+      "source_order": 26,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "元素秘语腰带"
+      }
+    },
+    {
+      "id": "Scorching_Wave",
+      "slug": "Scorching_Wave",
+      "name_zh": "热潮",
+      "url": "https://tlidb.com/cn/Scorching_Wave",
+      "source_order": 27,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "热潮"
+      }
+    },
+    {
+      "id": "Ralphs_Ambition",
+      "slug": "Ralphs_Ambition",
+      "name_zh": "雷尔夫的野心",
+      "url": "https://tlidb.com/cn/Ralphs_Ambition",
+      "source_order": 28,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "雷尔夫的野心"
+      }
+    },
+    {
+      "id": "Fire_Shielding_Prosthetics",
+      "slug": "Fire_Shielding_Prosthetics",
+      "name_zh": "避火义肢",
+      "url": "https://tlidb.com/cn/Fire_Shielding_Prosthetics",
+      "source_order": 29,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "避火义肢"
+      }
+    },
+    {
+      "id": "Thunder_Channeling_Prosthetics",
+      "slug": "Thunder_Channeling_Prosthetics",
+      "name_zh": "引雷义肢",
+      "url": "https://tlidb.com/cn/Thunder_Channeling_Prosthetics",
+      "source_order": 30,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "引雷义肢"
+      }
+    },
+    {
+      "id": "Cold_Sanctuary_Prosthetics",
+      "slug": "Cold_Sanctuary_Prosthetics",
+      "name_zh": "御寒义肢",
+      "url": "https://tlidb.com/cn/Cold_Sanctuary_Prosthetics",
+      "source_order": 31,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "御寒义肢"
+      }
+    },
+    {
+      "id": "Pentagram_Astrolabe",
+      "slug": "Pentagram_Astrolabe",
+      "name_zh": "五芒星盘",
+      "url": "https://tlidb.com/cn/Pentagram_Astrolabe",
+      "source_order": 32,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "五芒星盘"
+      }
+    },
+    {
+      "id": "Desire_of_Survival",
+      "slug": "Desire_of_Survival",
+      "name_zh": "求生之欲",
+      "url": "https://tlidb.com/cn/Desire_of_Survival",
+      "source_order": 33,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "求生之欲"
+      }
+    },
+    {
+      "id": "Interlocking_Soul",
+      "slug": "Interlocking_Soul",
+      "name_zh": "灵魂交错",
+      "url": "https://tlidb.com/cn/Interlocking_Soul",
+      "source_order": 34,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "灵魂交错"
+      }
+    },
+    {
+      "id": "Ice_Pulse",
+      "slug": "Ice_Pulse",
+      "name_zh": "寒冰法脉",
+      "url": "https://tlidb.com/cn/Ice_Pulse",
+      "source_order": 35,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "寒冰法脉"
+      }
+    },
+    {
+      "id": "Despised_Shadow",
+      "slug": "Despised_Shadow",
+      "name_zh": "渎影",
+      "url": "https://tlidb.com/cn/Despised_Shadow",
+      "source_order": 36,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "渎影"
+      }
+    },
+    {
+      "id": "Boots_of_Sinned_Fire",
+      "slug": "Boots_of_Sinned_Fire",
+      "name_zh": "罪火之足",
+      "url": "https://tlidb.com/cn/Boots_of_Sinned_Fire",
+      "source_order": 37,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "罪火之足"
+      }
+    },
+    {
+      "id": "Revered_Light",
+      "slug": "Revered_Light",
+      "name_zh": "崇光",
+      "url": "https://tlidb.com/cn/Revered_Light",
+      "source_order": 38,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "崇光"
+      }
+    },
+    {
+      "id": "Sages_Foresight",
+      "slug": "Sages_Foresight",
+      "name_zh": "智者远见",
+      "url": "https://tlidb.com/cn/Sages_Foresight",
+      "source_order": 39,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "智者远见"
+      }
+    },
+    {
+      "id": "Grace_Boots",
+      "slug": "Grace_Boots",
+      "name_zh": "翩然之靴",
+      "url": "https://tlidb.com/cn/Grace_Boots",
+      "source_order": 40,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "翩然之靴"
+      }
+    },
+    {
+      "id": "Air_Treaders",
+      "slug": "Air_Treaders",
+      "name_zh": "破空轻履",
+      "url": "https://tlidb.com/cn/Air_Treaders",
+      "source_order": 41,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "破空轻履"
+      }
+    },
+    {
+      "id": "Scepter_of_Excommunication",
+      "slug": "Scepter_of_Excommunication",
+      "name_zh": "绝罚权杖",
+      "url": "https://tlidb.com/cn/Scepter_of_Excommunication",
+      "source_order": 42,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "绝罚权杖"
+      }
+    },
+    {
+      "id": "Born_in_Fire",
+      "slug": "Born_in_Fire",
+      "name_zh": "火焰降生",
+      "url": "https://tlidb.com/cn/Born_in_Fire",
+      "source_order": 43,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "火焰降生"
+      }
+    },
+    {
+      "id": "Berserker_Bracer",
+      "slug": "Berserker_Bracer",
+      "name_zh": "狂猎者护腕",
+      "url": "https://tlidb.com/cn/Berserker_Bracer",
+      "source_order": 44,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "狂猎者护腕"
+      }
+    },
+    {
+      "id": "Wind_Chasers",
+      "slug": "Wind_Chasers",
+      "name_zh": "追风步履",
+      "url": "https://tlidb.com/cn/Wind_Chasers",
+      "source_order": 45,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "追风步履"
+      }
+    },
+    {
+      "id": "Cover_the_Sun",
+      "slug": "Cover_the_Sun",
+      "name_zh": "蔽日",
+      "url": "https://tlidb.com/cn/Cover_the_Sun",
+      "source_order": 46,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "蔽日"
+      }
+    },
+    {
+      "id": "Reverse-Reverse-Reverse_Mirror",
+      "slug": "Reverse-Reverse-Reverse_Mirror",
+      "name_zh": "反反反面镜",
+      "url": "https://tlidb.com/cn/Reverse-Reverse-Reverse_Mirror",
+      "source_order": 47,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "反反反面镜"
+      }
+    },
+    {
+      "id": "Steels_Lament",
+      "slug": "Steels_Lament",
+      "name_zh": "钢铁悲鸣",
+      "url": "https://tlidb.com/cn/Steels_Lament",
+      "source_order": 48,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "钢铁悲鸣"
+      }
+    },
+    {
+      "id": "Silent_Sentry_Shield",
+      "slug": "Silent_Sentry_Shield",
+      "name_zh": "沉默守卫之盾",
+      "url": "https://tlidb.com/cn/Silent_Sentry_Shield",
+      "source_order": 49,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "沉默守卫之盾"
+      }
+    },
+    {
+      "id": "Ownerless",
+      "slug": "Ownerless",
+      "name_zh": "无主",
+      "url": "https://tlidb.com/cn/Ownerless",
+      "source_order": 50,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "无主"
+      }
+    },
+    {
+      "id": "Shadow_of_Thunderlights_Touch",
+      "slug": "Shadow_of_Thunderlights_Touch",
+      "name_zh": "雷光绝影之触",
+      "url": "https://tlidb.com/cn/Shadow_of_Thunderlights_Touch",
+      "source_order": 51,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "雷光绝影之触"
+      }
+    },
+    {
+      "id": "Plain_Echo",
+      "slug": "Plain_Echo",
+      "name_zh": "原野回响",
+      "url": "https://tlidb.com/cn/Plain_Echo",
+      "source_order": 52,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "原野回响"
+      }
+    },
+    {
+      "id": "Brainwave_Emitter",
+      "slug": "Brainwave_Emitter",
+      "name_zh": "脑波迸发器",
+      "url": "https://tlidb.com/cn/Brainwave_Emitter",
+      "source_order": 53,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "脑波迸发器"
+      }
+    },
+    {
+      "id": "Feline_Gloves",
+      "slug": "Feline_Gloves",
+      "name_zh": "灵猫手套",
+      "url": "https://tlidb.com/cn/Feline_Gloves",
+      "source_order": 54,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "灵猫手套"
+      }
+    },
+    {
+      "id": "Fighting_Stompers",
+      "slug": "Fighting_Stompers",
+      "name_zh": "无尽斗志",
+      "url": "https://tlidb.com/cn/Fighting_Stompers",
+      "source_order": 55,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "无尽斗志"
+      }
+    },
+    {
+      "id": "Silver_Frost",
+      "slug": "Silver_Frost",
+      "name_zh": "银霜",
+      "url": "https://tlidb.com/cn/Silver_Frost",
+      "source_order": 56,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "银霜"
+      }
+    },
+    {
+      "id": "Boors_Iron_Crown",
+      "slug": "Boors_Iron_Crown",
+      "name_zh": "莽夫的铁冠",
+      "url": "https://tlidb.com/cn/Boors_Iron_Crown",
+      "source_order": 57,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "莽夫的铁冠"
+      }
+    },
+    {
+      "id": "Ralphs_Journey",
+      "slug": "Ralphs_Journey",
+      "name_zh": "雷尔夫的苦旅",
+      "url": "https://tlidb.com/cn/Ralphs_Journey",
+      "source_order": 58,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "雷尔夫的苦旅"
+      }
+    },
+    {
+      "id": "Photophobia",
+      "slug": "Photophobia",
+      "name_zh": "厌光",
+      "url": "https://tlidb.com/cn/Photophobia",
+      "source_order": 59,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "厌光"
+      }
+    },
+    {
+      "id": "Scarlet_Decree",
+      "slug": "Scarlet_Decree",
+      "name_zh": "猩红敕令",
+      "url": "https://tlidb.com/cn/Scarlet_Decree",
+      "source_order": 60,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "猩红敕令"
+      }
+    },
+    {
+      "id": "Varagons_Attack",
+      "slug": "Varagons_Attack",
+      "name_zh": "瓦拉冈的狂袭",
+      "url": "https://tlidb.com/cn/Varagons_Attack",
+      "source_order": 61,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "瓦拉冈的狂袭"
+      }
+    },
+    {
+      "id": "Thunder_Branch",
+      "slug": "Thunder_Branch",
+      "name_zh": "雷枝",
+      "url": "https://tlidb.com/cn/Thunder_Branch",
+      "source_order": 62,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "雷枝"
+      }
+    },
+    {
+      "id": "Frozen_Will",
+      "slug": "Frozen_Will",
+      "name_zh": "冰封之志",
+      "url": "https://tlidb.com/cn/Frozen_Will",
+      "source_order": 63,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "冰封之志"
+      }
+    },
+    {
+      "id": "Imploration_Dagger",
+      "slug": "Imploration_Dagger",
+      "name_zh": "求告匕首",
+      "url": "https://tlidb.com/cn/Imploration_Dagger",
+      "source_order": 64,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "求告匕首"
+      }
+    },
+    {
+      "id": "Sun-shooter_Long_Bow",
+      "slug": "Sun-shooter_Long_Bow",
+      "name_zh": "射日长弓",
+      "url": "https://tlidb.com/cn/Sun-shooter_Long_Bow",
+      "source_order": 65,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "射日长弓"
+      }
+    },
+    {
+      "id": "Fire_Lords_Promise",
+      "slug": "Fire_Lords_Promise",
+      "name_zh": "炎魔的允诺",
+      "url": "https://tlidb.com/cn/Fire_Lords_Promise",
+      "source_order": 66,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "炎魔的允诺"
+      }
+    },
+    {
+      "id": "Furious_Mans_Body",
+      "slug": "Furious_Mans_Body",
+      "name_zh": "怒汉之躯",
+      "url": "https://tlidb.com/cn/Furious_Mans_Body",
+      "source_order": 67,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "怒汉之躯"
+      }
+    },
+    {
+      "id": "Magnus_Jealousy",
+      "slug": "Magnus_Jealousy",
+      "name_zh": "玛格努斯的妒火",
+      "url": "https://tlidb.com/cn/Magnus_Jealousy",
+      "source_order": 68,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "玛格努斯的妒火"
+      }
+    },
+    {
+      "id": "Ralphs_Burial",
+      "slug": "Ralphs_Burial",
+      "name_zh": "雷尔夫的骨冢",
+      "url": "https://tlidb.com/cn/Ralphs_Burial",
+      "source_order": 69,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "雷尔夫的骨冢"
+      }
+    },
+    {
+      "id": "Israfels_Sorrow",
+      "slug": "Israfels_Sorrow",
+      "name_zh": "伊斯拉菲尔的悲愿",
+      "url": "https://tlidb.com/cn/Israfels_Sorrow",
+      "source_order": 70,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "伊斯拉菲尔的悲愿"
+      }
+    },
+    {
+      "id": "Genius_Battlegear",
+      "slug": "Genius_Battlegear",
+      "name_zh": "创意作战服",
+      "url": "https://tlidb.com/cn/Genius_Battlegear",
+      "source_order": 71,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "创意作战服"
+      }
+    },
+    {
+      "id": "Vendettas_Sleeve-Blade",
+      "slug": "Vendettas_Sleeve-Blade",
+      "name_zh": "仇弑袖剑",
+      "url": "https://tlidb.com/cn/Vendettas_Sleeve-Blade",
+      "source_order": 72,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "仇弑袖剑"
+      }
+    },
+    {
+      "id": "Searing_Finger_Bone",
+      "slug": "Searing_Finger_Bone",
+      "name_zh": "灼热指骨",
+      "url": "https://tlidb.com/cn/Searing_Finger_Bone",
+      "source_order": 73,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "灼热指骨"
+      }
+    },
+    {
+      "id": "Unholy_Prayer",
+      "slug": "Unholy_Prayer",
+      "name_zh": "污秽祝祷",
+      "url": "https://tlidb.com/cn/Unholy_Prayer",
+      "source_order": 74,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "污秽祝祷"
+      }
+    },
+    {
+      "id": "Ladys_Tears",
+      "slug": "Ladys_Tears",
+      "name_zh": "铃兰",
+      "url": "https://tlidb.com/cn/Ladys_Tears",
+      "source_order": 75,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "铃兰"
+      }
+    },
+    {
+      "id": "Broken_Dream",
+      "slug": "Broken_Dream",
+      "name_zh": "碎梦",
+      "url": "https://tlidb.com/cn/Broken_Dream",
+      "source_order": 76,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "碎梦"
+      }
+    },
+    {
+      "id": "Cry_of_Divinity",
+      "slug": "Cry_of_Divinity",
+      "name_zh": "神性之呼",
+      "url": "https://tlidb.com/cn/Cry_of_Divinity",
+      "source_order": 77,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "神性之呼"
+      }
+    },
+    {
+      "id": "Call_of_Souls",
+      "slug": "Call_of_Souls",
+      "name_zh": "灵魄之应",
+      "url": "https://tlidb.com/cn/Call_of_Souls",
+      "source_order": 78,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "灵魄之应"
+      }
+    },
+    {
+      "id": "Marksman_Bracers",
+      "slug": "Marksman_Bracers",
+      "name_zh": "神射手护腕",
+      "url": "https://tlidb.com/cn/Marksman_Bracers",
+      "source_order": 79,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "神射手护腕"
+      }
+    },
+    {
+      "id": "Vestment_of_Song",
+      "slug": "Vestment_of_Song",
+      "name_zh": "天籁长袍",
+      "url": "https://tlidb.com/cn/Vestment_of_Song",
+      "source_order": 80,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "天籁长袍"
+      }
+    },
+    {
+      "id": "Corrupted_Marrow",
+      "slug": "Corrupted_Marrow",
+      "name_zh": "蚀髓",
+      "url": "https://tlidb.com/cn/Corrupted_Marrow",
+      "source_order": 81,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "蚀髓"
+      }
+    },
+    {
+      "id": "Frozen_Lightning",
+      "slug": "Frozen_Lightning",
+      "name_zh": "冰结雷光",
+      "url": "https://tlidb.com/cn/Frozen_Lightning",
+      "source_order": 82,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "冰结雷光"
+      }
+    },
+    {
+      "id": "Clay_Dolls_Broken_Finger",
+      "slug": "Clay_Dolls_Broken_Finger",
+      "name_zh": "泥偶的断指",
+      "url": "https://tlidb.com/cn/Clay_Dolls_Broken_Finger",
+      "source_order": 83,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "泥偶的断指"
+      }
+    },
+    {
+      "id": "Will",
+      "slug": "Will",
+      "name_zh": "决意",
+      "url": "https://tlidb.com/cn/Will",
+      "source_order": 84,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "决意"
+      }
+    },
+    {
+      "id": "Misubes_Refusal",
+      "slug": "Misubes_Refusal",
+      "name_zh": "密修比的拒绝",
+      "url": "https://tlidb.com/cn/Misubes_Refusal",
+      "source_order": 85,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "密修比的拒绝"
+      }
+    },
+    {
+      "id": "Royal_Guards_Boots",
+      "slug": "Royal_Guards_Boots",
+      "name_zh": "皇家禁卫之靴",
+      "url": "https://tlidb.com/cn/Royal_Guards_Boots",
+      "source_order": 86,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "皇家禁卫之靴"
+      }
+    },
+    {
+      "id": "Tricksters_Tread",
+      "slug": "Tricksters_Tread",
+      "name_zh": "诡行步",
+      "url": "https://tlidb.com/cn/Tricksters_Tread",
+      "source_order": 87,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "诡行步"
+      }
+    },
+    {
+      "id": "Chain_of_Resistance",
+      "slug": "Chain_of_Resistance",
+      "name_zh": "抗争铁链",
+      "url": "https://tlidb.com/cn/Chain_of_Resistance",
+      "source_order": 88,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "抗争铁链"
+      }
+    },
+    {
+      "id": "Mercurial_Torment",
+      "slug": "Mercurial_Torment",
+      "name_zh": "汞海极刑",
+      "url": "https://tlidb.com/cn/Mercurial_Torment",
+      "source_order": 89,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "汞海极刑"
+      }
+    },
+    {
+      "id": "Boom_Gloves",
+      "slug": "Boom_Gloves",
+      "name_zh": "砰砰手套",
+      "url": "https://tlidb.com/cn/Boom_Gloves",
+      "source_order": 90,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "砰砰手套"
+      }
+    },
+    {
+      "id": "Witchdoctors_Herb_Bag",
+      "slug": "Witchdoctors_Herb_Bag",
+      "name_zh": "巫医的草药包",
+      "url": "https://tlidb.com/cn/Witchdoctors_Herb_Bag",
+      "source_order": 91,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "巫医的草药包"
+      }
+    },
+    {
+      "id": "Scorching_Tempo",
+      "slug": "Scorching_Tempo",
+      "name_zh": "狂热节奏",
+      "url": "https://tlidb.com/cn/Scorching_Tempo",
+      "source_order": 92,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "狂热节奏"
+      }
+    },
+    {
+      "id": "Sages_Shackle",
+      "slug": "Sages_Shackle",
+      "name_zh": "贤者的铁枷",
+      "url": "https://tlidb.com/cn/Sages_Shackle",
+      "source_order": 93,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "贤者的铁枷"
+      }
+    },
+    {
+      "id": "Entangled_Root",
+      "slug": "Entangled_Root",
+      "name_zh": "盘根",
+      "url": "https://tlidb.com/cn/Entangled_Root",
+      "source_order": 94,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "盘根"
+      }
+    },
+    {
+      "id": "Oathkeeper",
+      "slug": "Oathkeeper",
+      "name_zh": "立誓",
+      "url": "https://tlidb.com/cn/Oathkeeper",
+      "source_order": 95,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "立誓"
+      }
+    },
+    {
+      "id": "Silent_Aria",
+      "slug": "Silent_Aria",
+      "name_zh": "缄默咏叹",
+      "url": "https://tlidb.com/cn/Silent_Aria",
+      "source_order": 96,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "缄默咏叹"
+      }
+    },
+    {
+      "id": "Gauze_of_Phantom_Sin",
+      "slug": "Gauze_of_Phantom_Sin",
+      "name_zh": "幻罪黑纱",
+      "url": "https://tlidb.com/cn/Gauze_of_Phantom_Sin",
+      "source_order": 97,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "幻罪黑纱"
+      }
+    },
+    {
+      "id": "Varagons_Lament",
+      "slug": "Varagons_Lament",
+      "name_zh": "瓦拉冈悲风",
+      "url": "https://tlidb.com/cn/Varagons_Lament",
+      "source_order": 98,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "瓦拉冈悲风"
+      }
+    },
+    {
+      "id": "Sea_Splitter",
+      "slug": "Sea_Splitter",
+      "name_zh": "断海",
+      "url": "https://tlidb.com/cn/Sea_Splitter",
+      "source_order": 99,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "断海"
+      }
+    },
+    {
+      "id": "Vows_Grasp",
+      "slug": "Vows_Grasp",
+      "name_zh": "孤誓之握",
+      "url": "https://tlidb.com/cn/Vows_Grasp",
+      "source_order": 100,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "孤誓之握"
+      }
+    },
+    {
+      "id": "Tyrants_Smoldering_Hold",
+      "slug": "Tyrants_Smoldering_Hold",
+      "name_zh": "暴君的凶焰",
+      "url": "https://tlidb.com/cn/Tyrants_Smoldering_Hold",
+      "source_order": 101,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "暴君的凶焰"
+      }
+    },
+    {
+      "id": "Alloy_Covenant",
+      "slug": "Alloy_Covenant",
+      "name_zh": "合金圣约",
+      "url": "https://tlidb.com/cn/Alloy_Covenant",
+      "source_order": 102,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "合金圣约"
+      }
+    },
+    {
+      "id": "Providential_Grace",
+      "slug": "Providential_Grace",
+      "name_zh": "神意恩典",
+      "url": "https://tlidb.com/cn/Providential_Grace",
+      "source_order": 103,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "神意恩典"
+      }
+    },
+    {
+      "id": "Hand_of_Malice",
+      "slug": "Hand_of_Malice",
+      "name_zh": "仇恶之手",
+      "url": "https://tlidb.com/cn/Hand_of_Malice",
+      "source_order": 104,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "仇恶之手"
+      }
+    },
+    {
+      "id": "Golden_Touch",
+      "slug": "Golden_Touch",
+      "name_zh": "点金手",
+      "url": "https://tlidb.com/cn/Golden_Touch",
+      "source_order": 105,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "点金手"
+      }
+    },
+    {
+      "id": "Prayer_Bead_of_Evil",
+      "slug": "Prayer_Bead_of_Evil",
+      "name_zh": "颂恶念珠",
+      "url": "https://tlidb.com/cn/Prayer_Bead_of_Evil",
+      "source_order": 106,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "颂恶念珠"
+      }
+    },
+    {
+      "id": "Throat-Slasher",
+      "slug": "Throat-Slasher",
+      "name_zh": "刎颈之刻",
+      "url": "https://tlidb.com/cn/Throat-Slasher",
+      "source_order": 107,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "刎颈之刻"
+      }
+    },
+    {
+      "id": "Imperious_Verdict",
+      "slug": "Imperious_Verdict",
+      "name_zh": "擅断",
+      "url": "https://tlidb.com/cn/Imperious_Verdict",
+      "source_order": 108,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "擅断"
+      }
+    },
+    {
+      "id": "Agony_of_Lost_Self",
+      "slug": "Agony_of_Lost_Self",
+      "name_zh": "舍本之痛",
+      "url": "https://tlidb.com/cn/Agony_of_Lost_Self",
+      "source_order": 109,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "舍本之痛"
+      }
+    },
+    {
+      "id": "Ice_and_Fire",
+      "slug": "Ice_and_Fire",
+      "name_zh": "冰火交融",
+      "url": "https://tlidb.com/cn/Ice_and_Fire",
+      "source_order": 110,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "冰火交融"
+      }
+    },
+    {
+      "id": "Pathfinders_Path",
+      "slug": "Pathfinders_Path",
+      "name_zh": "追迹者步履",
+      "url": "https://tlidb.com/cn/Pathfinders_Path",
+      "source_order": 111,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "追迹者步履"
+      }
+    },
+    {
+      "id": "Necklace_of_Inverse",
+      "slug": "Necklace_of_Inverse",
+      "name_zh": "逆反",
+      "url": "https://tlidb.com/cn/Necklace_of_Inverse",
+      "source_order": 112,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "逆反"
+      }
+    },
+    {
+      "id": "Frostbolt",
+      "slug": "Frostbolt",
+      "name_zh": "霜狱雷鸣",
+      "url": "https://tlidb.com/cn/Frostbolt",
+      "source_order": 113,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "霜狱雷鸣"
+      }
+    },
+    {
+      "id": "Arminius_Guillotine",
+      "slug": "Arminius_Guillotine",
+      "name_zh": "阿米尼乌斯断头台",
+      "url": "https://tlidb.com/cn/Arminius_Guillotine",
+      "source_order": 114,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "阿米尼乌斯断头台"
+      }
+    },
+    {
+      "id": "Highest_Glance",
+      "slug": "Highest_Glance",
+      "name_zh": "至高一瞥",
+      "url": "https://tlidb.com/cn/Highest_Glance",
+      "source_order": 115,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "至高一瞥"
+      }
+    },
+    {
+      "id": "End_Night_Banquet",
+      "slug": "End_Night_Banquet",
+      "name_zh": "终夜狂宴",
+      "url": "https://tlidb.com/cn/End_Night_Banquet",
+      "source_order": 116,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "终夜狂宴"
+      }
+    },
+    {
+      "id": "Ominous_Gift",
+      "slug": "Ominous_Gift",
+      "name_zh": "不详馈赠",
+      "url": "https://tlidb.com/cn/Ominous_Gift",
+      "source_order": 117,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "不详馈赠"
+      }
+    },
+    {
+      "id": "Circular_Clearing",
+      "slug": "Circular_Clearing",
+      "name_zh": "环形清算",
+      "url": "https://tlidb.com/cn/Circular_Clearing",
+      "source_order": 118,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "环形清算"
+      }
+    },
+    {
+      "id": "Cursed_Flame",
+      "slug": "Cursed_Flame",
+      "name_zh": "咒焰",
+      "url": "https://tlidb.com/cn/Cursed_Flame",
+      "source_order": 119,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "咒焰"
+      }
+    },
+    {
+      "id": "Harbingers_Reversed_Plumes",
+      "slug": "Harbingers_Reversed_Plumes",
+      "name_zh": "亡鸟的逆羽",
+      "url": "https://tlidb.com/cn/Harbingers_Reversed_Plumes",
+      "source_order": 120,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "亡鸟的逆羽"
+      }
+    },
+    {
+      "id": "Farewell_Desire",
+      "slug": "Farewell_Desire",
+      "name_zh": "临别索求",
+      "url": "https://tlidb.com/cn/Farewell_Desire",
+      "source_order": 121,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "临别索求"
+      }
+    },
+    {
+      "id": "Fleeting_Regret",
+      "slug": "Fleeting_Regret",
+      "name_zh": "虚握之恨",
+      "url": "https://tlidb.com/cn/Fleeting_Regret",
+      "source_order": 122,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "虚握之恨"
+      }
+    },
+    {
+      "id": "Incorrect_Arbitration",
+      "slug": "Incorrect_Arbitration",
+      "name_zh": "错误仲裁",
+      "url": "https://tlidb.com/cn/Incorrect_Arbitration",
+      "source_order": 123,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "错误仲裁"
+      }
+    },
+    {
+      "id": "Steel_Stagnation",
+      "slug": "Steel_Stagnation",
+      "name_zh": "钢铁凝滞",
+      "url": "https://tlidb.com/cn/Steel_Stagnation",
+      "source_order": 124,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "钢铁凝滞"
+      }
+    },
+    {
+      "id": "Elemental_Whirl",
+      "slug": "Elemental_Whirl",
+      "name_zh": "元素洄旋",
+      "url": "https://tlidb.com/cn/Elemental_Whirl",
+      "source_order": 125,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "元素洄旋"
+      }
+    },
+    {
+      "id": "Flying_Bird",
+      "slug": "Flying_Bird",
+      "name_zh": "飞鸟",
+      "url": "https://tlidb.com/cn/Flying_Bird",
+      "source_order": 126,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "飞鸟"
+      }
+    },
+    {
+      "id": "Memory",
+      "slug": "Memory",
+      "name_zh": "追忆",
+      "url": "https://tlidb.com/cn/Memory",
+      "source_order": 127,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "追忆"
+      }
+    },
+    {
+      "id": "Shadow_of_Thunderlights_Eyes",
+      "slug": "Shadow_of_Thunderlights_Eyes",
+      "name_zh": "雷光绝影的冷眼",
+      "url": "https://tlidb.com/cn/Shadow_of_Thunderlights_Eyes",
+      "source_order": 128,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "雷光绝影的冷眼"
+      }
+    },
+    {
+      "id": "Frantic_Shadow",
+      "slug": "Frantic_Shadow",
+      "name_zh": "乱影",
+      "url": "https://tlidb.com/cn/Frantic_Shadow",
+      "source_order": 129,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "乱影"
+      }
+    },
+    {
+      "id": "Mountain_Howling",
+      "slug": "Mountain_Howling",
+      "name_zh": "山峦尖啸",
+      "url": "https://tlidb.com/cn/Mountain_Howling",
+      "source_order": 130,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "山峦尖啸"
+      }
+    },
+    {
+      "id": "Bow_of_Endless_Dusk",
+      "slug": "Bow_of_Endless_Dusk",
+      "name_zh": "无尽黄昏之弓",
+      "url": "https://tlidb.com/cn/Bow_of_Endless_Dusk",
+      "source_order": 131,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "无尽黄昏之弓"
+      }
+    },
+    {
+      "id": "Glacial_Abyss_Arrow",
+      "slug": "Glacial_Abyss_Arrow",
+      "name_zh": "寒渊箭影",
+      "url": "https://tlidb.com/cn/Glacial_Abyss_Arrow",
+      "source_order": 132,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "寒渊箭影"
+      }
+    },
+    {
+      "id": "King_Lionhearts_Ambition",
+      "slug": "King_Lionhearts_Ambition",
+      "name_zh": "狮心王的热望",
+      "url": "https://tlidb.com/cn/King_Lionhearts_Ambition",
+      "source_order": 133,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "狮心王的热望"
+      }
+    },
+    {
+      "id": "Severed_Wrist",
+      "slug": "Severed_Wrist",
+      "name_zh": "断腕",
+      "url": "https://tlidb.com/cn/Severed_Wrist",
+      "source_order": 134,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "断腕"
+      }
+    },
+    {
+      "id": "Buzzing",
+      "slug": "Buzzing",
+      "name_zh": "蜂鸣",
+      "url": "https://tlidb.com/cn/Buzzing",
+      "source_order": 135,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "蜂鸣"
+      }
+    },
+    {
+      "id": "Gravel",
+      "slug": "Gravel",
+      "name_zh": "砂砾",
+      "url": "https://tlidb.com/cn/Gravel",
+      "source_order": 136,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "砂砾"
+      }
+    },
+    {
+      "id": "Dumb_Voice",
+      "slug": "Dumb_Voice",
+      "name_zh": "喑哑",
+      "url": "https://tlidb.com/cn/Dumb_Voice",
+      "source_order": 137,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "喑哑"
+      }
+    },
+    {
+      "id": "Jumble_Ice",
+      "slug": "Jumble_Ice",
+      "name_zh": "凌汛",
+      "url": "https://tlidb.com/cn/Jumble_Ice",
+      "source_order": 138,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "凌汛"
+      }
+    },
+    {
+      "id": "Shadow_of_Thunderlights_Fury",
+      "slug": "Shadow_of_Thunderlights_Fury",
+      "name_zh": "雷光绝影之怒",
+      "url": "https://tlidb.com/cn/Shadow_of_Thunderlights_Fury",
+      "source_order": 139,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "雷光绝影之怒"
+      }
+    },
+    {
+      "id": "Twisted_Branch",
+      "slug": "Twisted_Branch",
+      "name_zh": "寒枝扭结",
+      "url": "https://tlidb.com/cn/Twisted_Branch",
+      "source_order": 140,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "寒枝扭结"
+      }
+    },
+    {
+      "id": "Oversight",
+      "slug": "Oversight",
+      "name_zh": "智者千虑",
+      "url": "https://tlidb.com/cn/Oversight",
+      "source_order": 141,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "智者千虑"
+      }
+    },
+    {
+      "id": "Supreme_Throne",
+      "slug": "Supreme_Throne",
+      "name_zh": "无上权柄",
+      "url": "https://tlidb.com/cn/Supreme_Throne",
+      "source_order": 142,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "无上权柄"
+      }
+    },
+    {
+      "id": "Fiery_Oath",
+      "slug": "Fiery_Oath",
+      "name_zh": "炎誓",
+      "url": "https://tlidb.com/cn/Fiery_Oath",
+      "source_order": 143,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "炎誓"
+      }
+    },
+    {
+      "id": "Unbreakable_Armor",
+      "slug": "Unbreakable_Armor",
+      "name_zh": "不破胸甲",
+      "url": "https://tlidb.com/cn/Unbreakable_Armor",
+      "source_order": 144,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "不破胸甲"
+      }
+    },
+    {
+      "id": "Dragon_Breath_Armor",
+      "slug": "Dragon_Breath_Armor",
+      "name_zh": "龙息护甲",
+      "url": "https://tlidb.com/cn/Dragon_Breath_Armor",
+      "source_order": 145,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "龙息护甲"
+      }
+    },
+    {
+      "id": "Evil_Heart_Armor",
+      "slug": "Evil_Heart_Armor",
+      "name_zh": "邪心护甲",
+      "url": "https://tlidb.com/cn/Evil_Heart_Armor",
+      "source_order": 146,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "邪心护甲"
+      }
+    },
+    {
+      "id": "Shattered_Moonlight",
+      "slug": "Shattered_Moonlight",
+      "name_zh": "迸碎月光",
+      "url": "https://tlidb.com/cn/Shattered_Moonlight",
+      "source_order": 147,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "迸碎月光"
+      }
+    },
+    {
+      "id": "Crimson_King",
+      "slug": "Crimson_King",
+      "name_zh": "深红之王",
+      "url": "https://tlidb.com/cn/Crimson_King",
+      "source_order": 148,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "深红之王"
+      }
+    },
+    {
+      "id": "Kingly_Armor",
+      "slug": "Kingly_Armor",
+      "name_zh": "王魂护甲",
+      "url": "https://tlidb.com/cn/Kingly_Armor",
+      "source_order": 149,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "王魂护甲"
+      }
+    },
+    {
+      "id": "Iced_Drinkers_Cage",
+      "slug": "Iced_Drinkers_Cage",
+      "name_zh": "饮冰者的樊笼",
+      "url": "https://tlidb.com/cn/Iced_Drinkers_Cage",
+      "source_order": 150,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "饮冰者的樊笼"
+      }
+    },
+    {
+      "id": "Royal_Cycle",
+      "slug": "Royal_Cycle",
+      "name_zh": "王事枯荣",
+      "url": "https://tlidb.com/cn/Royal_Cycle",
+      "source_order": 151,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "王事枯荣"
+      }
+    },
+    {
+      "id": "Undying_Faith",
+      "slug": "Undying_Faith",
+      "name_zh": "不灭信仰",
+      "url": "https://tlidb.com/cn/Undying_Faith",
+      "source_order": 152,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "不灭信仰"
+      }
+    },
+    {
+      "id": "Endless_Fortress",
+      "slug": "Endless_Fortress",
+      "name_zh": "无限要塞",
+      "url": "https://tlidb.com/cn/Endless_Fortress",
+      "source_order": 153,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "无限要塞"
+      }
+    },
+    {
+      "id": "Martyrs_Staff",
+      "slug": "Martyrs_Staff",
+      "name_zh": "殉节神木",
+      "url": "https://tlidb.com/cn/Martyrs_Staff",
+      "source_order": 154,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "殉节神木"
+      }
+    },
+    {
+      "id": "Corrupted_Bulwark",
+      "slug": "Corrupted_Bulwark",
+      "name_zh": "浸蚀壁垒",
+      "url": "https://tlidb.com/cn/Corrupted_Bulwark",
+      "source_order": 155,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "浸蚀壁垒"
+      }
+    },
+    {
+      "id": "Void_Embankment",
+      "slug": "Void_Embankment",
+      "name_zh": "虚空堤岸",
+      "url": "https://tlidb.com/cn/Void_Embankment",
+      "source_order": 156,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "虚空堤岸"
+      }
+    },
+    {
+      "id": "Double_Rainbow",
+      "slug": "Double_Rainbow",
+      "name_zh": "双虹",
+      "url": "https://tlidb.com/cn/Double_Rainbow",
+      "source_order": 157,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "双虹"
+      }
+    },
+    {
+      "id": "Flaming_Evil",
+      "slug": "Flaming_Evil",
+      "name_zh": "噬火之恶",
+      "url": "https://tlidb.com/cn/Flaming_Evil",
+      "source_order": 158,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "噬火之恶"
+      }
+    },
+    {
+      "id": "Frozen_Path",
+      "slug": "Frozen_Path",
+      "name_zh": "冰封行径",
+      "url": "https://tlidb.com/cn/Frozen_Path",
+      "source_order": 159,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "冰封行径"
+      }
+    },
+    {
+      "id": "Fleeting_Sky",
+      "slug": "Fleeting_Sky",
+      "name_zh": "苍蓝刹那",
+      "url": "https://tlidb.com/cn/Fleeting_Sky",
+      "source_order": 160,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "苍蓝刹那"
+      }
+    },
+    {
+      "id": "Cicada_Shell",
+      "slug": "Cicada_Shell",
+      "name_zh": "蝉锐",
+      "url": "https://tlidb.com/cn/Cicada_Shell",
+      "source_order": 161,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "蝉锐"
+      }
+    },
+    {
+      "id": "Heavyware",
+      "slug": "Heavyware",
+      "name_zh": "重器",
+      "url": "https://tlidb.com/cn/Heavyware",
+      "source_order": 162,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "重器"
+      }
+    },
+    {
+      "id": "Stellar_Vestment_of_Eminence",
+      "slug": "Stellar_Vestment_of_Eminence",
+      "name_zh": "恢弘群星法袍",
+      "url": "https://tlidb.com/cn/Stellar_Vestment_of_Eminence",
+      "source_order": 163,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "恢弘群星法袍"
+      }
+    },
+    {
+      "id": "Twilight_Vestment",
+      "slug": "Twilight_Vestment",
+      "name_zh": "薄暮笼罩法袍",
+      "url": "https://tlidb.com/cn/Twilight_Vestment",
+      "source_order": 164,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "薄暮笼罩法袍"
+      }
+    },
+    {
+      "id": "Devouring_Tide",
+      "slug": "Devouring_Tide",
+      "name_zh": "嗜炎之潮",
+      "url": "https://tlidb.com/cn/Devouring_Tide",
+      "source_order": 165,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "嗜炎之潮"
+      }
+    },
+    {
+      "id": "Arrival_of_the_Polar_Night",
+      "slug": "Arrival_of_the_Polar_Night",
+      "name_zh": "极夜照临",
+      "url": "https://tlidb.com/cn/Arrival_of_the_Polar_Night",
+      "source_order": 166,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "极夜照临"
+      }
+    },
+    {
+      "id": "Mere_Eternity",
+      "slug": "Mere_Eternity",
+      "name_zh": "区区永恒",
+      "url": "https://tlidb.com/cn/Mere_Eternity",
+      "source_order": 167,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "区区永恒"
+      }
+    },
+    {
+      "id": "Friend_Nemesis",
+      "slug": "Friend_Nemesis",
+      "name_zh": "密友克星",
+      "url": "https://tlidb.com/cn/Friend_Nemesis",
+      "source_order": 168,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "密友克星"
+      }
+    },
+    {
+      "id": "Mad_Doctors_Silver-Plated_Lung",
+      "slug": "Mad_Doctors_Silver-Plated_Lung",
+      "name_zh": "疯医的镀银肺",
+      "url": "https://tlidb.com/cn/Mad_Doctors_Silver-Plated_Lung",
+      "source_order": 169,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "疯医的镀银肺"
+      }
+    },
+    {
+      "id": "Blight",
+      "slug": "Blight",
+      "name_zh": "恶劫",
+      "url": "https://tlidb.com/cn/Blight",
+      "source_order": 170,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "恶劫"
+      }
+    },
+    {
+      "id": "Ruinous_Star",
+      "slug": "Ruinous_Star",
+      "name_zh": "煞星",
+      "url": "https://tlidb.com/cn/Ruinous_Star",
+      "source_order": 171,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "煞星"
+      }
+    },
+    {
+      "id": "Agonys_Embrace",
+      "slug": "Agonys_Embrace",
+      "name_zh": "苦痛之拥",
+      "url": "https://tlidb.com/cn/Agonys_Embrace",
+      "source_order": 172,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "苦痛之拥"
+      }
+    },
+    {
+      "id": "Lightning_Strikers_Sacrum",
+      "slug": "Lightning_Strikers_Sacrum",
+      "name_zh": "掣电者的骶骨",
+      "url": "https://tlidb.com/cn/Lightning_Strikers_Sacrum",
+      "source_order": 173,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "掣电者的骶骨"
+      }
+    },
+    {
+      "id": "Trinity",
+      "slug": "Trinity",
+      "name_zh": "三相",
+      "url": "https://tlidb.com/cn/Trinity",
+      "source_order": 174,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "三相"
+      }
+    },
+    {
+      "id": "Futile_Tradeoff",
+      "slug": "Futile_Tradeoff",
+      "name_zh": "未果的权衡",
+      "url": "https://tlidb.com/cn/Futile_Tradeoff",
+      "source_order": 175,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "未果的权衡"
+      }
+    },
+    {
+      "id": "Silent_Avowal",
+      "slug": "Silent_Avowal",
+      "name_zh": "无声剖白",
+      "url": "https://tlidb.com/cn/Silent_Avowal",
+      "source_order": 176,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "无声剖白"
+      }
+    },
+    {
+      "id": "The_Three_Saints",
+      "slug": "The_Three_Saints",
+      "name_zh": "三圣",
+      "url": "https://tlidb.com/cn/The_Three_Saints",
+      "source_order": 177,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "三圣"
+      }
+    },
+    {
+      "id": "Silent_Monologue",
+      "slug": "Silent_Monologue",
+      "name_zh": "缄默独白",
+      "url": "https://tlidb.com/cn/Silent_Monologue",
+      "source_order": 178,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "缄默独白"
+      }
+    },
+    {
+      "id": "Uross_Bond",
+      "slug": "Uross_Bond",
+      "name_zh": "乌洛斯的纽带",
+      "url": "https://tlidb.com/cn/Uross_Bond",
+      "source_order": 179,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "乌洛斯的纽带"
+      }
+    },
+    {
+      "id": "Last_Words_of_Chaos",
+      "slug": "Last_Words_of_Chaos",
+      "name_zh": "混沌遗言",
+      "url": "https://tlidb.com/cn/Last_Words_of_Chaos",
+      "source_order": 180,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "混沌遗言"
+      }
+    },
+    {
+      "id": "Legendary_Soldier_Spectacles",
+      "slug": "Legendary_Soldier_Spectacles",
+      "name_zh": "传奇战士护目镜",
+      "url": "https://tlidb.com/cn/Legendary_Soldier_Spectacles",
+      "source_order": 181,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "传奇战士护目镜"
+      }
+    },
+    {
+      "id": "Machine_Lord",
+      "slug": "Machine_Lord",
+      "name_zh": "机械领主",
+      "url": "https://tlidb.com/cn/Machine_Lord",
+      "source_order": 182,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "机械领主"
+      }
+    },
+    {
+      "id": "Opening_Heart",
+      "slug": "Opening_Heart",
+      "name_zh": "敞开心扉",
+      "url": "https://tlidb.com/cn/Opening_Heart",
+      "source_order": 183,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "敞开心扉"
+      }
+    },
+    {
+      "id": "Cold_Breath",
+      "slug": "Cold_Breath",
+      "name_zh": "冰冷呼吸",
+      "url": "https://tlidb.com/cn/Cold_Breath",
+      "source_order": 184,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "冰冷呼吸"
+      }
+    },
+    {
+      "id": "Surging_Inspiration",
+      "slug": "Surging_Inspiration",
+      "name_zh": "涌动灵感",
+      "url": "https://tlidb.com/cn/Surging_Inspiration",
+      "source_order": 185,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "涌动灵感"
+      }
+    },
+    {
+      "id": "Fiend_Crown",
+      "slug": "Fiend_Crown",
+      "name_zh": "邪龙头冠",
+      "url": "https://tlidb.com/cn/Fiend_Crown",
+      "source_order": 186,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "邪龙头冠"
+      }
+    },
+    {
+      "id": "Webbed_Arcane_Headscarf",
+      "slug": "Webbed_Arcane_Headscarf",
+      "name_zh": "蛛网奥秘头巾",
+      "url": "https://tlidb.com/cn/Webbed_Arcane_Headscarf",
+      "source_order": 187,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "蛛网奥秘头巾"
+      }
+    },
+    {
+      "id": "Blind_Vision",
+      "slug": "Blind_Vision",
+      "name_zh": "盲眼之视",
+      "url": "https://tlidb.com/cn/Blind_Vision",
+      "source_order": 188,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "盲眼之视"
+      }
+    },
+    {
+      "id": "Awakening_Skull",
+      "slug": "Awakening_Skull",
+      "name_zh": "苏醒头颅",
+      "url": "https://tlidb.com/cn/Awakening_Skull",
+      "source_order": 189,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "苏醒头颅"
+      }
+    },
+    {
+      "id": "Imperial_Iron_Sentry",
+      "slug": "Imperial_Iron_Sentry",
+      "name_zh": "皇家铁卫",
+      "url": "https://tlidb.com/cn/Imperial_Iron_Sentry",
+      "source_order": 190,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "皇家铁卫"
+      }
+    },
+    {
+      "id": "Tide_of_the_Styx",
+      "slug": "Tide_of_the_Styx",
+      "name_zh": "冥河潮汐",
+      "url": "https://tlidb.com/cn/Tide_of_the_Styx",
+      "source_order": 191,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "冥河潮汐"
+      }
+    },
+    {
+      "id": "Suns_Embrace",
+      "slug": "Suns_Embrace",
+      "name_zh": "烈阳之拥",
+      "url": "https://tlidb.com/cn/Suns_Embrace",
+      "source_order": 192,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "烈阳之拥"
+      }
+    },
+    {
+      "id": "Thunder_Jawbone",
+      "slug": "Thunder_Jawbone",
+      "name_zh": "万雷颚骨",
+      "url": "https://tlidb.com/cn/Thunder_Jawbone",
+      "source_order": 193,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "万雷颚骨"
+      }
+    },
+    {
+      "id": "When_Winter_Comes",
+      "slug": "When_Winter_Comes",
+      "name_zh": "霜起之时",
+      "url": "https://tlidb.com/cn/When_Winter_Comes",
+      "source_order": 194,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "霜起之时"
+      }
+    },
+    {
+      "id": "Fools_Crown",
+      "slug": "Fools_Crown",
+      "name_zh": "愚人的帝冕",
+      "url": "https://tlidb.com/cn/Fools_Crown",
+      "source_order": 195,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "愚人的帝冕"
+      }
+    },
+    {
+      "id": "Divine_Ember",
+      "slug": "Divine_Ember",
+      "name_zh": "神躯燃烬",
+      "url": "https://tlidb.com/cn/Divine_Ember",
+      "source_order": 196,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "神躯燃烬"
+      }
+    },
+    {
+      "id": "Hekates_Vision",
+      "slug": "Hekates_Vision",
+      "name_zh": "巫神视界",
+      "url": "https://tlidb.com/cn/Hekates_Vision",
+      "source_order": 197,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "巫神视界"
+      }
+    },
+    {
+      "id": "Hunting_the_Eye_of_the_Kraken",
+      "slug": "Hunting_the_Eye_of_the_Kraken",
+      "name_zh": "追猎海妖之眼",
+      "url": "https://tlidb.com/cn/Hunting_the_Eye_of_the_Kraken",
+      "source_order": 198,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "追猎海妖之眼"
+      }
+    },
+    {
+      "id": "Flying_Light_at_Daybreak",
+      "slug": "Flying_Light_at_Daybreak",
+      "name_zh": "飞光破晓",
+      "url": "https://tlidb.com/cn/Flying_Light_at_Daybreak",
+      "source_order": 199,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "飞光破晓"
+      }
+    },
+    {
+      "id": "Troublemaker",
+      "slug": "Troublemaker",
+      "name_zh": "捣乱份子",
+      "url": "https://tlidb.com/cn/Troublemaker",
+      "source_order": 200,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "捣乱份子"
+      }
+    },
+    {
+      "id": "Legless_Birds_Lament",
+      "slug": "Legless_Birds_Lament",
+      "name_zh": "无脚鸟的悲啼",
+      "url": "https://tlidb.com/cn/Legless_Birds_Lament",
+      "source_order": 201,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "无脚鸟的悲啼"
+      }
+    },
+    {
+      "id": "Hanging_Two-Tone_Mask",
+      "slug": "Hanging_Two-Tone_Mask",
+      "name_zh": "倒吊的半面",
+      "url": "https://tlidb.com/cn/Hanging_Two-Tone_Mask",
+      "source_order": 202,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "倒吊的半面"
+      }
+    },
+    {
+      "id": "Magnus_Scar",
+      "slug": "Magnus_Scar",
+      "name_zh": "玛格努斯的疤面",
+      "url": "https://tlidb.com/cn/Magnus_Scar",
+      "source_order": 203,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "玛格努斯的疤面"
+      }
+    },
+    {
+      "id": "Headless_Crown",
+      "slug": "Headless_Crown",
+      "name_zh": "无首之冕",
+      "url": "https://tlidb.com/cn/Headless_Crown",
+      "source_order": 204,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "无首之冕"
+      }
+    },
+    {
+      "id": "Solid_River",
+      "slug": "Solid_River",
+      "name_zh": "凝河",
+      "url": "https://tlidb.com/cn/Solid_River",
+      "source_order": 205,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "凝河"
+      }
+    },
+    {
+      "id": "Mask_of_Infernal_Iron",
+      "slug": "Mask_of_Infernal_Iron",
+      "name_zh": "业火的铁面",
+      "url": "https://tlidb.com/cn/Mask_of_Infernal_Iron",
+      "source_order": 206,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "业火的铁面"
+      }
+    },
+    {
+      "id": "Kragols_Roar",
+      "slug": "Kragols_Roar",
+      "name_zh": "克拉戈尔的嘶吼",
+      "url": "https://tlidb.com/cn/Kragols_Roar",
+      "source_order": 207,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "克拉戈尔的嘶吼"
+      }
+    },
+    {
+      "id": "Iron_and_Bloom",
+      "slug": "Iron_and_Bloom",
+      "name_zh": "铁与花",
+      "url": "https://tlidb.com/cn/Iron_and_Bloom",
+      "source_order": 208,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "铁与花"
+      }
+    },
+    {
+      "id": "Malign_Embrace",
+      "slug": "Malign_Embrace",
+      "name_zh": "恶意缠绵",
+      "url": "https://tlidb.com/cn/Malign_Embrace",
+      "source_order": 209,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "恶意缠绵"
+      }
+    },
+    {
+      "id": "Ralphs_Dreadcrest",
+      "slug": "Ralphs_Dreadcrest",
+      "name_zh": "雷尔夫的悍首",
+      "url": "https://tlidb.com/cn/Ralphs_Dreadcrest",
+      "source_order": 210,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "雷尔夫的悍首"
+      }
+    },
+    {
+      "id": "Magmaskull",
+      "slug": "Magmaskull",
+      "name_zh": "熔颅",
+      "url": "https://tlidb.com/cn/Magmaskull",
+      "source_order": 211,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "熔颅"
+      }
+    },
+    {
+      "id": "Contained_Mind",
+      "slug": "Contained_Mind",
+      "name_zh": "缸中之众",
+      "url": "https://tlidb.com/cn/Contained_Mind",
+      "source_order": 212,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "缸中之众"
+      }
+    },
+    {
+      "id": "Praise_for_Injury",
+      "slug": "Praise_for_Injury",
+      "name_zh": "伤损礼赞",
+      "url": "https://tlidb.com/cn/Praise_for_Injury",
+      "source_order": 213,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "伤损礼赞"
+      }
+    },
+    {
+      "id": "Chaos_Abyss",
+      "slug": "Chaos_Abyss",
+      "name_zh": "混沌深渊",
+      "url": "https://tlidb.com/cn/Chaos_Abyss",
+      "source_order": 214,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "混沌深渊"
+      }
+    },
+    {
+      "id": "Sages_Insight",
+      "slug": "Sages_Insight",
+      "name_zh": "贤者的洞察",
+      "url": "https://tlidb.com/cn/Sages_Insight",
+      "source_order": 215,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "贤者的洞察"
+      }
+    },
+    {
+      "id": "Thunder_Manipulator",
+      "slug": "Thunder_Manipulator",
+      "name_zh": "雷霆操纵者",
+      "url": "https://tlidb.com/cn/Thunder_Manipulator",
+      "source_order": 216,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "雷霆操纵者"
+      }
+    },
+    {
+      "id": "Malevolent_Hand",
+      "slug": "Malevolent_Hand",
+      "name_zh": "恶意之手",
+      "url": "https://tlidb.com/cn/Malevolent_Hand",
+      "source_order": 217,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "恶意之手"
+      }
+    },
+    {
+      "id": "Blinding_Bracers",
+      "slug": "Blinding_Bracers",
+      "name_zh": "灼眼战腕",
+      "url": "https://tlidb.com/cn/Blinding_Bracers",
+      "source_order": 218,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "灼眼战腕"
+      }
+    },
+    {
+      "id": "Tyrants_Iron_Fist",
+      "slug": "Tyrants_Iron_Fist",
+      "name_zh": "暴君的铁腕",
+      "url": "https://tlidb.com/cn/Tyrants_Iron_Fist",
+      "source_order": 219,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "暴君的铁腕"
+      }
+    },
+    {
+      "id": "Ardor",
+      "slug": "Ardor",
+      "name_zh": "热忱",
+      "url": "https://tlidb.com/cn/Ardor",
+      "source_order": 220,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "热忱"
+      }
+    },
+    {
+      "id": "Varagon_Shroud",
+      "slug": "Varagon_Shroud",
+      "name_zh": "瓦拉冈裹躯布",
+      "url": "https://tlidb.com/cn/Varagon_Shroud",
+      "source_order": 221,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "瓦拉冈裹躯布"
+      }
+    },
+    {
+      "id": "Ghost_Slaughter",
+      "slug": "Ghost_Slaughter",
+      "name_zh": "鬼途",
+      "url": "https://tlidb.com/cn/Ghost_Slaughter",
+      "source_order": 222,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "鬼途"
+      }
+    },
+    {
+      "id": "Torturers_Touch",
+      "slug": "Torturers_Touch",
+      "name_zh": "刑求之触",
+      "url": "https://tlidb.com/cn/Torturers_Touch",
+      "source_order": 223,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "刑求之触"
+      }
+    },
+    {
+      "id": "Miniature_Void_Sea",
+      "slug": "Miniature_Void_Sea",
+      "name_zh": "掌中虚海",
+      "url": "https://tlidb.com/cn/Miniature_Void_Sea",
+      "source_order": 224,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "掌中虚海"
+      }
+    },
+    {
+      "id": "Wings_of_Light",
+      "slug": "Wings_of_Light",
+      "name_zh": "趋光之翼",
+      "url": "https://tlidb.com/cn/Wings_of_Light",
+      "source_order": 225,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "趋光之翼"
+      }
+    },
+    {
+      "id": "Clenched_Spring",
+      "slug": "Clenched_Spring",
+      "name_zh": "紧握的发条",
+      "url": "https://tlidb.com/cn/Clenched_Spring",
+      "source_order": 226,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "紧握的发条"
+      }
+    },
+    {
+      "id": "Blade-dancers_Fingers",
+      "slug": "Blade-dancers_Fingers",
+      "name_zh": "舞锋者的双指",
+      "url": "https://tlidb.com/cn/Blade-dancers_Fingers",
+      "source_order": 227,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "舞锋者的双指"
+      }
+    },
+    {
+      "id": "Magnus_Laws",
+      "slug": "Magnus_Laws",
+      "name_zh": "玛格努斯的旧律",
+      "url": "https://tlidb.com/cn/Magnus_Laws",
+      "source_order": 228,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "玛格努斯的旧律"
+      }
+    },
+    {
+      "id": "Ralphs_Laws",
+      "slug": "Ralphs_Laws",
+      "name_zh": "雷尔夫的旧律",
+      "url": "https://tlidb.com/cn/Ralphs_Laws",
+      "source_order": 229,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "雷尔夫的旧律"
+      }
+    },
+    {
+      "id": "Israfels_Laws",
+      "slug": "Israfels_Laws",
+      "name_zh": "伊斯拉菲尔的旧律",
+      "url": "https://tlidb.com/cn/Israfels_Laws",
+      "source_order": 230,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "伊斯拉菲尔的旧律"
+      }
+    },
+    {
+      "id": "Aeterna_Martyr",
+      "slug": "Aeterna_Martyr",
+      "name_zh": "殉永恒者",
+      "url": "https://tlidb.com/cn/Aeterna_Martyr",
+      "source_order": 231,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "殉永恒者"
+      }
+    },
+    {
+      "id": "Archmages_Hands",
+      "slug": "Archmages_Hands",
+      "name_zh": "大法师之手",
+      "url": "https://tlidb.com/cn/Archmages_Hands",
+      "source_order": 232,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "大法师之手"
+      }
+    },
+    {
+      "id": "Stray_Birds_Return",
+      "slug": "Stray_Birds_Return",
+      "name_zh": "迷鸟的归栖",
+      "url": "https://tlidb.com/cn/Stray_Birds_Return",
+      "source_order": 233,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "迷鸟的归栖"
+      }
+    },
+    {
+      "id": "Deaths_Touch",
+      "slug": "Deaths_Touch",
+      "name_zh": "凶神之手",
+      "url": "https://tlidb.com/cn/Deaths_Touch",
+      "source_order": 234,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "凶神之手"
+      }
+    },
+    {
+      "id": "Blade-Dancers_Edges",
+      "slug": "Blade-Dancers_Edges",
+      "name_zh": "舞锋者的群锋",
+      "url": "https://tlidb.com/cn/Blade-Dancers_Edges",
+      "source_order": 235,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "舞锋者的群锋"
+      }
+    },
+    {
+      "id": "Quantum_Convergence",
+      "slug": "Quantum_Convergence",
+      "name_zh": "量子汇流",
+      "url": "https://tlidb.com/cn/Quantum_Convergence",
+      "source_order": 236,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "量子汇流"
+      }
+    },
+    {
+      "id": "Grandmasters_Hands",
+      "slug": "Grandmasters_Hands",
+      "name_zh": "宗师之手",
+      "url": "https://tlidb.com/cn/Grandmasters_Hands",
+      "source_order": 237,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "宗师之手"
+      }
+    },
+    {
+      "id": "Vajra_Handguards",
+      "slug": "Vajra_Handguards",
+      "name_zh": "金刚护手",
+      "url": "https://tlidb.com/cn/Vajra_Handguards",
+      "source_order": 238,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "金刚护手"
+      }
+    },
+    {
+      "id": "Grasp_of_Truth",
+      "slug": "Grasp_of_Truth",
+      "name_zh": "真知之握",
+      "url": "https://tlidb.com/cn/Grasp_of_Truth",
+      "source_order": 239,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "真知之握"
+      }
+    },
+    {
+      "id": "Demons_Touch",
+      "slug": "Demons_Touch",
+      "name_zh": "群魔之手",
+      "url": "https://tlidb.com/cn/Demons_Touch",
+      "source_order": 240,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "群魔之手"
+      }
+    },
+    {
+      "id": "Lone_Walkers_Boots",
+      "slug": "Lone_Walkers_Boots",
+      "name_zh": "独行者之靴",
+      "url": "https://tlidb.com/cn/Lone_Walkers_Boots",
+      "source_order": 241,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "独行者之靴"
+      }
+    },
+    {
+      "id": "Resolution_Steps",
+      "slug": "Resolution_Steps",
+      "name_zh": "坚定步伐",
+      "url": "https://tlidb.com/cn/Resolution_Steps",
+      "source_order": 242,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "坚定步伐"
+      }
+    },
+    {
+      "id": "Final_Bastion",
+      "slug": "Final_Bastion",
+      "name_zh": "最后壁垒",
+      "url": "https://tlidb.com/cn/Final_Bastion",
+      "source_order": 243,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "最后壁垒"
+      }
+    },
+    {
+      "id": "Valeries_Night_Stroll",
+      "slug": "Valeries_Night_Stroll",
+      "name_zh": "瓦里哀的夜行",
+      "url": "https://tlidb.com/cn/Valeries_Night_Stroll",
+      "source_order": 244,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "瓦里哀的夜行"
+      }
+    },
+    {
+      "id": "Powered_Battle_Greaves",
+      "slug": "Powered_Battle_Greaves",
+      "name_zh": "动力作战胫甲",
+      "url": "https://tlidb.com/cn/Powered_Battle_Greaves",
+      "source_order": 245,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "动力作战胫甲"
+      }
+    },
+    {
+      "id": "Guild_Guard_Boots",
+      "slug": "Guild_Guard_Boots",
+      "name_zh": "商会护卫战靴",
+      "url": "https://tlidb.com/cn/Guild_Guard_Boots",
+      "source_order": 246,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "商会护卫战靴"
+      }
+    },
+    {
+      "id": "Blade-dancers_Steps",
+      "slug": "Blade-dancers_Steps",
+      "name_zh": "舞锋者的轻踏",
+      "url": "https://tlidb.com/cn/Blade-dancers_Steps",
+      "source_order": 247,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "舞锋者的轻踏"
+      }
+    },
+    {
+      "id": "Kings_Boon",
+      "slug": "Kings_Boon",
+      "name_zh": "君王恩赐",
+      "url": "https://tlidb.com/cn/Kings_Boon",
+      "source_order": 248,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "君王恩赐"
+      }
+    },
+    {
+      "id": "Mind_Infusion",
+      "slug": "Mind_Infusion",
+      "name_zh": "心灵灌注",
+      "url": "https://tlidb.com/cn/Mind_Infusion",
+      "source_order": 249,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "心灵灌注"
+      }
+    },
+    {
+      "id": "Ralphs_Footsteps",
+      "slug": "Ralphs_Footsteps",
+      "name_zh": "雷尔夫的足迹",
+      "url": "https://tlidb.com/cn/Ralphs_Footsteps",
+      "source_order": 250,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "雷尔夫的足迹"
+      }
+    },
+    {
+      "id": "Feline_Steps",
+      "slug": "Feline_Steps",
+      "name_zh": "灵猫步伐",
+      "url": "https://tlidb.com/cn/Feline_Steps",
+      "source_order": 251,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "灵猫步伐"
+      }
+    },
+    {
+      "id": "Rat_Kings_Escape_Show",
+      "slug": "Rat_Kings_Escape_Show",
+      "name_zh": "鼠王的逃生秀",
+      "url": "https://tlidb.com/cn/Rat_Kings_Escape_Show",
+      "source_order": 252,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "鼠王的逃生秀"
+      }
+    },
+    {
+      "id": "Crows_Plume",
+      "slug": "Crows_Plume",
+      "name_zh": "暮鸦尾翎",
+      "url": "https://tlidb.com/cn/Crows_Plume",
+      "source_order": 253,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "暮鸦尾翎"
+      }
+    },
+    {
+      "id": "Shadow_Dance",
+      "slug": "Shadow_Dance",
+      "name_zh": "阴翳舞步",
+      "url": "https://tlidb.com/cn/Shadow_Dance",
+      "source_order": 254,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "阴翳舞步"
+      }
+    },
+    {
+      "id": "Wriggling_Tango",
+      "slug": "Wriggling_Tango",
+      "name_zh": "蠕行探戈",
+      "url": "https://tlidb.com/cn/Wriggling_Tango",
+      "source_order": 255,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "蠕行探戈"
+      }
+    },
+    {
+      "id": "Heels_of_Hands",
+      "slug": "Heels_of_Hands",
+      "name_zh": "三步舞",
+      "url": "https://tlidb.com/cn/Heels_of_Hands",
+      "source_order": 256,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "三步舞"
+      }
+    },
+    {
+      "id": "Boots_of_Devastation",
+      "slug": "Boots_of_Devastation",
+      "name_zh": "破壁战履",
+      "url": "https://tlidb.com/cn/Boots_of_Devastation",
+      "source_order": 257,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "破壁战履"
+      }
+    },
+    {
+      "id": "Fire_Lords_Pyric_Stride",
+      "slug": "Fire_Lords_Pyric_Stride",
+      "name_zh": "炎魔的焚步",
+      "url": "https://tlidb.com/cn/Fire_Lords_Pyric_Stride",
+      "source_order": 258,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "炎魔的焚步"
+      }
+    },
+    {
+      "id": "Verdant_Steps",
+      "slug": "Verdant_Steps",
+      "name_zh": "森罗行迹",
+      "url": "https://tlidb.com/cn/Verdant_Steps",
+      "source_order": 259,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "森罗行迹"
+      }
+    },
+    {
+      "id": "Frozen_Ripples",
+      "slug": "Frozen_Ripples",
+      "name_zh": "冰海涟漪",
+      "url": "https://tlidb.com/cn/Frozen_Ripples",
+      "source_order": 260,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "冰海涟漪"
+      }
+    },
+    {
+      "id": "Beneath_the_Styx",
+      "slug": "Beneath_the_Styx",
+      "name_zh": "冥河之下",
+      "url": "https://tlidb.com/cn/Beneath_the_Styx",
+      "source_order": 261,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "冥河之下"
+      }
+    },
+    {
+      "id": "Arcane_Shield",
+      "slug": "Arcane_Shield",
+      "name_zh": "奥术秘能之盾",
+      "url": "https://tlidb.com/cn/Arcane_Shield",
+      "source_order": 262,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "奥术秘能之盾"
+      }
+    },
+    {
+      "id": "Heavy_Soul",
+      "slug": "Heavy_Soul",
+      "name_zh": "沉重灵魂",
+      "url": "https://tlidb.com/cn/Heavy_Soul",
+      "source_order": 263,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "沉重灵魂"
+      }
+    },
+    {
+      "id": "Electricity_Amplifier",
+      "slug": "Electricity_Amplifier",
+      "name_zh": "电能增幅器",
+      "url": "https://tlidb.com/cn/Electricity_Amplifier",
+      "source_order": 264,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "电能增幅器"
+      }
+    },
+    {
+      "id": "Glacier_Caster_Shield",
+      "slug": "Glacier_Caster_Shield",
+      "name_zh": "冰川魔盾",
+      "url": "https://tlidb.com/cn/Glacier_Caster_Shield",
+      "source_order": 265,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "冰川魔盾"
+      }
+    },
+    {
+      "id": "The_Cowards_Counterfire",
+      "slug": "The_Cowards_Counterfire",
+      "name_zh": "怯懦者的反击",
+      "url": "https://tlidb.com/cn/The_Cowards_Counterfire",
+      "source_order": 266,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "怯懦者的反击"
+      }
+    },
+    {
+      "id": "Fury_Heart",
+      "slug": "Fury_Heart",
+      "name_zh": "狂怒之心",
+      "url": "https://tlidb.com/cn/Fury_Heart",
+      "source_order": 267,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "狂怒之心"
+      }
+    },
+    {
+      "id": "Horn_Ring",
+      "slug": "Horn_Ring",
+      "name_zh": "号令指环",
+      "url": "https://tlidb.com/cn/Horn_Ring",
+      "source_order": 268,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "号令指环"
+      }
+    },
+    {
+      "id": "Decayed_Mind",
+      "slug": "Decayed_Mind",
+      "name_zh": "喑腐神智",
+      "url": "https://tlidb.com/cn/Decayed_Mind",
+      "source_order": 269,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "喑腐神智"
+      }
+    },
+    {
+      "id": "Restless_Glacier",
+      "slug": "Restless_Glacier",
+      "name_zh": "躁动冰河",
+      "url": "https://tlidb.com/cn/Restless_Glacier",
+      "source_order": 270,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "躁动冰河"
+      }
+    },
+    {
+      "id": "Chaotic_Ending",
+      "slug": "Chaotic_Ending",
+      "name_zh": "混乱终焉",
+      "url": "https://tlidb.com/cn/Chaotic_Ending",
+      "source_order": 271,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "混乱终焉"
+      }
+    },
+    {
+      "id": "Exemption_Thunderhell",
+      "slug": "Exemption_Thunderhell",
+      "name_zh": "破厄雷狱",
+      "url": "https://tlidb.com/cn/Exemption_Thunderhell",
+      "source_order": 272,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "破厄雷狱"
+      }
+    },
+    {
+      "id": "Stream_of_Steel",
+      "slug": "Stream_of_Steel",
+      "name_zh": "钢铁涓流",
+      "url": "https://tlidb.com/cn/Stream_of_Steel",
+      "source_order": 273,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "钢铁涓流"
+      }
+    },
+    {
+      "id": "Frozen_Flame",
+      "slug": "Frozen_Flame",
+      "name_zh": "不燃之火",
+      "url": "https://tlidb.com/cn/Frozen_Flame",
+      "source_order": 274,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "不燃之火"
+      }
+    },
+    {
+      "id": "Burning_Ice",
+      "slug": "Burning_Ice",
+      "name_zh": "不冻之冰",
+      "url": "https://tlidb.com/cn/Burning_Ice",
+      "source_order": 275,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "不冻之冰"
+      }
+    },
+    {
+      "id": "Windbreath_Convergence",
+      "slug": "Windbreath_Convergence",
+      "name_zh": "风息之引",
+      "url": "https://tlidb.com/cn/Windbreath_Convergence",
+      "source_order": 276,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "风息之引"
+      }
+    },
+    {
+      "id": "Windbreath_Dispersion",
+      "slug": "Windbreath_Dispersion",
+      "name_zh": "风息之散",
+      "url": "https://tlidb.com/cn/Windbreath_Dispersion",
+      "source_order": 277,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "风息之散"
+      }
+    },
+    {
+      "id": "Traceless_Pain",
+      "slug": "Traceless_Pain",
+      "name_zh": "清净幻痛",
+      "url": "https://tlidb.com/cn/Traceless_Pain",
+      "source_order": 278,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "清净幻痛"
+      }
+    },
+    {
+      "id": "Kaleidoscope",
+      "slug": "Kaleidoscope",
+      "name_zh": "世界流转",
+      "url": "https://tlidb.com/cn/Kaleidoscope",
+      "source_order": 279,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "世界流转"
+      }
+    },
+    {
+      "id": "Folklore_of_Locking_Fingers",
+      "slug": "Folklore_of_Locking_Fingers",
+      "name_zh": "勾指怪谈",
+      "url": "https://tlidb.com/cn/Folklore_of_Locking_Fingers",
+      "source_order": 280,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "勾指怪谈"
+      }
+    },
+    {
+      "id": "Passing_of_Time",
+      "slug": "Passing_of_Time",
+      "name_zh": "时之逝",
+      "url": "https://tlidb.com/cn/Passing_of_Time",
+      "source_order": 281,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "时之逝"
+      }
+    },
+    {
+      "id": "Time_of_Vow",
+      "slug": "Time_of_Vow",
+      "name_zh": "誓之时",
+      "url": "https://tlidb.com/cn/Time_of_Vow",
+      "source_order": 282,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "誓之时"
+      }
+    },
+    {
+      "id": "Heart_of_Rock",
+      "slug": "Heart_of_Rock",
+      "name_zh": "顽石之心",
+      "url": "https://tlidb.com/cn/Heart_of_Rock",
+      "source_order": 283,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "顽石之心"
+      }
+    },
+    {
+      "id": "Heart_of_Magic",
+      "slug": "Heart_of_Magic",
+      "name_zh": "万法之心",
+      "url": "https://tlidb.com/cn/Heart_of_Magic",
+      "source_order": 284,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "万法之心"
+      }
+    },
+    {
+      "id": "Forlorn_Crystal",
+      "slug": "Forlorn_Crystal",
+      "name_zh": "荒芜结晶",
+      "url": "https://tlidb.com/cn/Forlorn_Crystal",
+      "source_order": 285,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "荒芜结晶"
+      }
+    },
+    {
+      "id": "Vortex_Heart",
+      "slug": "Vortex_Heart",
+      "name_zh": "旋流之心",
+      "url": "https://tlidb.com/cn/Vortex_Heart",
+      "source_order": 286,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "旋流之心"
+      }
+    },
+    {
+      "id": "Master_Defender_Pendant",
+      "slug": "Master_Defender_Pendant",
+      "name_zh": "防御宗师吊坠",
+      "url": "https://tlidb.com/cn/Master_Defender_Pendant",
+      "source_order": 287,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "防御宗师吊坠"
+      }
+    },
+    {
+      "id": "Magnus_Mindflame",
+      "slug": "Magnus_Mindflame",
+      "name_zh": "玛格努斯的心火",
+      "url": "https://tlidb.com/cn/Magnus_Mindflame",
+      "source_order": 288,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "玛格努斯的心火"
+      }
+    },
+    {
+      "id": "Truth",
+      "slug": "Truth",
+      "name_zh": "真理",
+      "url": "https://tlidb.com/cn/Truth",
+      "source_order": 289,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "真理"
+      }
+    },
+    {
+      "id": "Wardens_Breastpin",
+      "slug": "Wardens_Breastpin",
+      "name_zh": "典狱官的胸针",
+      "url": "https://tlidb.com/cn/Wardens_Breastpin",
+      "source_order": 290,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "典狱官的胸针"
+      }
+    },
+    {
+      "id": "Ocean_of_Rock",
+      "slug": "Ocean_of_Rock",
+      "name_zh": "磐岩的汪洋",
+      "url": "https://tlidb.com/cn/Ocean_of_Rock",
+      "source_order": 291,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "磐岩的汪洋"
+      }
+    },
+    {
+      "id": "Necklace_of_Firebird",
+      "slug": "Necklace_of_Firebird",
+      "name_zh": "淬火之鸟的颈链",
+      "url": "https://tlidb.com/cn/Necklace_of_Firebird",
+      "source_order": 292,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "淬火之鸟的颈链"
+      }
+    },
+    {
+      "id": "Phantom",
+      "slug": "Phantom",
+      "name_zh": "幻影",
+      "url": "https://tlidb.com/cn/Phantom",
+      "source_order": 293,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "幻影"
+      }
+    },
+    {
+      "id": "Illusory_Ocean_Silk_-_Iron_Rain",
+      "slug": "Illusory_Ocean_Silk_-_Iron_Rain",
+      "name_zh": "幻海缠丝-铁雨",
+      "url": "https://tlidb.com/cn/Illusory_Ocean_Silk_-_Iron_Rain",
+      "source_order": 294,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "幻海缠丝-铁雨"
+      }
+    },
+    {
+      "id": "Illusory_Ocean_Silk_-_Ash",
+      "slug": "Illusory_Ocean_Silk_-_Ash",
+      "name_zh": "幻海缠丝-劫灰",
+      "url": "https://tlidb.com/cn/Illusory_Ocean_Silk_-_Ash",
+      "source_order": 295,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "幻海缠丝-劫灰"
+      }
+    },
+    {
+      "id": "Illusory_Ocean_Silk_-_Thunder",
+      "slug": "Illusory_Ocean_Silk_-_Thunder",
+      "name_zh": "幻海缠丝-厉雷",
+      "url": "https://tlidb.com/cn/Illusory_Ocean_Silk_-_Thunder",
+      "source_order": 296,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "幻海缠丝-厉雷"
+      }
+    },
+    {
+      "id": "Illusory_Ocean_Silk_-_Chilly",
+      "slug": "Illusory_Ocean_Silk_-_Chilly",
+      "name_zh": "幻海缠丝-苦寒",
+      "url": "https://tlidb.com/cn/Illusory_Ocean_Silk_-_Chilly",
+      "source_order": 297,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "幻海缠丝-苦寒"
+      }
+    },
+    {
+      "id": "Illusory_Ocean_Silk_-_Unreal",
+      "slug": "Illusory_Ocean_Silk_-_Unreal",
+      "name_zh": "幻海缠丝-虚妄",
+      "url": "https://tlidb.com/cn/Illusory_Ocean_Silk_-_Unreal",
+      "source_order": 298,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "幻海缠丝-虚妄"
+      }
+    },
+    {
+      "id": "Broken_Sun_Ring",
+      "slug": "Broken_Sun_Ring",
+      "name_zh": "破碎日环",
+      "url": "https://tlidb.com/cn/Broken_Sun_Ring",
+      "source_order": 299,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "破碎日环"
+      }
+    },
+    {
+      "id": "Crimson_Gash",
+      "slug": "Crimson_Gash",
+      "name_zh": "深红之刎",
+      "url": "https://tlidb.com/cn/Crimson_Gash",
+      "source_order": 300,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "深红之刎"
+      }
+    },
+    {
+      "id": "Clarity",
+      "slug": "Clarity",
+      "name_zh": "洞明",
+      "url": "https://tlidb.com/cn/Clarity",
+      "source_order": 301,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "洞明"
+      }
+    },
+    {
+      "id": "Chain_behind_the_Curtain",
+      "slug": "Chain_behind_the_Curtain",
+      "name_zh": "操幕之链",
+      "url": "https://tlidb.com/cn/Chain_behind_the_Curtain",
+      "source_order": 302,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "操幕之链"
+      }
+    },
+    {
+      "id": "Strange_Snow",
+      "slug": "Strange_Snow",
+      "name_zh": "畸雪",
+      "url": "https://tlidb.com/cn/Strange_Snow",
+      "source_order": 303,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "畸雪"
+      }
+    },
+    {
+      "id": "False_Gods_Skin",
+      "slug": "False_Gods_Skin",
+      "name_zh": "伪神之蜕",
+      "url": "https://tlidb.com/cn/False_Gods_Skin",
+      "source_order": 304,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "伪神之蜕"
+      }
+    },
+    {
+      "id": "Rat_Kings_Megagon_Dice",
+      "slug": "Rat_Kings_Megagon_Dice",
+      "name_zh": "鼠王的百面骰",
+      "url": "https://tlidb.com/cn/Rat_Kings_Megagon_Dice",
+      "source_order": 305,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "鼠王的百面骰"
+      }
+    },
+    {
+      "id": "Iron_Nest",
+      "slug": "Iron_Nest",
+      "name_zh": "铁巢",
+      "url": "https://tlidb.com/cn/Iron_Nest",
+      "source_order": 306,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "铁巢"
+      }
+    },
+    {
+      "id": "Elegy_of_Immortality",
+      "slug": "Elegy_of_Immortality",
+      "name_zh": "永生挽歌",
+      "url": "https://tlidb.com/cn/Elegy_of_Immortality",
+      "source_order": 307,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "永生挽歌"
+      }
+    },
+    {
+      "id": "Howling_Wind",
+      "slug": "Howling_Wind",
+      "name_zh": "劲风起时",
+      "url": "https://tlidb.com/cn/Howling_Wind",
+      "source_order": 308,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "劲风起时"
+      }
+    },
+    {
+      "id": "Decaying_Blessing",
+      "slug": "Decaying_Blessing",
+      "name_zh": "腐殖恩泽",
+      "url": "https://tlidb.com/cn/Decaying_Blessing",
+      "source_order": 309,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "腐殖恩泽"
+      }
+    },
+    {
+      "id": "Heart_of_the_Storm",
+      "slug": "Heart_of_the_Storm",
+      "name_zh": "风暴之心",
+      "url": "https://tlidb.com/cn/Heart_of_the_Storm",
+      "source_order": 310,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "风暴之心"
+      }
+    },
+    {
+      "id": "Coldness_Tracers_Tear",
+      "slug": "Coldness_Tracers_Tear",
+      "name_zh": "溯寒者的鸣泣",
+      "url": "https://tlidb.com/cn/Coldness_Tracers_Tear",
+      "source_order": 311,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "溯寒者的鸣泣"
+      }
+    },
+    {
+      "id": "Mortals_Reverie",
+      "slug": "Mortals_Reverie",
+      "name_zh": "凡夫的梦",
+      "url": "https://tlidb.com/cn/Mortals_Reverie",
+      "source_order": 312,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "凡夫的梦"
+      }
+    },
+    {
+      "id": "Heart_of_Animitta",
+      "slug": "Heart_of_Animitta",
+      "name_zh": "无相禅心",
+      "url": "https://tlidb.com/cn/Heart_of_Animitta",
+      "source_order": 313,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "无相禅心"
+      }
+    },
+    {
+      "id": "Law_of_Greed",
+      "slug": "Law_of_Greed",
+      "name_zh": "不轨律",
+      "url": "https://tlidb.com/cn/Law_of_Greed",
+      "source_order": 314,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "不轨律"
+      }
+    },
+    {
+      "id": "Old_Grudge",
+      "slug": "Old_Grudge",
+      "name_zh": "旧怨",
+      "url": "https://tlidb.com/cn/Old_Grudge",
+      "source_order": 315,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "旧怨"
+      }
+    },
+    {
+      "id": "Eternal_Sun",
+      "slug": "Eternal_Sun",
+      "name_zh": "永恒日轮",
+      "url": "https://tlidb.com/cn/Eternal_Sun",
+      "source_order": 316,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "永恒日轮"
+      }
+    },
+    {
+      "id": "Insulation",
+      "slug": "Insulation",
+      "name_zh": "绝缘",
+      "url": "https://tlidb.com/cn/Insulation",
+      "source_order": 317,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "绝缘"
+      }
+    },
+    {
+      "id": "Strayed_Healers_Waistguard",
+      "slug": "Strayed_Healers_Waistguard",
+      "name_zh": "歧路药师护腰",
+      "url": "https://tlidb.com/cn/Strayed_Healers_Waistguard",
+      "source_order": 318,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "歧路药师护腰"
+      }
+    },
+    {
+      "id": "Confusion_Elemental_Belt",
+      "slug": "Confusion_Elemental_Belt",
+      "name_zh": "混乱元素腰带",
+      "url": "https://tlidb.com/cn/Confusion_Elemental_Belt",
+      "source_order": 319,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "混乱元素腰带"
+      }
+    },
+    {
+      "id": "Pale_Mists_Embrace",
+      "slug": "Pale_Mists_Embrace",
+      "name_zh": "苍白云雾之拥",
+      "url": "https://tlidb.com/cn/Pale_Mists_Embrace",
+      "source_order": 320,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "苍白云雾之拥"
+      }
+    },
+    {
+      "id": "Winter_of_Origin",
+      "slug": "Winter_of_Origin",
+      "name_zh": "原点的寒冬",
+      "url": "https://tlidb.com/cn/Winter_of_Origin",
+      "source_order": 321,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "原点的寒冬"
+      }
+    },
+    {
+      "id": "Compensatory_Life",
+      "slug": "Compensatory_Life",
+      "name_zh": "生息代偿",
+      "url": "https://tlidb.com/cn/Compensatory_Life",
+      "source_order": 322,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "生息代偿"
+      }
+    },
+    {
+      "id": "Everburn_Thunderfire",
+      "slug": "Everburn_Thunderfire",
+      "name_zh": "永燃雷火",
+      "url": "https://tlidb.com/cn/Everburn_Thunderfire",
+      "source_order": 323,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "永燃雷火"
+      }
+    },
+    {
+      "id": "Light_Hunter_Belt",
+      "slug": "Light_Hunter_Belt",
+      "name_zh": "猎光腰带",
+      "url": "https://tlidb.com/cn/Light_Hunter_Belt",
+      "source_order": 324,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "猎光腰带"
+      }
+    },
+    {
+      "id": "Embrace_of_the_Dark_Surge",
+      "slug": "Embrace_of_the_Dark_Surge",
+      "name_zh": "黑潮之拥",
+      "url": "https://tlidb.com/cn/Embrace_of_the_Dark_Surge",
+      "source_order": 325,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "黑潮之拥"
+      }
+    },
+    {
+      "id": "Polygonal_Enclosure",
+      "slug": "Polygonal_Enclosure",
+      "name_zh": "多棱之围",
+      "url": "https://tlidb.com/cn/Polygonal_Enclosure",
+      "source_order": 326,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "多棱之围"
+      }
+    },
+    {
+      "id": "Corrosion_of_Manifolds",
+      "slug": "Corrosion_of_Manifolds",
+      "name_zh": "流形之蚀",
+      "url": "https://tlidb.com/cn/Corrosion_of_Manifolds",
+      "source_order": 327,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "流形之蚀"
+      }
+    },
+    {
+      "id": "Eternal_Sea_Fog",
+      "slug": "Eternal_Sea_Fog",
+      "name_zh": "虚海永雾",
+      "url": "https://tlidb.com/cn/Eternal_Sea_Fog",
+      "source_order": 328,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "虚海永雾"
+      }
+    },
+    {
+      "id": "Formation_Breaker",
+      "slug": "Formation_Breaker",
+      "name_zh": "破阵",
+      "url": "https://tlidb.com/cn/Formation_Breaker",
+      "source_order": 329,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "破阵"
+      }
+    },
+    {
+      "id": "Rat_Herders_Golden_Rein",
+      "slug": "Rat_Herders_Golden_Rein",
+      "name_zh": "牧鼠人的金缰绳",
+      "url": "https://tlidb.com/cn/Rat_Herders_Golden_Rein",
+      "source_order": 330,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "牧鼠人的金缰绳"
+      }
+    },
+    {
+      "id": "Hot_Nights_Embrace",
+      "slug": "Hot_Nights_Embrace",
+      "name_zh": "热夜的轻拥",
+      "url": "https://tlidb.com/cn/Hot_Nights_Embrace",
+      "source_order": 331,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "热夜的轻拥"
+      }
+    },
+    {
+      "id": "Dawn_Break",
+      "slug": "Dawn_Break",
+      "name_zh": "破晓",
+      "url": "https://tlidb.com/cn/Dawn_Break",
+      "source_order": 332,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "破晓"
+      }
+    },
+    {
+      "id": "Bodhi_Girdle",
+      "slug": "Bodhi_Girdle",
+      "name_zh": "达摩束带",
+      "url": "https://tlidb.com/cn/Bodhi_Girdle",
+      "source_order": 333,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "达摩束带"
+      }
+    },
+    {
+      "id": "Silent_Observer",
+      "slug": "Silent_Observer",
+      "name_zh": "静观",
+      "url": "https://tlidb.com/cn/Silent_Observer",
+      "source_order": 334,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "静观"
+      }
+    },
+    {
+      "id": "Tranquil_Stir",
+      "slug": "Tranquil_Stir",
+      "name_zh": "静谧波澜",
+      "url": "https://tlidb.com/cn/Tranquil_Stir",
+      "source_order": 335,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "静谧波澜"
+      }
+    },
+    {
+      "id": "Omni-Elixir_Notes",
+      "slug": "Omni-Elixir_Notes",
+      "name_zh": "万灵药的尾调",
+      "url": "https://tlidb.com/cn/Omni-Elixir_Notes",
+      "source_order": 336,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "万灵药的尾调"
+      }
+    },
+    {
+      "id": "Eternity",
+      "slug": "Eternity",
+      "name_zh": "永恒",
+      "url": "https://tlidb.com/cn/Eternity",
+      "source_order": 337,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "永恒"
+      }
+    },
+    {
+      "id": "Pantheons_Elegy",
+      "slug": "Pantheons_Elegy",
+      "name_zh": "悼神",
+      "url": "https://tlidb.com/cn/Pantheons_Elegy",
+      "source_order": 338,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "传奇装备 /341",
+        "link_text": "悼神"
+      }
+    }
+  ]
+}

@@ -1,0 +1,362 @@
+{
+  "schema_version": 1,
+  "source": {
+    "site": "tlidb",
+    "locale": "cn",
+    "index_url": "https://tlidb.com/cn/Activation_Medium_Skill",
+    "fetched_at": "2026-08-06T13:40:21.886215+00:00",
+    "http_status": 200,
+    "html_sha256": "ed34ab48ba777d084a416b73c8f6bab713ba2481fc9f57bbaaabe2e33a65cdbd"
+  },
+  "system_id": "activation_medium_skill",
+  "entity_type": "activation_medium_skill",
+  "displayed_entry_count": 28,
+  "unique_entry_count": 28,
+  "duplicate_occurrence_count": 0,
+  "discovery_confidence": 0.99,
+  "quality": {
+    "displayed_entry_count": 28,
+    "unique_entry_count": 28,
+    "duplicate_occurrence_count": 0,
+    "discovery_confidence": 0.99,
+    "warnings": []
+  },
+  "entries": [
+    {
+      "id": "Activation_Medium:_Preparation",
+      "slug": "Activation_Medium:_Preparation",
+      "name_zh": "触媒：预备",
+      "url": "https://tlidb.com/cn/Activation_Medium%3A_Preparation",
+      "source_order": 0,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "触媒技能 Tag /28",
+        "link_text": "触媒：预备"
+      }
+    },
+    {
+      "id": "Activation_Medium:_Perpetual_Motion",
+      "slug": "Activation_Medium:_Perpetual_Motion",
+      "name_zh": "触媒：永动",
+      "url": "https://tlidb.com/cn/Activation_Medium%3A_Perpetual_Motion",
+      "source_order": 1,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "触媒技能 Tag /28",
+        "link_text": "触媒：永动"
+      }
+    },
+    {
+      "id": "Activation_Medium:_Elite",
+      "slug": "Activation_Medium:_Elite",
+      "name_zh": "触媒：劲敌",
+      "url": "https://tlidb.com/cn/Activation_Medium%3A_Elite",
+      "source_order": 2,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "触媒技能 Tag /28",
+        "link_text": "触媒：劲敌"
+      }
+    },
+    {
+      "id": "Activation_Medium:_Boss",
+      "slug": "Activation_Medium:_Boss",
+      "name_zh": "触媒：首领",
+      "url": "https://tlidb.com/cn/Activation_Medium%3A_Boss",
+      "source_order": 3,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "触媒技能 Tag /28",
+        "link_text": "触媒：首领"
+      }
+    },
+    {
+      "id": "Activation_Medium:_Life",
+      "slug": "Activation_Medium:_Life",
+      "name_zh": "触媒：生命",
+      "url": "https://tlidb.com/cn/Activation_Medium%3A_Life",
+      "source_order": 4,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "触媒技能 Tag /28",
+        "link_text": "触媒：生命"
+      }
+    },
+    {
+      "id": "Activation_Medium:_Energy_Shield",
+      "slug": "Activation_Medium:_Energy_Shield",
+      "name_zh": "触媒：护盾",
+      "url": "https://tlidb.com/cn/Activation_Medium%3A_Energy_Shield",
+      "source_order": 5,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "触媒技能 Tag /28",
+        "link_text": "触媒：护盾"
+      }
+    },
+    {
+      "id": "Activation_Medium:_Severe_Injury",
+      "slug": "Activation_Medium:_Severe_Injury",
+      "name_zh": "触媒：重创",
+      "url": "https://tlidb.com/cn/Activation_Medium%3A_Severe_Injury",
+      "source_order": 6,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "触媒技能 Tag /28",
+        "link_text": "触媒：重创"
+      }
+    },
+    {
+      "id": "Activation_Medium:_Multistrike",
+      "slug": "Activation_Medium:_Multistrike",
+      "name_zh": "触媒：连续攻击",
+      "url": "https://tlidb.com/cn/Activation_Medium%3A_Multistrike",
+      "source_order": 7,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "触媒技能 Tag /28",
+        "link_text": "触媒：连续攻击"
+      }
+    },
+    {
+      "id": "Activation_Medium:_Demolisher",
+      "slug": "Activation_Medium:_Demolisher",
+      "name_zh": "触媒：破击",
+      "url": "https://tlidb.com/cn/Activation_Medium%3A_Demolisher",
+      "source_order": 8,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "触媒技能 Tag /28",
+        "link_text": "触媒：破击"
+      }
+    },
+    {
+      "id": "Activation_Medium:_Spell_Burst",
+      "slug": "Activation_Medium:_Spell_Burst",
+      "name_zh": "触媒：法术迸发",
+      "url": "https://tlidb.com/cn/Activation_Medium%3A_Spell_Burst",
+      "source_order": 9,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "触媒技能 Tag /28",
+        "link_text": "触媒：法术迸发"
+      }
+    },
+    {
+      "id": "Activation_Medium:_Start",
+      "slug": "Activation_Medium:_Start",
+      "name_zh": "触媒：起步",
+      "url": "https://tlidb.com/cn/Activation_Medium%3A_Start",
+      "source_order": 10,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "触媒技能 Tag /28",
+        "link_text": "触媒：起步"
+      }
+    },
+    {
+      "id": "Activation_Medium:_Root",
+      "slug": "Activation_Medium:_Root",
+      "name_zh": "触媒：止步",
+      "url": "https://tlidb.com/cn/Activation_Medium%3A_Root",
+      "source_order": 11,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "触媒技能 Tag /28",
+        "link_text": "触媒：止步"
+      }
+    },
+    {
+      "id": "Activation_Medium:_Resonance_Activation",
+      "slug": "Activation_Medium:_Resonance_Activation",
+      "name_zh": "触媒：激活共鸣",
+      "url": "https://tlidb.com/cn/Activation_Medium%3A_Resonance_Activation",
+      "source_order": 12,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "触媒技能 Tag /28",
+        "link_text": "触媒：激活共鸣"
+      }
+    },
+    {
+      "id": "Activation_Medium:_Resonance",
+      "slug": "Activation_Medium:_Resonance",
+      "name_zh": "触媒：共鸣",
+      "url": "https://tlidb.com/cn/Activation_Medium%3A_Resonance",
+      "source_order": 13,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "触媒技能 Tag /28",
+        "link_text": "触媒：共鸣"
+      }
+    },
+    {
+      "id": "Activation_Medium:_Rhythm",
+      "slug": "Activation_Medium:_Rhythm",
+      "name_zh": "触媒：律动",
+      "url": "https://tlidb.com/cn/Activation_Medium%3A_Rhythm",
+      "source_order": 14,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "触媒技能 Tag /28",
+        "link_text": "触媒：律动"
+      }
+    },
+    {
+      "id": "Activation_Medium:_Wind_Rhythm",
+      "slug": "Activation_Medium:_Wind_Rhythm",
+      "name_zh": "触媒：疾风律动",
+      "url": "https://tlidb.com/cn/Activation_Medium%3A_Wind_Rhythm",
+      "source_order": 15,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "触媒技能 Tag /28",
+        "link_text": "触媒：疾风律动"
+      }
+    },
+    {
+      "id": "Activation_Medium:_Root_Attack",
+      "slug": "Activation_Medium:_Root_Attack",
+      "name_zh": "触媒：止步攻击",
+      "url": "https://tlidb.com/cn/Activation_Medium%3A_Root_Attack",
+      "source_order": 16,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "触媒技能 Tag /28",
+        "link_text": "触媒：止步攻击"
+      }
+    },
+    {
+      "id": "Activation_Medium:_Still_Attack",
+      "slug": "Activation_Medium:_Still_Attack",
+      "name_zh": "触媒：静止攻击",
+      "url": "https://tlidb.com/cn/Activation_Medium%3A_Still_Attack",
+      "source_order": 17,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "触媒技能 Tag /28",
+        "link_text": "触媒：静止攻击"
+      }
+    },
+    {
+      "id": "Activation_Medium:_Sentry",
+      "slug": "Activation_Medium:_Sentry",
+      "name_zh": "触媒：哨卫",
+      "url": "https://tlidb.com/cn/Activation_Medium%3A_Sentry",
+      "source_order": 18,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "触媒技能 Tag /28",
+        "link_text": "触媒：哨卫"
+      }
+    },
+    {
+      "id": "Activation_Medium:_Minion",
+      "slug": "Activation_Medium:_Minion",
+      "name_zh": "触媒：召唤物",
+      "url": "https://tlidb.com/cn/Activation_Medium%3A_Minion",
+      "source_order": 19,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "触媒技能 Tag /28",
+        "link_text": "触媒：召唤物"
+      }
+    },
+    {
+      "id": "Activation_Medium:_Critical_Strike",
+      "slug": "Activation_Medium:_Critical_Strike",
+      "name_zh": "触媒：暴击",
+      "url": "https://tlidb.com/cn/Activation_Medium%3A_Critical_Strike",
+      "source_order": 20,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "触媒技能 Tag /28",
+        "link_text": "触媒：暴击"
+      }
+    },
+    {
+      "id": "Activation_Medium:_Channel",
+      "slug": "Activation_Medium:_Channel",
+      "name_zh": "触媒：引导",
+      "url": "https://tlidb.com/cn/Activation_Medium%3A_Channel",
+      "source_order": 21,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "触媒技能 Tag /28",
+        "link_text": "触媒：引导"
+      }
+    },
+    {
+      "id": "Activation_Medium:_Instruction",
+      "slug": "Activation_Medium:_Instruction",
+      "name_zh": "触媒：指令",
+      "url": "https://tlidb.com/cn/Activation_Medium%3A_Instruction",
+      "source_order": 22,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "触媒技能 Tag /28",
+        "link_text": "触媒：指令"
+      }
+    },
+    {
+      "id": "Activation_Medium:_Lock_On",
+      "slug": "Activation_Medium:_Lock_On",
+      "name_zh": "触媒：锁定",
+      "url": "https://tlidb.com/cn/Activation_Medium%3A_Lock_On",
+      "source_order": 23,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "触媒技能 Tag /28",
+        "link_text": "触媒：锁定"
+      }
+    },
+    {
+      "id": "Activation_Medium:_Track",
+      "slug": "Activation_Medium:_Track",
+      "name_zh": "触媒：追踪",
+      "url": "https://tlidb.com/cn/Activation_Medium%3A_Track",
+      "source_order": 24,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "触媒技能 Tag /28",
+        "link_text": "触媒：追踪"
+      }
+    },
+    {
+      "id": "Activation_Medium:_Burst_Activation",
+      "slug": "Activation_Medium:_Burst_Activation",
+      "name_zh": "触媒：激活迸发",
+      "url": "https://tlidb.com/cn/Activation_Medium%3A_Burst_Activation",
+      "source_order": 25,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "触媒技能 Tag /28",
+        "link_text": "触媒：激活迸发"
+      }
+    },
+    {
+      "id": "Activation_Medium:_Motionless",
+      "slug": "Activation_Medium:_Motionless",
+      "name_zh": "触媒：静止",
+      "url": "https://tlidb.com/cn/Activation_Medium%3A_Motionless",
+      "source_order": 26,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "触媒技能 Tag /28",
+        "link_text": "触媒：静止"
+      }
+    },
+    {
+      "id": "Activation_Medium:_Tangle",
+      "slug": "Activation_Medium:_Tangle",
+      "name_zh": "触媒：纠缠",
+      "url": "https://tlidb.com/cn/Activation_Medium%3A_Tangle",
+      "source_order": 27,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "触媒技能 Tag /28",
+        "link_text": "触媒：纠缠"
+      }
+    }
+  ]
+}

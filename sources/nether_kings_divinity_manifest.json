@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "source": {
+    "site": "tlidb",
+    "locale": "cn",
+    "index_url": "https://tlidb.com/cn/Nether_Kings_Divinity",
+    "fetched_at": "2026-08-06T13:40:36.085429+00:00",
+    "http_status": 200,
+    "html_sha256": "2273c5c6fd912d530a526288af32ecb0e1d41a4f82651414caaeef1e8e5a7307"
+  },
+  "system_id": "nether_kings_divinity",
+  "entity_type": "nether_kings_divinity",
+  "displayed_entry_count": 3,
+  "unique_entry_count": 3,
+  "duplicate_occurrence_count": 0,
+  "discovery_confidence": 0.89,
+  "quality": {
+    "displayed_entry_count": 3,
+    "unique_entry_count": 3,
+    "duplicate_occurrence_count": 0,
+    "discovery_confidence": 0.89,
+    "warnings": []
+  },
+  "entries": [
+    {
+      "id": "Nether_Kings_Divinity:_Judgment",
+      "slug": "Nether_Kings_Divinity:_Judgment",
+      "name_zh": "冥王的神格：审判",
+      "url": "https://tlidb.com/cn/Nether_Kings_Divinity%3A_Judgment",
+      "source_order": 0,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /3",
+        "link_text": "冥王的神格：审判"
+      }
+    },
+    {
+      "id": "Nether_Kings_Divinity:_Contamination",
+      "slug": "Nether_Kings_Divinity:_Contamination",
+      "name_zh": "冥王的神格：侵染",
+      "url": "https://tlidb.com/cn/Nether_Kings_Divinity%3A_Contamination",
+      "source_order": 1,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /3",
+        "link_text": "冥王的神格：侵染"
+      }
+    },
+    {
+      "id": "Nether_Kings_Divinity:_Banishment",
+      "slug": "Nether_Kings_Divinity:_Banishment",
+      "name_zh": "冥王的神格：放逐",
+      "url": "https://tlidb.com/cn/Nether_Kings_Divinity%3A_Banishment",
+      "source_order": 2,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /3",
+        "link_text": "冥王的神格：放逐"
+      }
+    }
+  ]
+}

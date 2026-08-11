@@ -1,0 +1,833 @@
+{
+  "schema_version": 1,
+  "source": {
+    "site": "tlidb",
+    "locale": "cn",
+    "index_url": "https://tlidb.com/cn/Help",
+    "fetched_at": "2026-08-06T13:40:39.111355+00:00",
+    "http_status": 200,
+    "html_sha256": "cce692285ccdf2ab4f96faabfc4bbaafed07f65e92bc2c882979a549b26d9307"
+  },
+  "system_id": "help",
+  "entity_type": "help",
+  "displayed_entry_count": 71,
+  "unique_entry_count": 67,
+  "duplicate_occurrence_count": 3,
+  "discovery_confidence": 0.84,
+  "quality": {
+    "displayed_entry_count": 71,
+    "unique_entry_count": 67,
+    "duplicate_occurrence_count": 3,
+    "discovery_confidence": 0.84,
+    "warnings": [
+      "3 duplicate link occurrence(s) removed",
+      "displayed count 71 does not match unique count 67"
+    ]
+  },
+  "entries": [
+    {
+      "id": "Character_Build",
+      "slug": "Character_Build",
+      "name_zh": "养成-生命",
+      "url": "https://tlidb.com/cn/Character_Build",
+      "source_order": 0,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "养成-生命"
+      }
+    },
+    {
+      "id": "Skill",
+      "slug": "Skill",
+      "name_zh": "技能-辅助技能",
+      "url": "https://tlidb.com/cn/Skill",
+      "source_order": 1,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "技能-辅助技能"
+      }
+    },
+    {
+      "id": "Talent",
+      "slug": "Talent",
+      "name_zh": "天赋",
+      "url": "https://tlidb.com/cn/Talent",
+      "source_order": 2,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "天赋"
+      }
+    },
+    {
+      "id": "Core_Talent_Node",
+      "slug": "Core_Talent_Node",
+      "name_zh": "核心天赋点",
+      "url": "https://tlidb.com/cn/Core_Talent_Node",
+      "source_order": 3,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "核心天赋点"
+      }
+    },
+    {
+      "id": "Hero_Trait",
+      "slug": "Hero_Trait",
+      "name_zh": "英雄特性",
+      "url": "https://tlidb.com/cn/Hero_Trait",
+      "source_order": 4,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "英雄特性"
+      }
+    },
+    {
+      "id": "Reward",
+      "slug": "Reward",
+      "name_zh": "奖励",
+      "url": "https://tlidb.com/cn/Reward",
+      "source_order": 5,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "奖励"
+      }
+    },
+    {
+      "id": "Gear",
+      "slug": "Gear",
+      "name_zh": "装备-物品等级",
+      "url": "https://tlidb.com/cn/Gear",
+      "source_order": 6,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "装备-物品等级"
+      }
+    },
+    {
+      "id": "Monster",
+      "slug": "Monster",
+      "name_zh": "怪物-怪物稀有度",
+      "url": "https://tlidb.com/cn/Monster",
+      "source_order": 7,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "怪物-怪物稀有度"
+      }
+    },
+    {
+      "id": "Enchant",
+      "slug": "Enchant",
+      "name_zh": "附魔",
+      "url": "https://tlidb.com/cn/Enchant",
+      "source_order": 8,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "附魔"
+      }
+    },
+    {
+      "id": "Gear_Empowerment",
+      "slug": "Gear_Empowerment",
+      "name_zh": "装备赋能",
+      "url": "https://tlidb.com/cn/Gear_Empowerment",
+      "source_order": 9,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "装备赋能"
+      }
+    },
+    {
+      "id": "Trade_House",
+      "slug": "Trade_House",
+      "name_zh": "交易行",
+      "url": "https://tlidb.com/cn/Trade_House",
+      "source_order": 10,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "交易行"
+      }
+    },
+    {
+      "id": "Fluorescent_Memory",
+      "slug": "Fluorescent_Memory",
+      "name_zh": "记忆荧光-兑换",
+      "url": "https://tlidb.com/cn/Fluorescent_Memory",
+      "source_order": 11,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "记忆荧光-兑换"
+      }
+    },
+    {
+      "id": "Hero_Relic",
+      "slug": "Hero_Relic",
+      "name_zh": "英雄遗物",
+      "url": "https://tlidb.com/cn/Hero_Relic",
+      "source_order": 12,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "英雄遗物"
+      }
+    },
+    {
+      "id": "Hero_Memories",
+      "slug": "Hero_Memories",
+      "name_zh": "英雄追忆",
+      "url": "https://tlidb.com/cn/Hero_Memories",
+      "source_order": 13,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "英雄追忆"
+      }
+    },
+    {
+      "id": "Corrosion_Craft",
+      "slug": "Corrosion_Craft",
+      "name_zh": "侵蚀打造",
+      "url": "https://tlidb.com/cn/Corrosion_Craft",
+      "source_order": 14,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "侵蚀打造"
+      }
+    },
+    {
+      "id": "Netherrealm",
+      "slug": "Netherrealm",
+      "name_zh": "异界",
+      "url": "https://tlidb.com/cn/Netherrealm",
+      "source_order": 15,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "异界"
+      }
+    },
+    {
+      "id": "Gameplay",
+      "slug": "Gameplay",
+      "name_zh": "玩法-宝箱怪",
+      "url": "https://tlidb.com/cn/Gameplay",
+      "source_order": 16,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "玩法-宝箱怪"
+      }
+    },
+    {
+      "id": "Exchange",
+      "slug": "Exchange",
+      "name_zh": "兑换",
+      "url": "https://tlidb.com/cn/Exchange",
+      "source_order": 17,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "兑换"
+      }
+    },
+    {
+      "id": "Hero_Ranking",
+      "slug": "Hero_Ranking",
+      "name_zh": "英雄榜",
+      "url": "https://tlidb.com/cn/Hero_Ranking",
+      "source_order": 18,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "英雄榜"
+      }
+    },
+    {
+      "id": "Xbox_Controls",
+      "slug": "Xbox_Controls",
+      "name_zh": "Xbox手柄说明",
+      "url": "https://tlidb.com/cn/Xbox_Controls",
+      "source_order": 19,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "Xbox手柄说明"
+      }
+    },
+    {
+      "id": "DualSense_Controls",
+      "slug": "DualSense_Controls",
+      "name_zh": "DualSense手柄说明",
+      "url": "https://tlidb.com/cn/DualSense_Controls",
+      "source_order": 20,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "DualSense手柄说明"
+      }
+    },
+    {
+      "id": "SteamDeck_Controls",
+      "slug": "SteamDeck_Controls",
+      "name_zh": "SteamDeck按键说明",
+      "url": "https://tlidb.com/cn/SteamDeck_Controls",
+      "source_order": 21,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "SteamDeck按键说明"
+      }
+    },
+    {
+      "id": "Craft",
+      "slug": "Craft",
+      "name_zh": "打造",
+      "url": "https://tlidb.com/cn/Craft",
+      "source_order": 22,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "打造"
+      }
+    },
+    {
+      "id": "Corrosion",
+      "slug": "Corrosion",
+      "name_zh": "侵蚀",
+      "url": "https://tlidb.com/cn/Corrosion",
+      "source_order": 23,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "侵蚀"
+      }
+    },
+    {
+      "id": "Pactspirit",
+      "slug": "Pactspirit",
+      "name_zh": "契灵",
+      "url": "https://tlidb.com/cn/Pactspirit",
+      "source_order": 24,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "契灵"
+      }
+    },
+    {
+      "id": "Talents",
+      "slug": "Talents",
+      "name_zh": "天赋规则",
+      "url": "https://tlidb.com/cn/Talents",
+      "source_order": 25,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "天赋规则"
+      }
+    },
+    {
+      "id": "Path_of_Progression",
+      "slug": "Path_of_Progression",
+      "name_zh": "成长之路",
+      "url": "https://tlidb.com/cn/Path_of_Progression",
+      "source_order": 26,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "成长之路"
+      }
+    },
+    {
+      "id": "Hunter_file",
+      "slug": "Hunter_file",
+      "name_zh": "猎人档案",
+      "url": "https://tlidb.com/cn/Hunter_file",
+      "source_order": 27,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "猎人档案"
+      }
+    },
+    {
+      "id": "Void_Sea_Flame",
+      "slug": "Void_Sea_Flame",
+      "name_zh": "虚海夜火",
+      "url": "https://tlidb.com/cn/Void_Sea_Flame",
+      "source_order": 28,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "虚海夜火"
+      }
+    },
+    {
+      "id": "Void_Sea_Terminal",
+      "slug": "Void_Sea_Terminal",
+      "name_zh": "虚空终港",
+      "url": "https://tlidb.com/cn/Void_Sea_Terminal",
+      "source_order": 29,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "虚空终港"
+      }
+    },
+    {
+      "id": "Cube_of_Rapacity",
+      "slug": "Cube_of_Rapacity",
+      "name_zh": "恶欲魔方",
+      "url": "https://tlidb.com/cn/Cube_of_Rapacity",
+      "source_order": 30,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "恶欲魔方"
+      }
+    },
+    {
+      "id": "Avarice_Code",
+      "slug": "Avarice_Code",
+      "name_zh": "黑心者律典",
+      "url": "https://tlidb.com/cn/Avarice_Code",
+      "source_order": 31,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "黑心者律典"
+      }
+    },
+    {
+      "id": "Hunters_Forge",
+      "slug": "Hunters_Forge",
+      "name_zh": "猎人炼境",
+      "url": "https://tlidb.com/cn/Hunters_Forge",
+      "source_order": 32,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "猎人炼境"
+      }
+    },
+    {
+      "id": "Blessings_from_Gods",
+      "slug": "Blessings_from_Gods",
+      "name_zh": "众神所赐",
+      "url": "https://tlidb.com/cn/Blessings_from_Gods",
+      "source_order": 33,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "众神所赐"
+      }
+    },
+    {
+      "id": "Select_Ruins_of_Aeterna",
+      "slug": "Select_Ruins_of_Aeterna",
+      "name_zh": "选择永恒残垣",
+      "url": "https://tlidb.com/cn/Select_Ruins_of_Aeterna",
+      "source_order": 34,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "选择永恒残垣"
+      }
+    },
+    {
+      "id": "Aeterna_Map",
+      "slug": "Aeterna_Map",
+      "name_zh": "迷城版图",
+      "url": "https://tlidb.com/cn/Aeterna_Map",
+      "source_order": 35,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "迷城版图"
+      }
+    },
+    {
+      "id": "Psalms_of_Aeterna",
+      "slug": "Psalms_of_Aeterna",
+      "name_zh": "永恒诗篇",
+      "url": "https://tlidb.com/cn/Psalms_of_Aeterna",
+      "source_order": 36,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "永恒诗篇"
+      }
+    },
+    {
+      "id": "Trait_Decks_and_Card_Library",
+      "slug": "Trait_Decks_and_Card_Library",
+      "name_zh": "人格牌组和牌库",
+      "url": "https://tlidb.com/cn/Trait_Decks_and_Card_Library",
+      "source_order": 37,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "人格牌组和牌库"
+      }
+    },
+    {
+      "id": "Confusion_Deck_and_Card_Library",
+      "slug": "Confusion_Deck_and_Card_Library",
+      "name_zh": "混乱牌组和牌库",
+      "url": "https://tlidb.com/cn/Confusion_Deck_and_Card_Library",
+      "source_order": 38,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "混乱牌组和牌库"
+      }
+    },
+    {
+      "id": "Twinightmare",
+      "slug": "Twinightmare",
+      "name_zh": "双生梦魇",
+      "url": "https://tlidb.com/cn/Twinightmare",
+      "source_order": 39,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "双生梦魇"
+      }
+    },
+    {
+      "id": "Dream_Interpretation",
+      "slug": "Dream_Interpretation",
+      "name_zh": "解梦",
+      "url": "https://tlidb.com/cn/Dream_Interpretation",
+      "source_order": 40,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "解梦"
+      }
+    },
+    {
+      "id": "Dream_Cloud_Atlas",
+      "slug": "Dream_Cloud_Atlas",
+      "name_zh": "梦境云图",
+      "url": "https://tlidb.com/cn/Dream_Cloud_Atlas",
+      "source_order": 41,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "梦境云图"
+      }
+    },
+    {
+      "id": "Mistville_Exploration",
+      "slug": "Mistville_Exploration",
+      "name_zh": "雾都探索",
+      "url": "https://tlidb.com/cn/Mistville_Exploration",
+      "source_order": 42,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "雾都探索"
+      }
+    },
+    {
+      "id": "Trial_of_Divinity",
+      "slug": "Trial_of_Divinity",
+      "name_zh": "神威试炼",
+      "url": "https://tlidb.com/cn/Trial_of_Divinity",
+      "source_order": 43,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "神威试炼"
+      }
+    },
+    {
+      "id": "Whispering_Mist",
+      "slug": "Whispering_Mist",
+      "name_zh": "雾都怪谈",
+      "url": "https://tlidb.com/cn/Whispering_Mist",
+      "source_order": 44,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "雾都怪谈"
+      }
+    },
+    {
+      "id": "Clockwork_Ballet",
+      "slug": "Clockwork_Ballet",
+      "name_zh": "玩偶俱乐部",
+      "url": "https://tlidb.com/cn/Clockwork_Ballet",
+      "source_order": 45,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "玩偶俱乐部"
+      }
+    },
+    {
+      "id": "Legendary_Vision",
+      "slug": "Legendary_Vision",
+      "name_zh": "传奇愿景",
+      "url": "https://tlidb.com/cn/Legendary_Vision",
+      "source_order": 46,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "传奇愿景"
+      }
+    },
+    {
+      "id": "Supreme_Showdown",
+      "slug": "Supreme_Showdown",
+      "name_zh": "巅峰对决",
+      "url": "https://tlidb.com/cn/Supreme_Showdown",
+      "source_order": 47,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "巅峰对决"
+      }
+    },
+    {
+      "id": "Boss_Conquest",
+      "slug": "Boss_Conquest",
+      "name_zh": "首领征伐",
+      "url": "https://tlidb.com/cn/Boss_Conquest",
+      "source_order": 48,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "首领征伐"
+      }
+    },
+    {
+      "id": "Tarot_Path",
+      "slug": "Tarot_Path",
+      "name_zh": "塔罗秘径",
+      "url": "https://tlidb.com/cn/Tarot_Path",
+      "source_order": 49,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "塔罗秘径"
+      }
+    },
+    {
+      "id": "City_Defense",
+      "slug": "City_Defense",
+      "name_zh": "危城防线",
+      "url": "https://tlidb.com/cn/City_Defense",
+      "source_order": 50,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "危城防线"
+      }
+    },
+    {
+      "id": "Blending_Rituals",
+      "slug": "Blending_Rituals",
+      "name_zh": "调香秘仪",
+      "url": "https://tlidb.com/cn/Blending_Rituals",
+      "source_order": 51,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "调香秘仪"
+      }
+    },
+    {
+      "id": "Gear_Imprinting",
+      "slug": "Gear_Imprinting",
+      "name_zh": "装备拓印",
+      "url": "https://tlidb.com/cn/Gear_Imprinting",
+      "source_order": 52,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "装备拓印"
+      }
+    },
+    {
+      "id": "TOWER_Sequence",
+      "slug": "TOWER_Sequence",
+      "name_zh": "高塔序列",
+      "url": "https://tlidb.com/cn/TOWER_Sequence",
+      "source_order": 53,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "高塔序列"
+      }
+    },
+    {
+      "id": "Hot_Streak",
+      "slug": "Hot_Streak",
+      "name_zh": "好运时刻",
+      "url": "https://tlidb.com/cn/Hot_Streak",
+      "source_order": 54,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "好运时刻"
+      }
+    },
+    {
+      "id": "Crime_Rating",
+      "slug": "Crime_Rating",
+      "name_zh": "犯罪星级",
+      "url": "https://tlidb.com/cn/Crime_Rating",
+      "source_order": 55,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "犯罪星级"
+      }
+    },
+    {
+      "id": "TOWER_Co._Central_Vault",
+      "slug": "TOWER_Co._Central_Vault",
+      "name_zh": "高塔中央金库",
+      "url": "https://tlidb.com/cn/TOWER_Co._Central_Vault",
+      "source_order": 56,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "高塔中央金库"
+      }
+    },
+    {
+      "id": "Graft",
+      "slug": "Graft",
+      "name_zh": "缝合",
+      "url": "https://tlidb.com/cn/Graft",
+      "source_order": 57,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "缝合"
+      }
+    },
+    {
+      "id": "Vorax_Exchange",
+      "slug": "Vorax_Exchange",
+      "name_zh": "渴瘾兑换",
+      "url": "https://tlidb.com/cn/Vorax_Exchange",
+      "source_order": 58,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "渴瘾兑换"
+      }
+    },
+    {
+      "id": "Vorax_Imprint",
+      "slug": "Vorax_Imprint",
+      "name_zh": "渴瘾拓印",
+      "url": "https://tlidb.com/cn/Vorax_Imprint",
+      "source_order": 59,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "渴瘾拓印"
+      }
+    },
+    {
+      "id": "Calibrate_Prism",
+      "slug": "Calibrate_Prism",
+      "name_zh": "校准棱镜",
+      "url": "https://tlidb.com/cn/Calibrate_Prism",
+      "source_order": 60,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "校准棱镜"
+      }
+    },
+    {
+      "id": "Lunar_Harp_Tuning",
+      "slug": "Lunar_Harp_Tuning",
+      "name_zh": "月琴调律",
+      "url": "https://tlidb.com/cn/Lunar_Harp_Tuning",
+      "source_order": 61,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "月琴调律"
+      }
+    },
+    {
+      "id": "Memory_Revival",
+      "slug": "Memory_Revival",
+      "name_zh": "追忆复苏",
+      "url": "https://tlidb.com/cn/Memory_Revival",
+      "source_order": 62,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "追忆复苏"
+      }
+    },
+    {
+      "id": "Divine_Ascent",
+      "slug": "Divine_Ascent",
+      "name_zh": "升神长阶",
+      "url": "https://tlidb.com/cn/Divine_Ascent",
+      "source_order": 63,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "升神长阶"
+      }
+    },
+    {
+      "id": "Brand_the_Nether_Kings_Divinity",
+      "slug": "Brand_the_Nether_Kings_Divinity",
+      "name_zh": "烙印冥王的神格",
+      "url": "https://tlidb.com/cn/Brand_the_Nether_Kings_Divinity",
+      "source_order": 64,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "烙印冥王的神格"
+      }
+    },
+    {
+      "id": "Regular_Pactspirit_Setting",
+      "slug": "Regular_Pactspirit_Setting",
+      "name_zh": "常驻契灵设置",
+      "url": "https://tlidb.com/cn/Regular_Pactspirit_Setting",
+      "source_order": 65,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "常驻契灵设置"
+      }
+    },
+    {
+      "id": "Vigil_Gameplay",
+      "slug": "Vigil_Gameplay",
+      "name_zh": "守夜玩法",
+      "url": "https://tlidb.com/cn/Vigil_Gameplay",
+      "source_order": 66,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "帮助手册 /71",
+        "link_text": "守夜玩法"
+      }
+    }
+  ]
+}

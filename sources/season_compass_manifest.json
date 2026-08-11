@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "source": {
+    "site": "tlidb",
+    "locale": "cn",
+    "index_url": "https://tlidb.com/cn/Season_Compass",
+    "fetched_at": "2026-08-06T13:40:55.793649+00:00",
+    "http_status": 200,
+    "html_sha256": "71fd416bcf8c6d975cb5f32a0b162844ad38e28782296f961aff3de3120232fe"
+  },
+  "system_id": "season_compass",
+  "entity_type": "season_compass",
+  "displayed_entry_count": 3,
+  "unique_entry_count": 3,
+  "duplicate_occurrence_count": 0,
+  "discovery_confidence": 0.89,
+  "quality": {
+    "displayed_entry_count": 3,
+    "unique_entry_count": 3,
+    "duplicate_occurrence_count": 0,
+    "discovery_confidence": 0.89,
+    "warnings": []
+  },
+  "entries": [
+    {
+      "id": "Bronze_Wick",
+      "slug": "Bronze_Wick",
+      "name_zh": "铜丝灯芯",
+      "url": "https://tlidb.com/cn/Bronze_Wick",
+      "source_order": 0,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /3",
+        "link_text": "铜丝灯芯"
+      }
+    },
+    {
+      "id": "Silver_Wick",
+      "slug": "Silver_Wick",
+      "name_zh": "银丝灯芯",
+      "url": "https://tlidb.com/cn/Silver_Wick",
+      "source_order": 1,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /3",
+        "link_text": "银丝灯芯"
+      }
+    },
+    {
+      "id": "Gold_Wick",
+      "slug": "Gold_Wick",
+      "name_zh": "金丝灯芯",
+      "url": "https://tlidb.com/cn/Gold_Wick",
+      "source_order": 2,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /3",
+        "link_text": "金丝灯芯"
+      }
+    }
+  ]
+}

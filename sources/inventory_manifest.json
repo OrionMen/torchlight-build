@@ -1,0 +1,2672 @@
+{
+  "schema_version": 1,
+  "source": {
+    "site": "tlidb",
+    "locale": "cn",
+    "index_url": "https://tlidb.com/cn/Inventory",
+    "fetched_at": "2026-08-10T16:12:53.816628+00:00",
+    "http_status": 200,
+    "html_sha256": "0e7d5d464391df410e3d08e31cd0948e1fdc271f43faed35cdd0ba46ff7ff6cf"
+  },
+  "system_id": "inventory",
+  "entity_type": "inventory",
+  "displayed_entry_count": null,
+  "unique_entry_count": 147,
+  "duplicate_occurrence_count": 1,
+  "discovery_confidence": 0.95,
+  "quality": {
+    "displayed_entry_count": null,
+    "unique_entry_count": 147,
+    "duplicate_occurrence_count": 1,
+    "discovery_confidence": 0.95,
+    "warnings": []
+  },
+  "entries": [
+    {
+      "id": "Vorax_Season",
+      "slug": "Vorax_Season",
+      "path": "/cn/Vorax_Season",
+      "name_zh": "Vorax_Season",
+      "url": "https://tlidb.com/cn/Vorax_Season",
+      "source_order": 0,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Vorax_Season",
+        "resolved_url": "https://tlidb.com/cn/Vorax_Season"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Overrealm_Season",
+      "slug": "Overrealm_Season",
+      "path": "/cn/Overrealm_Season",
+      "name_zh": "Overrealm_Season",
+      "url": "https://tlidb.com/cn/Overrealm_Season",
+      "source_order": 1,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Overrealm_Season",
+        "resolved_url": "https://tlidb.com/cn/Overrealm_Season"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Outlaw_Season",
+      "slug": "Outlaw_Season",
+      "path": "/cn/Outlaw_Season",
+      "name_zh": "Outlaw_Season",
+      "url": "https://tlidb.com/cn/Outlaw_Season",
+      "source_order": 2,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Outlaw_Season",
+        "resolved_url": "https://tlidb.com/cn/Outlaw_Season"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Sandlord_Season",
+      "slug": "Sandlord_Season",
+      "path": "/cn/Sandlord_Season",
+      "name_zh": "Sandlord_Season",
+      "url": "https://tlidb.com/cn/Sandlord_Season",
+      "source_order": 3,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Sandlord_Season",
+        "resolved_url": "https://tlidb.com/cn/Sandlord_Season"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Arcana_Season",
+      "slug": "Arcana_Season",
+      "path": "/cn/Arcana_Season",
+      "name_zh": "Arcana_Season",
+      "url": "https://tlidb.com/cn/Arcana_Season",
+      "source_order": 4,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Arcana_Season",
+        "resolved_url": "https://tlidb.com/cn/Arcana_Season"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "The_Frozen_Canvas_Season",
+      "slug": "The_Frozen_Canvas_Season",
+      "path": "/cn/The_Frozen_Canvas_Season",
+      "name_zh": "The_Frozen_Canvas_Season",
+      "url": "https://tlidb.com/cn/The_Frozen_Canvas_Season",
+      "source_order": 5,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "The_Frozen_Canvas_Season",
+        "resolved_url": "https://tlidb.com/cn/The_Frozen_Canvas_Season"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Clockwork_Ballet_Season",
+      "slug": "Clockwork_Ballet_Season",
+      "path": "/cn/Clockwork_Ballet_Season",
+      "name_zh": "Clockwork_Ballet_Season",
+      "url": "https://tlidb.com/cn/Clockwork_Ballet_Season",
+      "source_order": 6,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Clockwork_Ballet_Season",
+        "resolved_url": "https://tlidb.com/cn/Clockwork_Ballet_Season"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Whispering_Mist_Season",
+      "slug": "Whispering_Mist_Season",
+      "path": "/cn/Whispering_Mist_Season",
+      "name_zh": "Whispering_Mist_Season",
+      "url": "https://tlidb.com/cn/Whispering_Mist_Season",
+      "source_order": 7,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Whispering_Mist_Season",
+        "resolved_url": "https://tlidb.com/cn/Whispering_Mist_Season"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Nightmare_Season",
+      "slug": "Nightmare_Season",
+      "path": "/cn/Nightmare_Season",
+      "name_zh": "Nightmare_Season",
+      "url": "https://tlidb.com/cn/Nightmare_Season",
+      "source_order": 8,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Nightmare_Season",
+        "resolved_url": "https://tlidb.com/cn/Nightmare_Season"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Aeterna_Season",
+      "slug": "Aeterna_Season",
+      "path": "/cn/Aeterna_Season",
+      "name_zh": "Aeterna_Season",
+      "url": "https://tlidb.com/cn/Aeterna_Season",
+      "source_order": 9,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Aeterna_Season",
+        "resolved_url": "https://tlidb.com/cn/Aeterna_Season"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Cube_Season",
+      "slug": "Cube_Season",
+      "path": "/cn/Cube_Season",
+      "name_zh": "Cube_Season",
+      "url": "https://tlidb.com/cn/Cube_Season",
+      "source_order": 10,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Cube_Season",
+        "resolved_url": "https://tlidb.com/cn/Cube_Season"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Blacksail_Season",
+      "slug": "Blacksail_Season",
+      "path": "/cn/Blacksail_Season",
+      "name_zh": "Blacksail_Season",
+      "url": "https://tlidb.com/cn/Blacksail_Season",
+      "source_order": 11,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Blacksail_Season",
+        "resolved_url": "https://tlidb.com/cn/Blacksail_Season"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Dark_Surge_Season",
+      "slug": "Dark_Surge_Season",
+      "path": "/cn/Dark_Surge_Season",
+      "name_zh": "Dark_Surge_Season",
+      "url": "https://tlidb.com/cn/Dark_Surge_Season",
+      "source_order": 12,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Dark_Surge_Season",
+        "resolved_url": "https://tlidb.com/cn/Dark_Surge_Season"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "STR_Helmet",
+      "slug": "STR_Helmet",
+      "path": "/cn/STR_Helmet",
+      "name_zh": "STR Helmet",
+      "url": "https://tlidb.com/cn/STR_Helmet",
+      "source_order": 13,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "STR_Helmet",
+        "resolved_url": "https://tlidb.com/cn/STR_Helmet"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "DEX_Helmet",
+      "slug": "DEX_Helmet",
+      "path": "/cn/DEX_Helmet",
+      "name_zh": "DEX Helmet",
+      "url": "https://tlidb.com/cn/DEX_Helmet",
+      "source_order": 14,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "DEX_Helmet",
+        "resolved_url": "https://tlidb.com/cn/DEX_Helmet"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "INT_Helmet",
+      "slug": "INT_Helmet",
+      "path": "/cn/INT_Helmet",
+      "name_zh": "INT Helmet",
+      "url": "https://tlidb.com/cn/INT_Helmet",
+      "source_order": 15,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "INT_Helmet",
+        "resolved_url": "https://tlidb.com/cn/INT_Helmet"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "STR_Chest_Armor",
+      "slug": "STR_Chest_Armor",
+      "path": "/cn/STR_Chest_Armor",
+      "name_zh": "STR Chest Armor",
+      "url": "https://tlidb.com/cn/STR_Chest_Armor",
+      "source_order": 16,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "STR_Chest_Armor",
+        "resolved_url": "https://tlidb.com/cn/STR_Chest_Armor"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "DEX_Chest_Armor",
+      "slug": "DEX_Chest_Armor",
+      "path": "/cn/DEX_Chest_Armor",
+      "name_zh": "DEX Chest Armor",
+      "url": "https://tlidb.com/cn/DEX_Chest_Armor",
+      "source_order": 17,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "DEX_Chest_Armor",
+        "resolved_url": "https://tlidb.com/cn/DEX_Chest_Armor"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "INT_Chest_Armor",
+      "slug": "INT_Chest_Armor",
+      "path": "/cn/INT_Chest_Armor",
+      "name_zh": "INT Chest Armor",
+      "url": "https://tlidb.com/cn/INT_Chest_Armor",
+      "source_order": 18,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "INT_Chest_Armor",
+        "resolved_url": "https://tlidb.com/cn/INT_Chest_Armor"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "STR_Gloves",
+      "slug": "STR_Gloves",
+      "path": "/cn/STR_Gloves",
+      "name_zh": "STR Gloves",
+      "url": "https://tlidb.com/cn/STR_Gloves",
+      "source_order": 19,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "STR_Gloves",
+        "resolved_url": "https://tlidb.com/cn/STR_Gloves"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "DEX_Gloves",
+      "slug": "DEX_Gloves",
+      "path": "/cn/DEX_Gloves",
+      "name_zh": "DEX Gloves",
+      "url": "https://tlidb.com/cn/DEX_Gloves",
+      "source_order": 20,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "DEX_Gloves",
+        "resolved_url": "https://tlidb.com/cn/DEX_Gloves"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "INT_Gloves",
+      "slug": "INT_Gloves",
+      "path": "/cn/INT_Gloves",
+      "name_zh": "INT Gloves",
+      "url": "https://tlidb.com/cn/INT_Gloves",
+      "source_order": 21,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "INT_Gloves",
+        "resolved_url": "https://tlidb.com/cn/INT_Gloves"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "STR_Boots",
+      "slug": "STR_Boots",
+      "path": "/cn/STR_Boots",
+      "name_zh": "STR Boots",
+      "url": "https://tlidb.com/cn/STR_Boots",
+      "source_order": 22,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "STR_Boots",
+        "resolved_url": "https://tlidb.com/cn/STR_Boots"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "DEX_Boots",
+      "slug": "DEX_Boots",
+      "path": "/cn/DEX_Boots",
+      "name_zh": "DEX Boots",
+      "url": "https://tlidb.com/cn/DEX_Boots",
+      "source_order": 23,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "DEX_Boots",
+        "resolved_url": "https://tlidb.com/cn/DEX_Boots"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "INT_Boots",
+      "slug": "INT_Boots",
+      "path": "/cn/INT_Boots",
+      "name_zh": "INT Boots",
+      "url": "https://tlidb.com/cn/INT_Boots",
+      "source_order": 24,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "INT_Boots",
+        "resolved_url": "https://tlidb.com/cn/INT_Boots"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Claw",
+      "slug": "Claw",
+      "path": "/cn/Claw",
+      "name_zh": "Claw",
+      "url": "https://tlidb.com/cn/Claw",
+      "source_order": 25,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Claw",
+        "resolved_url": "https://tlidb.com/cn/Claw"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Dagger",
+      "slug": "Dagger",
+      "path": "/cn/Dagger",
+      "name_zh": "Dagger",
+      "url": "https://tlidb.com/cn/Dagger",
+      "source_order": 26,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Dagger",
+        "resolved_url": "https://tlidb.com/cn/Dagger"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "One-Handed_Sword",
+      "slug": "One-Handed_Sword",
+      "path": "/cn/One-Handed_Sword",
+      "name_zh": "One-Handed Sword",
+      "url": "https://tlidb.com/cn/One-Handed_Sword",
+      "source_order": 27,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "One-Handed_Sword",
+        "resolved_url": "https://tlidb.com/cn/One-Handed_Sword"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "One-Handed_Hammer",
+      "slug": "One-Handed_Hammer",
+      "path": "/cn/One-Handed_Hammer",
+      "name_zh": "One-Handed Hammer",
+      "url": "https://tlidb.com/cn/One-Handed_Hammer",
+      "source_order": 28,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "One-Handed_Hammer",
+        "resolved_url": "https://tlidb.com/cn/One-Handed_Hammer"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "One-Handed_Axe",
+      "slug": "One-Handed_Axe",
+      "path": "/cn/One-Handed_Axe",
+      "name_zh": "One-Handed Axe",
+      "url": "https://tlidb.com/cn/One-Handed_Axe",
+      "source_order": 29,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "One-Handed_Axe",
+        "resolved_url": "https://tlidb.com/cn/One-Handed_Axe"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Wand",
+      "slug": "Wand",
+      "path": "/cn/Wand",
+      "name_zh": "Wand",
+      "url": "https://tlidb.com/cn/Wand",
+      "source_order": 30,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Wand",
+        "resolved_url": "https://tlidb.com/cn/Wand"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Rod",
+      "slug": "Rod",
+      "path": "/cn/Rod",
+      "name_zh": "Rod",
+      "url": "https://tlidb.com/cn/Rod",
+      "source_order": 31,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Rod",
+        "resolved_url": "https://tlidb.com/cn/Rod"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Scepter",
+      "slug": "Scepter",
+      "path": "/cn/Scepter",
+      "name_zh": "Scepter",
+      "url": "https://tlidb.com/cn/Scepter",
+      "source_order": 32,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Scepter",
+        "resolved_url": "https://tlidb.com/cn/Scepter"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Cane",
+      "slug": "Cane",
+      "path": "/cn/Cane",
+      "name_zh": "Cane",
+      "url": "https://tlidb.com/cn/Cane",
+      "source_order": 33,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Cane",
+        "resolved_url": "https://tlidb.com/cn/Cane"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Pistol",
+      "slug": "Pistol",
+      "path": "/cn/Pistol",
+      "name_zh": "Pistol",
+      "url": "https://tlidb.com/cn/Pistol",
+      "source_order": 34,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Pistol",
+        "resolved_url": "https://tlidb.com/cn/Pistol"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Two-Handed_Sword",
+      "slug": "Two-Handed_Sword",
+      "path": "/cn/Two-Handed_Sword",
+      "name_zh": "Two-Handed Sword",
+      "url": "https://tlidb.com/cn/Two-Handed_Sword",
+      "source_order": 35,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Two-Handed_Sword",
+        "resolved_url": "https://tlidb.com/cn/Two-Handed_Sword"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Two-Handed_Hammer",
+      "slug": "Two-Handed_Hammer",
+      "path": "/cn/Two-Handed_Hammer",
+      "name_zh": "Two-Handed Hammer",
+      "url": "https://tlidb.com/cn/Two-Handed_Hammer",
+      "source_order": 36,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Two-Handed_Hammer",
+        "resolved_url": "https://tlidb.com/cn/Two-Handed_Hammer"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Two-Handed_Axe",
+      "slug": "Two-Handed_Axe",
+      "path": "/cn/Two-Handed_Axe",
+      "name_zh": "Two-Handed Axe",
+      "url": "https://tlidb.com/cn/Two-Handed_Axe",
+      "source_order": 37,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Two-Handed_Axe",
+        "resolved_url": "https://tlidb.com/cn/Two-Handed_Axe"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Tin_Staff",
+      "slug": "Tin_Staff",
+      "path": "/cn/Tin_Staff",
+      "name_zh": "Tin Staff",
+      "url": "https://tlidb.com/cn/Tin_Staff",
+      "source_order": 38,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Tin_Staff",
+        "resolved_url": "https://tlidb.com/cn/Tin_Staff"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Cudgel",
+      "slug": "Cudgel",
+      "path": "/cn/Cudgel",
+      "name_zh": "Cudgel",
+      "url": "https://tlidb.com/cn/Cudgel",
+      "source_order": 39,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Cudgel",
+        "resolved_url": "https://tlidb.com/cn/Cudgel"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Bow",
+      "slug": "Bow",
+      "path": "/cn/Bow",
+      "name_zh": "Bow",
+      "url": "https://tlidb.com/cn/Bow",
+      "source_order": 40,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Bow",
+        "resolved_url": "https://tlidb.com/cn/Bow"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Crossbow",
+      "slug": "Crossbow",
+      "path": "/cn/Crossbow",
+      "name_zh": "Crossbow",
+      "url": "https://tlidb.com/cn/Crossbow",
+      "source_order": 41,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Crossbow",
+        "resolved_url": "https://tlidb.com/cn/Crossbow"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Musket",
+      "slug": "Musket",
+      "path": "/cn/Musket",
+      "name_zh": "Musket",
+      "url": "https://tlidb.com/cn/Musket",
+      "source_order": 42,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Musket",
+        "resolved_url": "https://tlidb.com/cn/Musket"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Fire_Cannon",
+      "slug": "Fire_Cannon",
+      "path": "/cn/Fire_Cannon",
+      "name_zh": "Fire Canon",
+      "url": "https://tlidb.com/cn/Fire_Cannon",
+      "source_order": 43,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Fire_Cannon",
+        "resolved_url": "https://tlidb.com/cn/Fire_Cannon"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "STR_Shield",
+      "slug": "STR_Shield",
+      "path": "/cn/STR_Shield",
+      "name_zh": "STR Shield",
+      "url": "https://tlidb.com/cn/STR_Shield",
+      "source_order": 44,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "STR_Shield",
+        "resolved_url": "https://tlidb.com/cn/STR_Shield"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "DEX_Shield",
+      "slug": "DEX_Shield",
+      "path": "/cn/DEX_Shield",
+      "name_zh": "DEX Shield",
+      "url": "https://tlidb.com/cn/DEX_Shield",
+      "source_order": 45,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "DEX_Shield",
+        "resolved_url": "https://tlidb.com/cn/DEX_Shield"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "INT_Shield",
+      "slug": "INT_Shield",
+      "path": "/cn/INT_Shield",
+      "name_zh": "INT Shield",
+      "url": "https://tlidb.com/cn/INT_Shield",
+      "source_order": 46,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "INT_Shield",
+        "resolved_url": "https://tlidb.com/cn/INT_Shield"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Necklace",
+      "slug": "Necklace",
+      "path": "/cn/Necklace",
+      "name_zh": "Necklace",
+      "url": "https://tlidb.com/cn/Necklace",
+      "source_order": 47,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Necklace",
+        "resolved_url": "https://tlidb.com/cn/Necklace"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Ring",
+      "slug": "Ring",
+      "path": "/cn/Ring",
+      "name_zh": "Ring",
+      "url": "https://tlidb.com/cn/Ring",
+      "source_order": 48,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Ring",
+        "resolved_url": "https://tlidb.com/cn/Ring"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Belt",
+      "slug": "Belt",
+      "path": "/cn/Belt",
+      "name_zh": "Belt",
+      "url": "https://tlidb.com/cn/Belt",
+      "source_order": 49,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Belt",
+        "resolved_url": "https://tlidb.com/cn/Belt"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Spirit_Ring",
+      "slug": "Spirit_Ring",
+      "path": "/cn/Spirit_Ring",
+      "name_zh": "Spirit Ring",
+      "url": "https://tlidb.com/cn/Spirit_Ring",
+      "source_order": 50,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Spirit_Ring",
+        "resolved_url": "https://tlidb.com/cn/Spirit_Ring"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Hero_Memories",
+      "slug": "Hero_Memories",
+      "path": "/cn/Hero_Memories",
+      "name_zh": "Hero Memories",
+      "url": "https://tlidb.com/cn/Hero_Memories",
+      "source_order": 51,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Hero_Memories",
+        "resolved_url": "https://tlidb.com/cn/Hero_Memories"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Divinity_Slate",
+      "slug": "Divinity_Slate",
+      "path": "/cn/Divinity_Slate",
+      "name_zh": "Divinity Slate",
+      "url": "https://tlidb.com/cn/Divinity_Slate",
+      "source_order": 52,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Divinity_Slate",
+        "resolved_url": "https://tlidb.com/cn/Divinity_Slate"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Destiny",
+      "slug": "Destiny",
+      "path": "/cn/Destiny",
+      "name_zh": "Destiny",
+      "url": "https://tlidb.com/cn/Destiny",
+      "source_order": 53,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Destiny",
+        "resolved_url": "https://tlidb.com/cn/Destiny"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Ethereal_Prism",
+      "slug": "Ethereal_Prism",
+      "path": "/cn/Ethereal_Prism",
+      "name_zh": "Ethereal Prism",
+      "url": "https://tlidb.com/cn/Ethereal_Prism",
+      "source_order": 54,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Ethereal_Prism",
+        "resolved_url": "https://tlidb.com/cn/Ethereal_Prism"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Vorax_Limb:_Head",
+      "slug": "Vorax_Limb:_Head",
+      "path": "/cn/Vorax_Limb:_Head",
+      "name_zh": "Vorax Limb: Head",
+      "url": "https://tlidb.com/cn/Vorax_Limb:_Head",
+      "source_order": 55,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Vorax_Limb:_Head",
+        "resolved_url": "https://tlidb.com/cn/Vorax_Limb:_Head"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Vorax_Limb:_Chest",
+      "slug": "Vorax_Limb:_Chest",
+      "path": "/cn/Vorax_Limb:_Chest",
+      "name_zh": "Vorax Limb: Chest",
+      "url": "https://tlidb.com/cn/Vorax_Limb:_Chest",
+      "source_order": 56,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Vorax_Limb:_Chest",
+        "resolved_url": "https://tlidb.com/cn/Vorax_Limb:_Chest"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Vorax_Limb:_Hands",
+      "slug": "Vorax_Limb:_Hands",
+      "path": "/cn/Vorax_Limb:_Hands",
+      "name_zh": "Vorax Limb: Hands",
+      "url": "https://tlidb.com/cn/Vorax_Limb:_Hands",
+      "source_order": 57,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Vorax_Limb:_Hands",
+        "resolved_url": "https://tlidb.com/cn/Vorax_Limb:_Hands"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Vorax_Limb:_Legs",
+      "slug": "Vorax_Limb:_Legs",
+      "path": "/cn/Vorax_Limb:_Legs",
+      "name_zh": "Vorax Limb: Legs",
+      "url": "https://tlidb.com/cn/Vorax_Limb:_Legs",
+      "source_order": 58,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Vorax_Limb:_Legs",
+        "resolved_url": "https://tlidb.com/cn/Vorax_Limb:_Legs"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Vorax_Aberrant_Limb:_Legs",
+      "slug": "Vorax_Aberrant_Limb:_Legs",
+      "path": "/cn/Vorax_Aberrant_Limb:_Legs",
+      "name_zh": "Vorax Aberrant Limb: Legs",
+      "url": "https://tlidb.com/cn/Vorax_Aberrant_Limb:_Legs",
+      "source_order": 59,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Vorax_Aberrant_Limb:_Legs",
+        "resolved_url": "https://tlidb.com/cn/Vorax_Aberrant_Limb:_Legs"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Vorax_Limb:_Neck",
+      "slug": "Vorax_Limb:_Neck",
+      "path": "/cn/Vorax_Limb:_Neck",
+      "name_zh": "Vorax Limb: Neck",
+      "url": "https://tlidb.com/cn/Vorax_Limb:_Neck",
+      "source_order": 60,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Vorax_Limb:_Neck",
+        "resolved_url": "https://tlidb.com/cn/Vorax_Limb:_Neck"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Vorax_Limb:_Digits",
+      "slug": "Vorax_Limb:_Digits",
+      "path": "/cn/Vorax_Limb:_Digits",
+      "name_zh": "Vorax Limb: Digits",
+      "url": "https://tlidb.com/cn/Vorax_Limb:_Digits",
+      "source_order": 61,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Vorax_Limb:_Digits",
+        "resolved_url": "https://tlidb.com/cn/Vorax_Limb:_Digits"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Vorax_Aberrant_Limb:_Digits",
+      "slug": "Vorax_Aberrant_Limb:_Digits",
+      "path": "/cn/Vorax_Aberrant_Limb:_Digits",
+      "name_zh": "Vorax Aberrant Limb: Digits",
+      "url": "https://tlidb.com/cn/Vorax_Aberrant_Limb:_Digits",
+      "source_order": 62,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Vorax_Aberrant_Limb:_Digits",
+        "resolved_url": "https://tlidb.com/cn/Vorax_Aberrant_Limb:_Digits"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Vorax_Limb:_Waist",
+      "slug": "Vorax_Limb:_Waist",
+      "path": "/cn/Vorax_Limb:_Waist",
+      "name_zh": "Vorax Limb: Waist",
+      "url": "https://tlidb.com/cn/Vorax_Limb:_Waist",
+      "source_order": 63,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Vorax_Limb:_Waist",
+        "resolved_url": "https://tlidb.com/cn/Vorax_Limb:_Waist"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Vorax_Aberrant_Limb:_Waist",
+      "slug": "Vorax_Aberrant_Limb:_Waist",
+      "path": "/cn/Vorax_Aberrant_Limb:_Waist",
+      "name_zh": "Vorax Aberrant Limb: Waist",
+      "url": "https://tlidb.com/cn/Vorax_Aberrant_Limb:_Waist",
+      "source_order": 64,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Vorax_Aberrant_Limb:_Waist",
+        "resolved_url": "https://tlidb.com/cn/Vorax_Aberrant_Limb:_Waist"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Fluorescent_Memory",
+      "slug": "Fluorescent_Memory",
+      "path": "/cn/Fluorescent_Memory",
+      "name_zh": "记忆荧光",
+      "url": "https://tlidb.com/cn/Fluorescent_Memory",
+      "source_order": 65,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Fluorescent_Memory",
+        "resolved_url": "https://tlidb.com/cn/Fluorescent_Memory"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Active_Skill",
+      "slug": "Active_Skill",
+      "path": "/cn/Active_Skill",
+      "name_zh": "主动技能",
+      "url": "https://tlidb.com/cn/Active_Skill",
+      "source_order": 66,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Active_Skill",
+        "resolved_url": "https://tlidb.com/cn/Active_Skill"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Support_Skill",
+      "slug": "Support_Skill",
+      "path": "/cn/Support_Skill",
+      "name_zh": "辅助技能",
+      "url": "https://tlidb.com/cn/Support_Skill",
+      "source_order": 67,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Support_Skill",
+        "resolved_url": "https://tlidb.com/cn/Support_Skill"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Passive_Skill",
+      "slug": "Passive_Skill",
+      "path": "/cn/Passive_Skill",
+      "name_zh": "被动技能",
+      "url": "https://tlidb.com/cn/Passive_Skill",
+      "source_order": 68,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Passive_Skill",
+        "resolved_url": "https://tlidb.com/cn/Passive_Skill"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Activation_Medium_Skill",
+      "slug": "Activation_Medium_Skill",
+      "path": "/cn/Activation_Medium_Skill",
+      "name_zh": "触媒技能",
+      "url": "https://tlidb.com/cn/Activation_Medium_Skill",
+      "source_order": 69,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Activation_Medium_Skill",
+        "resolved_url": "https://tlidb.com/cn/Activation_Medium_Skill"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Magnificent_Support_Skill",
+      "slug": "Magnificent_Support_Skill",
+      "path": "/cn/Magnificent_Support_Skill",
+      "name_zh": "华贵辅助技能",
+      "url": "https://tlidb.com/cn/Magnificent_Support_Skill",
+      "source_order": 70,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Magnificent_Support_Skill",
+        "resolved_url": "https://tlidb.com/cn/Magnificent_Support_Skill"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Noble_Support_Skill",
+      "slug": "Noble_Support_Skill",
+      "path": "/cn/Noble_Support_Skill",
+      "name_zh": "崇高辅助技能",
+      "url": "https://tlidb.com/cn/Noble_Support_Skill",
+      "source_order": 71,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Noble_Support_Skill",
+        "resolved_url": "https://tlidb.com/cn/Noble_Support_Skill"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Modularization_Skill",
+      "slug": "Modularization_Skill",
+      "path": "/cn/Modularization_Skill",
+      "name_zh": "模组化技能",
+      "url": "https://tlidb.com/cn/Modularization_Skill",
+      "source_order": 72,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Modularization_Skill",
+        "resolved_url": "https://tlidb.com/cn/Modularization_Skill"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Universal_Items",
+      "slug": "Universal_Items",
+      "path": "/cn/Universal_Items",
+      "name_zh": "通用道具",
+      "url": "https://tlidb.com/cn/Universal_Items",
+      "source_order": 73,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Universal_Items",
+        "resolved_url": "https://tlidb.com/cn/Universal_Items"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Compass",
+      "slug": "Compass",
+      "path": "/cn/Compass",
+      "name_zh": "罗盘",
+      "url": "https://tlidb.com/cn/Compass",
+      "source_order": 74,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Compass",
+        "resolved_url": "https://tlidb.com/cn/Compass"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Probe",
+      "slug": "Probe",
+      "path": "/cn/Probe",
+      "name_zh": "探针",
+      "url": "https://tlidb.com/cn/Probe",
+      "source_order": 75,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Probe",
+        "resolved_url": "https://tlidb.com/cn/Probe"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Season_Compass",
+      "slug": "Season_Compass",
+      "path": "/cn/Season_Compass",
+      "name_zh": "赛季罗盘",
+      "url": "https://tlidb.com/cn/Season_Compass",
+      "source_order": 76,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Season_Compass",
+        "resolved_url": "https://tlidb.com/cn/Season_Compass"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Astrolabe",
+      "slug": "Astrolabe",
+      "path": "/cn/Astrolabe",
+      "name_zh": "星盘",
+      "url": "https://tlidb.com/cn/Astrolabe",
+      "source_order": 77,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Astrolabe",
+        "resolved_url": "https://tlidb.com/cn/Astrolabe"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Ember",
+      "slug": "Ember",
+      "path": "/cn/Ember",
+      "name_zh": "灰烬",
+      "url": "https://tlidb.com/cn/Ember",
+      "source_order": 78,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Ember",
+        "resolved_url": "https://tlidb.com/cn/Ember"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Fossil",
+      "slug": "Fossil",
+      "path": "/cn/Fossil",
+      "name_zh": "化石",
+      "url": "https://tlidb.com/cn/Fossil",
+      "source_order": 79,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Fossil",
+        "resolved_url": "https://tlidb.com/cn/Fossil"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Fuel",
+      "slug": "Fuel",
+      "path": "/cn/Fuel",
+      "name_zh": "燃料",
+      "url": "https://tlidb.com/cn/Fuel",
+      "source_order": 80,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Fuel",
+        "resolved_url": "https://tlidb.com/cn/Fuel"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Divinity_Emblems",
+      "slug": "Divinity_Emblems",
+      "path": "/cn/Divinity_Emblems",
+      "name_zh": "神威纹章",
+      "url": "https://tlidb.com/cn/Divinity_Emblems",
+      "source_order": 81,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Divinity_Emblems",
+        "resolved_url": "https://tlidb.com/cn/Divinity_Emblems"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Dark_Surge_Edict",
+      "slug": "Dark_Surge_Edict",
+      "path": "/cn/Dark_Surge_Edict",
+      "name_zh": "黑潮敕令",
+      "url": "https://tlidb.com/cn/Dark_Surge_Edict",
+      "source_order": 82,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Dark_Surge_Edict",
+        "resolved_url": "https://tlidb.com/cn/Dark_Surge_Edict"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Void_Sea_Invitation",
+      "slug": "Void_Sea_Invitation",
+      "path": "/cn/Void_Sea_Invitation",
+      "name_zh": "虚海请柬",
+      "url": "https://tlidb.com/cn/Void_Sea_Invitation",
+      "source_order": 83,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Void_Sea_Invitation",
+        "resolved_url": "https://tlidb.com/cn/Void_Sea_Invitation"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Desire_Core",
+      "slug": "Desire_Core",
+      "path": "/cn/Desire_Core",
+      "name_zh": "欲念原核",
+      "url": "https://tlidb.com/cn/Desire_Core",
+      "source_order": 84,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Desire_Core",
+        "resolved_url": "https://tlidb.com/cn/Desire_Core"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Queens_Wick",
+      "slug": "Queens_Wick",
+      "path": "/cn/Queens_Wick",
+      "name_zh": "王后烛芯",
+      "url": "https://tlidb.com/cn/Queens_Wick",
+      "source_order": 85,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Queens_Wick",
+        "resolved_url": "https://tlidb.com/cn/Queens_Wick"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Queens_Grace",
+      "slug": "Queens_Grace",
+      "path": "/cn/Queens_Grace",
+      "name_zh": "女王恩宠",
+      "url": "https://tlidb.com/cn/Queens_Grace",
+      "source_order": 86,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Queens_Grace",
+        "resolved_url": "https://tlidb.com/cn/Queens_Grace"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Beacon",
+      "slug": "Beacon",
+      "path": "/cn/Beacon",
+      "name_zh": "信标",
+      "url": "https://tlidb.com/cn/Beacon",
+      "source_order": 87,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Beacon",
+        "resolved_url": "https://tlidb.com/cn/Beacon"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Primeval_Core",
+      "slug": "Primeval_Core",
+      "path": "/cn/Primeval_Core",
+      "name_zh": "原初之核",
+      "url": "https://tlidb.com/cn/Primeval_Core",
+      "source_order": 88,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Primeval_Core",
+        "resolved_url": "https://tlidb.com/cn/Primeval_Core"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Proof_of_the_Brave",
+      "slug": "Proof_of_the_Brave",
+      "path": "/cn/Proof_of_the_Brave",
+      "name_zh": "勇者之证",
+      "url": "https://tlidb.com/cn/Proof_of_the_Brave",
+      "source_order": 89,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Proof_of_the_Brave",
+        "resolved_url": "https://tlidb.com/cn/Proof_of_the_Brave"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Corrosion_Material",
+      "slug": "Corrosion_Material",
+      "path": "/cn/Corrosion_Material",
+      "name_zh": "侵蚀材料",
+      "url": "https://tlidb.com/cn/Corrosion_Material",
+      "source_order": 90,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Corrosion_Material",
+        "resolved_url": "https://tlidb.com/cn/Corrosion_Material"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Memory_Scrap",
+      "slug": "Memory_Scrap",
+      "path": "/cn/Memory_Scrap",
+      "name_zh": "追忆碎絮",
+      "url": "https://tlidb.com/cn/Memory_Scrap",
+      "source_order": 91,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Memory_Scrap",
+        "resolved_url": "https://tlidb.com/cn/Memory_Scrap"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Memory_Thread",
+      "slug": "Memory_Thread",
+      "path": "/cn/Memory_Thread",
+      "name_zh": "追忆游丝",
+      "url": "https://tlidb.com/cn/Memory_Thread",
+      "source_order": 92,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Memory_Thread",
+        "resolved_url": "https://tlidb.com/cn/Memory_Thread"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Transcendence_Wedge",
+      "slug": "Transcendence_Wedge",
+      "path": "/cn/Transcendence_Wedge",
+      "name_zh": "升华之楔",
+      "url": "https://tlidb.com/cn/Transcendence_Wedge",
+      "source_order": 93,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Transcendence_Wedge",
+        "resolved_url": "https://tlidb.com/cn/Transcendence_Wedge"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Unifying_Wedge",
+      "slug": "Unifying_Wedge",
+      "path": "/cn/Unifying_Wedge",
+      "name_zh": "归一之楔",
+      "url": "https://tlidb.com/cn/Unifying_Wedge",
+      "source_order": 94,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Unifying_Wedge",
+        "resolved_url": "https://tlidb.com/cn/Unifying_Wedge"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Divinity_Pact",
+      "slug": "Divinity_Pact",
+      "path": "/cn/Divinity_Pact",
+      "name_zh": "神格契约",
+      "url": "https://tlidb.com/cn/Divinity_Pact",
+      "source_order": 95,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Divinity_Pact",
+        "resolved_url": "https://tlidb.com/cn/Divinity_Pact"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Divinity_Fragment",
+      "slug": "Divinity_Fragment",
+      "path": "/cn/Divinity_Fragment",
+      "name_zh": "神格残片",
+      "url": "https://tlidb.com/cn/Divinity_Fragment",
+      "source_order": 96,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Divinity_Fragment",
+        "resolved_url": "https://tlidb.com/cn/Divinity_Fragment"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Divinity_Stone",
+      "slug": "Divinity_Stone",
+      "path": "/cn/Divinity_Stone",
+      "name_zh": "神威辉石",
+      "url": "https://tlidb.com/cn/Divinity_Stone",
+      "source_order": 97,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Divinity_Stone",
+        "resolved_url": "https://tlidb.com/cn/Divinity_Stone"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "The_City_of_Aeterna",
+      "slug": "The_City_of_Aeterna",
+      "path": "/cn/The_City_of_Aeterna",
+      "name_zh": "永恒迷城",
+      "url": "https://tlidb.com/cn/The_City_of_Aeterna",
+      "source_order": 98,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "The_City_of_Aeterna",
+        "resolved_url": "https://tlidb.com/cn/The_City_of_Aeterna"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Aeterna_Reverberation",
+      "slug": "Aeterna_Reverberation",
+      "path": "/cn/Aeterna_Reverberation",
+      "name_zh": "迷城残响",
+      "url": "https://tlidb.com/cn/Aeterna_Reverberation",
+      "source_order": 99,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Aeterna_Reverberation",
+        "resolved_url": "https://tlidb.com/cn/Aeterna_Reverberation"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Whispering_Mist",
+      "slug": "Whispering_Mist",
+      "path": "/cn/Whispering_Mist",
+      "name_zh": "雾都怪谈",
+      "url": "https://tlidb.com/cn/Whispering_Mist",
+      "source_order": 100,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Whispering_Mist",
+        "resolved_url": "https://tlidb.com/cn/Whispering_Mist"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "TOWER_Token",
+      "slug": "TOWER_Token",
+      "path": "/cn/TOWER_Token",
+      "name_zh": "高塔筹码",
+      "url": "https://tlidb.com/cn/TOWER_Token",
+      "source_order": 101,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "TOWER_Token",
+        "resolved_url": "https://tlidb.com/cn/TOWER_Token"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Lunaria",
+      "slug": "Lunaria",
+      "path": "/cn/Lunaria",
+      "name_zh": "明月狂想曲",
+      "url": "https://tlidb.com/cn/Lunaria",
+      "source_order": 102,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Lunaria",
+        "resolved_url": "https://tlidb.com/cn/Lunaria"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "God_of_Might",
+      "slug": "God_of_Might",
+      "path": "/cn/God_of_Might",
+      "name_zh": "巨力之神",
+      "url": "https://tlidb.com/cn/God_of_Might",
+      "source_order": 103,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "God_of_Might",
+        "resolved_url": "https://tlidb.com/cn/God_of_Might"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Goddess_of_Hunting",
+      "slug": "Goddess_of_Hunting",
+      "path": "/cn/Goddess_of_Hunting",
+      "name_zh": "狩猎之神",
+      "url": "https://tlidb.com/cn/Goddess_of_Hunting",
+      "source_order": 104,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Goddess_of_Hunting",
+        "resolved_url": "https://tlidb.com/cn/Goddess_of_Hunting"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Goddess_of_Knowledge",
+      "slug": "Goddess_of_Knowledge",
+      "path": "/cn/Goddess_of_Knowledge",
+      "name_zh": "知识之神",
+      "url": "https://tlidb.com/cn/Goddess_of_Knowledge",
+      "source_order": 105,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Goddess_of_Knowledge",
+        "resolved_url": "https://tlidb.com/cn/Goddess_of_Knowledge"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "God_of_War",
+      "slug": "God_of_War",
+      "path": "/cn/God_of_War",
+      "name_zh": "征战之神",
+      "url": "https://tlidb.com/cn/God_of_War",
+      "source_order": 106,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "God_of_War",
+        "resolved_url": "https://tlidb.com/cn/God_of_War"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Goddess_of_Deception",
+      "slug": "Goddess_of_Deception",
+      "path": "/cn/Goddess_of_Deception",
+      "name_zh": "欺诈之神",
+      "url": "https://tlidb.com/cn/Goddess_of_Deception",
+      "source_order": 107,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Goddess_of_Deception",
+        "resolved_url": "https://tlidb.com/cn/Goddess_of_Deception"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "God_of_Machines",
+      "slug": "God_of_Machines",
+      "path": "/cn/God_of_Machines",
+      "name_zh": "机械之神",
+      "url": "https://tlidb.com/cn/God_of_Machines",
+      "source_order": 108,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "God_of_Machines",
+        "resolved_url": "https://tlidb.com/cn/God_of_Machines"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Gear_Blueprint",
+      "slug": "Gear_Blueprint",
+      "path": "/cn/Gear_Blueprint",
+      "name_zh": "装备蓝图",
+      "url": "https://tlidb.com/cn/Gear_Blueprint",
+      "source_order": 109,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Gear_Blueprint",
+        "resolved_url": "https://tlidb.com/cn/Gear_Blueprint"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "The_Frozen_Canvas",
+      "slug": "The_Frozen_Canvas",
+      "path": "/cn/The_Frozen_Canvas",
+      "name_zh": "画中雪原",
+      "url": "https://tlidb.com/cn/The_Frozen_Canvas",
+      "source_order": 110,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "The_Frozen_Canvas",
+        "resolved_url": "https://tlidb.com/cn/The_Frozen_Canvas"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Destiny_Related",
+      "slug": "Destiny_Related",
+      "path": "/cn/Destiny_Related",
+      "name_zh": "命运相关",
+      "url": "https://tlidb.com/cn/Destiny_Related",
+      "source_order": 111,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Destiny_Related",
+        "resolved_url": "https://tlidb.com/cn/Destiny_Related"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Inverse_Image_Echo",
+      "slug": "Inverse_Image_Echo",
+      "path": "/cn/Inverse_Image_Echo",
+      "name_zh": "逆像的残影",
+      "url": "https://tlidb.com/cn/Inverse_Image_Echo",
+      "source_order": 112,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Inverse_Image_Echo",
+        "resolved_url": "https://tlidb.com/cn/Inverse_Image_Echo"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Undetermined_Fate",
+      "slug": "Undetermined_Fate",
+      "path": "/cn/Undetermined_Fate",
+      "name_zh": "未定宿命",
+      "url": "https://tlidb.com/cn/Undetermined_Fate",
+      "source_order": 113,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Undetermined_Fate",
+        "resolved_url": "https://tlidb.com/cn/Undetermined_Fate"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Aromatic_Material",
+      "slug": "Aromatic_Material",
+      "path": "/cn/Aromatic_Material",
+      "name_zh": "香料",
+      "url": "https://tlidb.com/cn/Aromatic_Material",
+      "source_order": 114,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Aromatic_Material",
+        "resolved_url": "https://tlidb.com/cn/Aromatic_Material"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Mod",
+      "slug": "Mod",
+      "path": "/cn/Mod",
+      "name_zh": "元件",
+      "url": "https://tlidb.com/cn/Mod",
+      "source_order": 115,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Mod",
+        "resolved_url": "https://tlidb.com/cn/Mod"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Special_Prism",
+      "slug": "Special_Prism",
+      "path": "/cn/Special_Prism",
+      "name_zh": "特殊棱镜",
+      "url": "https://tlidb.com/cn/Special_Prism",
+      "source_order": 116,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Special_Prism",
+        "resolved_url": "https://tlidb.com/cn/Special_Prism"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Prism_Gauge",
+      "slug": "Prism_Gauge",
+      "path": "/cn/Prism_Gauge",
+      "name_zh": "棱镜校尺",
+      "url": "https://tlidb.com/cn/Prism_Gauge",
+      "source_order": 117,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Prism_Gauge",
+        "resolved_url": "https://tlidb.com/cn/Prism_Gauge"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Prism_Level",
+      "slug": "Prism_Level",
+      "path": "/cn/Prism_Level",
+      "name_zh": "棱镜水平仪",
+      "url": "https://tlidb.com/cn/Prism_Level",
+      "source_order": 118,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Prism_Level",
+        "resolved_url": "https://tlidb.com/cn/Prism_Level"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Prism_Repairer",
+      "slug": "Prism_Repairer",
+      "path": "/cn/Prism_Repairer",
+      "name_zh": "棱镜修复仪",
+      "url": "https://tlidb.com/cn/Prism_Repairer",
+      "source_order": 119,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Prism_Repairer",
+        "resolved_url": "https://tlidb.com/cn/Prism_Repairer"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Normal_Organ",
+      "slug": "Normal_Organ",
+      "path": "/cn/Normal_Organ",
+      "name_zh": "普通器官",
+      "url": "https://tlidb.com/cn/Normal_Organ",
+      "source_order": 120,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Normal_Organ",
+        "resolved_url": "https://tlidb.com/cn/Normal_Organ"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Flawless_Wings_-_Persistent",
+      "slug": "Flawless_Wings_-_Persistent",
+      "path": "/cn/Flawless_Wings_-_Persistent",
+      "name_zh": "完美羽翼-持续",
+      "url": "https://tlidb.com/cn/Flawless_Wings_-_Persistent",
+      "source_order": 121,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Flawless_Wings_-_Persistent",
+        "resolved_url": "https://tlidb.com/cn/Flawless_Wings_-_Persistent"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Flawless_Skin_-_Defensive",
+      "slug": "Flawless_Skin_-_Defensive",
+      "path": "/cn/Flawless_Skin_-_Defensive",
+      "name_zh": "完美皮肤-防御",
+      "url": "https://tlidb.com/cn/Flawless_Skin_-_Defensive",
+      "source_order": 122,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Flawless_Skin_-_Defensive",
+        "resolved_url": "https://tlidb.com/cn/Flawless_Skin_-_Defensive"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Flawless_Eyes_-_Debuff",
+      "slug": "Flawless_Eyes_-_Debuff",
+      "path": "/cn/Flawless_Eyes_-_Debuff",
+      "name_zh": "完美眼球-减益",
+      "url": "https://tlidb.com/cn/Flawless_Eyes_-_Debuff",
+      "source_order": 123,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Flawless_Eyes_-_Debuff",
+        "resolved_url": "https://tlidb.com/cn/Flawless_Eyes_-_Debuff"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Flawless_Embryo_-_Summon",
+      "slug": "Flawless_Embryo_-_Summon",
+      "path": "/cn/Flawless_Embryo_-_Summon",
+      "name_zh": "完美胚胎-召唤",
+      "url": "https://tlidb.com/cn/Flawless_Embryo_-_Summon",
+      "source_order": 124,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Flawless_Embryo_-_Summon",
+        "resolved_url": "https://tlidb.com/cn/Flawless_Embryo_-_Summon"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Flawless_Heart_-_Buff",
+      "slug": "Flawless_Heart_-_Buff",
+      "path": "/cn/Flawless_Heart_-_Buff",
+      "name_zh": "完美心脏-增益",
+      "url": "https://tlidb.com/cn/Flawless_Heart_-_Buff",
+      "source_order": 125,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Flawless_Heart_-_Buff",
+        "resolved_url": "https://tlidb.com/cn/Flawless_Heart_-_Buff"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Flawless_Tongue_-_Blessing",
+      "slug": "Flawless_Tongue_-_Blessing",
+      "path": "/cn/Flawless_Tongue_-_Blessing",
+      "name_zh": "完美喉舌-祝福",
+      "url": "https://tlidb.com/cn/Flawless_Tongue_-_Blessing",
+      "source_order": 126,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Flawless_Tongue_-_Blessing",
+        "resolved_url": "https://tlidb.com/cn/Flawless_Tongue_-_Blessing"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Flawless_Liver_-_Damage_Conversion",
+      "slug": "Flawless_Liver_-_Damage_Conversion",
+      "path": "/cn/Flawless_Liver_-_Damage_Conversion",
+      "name_zh": "完美肝脏-转伤",
+      "url": "https://tlidb.com/cn/Flawless_Liver_-_Damage_Conversion",
+      "source_order": 127,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Flawless_Liver_-_Damage_Conversion",
+        "resolved_url": "https://tlidb.com/cn/Flawless_Liver_-_Damage_Conversion"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Special_Organ_-_Other",
+      "slug": "Special_Organ_-_Other",
+      "path": "/cn/Special_Organ_-_Other",
+      "name_zh": "特殊器官-其它",
+      "url": "https://tlidb.com/cn/Special_Organ_-_Other",
+      "source_order": 128,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Special_Organ_-_Other",
+        "resolved_url": "https://tlidb.com/cn/Special_Organ_-_Other"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Core_Organ_-_Helmet",
+      "slug": "Core_Organ_-_Helmet",
+      "path": "/cn/Core_Organ_-_Helmet",
+      "name_zh": "核心器官-头部",
+      "url": "https://tlidb.com/cn/Core_Organ_-_Helmet",
+      "source_order": 129,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Core_Organ_-_Helmet",
+        "resolved_url": "https://tlidb.com/cn/Core_Organ_-_Helmet"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Core_Organ_-_Chest_Armor",
+      "slug": "Core_Organ_-_Chest_Armor",
+      "path": "/cn/Core_Organ_-_Chest_Armor",
+      "name_zh": "核心器官-胸甲",
+      "url": "https://tlidb.com/cn/Core_Organ_-_Chest_Armor",
+      "source_order": 130,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Core_Organ_-_Chest_Armor",
+        "resolved_url": "https://tlidb.com/cn/Core_Organ_-_Chest_Armor"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Core_Organ_-_Gloves",
+      "slug": "Core_Organ_-_Gloves",
+      "path": "/cn/Core_Organ_-_Gloves",
+      "name_zh": "核心器官-手套",
+      "url": "https://tlidb.com/cn/Core_Organ_-_Gloves",
+      "source_order": 131,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Core_Organ_-_Gloves",
+        "resolved_url": "https://tlidb.com/cn/Core_Organ_-_Gloves"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Core_Organ_-_Boots",
+      "slug": "Core_Organ_-_Boots",
+      "path": "/cn/Core_Organ_-_Boots",
+      "name_zh": "核心器官-鞋子",
+      "url": "https://tlidb.com/cn/Core_Organ_-_Boots",
+      "source_order": 132,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Core_Organ_-_Boots",
+        "resolved_url": "https://tlidb.com/cn/Core_Organ_-_Boots"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Core_Organ_-_Ring",
+      "slug": "Core_Organ_-_Ring",
+      "path": "/cn/Core_Organ_-_Ring",
+      "name_zh": "核心器官-戒指",
+      "url": "https://tlidb.com/cn/Core_Organ_-_Ring",
+      "source_order": 133,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Core_Organ_-_Ring",
+        "resolved_url": "https://tlidb.com/cn/Core_Organ_-_Ring"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Core_Organ_-_Necklace",
+      "slug": "Core_Organ_-_Necklace",
+      "path": "/cn/Core_Organ_-_Necklace",
+      "name_zh": "核心器官-项链",
+      "url": "https://tlidb.com/cn/Core_Organ_-_Necklace",
+      "source_order": 134,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Core_Organ_-_Necklace",
+        "resolved_url": "https://tlidb.com/cn/Core_Organ_-_Necklace"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Core_Organ_-_Belt",
+      "slug": "Core_Organ_-_Belt",
+      "path": "/cn/Core_Organ_-_Belt",
+      "name_zh": "核心器官-腰带",
+      "url": "https://tlidb.com/cn/Core_Organ_-_Belt",
+      "source_order": 135,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Core_Organ_-_Belt",
+        "resolved_url": "https://tlidb.com/cn/Core_Organ_-_Belt"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Cutting_Instrument",
+      "slug": "Cutting_Instrument",
+      "path": "/cn/Cutting_Instrument",
+      "name_zh": "切割器具",
+      "url": "https://tlidb.com/cn/Cutting_Instrument",
+      "source_order": 136,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Cutting_Instrument",
+        "resolved_url": "https://tlidb.com/cn/Cutting_Instrument"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Imprinting_Iron",
+      "slug": "Imprinting_Iron",
+      "path": "/cn/Imprinting_Iron",
+      "name_zh": "拓印烙铁",
+      "url": "https://tlidb.com/cn/Imprinting_Iron",
+      "source_order": 137,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Imprinting_Iron",
+        "resolved_url": "https://tlidb.com/cn/Imprinting_Iron"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Suture",
+      "slug": "Suture",
+      "path": "/cn/Suture",
+      "name_zh": "缝线",
+      "url": "https://tlidb.com/cn/Suture",
+      "source_order": 138,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Suture",
+        "resolved_url": "https://tlidb.com/cn/Suture"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Vorax_Exchange_Material",
+      "slug": "Vorax_Exchange_Material",
+      "path": "/cn/Vorax_Exchange_Material",
+      "name_zh": "渴瘾兑换材料",
+      "url": "https://tlidb.com/cn/Vorax_Exchange_Material",
+      "source_order": 139,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Vorax_Exchange_Material",
+        "resolved_url": "https://tlidb.com/cn/Vorax_Exchange_Material"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Revival_Material",
+      "slug": "Revival_Material",
+      "path": "/cn/Revival_Material",
+      "name_zh": "复苏材料",
+      "url": "https://tlidb.com/cn/Revival_Material",
+      "source_order": 140,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Revival_Material",
+        "resolved_url": "https://tlidb.com/cn/Revival_Material"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Revival_Material_(Lunar_Phase)",
+      "slug": "Revival_Material_(Lunar_Phase)",
+      "path": "/cn/Revival_Material_(Lunar_Phase)",
+      "name_zh": "复苏材料（月相）",
+      "url": "https://tlidb.com/cn/Revival_Material_(Lunar_Phase)",
+      "source_order": 141,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Revival_Material_(Lunar_Phase)",
+        "resolved_url": "https://tlidb.com/cn/Revival_Material_(Lunar_Phase)"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Nether_Kings_Broken_Divinity",
+      "slug": "Nether_Kings_Broken_Divinity",
+      "path": "/cn/Nether_Kings_Broken_Divinity",
+      "name_zh": "冥王的残缺神格",
+      "url": "https://tlidb.com/cn/Nether_Kings_Broken_Divinity",
+      "source_order": 142,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Nether_Kings_Broken_Divinity",
+        "resolved_url": "https://tlidb.com/cn/Nether_Kings_Broken_Divinity"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Nether_Kings_Divinity",
+      "slug": "Nether_Kings_Divinity",
+      "path": "/cn/Nether_Kings_Divinity",
+      "name_zh": "冥王的神格",
+      "url": "https://tlidb.com/cn/Nether_Kings_Divinity",
+      "source_order": 143,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Nether_Kings_Divinity",
+        "resolved_url": "https://tlidb.com/cn/Nether_Kings_Divinity"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Divine_Remnant",
+      "slug": "Divine_Remnant",
+      "path": "/cn/Divine_Remnant",
+      "name_zh": "神骸",
+      "url": "https://tlidb.com/cn/Divine_Remnant",
+      "source_order": 144,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Divine_Remnant",
+        "resolved_url": "https://tlidb.com/cn/Divine_Remnant"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "Soul_Nail",
+      "slug": "Soul_Nail",
+      "path": "/cn/Soul_Nail",
+      "name_zh": "魂钉",
+      "url": "https://tlidb.com/cn/Soul_Nail",
+      "source_order": 145,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "Soul_Nail",
+        "resolved_url": "https://tlidb.com/cn/Soul_Nail"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    },
+    {
+      "id": "privacy",
+      "slug": "privacy",
+      "path": "/cn/privacy",
+      "name_zh": "Privacy",
+      "url": "https://tlidb.com/cn/privacy",
+      "source_order": 146,
+      "source_locator": {
+        "source": "index",
+        "route_pattern": "/cn/<inventory_entry>",
+        "raw_href": "privacy",
+        "resolved_url": "https://tlidb.com/cn/privacy"
+      },
+      "validation": {
+        "status": "available",
+        "http_status": 200
+      }
+    }
+  ]
+}

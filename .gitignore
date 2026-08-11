@@ -224,3 +224,14 @@ __marimo__/
 *.db
 *.sqlite
 *.sqlite3
+
+# Generated Local Wiki snapshots and research outputs
+local_wiki/
+data/raw/
+data/reports/
+data/exports/
+data/extracted/
+data/structured/
+knowledge/review/
+*.zip
+PY

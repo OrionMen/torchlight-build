@@ -1,0 +1,2342 @@
+{
+  "schema_version": 1,
+  "source": {
+    "site": "tlidb",
+    "locale": "cn",
+    "index_url": "https://tlidb.com/cn/Destiny",
+    "fetched_at": "2026-08-06T13:40:14.744236+00:00",
+    "http_status": 200,
+    "html_sha256": "d9395d91300d7d7cb800d3d3ac3988dccbfa9e8d38f376e79969fd1b991e9f2c"
+  },
+  "system_id": "destiny",
+  "entity_type": "destiny",
+  "displayed_entry_count": 193,
+  "unique_entry_count": 193,
+  "duplicate_occurrence_count": 0,
+  "discovery_confidence": 0.99,
+  "quality": {
+    "displayed_entry_count": 193,
+    "unique_entry_count": 193,
+    "duplicate_occurrence_count": 0,
+    "discovery_confidence": 0.99,
+    "warnings": []
+  },
+  "entries": [
+    {
+      "id": "Micro_Fate:_Fire_Resistance",
+      "slug": "Micro_Fate:_Fire_Resistance",
+      "name_zh": "小型宿命：火焰抗性",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Fire_Resistance",
+      "source_order": 0,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：火焰抗性"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Cold_Resistance",
+      "slug": "Micro_Fate:_Cold_Resistance",
+      "name_zh": "小型宿命：冰冷抗性",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Cold_Resistance",
+      "source_order": 1,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：冰冷抗性"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Lightning_Resistance",
+      "slug": "Micro_Fate:_Lightning_Resistance",
+      "name_zh": "小型宿命：闪电抗性",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Lightning_Resistance",
+      "source_order": 2,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：闪电抗性"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Erosion_Resistance",
+      "slug": "Micro_Fate:_Erosion_Resistance",
+      "name_zh": "小型宿命：腐蚀抗性",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Erosion_Resistance",
+      "source_order": 3,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：腐蚀抗性"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Attack_Damage",
+      "slug": "Micro_Fate:_Attack_Damage",
+      "name_zh": "小型宿命：攻击伤害",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Attack_Damage",
+      "source_order": 4,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：攻击伤害"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Spell_Damage",
+      "slug": "Micro_Fate:_Spell_Damage",
+      "name_zh": "小型宿命：法术伤害",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Spell_Damage",
+      "source_order": 5,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：法术伤害"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Strength",
+      "slug": "Micro_Fate:_Strength",
+      "name_zh": "小型宿命：力量",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Strength",
+      "source_order": 6,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：力量"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Dexterity",
+      "slug": "Micro_Fate:_Dexterity",
+      "name_zh": "小型宿命：敏捷",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Dexterity",
+      "source_order": 7,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：敏捷"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Intelligence",
+      "slug": "Micro_Fate:_Intelligence",
+      "name_zh": "小型宿命：智慧",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Intelligence",
+      "source_order": 8,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：智慧"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Armor",
+      "slug": "Micro_Fate:_Armor",
+      "name_zh": "小型宿命：护甲",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Armor",
+      "source_order": 9,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：护甲"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Evade",
+      "slug": "Micro_Fate:_Evade",
+      "name_zh": "小型宿命：闪避",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Evade",
+      "source_order": 10,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：闪避"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Energy_Shield",
+      "slug": "Micro_Fate:_Energy_Shield",
+      "name_zh": "小型宿命：护盾",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Energy_Shield",
+      "source_order": 11,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：护盾"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Critical_Strike_Rating",
+      "slug": "Micro_Fate:_Critical_Strike_Rating",
+      "name_zh": "小型宿命：暴击值",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Critical_Strike_Rating",
+      "source_order": 12,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：暴击值"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Attack_Block_Chance",
+      "slug": "Micro_Fate:_Attack_Block_Chance",
+      "name_zh": "小型宿命：攻击格挡率",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Attack_Block_Chance",
+      "source_order": 13,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：攻击格挡率"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Spell_Block_Chance",
+      "slug": "Micro_Fate:_Spell_Block_Chance",
+      "name_zh": "小型宿命：法术格挡率",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Spell_Block_Chance",
+      "source_order": 14,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：法术格挡率"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Reaping_Duration",
+      "slug": "Micro_Fate:_Reaping_Duration",
+      "name_zh": "小型宿命：收割时间",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Reaping_Duration",
+      "source_order": 15,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：收割时间"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Life_Regeneration",
+      "slug": "Micro_Fate:_Life_Regeneration",
+      "name_zh": "小型宿命：生命自然回复",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Life_Regeneration",
+      "source_order": 16,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：生命自然回复"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Energy_Shield_Charge_Speed",
+      "slug": "Micro_Fate:_Energy_Shield_Charge_Speed",
+      "name_zh": "小型宿命：护盾充能速度",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Energy_Shield_Charge_Speed",
+      "source_order": 17,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：护盾充能速度"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Multistrike_Chance",
+      "slug": "Micro_Fate:_Multistrike_Chance",
+      "name_zh": "小型宿命：连续攻击几率",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Multistrike_Chance",
+      "source_order": 18,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：连续攻击几率"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Attack_Cast_Speed",
+      "slug": "Micro_Fate:_Attack_Cast_Speed",
+      "name_zh": "小型宿命：攻击施法速度",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Attack_Cast_Speed",
+      "source_order": 19,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：攻击施法速度"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Mana%",
+      "slug": "Micro_Fate:_Mana%",
+      "name_zh": "小型宿命：魔力百分比",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Mana%25",
+      "source_order": 20,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：魔力百分比"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Focus_Speed",
+      "slug": "Micro_Fate:_Focus_Speed",
+      "name_zh": "小型宿命：贯注速度",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Focus_Speed",
+      "source_order": 21,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：贯注速度"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Terra_Charge_Recovery_Speed",
+      "slug": "Micro_Fate:_Terra_Charge_Recovery_Speed",
+      "name_zh": "小型宿命：地面蓄能回复速度",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Terra_Charge_Recovery_Speed",
+      "source_order": 22,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：地面蓄能回复速度"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Aura_Effect",
+      "slug": "Micro_Fate:_Aura_Effect",
+      "name_zh": "小型宿命：光环效果",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Aura_Effect",
+      "source_order": 23,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：光环效果"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Affliction_Effect",
+      "slug": "Micro_Fate:_Affliction_Effect",
+      "name_zh": "小型宿命：加剧效果",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Affliction_Effect",
+      "source_order": 24,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：加剧效果"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Block_Ratio",
+      "slug": "Micro_Fate:_Block_Ratio",
+      "name_zh": "小型宿命：格挡比例",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Block_Ratio",
+      "source_order": 25,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：格挡比例"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Critical_Strike_Damage",
+      "slug": "Micro_Fate:_Critical_Strike_Damage",
+      "name_zh": "小型宿命：暴击伤害",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Critical_Strike_Damage",
+      "source_order": 26,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：暴击伤害"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Seal_Compensation",
+      "slug": "Micro_Fate:_Seal_Compensation",
+      "name_zh": "小型宿命：封印补偿",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Seal_Compensation",
+      "source_order": 27,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：封印补偿"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Curse_Effect",
+      "slug": "Micro_Fate:_Curse_Effect",
+      "name_zh": "小型宿命：诅咒效果",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Curse_Effect",
+      "source_order": 28,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：诅咒效果"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Movement_Speed",
+      "slug": "Micro_Fate:_Movement_Speed",
+      "name_zh": "小型宿命：移动速度",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Movement_Speed",
+      "source_order": 29,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：移动速度"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Energy_Shield_Restored_on_Defeat",
+      "slug": "Micro_Fate:_Energy_Shield_Restored_on_Defeat",
+      "name_zh": "小型宿命：击败回复护盾",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Energy_Shield_Restored_on_Defeat",
+      "source_order": 30,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：击败回复护盾"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Life_Restored_on_Defeat",
+      "slug": "Micro_Fate:_Life_Restored_on_Defeat",
+      "name_zh": "小型宿命：击败回复生命",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Life_Restored_on_Defeat",
+      "source_order": 31,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：击败回复生命"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Command",
+      "slug": "Micro_Fate:_Command",
+      "name_zh": "小型宿命：统御值",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Command",
+      "source_order": 32,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：统御值"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Double_Damage_Chance",
+      "slug": "Micro_Fate:_Double_Damage_Chance",
+      "name_zh": "小型宿命：双倍伤害几率",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Double_Damage_Chance",
+      "source_order": 33,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：双倍伤害几率"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Multistrike_Increment",
+      "slug": "Micro_Fate:_Multistrike_Increment",
+      "name_zh": "小型宿命：连续攻击递增",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Multistrike_Increment",
+      "source_order": 34,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：连续攻击递增"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Growth",
+      "slug": "Micro_Fate:_Growth",
+      "name_zh": "小型宿命：生长值",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Growth",
+      "source_order": 35,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：生长值"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Max_Fire_Resistance",
+      "slug": "Micro_Fate:_Max_Fire_Resistance",
+      "name_zh": "小型宿命：火焰抗性上限",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Max_Fire_Resistance",
+      "source_order": 36,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：火焰抗性上限"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Max_Cold_Resistance",
+      "slug": "Micro_Fate:_Max_Cold_Resistance",
+      "name_zh": "小型宿命：冰冷抗性上限",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Max_Cold_Resistance",
+      "source_order": 37,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：冰冷抗性上限"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Max_Lightning_Resistance",
+      "slug": "Micro_Fate:_Max_Lightning_Resistance",
+      "name_zh": "小型宿命：闪电抗性上限",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Max_Lightning_Resistance",
+      "source_order": 38,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：闪电抗性上限"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Max_Erosion_Resistance",
+      "slug": "Micro_Fate:_Max_Erosion_Resistance",
+      "name_zh": "小型宿命：腐蚀抗性上限",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Max_Erosion_Resistance",
+      "source_order": 39,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：腐蚀抗性上限"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Origin_of_Spirit_Magus",
+      "slug": "Micro_Fate:_Origin_of_Spirit_Magus",
+      "name_zh": "小型宿命：魔灵之源",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Origin_of_Spirit_Magus",
+      "source_order": 40,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：魔灵之源"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Deterioration_Chance",
+      "slug": "Micro_Fate:_Deterioration_Chance",
+      "name_zh": "小型宿命：恶化几率",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Deterioration_Chance",
+      "source_order": 41,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：恶化几率"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Deterioration_Duration",
+      "slug": "Micro_Fate:_Deterioration_Duration",
+      "name_zh": "小型宿命：恶化持续时间",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Deterioration_Duration",
+      "source_order": 42,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：恶化持续时间"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Ignite_Damage_Mitigation",
+      "slug": "Micro_Fate:_Ignite_Damage_Mitigation",
+      "name_zh": "小型宿命：点燃伤害减免",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Ignite_Damage_Mitigation",
+      "source_order": 43,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：点燃伤害减免"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Numbed_Effect_Mitigation",
+      "slug": "Micro_Fate:_Numbed_Effect_Mitigation",
+      "name_zh": "小型宿命：麻痹效果减免",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Numbed_Effect_Mitigation",
+      "source_order": 44,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：麻痹效果减免"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Wilt_Damage_Mitigation",
+      "slug": "Micro_Fate:_Wilt_Damage_Mitigation",
+      "name_zh": "小型宿命：凋零伤害减免",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Wilt_Damage_Mitigation",
+      "source_order": 45,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：凋零伤害减免"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Trauma_Damage_Mitigation",
+      "slug": "Micro_Fate:_Trauma_Damage_Mitigation",
+      "name_zh": "小型宿命：创伤伤害减免",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Trauma_Damage_Mitigation",
+      "source_order": 46,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：创伤伤害减免"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Slow_Effect_Mitigation",
+      "slug": "Micro_Fate:_Slow_Effect_Mitigation",
+      "name_zh": "小型宿命：减速效果减免",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Slow_Effect_Mitigation",
+      "source_order": 47,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：减速效果减免"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Paralysis_Effect_Mitigation",
+      "slug": "Micro_Fate:_Paralysis_Effect_Mitigation",
+      "name_zh": "小型宿命：瘫痪效果减免",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Paralysis_Effect_Mitigation",
+      "source_order": 48,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：瘫痪效果减免"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Weaken_Effect_Mitigation",
+      "slug": "Micro_Fate:_Weaken_Effect_Mitigation",
+      "name_zh": "小型宿命：虚弱效果减免",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Weaken_Effect_Mitigation",
+      "source_order": 49,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：虚弱效果减免"
+      }
+    },
+    {
+      "id": "Micro_Fate:_Numbed_Effect",
+      "slug": "Micro_Fate:_Numbed_Effect",
+      "name_zh": "小型宿命：麻痹效果",
+      "url": "https://tlidb.com/cn/Micro_Fate%3A_Numbed_Effect",
+      "source_order": 50,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "小型宿命：麻痹效果"
+      }
+    },
+    {
+      "id": "Medium_Fate:_Fire_Resistance",
+      "slug": "Medium_Fate:_Fire_Resistance",
+      "name_zh": "中型宿命：火焰抗性",
+      "url": "https://tlidb.com/cn/Medium_Fate%3A_Fire_Resistance",
+      "source_order": 51,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "中型宿命：火焰抗性"
+      }
+    },
+    {
+      "id": "Medium_Fate:_Cold_Resistance",
+      "slug": "Medium_Fate:_Cold_Resistance",
+      "name_zh": "中型宿命：冰冷抗性",
+      "url": "https://tlidb.com/cn/Medium_Fate%3A_Cold_Resistance",
+      "source_order": 52,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "中型宿命：冰冷抗性"
+      }
+    },
+    {
+      "id": "Medium_Fate:_Lightning_Resistance",
+      "slug": "Medium_Fate:_Lightning_Resistance",
+      "name_zh": "中型宿命：闪电抗性",
+      "url": "https://tlidb.com/cn/Medium_Fate%3A_Lightning_Resistance",
+      "source_order": 53,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "中型宿命：闪电抗性"
+      }
+    },
+    {
+      "id": "Medium_Fate:_Erosion_Resistance",
+      "slug": "Medium_Fate:_Erosion_Resistance",
+      "name_zh": "中型宿命：腐蚀抗性",
+      "url": "https://tlidb.com/cn/Medium_Fate%3A_Erosion_Resistance",
+      "source_order": 54,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "中型宿命：腐蚀抗性"
+      }
+    },
+    {
+      "id": "Medium_Fate:_Attack_Damage",
+      "slug": "Medium_Fate:_Attack_Damage",
+      "name_zh": "中型宿命：攻击伤害",
+      "url": "https://tlidb.com/cn/Medium_Fate%3A_Attack_Damage",
+      "source_order": 55,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "中型宿命：攻击伤害"
+      }
+    },
+    {
+      "id": "Medium_Fate:_Spell_Damage",
+      "slug": "Medium_Fate:_Spell_Damage",
+      "name_zh": "中型宿命：法术伤害",
+      "url": "https://tlidb.com/cn/Medium_Fate%3A_Spell_Damage",
+      "source_order": 56,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "中型宿命：法术伤害"
+      }
+    },
+    {
+      "id": "Medium_Fate:_Strength",
+      "slug": "Medium_Fate:_Strength",
+      "name_zh": "中型宿命：力量",
+      "url": "https://tlidb.com/cn/Medium_Fate%3A_Strength",
+      "source_order": 57,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "中型宿命：力量"
+      }
+    },
+    {
+      "id": "Medium_Fate:_Dexterity",
+      "slug": "Medium_Fate:_Dexterity",
+      "name_zh": "中型宿命：敏捷",
+      "url": "https://tlidb.com/cn/Medium_Fate%3A_Dexterity",
+      "source_order": 58,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "中型宿命：敏捷"
+      }
+    },
+    {
+      "id": "Medium_Fate:_Intelligence",
+      "slug": "Medium_Fate:_Intelligence",
+      "name_zh": "中型宿命：智慧",
+      "url": "https://tlidb.com/cn/Medium_Fate%3A_Intelligence",
+      "source_order": 59,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "中型宿命：智慧"
+      }
+    },
+    {
+      "id": "Medium_Fate:_Armor",
+      "slug": "Medium_Fate:_Armor",
+      "name_zh": "中型宿命：护甲",
+      "url": "https://tlidb.com/cn/Medium_Fate%3A_Armor",
+      "source_order": 60,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "中型宿命：护甲"
+      }
+    },
+    {
+      "id": "Medium_Fate:_Evade",
+      "slug": "Medium_Fate:_Evade",
+      "name_zh": "中型宿命：闪避",
+      "url": "https://tlidb.com/cn/Medium_Fate%3A_Evade",
+      "source_order": 61,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "中型宿命：闪避"
+      }
+    },
+    {
+      "id": "Medium_Fate:_Energy_Shield",
+      "slug": "Medium_Fate:_Energy_Shield",
+      "name_zh": "中型宿命：护盾",
+      "url": "https://tlidb.com/cn/Medium_Fate%3A_Energy_Shield",
+      "source_order": 62,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "中型宿命：护盾"
+      }
+    },
+    {
+      "id": "Medium_Fate:_Critical_Strike_Rating",
+      "slug": "Medium_Fate:_Critical_Strike_Rating",
+      "name_zh": "中型宿命：暴击值",
+      "url": "https://tlidb.com/cn/Medium_Fate%3A_Critical_Strike_Rating",
+      "source_order": 63,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "中型宿命：暴击值"
+      }
+    },
+    {
+      "id": "Medium_Fate:_Attack_Block_Chance",
+      "slug": "Medium_Fate:_Attack_Block_Chance",
+      "name_zh": "中型宿命：攻击格挡率",
+      "url": "https://tlidb.com/cn/Medium_Fate%3A_Attack_Block_Chance",
+      "source_order": 64,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "中型宿命：攻击格挡率"
+      }
+    },
+    {
+      "id": "Medium_Fate:_Spell_Block_Chance",
+      "slug": "Medium_Fate:_Spell_Block_Chance",
+      "name_zh": "中型宿命：法术格挡率",
+      "url": "https://tlidb.com/cn/Medium_Fate%3A_Spell_Block_Chance",
+      "source_order": 65,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "中型宿命：法术格挡率"
+      }
+    },
+    {
+      "id": "Medium_Fate:_Reaping_Duration",
+      "slug": "Medium_Fate:_Reaping_Duration",
+      "name_zh": "中型宿命：收割时间",
+      "url": "https://tlidb.com/cn/Medium_Fate%3A_Reaping_Duration",
+      "source_order": 66,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "中型宿命：收割时间"
+      }
+    },
+    {
+      "id": "Medium_Fate:_Life_Regeneration",
+      "slug": "Medium_Fate:_Life_Regeneration",
+      "name_zh": "中型宿命：生命自然回复",
+      "url": "https://tlidb.com/cn/Medium_Fate%3A_Life_Regeneration",
+      "source_order": 67,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "中型宿命：生命自然回复"
+      }
+    },
+    {
+      "id": "Medium_Fate:_Energy_Shield_Charge_Speed",
+      "slug": "Medium_Fate:_Energy_Shield_Charge_Speed",
+      "name_zh": "中型宿命：护盾充能速度",
+      "url": "https://tlidb.com/cn/Medium_Fate%3A_Energy_Shield_Charge_Speed",
+      "source_order": 68,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "中型宿命：护盾充能速度"
+      }
+    },
+    {
+      "id": "Medium_Fate:_Multistrike_Chance",
+      "slug": "Medium_Fate:_Multistrike_Chance",
+      "name_zh": "中型宿命：连续攻击几率",
+      "url": "https://tlidb.com/cn/Medium_Fate%3A_Multistrike_Chance",
+      "source_order": 69,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "中型宿命：连续攻击几率"
+      }
+    },
+    {
+      "id": "Medium_Fate:_Attack_Cast_Speed",
+      "slug": "Medium_Fate:_Attack_Cast_Speed",
+      "name_zh": "中型宿命：攻击施法速度",
+      "url": "https://tlidb.com/cn/Medium_Fate%3A_Attack_Cast_Speed",
+      "source_order": 70,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "中型宿命：攻击施法速度"
+      }
+    },
+    {
+      "id": "Medium_Fate:_Mana%",
+      "slug": "Medium_Fate:_Mana%",
+      "name_zh": "中型宿命：魔力百分比",
+      "url": "https://tlidb.com/cn/Medium_Fate%3A_Mana%25",
+      "source_order": 71,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "中型宿命：魔力百分比"
+      }
+    },
+    {
+      "id": "Medium_Fate:_Focus_Speed",
+      "slug": "Medium_Fate:_Focus_Speed",
+      "name_zh": "中型宿命：贯注速度",
+      "url": "https://tlidb.com/cn/Medium_Fate%3A_Focus_Speed",
+      "source_order": 72,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "中型宿命：贯注速度"
+      }
+    },
+    {
+      "id": "Medium_Fate:_Terra_Charge_Recovery_Speed",
+      "slug": "Medium_Fate:_Terra_Charge_Recovery_Speed",
+      "name_zh": "中型宿命：地面蓄能回复速度",
+      "url": "https://tlidb.com/cn/Medium_Fate%3A_Terra_Charge_Recovery_Speed",
+      "source_order": 73,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "中型宿命：地面蓄能回复速度"
+      }
+    },
+    {
+      "id": "Medium_Fate:_Aura_Effect",
+      "slug": "Medium_Fate:_Aura_Effect",
+      "name_zh": "中型宿命：光环效果",
+      "url": "https://tlidb.com/cn/Medium_Fate%3A_Aura_Effect",
+      "source_order": 74,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "中型宿命：光环效果"
+      }
+    },
+    {
+      "id": "Medium_Fate:_Affliction_Effect",
+      "slug": "Medium_Fate:_Affliction_Effect",
+      "name_zh": "中型宿命：加剧效果",
+      "url": "https://tlidb.com/cn/Medium_Fate%3A_Affliction_Effect",
+      "source_order": 75,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "中型宿命：加剧效果"
+      }
+    },
+    {
+      "id": "Medium_Fate:_Block_Ratio",
+      "slug": "Medium_Fate:_Block_Ratio",
+      "name_zh": "中型宿命：格挡比例",
+      "url": "https://tlidb.com/cn/Medium_Fate%3A_Block_Ratio",
+      "source_order": 76,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "中型宿命：格挡比例"
+      }
+    },
+    {
+      "id": "Medium_Fate:_Critical_Strike_Damage",
+      "slug": "Medium_Fate:_Critical_Strike_Damage",
+      "name_zh": "中型宿命：暴击伤害",
+      "url": "https://tlidb.com/cn/Medium_Fate%3A_Critical_Strike_Damage",
+      "source_order": 77,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "中型宿命：暴击伤害"
+      }
+    },
+    {
+      "id": "Medium_Fate:_Seal_Compensation",
+      "slug": "Medium_Fate:_Seal_Compensation",
+      "name_zh": "中型宿命：封印补偿",
+      "url": "https://tlidb.com/cn/Medium_Fate%3A_Seal_Compensation",
+      "source_order": 78,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "中型宿命：封印补偿"
+      }
+    },
+    {
+      "id": "Medium_Fate:_Curse_Effect",
+      "slug": "Medium_Fate:_Curse_Effect",
+      "name_zh": "中型宿命：诅咒效果",
+      "url": "https://tlidb.com/cn/Medium_Fate%3A_Curse_Effect",
+      "source_order": 79,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "中型宿命：诅咒效果"
+      }
+    },
+    {
+      "id": "Medium_Fate:_Movement_Speed",
+      "slug": "Medium_Fate:_Movement_Speed",
+      "name_zh": "中型宿命：移动速度",
+      "url": "https://tlidb.com/cn/Medium_Fate%3A_Movement_Speed",
+      "source_order": 80,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "中型宿命：移动速度"
+      }
+    },
+    {
+      "id": "Medium_Fate:_Energy_Shield_Restored_on_Defeat",
+      "slug": "Medium_Fate:_Energy_Shield_Restored_on_Defeat",
+      "name_zh": "中型宿命：击败回复护盾",
+      "url": "https://tlidb.com/cn/Medium_Fate%3A_Energy_Shield_Restored_on_Defeat",
+      "source_order": 81,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "中型宿命：击败回复护盾"
+      }
+    },
+    {
+      "id": "Medium_Fate:_Life_Restored_on_Defeat",
+      "slug": "Medium_Fate:_Life_Restored_on_Defeat",
+      "name_zh": "中型宿命：击败回复生命",
+      "url": "https://tlidb.com/cn/Medium_Fate%3A_Life_Restored_on_Defeat",
+      "source_order": 82,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "中型宿命：击败回复生命"
+      }
+    },
+    {
+      "id": "Medium_Fate:_Command",
+      "slug": "Medium_Fate:_Command",
+      "name_zh": "中型宿命：统御值",
+      "url": "https://tlidb.com/cn/Medium_Fate%3A_Command",
+      "source_order": 83,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "中型宿命：统御值"
+      }
+    },
+    {
+      "id": "Medium_Fate:_Double_Damage_Chance",
+      "slug": "Medium_Fate:_Double_Damage_Chance",
+      "name_zh": "中型宿命：双倍伤害几率",
+      "url": "https://tlidb.com/cn/Medium_Fate%3A_Double_Damage_Chance",
+      "source_order": 84,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "中型宿命：双倍伤害几率"
+      }
+    },
+    {
+      "id": "Medium_Fate:_Multistrike_Increment",
+      "slug": "Medium_Fate:_Multistrike_Increment",
+      "name_zh": "中型宿命：连续攻击递增",
+      "url": "https://tlidb.com/cn/Medium_Fate%3A_Multistrike_Increment",
+      "source_order": 85,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "中型宿命：连续攻击递增"
+      }
+    },
+    {
+      "id": "Medium_Fate:_Growth",
+      "slug": "Medium_Fate:_Growth",
+      "name_zh": "中型宿命：生长值",
+      "url": "https://tlidb.com/cn/Medium_Fate%3A_Growth",
+      "source_order": 86,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "中型宿命：生长值"
+      }
+    },
+    {
+      "id": "Medium_Fate:_Max_Fire_Resistance",
+      "slug": "Medium_Fate:_Max_Fire_Resistance",
+      "name_zh": "中型宿命：火焰抗性上限",
+      "url": "https://tlidb.com/cn/Medium_Fate%3A_Max_Fire_Resistance",
+      "source_order": 87,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "中型宿命：火焰抗性上限"
+      }
+    },
+    {
+      "id": "Medium_Fate:_Max_Cold_Resistance",
+      "slug": "Medium_Fate:_Max_Cold_Resistance",
+      "name_zh": "中型宿命：冰冷抗性上限",
+      "url": "https://tlidb.com/cn/Medium_Fate%3A_Max_Cold_Resistance",
+      "source_order": 88,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "中型宿命：冰冷抗性上限"
+      }
+    },
+    {
+      "id": "Medium_Fate:_Max_Lightning_Resistance",
+      "slug": "Medium_Fate:_Max_Lightning_Resistance",
+      "name_zh": "中型宿命：闪电抗性上限",
+      "url": "https://tlidb.com/cn/Medium_Fate%3A_Max_Lightning_Resistance",
+      "source_order": 89,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "中型宿命：闪电抗性上限"
+      }
+    },
+    {
+      "id": "Medium_Fate:_Max_Erosion_Resistance",
+      "slug": "Medium_Fate:_Max_Erosion_Resistance",
+      "name_zh": "中型宿命：腐蚀抗性上限",
+      "url": "https://tlidb.com/cn/Medium_Fate%3A_Max_Erosion_Resistance",
+      "source_order": 90,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "中型宿命：腐蚀抗性上限"
+      }
+    },
+    {
+      "id": "Medium_Fate:_Origin_of_Spirit_Magus",
+      "slug": "Medium_Fate:_Origin_of_Spirit_Magus",
+      "name_zh": "中型宿命：魔灵之源",
+      "url": "https://tlidb.com/cn/Medium_Fate%3A_Origin_of_Spirit_Magus",
+      "source_order": 91,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "中型宿命：魔灵之源"
+      }
+    },
+    {
+      "id": "Medium_Fate:_Numbed_Effect",
+      "slug": "Medium_Fate:_Numbed_Effect",
+      "name_zh": "中型宿命：麻痹效果",
+      "url": "https://tlidb.com/cn/Medium_Fate%3A_Numbed_Effect",
+      "source_order": 92,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "中型宿命：麻痹效果"
+      }
+    },
+    {
+      "id": "Kismet:_Double_Blade",
+      "slug": "Kismet:_Double_Blade",
+      "name_zh": "天命：双头刀",
+      "url": "https://tlidb.com/cn/Kismet%3A_Double_Blade",
+      "source_order": 93,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "天命：双头刀"
+      }
+    },
+    {
+      "id": "Kismet:_Lion",
+      "slug": "Kismet:_Lion",
+      "name_zh": "天命：狮子",
+      "url": "https://tlidb.com/cn/Kismet%3A_Lion",
+      "source_order": 94,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "天命：狮子"
+      }
+    },
+    {
+      "id": "Kismet:_Guillotine",
+      "slug": "Kismet:_Guillotine",
+      "name_zh": "天命：断头台",
+      "url": "https://tlidb.com/cn/Kismet%3A_Guillotine",
+      "source_order": 95,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "天命：断头台"
+      }
+    },
+    {
+      "id": "Kismet:_War_Hammer",
+      "slug": "Kismet:_War_Hammer",
+      "name_zh": "天命：战锤",
+      "url": "https://tlidb.com/cn/Kismet%3A_War_Hammer",
+      "source_order": 96,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "天命：战锤"
+      }
+    },
+    {
+      "id": "Kismet:_Hound",
+      "slug": "Kismet:_Hound",
+      "name_zh": "天命：猎犬",
+      "url": "https://tlidb.com/cn/Kismet%3A_Hound",
+      "source_order": 97,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "天命：猎犬"
+      }
+    },
+    {
+      "id": "Kismet:_Giant_Bear",
+      "slug": "Kismet:_Giant_Bear",
+      "name_zh": "天命：巨熊",
+      "url": "https://tlidb.com/cn/Kismet%3A_Giant_Bear",
+      "source_order": 98,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "天命：巨熊"
+      }
+    },
+    {
+      "id": "Kismet:_Scale",
+      "slug": "Kismet:_Scale",
+      "name_zh": "天命：天秤",
+      "url": "https://tlidb.com/cn/Kismet%3A_Scale",
+      "source_order": 99,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "天命：天秤"
+      }
+    },
+    {
+      "id": "Kismet:_Giant",
+      "slug": "Kismet:_Giant",
+      "name_zh": "天命：巨人",
+      "url": "https://tlidb.com/cn/Kismet%3A_Giant",
+      "source_order": 100,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "天命：巨人"
+      }
+    },
+    {
+      "id": "Kismet:_Prosthetics",
+      "slug": "Kismet:_Prosthetics",
+      "name_zh": "天命：义肢",
+      "url": "https://tlidb.com/cn/Kismet%3A_Prosthetics",
+      "source_order": 101,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "天命：义肢"
+      }
+    },
+    {
+      "id": "Kismet:_Leader",
+      "slug": "Kismet:_Leader",
+      "name_zh": "天命：首脑",
+      "url": "https://tlidb.com/cn/Kismet%3A_Leader",
+      "source_order": 102,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "天命：首脑"
+      }
+    },
+    {
+      "id": "Kismet:_Screw",
+      "slug": "Kismet:_Screw",
+      "name_zh": "天命：螺钉",
+      "url": "https://tlidb.com/cn/Kismet%3A_Screw",
+      "source_order": 103,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "天命：螺钉"
+      }
+    },
+    {
+      "id": "Kismet:_Green_Shoot",
+      "slug": "Kismet:_Green_Shoot",
+      "name_zh": "天命：绿芽",
+      "url": "https://tlidb.com/cn/Kismet%3A_Green_Shoot",
+      "source_order": 104,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "天命：绿芽"
+      }
+    },
+    {
+      "id": "Kismet:_Wind_Chime",
+      "slug": "Kismet:_Wind_Chime",
+      "name_zh": "天命：风铃",
+      "url": "https://tlidb.com/cn/Kismet%3A_Wind_Chime",
+      "source_order": 105,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "天命：风铃"
+      }
+    },
+    {
+      "id": "Kismet:_Bouquet",
+      "slug": "Kismet:_Bouquet",
+      "name_zh": "天命：花团",
+      "url": "https://tlidb.com/cn/Kismet%3A_Bouquet",
+      "source_order": 106,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "天命：花团"
+      }
+    },
+    {
+      "id": "Kismet:_Tiger_Roar",
+      "slug": "Kismet:_Tiger_Roar",
+      "name_zh": "天命：虎啸",
+      "url": "https://tlidb.com/cn/Kismet%3A_Tiger_Roar",
+      "source_order": 107,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "天命：虎啸"
+      }
+    },
+    {
+      "id": "Kismet:_Mercury_Bottle",
+      "slug": "Kismet:_Mercury_Bottle",
+      "name_zh": "天命：水银瓶",
+      "url": "https://tlidb.com/cn/Kismet%3A_Mercury_Bottle",
+      "source_order": 108,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "天命：水银瓶"
+      }
+    },
+    {
+      "id": "Kismet:_Scorpion_Stinger",
+      "slug": "Kismet:_Scorpion_Stinger",
+      "name_zh": "天命：蝎尾针",
+      "url": "https://tlidb.com/cn/Kismet%3A_Scorpion_Stinger",
+      "source_order": 109,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "天命：蝎尾针"
+      }
+    },
+    {
+      "id": "Kismet:_Growth_Ring",
+      "slug": "Kismet:_Growth_Ring",
+      "name_zh": "天命：年轮",
+      "url": "https://tlidb.com/cn/Kismet%3A_Growth_Ring",
+      "source_order": 110,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "天命：年轮"
+      }
+    },
+    {
+      "id": "Kismet:_Spades",
+      "slug": "Kismet:_Spades",
+      "name_zh": "天命：黑桃心",
+      "url": "https://tlidb.com/cn/Kismet%3A_Spades",
+      "source_order": 111,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "天命：黑桃心"
+      }
+    },
+    {
+      "id": "Kismet:_Black_Square",
+      "slug": "Kismet:_Black_Square",
+      "name_zh": "天命：黑方块",
+      "url": "https://tlidb.com/cn/Kismet%3A_Black_Square",
+      "source_order": 112,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "天命：黑方块"
+      }
+    },
+    {
+      "id": "Kismet:_Red_Leech",
+      "slug": "Kismet:_Red_Leech",
+      "name_zh": "天命：红蛭",
+      "url": "https://tlidb.com/cn/Kismet%3A_Red_Leech",
+      "source_order": 113,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "天命：红蛭"
+      }
+    },
+    {
+      "id": "Kismet:_Volcano",
+      "slug": "Kismet:_Volcano",
+      "name_zh": "天命：火山",
+      "url": "https://tlidb.com/cn/Kismet%3A_Volcano",
+      "source_order": 114,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "天命：火山"
+      }
+    },
+    {
+      "id": "Kismet:_Spider_Fluid",
+      "slug": "Kismet:_Spider_Fluid",
+      "name_zh": "天命：蛛液",
+      "url": "https://tlidb.com/cn/Kismet%3A_Spider_Fluid",
+      "source_order": 115,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "天命：蛛液"
+      }
+    },
+    {
+      "id": "Kismet:_Hunter",
+      "slug": "Kismet:_Hunter",
+      "name_zh": "天命：猎户",
+      "url": "https://tlidb.com/cn/Kismet%3A_Hunter",
+      "source_order": 116,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "天命：猎户"
+      }
+    },
+    {
+      "id": "Kismet:_Fisherman",
+      "slug": "Kismet:_Fisherman",
+      "name_zh": "天命：渔夫",
+      "url": "https://tlidb.com/cn/Kismet%3A_Fisherman",
+      "source_order": 117,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "天命：渔夫"
+      }
+    },
+    {
+      "id": "Kismet:_Hawk",
+      "slug": "Kismet:_Hawk",
+      "name_zh": "天命：鹰隼",
+      "url": "https://tlidb.com/cn/Kismet%3A_Hawk",
+      "source_order": 118,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "天命：鹰隼"
+      }
+    },
+    {
+      "id": "Kismet:_Ripple",
+      "slug": "Kismet:_Ripple",
+      "name_zh": "天命：涟漪",
+      "url": "https://tlidb.com/cn/Kismet%3A_Ripple",
+      "source_order": 119,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "天命：涟漪"
+      }
+    },
+    {
+      "id": "Kismet:_Mouth_of_the_Spring",
+      "slug": "Kismet:_Mouth_of_the_Spring",
+      "name_zh": "天命：泉眼",
+      "url": "https://tlidb.com/cn/Kismet%3A_Mouth_of_the_Spring",
+      "source_order": 120,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "天命：泉眼"
+      }
+    },
+    {
+      "id": "Kismet:_Witch_Cloak",
+      "slug": "Kismet:_Witch_Cloak",
+      "name_zh": "天命：魔女斗篷",
+      "url": "https://tlidb.com/cn/Kismet%3A_Witch_Cloak",
+      "source_order": 121,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "天命：魔女斗篷"
+      }
+    },
+    {
+      "id": "Kismet:_Guard",
+      "slug": "Kismet:_Guard",
+      "name_zh": "天命：侍卫",
+      "url": "https://tlidb.com/cn/Kismet%3A_Guard",
+      "source_order": 122,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "天命：侍卫"
+      }
+    },
+    {
+      "id": "Kismet:_Shadow_Mage",
+      "slug": "Kismet:_Shadow_Mage",
+      "name_zh": "天命：影法师",
+      "url": "https://tlidb.com/cn/Kismet%3A_Shadow_Mage",
+      "source_order": 123,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "天命：影法师"
+      }
+    },
+    {
+      "id": "Kismet:_Ice_Soul",
+      "slug": "Kismet:_Ice_Soul",
+      "name_zh": "天命：冰魂",
+      "url": "https://tlidb.com/cn/Kismet%3A_Ice_Soul",
+      "source_order": 124,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "天命：冰魂"
+      }
+    },
+    {
+      "id": "Kismet:_Stone_Bear",
+      "slug": "Kismet:_Stone_Bear",
+      "name_zh": "天命：石熊",
+      "url": "https://tlidb.com/cn/Kismet%3A_Stone_Bear",
+      "source_order": 125,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "天命：石熊"
+      }
+    },
+    {
+      "id": "Kismet:_Civet",
+      "slug": "Kismet:_Civet",
+      "name_zh": "天命：灵猫",
+      "url": "https://tlidb.com/cn/Kismet%3A_Civet",
+      "source_order": 126,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "天命：灵猫"
+      }
+    },
+    {
+      "id": "Kismet:_Pale_Fox",
+      "slug": "Kismet:_Pale_Fox",
+      "name_zh": "天命：苍狐",
+      "url": "https://tlidb.com/cn/Kismet%3A_Pale_Fox",
+      "source_order": 127,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "天命：苍狐"
+      }
+    },
+    {
+      "id": "Kismet:_Longevity_Tree",
+      "slug": "Kismet:_Longevity_Tree",
+      "name_zh": "天命：长生树",
+      "url": "https://tlidb.com/cn/Kismet%3A_Longevity_Tree",
+      "source_order": 128,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "天命：长生树"
+      }
+    },
+    {
+      "id": "Kismet:_Shield",
+      "slug": "Kismet:_Shield",
+      "name_zh": "天命：盾牌",
+      "url": "https://tlidb.com/cn/Kismet%3A_Shield",
+      "source_order": 129,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "天命：盾牌"
+      }
+    },
+    {
+      "id": "Kismet:_Star_Trail",
+      "slug": "Kismet:_Star_Trail",
+      "name_zh": "天命：星轨",
+      "url": "https://tlidb.com/cn/Kismet%3A_Star_Trail",
+      "source_order": 130,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "天命：星轨"
+      }
+    },
+    {
+      "id": "Kismet:_Synthetic_Heart",
+      "slug": "Kismet:_Synthetic_Heart",
+      "name_zh": "天命：智械心",
+      "url": "https://tlidb.com/cn/Kismet%3A_Synthetic_Heart",
+      "source_order": 131,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "天命：智械心"
+      }
+    },
+    {
+      "id": "Kismet:_Creek",
+      "slug": "Kismet:_Creek",
+      "name_zh": "天命：溪流",
+      "url": "https://tlidb.com/cn/Kismet%3A_Creek",
+      "source_order": 132,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "天命：溪流"
+      }
+    },
+    {
+      "id": "Kismet:_Sacred_Crest",
+      "slug": "Kismet:_Sacred_Crest",
+      "name_zh": "天命：圣徽",
+      "url": "https://tlidb.com/cn/Kismet%3A_Sacred_Crest",
+      "source_order": 133,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "天命：圣徽"
+      }
+    },
+    {
+      "id": "Kismet:_Fluffy_Ball",
+      "slug": "Kismet:_Fluffy_Ball",
+      "name_zh": "天命：绒团",
+      "url": "https://tlidb.com/cn/Kismet%3A_Fluffy_Ball",
+      "source_order": 134,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "天命：绒团"
+      }
+    },
+    {
+      "id": "Kismet:_Ashes",
+      "slug": "Kismet:_Ashes",
+      "name_zh": "天命：余灰",
+      "url": "https://tlidb.com/cn/Kismet%3A_Ashes",
+      "source_order": 135,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "天命：余灰"
+      }
+    },
+    {
+      "id": "Kismet:_Ascetic",
+      "slug": "Kismet:_Ascetic",
+      "name_zh": "天命：苦行者",
+      "url": "https://tlidb.com/cn/Kismet%3A_Ascetic",
+      "source_order": 136,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "天命：苦行者"
+      }
+    },
+    {
+      "id": "Kismet:_Tigers_Chain",
+      "slug": "Kismet:_Tigers_Chain",
+      "name_zh": "天命：擒虎",
+      "url": "https://tlidb.com/cn/Kismet%3A_Tigers_Chain",
+      "source_order": 137,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "天命：擒虎"
+      }
+    },
+    {
+      "id": "Kismet:_Deeproot",
+      "slug": "Kismet:_Deeproot",
+      "name_zh": "天命：深根",
+      "url": "https://tlidb.com/cn/Kismet%3A_Deeproot",
+      "source_order": 138,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "天命：深根"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Solid_Rock",
+      "slug": "Dual_Kismet:_Solid_Rock",
+      "name_zh": "双生天命：坚岩",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Solid_Rock",
+      "source_order": 139,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：坚岩"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Fire_in_the_Stone",
+      "slug": "Dual_Kismet:_Fire_in_the_Stone",
+      "name_zh": "双生天命：石中火",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Fire_in_the_Stone",
+      "source_order": 140,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：石中火"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Sun_Slash",
+      "slug": "Dual_Kismet:_Sun_Slash",
+      "name_zh": "双生天命：斩日",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Sun_Slash",
+      "source_order": 141,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：斩日"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Evil_Flame",
+      "slug": "Dual_Kismet:_Evil_Flame",
+      "name_zh": "双生天命：恶焰",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Evil_Flame",
+      "source_order": 142,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：恶焰"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Hot_Ice",
+      "slug": "Dual_Kismet:_Hot_Ice",
+      "name_zh": "双生天命：热冰",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Hot_Ice",
+      "source_order": 143,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：热冰"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Echidna",
+      "slug": "Dual_Kismet:_Echidna",
+      "name_zh": "双生天命：针鼹",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Echidna",
+      "source_order": 144,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：针鼹"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Viper",
+      "slug": "Dual_Kismet:_Viper",
+      "name_zh": "双生天命：蝮蛇",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Viper",
+      "source_order": 145,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：蝮蛇"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Rock_Core",
+      "slug": "Dual_Kismet:_Rock_Core",
+      "name_zh": "双生天命：岩心",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Rock_Core",
+      "source_order": 146,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：岩心"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Fire_Plume",
+      "slug": "Dual_Kismet:_Fire_Plume",
+      "name_zh": "双生天命：火羽",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Fire_Plume",
+      "source_order": 147,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：火羽"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Thunder_Branch",
+      "slug": "Dual_Kismet:_Thunder_Branch",
+      "name_zh": "双生天命：雷枝",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Thunder_Branch",
+      "source_order": 148,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：雷枝"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Ice_Flower",
+      "slug": "Dual_Kismet:_Ice_Flower",
+      "name_zh": "双生天命：冰花",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Ice_Flower",
+      "source_order": 149,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：冰花"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Dark_Moon",
+      "slug": "Dual_Kismet:_Dark_Moon",
+      "name_zh": "双生天命：暗月",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Dark_Moon",
+      "source_order": 150,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：暗月"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Ghost_Bee",
+      "slug": "Dual_Kismet:_Ghost_Bee",
+      "name_zh": "双生天命：幽灵蜂",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Ghost_Bee",
+      "source_order": 151,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：幽灵蜂"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Mechanical_Tree",
+      "slug": "Dual_Kismet:_Mechanical_Tree",
+      "name_zh": "双生天命：机械树",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Mechanical_Tree",
+      "source_order": 152,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：机械树"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Queen_Ant",
+      "slug": "Dual_Kismet:_Queen_Ant",
+      "name_zh": "双生天命：蚁后",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Queen_Ant",
+      "source_order": 153,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：蚁后"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Hanging_Bird",
+      "slug": "Dual_Kismet:_Hanging_Bird",
+      "name_zh": "双生天命：倒吊鸟",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Hanging_Bird",
+      "source_order": 154,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：倒吊鸟"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Twin_Cities",
+      "slug": "Dual_Kismet:_Twin_Cities",
+      "name_zh": "双生天命：双城",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Twin_Cities",
+      "source_order": 155,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：双城"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Bounded_Holy_Maiden",
+      "slug": "Dual_Kismet:_Bounded_Holy_Maiden",
+      "name_zh": "双生天命：束缚圣女",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Bounded_Holy_Maiden",
+      "source_order": 156,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：束缚圣女"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Mammoth",
+      "slug": "Dual_Kismet:_Mammoth",
+      "name_zh": "双生天命：猛犸",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Mammoth",
+      "source_order": 157,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：猛犸"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Mountain_God",
+      "slug": "Dual_Kismet:_Mountain_God",
+      "name_zh": "双生天命：山神",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Mountain_God",
+      "source_order": 158,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：山神"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Spirit_Orb",
+      "slug": "Dual_Kismet:_Spirit_Orb",
+      "name_zh": "双生天命：灵球",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Spirit_Orb",
+      "source_order": 159,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：灵球"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Hunters_Hand",
+      "slug": "Dual_Kismet:_Hunters_Hand",
+      "name_zh": "双生天命：游猎之手",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Hunters_Hand",
+      "source_order": 160,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：游猎之手"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Gods_Fall",
+      "slug": "Dual_Kismet:_Gods_Fall",
+      "name_zh": "双生天命：神人之殇",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Gods_Fall",
+      "source_order": 161,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：神人之殇"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Headless",
+      "slug": "Dual_Kismet:_Headless",
+      "name_zh": "双生天命：无首人",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Headless",
+      "source_order": 162,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：无首人"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Heartless",
+      "slug": "Dual_Kismet:_Heartless",
+      "name_zh": "双生天命：空心人",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Heartless",
+      "source_order": 163,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：空心人"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Pointer",
+      "slug": "Dual_Kismet:_Pointer",
+      "name_zh": "双生天命：指针",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Pointer",
+      "source_order": 164,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：指针"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Shadow",
+      "slug": "Dual_Kismet:_Shadow",
+      "name_zh": "双生天命：绝影",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Shadow",
+      "source_order": 165,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：绝影"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Three-Eyed_Cat",
+      "slug": "Dual_Kismet:_Three-Eyed_Cat",
+      "name_zh": "双生天命：三眼猫",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Three-Eyed_Cat",
+      "source_order": 166,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：三眼猫"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Two-Headed_Crow",
+      "slug": "Dual_Kismet:_Two-Headed_Crow",
+      "name_zh": "双生天命：双头鸦",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Two-Headed_Crow",
+      "source_order": 167,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：双头鸦"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Plague_Source",
+      "slug": "Dual_Kismet:_Plague_Source",
+      "name_zh": "双生天命：疫源",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Plague_Source",
+      "source_order": 168,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：疫源"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Star-Chasing_Arrow",
+      "slug": "Dual_Kismet:_Star-Chasing_Arrow",
+      "name_zh": "双生天命：逐星之箭",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Star-Chasing_Arrow",
+      "source_order": 169,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：逐星之箭"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Mighty_Arrow",
+      "slug": "Dual_Kismet:_Mighty_Arrow",
+      "name_zh": "双生天命：万钧之箭",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Mighty_Arrow",
+      "source_order": 170,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：万钧之箭"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Great_Library",
+      "slug": "Dual_Kismet:_Great_Library",
+      "name_zh": "双生天命：大图书馆",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Great_Library",
+      "source_order": 171,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：大图书馆"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Iron_Wall",
+      "slug": "Dual_Kismet:_Iron_Wall",
+      "name_zh": "双生天命：铁壁",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Iron_Wall",
+      "source_order": 172,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：铁壁"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Hatch_Out",
+      "slug": "Dual_Kismet:_Hatch_Out",
+      "name_zh": "双生天命：破壳",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Hatch_Out",
+      "source_order": 173,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：破壳"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Perched_River",
+      "slug": "Dual_Kismet:_Perched_River",
+      "name_zh": "双生天命：悬河",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Perched_River",
+      "source_order": 174,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：悬河"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Flash_Flood",
+      "slug": "Dual_Kismet:_Flash_Flood",
+      "name_zh": "双生天命：山洪",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Flash_Flood",
+      "source_order": 175,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：山洪"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Wraith",
+      "slug": "Dual_Kismet:_Wraith",
+      "name_zh": "双生天命：伥鬼",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Wraith",
+      "source_order": 176,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：伥鬼"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Spindle",
+      "slug": "Dual_Kismet:_Spindle",
+      "name_zh": "双生天命：纺锤",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Spindle",
+      "source_order": 177,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：纺锤"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Mirror_Cracks",
+      "slug": "Dual_Kismet:_Mirror_Cracks",
+      "name_zh": "双生天命：镜痕",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Mirror_Cracks",
+      "source_order": 178,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：镜痕"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Unholy_Grail",
+      "slug": "Dual_Kismet:_Unholy_Grail",
+      "name_zh": "双生天命：肮脏圣杯",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Unholy_Grail",
+      "source_order": 179,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：肮脏圣杯"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Sky_Piercer",
+      "slug": "Dual_Kismet:_Sky_Piercer",
+      "name_zh": "双生天命：破空之箭",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Sky_Piercer",
+      "source_order": 180,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：破空之箭"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Prophet",
+      "slug": "Dual_Kismet:_Prophet",
+      "name_zh": "双生天命：预言家",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Prophet",
+      "source_order": 181,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：预言家"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Butterfly_in_a_Bottle",
+      "slug": "Dual_Kismet:_Butterfly_in_a_Bottle",
+      "name_zh": "双生天命：瓶中蝶",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Butterfly_in_a_Bottle",
+      "source_order": 182,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：瓶中蝶"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Bird_in_a_Pond",
+      "slug": "Dual_Kismet:_Bird_in_a_Pond",
+      "name_zh": "双生天命：池中鸟",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Bird_in_a_Pond",
+      "source_order": 183,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：池中鸟"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Fish_in_a_Cage",
+      "slug": "Dual_Kismet:_Fish_in_a_Cage",
+      "name_zh": "双生天命：笼中鱼",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Fish_in_a_Cage",
+      "source_order": 184,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：笼中鱼"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Witchs_Cauldron",
+      "slug": "Dual_Kismet:_Witchs_Cauldron",
+      "name_zh": "双生天命：女巫之釜",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Witchs_Cauldron",
+      "source_order": 185,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：女巫之釜"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Peerless",
+      "slug": "Dual_Kismet:_Peerless",
+      "name_zh": "双生天命：极武",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Peerless",
+      "source_order": 186,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：极武"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Bitterbond",
+      "slug": "Dual_Kismet:_Bitterbond",
+      "name_zh": "双生天命：怨偶",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Bitterbond",
+      "source_order": 187,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：怨偶"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Resentful_Maiden",
+      "slug": "Dual_Kismet:_Resentful_Maiden",
+      "name_zh": "双生天命：怨女",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Resentful_Maiden",
+      "source_order": 188,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：怨女"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Banshee",
+      "slug": "Dual_Kismet:_Banshee",
+      "name_zh": "双生天命：报丧女妖",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Banshee",
+      "source_order": 189,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：报丧女妖"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Shackles",
+      "slug": "Dual_Kismet:_Shackles",
+      "name_zh": "双生天命：镣铐",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Shackles",
+      "source_order": 190,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：镣铐"
+      }
+    },
+    {
+      "id": "Dual_Kismet:_Ribbon",
+      "slug": "Dual_Kismet:_Ribbon",
+      "name_zh": "双生天命：绸带",
+      "url": "https://tlidb.com/cn/Dual_Kismet%3A_Ribbon",
+      "source_order": 191,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "双生天命：绸带"
+      }
+    },
+    {
+      "id": "Undetermined_Fate",
+      "slug": "Undetermined_Fate",
+      "name_zh": "未定宿命",
+      "url": "https://tlidb.com/cn/Undetermined_Fate",
+      "source_order": 192,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /193",
+        "link_text": "未定宿命"
+      }
+    }
+  ]
+}

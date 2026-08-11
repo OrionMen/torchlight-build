@@ -1,0 +1,1490 @@
+{
+  "schema_version": 1,
+  "source": {
+    "site": "tlidb",
+    "locale": "cn",
+    "index_url": "https://tlidb.com/cn/Support_Skill",
+    "fetched_at": "2026-08-06T13:40:18.544674+00:00",
+    "http_status": 200,
+    "html_sha256": "bec7124afd8f0c29fce8291fa255cc1858dd2c4cb47dbb745bf64e307ea6f94d"
+  },
+  "system_id": "support_skill",
+  "entity_type": "support_skill",
+  "displayed_entry_count": 122,
+  "unique_entry_count": 122,
+  "duplicate_occurrence_count": 0,
+  "discovery_confidence": 0.99,
+  "quality": {
+    "displayed_entry_count": 122,
+    "unique_entry_count": 122,
+    "duplicate_occurrence_count": 0,
+    "discovery_confidence": 0.99,
+    "warnings": []
+  },
+  "entries": [
+    {
+      "id": "Multiple_Projectiles",
+      "slug": "Multiple_Projectiles",
+      "name_zh": "散射",
+      "url": "https://tlidb.com/cn/Multiple_Projectiles",
+      "source_order": 0,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "散射"
+      }
+    },
+    {
+      "id": "Multistrike",
+      "slug": "Multistrike",
+      "name_zh": "连续攻击",
+      "url": "https://tlidb.com/cn/Multistrike",
+      "source_order": 1,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "连续攻击"
+      }
+    },
+    {
+      "id": "Projectile_Split",
+      "slug": "Projectile_Split",
+      "name_zh": "投射物分裂",
+      "url": "https://tlidb.com/cn/Projectile_Split",
+      "source_order": 2,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "投射物分裂"
+      }
+    },
+    {
+      "id": "Increased_Area",
+      "slug": "Increased_Area",
+      "name_zh": "范围扩大",
+      "url": "https://tlidb.com/cn/Increased_Area",
+      "source_order": 3,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "范围扩大"
+      }
+    },
+    {
+      "id": "Melee_Knockback",
+      "slug": "Melee_Knockback",
+      "name_zh": "近战击退",
+      "url": "https://tlidb.com/cn/Melee_Knockback",
+      "source_order": 4,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "近战击退"
+      }
+    },
+    {
+      "id": "Overload",
+      "slug": "Overload",
+      "name_zh": "过载",
+      "url": "https://tlidb.com/cn/Overload",
+      "source_order": 5,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "过载"
+      }
+    },
+    {
+      "id": "Tendonslicer",
+      "slug": "Tendonslicer",
+      "name_zh": "断筋锋刃",
+      "url": "https://tlidb.com/cn/Tendonslicer",
+      "source_order": 6,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "断筋锋刃"
+      }
+    },
+    {
+      "id": "Glacial_Freeze",
+      "slug": "Glacial_Freeze",
+      "name_zh": "凛冽冰冻",
+      "url": "https://tlidb.com/cn/Glacial_Freeze",
+      "source_order": 7,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "凛冽冰冻"
+      }
+    },
+    {
+      "id": "Additional_Ignite",
+      "slug": "Additional_Ignite",
+      "name_zh": "额外点燃",
+      "url": "https://tlidb.com/cn/Additional_Ignite",
+      "source_order": 8,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "额外点燃"
+      }
+    },
+    {
+      "id": "High_Voltage",
+      "slug": "High_Voltage",
+      "name_zh": "高压电",
+      "url": "https://tlidb.com/cn/High_Voltage",
+      "source_order": 9,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "高压电"
+      }
+    },
+    {
+      "id": "Quick_Mobility",
+      "slug": "Quick_Mobility",
+      "name_zh": "急速位移",
+      "url": "https://tlidb.com/cn/Quick_Mobility",
+      "source_order": 10,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "急速位移"
+      }
+    },
+    {
+      "id": "Extended_Duration",
+      "slug": "Extended_Duration",
+      "name_zh": "持续时间延长",
+      "url": "https://tlidb.com/cn/Extended_Duration",
+      "source_order": 11,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "持续时间延长"
+      }
+    },
+    {
+      "id": "Spell_Concentration",
+      "slug": "Spell_Concentration",
+      "name_zh": "法术集中",
+      "url": "https://tlidb.com/cn/Spell_Concentration",
+      "source_order": 12,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "法术集中"
+      }
+    },
+    {
+      "id": "Added_Erosion_Damage",
+      "slug": "Added_Erosion_Damage",
+      "name_zh": "附加腐蚀伤害",
+      "url": "https://tlidb.com/cn/Added_Erosion_Damage",
+      "source_order": 13,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "附加腐蚀伤害"
+      }
+    },
+    {
+      "id": "Critical_Strike_Rating_Increase",
+      "slug": "Critical_Strike_Rating_Increase",
+      "name_zh": "提高暴击值",
+      "url": "https://tlidb.com/cn/Critical_Strike_Rating_Increase",
+      "source_order": 14,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "提高暴击值"
+      }
+    },
+    {
+      "id": "Critical_Strike_Damage_Increase",
+      "slug": "Critical_Strike_Damage_Increase",
+      "name_zh": "提高暴击伤害",
+      "url": "https://tlidb.com/cn/Critical_Strike_Damage_Increase",
+      "source_order": 15,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "提高暴击伤害"
+      }
+    },
+    {
+      "id": "Physical_to_Fire",
+      "slug": "Physical_to_Fire",
+      "name_zh": "物理转火焰",
+      "url": "https://tlidb.com/cn/Physical_to_Fire",
+      "source_order": 16,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "物理转火焰"
+      }
+    },
+    {
+      "id": "Lightning_to_Cold",
+      "slug": "Lightning_to_Cold",
+      "name_zh": "闪电转冰冷",
+      "url": "https://tlidb.com/cn/Lightning_to_Cold",
+      "source_order": 17,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "闪电转冰冷"
+      }
+    },
+    {
+      "id": "Deep_Wounds",
+      "slug": "Deep_Wounds",
+      "name_zh": "伤口加深",
+      "url": "https://tlidb.com/cn/Deep_Wounds",
+      "source_order": 18,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "伤口加深"
+      }
+    },
+    {
+      "id": "Improved_Corrosion",
+      "slug": "Improved_Corrosion",
+      "name_zh": "强烈侵蚀",
+      "url": "https://tlidb.com/cn/Improved_Corrosion",
+      "source_order": 19,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "强烈侵蚀"
+      }
+    },
+    {
+      "id": "Passivation",
+      "slug": "Passivation",
+      "name_zh": "钝化",
+      "url": "https://tlidb.com/cn/Passivation",
+      "source_order": 20,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "钝化"
+      }
+    },
+    {
+      "id": "Quick_Decision",
+      "slug": "Quick_Decision",
+      "name_zh": "速决",
+      "url": "https://tlidb.com/cn/Quick_Decision",
+      "source_order": 21,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "速决"
+      }
+    },
+    {
+      "id": "Cost_Conversion",
+      "slug": "Cost_Conversion",
+      "name_zh": "耗能转化",
+      "url": "https://tlidb.com/cn/Cost_Conversion",
+      "source_order": 22,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "耗能转化"
+      }
+    },
+    {
+      "id": "Jump",
+      "slug": "Jump",
+      "name_zh": "弹射",
+      "url": "https://tlidb.com/cn/Jump",
+      "source_order": 23,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "弹射"
+      }
+    },
+    {
+      "id": "Shortened_Duration",
+      "slug": "Shortened_Duration",
+      "name_zh": "持续时间缩短",
+      "url": "https://tlidb.com/cn/Shortened_Duration",
+      "source_order": 24,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "持续时间缩短"
+      }
+    },
+    {
+      "id": "Added_Fire_Damage",
+      "slug": "Added_Fire_Damage",
+      "name_zh": "附加火焰伤害",
+      "url": "https://tlidb.com/cn/Added_Fire_Damage",
+      "source_order": 25,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "附加火焰伤害"
+      }
+    },
+    {
+      "id": "Added_Cold_Damage",
+      "slug": "Added_Cold_Damage",
+      "name_zh": "附加冰冷伤害",
+      "url": "https://tlidb.com/cn/Added_Cold_Damage",
+      "source_order": 26,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "附加冰冷伤害"
+      }
+    },
+    {
+      "id": "Added_Lightning_Damage",
+      "slug": "Added_Lightning_Damage",
+      "name_zh": "附加闪电伤害",
+      "url": "https://tlidb.com/cn/Added_Lightning_Damage",
+      "source_order": 27,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "附加闪电伤害"
+      }
+    },
+    {
+      "id": "Control_Spell",
+      "slug": "Control_Spell",
+      "name_zh": "法术控制",
+      "url": "https://tlidb.com/cn/Control_Spell",
+      "source_order": 28,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "法术控制"
+      }
+    },
+    {
+      "id": "Elemental_Fusion",
+      "slug": "Elemental_Fusion",
+      "name_zh": "元素融合",
+      "url": "https://tlidb.com/cn/Elemental_Fusion",
+      "source_order": 29,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "元素融合"
+      }
+    },
+    {
+      "id": "Recklessness",
+      "slug": "Recklessness",
+      "name_zh": "狂莽",
+      "url": "https://tlidb.com/cn/Recklessness",
+      "source_order": 30,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "狂莽"
+      }
+    },
+    {
+      "id": "Slow_Projectile",
+      "slug": "Slow_Projectile",
+      "name_zh": "慢速投射",
+      "url": "https://tlidb.com/cn/Slow_Projectile",
+      "source_order": 31,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "慢速投射"
+      }
+    },
+    {
+      "id": "Grudge",
+      "slug": "Grudge",
+      "name_zh": "幽怨",
+      "url": "https://tlidb.com/cn/Grudge",
+      "source_order": 32,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "幽怨"
+      }
+    },
+    {
+      "id": "Projectile_Penetration",
+      "slug": "Projectile_Penetration",
+      "name_zh": "投射物穿透",
+      "url": "https://tlidb.com/cn/Projectile_Penetration",
+      "source_order": 33,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "投射物穿透"
+      }
+    },
+    {
+      "id": "Steamroll",
+      "slug": "Steamroll",
+      "name_zh": "碾压",
+      "url": "https://tlidb.com/cn/Steamroll",
+      "source_order": 34,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "碾压"
+      }
+    },
+    {
+      "id": "Cataclysm",
+      "slug": "Cataclysm",
+      "name_zh": "催化剂",
+      "url": "https://tlidb.com/cn/Cataclysm",
+      "source_order": 35,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "催化剂"
+      }
+    },
+    {
+      "id": "Hunting_Tempo",
+      "slug": "Hunting_Tempo",
+      "name_zh": "狩猎节奏",
+      "url": "https://tlidb.com/cn/Hunting_Tempo",
+      "source_order": 36,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "狩猎节奏"
+      }
+    },
+    {
+      "id": "Multifaceted_Guard",
+      "slug": "Multifaceted_Guard",
+      "name_zh": "多面护卫",
+      "url": "https://tlidb.com/cn/Multifaceted_Guard",
+      "source_order": 37,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "多面护卫"
+      }
+    },
+    {
+      "id": "Sentry_Modification",
+      "slug": "Sentry_Modification",
+      "name_zh": "改装哨卫",
+      "url": "https://tlidb.com/cn/Sentry_Modification",
+      "source_order": 38,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "改装哨卫"
+      }
+    },
+    {
+      "id": "Fire_Explosion",
+      "slug": "Fire_Explosion",
+      "name_zh": "火焰爆发",
+      "url": "https://tlidb.com/cn/Fire_Explosion",
+      "source_order": 39,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "火焰爆发"
+      }
+    },
+    {
+      "id": "Nova_Shot",
+      "slug": "Nova_Shot",
+      "name_zh": "坠星射击",
+      "url": "https://tlidb.com/cn/Nova_Shot",
+      "source_order": 40,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "坠星射击"
+      }
+    },
+    {
+      "id": "Precision_Strike",
+      "slug": "Precision_Strike",
+      "name_zh": "精确打击",
+      "url": "https://tlidb.com/cn/Precision_Strike",
+      "source_order": 41,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "精确打击"
+      }
+    },
+    {
+      "id": "Haunt",
+      "slug": "Haunt",
+      "name_zh": "惑影重重",
+      "url": "https://tlidb.com/cn/Haunt",
+      "source_order": 42,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "惑影重重"
+      }
+    },
+    {
+      "id": "Guard",
+      "slug": "Guard",
+      "name_zh": "守护",
+      "url": "https://tlidb.com/cn/Guard",
+      "source_order": 43,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "守护"
+      }
+    },
+    {
+      "id": "Channel_Preparation",
+      "slug": "Channel_Preparation",
+      "name_zh": "预备引导",
+      "url": "https://tlidb.com/cn/Channel_Preparation",
+      "source_order": 44,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "预备引导"
+      }
+    },
+    {
+      "id": "Raging_Slash",
+      "slug": "Raging_Slash",
+      "name_zh": "怒斩",
+      "url": "https://tlidb.com/cn/Raging_Slash",
+      "source_order": 45,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "怒斩"
+      }
+    },
+    {
+      "id": "Quick_Return",
+      "slug": "Quick_Return",
+      "name_zh": "快速回气",
+      "url": "https://tlidb.com/cn/Quick_Return",
+      "source_order": 46,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "快速回气"
+      }
+    },
+    {
+      "id": "Restrain",
+      "slug": "Restrain",
+      "name_zh": "节流",
+      "url": "https://tlidb.com/cn/Restrain",
+      "source_order": 47,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "节流"
+      }
+    },
+    {
+      "id": "Attack_Focus",
+      "slug": "Attack_Focus",
+      "name_zh": "攻击专注",
+      "url": "https://tlidb.com/cn/Attack_Focus",
+      "source_order": 48,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "攻击专注"
+      }
+    },
+    {
+      "id": "Wind_Projectiles",
+      "slug": "Wind_Projectiles",
+      "name_zh": "疾风投射",
+      "url": "https://tlidb.com/cn/Wind_Projectiles",
+      "source_order": 49,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "疾风投射"
+      }
+    },
+    {
+      "id": "Pain_Amplification",
+      "slug": "Pain_Amplification",
+      "name_zh": "痛楚加剧",
+      "url": "https://tlidb.com/cn/Pain_Amplification",
+      "source_order": 50,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "痛楚加剧"
+      }
+    },
+    {
+      "id": "Blind",
+      "slug": "Blind",
+      "name_zh": "致盲",
+      "url": "https://tlidb.com/cn/Blind",
+      "source_order": 51,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "致盲"
+      }
+    },
+    {
+      "id": "Electric_Punishment",
+      "slug": "Electric_Punishment",
+      "name_zh": "电能惩击",
+      "url": "https://tlidb.com/cn/Electric_Punishment",
+      "source_order": 52,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "电能惩击"
+      }
+    },
+    {
+      "id": "Ailment_Termination",
+      "slug": "Ailment_Termination",
+      "name_zh": "异常终结",
+      "url": "https://tlidb.com/cn/Ailment_Termination",
+      "source_order": 53,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "异常终结"
+      }
+    },
+    {
+      "id": "Enhanced_Ailment",
+      "slug": "Enhanced_Ailment",
+      "name_zh": "强化异常",
+      "url": "https://tlidb.com/cn/Enhanced_Ailment",
+      "source_order": 54,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "强化异常"
+      }
+    },
+    {
+      "id": "Added_Physical_Damage",
+      "slug": "Added_Physical_Damage",
+      "name_zh": "附加物理伤害",
+      "url": "https://tlidb.com/cn/Added_Physical_Damage",
+      "source_order": 55,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "附加物理伤害"
+      }
+    },
+    {
+      "id": "Cooldown_Reduction",
+      "slug": "Cooldown_Reduction",
+      "name_zh": "加速冷却",
+      "url": "https://tlidb.com/cn/Cooldown_Reduction",
+      "source_order": 56,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "加速冷却"
+      }
+    },
+    {
+      "id": "Emergency_restoration",
+      "slug": "Emergency_restoration",
+      "name_zh": "应急回复",
+      "url": "https://tlidb.com/cn/Emergency_restoration",
+      "source_order": 57,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "应急回复"
+      }
+    },
+    {
+      "id": "Instant_restoration",
+      "slug": "Instant_restoration",
+      "name_zh": "瞬时回复",
+      "url": "https://tlidb.com/cn/Instant_restoration",
+      "source_order": 58,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "瞬时回复"
+      }
+    },
+    {
+      "id": "Ground_Divide",
+      "slug": "Ground_Divide",
+      "name_zh": "地面分化",
+      "url": "https://tlidb.com/cn/Ground_Divide",
+      "source_order": 59,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "地面分化"
+      }
+    },
+    {
+      "id": "Scattershot_Beam",
+      "slug": "Scattershot_Beam",
+      "name_zh": "散射光束",
+      "url": "https://tlidb.com/cn/Scattershot_Beam",
+      "source_order": 60,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "散射光束"
+      }
+    },
+    {
+      "id": "Focused_Beam",
+      "slug": "Focused_Beam",
+      "name_zh": "聚能光束",
+      "url": "https://tlidb.com/cn/Focused_Beam",
+      "source_order": 61,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "聚能光束"
+      }
+    },
+    {
+      "id": "Refracted_Prism",
+      "slug": "Refracted_Prism",
+      "name_zh": "折射光棱",
+      "url": "https://tlidb.com/cn/Refracted_Prism",
+      "source_order": 62,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "折射光棱"
+      }
+    },
+    {
+      "id": "Servant_Damage",
+      "slug": "Servant_Damage",
+      "name_zh": "仆从伤害",
+      "url": "https://tlidb.com/cn/Servant_Damage",
+      "source_order": 63,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "仆从伤害"
+      }
+    },
+    {
+      "id": "Servant_Life",
+      "slug": "Servant_Life",
+      "name_zh": "仆从生命",
+      "url": "https://tlidb.com/cn/Servant_Life",
+      "source_order": 64,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "仆从生命"
+      }
+    },
+    {
+      "id": "Elemental_Duo",
+      "slug": "Elemental_Duo",
+      "name_zh": "元素双雄",
+      "url": "https://tlidb.com/cn/Elemental_Duo",
+      "source_order": 65,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "元素双雄"
+      }
+    },
+    {
+      "id": "Maniacal_Army",
+      "slug": "Maniacal_Army",
+      "name_zh": "狂热之军",
+      "url": "https://tlidb.com/cn/Maniacal_Army",
+      "source_order": 66,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "狂热之军"
+      }
+    },
+    {
+      "id": "Mechanical_Modification",
+      "slug": "Mechanical_Modification",
+      "name_zh": "机械改造",
+      "url": "https://tlidb.com/cn/Mechanical_Modification",
+      "source_order": 67,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "机械改造"
+      }
+    },
+    {
+      "id": "Assault_Command",
+      "slug": "Assault_Command",
+      "name_zh": "袭击命令",
+      "url": "https://tlidb.com/cn/Assault_Command",
+      "source_order": 68,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "袭击命令"
+      }
+    },
+    {
+      "id": "Defense_Form",
+      "slug": "Defense_Form",
+      "name_zh": "防御姿态",
+      "url": "https://tlidb.com/cn/Defense_Form",
+      "source_order": 69,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "防御姿态"
+      }
+    },
+    {
+      "id": "Well-Fought_Battle",
+      "slug": "Well-Fought_Battle",
+      "name_zh": "酣战",
+      "url": "https://tlidb.com/cn/Well-Fought_Battle",
+      "source_order": 70,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "酣战"
+      }
+    },
+    {
+      "id": "Fragile_Resurrection",
+      "slug": "Fragile_Resurrection",
+      "name_zh": "脆弱复苏",
+      "url": "https://tlidb.com/cn/Fragile_Resurrection",
+      "source_order": 71,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "脆弱复苏"
+      }
+    },
+    {
+      "id": "Residues",
+      "slug": "Residues",
+      "name_zh": "药性残留",
+      "url": "https://tlidb.com/cn/Residues",
+      "source_order": 72,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "药性残留"
+      }
+    },
+    {
+      "id": "All_In",
+      "slug": "All_In",
+      "name_zh": "一鼓作气",
+      "url": "https://tlidb.com/cn/All_In",
+      "source_order": 73,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "一鼓作气"
+      }
+    },
+    {
+      "id": "Iron_Fortification",
+      "slug": "Iron_Fortification",
+      "name_zh": "铁甲仍在",
+      "url": "https://tlidb.com/cn/Iron_Fortification",
+      "source_order": 74,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "铁甲仍在"
+      }
+    },
+    {
+      "id": "Emergency_Avoidance",
+      "slug": "Emergency_Avoidance",
+      "name_zh": "紧急回避",
+      "url": "https://tlidb.com/cn/Emergency_Avoidance",
+      "source_order": 75,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "紧急回避"
+      }
+    },
+    {
+      "id": "Concentration_Warcry",
+      "slug": "Concentration_Warcry",
+      "name_zh": "集中战吼",
+      "url": "https://tlidb.com/cn/Concentration_Warcry",
+      "source_order": 76,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "集中战吼"
+      }
+    },
+    {
+      "id": "Lions_Roars",
+      "slug": "Lions_Roars",
+      "name_zh": "狮吼连连",
+      "url": "https://tlidb.com/cn/Lions_Roars",
+      "source_order": 77,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "狮吼连连"
+      }
+    },
+    {
+      "id": "Periodic_Burst",
+      "slug": "Periodic_Burst",
+      "name_zh": "间歇性爆发",
+      "url": "https://tlidb.com/cn/Periodic_Burst",
+      "source_order": 78,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "间歇性爆发"
+      }
+    },
+    {
+      "id": "Terrain_of_Malice",
+      "slug": "Terrain_of_Malice",
+      "name_zh": "恶意之域",
+      "url": "https://tlidb.com/cn/Terrain_of_Malice",
+      "source_order": 79,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "恶意之域"
+      }
+    },
+    {
+      "id": "Electric_Overload",
+      "slug": "Electric_Overload",
+      "name_zh": "电能超载",
+      "url": "https://tlidb.com/cn/Electric_Overload",
+      "source_order": 80,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "电能超载"
+      }
+    },
+    {
+      "id": "Elemental_Impact",
+      "slug": "Elemental_Impact",
+      "name_zh": "元素冲击",
+      "url": "https://tlidb.com/cn/Elemental_Impact",
+      "source_order": 81,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "元素冲击"
+      }
+    },
+    {
+      "id": "Carpet_Bombardment",
+      "slug": "Carpet_Bombardment",
+      "name_zh": "地毯轰炸",
+      "url": "https://tlidb.com/cn/Carpet_Bombardment",
+      "source_order": 82,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "地毯轰炸"
+      }
+    },
+    {
+      "id": "Mass_Effect",
+      "slug": "Mass_Effect",
+      "name_zh": "质量效应",
+      "url": "https://tlidb.com/cn/Mass_Effect",
+      "source_order": 83,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "质量效应"
+      }
+    },
+    {
+      "id": "Defense_Layers",
+      "slug": "Defense_Layers",
+      "name_zh": "层层防御",
+      "url": "https://tlidb.com/cn/Defense_Layers",
+      "source_order": 84,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "层层防御"
+      }
+    },
+    {
+      "id": "Focus_Acceleration",
+      "slug": "Focus_Acceleration",
+      "name_zh": "贯注强化",
+      "url": "https://tlidb.com/cn/Focus_Acceleration",
+      "source_order": 85,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "贯注强化"
+      }
+    },
+    {
+      "id": "Focus_Buff",
+      "slug": "Focus_Buff",
+      "name_zh": "贯注增效",
+      "url": "https://tlidb.com/cn/Focus_Buff",
+      "source_order": 86,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "贯注增效"
+      }
+    },
+    {
+      "id": "Seal_Conversion",
+      "slug": "Seal_Conversion",
+      "name_zh": "封印转化",
+      "url": "https://tlidb.com/cn/Seal_Conversion",
+      "source_order": 87,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "封印转化"
+      }
+    },
+    {
+      "id": "Psychic_Burst",
+      "slug": "Psychic_Burst",
+      "name_zh": "灵能乍泄",
+      "url": "https://tlidb.com/cn/Psychic_Burst",
+      "source_order": 88,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "灵能乍泄"
+      }
+    },
+    {
+      "id": "Magic_Dash",
+      "slug": "Magic_Dash",
+      "name_zh": "御法飞驰",
+      "url": "https://tlidb.com/cn/Magic_Dash",
+      "source_order": 89,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "御法飞驰"
+      }
+    },
+    {
+      "id": "Psychic_Surge",
+      "slug": "Psychic_Surge",
+      "name_zh": "灵能奔涌",
+      "url": "https://tlidb.com/cn/Psychic_Surge",
+      "source_order": 90,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "灵能奔涌"
+      }
+    },
+    {
+      "id": "Savage_Growth",
+      "slug": "Savage_Growth",
+      "name_zh": "野蛮生长",
+      "url": "https://tlidb.com/cn/Savage_Growth",
+      "source_order": 91,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "野蛮生长"
+      }
+    },
+    {
+      "id": "Harvest_Time",
+      "slug": "Harvest_Time",
+      "name_zh": "丰收时刻",
+      "url": "https://tlidb.com/cn/Harvest_Time",
+      "source_order": 92,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "丰收时刻"
+      }
+    },
+    {
+      "id": "Preparation",
+      "slug": "Preparation",
+      "name_zh": "预备",
+      "url": "https://tlidb.com/cn/Preparation",
+      "source_order": 93,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "预备"
+      }
+    },
+    {
+      "id": "Charge",
+      "slug": "Charge",
+      "name_zh": "蓄势",
+      "url": "https://tlidb.com/cn/Charge",
+      "source_order": 94,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "蓄势"
+      }
+    },
+    {
+      "id": "Gladiators_Roar",
+      "slug": "Gladiators_Roar",
+      "name_zh": "角斗怒吼",
+      "url": "https://tlidb.com/cn/Gladiators_Roar",
+      "source_order": 95,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "角斗怒吼"
+      }
+    },
+    {
+      "id": "Aura_Amplification",
+      "slug": "Aura_Amplification",
+      "name_zh": "光环增幅",
+      "url": "https://tlidb.com/cn/Aura_Amplification",
+      "source_order": 96,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "光环增幅"
+      }
+    },
+    {
+      "id": "Friend_of_Spirit_Magi",
+      "slug": "Friend_of_Spirit_Magi",
+      "name_zh": "魔灵之友",
+      "url": "https://tlidb.com/cn/Friend_of_Spirit_Magi",
+      "source_order": 97,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "魔灵之友"
+      }
+    },
+    {
+      "id": "Protection_Field",
+      "slug": "Protection_Field",
+      "name_zh": "保护力场",
+      "url": "https://tlidb.com/cn/Protection_Field",
+      "source_order": 98,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "保护力场"
+      }
+    },
+    {
+      "id": "Hyper_Metabolism",
+      "slug": "Hyper_Metabolism",
+      "name_zh": "加速代谢",
+      "url": "https://tlidb.com/cn/Hyper_Metabolism",
+      "source_order": 99,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "加速代谢"
+      }
+    },
+    {
+      "id": "Emergency_Aid",
+      "slug": "Emergency_Aid",
+      "name_zh": "急救",
+      "url": "https://tlidb.com/cn/Emergency_Aid",
+      "source_order": 100,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "急救"
+      }
+    },
+    {
+      "id": "Medicinal_Buildup",
+      "slug": "Medicinal_Buildup",
+      "name_zh": "药性蓄积",
+      "url": "https://tlidb.com/cn/Medicinal_Buildup",
+      "source_order": 101,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "药性蓄积"
+      }
+    },
+    {
+      "id": "Willpower",
+      "slug": "Willpower",
+      "name_zh": "定力",
+      "url": "https://tlidb.com/cn/Willpower",
+      "source_order": 102,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "定力"
+      }
+    },
+    {
+      "id": "Recuperation",
+      "slug": "Recuperation",
+      "name_zh": "调息",
+      "url": "https://tlidb.com/cn/Recuperation",
+      "source_order": 103,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "调息"
+      }
+    },
+    {
+      "id": "Spell_Tangle",
+      "slug": "Spell_Tangle",
+      "name_zh": "法术纠缠",
+      "url": "https://tlidb.com/cn/Spell_Tangle",
+      "source_order": 104,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "法术纠缠"
+      }
+    },
+    {
+      "id": "Manifold_Entanglement",
+      "slug": "Manifold_Entanglement",
+      "name_zh": "多重纠缠",
+      "url": "https://tlidb.com/cn/Manifold_Entanglement",
+      "source_order": 105,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "多重纠缠"
+      }
+    },
+    {
+      "id": "Channeled_Depths",
+      "slug": "Channeled_Depths",
+      "name_zh": "深层引导",
+      "url": "https://tlidb.com/cn/Channeled_Depths",
+      "source_order": 106,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "深层引导"
+      }
+    },
+    {
+      "id": "Precise:_Seal_Conversion",
+      "slug": "Precise:_Seal_Conversion",
+      "name_zh": "精密 封印转化",
+      "url": "https://tlidb.com/cn/Precise%3A_Seal_Conversion",
+      "source_order": 107,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "精密 封印转化"
+      }
+    },
+    {
+      "id": "Precise:_Selfless",
+      "slug": "Precise:_Selfless",
+      "name_zh": "精密 无私",
+      "url": "https://tlidb.com/cn/Precise%3A_Selfless",
+      "source_order": 108,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "精密 无私"
+      }
+    },
+    {
+      "id": "Precise:_Selfishness",
+      "slug": "Precise:_Selfishness",
+      "name_zh": "精密 自私",
+      "url": "https://tlidb.com/cn/Precise%3A_Selfishness",
+      "source_order": 109,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "精密 自私"
+      }
+    },
+    {
+      "id": "Precise:_Stand_as_One",
+      "slug": "Precise:_Stand_as_One",
+      "name_zh": "精密 多则能成",
+      "url": "https://tlidb.com/cn/Precise%3A_Stand_as_One",
+      "source_order": 110,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "精密 多则能成"
+      }
+    },
+    {
+      "id": "Precise:_Disciplined",
+      "slug": "Precise:_Disciplined",
+      "name_zh": "精密 律己",
+      "url": "https://tlidb.com/cn/Precise%3A_Disciplined",
+      "source_order": 111,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "精密 律己"
+      }
+    },
+    {
+      "id": "Precise:_Concentrated",
+      "slug": "Precise:_Concentrated",
+      "name_zh": "精密 全神贯注",
+      "url": "https://tlidb.com/cn/Precise%3A_Concentrated",
+      "source_order": 112,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "精密 全神贯注"
+      }
+    },
+    {
+      "id": "Precise:_Malleable",
+      "slug": "Precise:_Malleable",
+      "name_zh": "精密 遇强则强",
+      "url": "https://tlidb.com/cn/Precise%3A_Malleable",
+      "source_order": 113,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "精密 遇强则强"
+      }
+    },
+    {
+      "id": "Precise:_Safety_in_Numbers",
+      "slug": "Precise:_Safety_in_Numbers",
+      "name_zh": "精密 人多势众",
+      "url": "https://tlidb.com/cn/Precise%3A_Safety_in_Numbers",
+      "source_order": 114,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "精密 人多势众"
+      }
+    },
+    {
+      "id": "Precise:_Focus_Buff",
+      "slug": "Precise:_Focus_Buff",
+      "name_zh": "精密 贯注增效",
+      "url": "https://tlidb.com/cn/Precise%3A_Focus_Buff",
+      "source_order": 115,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "精密 贯注增效"
+      }
+    },
+    {
+      "id": "Precise:_Superpower",
+      "slug": "Precise:_Superpower",
+      "name_zh": "精密 超能共生",
+      "url": "https://tlidb.com/cn/Precise%3A_Superpower",
+      "source_order": 116,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "精密 超能共生"
+      }
+    },
+    {
+      "id": "Precise:_Friend_of_Spirit_Magi",
+      "slug": "Precise:_Friend_of_Spirit_Magi",
+      "name_zh": "精密 魔灵之友",
+      "url": "https://tlidb.com/cn/Precise%3A_Friend_of_Spirit_Magi",
+      "source_order": 117,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "精密 魔灵之友"
+      }
+    },
+    {
+      "id": "Precise:_Protection_Field",
+      "slug": "Precise:_Protection_Field",
+      "name_zh": "精密 保护力场",
+      "url": "https://tlidb.com/cn/Precise%3A_Protection_Field",
+      "source_order": 118,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "精密 保护力场"
+      }
+    },
+    {
+      "id": "Precise_Restrain",
+      "slug": "Precise_Restrain",
+      "name_zh": "精密 节流",
+      "url": "https://tlidb.com/cn/Precise_Restrain",
+      "source_order": 119,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "精密 节流"
+      }
+    },
+    {
+      "id": "Precise:_Harmony",
+      "slug": "Precise:_Harmony",
+      "name_zh": "精密 调合",
+      "url": "https://tlidb.com/cn/Precise%3A_Harmony",
+      "source_order": 120,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "精密 调合"
+      }
+    },
+    {
+      "id": "Precise:_Purify",
+      "slug": "Precise:_Purify",
+      "name_zh": "精密 净化",
+      "url": "https://tlidb.com/cn/Precise%3A_Purify",
+      "source_order": 121,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "辅助技能 Tag /122",
+        "link_text": "精密 净化"
+      }
+    }
+  ]
+}

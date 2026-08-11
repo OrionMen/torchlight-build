@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "source": {
+    "site": "tlidb",
+    "locale": "cn",
+    "index_url": "https://tlidb.com/cn/Boon",
+    "fetched_at": "2026-08-06T13:41:00.160273+00:00",
+    "http_status": 200,
+    "html_sha256": "035cf224f1e270e92b0ad5344a35f2782800c874bb65d98671f22e5d695eb455"
+  },
+  "system_id": "boon",
+  "entity_type": "boon",
+  "displayed_entry_count": 17,
+  "unique_entry_count": 11,
+  "duplicate_occurrence_count": 23,
+  "discovery_confidence": 0.71,
+  "quality": {
+    "displayed_entry_count": 17,
+    "unique_entry_count": 11,
+    "duplicate_occurrence_count": 23,
+    "discovery_confidence": 0.71,
+    "warnings": [
+      "23 duplicate link occurrence(s) removed",
+      "displayed count 17 does not match unique count 11"
+    ]
+  },
+  "entries": [
+    {
+      "id": "Appearance_Boon",
+      "slug": "Appearance_Boon",
+      "name_zh": "外观恩赐",
+      "url": "https://tlidb.com/cn/Appearance_Boon",
+      "source_order": 0,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "恩赐 /17",
+        "link_text": "外观恩赐"
+      }
+    },
+    {
+      "id": "Appearance_Crystal",
+      "slug": "Appearance_Crystal",
+      "name_zh": "外观结晶",
+      "url": "https://tlidb.com/cn/Appearance_Crystal",
+      "source_order": 1,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "恩赐 /17",
+        "link_text": "外观结晶"
+      }
+    },
+    {
+      "id": "Old_Friendship",
+      "slug": "Old_Friendship",
+      "name_zh": "故交之谊",
+      "url": "https://tlidb.com/cn/Old_Friendship",
+      "source_order": 2,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "恩赐 /17",
+        "link_text": "故交之谊"
+      }
+    },
+    {
+      "id": "Pale_Crystal",
+      "slug": "Pale_Crystal",
+      "name_zh": "苍白结晶",
+      "url": "https://tlidb.com/cn/Pale_Crystal",
+      "source_order": 3,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "恩赐 /17",
+        "link_text": "苍白结晶"
+      }
+    },
+    {
+      "id": "Stars_of_Long_Night",
+      "slug": "Stars_of_Long_Night",
+      "name_zh": "九夜星光",
+      "url": "https://tlidb.com/cn/Stars_of_Long_Night",
+      "source_order": 4,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "恩赐 /17",
+        "link_text": "九夜星光"
+      }
+    },
+    {
+      "id": "Project_Black_Fire",
+      "slug": "Project_Black_Fire",
+      "name_zh": "黑炎计划",
+      "url": "https://tlidb.com/cn/Project_Black_Fire",
+      "source_order": 5,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "恩赐 /17",
+        "link_text": "黑炎计划"
+      }
+    },
+    {
+      "id": "Life_in_Desert_Sea",
+      "slug": "Life_in_Desert_Sea",
+      "name_zh": "沙海朝暮",
+      "url": "https://tlidb.com/cn/Life_in_Desert_Sea",
+      "source_order": 6,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "恩赐 /17",
+        "link_text": "沙海朝暮"
+      }
+    },
+    {
+      "id": "Glimpse_of_Eternity",
+      "slug": "Glimpse_of_Eternity",
+      "name_zh": "永恒一瞥",
+      "url": "https://tlidb.com/cn/Glimpse_of_Eternity",
+      "source_order": 7,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "恩赐 /17",
+        "link_text": "永恒一瞥"
+      }
+    },
+    {
+      "id": "Inferno_Gaze",
+      "slug": "Inferno_Gaze",
+      "name_zh": "炎狱凝视",
+      "url": "https://tlidb.com/cn/Inferno_Gaze",
+      "source_order": 8,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "恩赐 /17",
+        "link_text": "炎狱凝视"
+      }
+    },
+    {
+      "id": "Glory_Across_All_Realms",
+      "slug": "Glory_Across_All_Realms",
+      "name_zh": "独揽万界辉光",
+      "url": "https://tlidb.com/cn/Glory_Across_All_Realms",
+      "source_order": 9,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "恩赐 /17",
+        "link_text": "独揽万界辉光"
+      }
+    },
+    {
+      "id": "Appearance_Crystal_-_Ultimate",
+      "slug": "Appearance_Crystal_-_Ultimate",
+      "name_zh": "外观结晶-至臻",
+      "url": "https://tlidb.com/cn/Appearance_Crystal_-_Ultimate",
+      "source_order": 10,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "恩赐 /17",
+        "link_text": "外观结晶-至臻"
+      }
+    }
+  ]
+}

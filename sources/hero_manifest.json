@@ -1,0 +1,350 @@
+{
+  "schema_version": 1,
+  "source": {
+    "site": "tlidb",
+    "locale": "cn",
+    "index_url": "https://tlidb.com/cn/Hero",
+    "fetched_at": "2026-08-06T13:40:04.265527+00:00",
+    "http_status": 200,
+    "html_sha256": "0a10717ae61010b179acb1b00170c2999e89745d78b08b630cc7a34961dc861b"
+  },
+  "system_id": "hero",
+  "entity_type": "hero",
+  "displayed_entry_count": 27,
+  "unique_entry_count": 27,
+  "duplicate_occurrence_count": 0,
+  "discovery_confidence": 0.99,
+  "quality": {
+    "displayed_entry_count": 27,
+    "unique_entry_count": 27,
+    "duplicate_occurrence_count": 0,
+    "discovery_confidence": 0.99,
+    "warnings": []
+  },
+  "entries": [
+    {
+      "id": "Anger",
+      "slug": "Anger",
+      "name_zh": "狂人 雷恩|怒火",
+      "url": "https://tlidb.com/cn/Anger",
+      "source_order": 0,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "英雄 /27",
+        "link_text": "狂人 雷恩|怒火"
+      }
+    },
+    {
+      "id": "Seething_Silhouette",
+      "slug": "Seething_Silhouette",
+      "name_zh": "狂人 雷恩|怒影",
+      "url": "https://tlidb.com/cn/Seething_Silhouette",
+      "source_order": 1,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "英雄 /27",
+        "link_text": "狂人 雷恩|怒影"
+      }
+    },
+    {
+      "id": "Ranger_of_Glory",
+      "slug": "Ranger_of_Glory",
+      "name_zh": "圣枪 卡里诺|荣光游侠",
+      "url": "https://tlidb.com/cn/Ranger_of_Glory",
+      "source_order": 2,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "英雄 /27",
+        "link_text": "圣枪 卡里诺|荣光游侠"
+      }
+    },
+    {
+      "id": "Lethal_Flash",
+      "slug": "Lethal_Flash",
+      "name_zh": "圣枪 卡里诺|至暗掠影",
+      "url": "https://tlidb.com/cn/Lethal_Flash",
+      "source_order": 3,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "英雄 /27",
+        "link_text": "圣枪 卡里诺|至暗掠影"
+      }
+    },
+    {
+      "id": "Zealot_of_War",
+      "slug": "Zealot_of_War",
+      "name_zh": "圣枪 卡里诺|战火狂徒",
+      "url": "https://tlidb.com/cn/Zealot_of_War",
+      "source_order": 4,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "英雄 /27",
+        "link_text": "圣枪 卡里诺|战火狂徒"
+      }
+    },
+    {
+      "id": "Wind_Stalker",
+      "slug": "Wind_Stalker",
+      "name_zh": "猫眼 艾瑞卡|疾风追猎",
+      "url": "https://tlidb.com/cn/Wind_Stalker",
+      "source_order": 5,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "英雄 /27",
+        "link_text": "猫眼 艾瑞卡|疾风追猎"
+      }
+    },
+    {
+      "id": "Lightning_Shadow",
+      "slug": "Lightning_Shadow",
+      "name_zh": "猫眼 艾瑞卡|电光猫影",
+      "url": "https://tlidb.com/cn/Lightning_Shadow",
+      "source_order": 6,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "英雄 /27",
+        "link_text": "猫眼 艾瑞卡|电光猫影"
+      }
+    },
+    {
+      "id": "Vendettas_Sting",
+      "slug": "Vendettas_Sting",
+      "name_zh": "猫眼 艾瑞卡|寻仇之刺",
+      "url": "https://tlidb.com/cn/Vendettas_Sting",
+      "source_order": 7,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "英雄 /27",
+        "link_text": "猫眼 艾瑞卡|寻仇之刺"
+      }
+    },
+    {
+      "id": "Blast_Nova",
+      "slug": "Blast_Nova",
+      "name_zh": "逃脱者 宾|爆破新星",
+      "url": "https://tlidb.com/cn/Blast_Nova",
+      "source_order": 8,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "英雄 /27",
+        "link_text": "逃脱者 宾|爆破新星"
+      }
+    },
+    {
+      "id": "Creative_Genius",
+      "slug": "Creative_Genius",
+      "name_zh": "逃脱者 宾|创想鬼才",
+      "url": "https://tlidb.com/cn/Creative_Genius",
+      "source_order": 9,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "英雄 /27",
+        "link_text": "逃脱者 宾|创想鬼才"
+      }
+    },
+    {
+      "id": "Flame_of_Pleasure",
+      "slug": "Flame_of_Pleasure",
+      "name_zh": "冰焰 吉玛|欢愉之焰",
+      "url": "https://tlidb.com/cn/Flame_of_Pleasure",
+      "source_order": 10,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "英雄 /27",
+        "link_text": "冰焰 吉玛|欢愉之焰"
+      }
+    },
+    {
+      "id": "Frostbitten_Heart",
+      "slug": "Frostbitten_Heart",
+      "name_zh": "冰焰 吉玛|冰结之心",
+      "url": "https://tlidb.com/cn/Frostbitten_Heart",
+      "source_order": 11,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "英雄 /27",
+        "link_text": "冰焰 吉玛|冰结之心"
+      }
+    },
+    {
+      "id": "Ice-Fire_Fusion",
+      "slug": "Ice-Fire_Fusion",
+      "name_zh": "冰焰 吉玛|冰火融合",
+      "url": "https://tlidb.com/cn/Ice-Fire_Fusion",
+      "source_order": 12,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "英雄 /27",
+        "link_text": "冰焰 吉玛|冰火融合"
+      }
+    },
+    {
+      "id": "Wisdom_of_The_Gods",
+      "slug": "Wisdom_of_The_Gods",
+      "name_zh": "神谕者 希雅|众神之伟智",
+      "url": "https://tlidb.com/cn/Wisdom_of_The_Gods",
+      "source_order": 13,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "英雄 /27",
+        "link_text": "神谕者 希雅|众神之伟智"
+      }
+    },
+    {
+      "id": "Incarnation_of_the_Gods",
+      "slug": "Incarnation_of_the_Gods",
+      "name_zh": "神谕者 希雅|众神之化身",
+      "url": "https://tlidb.com/cn/Incarnation_of_the_Gods",
+      "source_order": 14,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "英雄 /27",
+        "link_text": "神谕者 希雅|众神之化身"
+      }
+    },
+    {
+      "id": "Blasphemer",
+      "slug": "Blasphemer",
+      "name_zh": "神谕者 希雅|渎神",
+      "url": "https://tlidb.com/cn/Blasphemer",
+      "source_order": 15,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "英雄 /27",
+        "link_text": "神谕者 希雅|渎神"
+      }
+    },
+    {
+      "id": "Spacetime_Illusion",
+      "slug": "Spacetime_Illusion",
+      "name_zh": "时空见证者 尤加|时空幻象",
+      "url": "https://tlidb.com/cn/Spacetime_Illusion",
+      "source_order": 16,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "英雄 /27",
+        "link_text": "时空见证者 尤加|时空幻象"
+      }
+    },
+    {
+      "id": "Spacetime_Elapse",
+      "slug": "Spacetime_Elapse",
+      "name_zh": "时空见证者 尤加|时空流逝",
+      "url": "https://tlidb.com/cn/Spacetime_Elapse",
+      "source_order": 17,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "英雄 /27",
+        "link_text": "时空见证者 尤加|时空流逝"
+      }
+    },
+    {
+      "id": "Order_Calling",
+      "slug": "Order_Calling",
+      "name_zh": "指挥官 莫托|号令征召",
+      "url": "https://tlidb.com/cn/Order_Calling",
+      "source_order": 18,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "英雄 /27",
+        "link_text": "指挥官 莫托|号令征召"
+      }
+    },
+    {
+      "id": "Charge_Calling",
+      "slug": "Charge_Calling",
+      "name_zh": "指挥官 莫托|冲锋征召",
+      "url": "https://tlidb.com/cn/Charge_Calling",
+      "source_order": 19,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "英雄 /27",
+        "link_text": "指挥官 莫托|冲锋征召"
+      }
+    },
+    {
+      "id": "High_Court_Chariot",
+      "slug": "High_Court_Chariot",
+      "name_zh": "光曜 罗莎|圣庭战车",
+      "url": "https://tlidb.com/cn/High_Court_Chariot",
+      "source_order": 20,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "英雄 /27",
+        "link_text": "光曜 罗莎|圣庭战车"
+      }
+    },
+    {
+      "id": "Unsullied_Blade",
+      "slug": "Unsullied_Blade",
+      "name_zh": "光曜 罗莎|无垢之刃",
+      "url": "https://tlidb.com/cn/Unsullied_Blade",
+      "source_order": 21,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "英雄 /27",
+        "link_text": "光曜 罗莎|无垢之刃"
+      }
+    },
+    {
+      "id": "Growing_Breeze",
+      "slug": "Growing_Breeze",
+      "name_zh": "遗世魔灵 伊瑞斯|生长的微风",
+      "url": "https://tlidb.com/cn/Growing_Breeze",
+      "source_order": 22,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "英雄 /27",
+        "link_text": "遗世魔灵 伊瑞斯|生长的微风"
+      }
+    },
+    {
+      "id": "Vigilant_Breeze",
+      "slug": "Vigilant_Breeze",
+      "name_zh": "遗世魔灵 伊瑞斯|守望的暖风",
+      "url": "https://tlidb.com/cn/Vigilant_Breeze",
+      "source_order": 23,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "英雄 /27",
+        "link_text": "遗世魔灵 伊瑞斯|守望的暖风"
+      }
+    },
+    {
+      "id": "Sing_with_the_Tide",
+      "slug": "Sing_with_the_Tide",
+      "name_zh": "汐语 赛琳娜|与海潮同歌",
+      "url": "https://tlidb.com/cn/Sing_with_the_Tide",
+      "source_order": 24,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "英雄 /27",
+        "link_text": "汐语 赛琳娜|与海潮同歌"
+      }
+    },
+    {
+      "id": "Dance_of_the_Deep",
+      "slug": "Dance_of_the_Deep",
+      "name_zh": "汐语 赛琳娜|与深海共舞",
+      "url": "https://tlidb.com/cn/Dance_of_the_Deep",
+      "source_order": 25,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "英雄 /27",
+        "link_text": "汐语 赛琳娜|与深海共舞"
+      }
+    },
+    {
+      "id": "Licorice_Note",
+      "slug": "Licorice_Note",
+      "name_zh": "药香师 赛琪|甘草前调",
+      "url": "https://tlidb.com/cn/Licorice_Note",
+      "source_order": 26,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "英雄 /27",
+        "link_text": "药香师 赛琪|甘草前调"
+      }
+    }
+  ]
+}

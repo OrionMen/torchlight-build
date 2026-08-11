@@ -1,0 +1,173 @@
+{
+  "schema_version": 1,
+  "source": {
+    "site": "tlidb",
+    "locale": "cn",
+    "index_url": "https://tlidb.com/cn/Path_of_Progression",
+    "fetched_at": "2026-08-06T13:40:37.631684+00:00",
+    "http_status": 200,
+    "html_sha256": "0fe69d42eeba0e61a94ceefcebff1350807af03f64ebac7cf656a23e9a9cba24"
+  },
+  "system_id": "path_of_progression",
+  "entity_type": "path_of_progression",
+  "displayed_entry_count": 7,
+  "unique_entry_count": 12,
+  "duplicate_occurrence_count": 115,
+  "discovery_confidence": 0.67,
+  "quality": {
+    "displayed_entry_count": 7,
+    "unique_entry_count": 12,
+    "duplicate_occurrence_count": 115,
+    "discovery_confidence": 0.67,
+    "warnings": [
+      "115 duplicate link occurrence(s) removed",
+      "displayed count 7 does not match unique count 12"
+    ]
+  },
+  "entries": [
+    {
+      "id": "Journey",
+      "slug": "Journey",
+      "name_zh": "旅程",
+      "url": "https://tlidb.com/cn/Journey",
+      "source_order": 0,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "成长之路 /7",
+        "link_text": "旅程"
+      }
+    },
+    {
+      "id": "Jagged_Primocryst",
+      "slug": "Jagged_Primocryst",
+      "name_zh": "碎裂原晶",
+      "url": "https://tlidb.com/cn/Jagged_Primocryst",
+      "source_order": 1,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "成长之路 /7",
+        "link_text": "碎裂原晶"
+      }
+    },
+    {
+      "id": "Pactspirit_Crystal",
+      "slug": "Pactspirit_Crystal",
+      "name_zh": "契灵结晶",
+      "url": "https://tlidb.com/cn/Pactspirit_Crystal",
+      "source_order": 2,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "成长之路 /7",
+        "link_text": "契灵结晶"
+      }
+    },
+    {
+      "id": "Revival_Token",
+      "slug": "Revival_Token",
+      "name_zh": "复活币",
+      "url": "https://tlidb.com/cn/Revival_Token",
+      "source_order": 3,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "成长之路 /7",
+        "link_text": "复活币"
+      }
+    },
+    {
+      "id": "Elixir_of_Oblivion",
+      "slug": "Elixir_of_Oblivion",
+      "name_zh": "遗忘之水",
+      "url": "https://tlidb.com/cn/Elixir_of_Oblivion",
+      "source_order": 4,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "成长之路 /7",
+        "link_text": "遗忘之水"
+      }
+    },
+    {
+      "id": "Skill",
+      "slug": "Skill",
+      "name_zh": "技能",
+      "url": "https://tlidb.com/cn/Skill",
+      "source_order": 5,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "成长之路 /7",
+        "link_text": "技能"
+      }
+    },
+    {
+      "id": "Pactspirit_Crystal_-_Battle",
+      "slug": "Pactspirit_Crystal_-_Battle",
+      "name_zh": "契灵结晶-战斗",
+      "url": "https://tlidb.com/cn/Pactspirit_Crystal_-_Battle",
+      "source_order": 6,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "成长之路 /7",
+        "link_text": "契灵结晶-战斗"
+      }
+    },
+    {
+      "id": "Gear",
+      "slug": "Gear",
+      "name_zh": "装备",
+      "url": "https://tlidb.com/cn/Gear",
+      "source_order": 7,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "成长之路 /7",
+        "link_text": "装备"
+      }
+    },
+    {
+      "id": "Hero_Memories",
+      "slug": "Hero_Memories",
+      "name_zh": "英雄追忆",
+      "url": "https://tlidb.com/cn/Hero_Memories",
+      "source_order": 8,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "成长之路 /7",
+        "link_text": "英雄追忆"
+      }
+    },
+    {
+      "id": "Loot",
+      "slug": "Loot",
+      "name_zh": "打宝",
+      "url": "https://tlidb.com/cn/Loot",
+      "source_order": 9,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "成长之路 /7",
+        "link_text": "打宝"
+      }
+    },
+    {
+      "id": "Divinity_Slate",
+      "slug": "Divinity_Slate",
+      "name_zh": "神格石板",
+      "url": "https://tlidb.com/cn/Divinity_Slate",
+      "source_order": 10,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "成长之路 /7",
+        "link_text": "神格石板"
+      }
+    },
+    {
+      "id": "Challenge",
+      "slug": "Challenge",
+      "name_zh": "挑战",
+      "url": "https://tlidb.com/cn/Challenge",
+      "source_order": 11,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "成长之路 /7",
+        "link_text": "挑战"
+      }
+    }
+  ]
+}

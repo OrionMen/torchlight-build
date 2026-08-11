@@ -1,0 +1,206 @@
+{
+  "schema_version": 1,
+  "source": {
+    "site": "tlidb",
+    "locale": "cn",
+    "index_url": "https://tlidb.com/cn/Probe",
+    "fetched_at": "2026-08-06T13:40:54.416263+00:00",
+    "http_status": 200,
+    "html_sha256": "97d7d57980e16c11fe0b9c3566dd5041b1bc786ece8c7009c4d3a9bf9b3846fd"
+  },
+  "system_id": "probe",
+  "entity_type": "probe",
+  "displayed_entry_count": 15,
+  "unique_entry_count": 15,
+  "duplicate_occurrence_count": 0,
+  "discovery_confidence": 0.99,
+  "quality": {
+    "displayed_entry_count": 15,
+    "unique_entry_count": 15,
+    "duplicate_occurrence_count": 0,
+    "discovery_confidence": 0.99,
+    "warnings": []
+  },
+  "entries": [
+    {
+      "id": "Flourishing_Profound_Probe",
+      "slug": "Flourishing_Profound_Probe",
+      "name_zh": "繁荣之幽邃探针",
+      "url": "https://tlidb.com/cn/Flourishing_Profound_Probe",
+      "source_order": 0,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /15",
+        "link_text": "繁荣之幽邃探针"
+      }
+    },
+    {
+      "id": "Flourishing_Deep_Space_Probe",
+      "slug": "Flourishing_Deep_Space_Probe",
+      "name_zh": "繁荣之深空探针",
+      "url": "https://tlidb.com/cn/Flourishing_Deep_Space_Probe",
+      "source_order": 1,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /15",
+        "link_text": "繁荣之深空探针"
+      }
+    },
+    {
+      "id": "Gear_Profound_Probe",
+      "slug": "Gear_Profound_Probe",
+      "name_zh": "装备之幽邃探针",
+      "url": "https://tlidb.com/cn/Gear_Profound_Probe",
+      "source_order": 2,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /15",
+        "link_text": "装备之幽邃探针"
+      }
+    },
+    {
+      "id": "Gear_Deep_Space_Probe",
+      "slug": "Gear_Deep_Space_Probe",
+      "name_zh": "装备之深空探针",
+      "url": "https://tlidb.com/cn/Gear_Deep_Space_Probe",
+      "source_order": 3,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /15",
+        "link_text": "装备之深空探针"
+      }
+    },
+    {
+      "id": "Ember_Profound_Probe",
+      "slug": "Ember_Profound_Probe",
+      "name_zh": "灰烬之幽邃探针",
+      "url": "https://tlidb.com/cn/Ember_Profound_Probe",
+      "source_order": 4,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /15",
+        "link_text": "灰烬之幽邃探针"
+      }
+    },
+    {
+      "id": "Ember_Deep_Space_Probe",
+      "slug": "Ember_Deep_Space_Probe",
+      "name_zh": "灰烬之深空探针",
+      "url": "https://tlidb.com/cn/Ember_Deep_Space_Probe",
+      "source_order": 5,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /15",
+        "link_text": "灰烬之深空探针"
+      }
+    },
+    {
+      "id": "Fluorescent_Profound_Probe",
+      "slug": "Fluorescent_Profound_Probe",
+      "name_zh": "荧光之幽邃探针",
+      "url": "https://tlidb.com/cn/Fluorescent_Profound_Probe",
+      "source_order": 6,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /15",
+        "link_text": "荧光之幽邃探针"
+      }
+    },
+    {
+      "id": "Fluorescent_Deep_Space_Probe",
+      "slug": "Fluorescent_Deep_Space_Probe",
+      "name_zh": "荧光之深空探针",
+      "url": "https://tlidb.com/cn/Fluorescent_Deep_Space_Probe",
+      "source_order": 7,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /15",
+        "link_text": "荧光之深空探针"
+      }
+    },
+    {
+      "id": "Compass_Profound_Probe",
+      "slug": "Compass_Profound_Probe",
+      "name_zh": "罗盘之幽邃探针",
+      "url": "https://tlidb.com/cn/Compass_Profound_Probe",
+      "source_order": 8,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /15",
+        "link_text": "罗盘之幽邃探针"
+      }
+    },
+    {
+      "id": "Compass_Deep_Space_Probe",
+      "slug": "Compass_Deep_Space_Probe",
+      "name_zh": "罗盘之深空探针",
+      "url": "https://tlidb.com/cn/Compass_Deep_Space_Probe",
+      "source_order": 9,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /15",
+        "link_text": "罗盘之深空探针"
+      }
+    },
+    {
+      "id": "Beacon_Profound_Probe",
+      "slug": "Beacon_Profound_Probe",
+      "name_zh": "信标之幽邃探针",
+      "url": "https://tlidb.com/cn/Beacon_Profound_Probe",
+      "source_order": 10,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /15",
+        "link_text": "信标之幽邃探针"
+      }
+    },
+    {
+      "id": "Might_Deep_Space_Probe",
+      "slug": "Might_Deep_Space_Probe",
+      "name_zh": "巨力之深空探针",
+      "url": "https://tlidb.com/cn/Might_Deep_Space_Probe",
+      "source_order": 11,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /15",
+        "link_text": "巨力之深空探针"
+      }
+    },
+    {
+      "id": "Machine_Deep_Space_Probe",
+      "slug": "Machine_Deep_Space_Probe",
+      "name_zh": "机械之深空探针",
+      "url": "https://tlidb.com/cn/Machine_Deep_Space_Probe",
+      "source_order": 12,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /15",
+        "link_text": "机械之深空探针"
+      }
+    },
+    {
+      "id": "Doll_Deep_Space_Probe",
+      "slug": "Doll_Deep_Space_Probe",
+      "name_zh": "玩偶之深空探针",
+      "url": "https://tlidb.com/cn/Doll_Deep_Space_Probe",
+      "source_order": 13,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /15",
+        "link_text": "玩偶之深空探针"
+      }
+    },
+    {
+      "id": "Outlaw_Deep_Space_Probe",
+      "slug": "Outlaw_Deep_Space_Probe",
+      "name_zh": "通缉之深空探针",
+      "url": "https://tlidb.com/cn/Outlaw_Deep_Space_Probe",
+      "source_order": 14,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /15",
+        "link_text": "通缉之深空探针"
+      }
+    }
+  ]
+}

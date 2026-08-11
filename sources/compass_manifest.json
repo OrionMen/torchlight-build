@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "source": {
+    "site": "tlidb",
+    "locale": "cn",
+    "index_url": "https://tlidb.com/cn/Compass",
+    "fetched_at": "2026-08-06T13:40:52.757384+00:00",
+    "http_status": 200,
+    "html_sha256": "1d322e7bf7ad4f215dca7f304294f912a774357d1d1e24684f1da9bf7cddd2af"
+  },
+  "system_id": "compass",
+  "entity_type": "compass",
+  "displayed_entry_count": 12,
+  "unique_entry_count": 12,
+  "duplicate_occurrence_count": 0,
+  "discovery_confidence": 0.99,
+  "quality": {
+    "displayed_entry_count": 12,
+    "unique_entry_count": 12,
+    "duplicate_occurrence_count": 0,
+    "discovery_confidence": 0.99,
+    "warnings": []
+  },
+  "entries": [
+    {
+      "id": "Ecliptic_Astrolabe",
+      "slug": "Ecliptic_Astrolabe",
+      "name_zh": "黄道星盘",
+      "url": "https://tlidb.com/cn/Ecliptic_Astrolabe",
+      "source_order": 0,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /12",
+        "link_text": "黄道星盘"
+      }
+    },
+    {
+      "id": "Vast_Ecliptic_Astrolabe",
+      "slug": "Vast_Ecliptic_Astrolabe",
+      "name_zh": "浩瀚之黄道星盘",
+      "url": "https://tlidb.com/cn/Vast_Ecliptic_Astrolabe",
+      "source_order": 1,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /12",
+        "link_text": "浩瀚之黄道星盘"
+      }
+    },
+    {
+      "id": "Ascendant_Ecliptic_Astrolabe",
+      "slug": "Ascendant_Ecliptic_Astrolabe",
+      "name_zh": "荣升之黄道星盘",
+      "url": "https://tlidb.com/cn/Ascendant_Ecliptic_Astrolabe",
+      "source_order": 2,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /12",
+        "link_text": "荣升之黄道星盘"
+      }
+    },
+    {
+      "id": "Hunting_Astrolabe",
+      "slug": "Hunting_Astrolabe",
+      "name_zh": "狩猎星盘",
+      "url": "https://tlidb.com/cn/Hunting_Astrolabe",
+      "source_order": 3,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /12",
+        "link_text": "狩猎星盘"
+      }
+    },
+    {
+      "id": "Siege_Hunting_Astrolabe",
+      "slug": "Siege_Hunting_Astrolabe",
+      "name_zh": "围剿之狩猎星盘",
+      "url": "https://tlidb.com/cn/Siege_Hunting_Astrolabe",
+      "source_order": 4,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /12",
+        "link_text": "围剿之狩猎星盘"
+      }
+    },
+    {
+      "id": "General_Hunting_Astrolabe",
+      "slug": "General_Hunting_Astrolabe",
+      "name_zh": "将军之狩猎星盘",
+      "url": "https://tlidb.com/cn/General_Hunting_Astrolabe",
+      "source_order": 5,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /12",
+        "link_text": "将军之狩猎星盘"
+      }
+    },
+    {
+      "id": "Revelation_Hunting_Astrolabe",
+      "slug": "Revelation_Hunting_Astrolabe",
+      "name_zh": "启示之狩猎星盘",
+      "url": "https://tlidb.com/cn/Revelation_Hunting_Astrolabe",
+      "source_order": 6,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /12",
+        "link_text": "启示之狩猎星盘"
+      }
+    },
+    {
+      "id": "Doll_Astrolabe",
+      "slug": "Doll_Astrolabe",
+      "name_zh": "玩偶星盘",
+      "url": "https://tlidb.com/cn/Doll_Astrolabe",
+      "source_order": 7,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /12",
+        "link_text": "玩偶星盘"
+      }
+    },
+    {
+      "id": "Collection_Doll_Astrolabe",
+      "slug": "Collection_Doll_Astrolabe",
+      "name_zh": "典藏之玩偶星盘",
+      "url": "https://tlidb.com/cn/Collection_Doll_Astrolabe",
+      "source_order": 8,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /12",
+        "link_text": "典藏之玩偶星盘"
+      }
+    },
+    {
+      "id": "Collection_Doll_Astrolabe_(Artifact)",
+      "slug": "Collection_Doll_Astrolabe_(Artifact)",
+      "name_zh": "典藏之玩偶星盘（遗珍）",
+      "url": "https://tlidb.com/cn/Collection_Doll_Astrolabe_%28Artifact%29",
+      "source_order": 9,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /12",
+        "link_text": "典藏之玩偶星盘（遗珍）"
+      }
+    },
+    {
+      "id": "Cage_Astrolabe",
+      "slug": "Cage_Astrolabe",
+      "name_zh": "囚笼星盘",
+      "url": "https://tlidb.com/cn/Cage_Astrolabe",
+      "source_order": 10,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /12",
+        "link_text": "囚笼星盘"
+      }
+    },
+    {
+      "id": "Golden_Cage_Astrolabe",
+      "slug": "Golden_Cage_Astrolabe",
+      "name_zh": "黄金之囚笼星盘",
+      "url": "https://tlidb.com/cn/Golden_Cage_Astrolabe",
+      "source_order": 11,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /12",
+        "link_text": "黄金之囚笼星盘"
+      }
+    }
+  ]
+}

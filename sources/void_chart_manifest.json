@@ -1,0 +1,338 @@
+{
+  "schema_version": 1,
+  "source": {
+    "site": "tlidb",
+    "locale": "cn",
+    "index_url": "https://tlidb.com/cn/Void_Chart",
+    "fetched_at": "2026-08-06T13:40:49.721982+00:00",
+    "http_status": 200,
+    "html_sha256": "6820b280a0c1e55abd50d0bbfa3c33c98e5e460f2f568ffa6e87bf6c995fca0c"
+  },
+  "system_id": "void_chart",
+  "entity_type": "void_chart",
+  "displayed_entry_count": 26,
+  "unique_entry_count": 26,
+  "duplicate_occurrence_count": 0,
+  "discovery_confidence": 0.99,
+  "quality": {
+    "displayed_entry_count": 26,
+    "unique_entry_count": 26,
+    "duplicate_occurrence_count": 0,
+    "discovery_confidence": 0.99,
+    "warnings": []
+  },
+  "entries": [
+    {
+      "id": "Gear_Talent_Constellation",
+      "slug": "Gear_Talent_Constellation",
+      "name_zh": "装备天赋星群",
+      "url": "https://tlidb.com/cn/Gear_Talent_Constellation",
+      "source_order": 0,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "虚空星图 /26",
+        "link_text": "装备天赋星群"
+      }
+    },
+    {
+      "id": "Legendary_Gear_Talent_Constellation",
+      "slug": "Legendary_Gear_Talent_Constellation",
+      "name_zh": "传奇装备天赋星群",
+      "url": "https://tlidb.com/cn/Legendary_Gear_Talent_Constellation",
+      "source_order": 1,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "虚空星图 /26",
+        "link_text": "传奇装备天赋星群"
+      }
+    },
+    {
+      "id": "Compass_Talent_Constellation",
+      "slug": "Compass_Talent_Constellation",
+      "name_zh": "罗盘天赋星群",
+      "url": "https://tlidb.com/cn/Compass_Talent_Constellation",
+      "source_order": 2,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "虚空星图 /26",
+        "link_text": "罗盘天赋星群"
+      }
+    },
+    {
+      "id": "Commodities_Talent_Constellation",
+      "slug": "Commodities_Talent_Constellation",
+      "name_zh": "通货天赋星群",
+      "url": "https://tlidb.com/cn/Commodities_Talent_Constellation",
+      "source_order": 3,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "虚空星图 /26",
+        "link_text": "通货天赋星群"
+      }
+    },
+    {
+      "id": "War_Talent_Constellation",
+      "slug": "War_Talent_Constellation",
+      "name_zh": "征战天赋星群",
+      "url": "https://tlidb.com/cn/War_Talent_Constellation",
+      "source_order": 4,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "虚空星图 /26",
+        "link_text": "征战天赋星群"
+      }
+    },
+    {
+      "id": "Might_Talent_Constellation",
+      "slug": "Might_Talent_Constellation",
+      "name_zh": "巨力天赋星群",
+      "url": "https://tlidb.com/cn/Might_Talent_Constellation",
+      "source_order": 5,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "虚空星图 /26",
+        "link_text": "巨力天赋星群"
+      }
+    },
+    {
+      "id": "Hunting_Talent_Constellation",
+      "slug": "Hunting_Talent_Constellation",
+      "name_zh": "狩猎天赋星群",
+      "url": "https://tlidb.com/cn/Hunting_Talent_Constellation",
+      "source_order": 6,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "虚空星图 /26",
+        "link_text": "狩猎天赋星群"
+      }
+    },
+    {
+      "id": "Machine_Talent_Constellation",
+      "slug": "Machine_Talent_Constellation",
+      "name_zh": "机械天赋星群",
+      "url": "https://tlidb.com/cn/Machine_Talent_Constellation",
+      "source_order": 7,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "虚空星图 /26",
+        "link_text": "机械天赋星群"
+      }
+    },
+    {
+      "id": "Dark_Surge_Talent_Constellation",
+      "slug": "Dark_Surge_Talent_Constellation",
+      "name_zh": "黑潮天赋星群",
+      "url": "https://tlidb.com/cn/Dark_Surge_Talent_Constellation",
+      "source_order": 8,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "虚空星图 /26",
+        "link_text": "黑潮天赋星群"
+      }
+    },
+    {
+      "id": "Blacksail_Talent_Constellation",
+      "slug": "Blacksail_Talent_Constellation",
+      "name_zh": "黑帆天赋星群",
+      "url": "https://tlidb.com/cn/Blacksail_Talent_Constellation",
+      "source_order": 9,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "虚空星图 /26",
+        "link_text": "黑帆天赋星群"
+      }
+    },
+    {
+      "id": "Cube_Talent_Constellation",
+      "slug": "Cube_Talent_Constellation",
+      "name_zh": "魔方天赋星群",
+      "url": "https://tlidb.com/cn/Cube_Talent_Constellation",
+      "source_order": 10,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "虚空星图 /26",
+        "link_text": "魔方天赋星群"
+      }
+    },
+    {
+      "id": "Aeterna_Talent_Constellation",
+      "slug": "Aeterna_Talent_Constellation",
+      "name_zh": "迷城天赋星群",
+      "url": "https://tlidb.com/cn/Aeterna_Talent_Constellation",
+      "source_order": 11,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "虚空星图 /26",
+        "link_text": "迷城天赋星群"
+      }
+    },
+    {
+      "id": "Nightmare_Talent_Constellation",
+      "slug": "Nightmare_Talent_Constellation",
+      "name_zh": "梦魇天赋星群",
+      "url": "https://tlidb.com/cn/Nightmare_Talent_Constellation",
+      "source_order": 12,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "虚空星图 /26",
+        "link_text": "梦魇天赋星群"
+      }
+    },
+    {
+      "id": "Folklore_Talent_Constellation",
+      "slug": "Folklore_Talent_Constellation",
+      "name_zh": "怪谈天赋星群",
+      "url": "https://tlidb.com/cn/Folklore_Talent_Constellation",
+      "source_order": 13,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "虚空星图 /26",
+        "link_text": "怪谈天赋星群"
+      }
+    },
+    {
+      "id": "Clockwork_Ballet_Talent_Constellation",
+      "slug": "Clockwork_Ballet_Talent_Constellation",
+      "name_zh": "玩偶天赋星群",
+      "url": "https://tlidb.com/cn/Clockwork_Ballet_Talent_Constellation",
+      "source_order": 14,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "虚空星图 /26",
+        "link_text": "玩偶天赋星群"
+      }
+    },
+    {
+      "id": "Beacon_Talent_Constellation",
+      "slug": "Beacon_Talent_Constellation",
+      "name_zh": "信标天赋星群",
+      "url": "https://tlidb.com/cn/Beacon_Talent_Constellation",
+      "source_order": 15,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "虚空星图 /26",
+        "link_text": "信标天赋星群"
+      }
+    },
+    {
+      "id": "The_Frozen_Canvas_Talent_Constellation",
+      "slug": "The_Frozen_Canvas_Talent_Constellation",
+      "name_zh": "画雪天赋星群",
+      "url": "https://tlidb.com/cn/The_Frozen_Canvas_Talent_Constellation",
+      "source_order": 16,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "虚空星图 /26",
+        "link_text": "画雪天赋星群"
+      }
+    },
+    {
+      "id": "Arcana_Talent_Constellation",
+      "slug": "Arcana_Talent_Constellation",
+      "name_zh": "塔罗天赋星群",
+      "url": "https://tlidb.com/cn/Arcana_Talent_Constellation",
+      "source_order": 17,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "虚空星图 /26",
+        "link_text": "塔罗天赋星群"
+      }
+    },
+    {
+      "id": "Sandlord_Talent_Constellation",
+      "slug": "Sandlord_Talent_Constellation",
+      "name_zh": "大亨天赋星群",
+      "url": "https://tlidb.com/cn/Sandlord_Talent_Constellation",
+      "source_order": 18,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "虚空星图 /26",
+        "link_text": "大亨天赋星群"
+      }
+    },
+    {
+      "id": "Outlaw_Talent_Constellation",
+      "slug": "Outlaw_Talent_Constellation",
+      "name_zh": "通缉天赋星群",
+      "url": "https://tlidb.com/cn/Outlaw_Talent_Constellation",
+      "source_order": 19,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "虚空星图 /26",
+        "link_text": "通缉天赋星群"
+      }
+    },
+    {
+      "id": "Cage_Talent_Constellation",
+      "slug": "Cage_Talent_Constellation",
+      "name_zh": "囚笼天赋星群",
+      "url": "https://tlidb.com/cn/Cage_Talent_Constellation",
+      "source_order": 20,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "虚空星图 /26",
+        "link_text": "囚笼天赋星群"
+      }
+    },
+    {
+      "id": "Overrealm_Talent_Constellation",
+      "slug": "Overrealm_Talent_Constellation",
+      "name_zh": "叠界天赋星群",
+      "url": "https://tlidb.com/cn/Overrealm_Talent_Constellation",
+      "source_order": 21,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "虚空星图 /26",
+        "link_text": "叠界天赋星群"
+      }
+    },
+    {
+      "id": "Vorax_Talent_Constellation",
+      "slug": "Vorax_Talent_Constellation",
+      "name_zh": "渴瘾天赋星群",
+      "url": "https://tlidb.com/cn/Vorax_Talent_Constellation",
+      "source_order": 22,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "虚空星图 /26",
+        "link_text": "渴瘾天赋星群"
+      }
+    },
+    {
+      "id": "Creation_Talent_Constellation",
+      "slug": "Creation_Talent_Constellation",
+      "name_zh": "造物天赋星群",
+      "url": "https://tlidb.com/cn/Creation_Talent_Constellation",
+      "source_order": 23,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "虚空星图 /26",
+        "link_text": "造物天赋星群"
+      }
+    },
+    {
+      "id": "Lunaria_Talent_Constellation",
+      "slug": "Lunaria_Talent_Constellation",
+      "name_zh": "明月天赋星群",
+      "url": "https://tlidb.com/cn/Lunaria_Talent_Constellation",
+      "source_order": 24,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "虚空星图 /26",
+        "link_text": "明月天赋星群"
+      }
+    },
+    {
+      "id": "Profound_Talent_Constellation",
+      "slug": "Profound_Talent_Constellation",
+      "name_zh": "幽邃天赋星群",
+      "url": "https://tlidb.com/cn/Profound_Talent_Constellation",
+      "source_order": 25,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "虚空星图 /26",
+        "link_text": "幽邃天赋星群"
+      }
+    }
+  ]
+}

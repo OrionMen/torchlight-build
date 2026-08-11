@@ -1,0 +1,1706 @@
+{
+  "schema_version": 1,
+  "source": {
+    "site": "tlidb",
+    "locale": "cn",
+    "index_url": "https://tlidb.com/cn/Magnificent_Support_Skill",
+    "fetched_at": "2026-08-06T13:40:23.644147+00:00",
+    "http_status": 200,
+    "html_sha256": "72437ae5c9c2c94b39814cb5e06b2dc2401578337965298003715f40dd358687"
+  },
+  "system_id": "magnificent_support_skill",
+  "entity_type": "magnificent_support_skill",
+  "displayed_entry_count": 140,
+  "unique_entry_count": 140,
+  "duplicate_occurrence_count": 0,
+  "discovery_confidence": 0.99,
+  "quality": {
+    "displayed_entry_count": 140,
+    "unique_entry_count": 140,
+    "duplicate_occurrence_count": 0,
+    "discovery_confidence": 0.99,
+    "warnings": []
+  },
+  "entries": [
+    {
+      "id": "Focused_Shot:_Aspire_(Magnificent)",
+      "slug": "Focused_Shot:_Aspire_(Magnificent)",
+      "name_zh": "专注射击：奋起（华贵）",
+      "url": "https://tlidb.com/cn/Focused_Shot%3A_Aspire_%28Magnificent%29",
+      "source_order": 0,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "专注射击：奋起（华贵）"
+      }
+    },
+    {
+      "id": "Focused_Shot:_Long_Shot_(Magnificent)",
+      "slug": "Focused_Shot:_Long_Shot_(Magnificent)",
+      "name_zh": "专注射击：远射（华贵）",
+      "url": "https://tlidb.com/cn/Focused_Shot%3A_Long_Shot_%28Magnificent%29",
+      "source_order": 1,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "专注射击：远射（华贵）"
+      }
+    },
+    {
+      "id": "Burning_Shot:_Fiery_Blast_(Magnificent)",
+      "slug": "Burning_Shot:_Fiery_Blast_(Magnificent)",
+      "name_zh": "燃烧射击：炎爆（华贵）",
+      "url": "https://tlidb.com/cn/Burning_Shot%3A_Fiery_Blast_%28Magnificent%29",
+      "source_order": 2,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "燃烧射击：炎爆（华贵）"
+      }
+    },
+    {
+      "id": "Burning_Shot:_Combustion_(Magnificent)",
+      "slug": "Burning_Shot:_Combustion_(Magnificent)",
+      "name_zh": "燃烧射击：助燃（华贵）",
+      "url": "https://tlidb.com/cn/Burning_Shot%3A_Combustion_%28Magnificent%29",
+      "source_order": 3,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "燃烧射击：助燃（华贵）"
+      }
+    },
+    {
+      "id": "Chain_Lightning:_Web_of_Lightning_(Magnificent)",
+      "slug": "Chain_Lightning:_Web_of_Lightning_(Magnificent)",
+      "name_zh": "闪电链：电网（华贵）",
+      "url": "https://tlidb.com/cn/Chain_Lightning%3A_Web_of_Lightning_%28Magnificent%29",
+      "source_order": 4,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "闪电链：电网（华贵）"
+      }
+    },
+    {
+      "id": "Chain_Lightning:_Augmentation_(Magnificent)",
+      "slug": "Chain_Lightning:_Augmentation_(Magnificent)",
+      "name_zh": "闪电链：增幅（华贵）",
+      "url": "https://tlidb.com/cn/Chain_Lightning%3A_Augmentation_%28Magnificent%29",
+      "source_order": 5,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "闪电链：增幅（华贵）"
+      }
+    },
+    {
+      "id": "Focused_Slash:_Tranquility_(Magnificent)",
+      "slug": "Focused_Slash:_Tranquility_(Magnificent)",
+      "name_zh": "专注斩：静息（华贵）",
+      "url": "https://tlidb.com/cn/Focused_Slash%3A_Tranquility_%28Magnificent%29",
+      "source_order": 6,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "专注斩：静息（华贵）"
+      }
+    },
+    {
+      "id": "Focused_Slash:_Duel_(Magnificent)",
+      "slug": "Focused_Slash:_Duel_(Magnificent)",
+      "name_zh": "专注斩：决斗（华贵）",
+      "url": "https://tlidb.com/cn/Focused_Slash%3A_Duel_%28Magnificent%29",
+      "source_order": 7,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "专注斩：决斗（华贵）"
+      }
+    },
+    {
+      "id": "Icy_Blade:_Quick_Freeze_(Magnificent)",
+      "slug": "Icy_Blade:_Quick_Freeze_(Magnificent)",
+      "name_zh": "冰凌斩：速冻（华贵）",
+      "url": "https://tlidb.com/cn/Icy_Blade%3A_Quick_Freeze_%28Magnificent%29",
+      "source_order": 8,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "冰凌斩：速冻（华贵）"
+      }
+    },
+    {
+      "id": "Flame_Slash:_Immediate_Threat_(Magnificent)",
+      "slug": "Flame_Slash:_Immediate_Threat_(Magnificent)",
+      "name_zh": "烈焰斩：近患（华贵）",
+      "url": "https://tlidb.com/cn/Flame_Slash%3A_Immediate_Threat_%28Magnificent%29",
+      "source_order": 9,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "烈焰斩：近患（华贵）"
+      }
+    },
+    {
+      "id": "Corrosive_Throw:_Augmentation_(Magnificent)",
+      "slug": "Corrosive_Throw:_Augmentation_(Magnificent)",
+      "name_zh": "侵蚀投掷：增幅（华贵）",
+      "url": "https://tlidb.com/cn/Corrosive_Throw%3A_Augmentation_%28Magnificent%29",
+      "source_order": 10,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "侵蚀投掷：增幅（华贵）"
+      }
+    },
+    {
+      "id": "Blazing_Bullet:_Fiery_Blast_(Magnificent)",
+      "slug": "Blazing_Bullet:_Fiery_Blast_(Magnificent)",
+      "name_zh": "炽炎穿弹：炎爆（华贵）",
+      "url": "https://tlidb.com/cn/Blazing_Bullet%3A_Fiery_Blast_%28Magnificent%29",
+      "source_order": 11,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "炽炎穿弹：炎爆（华贵）"
+      }
+    },
+    {
+      "id": "Wilt_Spike:_Wither_(Magnificent)",
+      "slug": "Wilt_Spike:_Wither_(Magnificent)",
+      "name_zh": "凋零刺击：凋残（华贵）",
+      "url": "https://tlidb.com/cn/Wilt_Spike%3A_Wither_%28Magnificent%29",
+      "source_order": 12,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "凋零刺击：凋残（华贵）"
+      }
+    },
+    {
+      "id": "Wilt_Spike:_Languish_(Magnificent)",
+      "slug": "Wilt_Spike:_Languish_(Magnificent)",
+      "name_zh": "凋零刺击：颓靡（华贵）",
+      "url": "https://tlidb.com/cn/Wilt_Spike%3A_Languish_%28Magnificent%29",
+      "source_order": 13,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "凋零刺击：颓靡（华贵）"
+      }
+    },
+    {
+      "id": "Hammer_of_Ash:_Upheaval_(Magnificent)",
+      "slug": "Hammer_of_Ash:_Upheaval_(Magnificent)",
+      "name_zh": "灰烬之锤：激荡（华贵）",
+      "url": "https://tlidb.com/cn/Hammer_of_Ash%3A_Upheaval_%28Magnificent%29",
+      "source_order": 14,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "灰烬之锤：激荡（华贵）"
+      }
+    },
+    {
+      "id": "Hammer_of_Ash:_Rekindle_(Magnificent)",
+      "slug": "Hammer_of_Ash:_Rekindle_(Magnificent)",
+      "name_zh": "灰烬之锤：复燃（华贵）",
+      "url": "https://tlidb.com/cn/Hammer_of_Ash%3A_Rekindle_%28Magnificent%29",
+      "source_order": 15,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "灰烬之锤：复燃（华贵）"
+      }
+    },
+    {
+      "id": "Frost_Impact:_Ice_Cluster_(Magnificent)",
+      "slug": "Frost_Impact:_Ice_Cluster_(Magnificent)",
+      "name_zh": "寒霜破击：冰丛（华贵）",
+      "url": "https://tlidb.com/cn/Frost_Impact%3A_Ice_Cluster_%28Magnificent%29",
+      "source_order": 16,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "寒霜破击：冰丛（华贵）"
+      }
+    },
+    {
+      "id": "Frost_Impact:_Frozen_Trajectory_(Magnificent)",
+      "slug": "Frost_Impact:_Frozen_Trajectory_(Magnificent)",
+      "name_zh": "寒霜破击：凝冻（华贵）",
+      "url": "https://tlidb.com/cn/Frost_Impact%3A_Frozen_Trajectory_%28Magnificent%29",
+      "source_order": 17,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "寒霜破击：凝冻（华贵）"
+      }
+    },
+    {
+      "id": "Whirlwind:_Endless_Wind_(Magnificent)",
+      "slug": "Whirlwind:_Endless_Wind_(Magnificent)",
+      "name_zh": "旋风斩：长风（华贵）",
+      "url": "https://tlidb.com/cn/Whirlwind%3A_Endless_Wind_%28Magnificent%29",
+      "source_order": 18,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "旋风斩：长风（华贵）"
+      }
+    },
+    {
+      "id": "Whirlwind:_Wind_Barrier_(Magnificent)",
+      "slug": "Whirlwind:_Wind_Barrier_(Magnificent)",
+      "name_zh": "旋风斩：风障（华贵）",
+      "url": "https://tlidb.com/cn/Whirlwind%3A_Wind_Barrier_%28Magnificent%29",
+      "source_order": 19,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "旋风斩：风障（华贵）"
+      }
+    },
+    {
+      "id": "Lightning_Shot:_Offshoot_(Magnificent)",
+      "slug": "Lightning_Shot:_Offshoot_(Magnificent)",
+      "name_zh": "闪电射击：衍生（华贵）",
+      "url": "https://tlidb.com/cn/Lightning_Shot%3A_Offshoot_%28Magnificent%29",
+      "source_order": 20,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "闪电射击：衍生（华贵）"
+      }
+    },
+    {
+      "id": "Split_Shot:_Volley_(Magnificent)",
+      "slug": "Split_Shot:_Volley_(Magnificent)",
+      "name_zh": "分裂射击：齐射（华贵）",
+      "url": "https://tlidb.com/cn/Split_Shot%3A_Volley_%28Magnificent%29",
+      "source_order": 21,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "分裂射击：齐射（华贵）"
+      }
+    },
+    {
+      "id": "Split_Shot:_Diversion_(Magnificent)",
+      "slug": "Split_Shot:_Diversion_(Magnificent)",
+      "name_zh": "分裂射击：分流（华贵）",
+      "url": "https://tlidb.com/cn/Split_Shot%3A_Diversion_%28Magnificent%29",
+      "source_order": 22,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "分裂射击：分流（华贵）"
+      }
+    },
+    {
+      "id": "Ice_Shot:_Ice_Blast_(Magnificent)",
+      "slug": "Ice_Shot:_Ice_Blast_(Magnificent)",
+      "name_zh": "寒冰射击：冰爆（华贵）",
+      "url": "https://tlidb.com/cn/Ice_Shot%3A_Ice_Blast_%28Magnificent%29",
+      "source_order": 23,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "寒冰射击：冰爆（华贵）"
+      }
+    },
+    {
+      "id": "Bombard:_Cannon_(Magnificent)",
+      "slug": "Bombard:_Cannon_(Magnificent)",
+      "name_zh": "炮轰：重炮（华贵）",
+      "url": "https://tlidb.com/cn/Bombard%3A_Cannon_%28Magnificent%29",
+      "source_order": 24,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "炮轰：重炮（华贵）"
+      }
+    },
+    {
+      "id": "Bombard:_Guided_(Magnificent)",
+      "slug": "Bombard:_Guided_(Magnificent)",
+      "name_zh": "炮轰：制导（华贵）",
+      "url": "https://tlidb.com/cn/Bombard%3A_Guided_%28Magnificent%29",
+      "source_order": 25,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "炮轰：制导（华贵）"
+      }
+    },
+    {
+      "id": "Berserking_Blade:_Desperation_(Magnificent)",
+      "slug": "Berserking_Blade:_Desperation_(Magnificent)",
+      "name_zh": "暴走巨刃：亡命（华贵）",
+      "url": "https://tlidb.com/cn/Berserking_Blade%3A_Desperation_%28Magnificent%29",
+      "source_order": 26,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "暴走巨刃：亡命（华贵）"
+      }
+    },
+    {
+      "id": "Berserking_Blade:_Sweep_(Magnificent)",
+      "slug": "Berserking_Blade:_Sweep_(Magnificent)",
+      "name_zh": "暴走巨刃：扫荡（华贵）",
+      "url": "https://tlidb.com/cn/Berserking_Blade%3A_Sweep_%28Magnificent%29",
+      "source_order": 27,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "暴走巨刃：扫荡（华贵）"
+      }
+    },
+    {
+      "id": "Charged_Pummel:_Drastic_Shift_(Magnificent)",
+      "slug": "Charged_Pummel:_Drastic_Shift_(Magnificent)",
+      "name_zh": "充能猛击：剧变（华贵）",
+      "url": "https://tlidb.com/cn/Charged_Pummel%3A_Drastic_Shift_%28Magnificent%29",
+      "source_order": 28,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "充能猛击：剧变（华贵）"
+      }
+    },
+    {
+      "id": "Charged_Pummel:_Connected_(Magnificent)",
+      "slug": "Charged_Pummel:_Connected_(Magnificent)",
+      "name_zh": "充能猛击：贯通（华贵）",
+      "url": "https://tlidb.com/cn/Charged_Pummel%3A_Connected_%28Magnificent%29",
+      "source_order": 29,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "充能猛击：贯通（华贵）"
+      }
+    },
+    {
+      "id": "Moon_Strike:_Rainbow_(Magnificent)",
+      "slug": "Moon_Strike:_Rainbow_(Magnificent)",
+      "name_zh": "月华斩：长虹（华贵）",
+      "url": "https://tlidb.com/cn/Moon_Strike%3A_Rainbow_%28Magnificent%29",
+      "source_order": 30,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "月华斩：长虹（华贵）"
+      }
+    },
+    {
+      "id": "Moon_Strike:_Lunar_Ring_(Magnificent)",
+      "slug": "Moon_Strike:_Lunar_Ring_(Magnificent)",
+      "name_zh": "月华斩：月环（华贵）",
+      "url": "https://tlidb.com/cn/Moon_Strike%3A_Lunar_Ring_%28Magnificent%29",
+      "source_order": 31,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "月华斩：月环（华贵）"
+      }
+    },
+    {
+      "id": "Savage_Charge:_Infuriate_(Magnificent)",
+      "slug": "Savage_Charge:_Infuriate_(Magnificent)",
+      "name_zh": "野蛮冲锋：触怒（华贵）",
+      "url": "https://tlidb.com/cn/Savage_Charge%3A_Infuriate_%28Magnificent%29",
+      "source_order": 32,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "野蛮冲锋：触怒（华贵）"
+      }
+    },
+    {
+      "id": "Savage_Charge:_Bulldoze_(Magnificent)",
+      "slug": "Savage_Charge:_Bulldoze_(Magnificent)",
+      "name_zh": "野蛮冲锋：猛进（华贵）",
+      "url": "https://tlidb.com/cn/Savage_Charge%3A_Bulldoze_%28Magnificent%29",
+      "source_order": 33,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "野蛮冲锋：猛进（华贵）"
+      }
+    },
+    {
+      "id": "Marked_Rain_of_Arrows:_Heartpiercer_(Magnificent)",
+      "slug": "Marked_Rain_of_Arrows:_Heartpiercer_(Magnificent)",
+      "name_zh": "标记箭雨：穿心（华贵）",
+      "url": "https://tlidb.com/cn/Marked_Rain_of_Arrows%3A_Heartpiercer_%28Magnificent%29",
+      "source_order": 34,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "标记箭雨：穿心（华贵）"
+      }
+    },
+    {
+      "id": "Marked_Rain_of_Arrows:_Chain_Reaction_(Magnificent)",
+      "slug": "Marked_Rain_of_Arrows:_Chain_Reaction_(Magnificent)",
+      "name_zh": "标记箭雨：株连（华贵）",
+      "url": "https://tlidb.com/cn/Marked_Rain_of_Arrows%3A_Chain_Reaction_%28Magnificent%29",
+      "source_order": 35,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "标记箭雨：株连（华贵）"
+      }
+    },
+    {
+      "id": "Corrosive_Shot:_Swift_Action_(Magnificent)",
+      "slug": "Corrosive_Shot:_Swift_Action_(Magnificent)",
+      "name_zh": "侵蚀弹：迅发（华贵）",
+      "url": "https://tlidb.com/cn/Corrosive_Shot%3A_Swift_Action_%28Magnificent%29",
+      "source_order": 36,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "侵蚀弹：迅发（华贵）"
+      }
+    },
+    {
+      "id": "Inexhaustible_Barrage:_Bombard_(Magnificent)",
+      "slug": "Inexhaustible_Barrage:_Bombard_(Magnificent)",
+      "name_zh": "不竭弹雨：狂轰（华贵）",
+      "url": "https://tlidb.com/cn/Inexhaustible_Barrage%3A_Bombard_%28Magnificent%29",
+      "source_order": 37,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "不竭弹雨：狂轰（华贵）"
+      }
+    },
+    {
+      "id": "Thunder_Spike:_Numb_(Magnificent)",
+      "slug": "Thunder_Spike:_Numb_(Magnificent)",
+      "name_zh": "雷光刺击：麻木（华贵）",
+      "url": "https://tlidb.com/cn/Thunder_Spike%3A_Numb_%28Magnificent%29",
+      "source_order": 38,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "雷光刺击：麻木（华贵）"
+      }
+    },
+    {
+      "id": "Thunder_Slash:_Keen_Edge_(Magnificent)",
+      "slug": "Thunder_Slash:_Keen_Edge_(Magnificent)",
+      "name_zh": "雷影斩：疾锋（华贵）",
+      "url": "https://tlidb.com/cn/Thunder_Slash%3A_Keen_Edge_%28Magnificent%29",
+      "source_order": 39,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "雷影斩：疾锋（华贵）"
+      }
+    },
+    {
+      "id": "Thunder_Slash:_Blade_Cluster_(Magnificent)",
+      "slug": "Thunder_Slash:_Blade_Cluster_(Magnificent)",
+      "name_zh": "雷影斩：刀丛（华贵）",
+      "url": "https://tlidb.com/cn/Thunder_Slash%3A_Blade_Cluster_%28Magnificent%29",
+      "source_order": 40,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "雷影斩：刀丛（华贵）"
+      }
+    },
+    {
+      "id": "Ring_of_Blades:_Blade_Formation_(Magnificent)",
+      "slug": "Ring_of_Blades:_Blade_Formation_(Magnificent)",
+      "name_zh": "环绕飞刃：刀阵（华贵）",
+      "url": "https://tlidb.com/cn/Ring_of_Blades%3A_Blade_Formation_%28Magnificent%29",
+      "source_order": 41,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "环绕飞刃：刀阵（华贵）"
+      }
+    },
+    {
+      "id": "Frost_Spike:_Offshoot_(Magnificent)",
+      "slug": "Frost_Spike:_Offshoot_(Magnificent)",
+      "name_zh": "碎冰刺击：衍生（华贵）",
+      "url": "https://tlidb.com/cn/Frost_Spike%3A_Offshoot_%28Magnificent%29",
+      "source_order": 42,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "碎冰刺击：衍生（华贵）"
+      }
+    },
+    {
+      "id": "Rain_of_Arrows:_Swift_Flight_(Magnificent)",
+      "slug": "Rain_of_Arrows:_Swift_Flight_(Magnificent)",
+      "name_zh": "箭雨：疾驰（华贵）",
+      "url": "https://tlidb.com/cn/Rain_of_Arrows%3A_Swift_Flight_%28Magnificent%29",
+      "source_order": 43,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "箭雨：疾驰（华贵）"
+      }
+    },
+    {
+      "id": "Arrow_Einherjar:_Arrowstorm_(Magnificent)",
+      "slug": "Arrow_Einherjar:_Arrowstorm_(Magnificent)",
+      "name_zh": "飞箭英灵：万箭（华贵）",
+      "url": "https://tlidb.com/cn/Arrow_Einherjar%3A_Arrowstorm_%28Magnificent%29",
+      "source_order": 44,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "飞箭英灵：万箭（华贵）"
+      }
+    },
+    {
+      "id": "Shadow_Shot:_Eradicate_(Magnificent)",
+      "slug": "Shadow_Shot:_Eradicate_(Magnificent)",
+      "name_zh": "暗影弹：围剿（华贵）",
+      "url": "https://tlidb.com/cn/Shadow_Shot%3A_Eradicate_%28Magnificent%29",
+      "source_order": 45,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "暗影弹：围剿（华贵）"
+      }
+    },
+    {
+      "id": "Split_Firebolt:_Split_(Magnificent)",
+      "slug": "Split_Firebolt:_Split_(Magnificent)",
+      "name_zh": "裂变火球：分裂（华贵）",
+      "url": "https://tlidb.com/cn/Split_Firebolt%3A_Split_%28Magnificent%29",
+      "source_order": 46,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "裂变火球：分裂（华贵）"
+      }
+    },
+    {
+      "id": "Ice_Lances:_Rebound_(Magnificent)",
+      "slug": "Ice_Lances:_Rebound_(Magnificent)",
+      "name_zh": "冰锥术：回弹（华贵）",
+      "url": "https://tlidb.com/cn/Ice_Lances%3A_Rebound_%28Magnificent%29",
+      "source_order": 47,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "冰锥术：回弹（华贵）"
+      }
+    },
+    {
+      "id": "Ice_Lances:_Ice_Corrosion_(Magnificent)",
+      "slug": "Ice_Lances:_Ice_Corrosion_(Magnificent)",
+      "name_zh": "冰锥术：冰蚀（华贵）",
+      "url": "https://tlidb.com/cn/Ice_Lances%3A_Ice_Corrosion_%28Magnificent%29",
+      "source_order": 48,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "冰锥术：冰蚀（华贵）"
+      }
+    },
+    {
+      "id": "Sparkle:_Magnetic_Field_(Magnificent)",
+      "slug": "Sparkle:_Magnetic_Field_(Magnificent)",
+      "name_zh": "电火花：磁场（华贵）",
+      "url": "https://tlidb.com/cn/Sparkle%3A_Magnetic_Field_%28Magnificent%29",
+      "source_order": 49,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "电火花：磁场（华贵）"
+      }
+    },
+    {
+      "id": "Whirlwind_Blade:_Unsheath_(Magnificent)",
+      "slug": "Whirlwind_Blade:_Unsheath_(Magnificent)",
+      "name_zh": "刀锋回旋：出鞘（华贵）",
+      "url": "https://tlidb.com/cn/Whirlwind_Blade%3A_Unsheath_%28Magnificent%29",
+      "source_order": 50,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "刀锋回旋：出鞘（华贵）"
+      }
+    },
+    {
+      "id": "Whirlwind_Blade:_Swift_Slash_(Magnificent)",
+      "slug": "Whirlwind_Blade:_Swift_Slash_(Magnificent)",
+      "name_zh": "刀锋回旋：快刀（华贵）",
+      "url": "https://tlidb.com/cn/Whirlwind_Blade%3A_Swift_Slash_%28Magnificent%29",
+      "source_order": 51,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "刀锋回旋：快刀（华贵）"
+      }
+    },
+    {
+      "id": "Ring_of_Ice:_Ice_Seal_(Magnificent)",
+      "slug": "Ring_of_Ice:_Ice_Seal_(Magnificent)",
+      "name_zh": "冰环术：封冻（华贵）",
+      "url": "https://tlidb.com/cn/Ring_of_Ice%3A_Ice_Seal_%28Magnificent%29",
+      "source_order": 52,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "冰环术：封冻（华贵）"
+      }
+    },
+    {
+      "id": "Blizzard:_Freezing_Point_(Magnificent)",
+      "slug": "Blizzard:_Freezing_Point_(Magnificent)",
+      "name_zh": "暴风雪：冰点（华贵）",
+      "url": "https://tlidb.com/cn/Blizzard%3A_Freezing_Point_%28Magnificent%29",
+      "source_order": 53,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "暴风雪：冰点（华贵）"
+      }
+    },
+    {
+      "id": "Blizzard:_Hail_(Magnificent)",
+      "slug": "Blizzard:_Hail_(Magnificent)",
+      "name_zh": "暴风雪：冰雹（华贵）",
+      "url": "https://tlidb.com/cn/Blizzard%3A_Hail_%28Magnificent%29",
+      "source_order": 54,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "暴风雪：冰雹（华贵）"
+      }
+    },
+    {
+      "id": "Lightning_Storm:_Surging_Thunder_(Magnificent)",
+      "slug": "Lightning_Storm:_Surging_Thunder_(Magnificent)",
+      "name_zh": "闪电风暴：雷潮（华贵）",
+      "url": "https://tlidb.com/cn/Lightning_Storm%3A_Surging_Thunder_%28Magnificent%29",
+      "source_order": 55,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "闪电风暴：雷潮（华贵）"
+      }
+    },
+    {
+      "id": "Flame_Core:_Lone_Vanguard_(Magnificent)",
+      "slug": "Flame_Core:_Lone_Vanguard_(Magnificent)",
+      "name_zh": "聚焰之核：孤军（华贵）",
+      "url": "https://tlidb.com/cn/Flame_Core%3A_Lone_Vanguard_%28Magnificent%29",
+      "source_order": 56,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "聚焰之核：孤军（华贵）"
+      }
+    },
+    {
+      "id": "Flame_Jet:_Scorched_Earth_(Magnificent)",
+      "slug": "Flame_Jet:_Scorched_Earth_(Magnificent)",
+      "name_zh": "烈焰释放：焦土（华贵）",
+      "url": "https://tlidb.com/cn/Flame_Jet%3A_Scorched_Earth_%28Magnificent%29",
+      "source_order": 57,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "烈焰释放：焦土（华贵）"
+      }
+    },
+    {
+      "id": "Frost_Terra:_Rime_(Magnificent)",
+      "slug": "Frost_Terra:_Rime_(Magnificent)",
+      "name_zh": "寒霜地面：霜冻（华贵）",
+      "url": "https://tlidb.com/cn/Frost_Terra%3A_Rime_%28Magnificent%29",
+      "source_order": 58,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "寒霜地面：霜冻（华贵）"
+      }
+    },
+    {
+      "id": "Frost_Terra:_Snow_Shell_(Magnificent)",
+      "slug": "Frost_Terra:_Snow_Shell_(Magnificent)",
+      "name_zh": "寒霜地面：雪壳（华贵）",
+      "url": "https://tlidb.com/cn/Frost_Terra%3A_Snow_Shell_%28Magnificent%29",
+      "source_order": 59,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "寒霜地面：雪壳（华贵）"
+      }
+    },
+    {
+      "id": "Shadow_Swamp:_Gushing_Spring_(Magnificent)",
+      "slug": "Shadow_Swamp:_Gushing_Spring_(Magnificent)",
+      "name_zh": "暗影之沼：涌泉（华贵）",
+      "url": "https://tlidb.com/cn/Shadow_Swamp%3A_Gushing_Spring_%28Magnificent%29",
+      "source_order": 60,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "暗影之沼：涌泉（华贵）"
+      }
+    },
+    {
+      "id": "Shadow_Swamp:_Splatter_(Magnificent)",
+      "slug": "Shadow_Swamp:_Splatter_(Magnificent)",
+      "name_zh": "暗影之沼：溅污（华贵）",
+      "url": "https://tlidb.com/cn/Shadow_Swamp%3A_Splatter_%28Magnificent%29",
+      "source_order": 61,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "暗影之沼：溅污（华贵）"
+      }
+    },
+    {
+      "id": "Thunderbolt_Overload:_Leap_(Magnificent)",
+      "slug": "Thunderbolt_Overload:_Leap_(Magnificent)",
+      "name_zh": "超载雷球：飞跃（华贵）",
+      "url": "https://tlidb.com/cn/Thunderbolt_Overload%3A_Leap_%28Magnificent%29",
+      "source_order": 62,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "超载雷球：飞跃（华贵）"
+      }
+    },
+    {
+      "id": "Thunderbolt_Overload:_Retribution_(Magnificent)",
+      "slug": "Thunderbolt_Overload:_Retribution_(Magnificent)",
+      "name_zh": "超载雷球：惩恶（华贵）",
+      "url": "https://tlidb.com/cn/Thunderbolt_Overload%3A_Retribution_%28Magnificent%29",
+      "source_order": 63,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "超载雷球：惩恶（华贵）"
+      }
+    },
+    {
+      "id": "Frost_Core:_Chase_(Magnificent)",
+      "slug": "Frost_Core:_Chase_(Magnificent)",
+      "name_zh": "寒霜之核：追击（华贵）",
+      "url": "https://tlidb.com/cn/Frost_Core%3A_Chase_%28Magnificent%29",
+      "source_order": 64,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "寒霜之核：追击（华贵）"
+      }
+    },
+    {
+      "id": "Summon_Thunder_Magus:_Lightning_Ward_(Magnificent)",
+      "slug": "Summon_Thunder_Magus:_Lightning_Ward_(Magnificent)",
+      "name_zh": "召唤雷霆之灵：辟雷（华贵）",
+      "url": "https://tlidb.com/cn/Summon_Thunder_Magus%3A_Lightning_Ward_%28Magnificent%29",
+      "source_order": 65,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "召唤雷霆之灵：辟雷（华贵）"
+      }
+    },
+    {
+      "id": "Summon_Thunder_Magus:_Continuation_(Magnificent)",
+      "slug": "Summon_Thunder_Magus:_Continuation_(Magnificent)",
+      "name_zh": "召唤雷霆之灵：延袭（华贵）",
+      "url": "https://tlidb.com/cn/Summon_Thunder_Magus%3A_Continuation_%28Magnificent%29",
+      "source_order": 66,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "召唤雷霆之灵：延袭（华贵）"
+      }
+    },
+    {
+      "id": "Summon_Frost_Magus:_Cold_Ward_(Magnificent)",
+      "slug": "Summon_Frost_Magus:_Cold_Ward_(Magnificent)",
+      "name_zh": "召唤寒冰之灵：辟寒（华贵）",
+      "url": "https://tlidb.com/cn/Summon_Frost_Magus%3A_Cold_Ward_%28Magnificent%29",
+      "source_order": 67,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "召唤寒冰之灵：辟寒（华贵）"
+      }
+    },
+    {
+      "id": "Summon_Frost_Magus:_Piercing_Cold_(Magnificent)",
+      "slug": "Summon_Frost_Magus:_Piercing_Cold_(Magnificent)",
+      "name_zh": "召唤寒冰之灵：冷冽（华贵）",
+      "url": "https://tlidb.com/cn/Summon_Frost_Magus%3A_Piercing_Cold_%28Magnificent%29",
+      "source_order": 68,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "召唤寒冰之灵：冷冽（华贵）"
+      }
+    },
+    {
+      "id": "Summon_Frost_Magus:_Ice_Crusher_(Magnificent)",
+      "slug": "Summon_Frost_Magus:_Ice_Crusher_(Magnificent)",
+      "name_zh": "召唤寒冰之灵：破冰（华贵）",
+      "url": "https://tlidb.com/cn/Summon_Frost_Magus%3A_Ice_Crusher_%28Magnificent%29",
+      "source_order": 69,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "召唤寒冰之灵：破冰（华贵）"
+      }
+    },
+    {
+      "id": "Summon_Fire_Magus:_Fire_Ward_(Magnificent)",
+      "slug": "Summon_Fire_Magus:_Fire_Ward_(Magnificent)",
+      "name_zh": "召唤火焰之灵：辟火（华贵）",
+      "url": "https://tlidb.com/cn/Summon_Fire_Magus%3A_Fire_Ward_%28Magnificent%29",
+      "source_order": 70,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "召唤火焰之灵：辟火（华贵）"
+      }
+    },
+    {
+      "id": "Summon_Fire_Magus:_Aflame_(Magnificent)",
+      "slug": "Summon_Fire_Magus:_Aflame_(Magnificent)",
+      "name_zh": "召唤火焰之灵：炽烈（华贵）",
+      "url": "https://tlidb.com/cn/Summon_Fire_Magus%3A_Aflame_%28Magnificent%29",
+      "source_order": 71,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "召唤火焰之灵：炽烈（华贵）"
+      }
+    },
+    {
+      "id": "Summon_Fire_Magus:_Flowing_Flames_(Magnificent)",
+      "slug": "Summon_Fire_Magus:_Flowing_Flames_(Magnificent)",
+      "name_zh": "召唤火焰之灵：浴火（华贵）",
+      "url": "https://tlidb.com/cn/Summon_Fire_Magus%3A_Flowing_Flames_%28Magnificent%29",
+      "source_order": 72,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "召唤火焰之灵：浴火（华贵）"
+      }
+    },
+    {
+      "id": "Synthetic_Troop:_Force_Field_(Magnificent)",
+      "slug": "Synthetic_Troop:_Force_Field_(Magnificent)",
+      "name_zh": "智械：力场（华贵）",
+      "url": "https://tlidb.com/cn/Synthetic_Troop%3A_Force_Field_%28Magnificent%29",
+      "source_order": 73,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "智械：力场（华贵）"
+      }
+    },
+    {
+      "id": "Summon_Machine_Guard:_Iron_Fist_(Magnificent)",
+      "slug": "Summon_Machine_Guard:_Iron_Fist_(Magnificent)",
+      "name_zh": "召唤机械警卫：铁拳（华贵）",
+      "url": "https://tlidb.com/cn/Summon_Machine_Guard%3A_Iron_Fist_%28Magnificent%29",
+      "source_order": 74,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "召唤机械警卫：铁拳（华贵）"
+      }
+    },
+    {
+      "id": "Summon_Machine_Guard:_Pummel_(Magnificent)",
+      "slug": "Summon_Machine_Guard:_Pummel_(Magnificent)",
+      "name_zh": "召唤机械警卫：连击（华贵）",
+      "url": "https://tlidb.com/cn/Summon_Machine_Guard%3A_Pummel_%28Magnificent%29",
+      "source_order": 75,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "召唤机械警卫：连击（华贵）"
+      }
+    },
+    {
+      "id": "Summon_Grim_Phantom:_Glare_(Magnificent)",
+      "slug": "Summon_Grim_Phantom:_Glare_(Magnificent)",
+      "name_zh": "召唤幽浮魅影：炫光（华贵）",
+      "url": "https://tlidb.com/cn/Summon_Grim_Phantom%3A_Glare_%28Magnificent%29",
+      "source_order": 76,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "召唤幽浮魅影：炫光（华贵）"
+      }
+    },
+    {
+      "id": "Summon_Grim_Phantom:_Spur_(Magnificent)",
+      "slug": "Summon_Grim_Phantom:_Spur_(Magnificent)",
+      "name_zh": "召唤幽浮魅影：驱策（华贵）",
+      "url": "https://tlidb.com/cn/Summon_Grim_Phantom%3A_Spur_%28Magnificent%29",
+      "source_order": 77,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "召唤幽浮魅影：驱策（华贵）"
+      }
+    },
+    {
+      "id": "Summon_Spider_Tank:_Steamroll_(Magnificent)",
+      "slug": "Summon_Spider_Tank:_Steamroll_(Magnificent)",
+      "name_zh": "召唤蜘蛛坦克：碾压（华贵）",
+      "url": "https://tlidb.com/cn/Summon_Spider_Tank%3A_Steamroll_%28Magnificent%29",
+      "source_order": 78,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "召唤蜘蛛坦克：碾压（华贵）"
+      }
+    },
+    {
+      "id": "Ghost_Blade_Einherjar:_Prestige_(Magnificent)",
+      "slug": "Ghost_Blade_Einherjar:_Prestige_(Magnificent)",
+      "name_zh": "幽刃英灵：积威（华贵）",
+      "url": "https://tlidb.com/cn/Ghost_Blade_Einherjar%3A_Prestige_%28Magnificent%29",
+      "source_order": 79,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "幽刃英灵：积威（华贵）"
+      }
+    },
+    {
+      "id": "Ghost_Blade_Einherjar:_Unbroken_(Magnificent)",
+      "slug": "Ghost_Blade_Einherjar:_Unbroken_(Magnificent)",
+      "name_zh": "幽刃英灵：无间（华贵）",
+      "url": "https://tlidb.com/cn/Ghost_Blade_Einherjar%3A_Unbroken_%28Magnificent%29",
+      "source_order": 80,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "幽刃英灵：无间（华贵）"
+      }
+    },
+    {
+      "id": "Groundshaker:_Frequent_Quake_(Magnificent)",
+      "slug": "Groundshaker:_Frequent_Quake_(Magnificent)",
+      "name_zh": "震撼大地：频发（华贵）",
+      "url": "https://tlidb.com/cn/Groundshaker%3A_Frequent_Quake_%28Magnificent%29",
+      "source_order": 81,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "震撼大地：频发（华贵）"
+      }
+    },
+    {
+      "id": "Groundshaker:_Epicenter_(Magnificent)",
+      "slug": "Groundshaker:_Epicenter_(Magnificent)",
+      "name_zh": "震撼大地：震源（华贵）",
+      "url": "https://tlidb.com/cn/Groundshaker%3A_Epicenter_%28Magnificent%29",
+      "source_order": 82,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "震撼大地：震源（华贵）"
+      }
+    },
+    {
+      "id": "Howling_Gale:_Rapid_Sweep_(Magnificent)",
+      "slug": "Howling_Gale:_Rapid_Sweep_(Magnificent)",
+      "name_zh": "呼啸烈风：疾掠（华贵）",
+      "url": "https://tlidb.com/cn/Howling_Gale%3A_Rapid_Sweep_%28Magnificent%29",
+      "source_order": 83,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "呼啸烈风：疾掠（华贵）"
+      }
+    },
+    {
+      "id": "Howling_Gale:_Headwind_(Magnificent)",
+      "slug": "Howling_Gale:_Headwind_(Magnificent)",
+      "name_zh": "呼啸烈风：逆风（华贵）",
+      "url": "https://tlidb.com/cn/Howling_Gale%3A_Headwind_%28Magnificent%29",
+      "source_order": 84,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "呼啸烈风：逆风（华贵）"
+      }
+    },
+    {
+      "id": "Shackles_of_Malice:_Defile_(Magnificent)",
+      "slug": "Shackles_of_Malice:_Defile_(Magnificent)",
+      "name_zh": "恶意枷锁：玷污（华贵）",
+      "url": "https://tlidb.com/cn/Shackles_of_Malice%3A_Defile_%28Magnificent%29",
+      "source_order": 85,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "恶意枷锁：玷污（华贵）"
+      }
+    },
+    {
+      "id": "Shackles_of_Malice:_Vendetta_(Magnificent)",
+      "slug": "Shackles_of_Malice:_Vendetta_(Magnificent)",
+      "name_zh": "恶意枷锁：怀恨（华贵）",
+      "url": "https://tlidb.com/cn/Shackles_of_Malice%3A_Vendetta_%28Magnificent%29",
+      "source_order": 86,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "恶意枷锁：怀恨（华贵）"
+      }
+    },
+    {
+      "id": "Mind_Control:_Concentrate_(Magnificent)",
+      "slug": "Mind_Control:_Concentrate_(Magnificent)",
+      "name_zh": "摄念夺识：凝神（华贵）",
+      "url": "https://tlidb.com/cn/Mind_Control%3A_Concentrate_%28Magnificent%29",
+      "source_order": 87,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "摄念夺识：凝神（华贵）"
+      }
+    },
+    {
+      "id": "Mind_Control:_Befuddle_(Magnificent)",
+      "slug": "Mind_Control:_Befuddle_(Magnificent)",
+      "name_zh": "摄念夺识：惑乱（华贵）",
+      "url": "https://tlidb.com/cn/Mind_Control%3A_Befuddle_%28Magnificent%29",
+      "source_order": 88,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "摄念夺识：惑乱（华贵）"
+      }
+    },
+    {
+      "id": "Fire_Burst:_Heart_of_Flame_(Magnificent)",
+      "slug": "Fire_Burst:_Heart_of_Flame_(Magnificent)",
+      "name_zh": "爆炎术：焰心（华贵）",
+      "url": "https://tlidb.com/cn/Fire_Burst%3A_Heart_of_Flame_%28Magnificent%29",
+      "source_order": 89,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "爆炎术：焰心（华贵）"
+      }
+    },
+    {
+      "id": "Fire_Burst:_Violent_Blast_(Magnificent)",
+      "slug": "Fire_Burst:_Violent_Blast_(Magnificent)",
+      "name_zh": "爆炎术：暴烈（华贵）",
+      "url": "https://tlidb.com/cn/Fire_Burst%3A_Violent_Blast_%28Magnificent%29",
+      "source_order": 90,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "爆炎术：暴烈（华贵）"
+      }
+    },
+    {
+      "id": "Icebound_Beam:_Frostbitten_(Magnificent)",
+      "slug": "Icebound_Beam:_Frostbitten_(Magnificent)",
+      "name_zh": "冰魄射线：冻伤（华贵）",
+      "url": "https://tlidb.com/cn/Icebound_Beam%3A_Frostbitten_%28Magnificent%29",
+      "source_order": 91,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "冰魄射线：冻伤（华贵）"
+      }
+    },
+    {
+      "id": "Scorching_Beam:_Supercharge_(Magnificent)",
+      "slug": "Scorching_Beam:_Supercharge_(Magnificent)",
+      "name_zh": "灼热射线：增压（华贵）",
+      "url": "https://tlidb.com/cn/Scorching_Beam%3A_Supercharge_%28Magnificent%29",
+      "source_order": 92,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "灼热射线：增压（华贵）"
+      }
+    },
+    {
+      "id": "Scorching_Beam:_Shockwave_(Magnificent)",
+      "slug": "Scorching_Beam:_Shockwave_(Magnificent)",
+      "name_zh": "灼热射线：震波（华贵）",
+      "url": "https://tlidb.com/cn/Scorching_Beam%3A_Shockwave_%28Magnificent%29",
+      "source_order": 93,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "灼热射线：震波（华贵）"
+      }
+    },
+    {
+      "id": "Thunder_Core:_Electric_Field_(Magnificent)",
+      "slug": "Thunder_Core:_Electric_Field_(Magnificent)",
+      "name_zh": "雷降之核：电场（华贵）",
+      "url": "https://tlidb.com/cn/Thunder_Core%3A_Electric_Field_%28Magnificent%29",
+      "source_order": 94,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "雷降之核：电场（华贵）"
+      }
+    },
+    {
+      "id": "Thunder_Core:_Lone_Vanguard_(Magnificent)",
+      "slug": "Thunder_Core:_Lone_Vanguard_(Magnificent)",
+      "name_zh": "雷降之核：孤军（华贵）",
+      "url": "https://tlidb.com/cn/Thunder_Core%3A_Lone_Vanguard_%28Magnificent%29",
+      "source_order": 95,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "雷降之核：孤军（华贵）"
+      }
+    },
+    {
+      "id": "Path_of_Flames:_Spontaneous_Combustion_(Magnificent)",
+      "slug": "Path_of_Flames:_Spontaneous_Combustion_(Magnificent)",
+      "name_zh": "烈焰之径：自燃（华贵）",
+      "url": "https://tlidb.com/cn/Path_of_Flames%3A_Spontaneous_Combustion_%28Magnificent%29",
+      "source_order": 96,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "烈焰之径：自燃（华贵）"
+      }
+    },
+    {
+      "id": "Thundercloud:_Billowing_Cloud_(Magnificent)",
+      "slug": "Thundercloud:_Billowing_Cloud_(Magnificent)",
+      "name_zh": "雷云放射：云涌（华贵）",
+      "url": "https://tlidb.com/cn/Thundercloud%3A_Billowing_Cloud_%28Magnificent%29",
+      "source_order": 97,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "雷云放射：云涌（华贵）"
+      }
+    },
+    {
+      "id": "Thundercloud:_Alarmed_Awakening_(Magnificent)",
+      "slug": "Thundercloud:_Alarmed_Awakening_(Magnificent)",
+      "name_zh": "雷云放射：惊蛰（华贵）",
+      "url": "https://tlidb.com/cn/Thundercloud%3A_Alarmed_Awakening_%28Magnificent%29",
+      "source_order": 98,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "雷云放射：惊蛰（华贵）"
+      }
+    },
+    {
+      "id": "Summon_Rock_Magus:_Unyielding_(Magnificent)",
+      "slug": "Summon_Rock_Magus:_Unyielding_(Magnificent)",
+      "name_zh": "召唤磐石之灵：强硬（华贵）",
+      "url": "https://tlidb.com/cn/Summon_Rock_Magus%3A_Unyielding_%28Magnificent%29",
+      "source_order": 99,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "召唤磐石之灵：强硬（华贵）"
+      }
+    },
+    {
+      "id": "Summon_Rock_Magus:_Forging_(Magnificent)",
+      "slug": "Summon_Rock_Magus:_Forging_(Magnificent)",
+      "name_zh": "召唤磐石之灵：锻压（华贵）",
+      "url": "https://tlidb.com/cn/Summon_Rock_Magus%3A_Forging_%28Magnificent%29",
+      "source_order": 100,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "召唤磐石之灵：锻压（华贵）"
+      }
+    },
+    {
+      "id": "Summon_Rock_Magus:_Clustering_Sand_(Magnificent)",
+      "slug": "Summon_Rock_Magus:_Clustering_Sand_(Magnificent)",
+      "name_zh": "召唤磐石之灵：聚砂（华贵）",
+      "url": "https://tlidb.com/cn/Summon_Rock_Magus%3A_Clustering_Sand_%28Magnificent%29",
+      "source_order": 101,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "召唤磐石之灵：聚砂（华贵）"
+      }
+    },
+    {
+      "id": "Summon_Erosion_Magus:_Plague_Source_(Magnificent)",
+      "slug": "Summon_Erosion_Magus:_Plague_Source_(Magnificent)",
+      "name_zh": "召唤腐化之灵：疫源（华贵）",
+      "url": "https://tlidb.com/cn/Summon_Erosion_Magus%3A_Plague_Source_%28Magnificent%29",
+      "source_order": 102,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "召唤腐化之灵：疫源（华贵）"
+      }
+    },
+    {
+      "id": "Summon_Erosion_Magus:_Wicked_(Magnificent)",
+      "slug": "Summon_Erosion_Magus:_Wicked_(Magnificent)",
+      "name_zh": "召唤腐化之灵：坏种（华贵）",
+      "url": "https://tlidb.com/cn/Summon_Erosion_Magus%3A_Wicked_%28Magnificent%29",
+      "source_order": 103,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "召唤腐化之灵：坏种（华贵）"
+      }
+    },
+    {
+      "id": "Summon_Erosion_Magus:_Frequent_Quake_(Magnificent)",
+      "slug": "Summon_Erosion_Magus:_Frequent_Quake_(Magnificent)",
+      "name_zh": "召唤腐化之灵：频发（华贵）",
+      "url": "https://tlidb.com/cn/Summon_Erosion_Magus%3A_Frequent_Quake_%28Magnificent%29",
+      "source_order": 104,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "召唤腐化之灵：频发（华贵）"
+      }
+    },
+    {
+      "id": "Double_Thrusts:_Restless_(Magnificent)",
+      "slug": "Double_Thrusts:_Restless_(Magnificent)",
+      "name_zh": "双重突刺：躁动（华贵）",
+      "url": "https://tlidb.com/cn/Double_Thrusts%3A_Restless_%28Magnificent%29",
+      "source_order": 105,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "双重突刺：躁动（华贵）"
+      }
+    },
+    {
+      "id": "Lightning_Beam:_Aftershock_(Magnificent)",
+      "slug": "Lightning_Beam:_Aftershock_(Magnificent)",
+      "name_zh": "雷暴射线：次生（华贵）",
+      "url": "https://tlidb.com/cn/Lightning_Beam%3A_Aftershock_%28Magnificent%29",
+      "source_order": 106,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "雷暴射线：次生（华贵）"
+      }
+    },
+    {
+      "id": "Lightning_Beam:_Relentless_(Magnificent)",
+      "slug": "Lightning_Beam:_Relentless_(Magnificent)",
+      "name_zh": "雷暴射线：凌厉（华贵）",
+      "url": "https://tlidb.com/cn/Lightning_Beam%3A_Relentless_%28Magnificent%29",
+      "source_order": 107,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "雷暴射线：凌厉（华贵）"
+      }
+    },
+    {
+      "id": "Wilting_Beam:_Dispirit_(Magnificent)",
+      "slug": "Wilting_Beam:_Dispirit_(Magnificent)",
+      "name_zh": "枯萎射线：萎靡（华贵）",
+      "url": "https://tlidb.com/cn/Wilting_Beam%3A_Dispirit_%28Magnificent%29",
+      "source_order": 108,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "枯萎射线：萎靡（华贵）"
+      }
+    },
+    {
+      "id": "Wilting_Beam:_Reflection_(Magnificent)",
+      "slug": "Wilting_Beam:_Reflection_(Magnificent)",
+      "name_zh": "枯萎射线：反射（华贵）",
+      "url": "https://tlidb.com/cn/Wilting_Beam%3A_Reflection_%28Magnificent%29",
+      "source_order": 109,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "枯萎射线：反射（华贵）"
+      }
+    },
+    {
+      "id": "Electrifying_Shot:_Close-Range_(Magnificent)",
+      "slug": "Electrifying_Shot:_Close-Range_(Magnificent)",
+      "name_zh": "电光弹：短程（华贵）",
+      "url": "https://tlidb.com/cn/Electrifying_Shot%3A_Close-Range_%28Magnificent%29",
+      "source_order": 110,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "电光弹：短程（华贵）"
+      }
+    },
+    {
+      "id": "Haunting_Abomination:_Feud_(Magnificent)",
+      "slug": "Haunting_Abomination:_Feud_(Magnificent)",
+      "name_zh": "恶煞缠身：宿怨（华贵）",
+      "url": "https://tlidb.com/cn/Haunting_Abomination%3A_Feud_%28Magnificent%29",
+      "source_order": 111,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "恶煞缠身：宿怨（华贵）"
+      }
+    },
+    {
+      "id": "Thunder_Focus:_Haste_(Magnificent)",
+      "slug": "Thunder_Focus:_Haste_(Magnificent)",
+      "name_zh": "雷霆贯注：从速（华贵）",
+      "url": "https://tlidb.com/cn/Thunder_Focus%3A_Haste_%28Magnificent%29",
+      "source_order": 112,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "雷霆贯注：从速（华贵）"
+      }
+    },
+    {
+      "id": "Thunder_Focus:_Quickstep_(Magnificent)",
+      "slug": "Thunder_Focus:_Quickstep_(Magnificent)",
+      "name_zh": "雷霆贯注：捷足（华贵）",
+      "url": "https://tlidb.com/cn/Thunder_Focus%3A_Quickstep_%28Magnificent%29",
+      "source_order": 113,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "雷霆贯注：捷足（华贵）"
+      }
+    },
+    {
+      "id": "Flame_Focus:_Kindling_(Magnificent)",
+      "slug": "Flame_Focus:_Kindling_(Magnificent)",
+      "name_zh": "熔火贯注：传火（华贵）",
+      "url": "https://tlidb.com/cn/Flame_Focus%3A_Kindling_%28Magnificent%29",
+      "source_order": 114,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "熔火贯注：传火（华贵）"
+      }
+    },
+    {
+      "id": "Flame_Focus:_Flint_(Magnificent)",
+      "slug": "Flame_Focus:_Flint_(Magnificent)",
+      "name_zh": "熔火贯注：火石（华贵）",
+      "url": "https://tlidb.com/cn/Flame_Focus%3A_Flint_%28Magnificent%29",
+      "source_order": 115,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "熔火贯注：火石（华贵）"
+      }
+    },
+    {
+      "id": "Corrosion_Focus:_Clustering_(Magnificent)",
+      "slug": "Corrosion_Focus:_Clustering_(Magnificent)",
+      "name_zh": "侵蚀贯注：类聚（华贵）",
+      "url": "https://tlidb.com/cn/Corrosion_Focus%3A_Clustering_%28Magnificent%29",
+      "source_order": 116,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "侵蚀贯注：类聚（华贵）"
+      }
+    },
+    {
+      "id": "Corrosion_Focus:_Infection_(Magnificent)",
+      "slug": "Corrosion_Focus:_Infection_(Magnificent)",
+      "name_zh": "侵蚀贯注：侵染（华贵）",
+      "url": "https://tlidb.com/cn/Corrosion_Focus%3A_Infection_%28Magnificent%29",
+      "source_order": 117,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "侵蚀贯注：侵染（华贵）"
+      }
+    },
+    {
+      "id": "Ice_Focus:_Shattered_Ice_(Magnificent)",
+      "slug": "Ice_Focus:_Shattered_Ice_(Magnificent)",
+      "name_zh": "寒冰贯注：碎冰（华贵）",
+      "url": "https://tlidb.com/cn/Ice_Focus%3A_Shattered_Ice_%28Magnificent%29",
+      "source_order": 118,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "寒冰贯注：碎冰（华贵）"
+      }
+    },
+    {
+      "id": "Ice_Focus:_Permafrost_(Magnificent)",
+      "slug": "Ice_Focus:_Permafrost_(Magnificent)",
+      "name_zh": "寒冰贯注：久冻（华贵）",
+      "url": "https://tlidb.com/cn/Ice_Focus%3A_Permafrost_%28Magnificent%29",
+      "source_order": 119,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "寒冰贯注：久冻（华贵）"
+      }
+    },
+    {
+      "id": "Acuteness_Focus:_Piercing_Agony_(Magnificent)",
+      "slug": "Acuteness_Focus:_Piercing_Agony_(Magnificent)",
+      "name_zh": "锐利贯注：锐痛（华贵）",
+      "url": "https://tlidb.com/cn/Acuteness_Focus%3A_Piercing_Agony_%28Magnificent%29",
+      "source_order": 120,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "锐利贯注：锐痛（华贵）"
+      }
+    },
+    {
+      "id": "Acuteness_Focus:_Sharpening_(Magnificent)",
+      "slug": "Acuteness_Focus:_Sharpening_(Magnificent)",
+      "name_zh": "锐利贯注：砥砺（华贵）",
+      "url": "https://tlidb.com/cn/Acuteness_Focus%3A_Sharpening_%28Magnificent%29",
+      "source_order": 121,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "锐利贯注：砥砺（华贵）"
+      }
+    },
+    {
+      "id": "Crescent_Slash:_Raid_(Magnificent)",
+      "slug": "Crescent_Slash:_Raid_(Magnificent)",
+      "name_zh": "碎月弧光斩：强袭（华贵）",
+      "url": "https://tlidb.com/cn/Crescent_Slash%3A_Raid_%28Magnificent%29",
+      "source_order": 122,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "碎月弧光斩：强袭（华贵）"
+      }
+    },
+    {
+      "id": "Crescent_Slash:_Vile_(Magnificent)",
+      "slug": "Crescent_Slash:_Vile_(Magnificent)",
+      "name_zh": "碎月弧光斩：恶刃（华贵）",
+      "url": "https://tlidb.com/cn/Crescent_Slash%3A_Vile_%28Magnificent%29",
+      "source_order": 123,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "碎月弧光斩：恶刃（华贵）"
+      }
+    },
+    {
+      "id": "Serpent_Beam:_Barrage_(Magnificent)",
+      "slug": "Serpent_Beam:_Barrage_(Magnificent)",
+      "name_zh": "流焰炎蛇引：火线（华贵）",
+      "url": "https://tlidb.com/cn/Serpent_Beam%3A_Barrage_%28Magnificent%29",
+      "source_order": 124,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "流焰炎蛇引：火线（华贵）"
+      }
+    },
+    {
+      "id": "Serpent_Beam:_Inferno_(Magnificent)",
+      "slug": "Serpent_Beam:_Inferno_(Magnificent)",
+      "name_zh": "流焰炎蛇引：火海（华贵）",
+      "url": "https://tlidb.com/cn/Serpent_Beam%3A_Inferno_%28Magnificent%29",
+      "source_order": 125,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "流焰炎蛇引：火海（华贵）"
+      }
+    },
+    {
+      "id": "Gale_Slash:_Onslaught_(Magnificent)",
+      "slug": "Gale_Slash:_Onslaught_(Magnificent)",
+      "name_zh": "疾风裂地斩：突进（华贵）",
+      "url": "https://tlidb.com/cn/Gale_Slash%3A_Onslaught_%28Magnificent%29",
+      "source_order": 126,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "疾风裂地斩：突进（华贵）"
+      }
+    },
+    {
+      "id": "Gale_Slash:_Dominance_(Magnificent)",
+      "slug": "Gale_Slash:_Dominance_(Magnificent)",
+      "name_zh": "疾风裂地斩：强横（华贵）",
+      "url": "https://tlidb.com/cn/Gale_Slash%3A_Dominance_%28Magnificent%29",
+      "source_order": 127,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "疾风裂地斩：强横（华贵）"
+      }
+    },
+    {
+      "id": "Spectral_Slash:_Detonation_(Magnificent)",
+      "slug": "Spectral_Slash:_Detonation_(Magnificent)",
+      "name_zh": "分身灵爆斩：引爆（华贵）",
+      "url": "https://tlidb.com/cn/Spectral_Slash%3A_Detonation_%28Magnificent%29",
+      "source_order": 128,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "分身灵爆斩：引爆（华贵）"
+      }
+    },
+    {
+      "id": "Chromatic_Shot:_Lightchaser_(Magnificent)",
+      "slug": "Chromatic_Shot:_Lightchaser_(Magnificent)",
+      "name_zh": "五彩魔矢：逐光（华贵）",
+      "url": "https://tlidb.com/cn/Chromatic_Shot%3A_Lightchaser_%28Magnificent%29",
+      "source_order": 129,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "五彩魔矢：逐光（华贵）"
+      }
+    },
+    {
+      "id": "Modularization:_Shared_Burden_(Magnificent)",
+      "slug": "Modularization:_Shared_Burden_(Magnificent)",
+      "name_zh": "模组化：分担（华贵）",
+      "url": "https://tlidb.com/cn/Modularization%3A_Shared_Burden_%28Magnificent%29",
+      "source_order": 130,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "模组化：分担（华贵）"
+      }
+    },
+    {
+      "id": "Modularization:_Resonance_(Magnificent)",
+      "slug": "Modularization:_Resonance_(Magnificent)",
+      "name_zh": "模组化：同频（华贵）",
+      "url": "https://tlidb.com/cn/Modularization%3A_Resonance_%28Magnificent%29",
+      "source_order": 131,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "模组化：同频（华贵）"
+      }
+    },
+    {
+      "id": "Modularization:_Cluster_(Magnificent)",
+      "slug": "Modularization:_Cluster_(Magnificent)",
+      "name_zh": "模组化：集群（华贵）",
+      "url": "https://tlidb.com/cn/Modularization%3A_Cluster_%28Magnificent%29",
+      "source_order": 132,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "模组化：集群（华贵）"
+      }
+    },
+    {
+      "id": "Thornfield:_Sacrifice_(Magnificent)",
+      "slug": "Thornfield:_Sacrifice_(Magnificent)",
+      "name_zh": "荆棘之域：献祭（华贵）",
+      "url": "https://tlidb.com/cn/Thornfield%3A_Sacrifice_%28Magnificent%29",
+      "source_order": 133,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "荆棘之域：献祭（华贵）"
+      }
+    },
+    {
+      "id": "Tidewell:_Torrent_(Magnificent)",
+      "slug": "Tidewell:_Torrent_(Magnificent)",
+      "name_zh": "潮汐之泉：飞瀑（华贵）",
+      "url": "https://tlidb.com/cn/Tidewell%3A_Torrent_%28Magnificent%29",
+      "source_order": 134,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "潮汐之泉：飞瀑（华贵）"
+      }
+    },
+    {
+      "id": "Haunting_Abomination:_Ravage_(Magnificent)",
+      "slug": "Haunting_Abomination:_Ravage_(Magnificent)",
+      "name_zh": "恶煞缠身：肆虐（华贵）",
+      "url": "https://tlidb.com/cn/Haunting_Abomination%3A_Ravage_%28Magnificent%29",
+      "source_order": 135,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "恶煞缠身：肆虐（华贵）"
+      }
+    },
+    {
+      "id": "Fallen_Star:_Crush_(Magnificent)",
+      "slug": "Fallen_Star:_Crush_(Magnificent)",
+      "name_zh": "陨星：倾轧（华贵）",
+      "url": "https://tlidb.com/cn/Fallen_Star%3A_Crush_%28Magnificent%29",
+      "source_order": 136,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "陨星：倾轧（华贵）"
+      }
+    },
+    {
+      "id": "Nether_Grasp:_Devour_(Magnificent)",
+      "slug": "Nether_Grasp:_Devour_(Magnificent)",
+      "name_zh": "冥渊之手：吞噬（华贵）",
+      "url": "https://tlidb.com/cn/Nether_Grasp%3A_Devour_%28Magnificent%29",
+      "source_order": 137,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "冥渊之手：吞噬（华贵）"
+      }
+    },
+    {
+      "id": "Flame_Jet:_Scorching_Wave_(Magnificent)",
+      "slug": "Flame_Jet:_Scorching_Wave_(Magnificent)",
+      "name_zh": "烈焰释放：热潮（华贵）",
+      "url": "https://tlidb.com/cn/Flame_Jet%3A_Scorching_Wave_%28Magnificent%29",
+      "source_order": 138,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "烈焰释放：热潮（华贵）"
+      }
+    },
+    {
+      "id": "Storm_Field:_Thunderclap_(Magnificent)",
+      "slug": "Storm_Field:_Thunderclap_(Magnificent)",
+      "name_zh": "雷暴地带：轰雷（华贵）",
+      "url": "https://tlidb.com/cn/Storm_Field%3A_Thunderclap_%28Magnificent%29",
+      "source_order": 139,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /140",
+        "link_text": "雷暴地带：轰雷（华贵）"
+      }
+    }
+  ]
+}

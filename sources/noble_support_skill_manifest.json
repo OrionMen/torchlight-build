@@ -1,0 +1,1874 @@
+{
+  "schema_version": 1,
+  "source": {
+    "site": "tlidb",
+    "locale": "cn",
+    "index_url": "https://tlidb.com/cn/Noble_Support_Skill",
+    "fetched_at": "2026-08-06T13:40:25.635204+00:00",
+    "http_status": 200,
+    "html_sha256": "92228e12ca9bdc137b2e606dc8b45ff4ba2b03f7dac384e0b16d4dd180089825"
+  },
+  "system_id": "noble_support_skill",
+  "entity_type": "noble_support_skill",
+  "displayed_entry_count": 154,
+  "unique_entry_count": 154,
+  "duplicate_occurrence_count": 0,
+  "discovery_confidence": 0.99,
+  "quality": {
+    "displayed_entry_count": 154,
+    "unique_entry_count": 154,
+    "duplicate_occurrence_count": 0,
+    "discovery_confidence": 0.99,
+    "warnings": []
+  },
+  "entries": [
+    {
+      "id": "Focused_Shot:_Building_Momentum_(Noble)",
+      "slug": "Focused_Shot:_Building_Momentum_(Noble)",
+      "name_zh": "专注射击：蓄锐（崇高）",
+      "url": "https://tlidb.com/cn/Focused_Shot%3A_Building_Momentum_%28Noble%29",
+      "source_order": 0,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "专注射击：蓄锐（崇高）"
+      }
+    },
+    {
+      "id": "Focused_Shot:_Power_Bow_(Noble)",
+      "slug": "Focused_Shot:_Power_Bow_(Noble)",
+      "name_zh": "专注射击：强弓（崇高）",
+      "url": "https://tlidb.com/cn/Focused_Shot%3A_Power_Bow_%28Noble%29",
+      "source_order": 1,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "专注射击：强弓（崇高）"
+      }
+    },
+    {
+      "id": "Focused_Shot:_Snipe_(Noble)",
+      "slug": "Focused_Shot:_Snipe_(Noble)",
+      "name_zh": "专注射击：狙击（崇高）",
+      "url": "https://tlidb.com/cn/Focused_Shot%3A_Snipe_%28Noble%29",
+      "source_order": 2,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "专注射击：狙击（崇高）"
+      }
+    },
+    {
+      "id": "Burning_Shot:_Ignition_(Noble)",
+      "slug": "Burning_Shot:_Ignition_(Noble)",
+      "name_zh": "燃烧射击：纵火（崇高）",
+      "url": "https://tlidb.com/cn/Burning_Shot%3A_Ignition_%28Noble%29",
+      "source_order": 3,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "燃烧射击：纵火（崇高）"
+      }
+    },
+    {
+      "id": "Burning_Shot:_Through_Fire_(Noble)",
+      "slug": "Burning_Shot:_Through_Fire_(Noble)",
+      "name_zh": "燃烧射击：蹈火（崇高）",
+      "url": "https://tlidb.com/cn/Burning_Shot%3A_Through_Fire_%28Noble%29",
+      "source_order": 4,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "燃烧射击：蹈火（崇高）"
+      }
+    },
+    {
+      "id": "Chain_Lightning:_Lucky_(Noble)",
+      "slug": "Chain_Lightning:_Lucky_(Noble)",
+      "name_zh": "闪电链：幸运（崇高）",
+      "url": "https://tlidb.com/cn/Chain_Lightning%3A_Lucky_%28Noble%29",
+      "source_order": 5,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "闪电链：幸运（崇高）"
+      }
+    },
+    {
+      "id": "Chain_Lightning:_Merge_(Noble)",
+      "slug": "Chain_Lightning:_Merge_(Noble)",
+      "name_zh": "闪电链：合流（崇高）",
+      "url": "https://tlidb.com/cn/Chain_Lightning%3A_Merge_%28Noble%29",
+      "source_order": 6,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "闪电链：合流（崇高）"
+      }
+    },
+    {
+      "id": "Focused_Slash:_Fervor_(Noble)",
+      "slug": "Focused_Slash:_Fervor_(Noble)",
+      "name_zh": "专注斩：战意（崇高）",
+      "url": "https://tlidb.com/cn/Focused_Slash%3A_Fervor_%28Noble%29",
+      "source_order": 7,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "专注斩：战意（崇高）"
+      }
+    },
+    {
+      "id": "Focused_Slash:_Behead_(Noble)",
+      "slug": "Focused_Slash:_Behead_(Noble)",
+      "name_zh": "专注斩：斩首（崇高）",
+      "url": "https://tlidb.com/cn/Focused_Slash%3A_Behead_%28Noble%29",
+      "source_order": 8,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "专注斩：斩首（崇高）"
+      }
+    },
+    {
+      "id": "Icy_Blade:_Hidden_Edge_(Noble)",
+      "slug": "Icy_Blade:_Hidden_Edge_(Noble)",
+      "name_zh": "冰凌斩：藏锋（崇高）",
+      "url": "https://tlidb.com/cn/Icy_Blade%3A_Hidden_Edge_%28Noble%29",
+      "source_order": 9,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "冰凌斩：藏锋（崇高）"
+      }
+    },
+    {
+      "id": "Flame_Slash:_Inverted_Blaze_(Noble)",
+      "slug": "Flame_Slash:_Inverted_Blaze_(Noble)",
+      "name_zh": "烈焰斩：逆焚（崇高）",
+      "url": "https://tlidb.com/cn/Flame_Slash%3A_Inverted_Blaze_%28Noble%29",
+      "source_order": 10,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "烈焰斩：逆焚（崇高）"
+      }
+    },
+    {
+      "id": "Double_Thrusts:_Cutthroat_(Noble)",
+      "slug": "Double_Thrusts:_Cutthroat_(Noble)",
+      "name_zh": "双重突刺：封喉（崇高）",
+      "url": "https://tlidb.com/cn/Double_Thrusts%3A_Cutthroat_%28Noble%29",
+      "source_order": 11,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "双重突刺：封喉（崇高）"
+      }
+    },
+    {
+      "id": "Corrosive_Throw:_Swift_Strike_(Noble)",
+      "slug": "Corrosive_Throw:_Swift_Strike_(Noble)",
+      "name_zh": "侵蚀投掷：迅击（崇高）",
+      "url": "https://tlidb.com/cn/Corrosive_Throw%3A_Swift_Strike_%28Noble%29",
+      "source_order": 12,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "侵蚀投掷：迅击（崇高）"
+      }
+    },
+    {
+      "id": "Corrosive_Throw:_Blitz_Strike_(Noble)",
+      "slug": "Corrosive_Throw:_Blitz_Strike_(Noble)",
+      "name_zh": "侵蚀投掷：闪击（崇高）",
+      "url": "https://tlidb.com/cn/Corrosive_Throw%3A_Blitz_Strike_%28Noble%29",
+      "source_order": 13,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "侵蚀投掷：闪击（崇高）"
+      }
+    },
+    {
+      "id": "Blazing_Bullet:_Ignition_Point_(Noble)",
+      "slug": "Blazing_Bullet:_Ignition_Point_(Noble)",
+      "name_zh": "炽炎穿弹：燃点（崇高）",
+      "url": "https://tlidb.com/cn/Blazing_Bullet%3A_Ignition_Point_%28Noble%29",
+      "source_order": 14,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "炽炎穿弹：燃点（崇高）"
+      }
+    },
+    {
+      "id": "Blazing_Bullet:_Dual_Resonance_(Noble)",
+      "slug": "Blazing_Bullet:_Dual_Resonance_(Noble)",
+      "name_zh": "炽炎穿弹：双响（崇高）",
+      "url": "https://tlidb.com/cn/Blazing_Bullet%3A_Dual_Resonance_%28Noble%29",
+      "source_order": 15,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "炽炎穿弹：双响（崇高）"
+      }
+    },
+    {
+      "id": "Wilt_Spike:_Mirage_(Noble)",
+      "slug": "Wilt_Spike:_Mirage_(Noble)",
+      "name_zh": "凋零刺击：群影（崇高）",
+      "url": "https://tlidb.com/cn/Wilt_Spike%3A_Mirage_%28Noble%29",
+      "source_order": 16,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "凋零刺击：群影（崇高）"
+      }
+    },
+    {
+      "id": "Wilt_Spike:_Evanescence_(Noble)",
+      "slug": "Wilt_Spike:_Evanescence_(Noble)",
+      "name_zh": "凋零刺击：幻灭（崇高）",
+      "url": "https://tlidb.com/cn/Wilt_Spike%3A_Evanescence_%28Noble%29",
+      "source_order": 17,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "凋零刺击：幻灭（崇高）"
+      }
+    },
+    {
+      "id": "Hammer_of_Ash:_Quickfire_(Noble)",
+      "slug": "Hammer_of_Ash:_Quickfire_(Noble)",
+      "name_zh": "灰烬之锤：急火（崇高）",
+      "url": "https://tlidb.com/cn/Hammer_of_Ash%3A_Quickfire_%28Noble%29",
+      "source_order": 18,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "灰烬之锤：急火（崇高）"
+      }
+    },
+    {
+      "id": "Hammer_of_Ash:_Blast_Quake_(Noble)",
+      "slug": "Hammer_of_Ash:_Blast_Quake_(Noble)",
+      "name_zh": "灰烬之锤：震爆（崇高）",
+      "url": "https://tlidb.com/cn/Hammer_of_Ash%3A_Blast_Quake_%28Noble%29",
+      "source_order": 19,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "灰烬之锤：震爆（崇高）"
+      }
+    },
+    {
+      "id": "Frost_Impact:_Chilling_Surge_(Noble)",
+      "slug": "Frost_Impact:_Chilling_Surge_(Noble)",
+      "name_zh": "寒霜破击：骤寒（崇高）",
+      "url": "https://tlidb.com/cn/Frost_Impact%3A_Chilling_Surge_%28Noble%29",
+      "source_order": 20,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "寒霜破击：骤寒（崇高）"
+      }
+    },
+    {
+      "id": "Frost_Impact:_Chilling_Buildup_(Noble)",
+      "slug": "Frost_Impact:_Chilling_Buildup_(Noble)",
+      "name_zh": "寒霜破击：积寒（崇高）",
+      "url": "https://tlidb.com/cn/Frost_Impact%3A_Chilling_Buildup_%28Noble%29",
+      "source_order": 21,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "寒霜破击：积寒（崇高）"
+      }
+    },
+    {
+      "id": "Whirlwind:_Whirling_Blade_(Noble)",
+      "slug": "Whirlwind:_Whirling_Blade_(Noble)",
+      "name_zh": "旋风斩：飞刃（崇高）",
+      "url": "https://tlidb.com/cn/Whirlwind%3A_Whirling_Blade_%28Noble%29",
+      "source_order": 22,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "旋风斩：飞刃（崇高）"
+      }
+    },
+    {
+      "id": "Lightning_Shot:_Crossed_Lightning_(Noble)",
+      "slug": "Lightning_Shot:_Crossed_Lightning_(Noble)",
+      "name_zh": "闪电射击：交织（崇高）",
+      "url": "https://tlidb.com/cn/Lightning_Shot%3A_Crossed_Lightning_%28Noble%29",
+      "source_order": 23,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "闪电射击：交织（崇高）"
+      }
+    },
+    {
+      "id": "Split_Shot:_Collaboration_(Noble)",
+      "slug": "Split_Shot:_Collaboration_(Noble)",
+      "name_zh": "分裂射击：协力（崇高）",
+      "url": "https://tlidb.com/cn/Split_Shot%3A_Collaboration_%28Noble%29",
+      "source_order": 24,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "分裂射击：协力（崇高）"
+      }
+    },
+    {
+      "id": "Split_Shot:_Rapid_Advance_(Noble)",
+      "slug": "Split_Shot:_Rapid_Advance_(Noble)",
+      "name_zh": "分裂射击：长驱（崇高）",
+      "url": "https://tlidb.com/cn/Split_Shot%3A_Rapid_Advance_%28Noble%29",
+      "source_order": 25,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "分裂射击：长驱（崇高）"
+      }
+    },
+    {
+      "id": "Ice_Shot:_Batter_(Noble)",
+      "slug": "Ice_Shot:_Batter_(Noble)",
+      "name_zh": "寒冰射击：冲击（崇高）",
+      "url": "https://tlidb.com/cn/Ice_Shot%3A_Batter_%28Noble%29",
+      "source_order": 26,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "寒冰射击：冲击（崇高）"
+      }
+    },
+    {
+      "id": "Bombard:_Fission_(Noble)",
+      "slug": "Bombard:_Fission_(Noble)",
+      "name_zh": "炮轰：裂变（崇高）",
+      "url": "https://tlidb.com/cn/Bombard%3A_Fission_%28Noble%29",
+      "source_order": 27,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "炮轰：裂变（崇高）"
+      }
+    },
+    {
+      "id": "Bombard:_Grenade_(Noble)",
+      "slug": "Bombard:_Grenade_(Noble)",
+      "name_zh": "炮轰：榴弹（崇高）",
+      "url": "https://tlidb.com/cn/Bombard%3A_Grenade_%28Noble%29",
+      "source_order": 28,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "炮轰：榴弹（崇高）"
+      }
+    },
+    {
+      "id": "Bombard:_Smokescreen_(Noble)",
+      "slug": "Bombard:_Smokescreen_(Noble)",
+      "name_zh": "炮轰：烟幕（崇高）",
+      "url": "https://tlidb.com/cn/Bombard%3A_Smokescreen_%28Noble%29",
+      "source_order": 29,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "炮轰：烟幕（崇高）"
+      }
+    },
+    {
+      "id": "Berserking_Blade:_Decimate_(Noble)",
+      "slug": "Berserking_Blade:_Decimate_(Noble)",
+      "name_zh": "暴走巨刃：残敌（崇高）",
+      "url": "https://tlidb.com/cn/Berserking_Blade%3A_Decimate_%28Noble%29",
+      "source_order": 30,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "暴走巨刃：残敌（崇高）"
+      }
+    },
+    {
+      "id": "Berserking_Blade:_Rampage_(Noble)",
+      "slug": "Berserking_Blade:_Rampage_(Noble)",
+      "name_zh": "暴走巨刃：横行（崇高）",
+      "url": "https://tlidb.com/cn/Berserking_Blade%3A_Rampage_%28Noble%29",
+      "source_order": 31,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "暴走巨刃：横行（崇高）"
+      }
+    },
+    {
+      "id": "Charged_Pummel:_Charge_Reduction_(Noble)",
+      "slug": "Charged_Pummel:_Charge_Reduction_(Noble)",
+      "name_zh": "充能猛击：降耗（崇高）",
+      "url": "https://tlidb.com/cn/Charged_Pummel%3A_Charge_Reduction_%28Noble%29",
+      "source_order": 32,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "充能猛击：降耗（崇高）"
+      }
+    },
+    {
+      "id": "Charged_Pummel:_Electric_Charge_(Noble)",
+      "slug": "Charged_Pummel:_Electric_Charge_(Noble)",
+      "name_zh": "充能猛击：蓄电（崇高）",
+      "url": "https://tlidb.com/cn/Charged_Pummel%3A_Electric_Charge_%28Noble%29",
+      "source_order": 33,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "充能猛击：蓄电（崇高）"
+      }
+    },
+    {
+      "id": "Moon_Strike:_Lunar_Eclipse_(Noble)",
+      "slug": "Moon_Strike:_Lunar_Eclipse_(Noble)",
+      "name_zh": "月华斩：月蚀（崇高）",
+      "url": "https://tlidb.com/cn/Moon_Strike%3A_Lunar_Eclipse_%28Noble%29",
+      "source_order": 34,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "月华斩：月蚀（崇高）"
+      }
+    },
+    {
+      "id": "Moon_Strike:_Wax_and_Wane_(Noble)",
+      "slug": "Moon_Strike:_Wax_and_Wane_(Noble)",
+      "name_zh": "月华斩：盈亏（崇高）",
+      "url": "https://tlidb.com/cn/Moon_Strike%3A_Wax_and_Wane_%28Noble%29",
+      "source_order": 35,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "月华斩：盈亏（崇高）"
+      }
+    },
+    {
+      "id": "Savage_Charge:_Raid_(Noble)",
+      "slug": "Savage_Charge:_Raid_(Noble)",
+      "name_zh": "野蛮冲锋：突击（崇高）",
+      "url": "https://tlidb.com/cn/Savage_Charge%3A_Raid_%28Noble%29",
+      "source_order": 36,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "野蛮冲锋：突击（崇高）"
+      }
+    },
+    {
+      "id": "Marked_Rain_of_Arrows:_Hyper_Blast_(Noble)",
+      "slug": "Marked_Rain_of_Arrows:_Hyper_Blast_(Noble)",
+      "name_zh": "标记箭雨：高爆（崇高）",
+      "url": "https://tlidb.com/cn/Marked_Rain_of_Arrows%3A_Hyper_Blast_%28Noble%29",
+      "source_order": 37,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "标记箭雨：高爆（崇高）"
+      }
+    },
+    {
+      "id": "Marked_Rain_of_Arrows:_Threads_of_Arrows_(Noble)",
+      "slug": "Marked_Rain_of_Arrows:_Threads_of_Arrows_(Noble)",
+      "name_zh": "标记箭雨：密缕（崇高）",
+      "url": "https://tlidb.com/cn/Marked_Rain_of_Arrows%3A_Threads_of_Arrows_%28Noble%29",
+      "source_order": 38,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "标记箭雨：密缕（崇高）"
+      }
+    },
+    {
+      "id": "Corrosive_Shot:_Degeneration_(Noble)",
+      "slug": "Corrosive_Shot:_Degeneration_(Noble)",
+      "name_zh": "侵蚀弹：沦陷（崇高）",
+      "url": "https://tlidb.com/cn/Corrosive_Shot%3A_Degeneration_%28Noble%29",
+      "source_order": 39,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "侵蚀弹：沦陷（崇高）"
+      }
+    },
+    {
+      "id": "Corrosive_Shot:_Burst_of_Agony_(Noble)",
+      "slug": "Corrosive_Shot:_Burst_of_Agony_(Noble)",
+      "name_zh": "侵蚀弹：阵痛（崇高）",
+      "url": "https://tlidb.com/cn/Corrosive_Shot%3A_Burst_of_Agony_%28Noble%29",
+      "source_order": 40,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "侵蚀弹：阵痛（崇高）"
+      }
+    },
+    {
+      "id": "Inexhaustible_Barrage:_Fatal_Pursuit_(Noble)",
+      "slug": "Inexhaustible_Barrage:_Fatal_Pursuit_(Noble)",
+      "name_zh": "不竭弹雨：追歼（崇高）",
+      "url": "https://tlidb.com/cn/Inexhaustible_Barrage%3A_Fatal_Pursuit_%28Noble%29",
+      "source_order": 41,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "不竭弹雨：追歼（崇高）"
+      }
+    },
+    {
+      "id": "Inexhaustible_Barrage:_Landslide_(Noble)",
+      "slug": "Inexhaustible_Barrage:_Landslide_(Noble)",
+      "name_zh": "不竭弹雨：倾泻（崇高）",
+      "url": "https://tlidb.com/cn/Inexhaustible_Barrage%3A_Landslide_%28Noble%29",
+      "source_order": 42,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "不竭弹雨：倾泻（崇高）"
+      }
+    },
+    {
+      "id": "Thunder_Spike:_Tremble_(Noble)",
+      "slug": "Thunder_Spike:_Tremble_(Noble)",
+      "name_zh": "雷光刺击：震颤（崇高）",
+      "url": "https://tlidb.com/cn/Thunder_Spike%3A_Tremble_%28Noble%29",
+      "source_order": 43,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "雷光刺击：震颤（崇高）"
+      }
+    },
+    {
+      "id": "Thunder_Spike:_Rumbling_Thunder_(Noble)",
+      "slug": "Thunder_Spike:_Rumbling_Thunder_(Noble)",
+      "name_zh": "雷光刺击：奔雷（崇高）",
+      "url": "https://tlidb.com/cn/Thunder_Spike%3A_Rumbling_Thunder_%28Noble%29",
+      "source_order": 44,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "雷光刺击：奔雷（崇高）"
+      }
+    },
+    {
+      "id": "Thunder_Slash:_Flurry_(Noble)",
+      "slug": "Thunder_Slash:_Flurry_(Noble)",
+      "name_zh": "雷影斩：连斩（崇高）",
+      "url": "https://tlidb.com/cn/Thunder_Slash%3A_Flurry_%28Noble%29",
+      "source_order": 45,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "雷影斩：连斩（崇高）"
+      }
+    },
+    {
+      "id": "Thunder_Slash:_Big_Stride_(Noble)",
+      "slug": "Thunder_Slash:_Big_Stride_(Noble)",
+      "name_zh": "雷影斩：阔步（崇高）",
+      "url": "https://tlidb.com/cn/Thunder_Slash%3A_Big_Stride_%28Noble%29",
+      "source_order": 46,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "雷影斩：阔步（崇高）"
+      }
+    },
+    {
+      "id": "Ring_of_Blades:_Razor_Edge_(Noble)",
+      "slug": "Ring_of_Blades:_Razor_Edge_(Noble)",
+      "name_zh": "环绕飞刃：锋锐（崇高）",
+      "url": "https://tlidb.com/cn/Ring_of_Blades%3A_Razor_Edge_%28Noble%29",
+      "source_order": 47,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "环绕飞刃：锋锐（崇高）"
+      }
+    },
+    {
+      "id": "Ring_of_Blades:_Strength_in_Numbers_(Noble)",
+      "slug": "Ring_of_Blades:_Strength_in_Numbers_(Noble)",
+      "name_zh": "环绕飞刃：众武（崇高）",
+      "url": "https://tlidb.com/cn/Ring_of_Blades%3A_Strength_in_Numbers_%28Noble%29",
+      "source_order": 48,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "环绕飞刃：众武（崇高）"
+      }
+    },
+    {
+      "id": "Frost_Spike:_Ice_Fission_(Noble)",
+      "slug": "Frost_Spike:_Ice_Fission_(Noble)",
+      "name_zh": "碎冰刺击：冰裂（崇高）",
+      "url": "https://tlidb.com/cn/Frost_Spike%3A_Ice_Fission_%28Noble%29",
+      "source_order": 49,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "碎冰刺击：冰裂（崇高）"
+      }
+    },
+    {
+      "id": "Frost_Spike:_Glaciate_(Noble)",
+      "slug": "Frost_Spike:_Glaciate_(Noble)",
+      "name_zh": "碎冰刺击：雪藏（崇高）",
+      "url": "https://tlidb.com/cn/Frost_Spike%3A_Glaciate_%28Noble%29",
+      "source_order": 50,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "碎冰刺击：雪藏（崇高）"
+      }
+    },
+    {
+      "id": "Rain_of_Arrows:_Payback_(Noble)",
+      "slug": "Rain_of_Arrows:_Payback_(Noble)",
+      "name_zh": "箭雨：奉还（崇高）",
+      "url": "https://tlidb.com/cn/Rain_of_Arrows%3A_Payback_%28Noble%29",
+      "source_order": 51,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "箭雨：奉还（崇高）"
+      }
+    },
+    {
+      "id": "Rain_of_Arrows:_Tracking_(Noble)",
+      "slug": "Rain_of_Arrows:_Tracking_(Noble)",
+      "name_zh": "箭雨：寻踪（崇高）",
+      "url": "https://tlidb.com/cn/Rain_of_Arrows%3A_Tracking_%28Noble%29",
+      "source_order": 52,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "箭雨：寻踪（崇高）"
+      }
+    },
+    {
+      "id": "Arrow_Einherjar:_Advancement_(Noble)",
+      "slug": "Arrow_Einherjar:_Advancement_(Noble)",
+      "name_zh": "飞箭英灵：进阶（崇高）",
+      "url": "https://tlidb.com/cn/Arrow_Einherjar%3A_Advancement_%28Noble%29",
+      "source_order": 53,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "飞箭英灵：进阶（崇高）"
+      }
+    },
+    {
+      "id": "Arrow_Einherjar:_Fellowship_(Noble)",
+      "slug": "Arrow_Einherjar:_Fellowship_(Noble)",
+      "name_zh": "飞箭英灵：随行（崇高）",
+      "url": "https://tlidb.com/cn/Arrow_Einherjar%3A_Fellowship_%28Noble%29",
+      "source_order": 54,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "飞箭英灵：随行（崇高）"
+      }
+    },
+    {
+      "id": "Split_Firebolt:_Focal_Point_(Noble)",
+      "slug": "Split_Firebolt:_Focal_Point_(Noble)",
+      "name_zh": "裂变火球：焦点（崇高）",
+      "url": "https://tlidb.com/cn/Split_Firebolt%3A_Focal_Point_%28Noble%29",
+      "source_order": 55,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "裂变火球：焦点（崇高）"
+      }
+    },
+    {
+      "id": "Ice_Lances:_Bounce_(Noble)",
+      "slug": "Ice_Lances:_Bounce_(Noble)",
+      "name_zh": "冰锥术：跳弹（崇高）",
+      "url": "https://tlidb.com/cn/Ice_Lances%3A_Bounce_%28Noble%29",
+      "source_order": 56,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "冰锥术：跳弹（崇高）"
+      }
+    },
+    {
+      "id": "Ice_Lances:_Permafrost_(Noble)",
+      "slug": "Ice_Lances:_Permafrost_(Noble)",
+      "name_zh": "冰锥术：冻土（崇高）",
+      "url": "https://tlidb.com/cn/Ice_Lances%3A_Permafrost_%28Noble%29",
+      "source_order": 57,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "冰锥术：冻土（崇高）"
+      }
+    },
+    {
+      "id": "Sparkle:_Strobe_(Noble)",
+      "slug": "Sparkle:_Strobe_(Noble)",
+      "name_zh": "电火花：频闪（崇高）",
+      "url": "https://tlidb.com/cn/Sparkle%3A_Strobe_%28Noble%29",
+      "source_order": 58,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "电火花：频闪（崇高）"
+      }
+    },
+    {
+      "id": "Sparkle:_Static_Electricity_(Noble)",
+      "slug": "Sparkle:_Static_Electricity_(Noble)",
+      "name_zh": "电火花：静电（崇高）",
+      "url": "https://tlidb.com/cn/Sparkle%3A_Static_Electricity_%28Noble%29",
+      "source_order": 59,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "电火花：静电（崇高）"
+      }
+    },
+    {
+      "id": "Whirlwind_Blade:_Sharpen_(Noble)",
+      "slug": "Whirlwind_Blade:_Sharpen_(Noble)",
+      "name_zh": "刀锋回旋：磨利（崇高）",
+      "url": "https://tlidb.com/cn/Whirlwind_Blade%3A_Sharpen_%28Noble%29",
+      "source_order": 60,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "刀锋回旋：磨利（崇高）"
+      }
+    },
+    {
+      "id": "Whirlwind_Blade:_Circling_(Noble)",
+      "slug": "Whirlwind_Blade:_Circling_(Noble)",
+      "name_zh": "刀锋回旋：盘旋（崇高）",
+      "url": "https://tlidb.com/cn/Whirlwind_Blade%3A_Circling_%28Noble%29",
+      "source_order": 61,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "刀锋回旋：盘旋（崇高）"
+      }
+    },
+    {
+      "id": "Ring_of_Ice:_Cascade_(Noble)",
+      "slug": "Ring_of_Ice:_Cascade_(Noble)",
+      "name_zh": "冰环术：连环（崇高）",
+      "url": "https://tlidb.com/cn/Ring_of_Ice%3A_Cascade_%28Noble%29",
+      "source_order": 62,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "冰环术：连环（崇高）"
+      }
+    },
+    {
+      "id": "Blizzard:_Avalanche_(Noble)",
+      "slug": "Blizzard:_Avalanche_(Noble)",
+      "name_zh": "暴风雪：雪崩（崇高）",
+      "url": "https://tlidb.com/cn/Blizzard%3A_Avalanche_%28Noble%29",
+      "source_order": 63,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "暴风雪：雪崩（崇高）"
+      }
+    },
+    {
+      "id": "Blizzard:_Numbing_Cold_(Noble)",
+      "slug": "Blizzard:_Numbing_Cold_(Noble)",
+      "name_zh": "暴风雪：刺骨（崇高）",
+      "url": "https://tlidb.com/cn/Blizzard%3A_Numbing_Cold_%28Noble%29",
+      "source_order": 64,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "暴风雪：刺骨（崇高）"
+      }
+    },
+    {
+      "id": "Lightning_Storm:_Boundless_(Noble)",
+      "slug": "Lightning_Storm:_Boundless_(Noble)",
+      "name_zh": "闪电风暴：无尽（崇高）",
+      "url": "https://tlidb.com/cn/Lightning_Storm%3A_Boundless_%28Noble%29",
+      "source_order": 65,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "闪电风暴：无尽（崇高）"
+      }
+    },
+    {
+      "id": "Lightning_Storm:_Raging_Storm_(Noble)",
+      "slug": "Lightning_Storm:_Raging_Storm_(Noble)",
+      "name_zh": "闪电风暴：澎湃（崇高）",
+      "url": "https://tlidb.com/cn/Lightning_Storm%3A_Raging_Storm_%28Noble%29",
+      "source_order": 66,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "闪电风暴：澎湃（崇高）"
+      }
+    },
+    {
+      "id": "Flame_Core:_Engage_(Noble)",
+      "slug": "Flame_Core:_Engage_(Noble)",
+      "name_zh": "聚焰之核：迎敌（崇高）",
+      "url": "https://tlidb.com/cn/Flame_Core%3A_Engage_%28Noble%29",
+      "source_order": 67,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "聚焰之核：迎敌（崇高）"
+      }
+    },
+    {
+      "id": "Flame_Jet:_Furnace_(Noble)",
+      "slug": "Flame_Jet:_Furnace_(Noble)",
+      "name_zh": "烈焰释放：熔炉（崇高）",
+      "url": "https://tlidb.com/cn/Flame_Jet%3A_Furnace_%28Noble%29",
+      "source_order": 68,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "烈焰释放：熔炉（崇高）"
+      }
+    },
+    {
+      "id": "Frost_Terra:_Cohesion_(Noble)",
+      "slug": "Frost_Terra:_Cohesion_(Noble)",
+      "name_zh": "寒霜地面：凝聚（崇高）",
+      "url": "https://tlidb.com/cn/Frost_Terra%3A_Cohesion_%28Noble%29",
+      "source_order": 69,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "寒霜地面：凝聚（崇高）"
+      }
+    },
+    {
+      "id": "Frost_Terra:_Winters_Bite_(Noble)",
+      "slug": "Frost_Terra:_Winters_Bite_(Noble)",
+      "name_zh": "寒霜地面：凛冽（崇高）",
+      "url": "https://tlidb.com/cn/Frost_Terra%3A_Winters_Bite_%28Noble%29",
+      "source_order": 70,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "寒霜地面：凛冽（崇高）"
+      }
+    },
+    {
+      "id": "Shadow_Swamp:_Overlapping_Waves_(Noble)",
+      "slug": "Shadow_Swamp:_Overlapping_Waves_(Noble)",
+      "name_zh": "暗影之沼：叠浪（崇高）",
+      "url": "https://tlidb.com/cn/Shadow_Swamp%3A_Overlapping_Waves_%28Noble%29",
+      "source_order": 71,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "暗影之沼：叠浪（崇高）"
+      }
+    },
+    {
+      "id": "Shadow_Swamp:_Still_Water_(Noble)",
+      "slug": "Shadow_Swamp:_Still_Water_(Noble)",
+      "name_zh": "暗影之沼：止水（崇高）",
+      "url": "https://tlidb.com/cn/Shadow_Swamp%3A_Still_Water_%28Noble%29",
+      "source_order": 72,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "暗影之沼：止水（崇高）"
+      }
+    },
+    {
+      "id": "Thunderbolt_Overload:_Augmentation_(Noble)",
+      "slug": "Thunderbolt_Overload:_Augmentation_(Noble)",
+      "name_zh": "超载雷球：增幅（崇高）",
+      "url": "https://tlidb.com/cn/Thunderbolt_Overload%3A_Augmentation_%28Noble%29",
+      "source_order": 73,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "超载雷球：增幅（崇高）"
+      }
+    },
+    {
+      "id": "Frost_Core:_Puncture_(Noble)",
+      "slug": "Frost_Core:_Puncture_(Noble)",
+      "name_zh": "寒霜之核：穿刺（崇高）",
+      "url": "https://tlidb.com/cn/Frost_Core%3A_Puncture_%28Noble%29",
+      "source_order": 74,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "寒霜之核：穿刺（崇高）"
+      }
+    },
+    {
+      "id": "Summon_Thunder_Magus:_Heavy_Arrow_(Noble)",
+      "slug": "Summon_Thunder_Magus:_Heavy_Arrow_(Noble)",
+      "name_zh": "召唤雷霆之灵：重矢（崇高）",
+      "url": "https://tlidb.com/cn/Summon_Thunder_Magus%3A_Heavy_Arrow_%28Noble%29",
+      "source_order": 75,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "召唤雷霆之灵：重矢（崇高）"
+      }
+    },
+    {
+      "id": "Summon_Thunder_Magus:_Agility_(Noble)",
+      "slug": "Summon_Thunder_Magus:_Agility_(Noble)",
+      "name_zh": "召唤雷霆之灵：矫捷（崇高）",
+      "url": "https://tlidb.com/cn/Summon_Thunder_Magus%3A_Agility_%28Noble%29",
+      "source_order": 76,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "召唤雷霆之灵：矫捷（崇高）"
+      }
+    },
+    {
+      "id": "Summon_Frost_Magus:_Vengeance_(Noble)",
+      "slug": "Summon_Frost_Magus:_Vengeance_(Noble)",
+      "name_zh": "召唤寒冰之灵：雪恨（崇高）",
+      "url": "https://tlidb.com/cn/Summon_Frost_Magus%3A_Vengeance_%28Noble%29",
+      "source_order": 77,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "召唤寒冰之灵：雪恨（崇高）"
+      }
+    },
+    {
+      "id": "Summon_Fire_Magus:_Wicked_Spirit_(Noble)",
+      "slug": "Summon_Fire_Magus:_Wicked_Spirit_(Noble)",
+      "name_zh": "召唤火焰之灵：凶灵（崇高）",
+      "url": "https://tlidb.com/cn/Summon_Fire_Magus%3A_Wicked_Spirit_%28Noble%29",
+      "source_order": 78,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "召唤火焰之灵：凶灵（崇高）"
+      }
+    },
+    {
+      "id": "Summon_Fire_Magus:_Engulfing_Flames_(Noble)",
+      "slug": "Summon_Fire_Magus:_Engulfing_Flames_(Noble)",
+      "name_zh": "召唤火焰之灵：焰噬（崇高）",
+      "url": "https://tlidb.com/cn/Summon_Fire_Magus%3A_Engulfing_Flames_%28Noble%29",
+      "source_order": 79,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "召唤火焰之灵：焰噬（崇高）"
+      }
+    },
+    {
+      "id": "Summon_Machine_Guard:_Crushing_Blow_(Noble)",
+      "slug": "Summon_Machine_Guard:_Crushing_Blow_(Noble)",
+      "name_zh": "召唤机械警卫：痛击（崇高）",
+      "url": "https://tlidb.com/cn/Summon_Machine_Guard%3A_Crushing_Blow_%28Noble%29",
+      "source_order": 80,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "召唤机械警卫：痛击（崇高）"
+      }
+    },
+    {
+      "id": "Summon_Machine_Guard:_Discipline_(Noble)",
+      "slug": "Summon_Machine_Guard:_Discipline_(Noble)",
+      "name_zh": "召唤机械警卫：规训（崇高）",
+      "url": "https://tlidb.com/cn/Summon_Machine_Guard%3A_Discipline_%28Noble%29",
+      "source_order": 81,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "召唤机械警卫：规训（崇高）"
+      }
+    },
+    {
+      "id": "Summon_Machine_Guard:_Dead_Silence_(Noble)",
+      "slug": "Summon_Machine_Guard:_Dead_Silence_(Noble)",
+      "name_zh": "召唤机械警卫：默殁（崇高）",
+      "url": "https://tlidb.com/cn/Summon_Machine_Guard%3A_Dead_Silence_%28Noble%29",
+      "source_order": 82,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "召唤机械警卫：默殁（崇高）"
+      }
+    },
+    {
+      "id": "Summon_Grim_Phantom:_Shriek_(Noble)",
+      "slug": "Summon_Grim_Phantom:_Shriek_(Noble)",
+      "name_zh": "召唤幽浮魅影：齐鸣（崇高）",
+      "url": "https://tlidb.com/cn/Summon_Grim_Phantom%3A_Shriek_%28Noble%29",
+      "source_order": 83,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "召唤幽浮魅影：齐鸣（崇高）"
+      }
+    },
+    {
+      "id": "Summon_Grim_Phantom:_Undercurrent_(Noble)",
+      "slug": "Summon_Grim_Phantom:_Undercurrent_(Noble)",
+      "name_zh": "召唤幽浮魅影：暗涌（崇高）",
+      "url": "https://tlidb.com/cn/Summon_Grim_Phantom%3A_Undercurrent_%28Noble%29",
+      "source_order": 84,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "召唤幽浮魅影：暗涌（崇高）"
+      }
+    },
+    {
+      "id": "Summon_Grim_Phantom:_Flicker_(Noble)",
+      "slug": "Summon_Grim_Phantom:_Flicker_(Noble)",
+      "name_zh": "召唤幽浮魅影：乍现（崇高）",
+      "url": "https://tlidb.com/cn/Summon_Grim_Phantom%3A_Flicker_%28Noble%29",
+      "source_order": 85,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "召唤幽浮魅影：乍现（崇高）"
+      }
+    },
+    {
+      "id": "Summon_Spider_Tank:_Focus_Fire_(Noble)",
+      "slug": "Summon_Spider_Tank:_Focus_Fire_(Noble)",
+      "name_zh": "召唤蜘蛛坦克：集火（崇高）",
+      "url": "https://tlidb.com/cn/Summon_Spider_Tank%3A_Focus_Fire_%28Noble%29",
+      "source_order": 86,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "召唤蜘蛛坦克：集火（崇高）"
+      }
+    },
+    {
+      "id": "Summon_Spider_Tank:_Spider_Egg_(Noble)",
+      "slug": "Summon_Spider_Tank:_Spider_Egg_(Noble)",
+      "name_zh": "召唤蜘蛛坦克：蛛卵（崇高）",
+      "url": "https://tlidb.com/cn/Summon_Spider_Tank%3A_Spider_Egg_%28Noble%29",
+      "source_order": 87,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "召唤蜘蛛坦克：蛛卵（崇高）"
+      }
+    },
+    {
+      "id": "Ghost_Blade_Einherjar:_Eruption_(Noble)",
+      "slug": "Ghost_Blade_Einherjar:_Eruption_(Noble)",
+      "name_zh": "幽刃英灵：瞬爆（崇高）",
+      "url": "https://tlidb.com/cn/Ghost_Blade_Einherjar%3A_Eruption_%28Noble%29",
+      "source_order": 88,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "幽刃英灵：瞬爆（崇高）"
+      }
+    },
+    {
+      "id": "Ghost_Blade_Einherjar:_Heroes_(Noble)",
+      "slug": "Ghost_Blade_Einherjar:_Heroes_(Noble)",
+      "name_zh": "幽刃英灵：群雄（崇高）",
+      "url": "https://tlidb.com/cn/Ghost_Blade_Einherjar%3A_Heroes_%28Noble%29",
+      "source_order": 89,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "幽刃英灵：群雄（崇高）"
+      }
+    },
+    {
+      "id": "Groundshaker:_Collapse_(Noble)",
+      "slug": "Groundshaker:_Collapse_(Noble)",
+      "name_zh": "震撼大地：陷落（崇高）",
+      "url": "https://tlidb.com/cn/Groundshaker%3A_Collapse_%28Noble%29",
+      "source_order": 90,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "震撼大地：陷落（崇高）"
+      }
+    },
+    {
+      "id": "Groundshaker:_Cripple_(Noble)",
+      "slug": "Groundshaker:_Cripple_(Noble)",
+      "name_zh": "震撼大地：致残（崇高）",
+      "url": "https://tlidb.com/cn/Groundshaker%3A_Cripple_%28Noble%29",
+      "source_order": 91,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "震撼大地：致残（崇高）"
+      }
+    },
+    {
+      "id": "Groundshaker:_Wrathful_Vault_(Noble)",
+      "slug": "Groundshaker:_Wrathful_Vault_(Noble)",
+      "name_zh": "震撼大地：暴跳（崇高）",
+      "url": "https://tlidb.com/cn/Groundshaker%3A_Wrathful_Vault_%28Noble%29",
+      "source_order": 92,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "震撼大地：暴跳（崇高）"
+      }
+    },
+    {
+      "id": "Howling_Gale:_Furious_Sweep_(Noble)",
+      "slug": "Howling_Gale:_Furious_Sweep_(Noble)",
+      "name_zh": "呼啸烈风：怒卷（崇高）",
+      "url": "https://tlidb.com/cn/Howling_Gale%3A_Furious_Sweep_%28Noble%29",
+      "source_order": 93,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "呼啸烈风：怒卷（崇高）"
+      }
+    },
+    {
+      "id": "Howling_Gale:_Eye_of_the_Gale_(Noble)",
+      "slug": "Howling_Gale:_Eye_of_the_Gale_(Noble)",
+      "name_zh": "呼啸烈风：风眼（崇高）",
+      "url": "https://tlidb.com/cn/Howling_Gale%3A_Eye_of_the_Gale_%28Noble%29",
+      "source_order": 94,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "呼啸烈风：风眼（崇高）"
+      }
+    },
+    {
+      "id": "Shackles_of_Malice:_Mutual_Destruction_(Noble)",
+      "slug": "Shackles_of_Malice:_Mutual_Destruction_(Noble)",
+      "name_zh": "恶意枷锁：俱损（崇高）",
+      "url": "https://tlidb.com/cn/Shackles_of_Malice%3A_Mutual_Destruction_%28Noble%29",
+      "source_order": 95,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "恶意枷锁：俱损（崇高）"
+      }
+    },
+    {
+      "id": "Shackles_of_Malice:_Spite_(Noble)",
+      "slug": "Shackles_of_Malice:_Spite_(Noble)",
+      "name_zh": "恶意枷锁：咒怨（崇高）",
+      "url": "https://tlidb.com/cn/Shackles_of_Malice%3A_Spite_%28Noble%29",
+      "source_order": 96,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "恶意枷锁：咒怨（崇高）"
+      }
+    },
+    {
+      "id": "Mind_Control:_Enthrall_(Noble)",
+      "slug": "Mind_Control:_Enthrall_(Noble)",
+      "name_zh": "摄念夺识：勾魂（崇高）",
+      "url": "https://tlidb.com/cn/Mind_Control%3A_Enthrall_%28Noble%29",
+      "source_order": 97,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "摄念夺识：勾魂（崇高）"
+      }
+    },
+    {
+      "id": "Mind_Control:_Entice_(Noble)",
+      "slug": "Mind_Control:_Entice_(Noble)",
+      "name_zh": "摄念夺识：诱导（崇高）",
+      "url": "https://tlidb.com/cn/Mind_Control%3A_Entice_%28Noble%29",
+      "source_order": 98,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "摄念夺识：诱导（崇高）"
+      }
+    },
+    {
+      "id": "Fire_Burst:_Prairie_Fire_(Noble)",
+      "slug": "Fire_Burst:_Prairie_Fire_(Noble)",
+      "name_zh": "爆炎术：燎原（崇高）",
+      "url": "https://tlidb.com/cn/Fire_Burst%3A_Prairie_Fire_%28Noble%29",
+      "source_order": 99,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "爆炎术：燎原（崇高）"
+      }
+    },
+    {
+      "id": "Fire_Burst:_Converge_(Noble)",
+      "slug": "Fire_Burst:_Converge_(Noble)",
+      "name_zh": "爆炎术：聚顶（崇高）",
+      "url": "https://tlidb.com/cn/Fire_Burst%3A_Converge_%28Noble%29",
+      "source_order": 100,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "爆炎术：聚顶（崇高）"
+      }
+    },
+    {
+      "id": "Icebound_Beam:_Chilling_Spike_(Noble)",
+      "slug": "Icebound_Beam:_Chilling_Spike_(Noble)",
+      "name_zh": "冰魄射线：凌刺（崇高）",
+      "url": "https://tlidb.com/cn/Icebound_Beam%3A_Chilling_Spike_%28Noble%29",
+      "source_order": 101,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "冰魄射线：凌刺（崇高）"
+      }
+    },
+    {
+      "id": "Icebound_Beam:_Ring_Blade_(Noble)",
+      "slug": "Icebound_Beam:_Ring_Blade_(Noble)",
+      "name_zh": "冰魄射线：环刃（崇高）",
+      "url": "https://tlidb.com/cn/Icebound_Beam%3A_Ring_Blade_%28Noble%29",
+      "source_order": 102,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "冰魄射线：环刃（崇高）"
+      }
+    },
+    {
+      "id": "Scorching_Beam:_Disintegrate_(Noble)",
+      "slug": "Scorching_Beam:_Disintegrate_(Noble)",
+      "name_zh": "灼热射线：寸断（崇高）",
+      "url": "https://tlidb.com/cn/Scorching_Beam%3A_Disintegrate_%28Noble%29",
+      "source_order": 103,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "灼热射线：寸断（崇高）"
+      }
+    },
+    {
+      "id": "Scorching_Beam:_Immolate_(Noble)",
+      "slug": "Scorching_Beam:_Immolate_(Noble)",
+      "name_zh": "灼热射线：焚身（崇高）",
+      "url": "https://tlidb.com/cn/Scorching_Beam%3A_Immolate_%28Noble%29",
+      "source_order": 104,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "灼热射线：焚身（崇高）"
+      }
+    },
+    {
+      "id": "Thunder_Core:_Lightning_Lasso_(Noble)",
+      "slug": "Thunder_Core:_Lightning_Lasso_(Noble)",
+      "name_zh": "雷降之核：电索（崇高）",
+      "url": "https://tlidb.com/cn/Thunder_Core%3A_Lightning_Lasso_%28Noble%29",
+      "source_order": 105,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "雷降之核：电索（崇高）"
+      }
+    },
+    {
+      "id": "Thunder_Core:_Augmentation_(Noble)",
+      "slug": "Thunder_Core:_Augmentation_(Noble)",
+      "name_zh": "雷降之核：增幅（崇高）",
+      "url": "https://tlidb.com/cn/Thunder_Core%3A_Augmentation_%28Noble%29",
+      "source_order": 106,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "雷降之核：增幅（崇高）"
+      }
+    },
+    {
+      "id": "Path_of_Flames:_Heat_Wave_(Noble)",
+      "slug": "Path_of_Flames:_Heat_Wave_(Noble)",
+      "name_zh": "烈焰之径：热浪（崇高）",
+      "url": "https://tlidb.com/cn/Path_of_Flames%3A_Heat_Wave_%28Noble%29",
+      "source_order": 107,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "烈焰之径：热浪（崇高）"
+      }
+    },
+    {
+      "id": "Path_of_Flames:_Raging_Boil_(Noble)",
+      "slug": "Path_of_Flames:_Raging_Boil_(Noble)",
+      "name_zh": "烈焰之径：沸腾（崇高）",
+      "url": "https://tlidb.com/cn/Path_of_Flames%3A_Raging_Boil_%28Noble%29",
+      "source_order": 108,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "烈焰之径：沸腾（崇高）"
+      }
+    },
+    {
+      "id": "Thundercloud:_Heavy_Cloud_(Noble)",
+      "slug": "Thundercloud:_Heavy_Cloud_(Noble)",
+      "name_zh": "雷云放射：重云（崇高）",
+      "url": "https://tlidb.com/cn/Thundercloud%3A_Heavy_Cloud_%28Noble%29",
+      "source_order": 109,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "雷云放射：重云（崇高）"
+      }
+    },
+    {
+      "id": "Thundercloud:_Thunderous_Blow_(Noble)",
+      "slug": "Thundercloud:_Thunderous_Blow_(Noble)",
+      "name_zh": "雷云放射：轰顶（崇高）",
+      "url": "https://tlidb.com/cn/Thundercloud%3A_Thunderous_Blow_%28Noble%29",
+      "source_order": 110,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "雷云放射：轰顶（崇高）"
+      }
+    },
+    {
+      "id": "Summon_Rock_Magus:_Stone_Refinement_(Noble)",
+      "slug": "Summon_Rock_Magus:_Stone_Refinement_(Noble)",
+      "name_zh": "召唤磐石之灵：炼石（崇高）",
+      "url": "https://tlidb.com/cn/Summon_Rock_Magus%3A_Stone_Refinement_%28Noble%29",
+      "source_order": 111,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "召唤磐石之灵：炼石（崇高）"
+      }
+    },
+    {
+      "id": "Summon_Erosion_Magus:_Malignant_(Noble)",
+      "slug": "Summon_Erosion_Magus:_Malignant_(Noble)",
+      "name_zh": "召唤腐化之灵：恶变（崇高）",
+      "url": "https://tlidb.com/cn/Summon_Erosion_Magus%3A_Malignant_%28Noble%29",
+      "source_order": 112,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "召唤腐化之灵：恶变（崇高）"
+      }
+    },
+    {
+      "id": "Summon_Erosion_Magus:_Malady_(Noble)",
+      "slug": "Summon_Erosion_Magus:_Malady_(Noble)",
+      "name_zh": "召唤腐化之灵：疾患（崇高）",
+      "url": "https://tlidb.com/cn/Summon_Erosion_Magus%3A_Malady_%28Noble%29",
+      "source_order": 113,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "召唤腐化之灵：疾患（崇高）"
+      }
+    },
+    {
+      "id": "Double_Thrusts:_Recourse_(Noble)",
+      "slug": "Double_Thrusts:_Recourse_(Noble)",
+      "name_zh": "双重突刺：追偿（崇高）",
+      "url": "https://tlidb.com/cn/Double_Thrusts%3A_Recourse_%28Noble%29",
+      "source_order": 114,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "双重突刺：追偿（崇高）"
+      }
+    },
+    {
+      "id": "Lightning_Beam:_Reverberation_(Noble)",
+      "slug": "Lightning_Beam:_Reverberation_(Noble)",
+      "name_zh": "雷暴射线：回响（崇高）",
+      "url": "https://tlidb.com/cn/Lightning_Beam%3A_Reverberation_%28Noble%29",
+      "source_order": 115,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "雷暴射线：回响（崇高）"
+      }
+    },
+    {
+      "id": "Lightning_Beam:_Salvo_(Noble)",
+      "slug": "Lightning_Beam:_Salvo_(Noble)",
+      "name_zh": "雷暴射线：排射（崇高）",
+      "url": "https://tlidb.com/cn/Lightning_Beam%3A_Salvo_%28Noble%29",
+      "source_order": 116,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "雷暴射线：排射（崇高）"
+      }
+    },
+    {
+      "id": "Wilting_Beam:_Set_Course_(Noble)",
+      "slug": "Wilting_Beam:_Set_Course_(Noble)",
+      "name_zh": "枯萎射线：定轨（崇高）",
+      "url": "https://tlidb.com/cn/Wilting_Beam%3A_Set_Course_%28Noble%29",
+      "source_order": 117,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "枯萎射线：定轨（崇高）"
+      }
+    },
+    {
+      "id": "Wilting_Beam:_Rapid_Completion_(Noble)",
+      "slug": "Wilting_Beam:_Rapid_Completion_(Noble)",
+      "name_zh": "枯萎射线：速成（崇高）",
+      "url": "https://tlidb.com/cn/Wilting_Beam%3A_Rapid_Completion_%28Noble%29",
+      "source_order": 118,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "枯萎射线：速成（崇高）"
+      }
+    },
+    {
+      "id": "Electrifying_Shot:_Multishot_(Noble)",
+      "slug": "Electrifying_Shot:_Multishot_(Noble)",
+      "name_zh": "电光弹：散射（崇高）",
+      "url": "https://tlidb.com/cn/Electrifying_Shot%3A_Multishot_%28Noble%29",
+      "source_order": 119,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "电光弹：散射（崇高）"
+      }
+    },
+    {
+      "id": "Marked_Rain_of_Arrows:_Rainfall_(Noble)",
+      "slug": "Marked_Rain_of_Arrows:_Rainfall_(Noble)",
+      "name_zh": "标记箭雨：沐雨（崇高）",
+      "url": "https://tlidb.com/cn/Marked_Rain_of_Arrows%3A_Rainfall_%28Noble%29",
+      "source_order": 120,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "标记箭雨：沐雨（崇高）"
+      }
+    },
+    {
+      "id": "Haunting_Abomination:_Misdeeds_(Noble)",
+      "slug": "Haunting_Abomination:_Misdeeds_(Noble)",
+      "name_zh": "恶煞缠身：劣迹（崇高）",
+      "url": "https://tlidb.com/cn/Haunting_Abomination%3A_Misdeeds_%28Noble%29",
+      "source_order": 121,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "恶煞缠身：劣迹（崇高）"
+      }
+    },
+    {
+      "id": "Haunting_Abomination:_Hail_Mary_(Noble)",
+      "slug": "Haunting_Abomination:_Hail_Mary_(Noble)",
+      "name_zh": "恶煞缠身：孤注（崇高）",
+      "url": "https://tlidb.com/cn/Haunting_Abomination%3A_Hail_Mary_%28Noble%29",
+      "source_order": 122,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "恶煞缠身：孤注（崇高）"
+      }
+    },
+    {
+      "id": "Thunder_Focus:_Tremor_(Noble)",
+      "slug": "Thunder_Focus:_Tremor_(Noble)",
+      "name_zh": "雷霆贯注：惊颤（崇高）",
+      "url": "https://tlidb.com/cn/Thunder_Focus%3A_Tremor_%28Noble%29",
+      "source_order": 123,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "雷霆贯注：惊颤（崇高）"
+      }
+    },
+    {
+      "id": "Thunder_Focus:_Overflow_(Noble)",
+      "slug": "Thunder_Focus:_Overflow_(Noble)",
+      "name_zh": "雷霆贯注：充溢（崇高）",
+      "url": "https://tlidb.com/cn/Thunder_Focus%3A_Overflow_%28Noble%29",
+      "source_order": 124,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "雷霆贯注：充溢（崇高）"
+      }
+    },
+    {
+      "id": "Flame_Focus:_Blast_(Noble)",
+      "slug": "Flame_Focus:_Blast_(Noble)",
+      "name_zh": "熔火贯注：轰燃（崇高）",
+      "url": "https://tlidb.com/cn/Flame_Focus%3A_Blast_%28Noble%29",
+      "source_order": 125,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "熔火贯注：轰燃（崇高）"
+      }
+    },
+    {
+      "id": "Corrosion_Focus:_Splash_(Noble)",
+      "slug": "Corrosion_Focus:_Splash_(Noble)",
+      "name_zh": "侵蚀贯注：溅射（崇高）",
+      "url": "https://tlidb.com/cn/Corrosion_Focus%3A_Splash_%28Noble%29",
+      "source_order": 126,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "侵蚀贯注：溅射（崇高）"
+      }
+    },
+    {
+      "id": "Ice_Focus:_Frigid_Wind_(Noble)",
+      "slug": "Ice_Focus:_Frigid_Wind_(Noble)",
+      "name_zh": "寒冰贯注：寒风（崇高）",
+      "url": "https://tlidb.com/cn/Ice_Focus%3A_Frigid_Wind_%28Noble%29",
+      "source_order": 127,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "寒冰贯注：寒风（崇高）"
+      }
+    },
+    {
+      "id": "Ice_Focus:_Solemn_Chill_(Noble)",
+      "slug": "Ice_Focus:_Solemn_Chill_(Noble)",
+      "name_zh": "寒冰贯注：肃凛（崇高）",
+      "url": "https://tlidb.com/cn/Ice_Focus%3A_Solemn_Chill_%28Noble%29",
+      "source_order": 128,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "寒冰贯注：肃凛（崇高）"
+      }
+    },
+    {
+      "id": "Acuteness_Focus:_Dull_Pain_(Noble)",
+      "slug": "Acuteness_Focus:_Dull_Pain_(Noble)",
+      "name_zh": "锐利贯注：钝痛（崇高）",
+      "url": "https://tlidb.com/cn/Acuteness_Focus%3A_Dull_Pain_%28Noble%29",
+      "source_order": 129,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "锐利贯注：钝痛（崇高）"
+      }
+    },
+    {
+      "id": "Acuteness_Focus:_Remaining_Strength_(Noble)",
+      "slug": "Acuteness_Focus:_Remaining_Strength_(Noble)",
+      "name_zh": "锐利贯注：余力（崇高）",
+      "url": "https://tlidb.com/cn/Acuteness_Focus%3A_Remaining_Strength_%28Noble%29",
+      "source_order": 130,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "锐利贯注：余力（崇高）"
+      }
+    },
+    {
+      "id": "Crescent_Slash:_Flash_(Noble)",
+      "slug": "Crescent_Slash:_Flash_(Noble)",
+      "name_zh": "碎月弧光斩：神速（崇高）",
+      "url": "https://tlidb.com/cn/Crescent_Slash%3A_Flash_%28Noble%29",
+      "source_order": 131,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "碎月弧光斩：神速（崇高）"
+      }
+    },
+    {
+      "id": "Crescent_Slash:_Rising_(Noble)",
+      "slug": "Crescent_Slash:_Rising_(Noble)",
+      "name_zh": "碎月弧光斩：提刀（崇高）",
+      "url": "https://tlidb.com/cn/Crescent_Slash%3A_Rising_%28Noble%29",
+      "source_order": 132,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "碎月弧光斩：提刀（崇高）"
+      }
+    },
+    {
+      "id": "Serpent_Beam:_Torrent_(Noble)",
+      "slug": "Serpent_Beam:_Torrent_(Noble)",
+      "name_zh": "流焰炎蛇引：涌流（崇高）",
+      "url": "https://tlidb.com/cn/Serpent_Beam%3A_Torrent_%28Noble%29",
+      "source_order": 133,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "流焰炎蛇引：涌流（崇高）"
+      }
+    },
+    {
+      "id": "Serpent_Beam:_Twin_Blaze_(Noble)",
+      "slug": "Serpent_Beam:_Twin_Blaze_(Noble)",
+      "name_zh": "流焰炎蛇引：双杰（崇高）",
+      "url": "https://tlidb.com/cn/Serpent_Beam%3A_Twin_Blaze_%28Noble%29",
+      "source_order": 134,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "流焰炎蛇引：双杰（崇高）"
+      }
+    },
+    {
+      "id": "Gale_Slash:_Soaring_(Noble)",
+      "slug": "Gale_Slash:_Soaring_(Noble)",
+      "name_zh": "疾风裂地斩：腾跃（崇高）",
+      "url": "https://tlidb.com/cn/Gale_Slash%3A_Soaring_%28Noble%29",
+      "source_order": 135,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "疾风裂地斩：腾跃（崇高）"
+      }
+    },
+    {
+      "id": "Gale_Slash:_Brutality_(Noble)",
+      "slug": "Gale_Slash:_Brutality_(Noble)",
+      "name_zh": "疾风裂地斩：凶暴（崇高）",
+      "url": "https://tlidb.com/cn/Gale_Slash%3A_Brutality_%28Noble%29",
+      "source_order": 136,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "疾风裂地斩：凶暴（崇高）"
+      }
+    },
+    {
+      "id": "Spectral_Slash:_Legion_(Noble)",
+      "slug": "Spectral_Slash:_Legion_(Noble)",
+      "name_zh": "分身灵爆斩：群英（崇高）",
+      "url": "https://tlidb.com/cn/Spectral_Slash%3A_Legion_%28Noble%29",
+      "source_order": 137,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "分身灵爆斩：群英（崇高）"
+      }
+    },
+    {
+      "id": "Spectral_Slash:_Synchrony_(Noble)",
+      "slug": "Spectral_Slash:_Synchrony_(Noble)",
+      "name_zh": "分身灵爆斩：齐同（崇高）",
+      "url": "https://tlidb.com/cn/Spectral_Slash%3A_Synchrony_%28Noble%29",
+      "source_order": 138,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "分身灵爆斩：齐同（崇高）"
+      }
+    },
+    {
+      "id": "Frigid_Transmission:_Thin_Ice_(Noble)",
+      "slug": "Frigid_Transmission:_Thin_Ice_(Noble)",
+      "name_zh": "寒冰传送：履冰（崇高）",
+      "url": "https://tlidb.com/cn/Frigid_Transmission%3A_Thin_Ice_%28Noble%29",
+      "source_order": 139,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "寒冰传送：履冰（崇高）"
+      }
+    },
+    {
+      "id": "Modularization:_Superconductivity_(Noble)",
+      "slug": "Modularization:_Superconductivity_(Noble)",
+      "name_zh": "模组化：超导（崇高）",
+      "url": "https://tlidb.com/cn/Modularization%3A_Superconductivity_%28Noble%29",
+      "source_order": 140,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "模组化：超导（崇高）"
+      }
+    },
+    {
+      "id": "Modularization:_Calibrate_(Noble)",
+      "slug": "Modularization:_Calibrate_(Noble)",
+      "name_zh": "模组化：调校（崇高）",
+      "url": "https://tlidb.com/cn/Modularization%3A_Calibrate_%28Noble%29",
+      "source_order": 141,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "模组化：调校（崇高）"
+      }
+    },
+    {
+      "id": "Modularization:_Compress_(Noble)",
+      "slug": "Modularization:_Compress_(Noble)",
+      "name_zh": "模组化：压缩（崇高）",
+      "url": "https://tlidb.com/cn/Modularization%3A_Compress_%28Noble%29",
+      "source_order": 142,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "模组化：压缩（崇高）"
+      }
+    },
+    {
+      "id": "Modularization:_Sever_(Noble)",
+      "slug": "Modularization:_Sever_(Noble)",
+      "name_zh": "模组化：解耦（崇高）",
+      "url": "https://tlidb.com/cn/Modularization%3A_Sever_%28Noble%29",
+      "source_order": 143,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "模组化：解耦（崇高）"
+      }
+    },
+    {
+      "id": "Thornfield:_Retribution_(Noble)",
+      "slug": "Thornfield:_Retribution_(Noble)",
+      "name_zh": "荆棘之域：反噬（崇高）",
+      "url": "https://tlidb.com/cn/Thornfield%3A_Retribution_%28Noble%29",
+      "source_order": 144,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "荆棘之域：反噬（崇高）"
+      }
+    },
+    {
+      "id": "Tidewell:_Undertow_(Noble)",
+      "slug": "Tidewell:_Undertow_(Noble)",
+      "name_zh": "潮汐之泉：寒流（崇高）",
+      "url": "https://tlidb.com/cn/Tidewell%3A_Undertow_%28Noble%29",
+      "source_order": 145,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "潮汐之泉：寒流（崇高）"
+      }
+    },
+    {
+      "id": "Fallen_Star:_Starfall_(Noble)",
+      "slug": "Fallen_Star:_Starfall_(Noble)",
+      "name_zh": "陨星：歼星（崇高）",
+      "url": "https://tlidb.com/cn/Fallen_Star%3A_Starfall_%28Noble%29",
+      "source_order": 146,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "陨星：歼星（崇高）"
+      }
+    },
+    {
+      "id": "Fallen_Star:_Gravity_(Noble)",
+      "slug": "Fallen_Star:_Gravity_(Noble)",
+      "name_zh": "陨星：引力（崇高）",
+      "url": "https://tlidb.com/cn/Fallen_Star%3A_Gravity_%28Noble%29",
+      "source_order": 147,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "陨星：引力（崇高）"
+      }
+    },
+    {
+      "id": "Nether_Grasp:_Extermination_(Noble)",
+      "slug": "Nether_Grasp:_Extermination_(Noble)",
+      "name_zh": "冥渊之手：绞灭（崇高）",
+      "url": "https://tlidb.com/cn/Nether_Grasp%3A_Extermination_%28Noble%29",
+      "source_order": 148,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "冥渊之手：绞灭（崇高）"
+      }
+    },
+    {
+      "id": "Storm_Field:_Conduction_(Noble)",
+      "slug": "Storm_Field:_Conduction_(Noble)",
+      "name_zh": "雷暴地带：传导（崇高）",
+      "url": "https://tlidb.com/cn/Storm_Field%3A_Conduction_%28Noble%29",
+      "source_order": 149,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "雷暴地带：传导（崇高）"
+      }
+    },
+    {
+      "id": "Chromatic_Shot:_Condensed_Cold_(Noble)",
+      "slug": "Chromatic_Shot:_Condensed_Cold_(Noble)",
+      "name_zh": "五彩魔矢：聚寒（崇高）",
+      "url": "https://tlidb.com/cn/Chromatic_Shot%3A_Condensed_Cold_%28Noble%29",
+      "source_order": 150,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "五彩魔矢：聚寒（崇高）"
+      }
+    },
+    {
+      "id": "Chromatic_Shot:_Condensed_Fire_(Noble)",
+      "slug": "Chromatic_Shot:_Condensed_Fire_(Noble)",
+      "name_zh": "五彩魔矢：聚火（崇高）",
+      "url": "https://tlidb.com/cn/Chromatic_Shot%3A_Condensed_Fire_%28Noble%29",
+      "source_order": 151,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "五彩魔矢：聚火（崇高）"
+      }
+    },
+    {
+      "id": "Chromatic_Shot:_Condensed_Lightning_(Noble)",
+      "slug": "Chromatic_Shot:_Condensed_Lightning_(Noble)",
+      "name_zh": "五彩魔矢：聚雷（崇高）",
+      "url": "https://tlidb.com/cn/Chromatic_Shot%3A_Condensed_Lightning_%28Noble%29",
+      "source_order": 152,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "五彩魔矢：聚雷（崇高）"
+      }
+    },
+    {
+      "id": "Chromatic_Shot:_Condensed_Erosion_(Noble)",
+      "slug": "Chromatic_Shot:_Condensed_Erosion_(Noble)",
+      "name_zh": "五彩魔矢：聚蚀（崇高）",
+      "url": "https://tlidb.com/cn/Chromatic_Shot%3A_Condensed_Erosion_%28Noble%29",
+      "source_order": 153,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "专属辅助技能 Tag /154",
+        "link_text": "五彩魔矢：聚蚀（崇高）"
+      }
+    }
+  ]
+}

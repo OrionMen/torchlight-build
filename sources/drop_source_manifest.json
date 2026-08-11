@@ -1,0 +1,1337 @@
+{
+  "schema_version": 1,
+  "source": {
+    "site": "tlidb",
+    "locale": "cn",
+    "index_url": "https://tlidb.com/cn/Drop_Source",
+    "fetched_at": "2026-08-06T13:40:13.352283+00:00",
+    "http_status": 200,
+    "html_sha256": "a081b25799e183b9200efb2f2e5a7f1e5e2f09f474e06ca1793a00b73a6f46ae"
+  },
+  "system_id": "drop_source",
+  "entity_type": "drop_source",
+  "displayed_entry_count": 112,
+  "unique_entry_count": 109,
+  "duplicate_occurrence_count": 3,
+  "discovery_confidence": 0.84,
+  "quality": {
+    "displayed_entry_count": 112,
+    "unique_entry_count": 109,
+    "duplicate_occurrence_count": 3,
+    "discovery_confidence": 0.84,
+    "warnings": [
+      "3 duplicate link occurrence(s) removed",
+      "displayed count 112 does not match unique count 109"
+    ]
+  },
+  "entries": [
+    {
+      "id": "Treasure_Trove:_New_Ear_Hills",
+      "slug": "Treasure_Trove:_New_Ear_Hills",
+      "name_zh": "藏宝地：新穗山丘",
+      "url": "https://tlidb.com/cn/Treasure_Trove%3A_New_Ear_Hills",
+      "source_order": 0,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "藏宝地：新穗山丘"
+      }
+    },
+    {
+      "id": "Treasure_Trove:_Nectar_Valley",
+      "slug": "Treasure_Trove:_Nectar_Valley",
+      "name_zh": "藏宝地：蜜露溪谷",
+      "url": "https://tlidb.com/cn/Treasure_Trove%3A_Nectar_Valley",
+      "source_order": 1,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "藏宝地：蜜露溪谷"
+      }
+    },
+    {
+      "id": "Treasure_Trove:_Dawn_Avenue",
+      "slug": "Treasure_Trove:_Dawn_Avenue",
+      "name_zh": "藏宝地：曙光大道",
+      "url": "https://tlidb.com/cn/Treasure_Trove%3A_Dawn_Avenue",
+      "source_order": 2,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "藏宝地：曙光大道"
+      }
+    },
+    {
+      "id": "Treasure_Trove:_Sanctuary_of_Solitude",
+      "slug": "Treasure_Trove:_Sanctuary_of_Solitude",
+      "name_zh": "藏宝地：隐世金阁",
+      "url": "https://tlidb.com/cn/Treasure_Trove%3A_Sanctuary_of_Solitude",
+      "source_order": 3,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "藏宝地：隐世金阁"
+      }
+    },
+    {
+      "id": "Treasure_Trove:_Silver_Sands_End",
+      "slug": "Treasure_Trove:_Silver_Sands_End",
+      "name_zh": "藏宝地：银沙边城",
+      "url": "https://tlidb.com/cn/Treasure_Trove%3A_Silver_Sands_End",
+      "source_order": 4,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "藏宝地：银沙边城"
+      }
+    },
+    {
+      "id": "Treasure_Trove:_Hall_of_Grandiosity",
+      "slug": "Treasure_Trove:_Hall_of_Grandiosity",
+      "name_zh": "藏宝地：堂皇筵厅",
+      "url": "https://tlidb.com/cn/Treasure_Trove%3A_Hall_of_Grandiosity",
+      "source_order": 5,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "藏宝地：堂皇筵厅"
+      }
+    },
+    {
+      "id": "Drops_everywhere_in_Netherrealm",
+      "slug": "Drops_everywhere_in_Netherrealm",
+      "name_zh": "异界全域掉落",
+      "url": "https://tlidb.com/cn/Drops_everywhere_in_Netherrealm",
+      "source_order": 6,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "异界全域掉落"
+      }
+    },
+    {
+      "id": "Path_of_the_Brave_exclusive_drop",
+      "slug": "Path_of_the_Brave_exclusive_drop",
+      "name_zh": "勇者之路玩法限定掉落",
+      "url": "https://tlidb.com/cn/Path_of_the_Brave_exclusive_drop",
+      "source_order": 7,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "勇者之路玩法限定掉落"
+      }
+    },
+    {
+      "id": "Treasure_Chest_exclusive_drop",
+      "slug": "Treasure_Chest_exclusive_drop",
+      "name_zh": "宝箱玩法限定掉落",
+      "url": "https://tlidb.com/cn/Treasure_Chest_exclusive_drop",
+      "source_order": 8,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "宝箱玩法限定掉落"
+      }
+    },
+    {
+      "id": "Goddess_of_Hunting_exclusive_drop",
+      "slug": "Goddess_of_Hunting_exclusive_drop",
+      "name_zh": "狩猎之神玩法限定掉落",
+      "url": "https://tlidb.com/cn/Goddess_of_Hunting_exclusive_drop",
+      "source_order": 9,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "狩猎之神玩法限定掉落"
+      }
+    },
+    {
+      "id": "God_of_Machines_exclusive_drop",
+      "slug": "God_of_Machines_exclusive_drop",
+      "name_zh": "机械之神玩法限定掉落",
+      "url": "https://tlidb.com/cn/God_of_Machines_exclusive_drop",
+      "source_order": 10,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "机械之神玩法限定掉落"
+      }
+    },
+    {
+      "id": "God_of_Might_exclusive_drop",
+      "slug": "God_of_Might_exclusive_drop",
+      "name_zh": "巨力之神玩法限定掉落",
+      "url": "https://tlidb.com/cn/God_of_Might_exclusive_drop",
+      "source_order": 11,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "巨力之神玩法限定掉落"
+      }
+    },
+    {
+      "id": "God_of_War_exclusive_drop",
+      "slug": "God_of_War_exclusive_drop",
+      "name_zh": "征战之神玩法限定掉落",
+      "url": "https://tlidb.com/cn/God_of_War_exclusive_drop",
+      "source_order": 12,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "征战之神玩法限定掉落"
+      }
+    },
+    {
+      "id": "Has_a_chance_of_dropping_after_defeating_the_Watcher",
+      "slug": "Has_a_chance_of_dropping_after_defeating_the_Watcher",
+      "name_zh": "击败监视者有几率掉落",
+      "url": "https://tlidb.com/cn/Has_a_chance_of_dropping_after_defeating_the_Watcher",
+      "source_order": 13,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "击败监视者有几率掉落"
+      }
+    },
+    {
+      "id": "Has_a_chance_of_dropping_after_defeating_the_Realm_Lord_in_Primeval_Core",
+      "slug": "Has_a_chance_of_dropping_after_defeating_the_Realm_Lord_in_Primeval_Core",
+      "name_zh": "在原初之核击败万界之主有几率掉落",
+      "url": "https://tlidb.com/cn/Has_a_chance_of_dropping_after_defeating_the_Realm_Lord_in_Primeval_Core",
+      "source_order": 14,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "在原初之核击败万界之主有几率掉落"
+      }
+    },
+    {
+      "id": "Drops_everywhere_in_Netherrealm_(Timemark_8)",
+      "slug": "Drops_everywhere_in_Netherrealm_(Timemark_8)",
+      "name_zh": "异界时刻8全域掉落",
+      "url": "https://tlidb.com/cn/Drops_everywhere_in_Netherrealm_%28Timemark_8%29",
+      "source_order": 15,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "异界时刻8全域掉落"
+      }
+    },
+    {
+      "id": "Dark_Surge_exclusive_drop",
+      "slug": "Dark_Surge_exclusive_drop",
+      "name_zh": "黑潮玩法限定掉落",
+      "url": "https://tlidb.com/cn/Dark_Surge_exclusive_drop",
+      "source_order": 16,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "黑潮玩法限定掉落"
+      }
+    },
+    {
+      "id": "Has_a_chance_of_dropping_after_defeating_the_Tidemasters_at_any_difficulty_level_in_Void_Rift",
+      "slug": "Has_a_chance_of_dropping_after_defeating_the_Tidemasters_at_any_difficulty_level_in_Void_Rift",
+      "name_zh": "在虚空裂隙中击败任意难度的驭潮者有几率掉落",
+      "url": "https://tlidb.com/cn/Has_a_chance_of_dropping_after_defeating_the_Tidemasters_at_any_difficulty_level_in_Void_Rift",
+      "source_order": 17,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "在虚空裂隙中击败任意难度的驭潮者有几率掉落"
+      }
+    },
+    {
+      "id": "Has_a_chance_of_dropping_after_defeating_the_Tidemasters_at_the_highest_difficulty_level_in_Void_Rift_-_The_End",
+      "slug": "Has_a_chance_of_dropping_after_defeating_the_Tidemasters_at_the_highest_difficulty_level_in_Void_Rift_-_The_End",
+      "name_zh": "在虚空裂隙（终局）中击败最高难度的驭潮者有几率掉落",
+      "url": "https://tlidb.com/cn/Has_a_chance_of_dropping_after_defeating_the_Tidemasters_at_the_highest_difficulty_level_in_Void_Rift_-_The_End",
+      "source_order": 18,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "在虚空裂隙（终局）中击败最高难度的驭潮者有几率掉落"
+      }
+    },
+    {
+      "id": "Has_a_chance_of_dropping_after_defeating_Void_Pirates_in_Netherrealm",
+      "slug": "Has_a_chance_of_dropping_after_defeating_Void_Pirates_in_Netherrealm",
+      "name_zh": "在异界击败虚海之子有几率掉落",
+      "url": "https://tlidb.com/cn/Has_a_chance_of_dropping_after_defeating_Void_Pirates_in_Netherrealm",
+      "source_order": 19,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "在异界击败虚海之子有几率掉落"
+      }
+    },
+    {
+      "id": "Has_a_chance_of_dropping_after_defeating_the_Bride_of_Void_Sea_in_Void_Sea_Terminal",
+      "slug": "Has_a_chance_of_dropping_after_defeating_the_Bride_of_Void_Sea_in_Void_Sea_Terminal",
+      "name_zh": "在虚海终港击败鬼海新娘有几率掉落",
+      "url": "https://tlidb.com/cn/Has_a_chance_of_dropping_after_defeating_the_Bride_of_Void_Sea_in_Void_Sea_Terminal",
+      "source_order": 20,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "在虚海终港击败鬼海新娘有几率掉落"
+      }
+    },
+    {
+      "id": "Has_a_chance_of_dropping_after_defeating_the_Pirate_Commander_in_Void_Sea_Terminal",
+      "slug": "Has_a_chance_of_dropping_after_defeating_the_Pirate_Commander_in_Void_Sea_Terminal",
+      "name_zh": "在虚海终港击败虚海指挥官有几率掉落",
+      "url": "https://tlidb.com/cn/Has_a_chance_of_dropping_after_defeating_the_Pirate_Commander_in_Void_Sea_Terminal",
+      "source_order": 21,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "在虚海终港击败虚海指挥官有几率掉落"
+      }
+    },
+    {
+      "id": "Has_a_chance_of_dropping_after_defeating_Phantom_Lean_in_Shrine_of_the_Awakened",
+      "slug": "Has_a_chance_of_dropping_after_defeating_Phantom_Lean_in_Shrine_of_the_Awakened",
+      "name_zh": "在觉醒秘殿击败莱安幻影掉落",
+      "url": "https://tlidb.com/cn/Has_a_chance_of_dropping_after_defeating_Phantom_Lean_in_Shrine_of_the_Awakened",
+      "source_order": 22,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "在觉醒秘殿击败莱安幻影掉落"
+      }
+    },
+    {
+      "id": "Has_a_chance_of_dropping_after_defeating_Liv_in_Verdant_Land",
+      "slug": "Has_a_chance_of_dropping_after_defeating_Liv_in_Verdant_Land",
+      "name_zh": "在阴翳之地击败丽芙掉落",
+      "url": "https://tlidb.com/cn/Has_a_chance_of_dropping_after_defeating_Liv_in_Verdant_Land",
+      "source_order": 23,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "在阴翳之地击败丽芙掉落"
+      }
+    },
+    {
+      "id": "Has_a_chance_of_dropping_after_defeating_the_Watcher_(Timemark_8)",
+      "slug": "Has_a_chance_of_dropping_after_defeating_the_Watcher_(Timemark_8)",
+      "name_zh": "击败时刻8监视者有几率掉落",
+      "url": "https://tlidb.com/cn/Has_a_chance_of_dropping_after_defeating_the_Watcher_%28Timemark_8%29",
+      "source_order": 24,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "击败时刻8监视者有几率掉落"
+      }
+    },
+    {
+      "id": "Has_a_chance_of_dropping_after_defeating_the_Realm_Lord_in_Primeval_Core_(Timemark_8)",
+      "slug": "Has_a_chance_of_dropping_after_defeating_the_Realm_Lord_in_Primeval_Core_(Timemark_8)",
+      "name_zh": "在原初之核击败时刻8万界之主有几率掉落",
+      "url": "https://tlidb.com/cn/Has_a_chance_of_dropping_after_defeating_the_Realm_Lord_in_Primeval_Core_%28Timemark_8%29",
+      "source_order": 25,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "在原初之核击败时刻8万界之主有几率掉落"
+      }
+    },
+    {
+      "id": "Drops_in_Netherrealm_(Timemark_2_or_higher)",
+      "slug": "Drops_in_Netherrealm_(Timemark_2_or_higher)",
+      "name_zh": "异界时刻2以上掉落",
+      "url": "https://tlidb.com/cn/Drops_in_Netherrealm_%28Timemark_2_or_higher%29",
+      "source_order": 26,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "异界时刻2以上掉落"
+      }
+    },
+    {
+      "id": "Drops_in_Netherrealm_(Timemark_3_or_higher).",
+      "slug": "Drops_in_Netherrealm_(Timemark_3_or_higher).",
+      "name_zh": "异界时刻3以上掉落",
+      "url": "https://tlidb.com/cn/Drops_in_Netherrealm_%28Timemark_3_or_higher%29.",
+      "source_order": 27,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "异界时刻3以上掉落"
+      }
+    },
+    {
+      "id": "Drops_in_Netherrealm_(Timemark_4_or_higher)",
+      "slug": "Drops_in_Netherrealm_(Timemark_4_or_higher)",
+      "name_zh": "异界时刻4以上掉落",
+      "url": "https://tlidb.com/cn/Drops_in_Netherrealm_%28Timemark_4_or_higher%29",
+      "source_order": 28,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "异界时刻4以上掉落"
+      }
+    },
+    {
+      "id": "Drops_in_Netherrealm_(Timemark_5_or_higher).",
+      "slug": "Drops_in_Netherrealm_(Timemark_5_or_higher).",
+      "name_zh": "异界时刻5以上掉落",
+      "url": "https://tlidb.com/cn/Drops_in_Netherrealm_%28Timemark_5_or_higher%29.",
+      "source_order": 29,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "异界时刻5以上掉落"
+      }
+    },
+    {
+      "id": "Drops_in_Netherrealm_(Timemark_6_or_higher)",
+      "slug": "Drops_in_Netherrealm_(Timemark_6_or_higher)",
+      "name_zh": "异界时刻6以上掉落",
+      "url": "https://tlidb.com/cn/Drops_in_Netherrealm_%28Timemark_6_or_higher%29",
+      "source_order": 30,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "异界时刻6以上掉落"
+      }
+    },
+    {
+      "id": "Drops_from_Gameplay",
+      "slug": "Drops_from_Gameplay",
+      "name_zh": "玩法掉落",
+      "url": "https://tlidb.com/cn/Drops_from_Gameplay",
+      "source_order": 31,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "玩法掉落"
+      }
+    },
+    {
+      "id": "Drops_after_defeating_the_Watcher_(Timemark_7)",
+      "slug": "Drops_after_defeating_the_Watcher_(Timemark_7)",
+      "name_zh": "击败时刻7监视者掉落",
+      "url": "https://tlidb.com/cn/Drops_after_defeating_the_Watcher_%28Timemark_7%29",
+      "source_order": 32,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "击败时刻7监视者掉落"
+      }
+    },
+    {
+      "id": "Drops_after_defeating_the_Watcher_(Timemark_8)",
+      "slug": "Drops_after_defeating_the_Watcher_(Timemark_8)",
+      "name_zh": "击败时刻8监视者掉落",
+      "url": "https://tlidb.com/cn/Drops_after_defeating_the_Watcher_%28Timemark_8%29",
+      "source_order": 33,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "击败时刻8监视者掉落"
+      }
+    },
+    {
+      "id": "Dropped_after_defeating_Timemark_5_Watcher",
+      "slug": "Dropped_after_defeating_Timemark_5_Watcher",
+      "name_zh": "击败时刻5监视者掉落",
+      "url": "https://tlidb.com/cn/Dropped_after_defeating_Timemark_5_Watcher",
+      "source_order": 34,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "击败时刻5监视者掉落"
+      }
+    },
+    {
+      "id": "Dropped_after_defeating_Timemark_6_Watcher",
+      "slug": "Dropped_after_defeating_Timemark_6_Watcher",
+      "name_zh": "击败时刻6监视者掉落",
+      "url": "https://tlidb.com/cn/Dropped_after_defeating_Timemark_6_Watcher",
+      "source_order": 35,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "击败时刻6监视者掉落"
+      }
+    },
+    {
+      "id": "Netherrealm_Trait_Card_[Sentimental]_Exclusive_Drop",
+      "slug": "Netherrealm_Trait_Card_[Sentimental]_Exclusive_Drop",
+      "name_zh": "异界人格卡牌【眷恋】限定掉落",
+      "url": "https://tlidb.com/cn/Netherrealm_Trait_Card_%5BSentimental%5D_Exclusive_Drop",
+      "source_order": 36,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "异界人格卡牌【眷恋】限定掉落"
+      }
+    },
+    {
+      "id": "Netherrealm_Trait_Card_[Brave]_Exclusive_Drop",
+      "slug": "Netherrealm_Trait_Card_[Brave]_Exclusive_Drop",
+      "name_zh": "异界人格卡牌【悍勇】限定掉落",
+      "url": "https://tlidb.com/cn/Netherrealm_Trait_Card_%5BBrave%5D_Exclusive_Drop",
+      "source_order": 37,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "异界人格卡牌【悍勇】限定掉落"
+      }
+    },
+    {
+      "id": "Netherrealm_Trait_Card_[Relentless]_Exclusive_Drop",
+      "slug": "Netherrealm_Trait_Card_[Relentless]_Exclusive_Drop",
+      "name_zh": "异界人格卡牌【不懈】限定掉落",
+      "url": "https://tlidb.com/cn/Netherrealm_Trait_Card_%5BRelentless%5D_Exclusive_Drop",
+      "source_order": 38,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "异界人格卡牌【不懈】限定掉落"
+      }
+    },
+    {
+      "id": "Netherrealm_Trait_Card_[Tolerant]_Exclusive_Drop",
+      "slug": "Netherrealm_Trait_Card_[Tolerant]_Exclusive_Drop",
+      "name_zh": "异界人格卡牌【圆融】限定掉落",
+      "url": "https://tlidb.com/cn/Netherrealm_Trait_Card_%5BTolerant%5D_Exclusive_Drop",
+      "source_order": 39,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "异界人格卡牌【圆融】限定掉落"
+      }
+    },
+    {
+      "id": "Has_a_chance_of_dropping_after_defeating_a_Desire_Incarnation",
+      "slug": "Has_a_chance_of_dropping_after_defeating_a_Desire_Incarnation",
+      "name_zh": "击败极欲化身有几率掉落",
+      "url": "https://tlidb.com/cn/Has_a_chance_of_dropping_after_defeating_a_Desire_Incarnation",
+      "source_order": 40,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "击败极欲化身有几率掉落"
+      }
+    },
+    {
+      "id": "Has_a_chance_of_dropping_after_defeating_the_Law_Bearer_at_the_High_Court_of_Desire",
+      "slug": "Has_a_chance_of_dropping_after_defeating_the_Law_Bearer_at_the_High_Court_of_Desire",
+      "name_zh": "在审欲高庭击败持律人有几率掉落",
+      "url": "https://tlidb.com/cn/Has_a_chance_of_dropping_after_defeating_the_Law_Bearer_at_the_High_Court_of_Desire",
+      "source_order": 41,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "在审欲高庭击败持律人有几率掉落"
+      }
+    },
+    {
+      "id": "Obtained_when_recycling_a_Divinity_Slate",
+      "slug": "Obtained_when_recycling_a_Divinity_Slate",
+      "name_zh": "回收神格石板时获得",
+      "url": "https://tlidb.com/cn/Obtained_when_recycling_a_Divinity_Slate",
+      "source_order": 42,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "回收神格石板时获得"
+      }
+    },
+    {
+      "id": "The_City_of_Aeterna_exclusive_drop",
+      "slug": "The_City_of_Aeterna_exclusive_drop",
+      "name_zh": "永恒迷城玩法限定掉落",
+      "url": "https://tlidb.com/cn/The_City_of_Aeterna_exclusive_drop",
+      "source_order": 43,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "永恒迷城玩法限定掉落"
+      }
+    },
+    {
+      "id": "Has_a_chance_of_dropping_after_defeating_the_Lone_King_of_Aeterna_at_the_End_of_Aeterna",
+      "slug": "Has_a_chance_of_dropping_after_defeating_the_Lone_King_of_Aeterna_at_the_End_of_Aeterna",
+      "name_zh": "在永恒尽头击败永恒孤王有几率掉落",
+      "url": "https://tlidb.com/cn/Has_a_chance_of_dropping_after_defeating_the_Lone_King_of_Aeterna_at_the_End_of_Aeterna",
+      "source_order": 44,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "在永恒尽头击败永恒孤王有几率掉落"
+      }
+    },
+    {
+      "id": "Ruins_of_Aeterna_exclusive_drop",
+      "slug": "Ruins_of_Aeterna_exclusive_drop",
+      "name_zh": "永恒残垣限定掉落",
+      "url": "https://tlidb.com/cn/Ruins_of_Aeterna_exclusive_drop",
+      "source_order": 45,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "永恒残垣限定掉落"
+      }
+    },
+    {
+      "id": "Has_a_chance_of_dropping_after_defeating_the_Lone_King_of_Aeterna_at_the_End_of_Aeterna_at_high_difficulty",
+      "slug": "Has_a_chance_of_dropping_after_defeating_the_Lone_King_of_Aeterna_at_the_End_of_Aeterna_at_high_difficulty",
+      "name_zh": "在永恒尽头击败高难度的永恒孤王有几率掉落",
+      "url": "https://tlidb.com/cn/Has_a_chance_of_dropping_after_defeating_the_Lone_King_of_Aeterna_at_the_End_of_Aeterna_at_high_difficulty",
+      "source_order": 46,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "在永恒尽头击败高难度的永恒孤王有几率掉落"
+      }
+    },
+    {
+      "id": "Twinightmare_Exclusive_Drop",
+      "slug": "Twinightmare_Exclusive_Drop",
+      "name_zh": "双生梦魇玩法限定掉落",
+      "url": "https://tlidb.com/cn/Twinightmare_Exclusive_Drop",
+      "source_order": 47,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "双生梦魇玩法限定掉落"
+      }
+    },
+    {
+      "id": "Has_a_chance_of_dropping_after_defeating_the_Queen_of_Eternal_Sun_in_the_Great_Void",
+      "slug": "Has_a_chance_of_dropping_after_defeating_the_Queen_of_Eternal_Sun_in_the_Great_Void",
+      "name_zh": "在伟大虚空击败太阳女王有几率掉落",
+      "url": "https://tlidb.com/cn/Has_a_chance_of_dropping_after_defeating_the_Queen_of_Eternal_Sun_in_the_Great_Void",
+      "source_order": 48,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "在伟大虚空击败太阳女王有几率掉落"
+      }
+    },
+    {
+      "id": "Has_a_chance_of_dropping_after_defeating_the_Queen_of_Eternal_Sun_in_the_Great_Void_at_high_difficulty",
+      "slug": "Has_a_chance_of_dropping_after_defeating_the_Queen_of_Eternal_Sun_in_the_Great_Void_at_high_difficulty",
+      "name_zh": "在伟大虚空击败高难度的太阳女王有几率掉落",
+      "url": "https://tlidb.com/cn/Has_a_chance_of_dropping_after_defeating_the_Queen_of_Eternal_Sun_in_the_Great_Void_at_high_difficulty",
+      "source_order": 49,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "在伟大虚空击败高难度的太阳女王有几率掉落"
+      }
+    },
+    {
+      "id": "Has_a_chance_of_dropping_after_defeating_the_Pirate_Commander_in_the_Great_Void_at_the_highest_difficulty",
+      "slug": "Has_a_chance_of_dropping_after_defeating_the_Pirate_Commander_in_the_Great_Void_at_the_highest_difficulty",
+      "name_zh": "在伟大虚空击败最高难度的虚海指挥官有几率掉落",
+      "url": "https://tlidb.com/cn/Has_a_chance_of_dropping_after_defeating_the_Pirate_Commander_in_the_Great_Void_at_the_highest_difficulty",
+      "source_order": 50,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "在伟大虚空击败最高难度的虚海指挥官有几率掉落"
+      }
+    },
+    {
+      "id": "Trial_of_Might_exclusive_drop",
+      "slug": "Trial_of_Might_exclusive_drop",
+      "name_zh": "巨力试炼玩法限定掉落",
+      "url": "https://tlidb.com/cn/Trial_of_Might_exclusive_drop",
+      "source_order": 51,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "巨力试炼玩法限定掉落"
+      }
+    },
+    {
+      "id": "Netherrealm_Confusion_Card_[Voyager]_exclusive_drop",
+      "slug": "Netherrealm_Confusion_Card_[Voyager]_exclusive_drop",
+      "name_zh": "异界混乱卡牌【远行者】限定掉落",
+      "url": "https://tlidb.com/cn/Netherrealm_Confusion_Card_%5BVoyager%5D_exclusive_drop",
+      "source_order": 52,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "异界混乱卡牌【远行者】限定掉落"
+      }
+    },
+    {
+      "id": "Netherrealm_Confusion_Card_[Voyager]_exclusive_drop_from_Timemark_3_or_higher",
+      "slug": "Netherrealm_Confusion_Card_[Voyager]_exclusive_drop_from_Timemark_3_or_higher",
+      "name_zh": "时刻3及以上异界混乱卡牌【远行者】限定掉落",
+      "url": "https://tlidb.com/cn/Netherrealm_Confusion_Card_%5BVoyager%5D_exclusive_drop_from_Timemark_3_or_higher",
+      "source_order": 53,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "时刻3及以上异界混乱卡牌【远行者】限定掉落"
+      }
+    },
+    {
+      "id": "Netherrealm_Confusion_Card_[Voyager]_exclusive_drop_from_Timemark_5_or_higher",
+      "slug": "Netherrealm_Confusion_Card_[Voyager]_exclusive_drop_from_Timemark_5_or_higher",
+      "name_zh": "时刻5及以上异界混乱卡牌【远行者】限定掉落",
+      "url": "https://tlidb.com/cn/Netherrealm_Confusion_Card_%5BVoyager%5D_exclusive_drop_from_Timemark_5_or_higher",
+      "source_order": 54,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "时刻5及以上异界混乱卡牌【远行者】限定掉落"
+      }
+    },
+    {
+      "id": "Netherrealm_Confusion_Card_[Voyager]_exclusive_drop_from_Timemark_6_or_higher",
+      "slug": "Netherrealm_Confusion_Card_[Voyager]_exclusive_drop_from_Timemark_6_or_higher",
+      "name_zh": "时刻6及以上异界混乱卡牌【远行者】限定掉落",
+      "url": "https://tlidb.com/cn/Netherrealm_Confusion_Card_%5BVoyager%5D_exclusive_drop_from_Timemark_6_or_higher",
+      "source_order": 55,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "时刻6及以上异界混乱卡牌【远行者】限定掉落"
+      }
+    },
+    {
+      "id": "Netherrealm_Confusion_Card_[Voyager]_exclusive_drop_from_Timemark_7_or_higher",
+      "slug": "Netherrealm_Confusion_Card_[Voyager]_exclusive_drop_from_Timemark_7_or_higher",
+      "name_zh": "时刻7及以上异界混乱卡牌【远行者】限定掉落",
+      "url": "https://tlidb.com/cn/Netherrealm_Confusion_Card_%5BVoyager%5D_exclusive_drop_from_Timemark_7_or_higher",
+      "source_order": 56,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "时刻7及以上异界混乱卡牌【远行者】限定掉落"
+      }
+    },
+    {
+      "id": "Trial_of_the_Six_Gods_exclusive_drop",
+      "slug": "Trial_of_the_Six_Gods_exclusive_drop",
+      "name_zh": "六神试炼限定掉落",
+      "url": "https://tlidb.com/cn/Trial_of_the_Six_Gods_exclusive_drop",
+      "source_order": 57,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "六神试炼限定掉落"
+      }
+    },
+    {
+      "id": "Mistville_Resident_exclusive_drop.",
+      "slug": "Mistville_Resident_exclusive_drop.",
+      "name_zh": "雾都居民限定掉落",
+      "url": "https://tlidb.com/cn/Mistville_Resident_exclusive_drop.",
+      "source_order": 58,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "雾都居民限定掉落"
+      }
+    },
+    {
+      "id": "Master_of_Mistville_exclusive_drop.",
+      "slug": "Master_of_Mistville_exclusive_drop.",
+      "name_zh": "雾都主人限定掉落",
+      "url": "https://tlidb.com/cn/Master_of_Mistville_exclusive_drop.",
+      "source_order": 59,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "雾都主人限定掉落"
+      }
+    },
+    {
+      "id": "Drops_when_completing_Netherrealm_stages.",
+      "slug": "Drops_when_completing_Netherrealm_stages.",
+      "name_zh": "完成异界关卡时掉落",
+      "url": "https://tlidb.com/cn/Drops_when_completing_Netherrealm_stages.",
+      "source_order": 60,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "完成异界关卡时掉落"
+      }
+    },
+    {
+      "id": "Clockwork_Ballet_exclusive_drop",
+      "slug": "Clockwork_Ballet_exclusive_drop",
+      "name_zh": "玩偶俱乐部限定掉落",
+      "url": "https://tlidb.com/cn/Clockwork_Ballet_exclusive_drop",
+      "source_order": 61,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "玩偶俱乐部限定掉落"
+      }
+    },
+    {
+      "id": "Clockwork_Ballet_President_-_Silverwing_Danseuse_Exclusive_Drops",
+      "slug": "Clockwork_Ballet_President_-_Silverwing_Danseuse_Exclusive_Drops",
+      "name_zh": "俱乐部总裁·银翼舞伶限定掉落",
+      "url": "https://tlidb.com/cn/Clockwork_Ballet_President_-_Silverwing_Danseuse_Exclusive_Drops",
+      "source_order": 62,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "俱乐部总裁·银翼舞伶限定掉落"
+      }
+    },
+    {
+      "id": "Drops_after_defeating_the_Plane_Watcher_(Profound_Timemark_8)",
+      "slug": "Drops_after_defeating_the_Plane_Watcher_(Profound_Timemark_8)",
+      "name_zh": "击败幽邃时刻8监视者掉落",
+      "url": "https://tlidb.com/cn/Drops_after_defeating_the_Plane_Watcher_%28Profound_Timemark_8%29",
+      "source_order": 63,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "击败幽邃时刻8监视者掉落"
+      }
+    },
+    {
+      "id": "Drops_in_Netherrealm_(Timemark_7_or_higher)",
+      "slug": "Drops_in_Netherrealm_(Timemark_7_or_higher)",
+      "name_zh": "异界时刻7以上掉落",
+      "url": "https://tlidb.com/cn/Drops_in_Netherrealm_%28Timemark_7_or_higher%29",
+      "source_order": 64,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "异界时刻7以上掉落"
+      }
+    },
+    {
+      "id": "Drops_in_Netherrealm_(Profound_Timemark_8)",
+      "slug": "Drops_in_Netherrealm_(Profound_Timemark_8)",
+      "name_zh": "异界幽邃时刻8掉落",
+      "url": "https://tlidb.com/cn/Drops_in_Netherrealm_%28Profound_Timemark_8%29",
+      "source_order": 65,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "异界幽邃时刻8掉落"
+      }
+    },
+    {
+      "id": "Obtained_when_recycling_any_Compass",
+      "slug": "Obtained_when_recycling_any_Compass",
+      "name_zh": "回收任意罗盘获得",
+      "url": "https://tlidb.com/cn/Obtained_when_recycling_any_Compass",
+      "source_order": 66,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "回收任意罗盘获得"
+      }
+    },
+    {
+      "id": "Has_a_chance_of_being_dropped_by_enemies_in_Glacial_Abyss",
+      "slug": "Has_a_chance_of_being_dropped_by_enemies_in_Glacial_Abyss",
+      "name_zh": "在冰封寒渊击败敌人有几率掉落",
+      "url": "https://tlidb.com/cn/Has_a_chance_of_being_dropped_by_enemies_in_Glacial_Abyss",
+      "source_order": 67,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "在冰封寒渊击败敌人有几率掉落"
+      }
+    },
+    {
+      "id": "Has_a_chance_of_being_dropped_by_enemies_in_Voidlands",
+      "slug": "Has_a_chance_of_being_dropped_by_enemies_in_Voidlands",
+      "name_zh": "在幽夜暗域击败敌人有几率掉落",
+      "url": "https://tlidb.com/cn/Has_a_chance_of_being_dropped_by_enemies_in_Voidlands",
+      "source_order": 68,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "在幽夜暗域击败敌人有几率掉落"
+      }
+    },
+    {
+      "id": "Has_a_chance_of_being_dropped_by_enemies_in_Thunder_Wastes",
+      "slug": "Has_a_chance_of_being_dropped_by_enemies_in_Thunder_Wastes",
+      "name_zh": "在雷鸣废土击败敌人有几率掉落",
+      "url": "https://tlidb.com/cn/Has_a_chance_of_being_dropped_by_enemies_in_Thunder_Wastes",
+      "source_order": 69,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "在雷鸣废土击败敌人有几率掉落"
+      }
+    },
+    {
+      "id": "Has_a_chance_of_being_dropped_by_enemies_in_Steel_Forge",
+      "slug": "Has_a_chance_of_being_dropped_by_enemies_in_Steel_Forge",
+      "name_zh": "在钢铁炼境击败敌人有几率掉落",
+      "url": "https://tlidb.com/cn/Has_a_chance_of_being_dropped_by_enemies_in_Steel_Forge",
+      "source_order": 70,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "在钢铁炼境击败敌人有几率掉落"
+      }
+    },
+    {
+      "id": "Has_a_chance_of_being_dropped_by_enemies_in_Blistering_Lava_Sea",
+      "slug": "Has_a_chance_of_being_dropped_by_enemies_in_Blistering_Lava_Sea",
+      "name_zh": "在沸涌炎海击败敌人有几率掉落",
+      "url": "https://tlidb.com/cn/Has_a_chance_of_being_dropped_by_enemies_in_Blistering_Lava_Sea",
+      "source_order": 71,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "在沸涌炎海击败敌人有几率掉落"
+      }
+    },
+    {
+      "id": "Has_a_chance_of_being_dropped_by_enemies_defeated_in_Deep_Space_difficulty",
+      "slug": "Has_a_chance_of_being_dropped_by_enemies_defeated_in_Deep_Space_difficulty",
+      "name_zh": "在深空难度下击败敌人有几率掉落",
+      "url": "https://tlidb.com/cn/Has_a_chance_of_being_dropped_by_enemies_defeated_in_Deep_Space_difficulty",
+      "source_order": 72,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "在深空难度下击败敌人有几率掉落"
+      }
+    },
+    {
+      "id": "Has_a_chance_of_dropping_after_defeating_Dwarf_King_in_Heart_of_Kazsan",
+      "slug": "Has_a_chance_of_dropping_after_defeating_Dwarf_King_in_Heart_of_Kazsan",
+      "name_zh": "在卡兹萨恩之心击败矮人王有几率掉落",
+      "url": "https://tlidb.com/cn/Has_a_chance_of_dropping_after_defeating_Dwarf_King_in_Heart_of_Kazsan",
+      "source_order": 73,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "在卡兹萨恩之心击败矮人王有几率掉落"
+      }
+    },
+    {
+      "id": "Has_a_chance_of_dropping_after_defeating_Ordrak_in_Rusted_Abyss",
+      "slug": "Has_a_chance_of_dropping_after_defeating_Ordrak_in_Rusted_Abyss",
+      "name_zh": "在锈蚀深渊击败邪龙有几率掉落",
+      "url": "https://tlidb.com/cn/Has_a_chance_of_dropping_after_defeating_Ordrak_in_Rusted_Abyss",
+      "source_order": 74,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "在锈蚀深渊击败邪龙有几率掉落"
+      }
+    },
+    {
+      "id": "Has_a_chance_of_dropping_after_defeating_King_Lionheart_and_the_Queen_in_Kings_Hub_and_Defiled_Side_Chamber",
+      "slug": "Has_a_chance_of_dropping_after_defeating_King_Lionheart_and_the_Queen_in_Kings_Hub_and_Defiled_Side_Chamber",
+      "name_zh": "在王者枢纽和渎神偏殿击败狮心王和女王有几率掉落",
+      "url": "https://tlidb.com/cn/Has_a_chance_of_dropping_after_defeating_King_Lionheart_and_the_Queen_in_Kings_Hub_and_Defiled_Side_Chamber",
+      "source_order": 75,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "在王者枢纽和渎神偏殿击败狮心王和女王有几率掉落"
+      }
+    },
+    {
+      "id": "Obtained_from_Tarot_Reader_-_Fiona",
+      "slug": "Obtained_from_Tarot_Reader_-_Fiona",
+      "name_zh": "在塔罗师菲欧娜处兑换获得",
+      "url": "https://tlidb.com/cn/Obtained_from_Tarot_Reader_-_Fiona",
+      "source_order": 76,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "在塔罗师菲欧娜处兑换获得"
+      }
+    },
+    {
+      "id": "Dropped_from_the_Trade_gameplay_in_Sandlord",
+      "slug": "Dropped_from_the_Trade_gameplay_in_Sandlord",
+      "name_zh": "在沙海大亨的贸易玩法掉落",
+      "url": "https://tlidb.com/cn/Dropped_from_the_Trade_gameplay_in_Sandlord",
+      "source_order": 77,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "在沙海大亨的贸易玩法掉落"
+      }
+    },
+    {
+      "id": "Obtained_from_the_Trader",
+      "slug": "Obtained_from_the_Trader",
+      "name_zh": "在杂货商处兑换获得",
+      "url": "https://tlidb.com/cn/Obtained_from_the_Trader",
+      "source_order": 78,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "在杂货商处兑换获得"
+      }
+    },
+    {
+      "id": "Has_a_chance_of_dropping_after_defeating_the_Nightmare_Knight_at_Timemark_8_or_higher",
+      "slug": "Has_a_chance_of_dropping_after_defeating_the_Nightmare_Knight_at_Timemark_8_or_higher",
+      "name_zh": "击败时刻8以上的噩梦骑士有几率掉落",
+      "url": "https://tlidb.com/cn/Has_a_chance_of_dropping_after_defeating_the_Nightmare_Knight_at_Timemark_8_or_higher",
+      "source_order": 79,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "击败时刻8以上的噩梦骑士有几率掉落"
+      }
+    },
+    {
+      "id": "Has_a_chance_of_dropping_after_defeating_the_Desert_Blight_at_Timemark_8_or_higher",
+      "slug": "Has_a_chance_of_dropping_after_defeating_the_Desert_Blight_at_Timemark_8_or_higher",
+      "name_zh": "击败时刻8以上的狂沙之恶劫有几率掉落",
+      "url": "https://tlidb.com/cn/Has_a_chance_of_dropping_after_defeating_the_Desert_Blight_at_Timemark_8_or_higher",
+      "source_order": 80,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "击败时刻8以上的狂沙之恶劫有几率掉落"
+      }
+    },
+    {
+      "id": "Outlaw_exclusive_drop",
+      "slug": "Outlaw_exclusive_drop",
+      "name_zh": "通缉玩法限定掉落",
+      "url": "https://tlidb.com/cn/Outlaw_exclusive_drop",
+      "source_order": 81,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "通缉玩法限定掉落"
+      }
+    },
+    {
+      "id": "Cube_Gameplay_Exclusive_Drops",
+      "slug": "Cube_Gameplay_Exclusive_Drops",
+      "name_zh": "魔方玩法限定掉落",
+      "url": "https://tlidb.com/cn/Cube_Gameplay_Exclusive_Drops",
+      "source_order": 82,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "魔方玩法限定掉落"
+      }
+    },
+    {
+      "id": "Obtained_by_recycling_Advanced_Ethereal_Prisms",
+      "slug": "Obtained_by_recycling_Advanced_Ethereal_Prisms",
+      "name_zh": "回收高级异度棱镜获得",
+      "url": "https://tlidb.com/cn/Obtained_by_recycling_Advanced_Ethereal_Prisms",
+      "source_order": 83,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "回收高级异度棱镜获得"
+      }
+    },
+    {
+      "id": "Overrealm_exclusive_drop",
+      "slug": "Overrealm_exclusive_drop",
+      "name_zh": "叠界玩法限定掉落",
+      "url": "https://tlidb.com/cn/Overrealm_exclusive_drop",
+      "source_order": 84,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "叠界玩法限定掉落"
+      }
+    },
+    {
+      "id": "Cage_of_Original_Sin_exclusive_drop_in_Deep_Space_Netherrealm_stages",
+      "slug": "Cage_of_Original_Sin_exclusive_drop_in_Deep_Space_Netherrealm_stages",
+      "name_zh": "异界深空关卡中，原罪囚笼玩法限定掉落",
+      "url": "https://tlidb.com/cn/Cage_of_Original_Sin_exclusive_drop_in_Deep_Space_Netherrealm_stages",
+      "source_order": 85,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "异界深空关卡中，原罪囚笼玩法限定掉落"
+      }
+    },
+    {
+      "id": "Has_a_chance_of_dropping_after_defeating_the_Boss_Doorkeeper_in_the_Overrealm_at_Profound_Timemark_8_or_above",
+      "slug": "Has_a_chance_of_dropping_after_defeating_the_Boss_Doorkeeper_in_the_Overrealm_at_Profound_Timemark_8_or_above",
+      "name_zh": "幽邃时刻8以上难度的叠界玩法中，击败首领“守门人”有几率掉落",
+      "url": "https://tlidb.com/cn/Has_a_chance_of_dropping_after_defeating_the_Boss_Doorkeeper_in_the_Overrealm_at_Profound_Timemark_8_or_above",
+      "source_order": 86,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "幽邃时刻8以上难度的叠界玩法中，击败首领“守门人”有几率掉落"
+      }
+    },
+    {
+      "id": "Obtained_by_recycling_[Inverse_Images]",
+      "slug": "Obtained_by_recycling_[Inverse_Images]",
+      "name_zh": "回收【逆像】获得",
+      "url": "https://tlidb.com/cn/Obtained_by_recycling_%5BInverse_Images%5D",
+      "source_order": 87,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "回收【逆像】获得"
+      }
+    },
+    {
+      "id": "Obtained_by_recycling_Exclusive_Skills",
+      "slug": "Obtained_by_recycling_Exclusive_Skills",
+      "name_zh": "回收专属技能获得",
+      "url": "https://tlidb.com/cn/Obtained_by_recycling_Exclusive_Skills",
+      "source_order": 88,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "回收专属技能获得"
+      }
+    },
+    {
+      "id": "Obtained_by_recycling_Compasses",
+      "slug": "Obtained_by_recycling_Compasses",
+      "name_zh": "回收罗盘获得",
+      "url": "https://tlidb.com/cn/Obtained_by_recycling_Compasses",
+      "source_order": 89,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "回收罗盘获得"
+      }
+    },
+    {
+      "id": "Vorax_Gameplay_Exclusive_Drops",
+      "slug": "Vorax_Gameplay_Exclusive_Drops",
+      "name_zh": "渴瘾玩法限定掉落",
+      "url": "https://tlidb.com/cn/Vorax_Gameplay_Exclusive_Drops",
+      "source_order": 90,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "渴瘾玩法限定掉落"
+      }
+    },
+    {
+      "id": "Obtained_by_recycling_the_corresponding_Legendary_gear",
+      "slug": "Obtained_by_recycling_the_corresponding_Legendary_gear",
+      "name_zh": "回收对应传奇装备获得",
+      "url": "https://tlidb.com/cn/Obtained_by_recycling_the_corresponding_Legendary_gear",
+      "source_order": 91,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "回收对应传奇装备获得"
+      }
+    },
+    {
+      "id": "Obtained_by_recycling_Vorax_Gear",
+      "slug": "Obtained_by_recycling_Vorax_Gear",
+      "name_zh": "回收渴瘾装备获得",
+      "url": "https://tlidb.com/cn/Obtained_by_recycling_Vorax_Gear",
+      "source_order": 92,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "回收渴瘾装备获得"
+      }
+    },
+    {
+      "id": "An_exclusive_drop_from_Trial:_Goddess_of_Hunting_in_Deep_Space_Netherrealm_stages",
+      "slug": "An_exclusive_drop_from_Trial:_Goddess_of_Hunting_in_Deep_Space_Netherrealm_stages",
+      "name_zh": "异界深空关卡中，狩猎之神试炼限定掉落",
+      "url": "https://tlidb.com/cn/An_exclusive_drop_from_Trial%3A_Goddess_of_Hunting_in_Deep_Space_Netherrealm_stages",
+      "source_order": 93,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "异界深空关卡中，狩猎之神试炼限定掉落"
+      }
+    },
+    {
+      "id": "Has_a_chance_to_be_obatined_from_the_Rainbow_Antidode_Vial_after_completing_the_Vorax_endgame_battle",
+      "slug": "Has_a_chance_to_be_obatined_from_the_Rainbow_Antidode_Vial_after_completing_the_Vorax_endgame_battle",
+      "name_zh": "完成渴瘾玩法的终局战斗，开启彩色解药罐有概率获得",
+      "url": "https://tlidb.com/cn/Has_a_chance_to_be_obatined_from_the_Rainbow_Antidode_Vial_after_completing_the_Vorax_endgame_battle",
+      "source_order": 94,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "完成渴瘾玩法的终局战斗，开启彩色解药罐有概率获得"
+      }
+    },
+    {
+      "id": "Has_a_chance_of_dropping_in_Netherrealm_stages_and_from_Gods_Chests",
+      "slug": "Has_a_chance_of_dropping_in_Netherrealm_stages_and_from_Gods_Chests",
+      "name_zh": "异界关卡及众神宝箱中有概率掉落",
+      "url": "https://tlidb.com/cn/Has_a_chance_of_dropping_in_Netherrealm_stages_and_from_Gods_Chests",
+      "source_order": 95,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "异界关卡及众神宝箱中有概率掉落"
+      }
+    },
+    {
+      "id": "An_exclusive_drop_from_the_Creation_Engine_gameplay_at_Profound_Timemark_8_or_higher",
+      "slug": "An_exclusive_drop_from_the_Creation_Engine_gameplay_at_Profound_Timemark_8_or_higher",
+      "name_zh": "幽邃时刻8以上难度的造物机玩法限定掉落",
+      "url": "https://tlidb.com/cn/An_exclusive_drop_from_the_Creation_Engine_gameplay_at_Profound_Timemark_8_or_higher",
+      "source_order": 96,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "幽邃时刻8以上难度的造物机玩法限定掉落"
+      }
+    },
+    {
+      "id": "Obtained_by_recycling_Special_Organs",
+      "slug": "Obtained_by_recycling_Special_Organs",
+      "name_zh": "回收特殊器官获得",
+      "url": "https://tlidb.com/cn/Obtained_by_recycling_Special_Organs",
+      "source_order": 97,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "回收特殊器官获得"
+      }
+    },
+    {
+      "id": "An_exclusive_drop_from_the_Path_of_the_Brave_gameplay._An_exclusive_drop_from_the_Creation_Engine_gameplay_at_Profound_Timemark_8_or_higher",
+      "slug": "An_exclusive_drop_from_the_Path_of_the_Brave_gameplay._An_exclusive_drop_from_the_Creation_Engine_gameplay_at_Profound_Timemark_8_or_higher",
+      "name_zh": "勇者之路玩法限定掉落、幽邃时刻8以上难度的造物机玩法限定掉落",
+      "url": "https://tlidb.com/cn/An_exclusive_drop_from_the_Path_of_the_Brave_gameplay._An_exclusive_drop_from_the_Creation_Engine_gameplay_at_Profound_Timemark_8_or_higher",
+      "source_order": 98,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "勇者之路玩法限定掉落、幽邃时刻8以上难度的造物机玩法限定掉落"
+      }
+    },
+    {
+      "id": "An_exclusive_drop_from_the_Creation_Engine_gameplay_at_Timemark_8_or_higher",
+      "slug": "An_exclusive_drop_from_the_Creation_Engine_gameplay_at_Timemark_8_or_higher",
+      "name_zh": "时刻8以上难度的造物机玩法限定掉落",
+      "url": "https://tlidb.com/cn/An_exclusive_drop_from_the_Creation_Engine_gameplay_at_Timemark_8_or_higher",
+      "source_order": 99,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "时刻8以上难度的造物机玩法限定掉落"
+      }
+    },
+    {
+      "id": "An_exclusive_drop_from_Path_of_the_Brave_and_Creation_Engine",
+      "slug": "An_exclusive_drop_from_Path_of_the_Brave_and_Creation_Engine",
+      "name_zh": "勇者之路玩法限定掉落、造物机玩法限定掉落",
+      "url": "https://tlidb.com/cn/An_exclusive_drop_from_Path_of_the_Brave_and_Creation_Engine",
+      "source_order": 100,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "勇者之路玩法限定掉落、造物机玩法限定掉落"
+      }
+    },
+    {
+      "id": "Lunaria_Gameplay_Exclusive_Drops",
+      "slug": "Lunaria_Gameplay_Exclusive_Drops",
+      "name_zh": "明月玩法限定掉落",
+      "url": "https://tlidb.com/cn/Lunaria_Gameplay_Exclusive_Drops",
+      "source_order": 101,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "明月玩法限定掉落"
+      }
+    },
+    {
+      "id": "Must_activate_the_corresponding_Talent_in_Profound_Talent_Constellation._Drops_after_defeating_the_Boss",
+      "slug": "Must_activate_the_corresponding_Talent_in_Profound_Talent_Constellation._Drops_after_defeating_the_Boss",
+      "name_zh": "需要激活幽邃天赋星群对应天赋，击败首领掉落获得",
+      "url": "https://tlidb.com/cn/Must_activate_the_corresponding_Talent_in_Profound_Talent_Constellation._Drops_after_defeating_the_Boss",
+      "source_order": 102,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "需要激活幽邃天赋星群对应天赋，击败首领掉落获得"
+      }
+    },
+    {
+      "id": "Obtained_by_recycling_advanced_Revival_materials",
+      "slug": "Obtained_by_recycling_advanced_Revival_materials",
+      "name_zh": "回收高级复苏材料获得",
+      "url": "https://tlidb.com/cn/Obtained_by_recycling_advanced_Revival_materials",
+      "source_order": 103,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "回收高级复苏材料获得"
+      }
+    },
+    {
+      "id": "Afterlight_Season_Exclusive_Drops",
+      "slug": "Afterlight_Season_Exclusive_Drops",
+      "name_zh": "守夜玩法限定掉落",
+      "url": "https://tlidb.com/cn/Afterlight_Season_Exclusive_Drops",
+      "source_order": 104,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "守夜玩法限定掉落"
+      }
+    },
+    {
+      "id": "Obtained_by_recycling_Legendary_Lunar_Strings",
+      "slug": "Obtained_by_recycling_Legendary_Lunar_Strings",
+      "name_zh": "回收传奇品质月弦获得",
+      "url": "https://tlidb.com/cn/Obtained_by_recycling_Legendary_Lunar_Strings",
+      "source_order": 105,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "回收传奇品质月弦获得"
+      }
+    },
+    {
+      "id": "Obtained_by_recycling_non-Ultimate_Divine_Remnants",
+      "slug": "Obtained_by_recycling_non-Ultimate_Divine_Remnants",
+      "name_zh": "回收非至臻神骸获得",
+      "url": "https://tlidb.com/cn/Obtained_by_recycling_non-Ultimate_Divine_Remnants",
+      "source_order": 106,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "回收非至臻神骸获得"
+      }
+    },
+    {
+      "id": "An_exclusive_drop_from_the_Goddess_of_Hunting_(Safari)_gameplay_at_Profound_Timemark_8_or_higher",
+      "slug": "An_exclusive_drop_from_the_Goddess_of_Hunting_(Safari)_gameplay_at_Profound_Timemark_8_or_higher",
+      "name_zh": "幽邃时刻8以上难度的狩猎之神（游猎）玩法限定掉落",
+      "url": "https://tlidb.com/cn/An_exclusive_drop_from_the_Goddess_of_Hunting_%28Safari%29_gameplay_at_Profound_Timemark_8_or_higher",
+      "source_order": 107,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "幽邃时刻8以上难度的狩猎之神（游猎）玩法限定掉落"
+      }
+    },
+    {
+      "id": "An_exclusive_drop_from_the_Vigil_gameplay_at_Profound_Timemark_8_or_higher",
+      "slug": "An_exclusive_drop_from_the_Vigil_gameplay_at_Profound_Timemark_8_or_higher",
+      "name_zh": "幽邃时刻8以上难度的守夜玩法限定掉落",
+      "url": "https://tlidb.com/cn/An_exclusive_drop_from_the_Vigil_gameplay_at_Profound_Timemark_8_or_higher",
+      "source_order": 108,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "掉落来源 /112",
+        "link_text": "幽邃时刻8以上难度的守夜玩法限定掉落"
+      }
+    }
+  ]
+}

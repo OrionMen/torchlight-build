@@ -1,0 +1,424 @@
+{
+  "schema_version": 1,
+  "source": {
+    "site": "tlidb",
+    "locale": "cn",
+    "index_url": "https://tlidb.com/cn/Tip",
+    "fetched_at": "2026-08-06T13:40:42.056367+00:00",
+    "http_status": 200,
+    "html_sha256": "c932389ca6f19a379d72519420bb4920e19afaecd8a18e3c58f5e781c31cd92e"
+  },
+  "system_id": "tip",
+  "entity_type": "tip",
+  "displayed_entry_count": 150,
+  "unique_entry_count": 33,
+  "duplicate_occurrence_count": 0,
+  "discovery_confidence": 0.85,
+  "quality": {
+    "displayed_entry_count": 150,
+    "unique_entry_count": 33,
+    "duplicate_occurrence_count": 0,
+    "discovery_confidence": 0.85,
+    "warnings": [
+      "displayed count 150 does not match unique count 33"
+    ]
+  },
+  "entries": [
+    {
+      "id": "Hero",
+      "slug": "Hero",
+      "name_zh": "Hero",
+      "url": "https://tlidb.com/cn/Hero",
+      "source_order": 0,
+      "source_locator": {
+        "dom_locator": "body",
+        "container_label": "提示 /150",
+        "link_text": "Hero"
+      }
+    },
+    {
+      "id": "Talent",
+      "slug": "Talent",
+      "name_zh": "Talent",
+      "url": "https://tlidb.com/cn/Talent",
+      "source_order": 1,
+      "source_locator": {
+        "dom_locator": "body",
+        "container_label": "提示 /150",
+        "link_text": "Talent"
+      }
+    },
+    {
+      "id": "Inventory",
+      "slug": "Inventory",
+      "name_zh": "Stash",
+      "url": "https://tlidb.com/cn/Inventory",
+      "source_order": 2,
+      "source_locator": {
+        "dom_locator": "body",
+        "container_label": "提示 /150",
+        "link_text": "Stash"
+      }
+    },
+    {
+      "id": "Legendary_Gear",
+      "slug": "Legendary_Gear",
+      "name_zh": "Legendary Gear",
+      "url": "https://tlidb.com/cn/Legendary_Gear",
+      "source_order": 3,
+      "source_locator": {
+        "dom_locator": "body",
+        "container_label": "提示 /150",
+        "link_text": "Legendary Gear"
+      }
+    },
+    {
+      "id": "Pactspirit",
+      "slug": "Pactspirit",
+      "name_zh": "Pactspirit",
+      "url": "https://tlidb.com/cn/Pactspirit",
+      "source_order": 4,
+      "source_locator": {
+        "dom_locator": "body",
+        "container_label": "提示 /150",
+        "link_text": "Pactspirit"
+      }
+    },
+    {
+      "id": "Drop_Source",
+      "slug": "Drop_Source",
+      "name_zh": "Drop Source",
+      "url": "https://tlidb.com/cn/Drop_Source",
+      "source_order": 5,
+      "source_locator": {
+        "dom_locator": "body",
+        "container_label": "提示 /150",
+        "link_text": "Drop Source"
+      }
+    },
+    {
+      "id": "Destiny",
+      "slug": "Destiny",
+      "name_zh": "Destiny",
+      "url": "https://tlidb.com/cn/Destiny",
+      "source_order": 6,
+      "source_locator": {
+        "dom_locator": "body",
+        "container_label": "提示 /150",
+        "link_text": "Destiny"
+      }
+    },
+    {
+      "id": "Active_Skill",
+      "slug": "Active_Skill",
+      "name_zh": "Active Skill",
+      "url": "https://tlidb.com/cn/Active_Skill",
+      "source_order": 7,
+      "source_locator": {
+        "dom_locator": "body",
+        "container_label": "提示 /150",
+        "link_text": "Active Skill"
+      }
+    },
+    {
+      "id": "Support_Skill",
+      "slug": "Support_Skill",
+      "name_zh": "Support Skill",
+      "url": "https://tlidb.com/cn/Support_Skill",
+      "source_order": 8,
+      "source_locator": {
+        "dom_locator": "body",
+        "container_label": "提示 /150",
+        "link_text": "Support Skill"
+      }
+    },
+    {
+      "id": "Passive_Skill",
+      "slug": "Passive_Skill",
+      "name_zh": "Passive Skill",
+      "url": "https://tlidb.com/cn/Passive_Skill",
+      "source_order": 9,
+      "source_locator": {
+        "dom_locator": "body",
+        "container_label": "提示 /150",
+        "link_text": "Passive Skill"
+      }
+    },
+    {
+      "id": "Activation_Medium_Skill",
+      "slug": "Activation_Medium_Skill",
+      "name_zh": "Activation Medium Skill",
+      "url": "https://tlidb.com/cn/Activation_Medium_Skill",
+      "source_order": 10,
+      "source_locator": {
+        "dom_locator": "body",
+        "container_label": "提示 /150",
+        "link_text": "Activation Medium Skill"
+      }
+    },
+    {
+      "id": "Magnificent_Support_Skill",
+      "slug": "Magnificent_Support_Skill",
+      "name_zh": "Magnificent Support Skill",
+      "url": "https://tlidb.com/cn/Magnificent_Support_Skill",
+      "source_order": 11,
+      "source_locator": {
+        "dom_locator": "body",
+        "container_label": "提示 /150",
+        "link_text": "Magnificent Support Skill"
+      }
+    },
+    {
+      "id": "Noble_Support_Skill",
+      "slug": "Noble_Support_Skill",
+      "name_zh": "Noble Support Skill",
+      "url": "https://tlidb.com/cn/Noble_Support_Skill",
+      "source_order": 12,
+      "source_locator": {
+        "dom_locator": "body",
+        "container_label": "提示 /150",
+        "link_text": "Noble Support Skill"
+      }
+    },
+    {
+      "id": "Modularization_Skill",
+      "slug": "Modularization_Skill",
+      "name_zh": "Modularization Skill",
+      "url": "https://tlidb.com/cn/Modularization_Skill",
+      "source_order": 13,
+      "source_locator": {
+        "dom_locator": "body",
+        "container_label": "提示 /150",
+        "link_text": "Modularization Skill"
+      }
+    },
+    {
+      "id": "Craft",
+      "slug": "Craft",
+      "name_zh": "Craft",
+      "url": "https://tlidb.com/cn/Craft",
+      "source_order": 14,
+      "source_locator": {
+        "dom_locator": "body",
+        "container_label": "提示 /150",
+        "link_text": "Craft"
+      }
+    },
+    {
+      "id": "Corrosion",
+      "slug": "Corrosion",
+      "name_zh": "Corrosion",
+      "url": "https://tlidb.com/cn/Corrosion",
+      "source_order": 15,
+      "source_locator": {
+        "dom_locator": "body",
+        "container_label": "提示 /150",
+        "link_text": "Corrosion"
+      }
+    },
+    {
+      "id": "Gear_Empowerment",
+      "slug": "Gear_Empowerment",
+      "name_zh": "Gear Empowerment",
+      "url": "https://tlidb.com/cn/Gear_Empowerment",
+      "source_order": 16,
+      "source_locator": {
+        "dom_locator": "body",
+        "container_label": "提示 /150",
+        "link_text": "Gear Empowerment"
+      }
+    },
+    {
+      "id": "Nether_Kings_Divinity",
+      "slug": "Nether_Kings_Divinity",
+      "name_zh": "Nether King's Divinity",
+      "url": "https://tlidb.com/cn/Nether_Kings_Divinity",
+      "source_order": 17,
+      "source_locator": {
+        "dom_locator": "body",
+        "container_label": "提示 /150",
+        "link_text": "Nether King's Divinity"
+      }
+    },
+    {
+      "id": "Path_of_Progression",
+      "slug": "Path_of_Progression",
+      "name_zh": "Path of Progression",
+      "url": "https://tlidb.com/cn/Path_of_Progression",
+      "source_order": 18,
+      "source_locator": {
+        "dom_locator": "body",
+        "container_label": "提示 /150",
+        "link_text": "Path of Progression"
+      }
+    },
+    {
+      "id": "Help",
+      "slug": "Help",
+      "name_zh": "Help",
+      "url": "https://tlidb.com/cn/Help",
+      "source_order": 19,
+      "source_locator": {
+        "dom_locator": "body",
+        "container_label": "提示 /150",
+        "link_text": "Help"
+      }
+    },
+    {
+      "id": "Codex",
+      "slug": "Codex",
+      "name_zh": "Codex",
+      "url": "https://tlidb.com/cn/Codex",
+      "source_order": 20,
+      "source_locator": {
+        "dom_locator": "body",
+        "container_label": "提示 /150",
+        "link_text": "Codex"
+      }
+    },
+    {
+      "id": "Hyperlink",
+      "slug": "Hyperlink",
+      "name_zh": "Hyperlink",
+      "url": "https://tlidb.com/cn/Hyperlink",
+      "source_order": 21,
+      "source_locator": {
+        "dom_locator": "body",
+        "container_label": "提示 /150",
+        "link_text": "Hyperlink"
+      }
+    },
+    {
+      "id": "Netherrealm",
+      "slug": "Netherrealm",
+      "name_zh": "Netherrealm",
+      "url": "https://tlidb.com/cn/Netherrealm",
+      "source_order": 22,
+      "source_locator": {
+        "dom_locator": "body",
+        "container_label": "提示 /150",
+        "link_text": "Netherrealm"
+      }
+    },
+    {
+      "id": "Confusion_Card_Library",
+      "slug": "Confusion_Card_Library",
+      "name_zh": "Confusion Card Library",
+      "url": "https://tlidb.com/cn/Confusion_Card_Library",
+      "source_order": 23,
+      "source_locator": {
+        "dom_locator": "body",
+        "container_label": "提示 /150",
+        "link_text": "Confusion Card Library"
+      }
+    },
+    {
+      "id": "Void_Chart",
+      "slug": "Void_Chart",
+      "name_zh": "Void Chart",
+      "url": "https://tlidb.com/cn/Void_Chart",
+      "source_order": 24,
+      "source_locator": {
+        "dom_locator": "body",
+        "container_label": "提示 /150",
+        "link_text": "Void Chart"
+      }
+    },
+    {
+      "id": "Compass",
+      "slug": "Compass",
+      "name_zh": "Compass",
+      "url": "https://tlidb.com/cn/Compass",
+      "source_order": 25,
+      "source_locator": {
+        "dom_locator": "body",
+        "container_label": "提示 /150",
+        "link_text": "Compass"
+      }
+    },
+    {
+      "id": "Probe",
+      "slug": "Probe",
+      "name_zh": "Probe",
+      "url": "https://tlidb.com/cn/Probe",
+      "source_order": 26,
+      "source_locator": {
+        "dom_locator": "body",
+        "container_label": "提示 /150",
+        "link_text": "Probe"
+      }
+    },
+    {
+      "id": "Season_Compass",
+      "slug": "Season_Compass",
+      "name_zh": "Season Compass",
+      "url": "https://tlidb.com/cn/Season_Compass",
+      "source_order": 27,
+      "source_locator": {
+        "dom_locator": "body",
+        "container_label": "提示 /150",
+        "link_text": "Season Compass"
+      }
+    },
+    {
+      "id": "Path_of_the_Brave",
+      "slug": "Path_of_the_Brave",
+      "name_zh": "Path of the Brave",
+      "url": "https://tlidb.com/cn/Path_of_the_Brave",
+      "source_order": 28,
+      "source_locator": {
+        "dom_locator": "body",
+        "container_label": "提示 /150",
+        "link_text": "Path of the Brave"
+      }
+    },
+    {
+      "id": "Outfit",
+      "slug": "Outfit",
+      "name_zh": "Outfit",
+      "url": "https://tlidb.com/cn/Outfit",
+      "source_order": 29,
+      "source_locator": {
+        "dom_locator": "body",
+        "container_label": "提示 /150",
+        "link_text": "Outfit"
+      }
+    },
+    {
+      "id": "Commodity",
+      "slug": "Commodity",
+      "name_zh": "Commodity",
+      "url": "https://tlidb.com/cn/Commodity",
+      "source_order": 30,
+      "source_locator": {
+        "dom_locator": "body",
+        "container_label": "提示 /150",
+        "link_text": "Commodity"
+      }
+    },
+    {
+      "id": "Boon",
+      "slug": "Boon",
+      "name_zh": "Boon",
+      "url": "https://tlidb.com/cn/Boon",
+      "source_order": 31,
+      "source_locator": {
+        "dom_locator": "body",
+        "container_label": "提示 /150",
+        "link_text": "Boon"
+      }
+    },
+    {
+      "id": "privacy",
+      "slug": "privacy",
+      "name_zh": "Privacy",
+      "url": "https://tlidb.com/cn/privacy",
+      "source_order": 32,
+      "source_locator": {
+        "dom_locator": "body",
+        "container_label": "提示 /150",
+        "link_text": "Privacy"
+      }
+    }
+  ]
+}

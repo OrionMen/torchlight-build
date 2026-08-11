@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "source": {
+    "site": "tlidb",
+    "locale": "cn",
+    "index_url": "https://tlidb.com/cn/Path_of_the_Brave",
+    "fetched_at": "2026-08-06T13:40:57.263227+00:00",
+    "http_status": 200,
+    "html_sha256": "a3f83e8ce5804e69ff05a61723c714633885996880a60ddce39d50d478f3a882"
+  },
+  "system_id": "path_of_the_brave",
+  "entity_type": "path_of_the_brave",
+  "displayed_entry_count": 5,
+  "unique_entry_count": 5,
+  "duplicate_occurrence_count": 0,
+  "discovery_confidence": 0.89,
+  "quality": {
+    "displayed_entry_count": 5,
+    "unique_entry_count": 5,
+    "duplicate_occurrence_count": 0,
+    "discovery_confidence": 0.89,
+    "warnings": []
+  },
+  "entries": [
+    {
+      "id": "Proof_of_the_Brave_I",
+      "slug": "Proof_of_the_Brave_I",
+      "name_zh": "勇者之证I",
+      "url": "https://tlidb.com/cn/Proof_of_the_Brave_I",
+      "source_order": 0,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /5",
+        "link_text": "勇者之证I"
+      }
+    },
+    {
+      "id": "Proof_of_the_Brave_II",
+      "slug": "Proof_of_the_Brave_II",
+      "name_zh": "勇者之证II",
+      "url": "https://tlidb.com/cn/Proof_of_the_Brave_II",
+      "source_order": 1,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /5",
+        "link_text": "勇者之证II"
+      }
+    },
+    {
+      "id": "Proof_of_the_Brave_III",
+      "slug": "Proof_of_the_Brave_III",
+      "name_zh": "勇者之证III",
+      "url": "https://tlidb.com/cn/Proof_of_the_Brave_III",
+      "source_order": 2,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /5",
+        "link_text": "勇者之证III"
+      }
+    },
+    {
+      "id": "Proof_of_the_Brave_IV",
+      "slug": "Proof_of_the_Brave_IV",
+      "name_zh": "勇者之证IV",
+      "url": "https://tlidb.com/cn/Proof_of_the_Brave_IV",
+      "source_order": 3,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /5",
+        "link_text": "勇者之证IV"
+      }
+    },
+    {
+      "id": "Proof_of_the_Brave_V",
+      "slug": "Proof_of_the_Brave_V",
+      "name_zh": "勇者之证V",
+      "url": "https://tlidb.com/cn/Proof_of_the_Brave_V",
+      "source_order": 4,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Item /5",
+        "link_text": "勇者之证V"
+      }
+    }
+  ]
+}

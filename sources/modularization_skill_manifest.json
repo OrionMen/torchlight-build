@@ -1,0 +1,245 @@
+{
+  "schema_version": 1,
+  "source": {
+    "site": "tlidb",
+    "locale": "cn",
+    "index_url": "https://tlidb.com/cn/Modularization_Skill",
+    "fetched_at": "2026-08-06T13:40:27.789922+00:00",
+    "http_status": 200,
+    "html_sha256": "feede6f75298efa8bade3fbb90d47d9a2863b55dd6992edcc63a58ace0a89d61"
+  },
+  "system_id": "modularization_skill",
+  "entity_type": "modularization_skill",
+  "displayed_entry_count": 54,
+  "unique_entry_count": 18,
+  "duplicate_occurrence_count": 36,
+  "discovery_confidence": 0.72,
+  "quality": {
+    "displayed_entry_count": 54,
+    "unique_entry_count": 18,
+    "duplicate_occurrence_count": 36,
+    "discovery_confidence": 0.72,
+    "warnings": [
+      "36 duplicate link occurrence(s) removed",
+      "displayed count 54 does not match unique count 18"
+    ]
+  },
+  "entries": [
+    {
+      "id": "Module:_Goblin_Priest",
+      "slug": "Module:_Goblin_Priest",
+      "name_zh": "模组：哥布林长老",
+      "url": "https://tlidb.com/cn/Module%3A_Goblin_Priest",
+      "source_order": 0,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Tag /54",
+        "link_text": "模组：哥布林长老"
+      }
+    },
+    {
+      "id": "Module:_Trog_2nd_General",
+      "slug": "Module:_Trog_2nd_General",
+      "name_zh": "模组：地魔二将军",
+      "url": "https://tlidb.com/cn/Module%3A_Trog_2nd_General",
+      "source_order": 1,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Tag /54",
+        "link_text": "模组：地魔二将军"
+      }
+    },
+    {
+      "id": "Module:_Dwarven_Automaton",
+      "slug": "Module:_Dwarven_Automaton",
+      "name_zh": "模组：矮人机甲",
+      "url": "https://tlidb.com/cn/Module%3A_Dwarven_Automaton",
+      "source_order": 2,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Tag /54",
+        "link_text": "模组：矮人机甲"
+      }
+    },
+    {
+      "id": "Module:_Trog_Mage",
+      "slug": "Module:_Trog_Mage",
+      "name_zh": "模组：地魔法师",
+      "url": "https://tlidb.com/cn/Module%3A_Trog_Mage",
+      "source_order": 3,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Tag /54",
+        "link_text": "模组：地魔法师"
+      }
+    },
+    {
+      "id": "Module:_Goblin_Priest_of_Elements",
+      "slug": "Module:_Goblin_Priest_of_Elements",
+      "name_zh": "模组：哥布林元素大长老",
+      "url": "https://tlidb.com/cn/Module%3A_Goblin_Priest_of_Elements",
+      "source_order": 4,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Tag /54",
+        "link_text": "模组：哥布林元素大长老"
+      }
+    },
+    {
+      "id": "Module:_Medium_Ember_Automaton",
+      "slug": "Module:_Medium_Ember_Automaton",
+      "name_zh": "模组：中型灰烬机甲",
+      "url": "https://tlidb.com/cn/Module%3A_Medium_Ember_Automaton",
+      "source_order": 5,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Tag /54",
+        "link_text": "模组：中型灰烬机甲"
+      }
+    },
+    {
+      "id": "Module:_Huge_Ember_Automaton",
+      "slug": "Module:_Huge_Ember_Automaton",
+      "name_zh": "模组：巨型灰烬机甲",
+      "url": "https://tlidb.com/cn/Module%3A_Huge_Ember_Automaton",
+      "source_order": 6,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Tag /54",
+        "link_text": "模组：巨型灰烬机甲"
+      }
+    },
+    {
+      "id": "Module:_Ent_Great_Elder",
+      "slug": "Module:_Ent_Great_Elder",
+      "name_zh": "模组：树精大长老",
+      "url": "https://tlidb.com/cn/Module%3A_Ent_Great_Elder",
+      "source_order": 7,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Tag /54",
+        "link_text": "模组：树精大长老"
+      }
+    },
+    {
+      "id": "Module:_Ratlin_Stormer_Captain",
+      "slug": "Module:_Ratlin_Stormer_Captain",
+      "name_zh": "模组：鼠人强袭队长",
+      "url": "https://tlidb.com/cn/Module%3A_Ratlin_Stormer_Captain",
+      "source_order": 8,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Tag /54",
+        "link_text": "模组：鼠人强袭队长"
+      }
+    },
+    {
+      "id": "Module:_Chief_Machinist",
+      "slug": "Module:_Chief_Machinist",
+      "name_zh": "模组：首席机械师",
+      "url": "https://tlidb.com/cn/Module%3A_Chief_Machinist",
+      "source_order": 9,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Tag /54",
+        "link_text": "模组：首席机械师"
+      }
+    },
+    {
+      "id": "Module:_Lean_Phantom",
+      "slug": "Module:_Lean_Phantom",
+      "name_zh": "模组：莱安幻影",
+      "url": "https://tlidb.com/cn/Module%3A_Lean_Phantom",
+      "source_order": 10,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Tag /54",
+        "link_text": "模组：莱安幻影"
+      }
+    },
+    {
+      "id": "Module:_God_of_Swords",
+      "slug": "Module:_God_of_Swords",
+      "name_zh": "模组：剑神",
+      "url": "https://tlidb.com/cn/Module%3A_God_of_Swords",
+      "source_order": 11,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Tag /54",
+        "link_text": "模组：剑神"
+      }
+    },
+    {
+      "id": "Module:_Tyrant",
+      "slug": "Module:_Tyrant",
+      "name_zh": "模组：暴虐者",
+      "url": "https://tlidb.com/cn/Module%3A_Tyrant",
+      "source_order": 12,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Tag /54",
+        "link_text": "模组：暴虐者"
+      }
+    },
+    {
+      "id": "Module:_Ichi_Storm",
+      "slug": "Module:_Ichi_Storm",
+      "name_zh": "模组：伊吉狂风",
+      "url": "https://tlidb.com/cn/Module%3A_Ichi_Storm",
+      "source_order": 13,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Tag /54",
+        "link_text": "模组：伊吉狂风"
+      }
+    },
+    {
+      "id": "Module:_Sand_Giant",
+      "slug": "Module:_Sand_Giant",
+      "name_zh": "模组：沙巨人",
+      "url": "https://tlidb.com/cn/Module%3A_Sand_Giant",
+      "source_order": 14,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Tag /54",
+        "link_text": "模组：沙巨人"
+      }
+    },
+    {
+      "id": "Module:_Einherjar_Elder_Sage",
+      "slug": "Module:_Einherjar_Elder_Sage",
+      "name_zh": "模组：英灵大贤者",
+      "url": "https://tlidb.com/cn/Module%3A_Einherjar_Elder_Sage",
+      "source_order": 15,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Tag /54",
+        "link_text": "模组：英灵大贤者"
+      }
+    },
+    {
+      "id": "Module:_Aember_Winged_Beast",
+      "slug": "Module:_Aember_Winged_Beast",
+      "name_zh": "模组：灾烬翼兽",
+      "url": "https://tlidb.com/cn/Module%3A_Aember_Winged_Beast",
+      "source_order": 16,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Tag /54",
+        "link_text": "模组：灾烬翼兽"
+      }
+    },
+    {
+      "id": "Module:_Punisher",
+      "slug": "Module:_Punisher",
+      "name_zh": "模组：惩罚者",
+      "url": "https://tlidb.com/cn/Module%3A_Punisher",
+      "source_order": 17,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Tag /54",
+        "link_text": "模组：惩罚者"
+      }
+    }
+  ]
+}

@@ -1,0 +1,573 @@
+{
+  "schema_version": 1,
+  "site": "tlidb",
+  "locale": "cn",
+  "fetched_at": "2026-08-06T13:27:58.637178+00:00",
+  "source_urls": [
+    "https://tlidb.com/cn/"
+  ],
+  "system_count": 33,
+  "systems": [
+    {
+      "system_id": "hero",
+      "name_zh": "Hero",
+      "index_url": "https://tlidb.com/cn/Hero",
+      "index_slug": "Hero",
+      "discovery_status": "confirmed",
+      "classification_status": "confirmed",
+      "manifest_path": "sources/hero_manifest.json",
+      "entry_count": 27,
+      "entry_count_type": "unique",
+      "source_order": 0,
+      "source_locator": {
+        "page_url": "https://tlidb.com/cn/",
+        "dom_locator": "ul.dropdown-menu",
+        "link_text": "Hero"
+      }
+    },
+    {
+      "system_id": "candidate_talent",
+      "name_zh": "Talent",
+      "index_url": "https://tlidb.com/cn/Talent",
+      "index_slug": "Talent",
+      "discovery_status": "candidate",
+      "classification_status": "needs_review",
+      "manifest_path": "sources/candidate_talent_manifest.json",
+      "entry_count": null,
+      "entry_count_type": "unique",
+      "source_order": 1,
+      "source_locator": {
+        "page_url": "https://tlidb.com/cn/",
+        "dom_locator": "ul.dropdown-menu",
+        "link_text": "Talent"
+      }
+    },
+    {
+      "system_id": "candidate_inventory",
+      "name_zh": "Stash",
+      "index_url": "https://tlidb.com/cn/Inventory",
+      "index_slug": "Inventory",
+      "discovery_status": "candidate",
+      "classification_status": "needs_review",
+      "manifest_path": "sources/candidate_inventory_manifest.json",
+      "entry_count": null,
+      "entry_count_type": "unique",
+      "source_order": 2,
+      "source_locator": {
+        "page_url": "https://tlidb.com/cn/",
+        "dom_locator": "ul.dropdown-menu",
+        "link_text": "Stash"
+      }
+    },
+    {
+      "system_id": "candidate_legendary_gear",
+      "name_zh": "Legendary Gear",
+      "index_url": "https://tlidb.com/cn/Legendary_Gear",
+      "index_slug": "Legendary_Gear",
+      "discovery_status": "candidate",
+      "classification_status": "needs_review",
+      "manifest_path": "sources/candidate_legendary_gear_manifest.json",
+      "entry_count": null,
+      "entry_count_type": "unique",
+      "source_order": 3,
+      "source_locator": {
+        "page_url": "https://tlidb.com/cn/",
+        "dom_locator": "ul.dropdown-menu",
+        "link_text": "Legendary Gear"
+      }
+    },
+    {
+      "system_id": "candidate_pactspirit",
+      "name_zh": "Pactspirit",
+      "index_url": "https://tlidb.com/cn/Pactspirit",
+      "index_slug": "Pactspirit",
+      "discovery_status": "candidate",
+      "classification_status": "needs_review",
+      "manifest_path": "sources/candidate_pactspirit_manifest.json",
+      "entry_count": null,
+      "entry_count_type": "unique",
+      "source_order": 4,
+      "source_locator": {
+        "page_url": "https://tlidb.com/cn/",
+        "dom_locator": "ul.dropdown-menu",
+        "link_text": "Pactspirit"
+      }
+    },
+    {
+      "system_id": "candidate_drop_source",
+      "name_zh": "Drop Source",
+      "index_url": "https://tlidb.com/cn/Drop_Source",
+      "index_slug": "Drop_Source",
+      "discovery_status": "candidate",
+      "classification_status": "needs_review",
+      "manifest_path": "sources/candidate_drop_source_manifest.json",
+      "entry_count": null,
+      "entry_count_type": "unique",
+      "source_order": 5,
+      "source_locator": {
+        "page_url": "https://tlidb.com/cn/",
+        "dom_locator": "ul.dropdown-menu",
+        "link_text": "Drop Source"
+      }
+    },
+    {
+      "system_id": "candidate_destiny",
+      "name_zh": "Destiny",
+      "index_url": "https://tlidb.com/cn/Destiny",
+      "index_slug": "Destiny",
+      "discovery_status": "candidate",
+      "classification_status": "needs_review",
+      "manifest_path": "sources/candidate_destiny_manifest.json",
+      "entry_count": null,
+      "entry_count_type": "unique",
+      "source_order": 6,
+      "source_locator": {
+        "page_url": "https://tlidb.com/cn/",
+        "dom_locator": "ul.dropdown-menu",
+        "link_text": "Destiny"
+      }
+    },
+    {
+      "system_id": "candidate_active_skill",
+      "name_zh": "Active Skill",
+      "index_url": "https://tlidb.com/cn/Active_Skill",
+      "index_slug": "Active_Skill",
+      "discovery_status": "candidate",
+      "classification_status": "needs_review",
+      "manifest_path": "sources/candidate_active_skill_manifest.json",
+      "entry_count": null,
+      "entry_count_type": "unique",
+      "source_order": 7,
+      "source_locator": {
+        "page_url": "https://tlidb.com/cn/",
+        "dom_locator": "ul.dropdown-menu",
+        "link_text": "Active Skill"
+      }
+    },
+    {
+      "system_id": "candidate_support_skill",
+      "name_zh": "Support Skill",
+      "index_url": "https://tlidb.com/cn/Support_Skill",
+      "index_slug": "Support_Skill",
+      "discovery_status": "candidate",
+      "classification_status": "needs_review",
+      "manifest_path": "sources/candidate_support_skill_manifest.json",
+      "entry_count": null,
+      "entry_count_type": "unique",
+      "source_order": 8,
+      "source_locator": {
+        "page_url": "https://tlidb.com/cn/",
+        "dom_locator": "ul.dropdown-menu",
+        "link_text": "Support Skill"
+      }
+    },
+    {
+      "system_id": "candidate_passive_skill",
+      "name_zh": "Passive Skill",
+      "index_url": "https://tlidb.com/cn/Passive_Skill",
+      "index_slug": "Passive_Skill",
+      "discovery_status": "candidate",
+      "classification_status": "needs_review",
+      "manifest_path": "sources/candidate_passive_skill_manifest.json",
+      "entry_count": null,
+      "entry_count_type": "unique",
+      "source_order": 9,
+      "source_locator": {
+        "page_url": "https://tlidb.com/cn/",
+        "dom_locator": "ul.dropdown-menu",
+        "link_text": "Passive Skill"
+      }
+    },
+    {
+      "system_id": "candidate_activation_medium_skill",
+      "name_zh": "Activation Medium Skill",
+      "index_url": "https://tlidb.com/cn/Activation_Medium_Skill",
+      "index_slug": "Activation_Medium_Skill",
+      "discovery_status": "candidate",
+      "classification_status": "needs_review",
+      "manifest_path": "sources/candidate_activation_medium_skill_manifest.json",
+      "entry_count": null,
+      "entry_count_type": "unique",
+      "source_order": 10,
+      "source_locator": {
+        "page_url": "https://tlidb.com/cn/",
+        "dom_locator": "ul.dropdown-menu",
+        "link_text": "Activation Medium Skill"
+      }
+    },
+    {
+      "system_id": "candidate_magnificent_support_skill",
+      "name_zh": "Magnificent Support Skill",
+      "index_url": "https://tlidb.com/cn/Magnificent_Support_Skill",
+      "index_slug": "Magnificent_Support_Skill",
+      "discovery_status": "candidate",
+      "classification_status": "needs_review",
+      "manifest_path": "sources/candidate_magnificent_support_skill_manifest.json",
+      "entry_count": null,
+      "entry_count_type": "unique",
+      "source_order": 11,
+      "source_locator": {
+        "page_url": "https://tlidb.com/cn/",
+        "dom_locator": "ul.dropdown-menu",
+        "link_text": "Magnificent Support Skill"
+      }
+    },
+    {
+      "system_id": "candidate_noble_support_skill",
+      "name_zh": "Noble Support Skill",
+      "index_url": "https://tlidb.com/cn/Noble_Support_Skill",
+      "index_slug": "Noble_Support_Skill",
+      "discovery_status": "candidate",
+      "classification_status": "needs_review",
+      "manifest_path": "sources/candidate_noble_support_skill_manifest.json",
+      "entry_count": null,
+      "entry_count_type": "unique",
+      "source_order": 12,
+      "source_locator": {
+        "page_url": "https://tlidb.com/cn/",
+        "dom_locator": "ul.dropdown-menu",
+        "link_text": "Noble Support Skill"
+      }
+    },
+    {
+      "system_id": "candidate_modularization_skill",
+      "name_zh": "Modularization Skill",
+      "index_url": "https://tlidb.com/cn/Modularization_Skill",
+      "index_slug": "Modularization_Skill",
+      "discovery_status": "candidate",
+      "classification_status": "needs_review",
+      "manifest_path": "sources/candidate_modularization_skill_manifest.json",
+      "entry_count": null,
+      "entry_count_type": "unique",
+      "source_order": 13,
+      "source_locator": {
+        "page_url": "https://tlidb.com/cn/",
+        "dom_locator": "ul.dropdown-menu",
+        "link_text": "Modularization Skill"
+      }
+    },
+    {
+      "system_id": "candidate_craft",
+      "name_zh": "Craft",
+      "index_url": "https://tlidb.com/cn/Craft",
+      "index_slug": "Craft",
+      "discovery_status": "candidate",
+      "classification_status": "needs_review",
+      "manifest_path": "sources/candidate_craft_manifest.json",
+      "entry_count": null,
+      "entry_count_type": "unique",
+      "source_order": 14,
+      "source_locator": {
+        "page_url": "https://tlidb.com/cn/",
+        "dom_locator": "ul.dropdown-menu",
+        "link_text": "Craft"
+      }
+    },
+    {
+      "system_id": "candidate_corrosion",
+      "name_zh": "Corrosion",
+      "index_url": "https://tlidb.com/cn/Corrosion",
+      "index_slug": "Corrosion",
+      "discovery_status": "candidate",
+      "classification_status": "needs_review",
+      "manifest_path": "sources/candidate_corrosion_manifest.json",
+      "entry_count": null,
+      "entry_count_type": "unique",
+      "source_order": 15,
+      "source_locator": {
+        "page_url": "https://tlidb.com/cn/",
+        "dom_locator": "ul.dropdown-menu",
+        "link_text": "Corrosion"
+      }
+    },
+    {
+      "system_id": "candidate_gear_empowerment",
+      "name_zh": "Gear Empowerment",
+      "index_url": "https://tlidb.com/cn/Gear_Empowerment",
+      "index_slug": "Gear_Empowerment",
+      "discovery_status": "candidate",
+      "classification_status": "needs_review",
+      "manifest_path": "sources/candidate_gear_empowerment_manifest.json",
+      "entry_count": null,
+      "entry_count_type": "unique",
+      "source_order": 16,
+      "source_locator": {
+        "page_url": "https://tlidb.com/cn/",
+        "dom_locator": "ul.dropdown-menu",
+        "link_text": "Gear Empowerment"
+      }
+    },
+    {
+      "system_id": "candidate_nether_kings_divinity",
+      "name_zh": "Nether King's Divinity",
+      "index_url": "https://tlidb.com/cn/Nether_Kings_Divinity",
+      "index_slug": "Nether_Kings_Divinity",
+      "discovery_status": "candidate",
+      "classification_status": "needs_review",
+      "manifest_path": "sources/candidate_nether_kings_divinity_manifest.json",
+      "entry_count": null,
+      "entry_count_type": "unique",
+      "source_order": 17,
+      "source_locator": {
+        "page_url": "https://tlidb.com/cn/",
+        "dom_locator": "ul.dropdown-menu",
+        "link_text": "Nether King's Divinity"
+      }
+    },
+    {
+      "system_id": "candidate_path_of_progression",
+      "name_zh": "Path of Progression",
+      "index_url": "https://tlidb.com/cn/Path_of_Progression",
+      "index_slug": "Path_of_Progression",
+      "discovery_status": "candidate",
+      "classification_status": "needs_review",
+      "manifest_path": "sources/candidate_path_of_progression_manifest.json",
+      "entry_count": null,
+      "entry_count_type": "unique",
+      "source_order": 18,
+      "source_locator": {
+        "page_url": "https://tlidb.com/cn/",
+        "dom_locator": "ul.dropdown-menu",
+        "link_text": "Path of Progression"
+      }
+    },
+    {
+      "system_id": "help",
+      "name_zh": "Help",
+      "index_url": "https://tlidb.com/cn/Help",
+      "index_slug": "Help",
+      "discovery_status": "confirmed",
+      "classification_status": "confirmed",
+      "manifest_path": "sources/help_manifest.json",
+      "entry_count": 203,
+      "entry_count_type": "unique",
+      "source_order": 19,
+      "source_locator": {
+        "page_url": "https://tlidb.com/cn/",
+        "dom_locator": "ul.dropdown-menu",
+        "link_text": "Help"
+      }
+    },
+    {
+      "system_id": "candidate_codex",
+      "name_zh": "Codex",
+      "index_url": "https://tlidb.com/cn/Codex",
+      "index_slug": "Codex",
+      "discovery_status": "candidate",
+      "classification_status": "needs_review",
+      "manifest_path": "sources/candidate_codex_manifest.json",
+      "entry_count": null,
+      "entry_count_type": "unique",
+      "source_order": 20,
+      "source_locator": {
+        "page_url": "https://tlidb.com/cn/",
+        "dom_locator": "ul.dropdown-menu",
+        "link_text": "Codex"
+      }
+    },
+    {
+      "system_id": "candidate_tip",
+      "name_zh": "Tip",
+      "index_url": "https://tlidb.com/cn/Tip",
+      "index_slug": "Tip",
+      "discovery_status": "candidate",
+      "classification_status": "needs_review",
+      "manifest_path": "sources/candidate_tip_manifest.json",
+      "entry_count": null,
+      "entry_count_type": "unique",
+      "source_order": 21,
+      "source_locator": {
+        "page_url": "https://tlidb.com/cn/",
+        "dom_locator": "ul.dropdown-menu",
+        "link_text": "Tip"
+      }
+    },
+    {
+      "system_id": "candidate_hyperlink",
+      "name_zh": "Hyperlink",
+      "index_url": "https://tlidb.com/cn/Hyperlink",
+      "index_slug": "Hyperlink",
+      "discovery_status": "candidate",
+      "classification_status": "needs_review",
+      "manifest_path": "sources/candidate_hyperlink_manifest.json",
+      "entry_count": null,
+      "entry_count_type": "unique",
+      "source_order": 22,
+      "source_locator": {
+        "page_url": "https://tlidb.com/cn/",
+        "dom_locator": "ul.dropdown-menu",
+        "link_text": "Hyperlink"
+      }
+    },
+    {
+      "system_id": "candidate_netherrealm",
+      "name_zh": "Netherrealm",
+      "index_url": "https://tlidb.com/cn/Netherrealm",
+      "index_slug": "Netherrealm",
+      "discovery_status": "candidate",
+      "classification_status": "needs_review",
+      "manifest_path": "sources/candidate_netherrealm_manifest.json",
+      "entry_count": null,
+      "entry_count_type": "unique",
+      "source_order": 23,
+      "source_locator": {
+        "page_url": "https://tlidb.com/cn/",
+        "dom_locator": "ul.dropdown-menu",
+        "link_text": "Netherrealm"
+      }
+    },
+    {
+      "system_id": "candidate_confusion_card_library",
+      "name_zh": "Confusion Card Library",
+      "index_url": "https://tlidb.com/cn/Confusion_Card_Library",
+      "index_slug": "Confusion_Card_Library",
+      "discovery_status": "candidate",
+      "classification_status": "needs_review",
+      "manifest_path": "sources/candidate_confusion_card_library_manifest.json",
+      "entry_count": null,
+      "entry_count_type": "unique",
+      "source_order": 24,
+      "source_locator": {
+        "page_url": "https://tlidb.com/cn/",
+        "dom_locator": "ul.dropdown-menu",
+        "link_text": "Confusion Card Library"
+      }
+    },
+    {
+      "system_id": "candidate_void_chart",
+      "name_zh": "Void Chart",
+      "index_url": "https://tlidb.com/cn/Void_Chart",
+      "index_slug": "Void_Chart",
+      "discovery_status": "candidate",
+      "classification_status": "needs_review",
+      "manifest_path": "sources/candidate_void_chart_manifest.json",
+      "entry_count": null,
+      "entry_count_type": "unique",
+      "source_order": 25,
+      "source_locator": {
+        "page_url": "https://tlidb.com/cn/",
+        "dom_locator": "ul.dropdown-menu",
+        "link_text": "Void Chart"
+      }
+    },
+    {
+      "system_id": "candidate_compass",
+      "name_zh": "Compass",
+      "index_url": "https://tlidb.com/cn/Compass",
+      "index_slug": "Compass",
+      "discovery_status": "candidate",
+      "classification_status": "needs_review",
+      "manifest_path": "sources/candidate_compass_manifest.json",
+      "entry_count": null,
+      "entry_count_type": "unique",
+      "source_order": 26,
+      "source_locator": {
+        "page_url": "https://tlidb.com/cn/",
+        "dom_locator": "ul.dropdown-menu",
+        "link_text": "Compass"
+      }
+    },
+    {
+      "system_id": "candidate_probe",
+      "name_zh": "Probe",
+      "index_url": "https://tlidb.com/cn/Probe",
+      "index_slug": "Probe",
+      "discovery_status": "candidate",
+      "classification_status": "needs_review",
+      "manifest_path": "sources/candidate_probe_manifest.json",
+      "entry_count": null,
+      "entry_count_type": "unique",
+      "source_order": 27,
+      "source_locator": {
+        "page_url": "https://tlidb.com/cn/",
+        "dom_locator": "ul.dropdown-menu",
+        "link_text": "Probe"
+      }
+    },
+    {
+      "system_id": "candidate_season_compass",
+      "name_zh": "Season Compass",
+      "index_url": "https://tlidb.com/cn/Season_Compass",
+      "index_slug": "Season_Compass",
+      "discovery_status": "candidate",
+      "classification_status": "needs_review",
+      "manifest_path": "sources/candidate_season_compass_manifest.json",
+      "entry_count": null,
+      "entry_count_type": "unique",
+      "source_order": 28,
+      "source_locator": {
+        "page_url": "https://tlidb.com/cn/",
+        "dom_locator": "ul.dropdown-menu",
+        "link_text": "Season Compass"
+      }
+    },
+    {
+      "system_id": "candidate_path_of_the_brave",
+      "name_zh": "Path of the Brave",
+      "index_url": "https://tlidb.com/cn/Path_of_the_Brave",
+      "index_slug": "Path_of_the_Brave",
+      "discovery_status": "candidate",
+      "classification_status": "needs_review",
+      "manifest_path": "sources/candidate_path_of_the_brave_manifest.json",
+      "entry_count": null,
+      "entry_count_type": "unique",
+      "source_order": 29,
+      "source_locator": {
+        "page_url": "https://tlidb.com/cn/",
+        "dom_locator": "ul.dropdown-menu",
+        "link_text": "Path of the Brave"
+      }
+    },
+    {
+      "system_id": "candidate_outfit",
+      "name_zh": "Outfit",
+      "index_url": "https://tlidb.com/cn/Outfit",
+      "index_slug": "Outfit",
+      "discovery_status": "candidate",
+      "classification_status": "needs_review",
+      "manifest_path": "sources/candidate_outfit_manifest.json",
+      "entry_count": null,
+      "entry_count_type": "unique",
+      "source_order": 30,
+      "source_locator": {
+        "page_url": "https://tlidb.com/cn/",
+        "dom_locator": "ul.dropdown-menu",
+        "link_text": "Outfit"
+      }
+    },
+    {
+      "system_id": "candidate_commodity",
+      "name_zh": "Commodity",
+      "index_url": "https://tlidb.com/cn/Commodity",
+      "index_slug": "Commodity",
+      "discovery_status": "candidate",
+      "classification_status": "needs_review",
+      "manifest_path": "sources/candidate_commodity_manifest.json",
+      "entry_count": null,
+      "entry_count_type": "unique",
+      "source_order": 31,
+      "source_locator": {
+        "page_url": "https://tlidb.com/cn/",
+        "dom_locator": "ul.dropdown-menu",
+        "link_text": "Commodity"
+      }
+    },
+    {
+      "system_id": "candidate_boon",
+      "name_zh": "Boon",
+      "index_url": "https://tlidb.com/cn/Boon",
+      "index_slug": "Boon",
+      "discovery_status": "candidate",
+      "classification_status": "needs_review",
+      "manifest_path": "sources/candidate_boon_manifest.json",
+      "entry_count": null,
+      "entry_count_type": "unique",
+      "source_order": 32,
+      "source_locator": {
+        "page_url": "https://tlidb.com/cn/",
+        "dom_locator": "ul.dropdown-menu",
+        "link_text": "Boon"
+      }
+    }
+  ]
+}

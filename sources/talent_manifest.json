@@ -1,0 +1,410 @@
+{
+  "schema_version": 1,
+  "source": {
+    "site": "tlidb",
+    "locale": "cn",
+    "index_url": "https://tlidb.com/cn/Talent",
+    "fetched_at": "2026-08-06T13:40:06.028355+00:00",
+    "http_status": 200,
+    "html_sha256": "4fc61d7ae8917eb3113e6fed792571e56d708ce93d5e1960485591748562c681"
+  },
+  "system_id": "talent",
+  "entity_type": "talent",
+  "displayed_entry_count": 32,
+  "unique_entry_count": 32,
+  "duplicate_occurrence_count": 0,
+  "discovery_confidence": 0.99,
+  "quality": {
+    "displayed_entry_count": 32,
+    "unique_entry_count": 32,
+    "duplicate_occurrence_count": 0,
+    "discovery_confidence": 0.99,
+    "warnings": []
+  },
+  "entries": [
+    {
+      "id": "God_of_Might",
+      "slug": "God_of_Might",
+      "name_zh": "巨力之神",
+      "url": "https://tlidb.com/cn/God_of_Might",
+      "source_order": 0,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Profession /32",
+        "link_text": "巨力之神"
+      }
+    },
+    {
+      "id": "Goddess_of_Hunting",
+      "slug": "Goddess_of_Hunting",
+      "name_zh": "狩猎之神",
+      "url": "https://tlidb.com/cn/Goddess_of_Hunting",
+      "source_order": 1,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Profession /32",
+        "link_text": "狩猎之神"
+      }
+    },
+    {
+      "id": "Goddess_of_Knowledge",
+      "slug": "Goddess_of_Knowledge",
+      "name_zh": "知识之神",
+      "url": "https://tlidb.com/cn/Goddess_of_Knowledge",
+      "source_order": 2,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Profession /32",
+        "link_text": "知识之神"
+      }
+    },
+    {
+      "id": "God_of_War",
+      "slug": "God_of_War",
+      "name_zh": "征战之神",
+      "url": "https://tlidb.com/cn/God_of_War",
+      "source_order": 3,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Profession /32",
+        "link_text": "征战之神"
+      }
+    },
+    {
+      "id": "Goddess_of_Deception",
+      "slug": "Goddess_of_Deception",
+      "name_zh": "欺诈之神",
+      "url": "https://tlidb.com/cn/Goddess_of_Deception",
+      "source_order": 4,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Profession /32",
+        "link_text": "欺诈之神"
+      }
+    },
+    {
+      "id": "God_of_Machines",
+      "slug": "God_of_Machines",
+      "name_zh": "机械之神",
+      "url": "https://tlidb.com/cn/God_of_Machines",
+      "source_order": 5,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Profession /32",
+        "link_text": "机械之神"
+      }
+    },
+    {
+      "id": "The_Brave",
+      "slug": "The_Brave",
+      "name_zh": "勇者",
+      "url": "https://tlidb.com/cn/The_Brave",
+      "source_order": 6,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Profession /32",
+        "link_text": "勇者"
+      }
+    },
+    {
+      "id": "Onslaughter",
+      "slug": "Onslaughter",
+      "name_zh": "猛袭者",
+      "url": "https://tlidb.com/cn/Onslaughter",
+      "source_order": 7,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Profession /32",
+        "link_text": "猛袭者"
+      }
+    },
+    {
+      "id": "Warlord",
+      "slug": "Warlord",
+      "name_zh": "督军",
+      "url": "https://tlidb.com/cn/Warlord",
+      "source_order": 8,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Profession /32",
+        "link_text": "督军"
+      }
+    },
+    {
+      "id": "Warrior",
+      "slug": "Warrior",
+      "name_zh": "斗士",
+      "url": "https://tlidb.com/cn/Warrior",
+      "source_order": 9,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Profession /32",
+        "link_text": "斗士"
+      }
+    },
+    {
+      "id": "Marksman",
+      "slug": "Marksman",
+      "name_zh": "神射手",
+      "url": "https://tlidb.com/cn/Marksman",
+      "source_order": 10,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Profession /32",
+        "link_text": "神射手"
+      }
+    },
+    {
+      "id": "Bladerunner",
+      "slug": "Bladerunner",
+      "name_zh": "刀锋行者",
+      "url": "https://tlidb.com/cn/Bladerunner",
+      "source_order": 11,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Profession /32",
+        "link_text": "刀锋行者"
+      }
+    },
+    {
+      "id": "Druid",
+      "slug": "Druid",
+      "name_zh": "德鲁伊",
+      "url": "https://tlidb.com/cn/Druid",
+      "source_order": 12,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Profession /32",
+        "link_text": "德鲁伊"
+      }
+    },
+    {
+      "id": "Assassin",
+      "slug": "Assassin",
+      "name_zh": "刺客",
+      "url": "https://tlidb.com/cn/Assassin",
+      "source_order": 13,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Profession /32",
+        "link_text": "刺客"
+      }
+    },
+    {
+      "id": "Magister",
+      "slug": "Magister",
+      "name_zh": "魔导师",
+      "url": "https://tlidb.com/cn/Magister",
+      "source_order": 14,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Profession /32",
+        "link_text": "魔导师"
+      }
+    },
+    {
+      "id": "Arcanist",
+      "slug": "Arcanist",
+      "name_zh": "秘术师",
+      "url": "https://tlidb.com/cn/Arcanist",
+      "source_order": 15,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Profession /32",
+        "link_text": "秘术师"
+      }
+    },
+    {
+      "id": "Elementalist",
+      "slug": "Elementalist",
+      "name_zh": "元素师",
+      "url": "https://tlidb.com/cn/Elementalist",
+      "source_order": 16,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Profession /32",
+        "link_text": "元素师"
+      }
+    },
+    {
+      "id": "Prophet",
+      "slug": "Prophet",
+      "name_zh": "先知",
+      "url": "https://tlidb.com/cn/Prophet",
+      "source_order": 17,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Profession /32",
+        "link_text": "先知"
+      }
+    },
+    {
+      "id": "Shadowdancer",
+      "slug": "Shadowdancer",
+      "name_zh": "影舞者",
+      "url": "https://tlidb.com/cn/Shadowdancer",
+      "source_order": 18,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Profession /32",
+        "link_text": "影舞者"
+      }
+    },
+    {
+      "id": "Ronin",
+      "slug": "Ronin",
+      "name_zh": "神行武士",
+      "url": "https://tlidb.com/cn/Ronin",
+      "source_order": 19,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Profession /32",
+        "link_text": "神行武士"
+      }
+    },
+    {
+      "id": "Ranger",
+      "slug": "Ranger",
+      "name_zh": "游侠",
+      "url": "https://tlidb.com/cn/Ranger",
+      "source_order": 20,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Profession /32",
+        "link_text": "游侠"
+      }
+    },
+    {
+      "id": "Sentinel",
+      "slug": "Sentinel",
+      "name_zh": "铁卫",
+      "url": "https://tlidb.com/cn/Sentinel",
+      "source_order": 21,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Profession /32",
+        "link_text": "铁卫"
+      }
+    },
+    {
+      "id": "Shadowmaster",
+      "slug": "Shadowmaster",
+      "name_zh": "驭影者",
+      "url": "https://tlidb.com/cn/Shadowmaster",
+      "source_order": 22,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Profession /32",
+        "link_text": "驭影者"
+      }
+    },
+    {
+      "id": "Psychic",
+      "slug": "Psychic",
+      "name_zh": "异能者",
+      "url": "https://tlidb.com/cn/Psychic",
+      "source_order": 23,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Profession /32",
+        "link_text": "异能者"
+      }
+    },
+    {
+      "id": "Warlock",
+      "slug": "Warlock",
+      "name_zh": "暗影术士",
+      "url": "https://tlidb.com/cn/Warlock",
+      "source_order": 24,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Profession /32",
+        "link_text": "暗影术士"
+      }
+    },
+    {
+      "id": "Lich",
+      "slug": "Lich",
+      "name_zh": "巫妖",
+      "url": "https://tlidb.com/cn/Lich",
+      "source_order": 25,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Profession /32",
+        "link_text": "巫妖"
+      }
+    },
+    {
+      "id": "Machinist",
+      "slug": "Machinist",
+      "name_zh": "机械师",
+      "url": "https://tlidb.com/cn/Machinist",
+      "source_order": 26,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Profession /32",
+        "link_text": "机械师"
+      }
+    },
+    {
+      "id": "Steel_Vanguard",
+      "slug": "Steel_Vanguard",
+      "name_zh": "钢铁先锋",
+      "url": "https://tlidb.com/cn/Steel_Vanguard",
+      "source_order": 27,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Profession /32",
+        "link_text": "钢铁先锋"
+      }
+    },
+    {
+      "id": "Alchemist",
+      "slug": "Alchemist",
+      "name_zh": "炼金术士",
+      "url": "https://tlidb.com/cn/Alchemist",
+      "source_order": 28,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Profession /32",
+        "link_text": "炼金术士"
+      }
+    },
+    {
+      "id": "Artisan",
+      "slug": "Artisan",
+      "name_zh": "巧匠",
+      "url": "https://tlidb.com/cn/Artisan",
+      "source_order": 29,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Profession /32",
+        "link_text": "巧匠"
+      }
+    },
+    {
+      "id": "New_God",
+      "slug": "New_God",
+      "name_zh": "新神",
+      "url": "https://tlidb.com/cn/New_God",
+      "source_order": 30,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Profession /32",
+        "link_text": "新神"
+      }
+    },
+    {
+      "id": "Nether_King",
+      "slug": "Nether_King",
+      "name_zh": "冥王",
+      "url": "https://tlidb.com/cn/Nether_King",
+      "source_order": 31,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Profession /32",
+        "link_text": "冥王"
+      }
+    }
+  ]
+}

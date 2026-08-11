@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "source": {
+    "site": "tlidb",
+    "locale": "cn",
+    "index_url": "https://tlidb.com/cn/Netherrealm",
+    "fetched_at": "2026-08-06T13:40:45.597785+00:00",
+    "http_status": 200,
+    "html_sha256": "5ab85fdabee7b1fb20a3906349484d4fa8b0925a6259bea5ce0705ab8c94eb8c"
+  },
+  "system_id": "netherrealm",
+  "entity_type": "netherrealm",
+  "displayed_entry_count": 6,
+  "unique_entry_count": 6,
+  "duplicate_occurrence_count": 0,
+  "discovery_confidence": 0.89,
+  "quality": {
+    "displayed_entry_count": 6,
+    "unique_entry_count": 6,
+    "duplicate_occurrence_count": 0,
+    "discovery_confidence": 0.89,
+    "warnings": []
+  },
+  "entries": [
+    {
+      "id": "Glacial_Abyss",
+      "slug": "Glacial_Abyss",
+      "name_zh": "冰封寒渊",
+      "url": "https://tlidb.com/cn/Glacial_Abyss",
+      "source_order": 0,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Area /6",
+        "link_text": "冰封寒渊"
+      }
+    },
+    {
+      "id": "Blistering_Lava_Sea",
+      "slug": "Blistering_Lava_Sea",
+      "name_zh": "沸涌炎海",
+      "url": "https://tlidb.com/cn/Blistering_Lava_Sea",
+      "source_order": 1,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Area /6",
+        "link_text": "沸涌炎海"
+      }
+    },
+    {
+      "id": "Steel_Forge",
+      "slug": "Steel_Forge",
+      "name_zh": "钢铁炼境",
+      "url": "https://tlidb.com/cn/Steel_Forge",
+      "source_order": 2,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Area /6",
+        "link_text": "钢铁炼境"
+      }
+    },
+    {
+      "id": "Thunder_Wastes",
+      "slug": "Thunder_Wastes",
+      "name_zh": "雷鸣废土",
+      "url": "https://tlidb.com/cn/Thunder_Wastes",
+      "source_order": 3,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Area /6",
+        "link_text": "雷鸣废土"
+      }
+    },
+    {
+      "id": "Voidlands",
+      "slug": "Voidlands",
+      "name_zh": "幽夜暗域",
+      "url": "https://tlidb.com/cn/Voidlands",
+      "source_order": 4,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Area /6",
+        "link_text": "幽夜暗域"
+      }
+    },
+    {
+      "id": "Deep_Space",
+      "slug": "Deep_Space",
+      "name_zh": "深空",
+      "url": "https://tlidb.com/cn/Deep_Space",
+      "source_order": 5,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "Area /6",
+        "link_text": "深空"
+      }
+    }
+  ]
+}

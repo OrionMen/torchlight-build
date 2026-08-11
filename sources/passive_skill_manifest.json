@@ -1,0 +1,686 @@
+{
+  "schema_version": 1,
+  "source": {
+    "site": "tlidb",
+    "locale": "cn",
+    "index_url": "https://tlidb.com/cn/Passive_Skill",
+    "fetched_at": "2026-08-06T13:40:20.443095+00:00",
+    "http_status": 200,
+    "html_sha256": "1cda1b8124b9a5aac6bad154aa0bbc49b2bb43a5a3570f2c3ee739fb82c0b152"
+  },
+  "system_id": "passive_skill",
+  "entity_type": "passive_skill",
+  "displayed_entry_count": 55,
+  "unique_entry_count": 55,
+  "duplicate_occurrence_count": 0,
+  "discovery_confidence": 0.99,
+  "quality": {
+    "displayed_entry_count": 55,
+    "unique_entry_count": 55,
+    "duplicate_occurrence_count": 0,
+    "discovery_confidence": 0.99,
+    "warnings": []
+  },
+  "entries": [
+    {
+      "id": "Fearless",
+      "slug": "Fearless",
+      "name_zh": "狂猛",
+      "url": "https://tlidb.com/cn/Fearless",
+      "source_order": 0,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "狂猛"
+      }
+    },
+    {
+      "id": "Weapon_Amplification",
+      "slug": "Weapon_Amplification",
+      "name_zh": "武器增幅",
+      "url": "https://tlidb.com/cn/Weapon_Amplification",
+      "source_order": 1,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "武器增幅"
+      }
+    },
+    {
+      "id": "Rejuvenation",
+      "slug": "Rejuvenation",
+      "name_zh": "再生",
+      "url": "https://tlidb.com/cn/Rejuvenation",
+      "source_order": 2,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "再生"
+      }
+    },
+    {
+      "id": "Electric_Conversion",
+      "slug": "Electric_Conversion",
+      "name_zh": "电能转化",
+      "url": "https://tlidb.com/cn/Electric_Conversion",
+      "source_order": 3,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "电能转化"
+      }
+    },
+    {
+      "id": "Frigid_Domain",
+      "slug": "Frigid_Domain",
+      "name_zh": "冰寒领域",
+      "url": "https://tlidb.com/cn/Frigid_Domain",
+      "source_order": 4,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "冰寒领域"
+      }
+    },
+    {
+      "id": "Nimbleness",
+      "slug": "Nimbleness",
+      "name_zh": "灵敏",
+      "url": "https://tlidb.com/cn/Nimbleness",
+      "source_order": 5,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "灵敏"
+      }
+    },
+    {
+      "id": "Spell_Amplification",
+      "slug": "Spell_Amplification",
+      "name_zh": "法术增幅",
+      "url": "https://tlidb.com/cn/Spell_Amplification",
+      "source_order": 6,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "法术增幅"
+      }
+    },
+    {
+      "id": "Energy_Fortress",
+      "slug": "Energy_Fortress",
+      "name_zh": "能量壁垒",
+      "url": "https://tlidb.com/cn/Energy_Fortress",
+      "source_order": 7,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "能量壁垒"
+      }
+    },
+    {
+      "id": "Magical_Source",
+      "slug": "Magical_Source",
+      "name_zh": "魔源",
+      "url": "https://tlidb.com/cn/Magical_Source",
+      "source_order": 8,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "魔源"
+      }
+    },
+    {
+      "id": "Precise_Projectiles",
+      "slug": "Precise_Projectiles",
+      "name_zh": "精准投射",
+      "url": "https://tlidb.com/cn/Precise_Projectiles",
+      "source_order": 9,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "精准投射"
+      }
+    },
+    {
+      "id": "Elemental_Resistance",
+      "slug": "Elemental_Resistance",
+      "name_zh": "元素抵抗",
+      "url": "https://tlidb.com/cn/Elemental_Resistance",
+      "source_order": 10,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "元素抵抗"
+      }
+    },
+    {
+      "id": "Swiftness",
+      "slug": "Swiftness",
+      "name_zh": "疾速",
+      "url": "https://tlidb.com/cn/Swiftness",
+      "source_order": 11,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "疾速"
+      }
+    },
+    {
+      "id": "Deep_Pain",
+      "slug": "Deep_Pain",
+      "name_zh": "深层苦痛",
+      "url": "https://tlidb.com/cn/Deep_Pain",
+      "source_order": 12,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "深层苦痛"
+      }
+    },
+    {
+      "id": "Erosion_Amplification",
+      "slug": "Erosion_Amplification",
+      "name_zh": "腐蚀增幅",
+      "url": "https://tlidb.com/cn/Erosion_Amplification",
+      "source_order": 13,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "腐蚀增幅"
+      }
+    },
+    {
+      "id": "Charged_Flames",
+      "slug": "Charged_Flames",
+      "name_zh": "烈焰充能",
+      "url": "https://tlidb.com/cn/Charged_Flames",
+      "source_order": 14,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "烈焰充能"
+      }
+    },
+    {
+      "id": "Steadfast",
+      "slug": "Steadfast",
+      "name_zh": "坚固",
+      "url": "https://tlidb.com/cn/Steadfast",
+      "source_order": 15,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "坚固"
+      }
+    },
+    {
+      "id": "Summon_Fire_Magus",
+      "slug": "Summon_Fire_Magus",
+      "name_zh": "召唤火焰之灵",
+      "url": "https://tlidb.com/cn/Summon_Fire_Magus",
+      "source_order": 16,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "召唤火焰之灵"
+      }
+    },
+    {
+      "id": "Summon_Frost_Magus",
+      "slug": "Summon_Frost_Magus",
+      "name_zh": "召唤寒冰之灵",
+      "url": "https://tlidb.com/cn/Summon_Frost_Magus",
+      "source_order": 17,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "召唤寒冰之灵"
+      }
+    },
+    {
+      "id": "Summon_Thunder_Magus",
+      "slug": "Summon_Thunder_Magus",
+      "name_zh": "召唤雷霆之灵",
+      "url": "https://tlidb.com/cn/Summon_Thunder_Magus",
+      "source_order": 18,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "召唤雷霆之灵"
+      }
+    },
+    {
+      "id": "Acuteness_Focus",
+      "slug": "Acuteness_Focus",
+      "name_zh": "锐利贯注",
+      "url": "https://tlidb.com/cn/Acuteness_Focus",
+      "source_order": 19,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "锐利贯注"
+      }
+    },
+    {
+      "id": "Corrosion_Focus",
+      "slug": "Corrosion_Focus",
+      "name_zh": "侵蚀贯注",
+      "url": "https://tlidb.com/cn/Corrosion_Focus",
+      "source_order": 20,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "侵蚀贯注"
+      }
+    },
+    {
+      "id": "Ice_Focus",
+      "slug": "Ice_Focus",
+      "name_zh": "寒冰贯注",
+      "url": "https://tlidb.com/cn/Ice_Focus",
+      "source_order": 21,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "寒冰贯注"
+      }
+    },
+    {
+      "id": "Thunder_Focus",
+      "slug": "Thunder_Focus",
+      "name_zh": "雷霆贯注",
+      "url": "https://tlidb.com/cn/Thunder_Focus",
+      "source_order": 22,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "雷霆贯注"
+      }
+    },
+    {
+      "id": "Flame_Focus",
+      "slug": "Flame_Focus",
+      "name_zh": "熔火贯注",
+      "url": "https://tlidb.com/cn/Flame_Focus",
+      "source_order": 23,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "熔火贯注"
+      }
+    },
+    {
+      "id": "Summon_Rock_Magus",
+      "slug": "Summon_Rock_Magus",
+      "name_zh": "召唤磐石之灵",
+      "url": "https://tlidb.com/cn/Summon_Rock_Magus",
+      "source_order": 24,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "召唤磐石之灵"
+      }
+    },
+    {
+      "id": "Summon_Erosion_Magus",
+      "slug": "Summon_Erosion_Magus",
+      "name_zh": "召唤腐化之灵",
+      "url": "https://tlidb.com/cn/Summon_Erosion_Magus",
+      "source_order": 25,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "召唤腐化之灵"
+      }
+    },
+    {
+      "id": "Radical_Order",
+      "slug": "Radical_Order",
+      "name_zh": "激进号令",
+      "url": "https://tlidb.com/cn/Radical_Order",
+      "source_order": 26,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "激进号令"
+      }
+    },
+    {
+      "id": "Cruelty",
+      "slug": "Cruelty",
+      "name_zh": "暴虐",
+      "url": "https://tlidb.com/cn/Cruelty",
+      "source_order": 27,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "暴虐"
+      }
+    },
+    {
+      "id": "Domain_Expansion",
+      "slug": "Domain_Expansion",
+      "name_zh": "领域扩张",
+      "url": "https://tlidb.com/cn/Domain_Expansion",
+      "source_order": 28,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "领域扩张"
+      }
+    },
+    {
+      "id": "Ailment_Amplification",
+      "slug": "Ailment_Amplification",
+      "name_zh": "异常增幅",
+      "url": "https://tlidb.com/cn/Ailment_Amplification",
+      "source_order": 29,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "异常增幅"
+      }
+    },
+    {
+      "id": "Precise:_Fearless",
+      "slug": "Precise:_Fearless",
+      "name_zh": "精密 狂猛",
+      "url": "https://tlidb.com/cn/Precise%3A_Fearless",
+      "source_order": 30,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "精密 狂猛"
+      }
+    },
+    {
+      "id": "Precise:_Weapon_Amplification",
+      "slug": "Precise:_Weapon_Amplification",
+      "name_zh": "精密 武器增幅",
+      "url": "https://tlidb.com/cn/Precise%3A_Weapon_Amplification",
+      "source_order": 31,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "精密 武器增幅"
+      }
+    },
+    {
+      "id": "Precise:_Rejuvenation",
+      "slug": "Precise:_Rejuvenation",
+      "name_zh": "精密 再生",
+      "url": "https://tlidb.com/cn/Precise%3A_Rejuvenation",
+      "source_order": 32,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "精密 再生"
+      }
+    },
+    {
+      "id": "Precise:_Electric_Conversion",
+      "slug": "Precise:_Electric_Conversion",
+      "name_zh": "精密 电能转化",
+      "url": "https://tlidb.com/cn/Precise%3A_Electric_Conversion",
+      "source_order": 33,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "精密 电能转化"
+      }
+    },
+    {
+      "id": "Precise:_Frigid_Domain",
+      "slug": "Precise:_Frigid_Domain",
+      "name_zh": "精密 冰寒领域",
+      "url": "https://tlidb.com/cn/Precise%3A_Frigid_Domain",
+      "source_order": 34,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "精密 冰寒领域"
+      }
+    },
+    {
+      "id": "Precise:_Nimbleness",
+      "slug": "Precise:_Nimbleness",
+      "name_zh": "精密 灵敏",
+      "url": "https://tlidb.com/cn/Precise%3A_Nimbleness",
+      "source_order": 35,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "精密 灵敏"
+      }
+    },
+    {
+      "id": "Precise:_Spell_Amplification",
+      "slug": "Precise:_Spell_Amplification",
+      "name_zh": "精密 法术增幅",
+      "url": "https://tlidb.com/cn/Precise%3A_Spell_Amplification",
+      "source_order": 36,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "精密 法术增幅"
+      }
+    },
+    {
+      "id": "Precise:_Energy_Fortress",
+      "slug": "Precise:_Energy_Fortress",
+      "name_zh": "精密 能量壁垒",
+      "url": "https://tlidb.com/cn/Precise%3A_Energy_Fortress",
+      "source_order": 37,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "精密 能量壁垒"
+      }
+    },
+    {
+      "id": "Precise:_Magical_Source",
+      "slug": "Precise:_Magical_Source",
+      "name_zh": "精密 魔源",
+      "url": "https://tlidb.com/cn/Precise%3A_Magical_Source",
+      "source_order": 38,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "精密 魔源"
+      }
+    },
+    {
+      "id": "Precise:_Precise_Projectiles",
+      "slug": "Precise:_Precise_Projectiles",
+      "name_zh": "精密 精准投射",
+      "url": "https://tlidb.com/cn/Precise%3A_Precise_Projectiles",
+      "source_order": 39,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "精密 精准投射"
+      }
+    },
+    {
+      "id": "Precise:_Elemental_Resistance",
+      "slug": "Precise:_Elemental_Resistance",
+      "name_zh": "精密 元素抵抗",
+      "url": "https://tlidb.com/cn/Precise%3A_Elemental_Resistance",
+      "source_order": 40,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "精密 元素抵抗"
+      }
+    },
+    {
+      "id": "Precise:_Swiftness",
+      "slug": "Precise:_Swiftness",
+      "name_zh": "精密 疾速",
+      "url": "https://tlidb.com/cn/Precise%3A_Swiftness",
+      "source_order": 41,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "精密 疾速"
+      }
+    },
+    {
+      "id": "Precise:_Deep_Pain",
+      "slug": "Precise:_Deep_Pain",
+      "name_zh": "精密 深层苦痛",
+      "url": "https://tlidb.com/cn/Precise%3A_Deep_Pain",
+      "source_order": 42,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "精密 深层苦痛"
+      }
+    },
+    {
+      "id": "Precise:_Erosion_Amplification",
+      "slug": "Precise:_Erosion_Amplification",
+      "name_zh": "精密 腐蚀增幅",
+      "url": "https://tlidb.com/cn/Precise%3A_Erosion_Amplification",
+      "source_order": 43,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "精密 腐蚀增幅"
+      }
+    },
+    {
+      "id": "Precise:_Charged_Flames",
+      "slug": "Precise:_Charged_Flames",
+      "name_zh": "精密 烈焰充能",
+      "url": "https://tlidb.com/cn/Precise%3A_Charged_Flames",
+      "source_order": 44,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "精密 烈焰充能"
+      }
+    },
+    {
+      "id": "Precise:_Steadfast",
+      "slug": "Precise:_Steadfast",
+      "name_zh": "精密 坚固",
+      "url": "https://tlidb.com/cn/Precise%3A_Steadfast",
+      "source_order": 45,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "精密 坚固"
+      }
+    },
+    {
+      "id": "Precise:_Acuteness_Focus",
+      "slug": "Precise:_Acuteness_Focus",
+      "name_zh": "精密 锐利贯注",
+      "url": "https://tlidb.com/cn/Precise%3A_Acuteness_Focus",
+      "source_order": 46,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "精密 锐利贯注"
+      }
+    },
+    {
+      "id": "Precise:_Corrosion_Focus",
+      "slug": "Precise:_Corrosion_Focus",
+      "name_zh": "精密 侵蚀贯注",
+      "url": "https://tlidb.com/cn/Precise%3A_Corrosion_Focus",
+      "source_order": 47,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "精密 侵蚀贯注"
+      }
+    },
+    {
+      "id": "Precise:_Ice_Focus",
+      "slug": "Precise:_Ice_Focus",
+      "name_zh": "精密 寒冰贯注",
+      "url": "https://tlidb.com/cn/Precise%3A_Ice_Focus",
+      "source_order": 48,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "精密 寒冰贯注"
+      }
+    },
+    {
+      "id": "Precise:_Thunder_Focus",
+      "slug": "Precise:_Thunder_Focus",
+      "name_zh": "精密 雷霆贯注",
+      "url": "https://tlidb.com/cn/Precise%3A_Thunder_Focus",
+      "source_order": 49,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "精密 雷霆贯注"
+      }
+    },
+    {
+      "id": "Precise:_Flame_Focus",
+      "slug": "Precise:_Flame_Focus",
+      "name_zh": "精密 熔火贯注",
+      "url": "https://tlidb.com/cn/Precise%3A_Flame_Focus",
+      "source_order": 50,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "精密 熔火贯注"
+      }
+    },
+    {
+      "id": "Precise:_Radical_Order",
+      "slug": "Precise:_Radical_Order",
+      "name_zh": "精密 激进号令",
+      "url": "https://tlidb.com/cn/Precise%3A_Radical_Order",
+      "source_order": 51,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "精密 激进号令"
+      }
+    },
+    {
+      "id": "Precise:_Cruelty",
+      "slug": "Precise:_Cruelty",
+      "name_zh": "精密 暴虐",
+      "url": "https://tlidb.com/cn/Precise%3A_Cruelty",
+      "source_order": 52,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "精密 暴虐"
+      }
+    },
+    {
+      "id": "Precise:_Domain_Expansion",
+      "slug": "Precise:_Domain_Expansion",
+      "name_zh": "精密 领域扩张",
+      "url": "https://tlidb.com/cn/Precise%3A_Domain_Expansion",
+      "source_order": 53,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "精密 领域扩张"
+      }
+    },
+    {
+      "id": "Precise:_Ailment_Amplification",
+      "slug": "Precise:_Ailment_Amplification",
+      "name_zh": "精密 异常增幅",
+      "url": "https://tlidb.com/cn/Precise%3A_Ailment_Amplification",
+      "source_order": 54,
+      "source_locator": {
+        "dom_locator": "div.card.mb-2",
+        "container_label": "被动技能 Tag /55",
+        "link_text": "精密 异常增幅"
+      }
+    }
+  ]
+}
