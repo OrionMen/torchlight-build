@@ -93,6 +93,74 @@ class FetchAllManifestsTest(unittest.TestCase):
             self.assertEqual((forced["downloaded"], forced["cache_hit"]), (1, 0))
             self.assertEqual(len(calls), 2)
 
+    def test_http_200_empty_body_is_failure_and_not_cached(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            manifest_path = root / "manifest.json"
+            output = root / "raw"
+            write_json(manifest_path, source_manifest("Empty"))
+            report = fetch_system(
+                "fixture", manifest_path, output, 1, RateLimiter(0), retries=0,
+                fetcher=lambda url, timeout: response(b""),
+            )
+            self.assertEqual((report["downloaded"], report["failed"]), (0, 1))
+            self.assertIn("empty body", report["errors"][0]["error"])
+            self.assertFalse((output / "raw_html/Empty.html").exists())
+            self.assertFalse((output / "meta/Empty.meta.json").exists())
+
+    def test_zero_byte_cache_is_invalidated_and_refetched(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            manifest_path = root / "manifest.json"
+            output = root / "raw"
+            write_json(manifest_path, source_manifest("Entry"))
+            (output / "raw_html").mkdir(parents=True)
+            (output / "raw_html/Entry.html").write_bytes(b"")
+            write_json(output / "meta/Entry.meta.json", {
+                "http_status": 200,
+                "content_length": 0,
+                "html_sha256": hashlib.sha256(b"").hexdigest(),
+            })
+            calls = []
+
+            def fetcher(url, timeout):
+                calls.append(url)
+                return response(b"fresh html")
+
+            report = fetch_system(
+                "fixture", manifest_path, output, 1, RateLimiter(0), fetcher=fetcher
+            )
+            self.assertEqual((report["downloaded"], report["cache_hit"]), (1, 0))
+            self.assertEqual(1, report["invalid_empty_cache_count"])
+            self.assertEqual(
+                [{"route": "/cn/Entry", "old_size": 0}],
+                report["invalid_empty_cache_examples"],
+            )
+            self.assertEqual(1, len(calls))
+            self.assertEqual(b"fresh html", (output / "raw_html/Entry.html").read_bytes())
+
+    def test_cache_length_or_hash_mismatch_is_refetched(self):
+        for meta in (
+            {"content_length": 99},
+            {"content_length": 6, "html_sha256": "wrong"},
+        ):
+            with self.subTest(meta=meta), tempfile.TemporaryDirectory() as temporary:
+                root = Path(temporary)
+                manifest_path = root / "manifest.json"
+                output = root / "raw"
+                write_json(manifest_path, source_manifest("Entry"))
+                (output / "raw_html").mkdir(parents=True)
+                (output / "raw_html/Entry.html").write_bytes(b"cached")
+                write_json(output / "meta/Entry.meta.json", meta)
+                report = fetch_system(
+                    "fixture", manifest_path, output, 1, RateLimiter(0),
+                    fetcher=lambda url, timeout: response(b"replacement"),
+                )
+                self.assertEqual((report["downloaded"], report["cache_hit"]), (1, 0))
+                self.assertEqual(
+                    b"replacement", (output / "raw_html/Entry.html").read_bytes()
+                )
+
     def test_retry_and_failure_do_not_stop_batch(self):
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)

@@ -6,7 +6,7 @@ import re
 import sys
 from html.parser import HTMLParser
 from pathlib import Path
-from typing import Iterable
+from typing import Iterable, Optional
 from urllib.parse import urljoin
 
 
@@ -84,7 +84,7 @@ def has_class(node: Element, name: str) -> bool:
     return name in node.attrs.get("class", "").split()
 
 
-def image_data(node: Element) -> dict:
+def image_data(node: Element, base_url: str = SOURCE_URL) -> dict:
     images = [item for item in node.descendants() if item.tag == "img"]
     if not images:
         return {"alt": None, "url": None}
@@ -92,7 +92,7 @@ def image_data(node: Element) -> dict:
     src = image.attrs.get("src")
     return {
         "alt": clean(image.attrs.get("alt", "")) or None,
-        "url": urljoin(SOURCE_URL, src) if src else None,
+        "url": urljoin(base_url, src) if src else None,
     }
 
 
@@ -147,7 +147,7 @@ def direct_break_segments(node: Element) -> list[str]:
     return segments
 
 
-def parse_node(box: Element, index: int) -> dict:
+def parse_node(box: Element, index: int, base_url: str = SOURCE_URL) -> dict:
     content = next(
         (child for child in box.children if isinstance(child, Element) and has_class(child, "flex-grow-1")),
         box,
@@ -199,9 +199,175 @@ def parse_node(box: Element, index: int) -> dict:
         "index": index,
         "name": title,
         "required_level": int(level_match.group(1)) if level_match else None,
-        "icon": image_data(box),
+        "icon": image_data(box, base_url),
         "levels": levels,
         "source_text": source_text,
+    }
+
+
+def _direct_elements(node: Element, tag: Optional[str] = None) -> list[Element]:
+    return [
+        child
+        for child in node.children
+        if isinstance(child, Element) and (tag is None or child.tag == tag)
+    ]
+
+
+def parse_hero_html(
+    html: str,
+    *,
+    entity_id: str,
+    name_zh: str,
+    page_url: str,
+    raw_sha256: str,
+    season: str = "ss13",
+) -> dict:
+    """将单个英雄页面忠实转换为网页结构数据，不解释游戏语义。"""
+
+    parser = TreeParser()
+    parser.feed(html)
+    elements = list(parser.root.descendants())
+    for order, element in enumerate(elements):
+        element.order = order
+
+    trait_headers = [
+        item
+        for item in elements
+        if item.tag == "h5"
+        and has_class(item, "card-header")
+        and re.fullmatch(r".+?\s*-\s*英雄特性\s*/\s*\d+", item.text())
+    ]
+    if not trait_headers:
+        raise ValueError("hero trait header was not found")
+    trait_header = trait_headers[0]
+    trait_name = clean(trait_header.text().split(" - ", 1)[0])
+    trait_card = trait_header.parent
+    if trait_card is None:
+        raise ValueError("hero trait container was not found")
+
+    boxes: list[Element] = []
+    for item in trait_card.descendants():
+        if not has_class(item, "d-flex") or not has_class(item, "border-top"):
+            continue
+        content = next(
+            (
+                child
+                for child in _direct_elements(item)
+                if has_class(child, "flex-grow-1")
+            ),
+            None,
+        )
+        if content and any(has_class(child, "fw-bold") for child in _direct_elements(content)):
+            boxes.append(item)
+    nodes = [parse_node(box, index, page_url) for index, box in enumerate(boxes)]
+    if not nodes:
+        raise ValueError("hero nodes were not found")
+
+    hero_cards = []
+    first_node_order = boxes[0].order
+    for item in elements:
+        if item.tag != "div" or not has_class(item, "card-body") or item.order >= first_node_order:
+            continue
+        direct = _direct_elements(item)
+        if any(child.tag == "img" and has_class(child, "size128") for child in direct):
+            hero_cards.append(item)
+    if not hero_cards:
+        raise ValueError("hero summary card was not found")
+    hero_card = hero_cards[-1]
+
+    direct_links = [child for child in _direct_elements(hero_card, "a") if child.text()]
+    character_link = direct_links[0] if direct_links else None
+    character_name = character_link.text() if character_link else ""
+    skill_link = next(
+        (
+            link
+            for link in direct_links
+            if link is not character_link and any(item.tag == "img" for item in link.descendants())
+        ),
+        None,
+    )
+    recommended_skill = {
+        "name": skill_link.text() if skill_link else "",
+        "url": urljoin(page_url, skill_link.attrs.get("href", "")) if skill_link else None,
+    }
+    excluded_segments = {character_name, recommended_skill["name"]}
+    summary_candidates = [
+        segment
+        for segment in direct_break_segments(hero_card)
+        if segment and segment not in excluded_segments and recommended_skill["name"] not in segment
+    ]
+    summary = max(summary_candidates, key=len) if summary_candidates else ""
+    if not summary:
+        raise ValueError("hero summary was not found")
+
+    portrait_node = next(
+        (
+            child
+            for child in _direct_elements(hero_card, "img")
+            if has_class(child, "size128") and child.attrs.get("src")
+        ),
+        None,
+    )
+    portrait = {
+        "alt": clean(portrait_node.attrs.get("alt", "")) or None if portrait_node else None,
+        "url": urljoin(page_url, portrait_node.attrs["src"]) if portrait_node else None,
+    }
+
+    parse_warnings: list[str] = []
+    structured_nodes = []
+    for node in nodes:
+        levels = []
+        for level in node["levels"]:
+            level_value = level["level"]
+            level_key = str(level_value) if level_value is not None else "unspecified"
+            effects = []
+            for effect_index, text in enumerate(level["lines"]):
+                effect_id = (
+                    f"{season}.hero.{entity_id}.node.{node['index']}."
+                    f"level.{level_key}.effect.{effect_index}"
+                )
+                effects.append(
+                    {
+                        "effect_id": effect_id,
+                        "text": text,
+                        "source": {
+                            "url": page_url,
+                            "node_index": node["index"],
+                            "node_name": node["name"],
+                            "trait_level": level_value,
+                            "effect_index": effect_index,
+                            "raw_html_sha256": raw_sha256,
+                        },
+                    }
+                )
+            levels.append({"level": level_value, "effects": effects})
+        structured_nodes.append(
+            {
+                "index": node["index"],
+                "name": node["name"],
+                "required_level": node["required_level"],
+                "icon": node["icon"],
+                "levels": levels,
+                "source_text": node["source_text"],
+            }
+        )
+
+    return {
+        "schema_version": 1,
+        "season": season,
+        "entity_type": "hero_trait",
+        "entity_id": entity_id,
+        "name_zh": name_zh or f"{character_name}|{trait_name}",
+        "character_name_zh": character_name,
+        "trait_name_zh": trait_name,
+        "hero_label": trait_header.text(),
+        "page_url": page_url,
+        "raw_html_sha256": raw_sha256,
+        "summary": summary,
+        "portrait": portrait,
+        "recommended_skill": recommended_skill,
+        "nodes": structured_nodes,
+        "parse_warnings": parse_warnings,
     }
 
 

@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "categories": [
+    {
+      "id": "hero",
+      "name_zh": "英雄",
+      "search_visibility": "primary",
+      "confidence": "high",
+      "systems": [
+        "hero"
+      ]
+    },
+    {
+      "id": "equipment",
+      "name_zh": "装备",
+      "search_visibility": "primary",
+      "confidence": "high",
+      "systems": [
+        "craft",
+        "legendary_gear",
+        "inventory"
+      ]
+    },
+    {
+      "id": "skill",
+      "name_zh": "技能",
+      "search_visibility": "primary",
+      "confidence": "high",
+      "systems": [
+        "active_skill",
+        "support_skill",
+        "passive_skill",
+        "activation_medium_skill",
+        "magnificent_support_skill",
+        "noble_support_skill",
+        "modularization_skill"
+      ]
+    },
+    {
+      "id": "talent_board",
+      "name_zh": "天赋石板",
+      "search_visibility": "primary",
+      "confidence": "high",
+      "systems": [
+        "talent"
+      ]
+    },
+    {
+      "id": "pact_spirit",
+      "name_zh": "契灵",
+      "search_visibility": "primary",
+      "confidence": "high",
+      "systems": [
+        "pactspirit"
+      ]
+    },
+    {
+      "id": "memory",
+      "name_zh": "追忆",
+      "search_visibility": "primary",
+      "confidence": "unassigned",
+      "systems": []
+    }
+  ],
+  "uncategorized": [
+    {
+      "system_id": "drop_source",
+      "reason": "game category not yet confirmed"
+    },
+    {
+      "system_id": "destiny",
+      "reason": "memory classification deferred; audit confidence 0.55"
+    },
+    {
+      "system_id": "corrosion",
+      "reason": "equipment classification not yet confirmed"
+    },
+    {
+      "system_id": "candidate_gear_empowerment",
+      "reason": "candidate system; game category not yet confirmed"
+    },
+    {
+      "system_id": "nether_kings_divinity",
+      "reason": "game category not yet confirmed"
+    },
+    {
+      "system_id": "path_of_progression",
+      "reason": "game category not yet confirmed"
+    },
+    {
+      "system_id": "help",
+      "reason": "wiki navigation/support data"
+    },
+    {
+      "system_id": "codex",
+      "reason": "wiki navigation/support data"
+    },
+    {
+      "system_id": "tip",
+      "reason": "wiki navigation/support data"
+    },
+    {
+      "system_id": "hyperlink",
+      "reason": "wiki navigation/support data"
+    },
+    {
+      "system_id": "netherrealm",
+      "reason": "game category not yet confirmed"
+    },
+    {
+      "system_id": "confusion_card_library",
+      "reason": "game category not yet confirmed"
+    },
+    {
+      "system_id": "void_chart",
+      "reason": "game category not yet confirmed"
+    },
+    {
+      "system_id": "compass",
+      "reason": "game category not yet confirmed"
+    },
+    {
+      "system_id": "probe",
+      "reason": "game category not yet confirmed"
+    },
+    {
+      "system_id": "season_compass",
+      "reason": "game category not yet confirmed"
+    },
+    {
+      "system_id": "path_of_the_brave",
+      "reason": "game category not yet confirmed"
+    },
+    {
+      "system_id": "candidate_outfit",
+      "reason": "candidate system; game category not yet confirmed"
+    },
+    {
+      "system_id": "commodity",
+      "reason": "equipment classification not yet confirmed"
+    },
+    {
+      "system_id": "boon",
+      "reason": "game category not yet confirmed"
+    },
+    {
+      "system_id": "recovered_internal_pages",
+      "reason": "supplemental source, not player category"
+    }
+  ]
+}

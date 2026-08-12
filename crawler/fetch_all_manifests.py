@@ -12,7 +12,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Callable, TextIO
 from urllib.error import HTTPError, URLError
-from urllib.parse import quote
+from urllib.parse import quote, urlsplit
 from urllib.request import Request, urlopen
 
 from crawler.fetch_manifest import ROOT, USER_AGENT, request_url_for, ssl_context, write_json
@@ -237,15 +237,34 @@ class ProgressReporter:
         print("Run the same command again to resume.", file=self.output, flush=True)
 
 
-def cache_result(entry: dict, html_path: Path, meta_path: Path) -> dict | None:
+def cache_result(
+    entry: dict, html_path: Path, meta_path: Path
+) -> tuple[dict | None, dict | None]:
     if not html_path.is_file() or not meta_path.is_file():
-        return None
+        return None, None
     try:
         meta = json.loads(meta_path.read_text(encoding="utf-8"))
         body = html_path.read_bytes()
     except (OSError, json.JSONDecodeError):
-        return None
+        return None, None
     digest = hashlib.sha256(body).hexdigest()
+    old_size = len(body)
+    invalid_reason = None
+    if old_size == 0:
+        invalid_reason = "empty_html"
+    elif meta.get("content_length") is not None and meta["content_length"] != old_size:
+        invalid_reason = "content_length_mismatch"
+    elif meta.get("html_sha256") and meta["html_sha256"] != digest:
+        invalid_reason = "html_sha256_mismatch"
+    elif meta.get("http_status") not in (None, 200):
+        invalid_reason = "http_status_not_200"
+    if invalid_reason:
+        return None, {
+            "route": entry.get("path") or urlsplit(entry["url"]).path,
+            "id": entry.get("id"),
+            "old_size": old_size,
+            "reason": invalid_reason,
+        }
     normalized = {
         **meta,
         "schema_version": 1,
@@ -276,7 +295,7 @@ def cache_result(entry: dict, html_path: Path, meta_path: Path) -> dict | None:
         "retry_count": 0,
         "cache_hit": True,
         "html_sha256": digest,
-    }
+    }, None
 
 
 def fetch_entry(
@@ -316,8 +335,9 @@ def fetch_entry(
     stem = quote(slug, safe="-_.")
     html_path = output_dir / f"raw_html/{stem}.html"
     meta_path = output_dir / f"meta/{stem}.meta.json"
+    invalid_cache = None
     if not force:
-        cached = cache_result(entry, html_path, meta_path)
+        cached, invalid_cache = cache_result(entry, html_path, meta_path)
         if cached is not None:
             return cached
 
@@ -332,6 +352,8 @@ def fetch_entry(
                 raise ValueError(f"HTTP {status}")
             if not isinstance(body, bytes):
                 raise ValueError("HTTP fetcher must return raw bytes")
+            if not body:
+                raise ValueError("HTTP 200 returned empty body")
             digest = hashlib.sha256(body).hexdigest()
             html_path.parent.mkdir(parents=True, exist_ok=True)
             html_path.write_bytes(body)
@@ -356,7 +378,7 @@ def fetch_entry(
                 "cache_hit": False,
             }
             write_json(meta_path, meta)
-            return {
+            result = {
                 "id": entry.get("id"),
                 "slug": slug,
                 "url": url,
@@ -368,11 +390,14 @@ def fetch_entry(
                 "cache_hit": False,
                 "html_sha256": digest,
             }
+            if invalid_cache:
+                result["invalid_cache"] = invalid_cache
+            return result
         except (HTTPError, URLError, TimeoutError, OSError, ValueError, KeyError) as exc:
             error = str(exc)
             if attempt < retries:
                 sleep(backoff_base * (2 ** attempt))
-    return {
+    result = {
         "id": entry.get("id"),
         "slug": slug,
         "url": url,
@@ -382,6 +407,9 @@ def fetch_entry(
         "cache_hit": False,
         "error": error,
     }
+    if invalid_cache:
+        result["invalid_cache"] = invalid_cache
+    return result
 
 
 def fetch_system(
@@ -408,6 +436,8 @@ def fetch_system(
         "cache_hit": 0,
         "failed": 0,
         "known_missing": 0,
+        "invalid_empty_cache_count": 0,
+        "invalid_empty_cache_examples": [],
         "retry_count": 0,
         "bytes": 0,
         "elapsed": 0.0,
@@ -458,6 +488,13 @@ def fetch_system(
             report["cache_hit"] += int(result["status"] == "cache_hit")
             report["failed"] += int(result["status"] == "failed")
             report["known_missing"] += int(result["status"] == "known_missing_detail")
+            invalid_cache = result.get("invalid_cache") or {}
+            if invalid_cache.get("reason") == "empty_html":
+                report["invalid_empty_cache_count"] += 1
+                report["invalid_empty_cache_examples"].append({
+                    "route": invalid_cache.get("route"),
+                    "old_size": invalid_cache.get("old_size", 0),
+                })
             report["retry_count"] += result.get("retry_count", 0)
             if result["status"] == "downloaded":
                 report["bytes"] += result.get("bytes", 0)
@@ -542,6 +579,14 @@ def orchestrate(
         "cache_hit": sum(item["cache_hit"] for item in reports),
         "failed": sum(item["failed"] for item in reports),
         "known_missing": sum(item["known_missing"] for item in reports),
+        "invalid_empty_cache_count": sum(
+            item["invalid_empty_cache_count"] for item in reports
+        ),
+        "invalid_empty_cache_examples": [
+            {"system_id": item["system_id"], **example}
+            for item in reports
+            for example in item["invalid_empty_cache_examples"]
+        ],
         "retry_count": sum(item["retry_count"] for item in reports),
         "bytes": sum(item["bytes"] for item in reports),
         "elapsed": round(time.monotonic() - started, 3),
@@ -556,7 +601,9 @@ def orchestrate(
                 key: item[key]
                 for key in (
                     "system_id", "manifest_count", "downloaded", "cache_hit",
-                    "known_missing", "failed", "retry_count", "bytes", "elapsed", "warnings", "errors",
+                    "known_missing", "invalid_empty_cache_count",
+                    "invalid_empty_cache_examples", "failed", "retry_count",
+                    "bytes", "elapsed", "warnings", "errors",
                 )
             }
             for item in reports

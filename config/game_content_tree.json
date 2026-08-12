@@ -1,0 +1,275 @@
+{
+  "schema_version": 1,
+  "search_categories": [
+    {
+      "id": "hero",
+      "name_zh": "英雄",
+      "search_visibility": "primary",
+      "children": [
+        {
+          "id": "hero_trait",
+          "name_zh": "英雄特性",
+          "systems": [
+            "hero"
+          ]
+        },
+        {
+          "id": "hero_memory",
+          "name_zh": "追忆",
+          "search_visibility": "hidden",
+          "systems": [
+            "boon"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "memory",
+      "name_zh": "追忆",
+      "search_visibility": "primary",
+      "children": [
+        {
+          "id": "hero_memory",
+          "name_zh": "英雄追忆",
+          "systems": [],
+          "notes": [
+            "Entity-driven category for tlidb:cn:Hero_Memories; separate from the legacy boon mapping under hero."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "equipment",
+      "name_zh": "装备",
+      "search_visibility": "primary",
+      "children": [
+        {
+          "id": "equipment_craft",
+          "name_zh": "打造装备",
+          "systems": [
+            "craft"
+          ]
+        },
+        {
+          "id": "equipment_legendary",
+          "name_zh": "传奇装备",
+          "systems": [
+            "legendary_gear"
+          ]
+        },
+        {
+          "id": "equipment_vorax",
+          "name_zh": "渴瘾装备",
+          "systems": [],
+          "notes": [
+            "Entity-driven category; inventory is not mapped as a whole system."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "equipment_related",
+      "name_zh": "装备相关",
+      "search_visibility": "primary",
+      "children": [
+        {
+          "id": "equipment_related_fragrance",
+          "name_zh": "调香秘仪",
+          "systems": [
+            "equipment_related_fragrance"
+          ]
+        },
+        {
+          "id": "equipment_related_tower_sequence",
+          "name_zh": "高塔序列",
+          "systems": [
+            "equipment_related_tower_sequence"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skill",
+      "name_zh": "技能",
+      "search_visibility": "primary",
+      "children": [
+        {
+          "id": "skill_active",
+          "name_zh": "主动技能",
+          "systems": [
+            "active_skill"
+          ]
+        },
+        {
+          "id": "skill_support",
+          "name_zh": "辅助技能",
+          "systems": [
+            "support_skill"
+          ]
+        },
+        {
+          "id": "skill_passive",
+          "name_zh": "被动技能",
+          "systems": [
+            "passive_skill"
+          ]
+        },
+        {
+          "id": "skill_activation_medium",
+          "name_zh": "触媒技能",
+          "systems": [
+            "activation_medium_skill"
+          ]
+        },
+        {
+          "id": "skill_magnificent_support",
+          "name_zh": "华贵辅助技能",
+          "systems": [
+            "magnificent_support_skill"
+          ]
+        },
+        {
+          "id": "skill_noble_support",
+          "name_zh": "崇高辅助技能",
+          "systems": [
+            "noble_support_skill"
+          ]
+        },
+        {
+          "id": "skill_modularization",
+          "name_zh": "模块化技能",
+          "systems": [
+            "modularization_skill"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "talent_board",
+      "name_zh": "天赋系统",
+      "search_visibility": "primary",
+      "children": [
+        {
+          "id": "talent_hero",
+          "name_zh": "英雄天赋",
+          "systems": [
+            "talent"
+          ]
+        },
+        {
+          "id": "talent_new_god",
+          "name_zh": "新神",
+          "systems": [],
+          "notes": [
+            "Entity-driven classification from the talent manifest."
+          ]
+        },
+        {
+          "id": "talent_nether_king_entity",
+          "name_zh": "冥王",
+          "systems": [],
+          "notes": [
+            "Entity-driven classification from the talent manifest."
+          ]
+        },
+        {
+          "id": "talent_ethereal_prism",
+          "name_zh": "异度棱镜",
+          "systems": [
+            "Ethereal_Prism"
+          ],
+          "notes": [
+            "system_id is not present in the current system_manifest; reserved for the confirmed content-tree concept"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pact_spirit",
+      "name_zh": "契灵系统",
+      "search_visibility": "primary",
+      "children": [
+        {
+          "id": "pact_spirit_entity",
+          "name_zh": "契灵",
+          "systems": [
+            "pactspirit"
+          ]
+        },
+        {
+          "id": "pact_spirit_destiny",
+          "name_zh": "命运",
+          "systems": [
+            "destiny"
+          ]
+        }
+      ]
+    }
+  ],
+  "hidden_systems": [
+    {
+      "system_id": "hyperlink",
+      "reason": "wiki navigation/support data; excluded from default search"
+    },
+    {
+      "system_id": "help",
+      "reason": "support documentation; excluded from default search"
+    },
+    {
+      "system_id": "tip",
+      "reason": "support documentation; excluded from default search"
+    },
+    {
+      "system_id": "codex",
+      "reason": "support documentation; excluded from default search"
+    },
+    {
+      "system_id": "drop_source",
+      "reason": "support data; excluded from default search"
+    },
+    {
+      "system_id": "compass",
+      "reason": "not a default player search category"
+    },
+    {
+      "system_id": "season_compass",
+      "reason": "not a default player search category"
+    },
+    {
+      "system_id": "netherrealm",
+      "reason": "season gameplay is outside the default search categories"
+    },
+    {
+      "system_id": "void_chart",
+      "reason": "season gameplay is outside the default search categories"
+    },
+    {
+      "system_id": "path_of_the_brave",
+      "reason": "season gameplay is outside the default search categories"
+    },
+    {
+      "system_id": "probe",
+      "reason": "not a default player search category"
+    },
+    {
+      "system_id": "commodity",
+      "reason": "equipment classification is not confirmed for default search"
+    },
+    {
+      "system_id": "corrosion",
+      "reason": "equipment classification is not confirmed for default search"
+    },
+    {
+      "system_id": "candidate_gear_empowerment",
+      "reason": "candidate system; excluded from default search"
+    },
+    {
+      "system_id": "candidate_outfit",
+      "reason": "candidate system; excluded from default search"
+    },
+    {
+      "system_id": "recovered_internal_pages",
+      "reason": "supplemental source, not a player category"
+    }
+  ]
+}

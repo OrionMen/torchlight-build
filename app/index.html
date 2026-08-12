@@ -3,47 +3,143 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Torchlight Build · Hero Viewer</title>
+    <title>Torchlight Build · Knowledge Viewer</title>
     <link rel="stylesheet" href="./styles.css">
     <script src="./app.js" defer></script>
   </head>
   <body>
-    <header class="site-header">
-      <div class="header-content">
-        <div>
-          <p class="eyebrow">Torchlight Build</p>
-          <h1>英雄数据浏览器 <span>· SS13</span></h1>
-        </div>
-        <span class="status-badge">Parsed Data</span>
+    <header class="app-bar">
+      <div class="brand">
+        <strong>Torchlight Build</strong>
+        <span>Knowledge Viewer V1</span>
       </div>
-      <p class="site-note">当前页面展示从 tlidb 原始网页提取出的事实数据，尚未进行完整游戏语义建模。</p>
+      <div class="app-status">
+        <span class="status-dot" aria-hidden="true"></span>
+        Source / Structured
+      </div>
     </header>
 
-    <main class="page-shell">
-      <p id="loading" class="notice" role="status">正在读取英雄数据……</p>
-      <section id="error" class="notice notice-error" role="alert" hidden>
-        <strong>无法读取英雄数据。</strong>
-        <span>请从仓库根目录运行：<code>python3 -m http.server 8000</code></span>
+    <main class="workspace">
+      <aside class="panel sidebar" aria-label="英雄导航">
+        <div class="panel-header sidebar-header">
+          <div>
+            <p class="panel-kicker">Hero Tree</p>
+            <h1>英雄特性</h1>
+          </div>
+          <span id="hero-count" class="count-badge">0</span>
+        </div>
+        <div class="search-wrap">
+          <label for="hero-search">搜索英雄、特性或 slug</label>
+          <input id="hero-search" type="search" placeholder="输入关键词" autocomplete="off">
+          <p id="search-count" class="search-count">正在加载 Manifest…</p>
+        </div>
+        <div id="manifest-state" class="inline-state" role="status">正在读取 Hero Manifest…</div>
+        <nav id="hero-tree" class="hero-tree" aria-label="Hero Tree" hidden></nav>
+      </aside>
+
+      <section class="panel detail-panel" aria-label="英雄特性详情">
+        <div id="detail-loading" class="center-state" role="status">正在加载 Anger…</div>
+        <div id="detail-error" class="center-state error-state" role="alert" hidden></div>
+        <div id="detail-content" hidden>
+          <header id="trait-header" class="trait-header"></header>
+
+          <section class="detail-block nodes-block" aria-labelledby="nodes-heading">
+            <div class="section-heading">
+              <div>
+                <p class="section-eyebrow">Structured</p>
+                <h2 id="nodes-heading">节点与效果</h2>
+              </div>
+              <span id="node-list-summary" class="section-summary"></span>
+            </div>
+            <div id="node-list" class="node-list"></div>
+          </section>
+
+          <div id="effect-sections" class="effect-sections">
+            <section class="detail-block" aria-labelledby="source-heading">
+              <div class="section-heading compact">
+                <div>
+                  <p class="section-eyebrow">01</p>
+                  <h2 id="source-heading">Source</h2>
+                </div>
+                <span class="source-ready">Source Ready</span>
+              </div>
+              <blockquote id="source-text" class="source-quote"></blockquote>
+              <dl id="source-fields" class="field-grid"></dl>
+            </section>
+
+            <section class="detail-block" aria-labelledby="structured-heading">
+              <div class="section-heading compact">
+                <div>
+                  <p class="section-eyebrow">02</p>
+                  <h2 id="structured-heading">Structured</h2>
+                </div>
+              </div>
+              <dl id="structured-fields" class="field-grid mono-values"></dl>
+            </section>
+
+            <section class="detail-block" aria-labelledby="knowledge-heading">
+              <div class="section-heading compact"><div><p class="section-eyebrow">03</p><h2 id="knowledge-heading">Knowledge</h2></div></div>
+              <div id="knowledge-content"></div>
+            </section>
+
+            <section class="detail-block" aria-labelledby="rule-heading">
+              <div class="section-heading compact"><div><p class="section-eyebrow">04</p><h2 id="rule-heading">Rule</h2></div></div>
+              <div id="rule-content"></div>
+            </section>
+
+            <section class="detail-block" aria-labelledby="contribution-heading">
+              <div class="section-heading compact"><div><p class="section-eyebrow">05</p><h2 id="contribution-heading">Contribution</h2></div></div>
+              <div id="contribution-content"></div>
+            </section>
+
+            <section class="detail-block" aria-labelledby="trace-heading">
+              <div class="section-heading compact"><div><p class="section-eyebrow">06</p><h2 id="trace-heading">Trace</h2></div></div>
+              <div id="trace-content"></div>
+            </section>
+
+            <section class="detail-block" aria-labelledby="notes-heading">
+              <div class="section-heading compact"><div><p class="section-eyebrow">07</p><h2 id="notes-heading">Notes</h2></div></div>
+              <dl id="notes-fields" class="field-grid"></dl>
+            </section>
+          </div>
+        </div>
       </section>
 
-      <div id="content" hidden>
-        <section id="hero" class="hero-card" aria-labelledby="hero-title"></section>
-        <section aria-labelledby="stats-title">
-          <h2 id="stats-title" class="section-title">数据概览</h2>
-          <div id="stats" class="stats-grid"></div>
-        </section>
-        <section aria-labelledby="nodes-title">
-          <div class="section-heading">
-            <h2 id="nodes-title" class="section-title">英雄节点</h2>
-            <span id="node-summary" class="section-meta"></span>
+      <aside class="panel inspector" aria-label="Inspector">
+        <div class="panel-header inspector-header">
+          <div>
+            <p class="panel-kicker">Inspector</p>
+            <h2>当前选择</h2>
           </div>
-          <div id="nodes" class="nodes-list"></div>
-        </section>
-      </div>
-
-      <noscript>
-        <p class="notice notice-error">此页面需要启用 JavaScript 才能读取英雄数据。</p>
-      </noscript>
+        </div>
+        <div id="inspector-empty" class="inspector-empty">请选择一条效果。</div>
+        <div id="inspector-content" hidden>
+          <section class="inspector-section">
+            <h3>Selection</h3>
+            <dl id="inspector-selection" class="inspector-fields"></dl>
+          </section>
+          <section class="inspector-section">
+            <h3>Identity</h3>
+            <dl id="inspector-identity" class="inspector-fields mono-values"></dl>
+          </section>
+          <section class="inspector-section">
+            <h3>Source Trace</h3>
+            <dl id="inspector-trace" class="inspector-fields mono-values"></dl>
+          </section>
+          <section class="inspector-section">
+            <h3>Status</h3>
+            <dl id="inspector-status" class="inspector-fields"></dl>
+          </section>
+          <section class="inspector-section">
+            <h3>Warnings</h3>
+            <div id="inspector-warnings" class="warning-list"></div>
+          </section>
+        </div>
+      </aside>
     </main>
+
+    <noscript>
+      <p class="noscript">Knowledge Viewer 需要启用 JavaScript 才能读取本地数据。</p>
+    </noscript>
   </body>
 </html>
