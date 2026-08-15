@@ -19,7 +19,9 @@ USER_AGENT = "torchlight-build/0.1 (+manifest fetch)"
 
 def request_url_for(source_url: str) -> str:
     parsed = urlsplit(source_url)
-    safe_segment = "-._~!$&'()*+,;=@"
+    # Keep an encoded plus encoded. Some TLIDB routes use %2B as a literal
+    # path identity and return 404 when it is rewritten to a bare "+".
+    safe_segment = "-._~!$&'()*,;=@"
     encoded_path = "/".join(quote(unquote(segment), safe=safe_segment)
                             for segment in parsed.path.split("/"))
     return urlunsplit((parsed.scheme, parsed.netloc, encoded_path, parsed.query, ""))

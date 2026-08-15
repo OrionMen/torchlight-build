@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "season_id": "ss13",
+  "entries": [
+    {
+      "system_id": "drop_source",
+      "route": "/cn/An_exclusive_drop_from_the_Path_of_the_Brave_gameplay._An_exclusive_drop_from_the_Creation_Engine_gameplay_at_Profound_Timemark_8_or_higher",
+      "http_status": 404,
+      "reason": "upstream_directory_entry_has_no_detail_page"
+    },
+    {
+      "system_id": "help",
+      "route": "/cn/Hero_Relic",
+      "http_status": 404,
+      "reason": "upstream_directory_entry_has_no_detail_page"
+    },
+    {
+      "system_id": "hyperlink",
+      "route": "/cn/Hero_Relic",
+      "http_status": 404,
+      "reason": "upstream_directory_entry_has_no_detail_page"
+    }
+  ]
+}

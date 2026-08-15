@@ -19,6 +19,51 @@ from crawler.fetch_manifest import ROOT, USER_AGENT, request_url_for, ssl_contex
 from crawler.season_context import DEFAULT_SEASON, SeasonContext
 
 
+def known_missing_config_path(season: str) -> Path:
+    return ROOT / "config" / "seasons" / season / "known_missing_pages.json"
+
+
+def load_known_missing_contract(path: Path, season: str) -> dict[tuple[str, str], dict]:
+    if not path.is_file():
+        return {}
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if data.get("schema_version") != 1 or data.get("season_id") != season:
+        raise ValueError(f"invalid known-missing contract for season {season}: {path}")
+    entries = data.get("entries")
+    if not isinstance(entries, list):
+        raise ValueError("known-missing contract entries must be a list")
+    contract: dict[tuple[str, str], dict] = {}
+    for item in entries:
+        system_id = item.get("system_id")
+        route = item.get("route")
+        if not isinstance(system_id, str) or not system_id or not isinstance(route, str) or not route.startswith("/cn/"):
+            raise ValueError("known-missing entry requires system_id and /cn/ route")
+        if item.get("http_status") != 404:
+            raise ValueError("known-missing entry must have HTTP 404 status")
+        key = (system_id, route)
+        if key in contract:
+            raise ValueError(f"duplicate known-missing entry: {system_id} {route}")
+        contract[key] = item
+    return contract
+
+
+def entry_with_known_missing(
+    system_id: str, entry: dict, contract: dict[tuple[str, str], dict]
+) -> dict:
+    route = urlsplit(entry.get("url") or "").path
+    match = contract.get((system_id, route))
+    if match is None:
+        return entry
+    return {
+        **entry,
+        "validation": {
+            "status": "not_found",
+            "http_status": 404,
+            "reason": match.get("reason", "upstream_permanent_missing"),
+        },
+    }
+
+
 class RateLimiter:
     def __init__(
         self,
@@ -425,6 +470,7 @@ def fetch_system(
     fetcher: Callable[[str, float], dict] = fetch_once,
     sleep: Callable[[float], None] = time.sleep,
     progress_callback: Callable[[dict, int, int], None] | None = None,
+    known_missing_contract: dict[tuple[str, str], dict] | None = None,
 ) -> dict:
     started = time.monotonic()
     report = {
@@ -448,7 +494,11 @@ def fetch_system(
     }
     try:
         manifest = load_source_manifest(manifest_path)
-        entries = manifest["entries"]
+        contract = known_missing_contract or {}
+        entries = [
+            entry_with_known_missing(system_id, entry, contract)
+            for entry in manifest["entries"]
+        ]
         report["manifest_count"] = len(entries)
         results: dict[int, dict] = {}
         with ThreadPoolExecutor(max_workers=max_workers) as executor:
@@ -535,6 +585,7 @@ def orchestrate(
     fetcher: Callable[[str, float], dict] = fetch_once,
     sleep: Callable[[float], None] = time.sleep,
     progress: ProgressReporter | None = None,
+    known_missing_contract: dict[tuple[str, str], dict] | None = None,
 ) -> dict:
     started = time.monotonic()
     started_at = datetime.now(timezone.utc).isoformat()
@@ -564,6 +615,7 @@ def orchestrate(
             fetcher=fetcher,
             sleep=sleep,
             progress_callback=progress.page_completed if progress is not None else None,
+            known_missing_contract=known_missing_contract,
         )
         reports.append(system_report)
         if progress is not None:
@@ -666,6 +718,9 @@ def main(argv=None) -> int:
                         system["manifest_path"] = str(scoped)
             requested_id = None if args.all else args.system_id
         progress = ProgressReporter(quiet=args.quiet)
+        known_missing_contract = load_known_missing_contract(
+            known_missing_config_path(args.season), args.season
+        )
         report = orchestrate(
             system_manifest,
             output_root,
@@ -677,6 +732,7 @@ def main(argv=None) -> int:
             args.timeout,
             args.retries,
             progress=progress,
+            known_missing_contract=known_missing_contract,
         )
         return 1 if report["failed"] or report["errors"] else 0
     except KeyboardInterrupt:

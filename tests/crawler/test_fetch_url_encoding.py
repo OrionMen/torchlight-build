@@ -26,6 +26,12 @@ class FetchUrlEncodingTest(unittest.TestCase):
         self.assertEqual(request_url_for("https://tlidb.com/cn/STR_Helmet"),
                          "https://tlidb.com/cn/STR_Helmet")
 
+    def test_percent_encoded_plus_is_not_rewritten_to_bare_plus(self):
+        self.assertEqual(
+            request_url_for("https://tlidb.com/cn/Rank_5%2B_Beacon"),
+            "https://tlidb.com/cn/Rank_5%2B_Beacon",
+        )
+
 
 if __name__ == "__main__":
     unittest.main()
