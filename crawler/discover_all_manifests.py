@@ -10,6 +10,7 @@ from typing import Callable
 
 from crawler.discover_manifest import write_json
 from crawler.discover_system_manifest import discover_system
+from crawler.season_context import DEFAULT_SEASON, SeasonContext
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -118,12 +119,13 @@ def run_batch(
 
 def parse_args(argv=None):
     parser = argparse.ArgumentParser(description="Discover manifests for confirmed TLIDB systems")
-    parser.add_argument("--system-manifest", required=True, type=Path)
+    parser.add_argument("--season", default=DEFAULT_SEASON)
+    parser.add_argument("--system-manifest", type=Path)
     selection = parser.add_mutually_exclusive_group(required=True)
     selection.add_argument("--system-id", action="append", dest="system_ids")
     selection.add_argument("--all", action="store_true")
-    parser.add_argument("--output-dir", type=Path, default=Path("sources"))
-    parser.add_argument("--report", type=Path, default=Path("data/reports/system-discovery/all-manifests-report.json"))
+    parser.add_argument("--output-dir", type=Path)
+    parser.add_argument("--report", type=Path)
     parser.add_argument("--timeout", type=float, default=20.0)
     parser.add_argument("--force", action="store_true")
     parser.add_argument("--debug", action="store_true")
@@ -133,9 +135,12 @@ def parse_args(argv=None):
 def main(argv=None) -> int:
     args = parse_args(argv)
     try:
-        manifest_path = args.system_manifest if args.system_manifest.is_absolute() else ROOT / args.system_manifest
+        context = SeasonContext(ROOT, args.season)
+        manifest_path = args.system_manifest or context.readable_system_manifest()
+        manifest_path = manifest_path if manifest_path.is_absolute() else ROOT / manifest_path
         data = json.loads(manifest_path.read_text(encoding="utf-8"))
-        output_dir = args.output_dir if args.output_dir.is_absolute() else ROOT / args.output_dir
+        output_dir = args.output_dir or context.source_root
+        output_dir = output_dir if output_dir.is_absolute() else ROOT / output_dir
         requested = None if args.all else set(args.system_ids or [])
         report, failures = run_batch(
             data,
@@ -144,7 +149,8 @@ def main(argv=None) -> int:
             requested_ids=requested,
             timeout=args.timeout,
         )
-        report_path = args.report if args.report.is_absolute() else ROOT / args.report
+        report_path = args.report or context.report_root / "all-manifests-report.json"
+        report_path = report_path if report_path.is_absolute() else ROOT / report_path
         write_json(report_path, report)
         print("All manifest discovery")
         print(f"- confirmed: {report['confirmed_available']}")

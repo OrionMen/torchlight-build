@@ -9,6 +9,7 @@ from collections import Counter, OrderedDict
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urldefrag, urljoin, urlparse
+from crawler.season_context import DEFAULT_SEASON, SeasonContext
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -223,15 +224,18 @@ def discover(season, raw_root, previous_manifest=None, files_root=None):
 
 def parse_args(argv=None):
     parser = argparse.ArgumentParser(description="Discover static assets referenced by local TLIDB raw HTML")
-    parser.add_argument("--season", default="ss13")
-    parser.add_argument("--raw-root", type=Path, default=Path("data/raw/manifests"))
-    parser.add_argument("--output", type=Path, default=Path("data/raw/assets/ss13/asset-manifest.json"))
+    parser.add_argument("--season", default=DEFAULT_SEASON)
+    parser.add_argument("--raw-root", type=Path)
+    parser.add_argument("--output", type=Path)
     return parser.parse_args(argv)
 
 
 def main(argv=None):
-    args = parse_args(argv); raw_root = args.raw_root if args.raw_root.is_absolute() else ROOT / args.raw_root
-    output = args.output if args.output.is_absolute() else ROOT / args.output
+    args = parse_args(argv); context = SeasonContext(ROOT, args.season)
+    raw_root = args.raw_root or context.readable_raw_manifest_root()
+    raw_root = raw_root if raw_root.is_absolute() else ROOT / raw_root
+    output = args.output or context.asset_manifest
+    output = output if output.is_absolute() else ROOT / output
     try:
         previous = json.loads(output.read_text(encoding="utf-8")) if output.is_file() else None
         manifest, report = discover(args.season, raw_root, previous, output.parent / "files"); output.parent.mkdir(parents=True, exist_ok=True)

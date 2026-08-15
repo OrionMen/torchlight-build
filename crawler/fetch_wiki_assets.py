@@ -13,6 +13,7 @@ from email.utils import parsedate_to_datetime
 from pathlib import Path
 from typing import Callable, TextIO
 from urllib.error import HTTPError, URLError
+from crawler.season_context import DEFAULT_SEASON, SeasonContext
 from urllib.parse import urlparse
 from urllib.request import Request, urlopen
 
@@ -191,13 +192,15 @@ def fetch_manifest(manifest_path, output_root, force=False, max_workers=4, rate_
 
 def parse_args(argv=None):
     p=argparse.ArgumentParser(description="Fetch assets from a TLIDB asset manifest")
-    p.add_argument("--manifest",type=Path,default=Path("data/raw/assets/ss13/asset-manifest.json")); p.add_argument("--output-root",type=Path,default=Path("data/raw/assets/ss13/files"))
+    p.add_argument("--season",default=DEFAULT_SEASON); p.add_argument("--manifest",type=Path); p.add_argument("--output-root",type=Path)
     p.add_argument("--force",action="store_true"); p.add_argument("--max-workers",type=int,default=4); p.add_argument("--rate-limit",type=float,default=.2)
     p.add_argument("--timeout",type=float,default=20); p.add_argument("--retry",type=int,default=3); p.add_argument("--quiet",action="store_true"); return p.parse_args(argv)
 
 
 def main(argv=None):
-    args=parse_args(argv); manifest=args.manifest if args.manifest.is_absolute() else ROOT/args.manifest; output=args.output_root if args.output_root.is_absolute() else ROOT/args.output_root
+    args=parse_args(argv); context=SeasonContext(ROOT,args.season)
+    manifest=args.manifest or context.readable_asset_manifest(); manifest=manifest if manifest.is_absolute() else ROOT/manifest
+    output=args.output_root or context.asset_root/"files"; output=output if output.is_absolute() else ROOT/output
     try:
         if args.max_workers<1 or args.rate_limit<0 or args.timeout<=0 or args.retry<0: raise ValueError("invalid fetch option")
         report=fetch_manifest(manifest,output,args.force,args.max_workers,args.rate_limit,args.timeout,args.retry,args.quiet)

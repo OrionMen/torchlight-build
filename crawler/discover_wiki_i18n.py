@@ -9,6 +9,7 @@ from pathlib import Path
 from urllib.parse import urljoin
 
 from crawler.fetch_manifest import write_json
+from crawler.season_context import DEFAULT_SEASON, SeasonContext
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -80,9 +81,10 @@ def scan(roots, base_url="https://tlidb.com/"):
 
 def parse_args(argv=None):
     parser = argparse.ArgumentParser(description="Discover TLIDB native i18n JSON references")
-    parser.add_argument("--raw-root", type=Path, default=Path("data/raw/manifests"))
-    parser.add_argument("--site", type=Path, default=Path("local_wiki/ss13/site"))
-    parser.add_argument("--output", type=Path, default=Path("data/reports/local-wiki/i18n-discovery.json"))
+    parser.add_argument("--season", default=DEFAULT_SEASON)
+    parser.add_argument("--raw-root", type=Path)
+    parser.add_argument("--site", type=Path)
+    parser.add_argument("--output", type=Path)
     return parser.parse_args(argv)
 
 
@@ -90,9 +92,12 @@ def resolve(path): return path if path.is_absolute() else ROOT / path
 
 
 def main(argv=None):
-    args = parse_args(argv)
-    report = scan([resolve(args.raw_root), resolve(args.site)])
-    write_json(resolve(args.output), report)
+    args = parse_args(argv); context = SeasonContext(ROOT, args.season)
+    raw_root = resolve(args.raw_root) if args.raw_root else context.readable_raw_manifest_root()
+    site = resolve(args.site) if args.site else context.mirror_output
+    output = resolve(args.output) if args.output else context.report_root / "i18n-discovery.json"
+    report = scan([raw_root, site])
+    write_json(output, report)
     print(f"i18n resources: {report['resource_count']}")
     return 0
 

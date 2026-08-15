@@ -12,6 +12,7 @@ from urllib.parse import unquote, urlsplit
 from urllib.request import Request, urlopen
 
 from crawler.fetch_manifest import USER_AGENT, request_url_for, ssl_context, write_json
+from crawler.season_context import DEFAULT_SEASON, SeasonContext
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -87,8 +88,9 @@ def fetch_resources(resources, output, timeout=20, retries=2, rate_limit=0.5,
 
 def parse_args(argv=None):
     parser = argparse.ArgumentParser(description="Fetch discovered TLIDB native i18n JSON resources")
-    parser.add_argument("--discovery", type=Path, default=Path("data/reports/local-wiki/i18n-discovery.json"))
-    parser.add_argument("--output", type=Path, default=Path("data/raw/i18n/ss13"))
+    parser.add_argument("--season", default=DEFAULT_SEASON)
+    parser.add_argument("--discovery", type=Path)
+    parser.add_argument("--output", type=Path)
     parser.add_argument("--timeout", type=float, default=20); parser.add_argument("--retries", type=int, default=2)
     parser.add_argument("--rate-limit", type=float, default=0.5); return parser.parse_args(argv)
 
@@ -97,8 +99,11 @@ def resolve(path): return path if path.is_absolute() else ROOT / path
 
 
 def main(argv=None):
-    args = parse_args(argv); discovery = json.loads(resolve(args.discovery).read_text(encoding="utf-8"))
-    report = fetch_resources(discovery.get("resources", []), resolve(args.output), args.timeout,
+    args = parse_args(argv); context = SeasonContext(ROOT, args.season)
+    discovery_path = resolve(args.discovery) if args.discovery else context.report_root / "i18n-discovery.json"
+    output = resolve(args.output) if args.output else context.i18n_root
+    discovery = json.loads(discovery_path.read_text(encoding="utf-8"))
+    report = fetch_resources(discovery.get("resources", []), output, args.timeout,
                              args.retries, args.rate_limit)
     print(f"Downloaded: {report['downloaded']} Cache: {report['cache_hit']} Failed: {report['failed']}")
     return 1 if report["failed"] else 0

@@ -20,7 +20,7 @@ class PactFateSearchCleanupV1Test(unittest.TestCase):
 
     def test_entity_counts_are_unchanged(self):
         self.assertEqual(175, len(self.pact))
-        self.assertEqual(191, len(self.fate))
+        self.assertEqual(193, len(self.fate))
 
     def test_search_plain_text_uses_clean_summary_for_both_types(self):
         self.assertIn("pact_spirit", ENTITY_CLEAN_SUMMARY_TYPES)

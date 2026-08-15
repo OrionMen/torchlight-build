@@ -17,8 +17,36 @@ from crawler.audit_ethereal_prism_v1 import EtherealPrismInspector
 from crawler.audit_fragrance_tower_equipment_v1 import EquipmentSystemPageInspector
 from crawler.audit_vorax_equipment_v1 import VORAX_ENTITY_IDS, inspect_vorax_html
 from crawler.audit_talent_system_entity_v1 import TalentPageInspector
-from crawler.build_full_wiki_mirror import entity_route_key
+from crawler.build_full_wiki_mirror import TextInspector, entity_route_key
 from crawler.parse_hero import parse_hero_html
+from crawler.season_context import DEFAULT_SEASON, SeasonContext
+
+
+_SEASON_CONTEXT: SeasonContext | None = None
+
+
+def _season_context(repo: Path) -> SeasonContext:
+    return _SEASON_CONTEXT or SeasonContext(repo, DEFAULT_SEASON)
+
+
+def _raw_manifests(repo: Path) -> Path:
+    return _season_context(repo).readable_raw_manifest_root()
+
+
+def _system_manifest_path(repo: Path) -> Path:
+    return _season_context(repo).readable_system_manifest()
+
+
+def _source_manifest_path(repo: Path, system_id: str) -> Path:
+    return _season_context(repo).readable_source_manifest(system_id)
+
+
+def _manifest_reference(repo: Path, reference: str) -> Path:
+    context = _season_context(repo)
+    scoped = context.source_root / Path(reference).name
+    if scoped.is_file() or context.season != DEFAULT_SEASON:
+        return scoped
+    return repo / reference
 
 
 CHINESE = re.compile(r"[\u3400-\u9fff]")
@@ -40,6 +68,62 @@ ORDINARY_EQUIPMENT_IDS = {
     "Two-Handed_Sword", "Two-Handed_Hammer", "Two-Handed_Axe", "Tin_Staff",
     "Cudgel", "Bow", "Crossbow", "Musket", "Fire_Cannon",
     "STR_Shield", "DEX_Shield", "INT_Shield", "Necklace", "Ring", "Belt", "Spirit_Ring",
+}
+
+# Entity v3 bootstrap rules are deliberately tracked here instead of being
+# inferred from a previously generated Search Index.  These are the systems
+# that define player-facing identities in the v1 content model.
+BOOTSTRAP_SYSTEM_CLASSIFICATION = {
+    "inventory": ("equipment", "装备", "equipment_type", "装备类型"),
+    "legendary_gear": ("equipment", "装备", "equipment_legendary", "传奇装备"),
+    "craft": ("equipment", "装备", "equipment_craft", "打造装备"),
+    "active_skill": ("skill", "技能", "skill_active", "主动技能"),
+    "support_skill": ("skill", "技能", "skill_support", "辅助技能"),
+    "passive_skill": ("skill", "技能", "skill_passive", "被动技能"),
+    "activation_medium_skill": ("skill", "技能", "skill_activation_medium", "触媒技能"),
+    "magnificent_support_skill": ("skill", "技能", "skill_magnificent_support", "华贵辅助技能"),
+    "noble_support_skill": ("skill", "技能", "skill_noble_support", "崇高辅助技能"),
+    "modularization_skill": ("skill", "技能", "skill_modularization", "模块化技能"),
+    "talent": ("talent_board", "天赋石板", "talent_hero", "英雄天赋"),
+    "path_of_progression": ("talent_board", "天赋石板", "talent_divinity_slate", "神格石板"),
+    "nether_kings_divinity": ("talent_board", "天赋石板", "talent_nether_king", "冥王神格"),
+    "pactspirit": ("pact_spirit", "契灵系统", "pact_spirit_entity", "契灵"),
+    "destiny": ("pact_spirit", "契灵系统", "pact_spirit_destiny", "命运"),
+}
+BOOTSTRAP_PRIMARY_SYSTEMS = {
+    "inventory",
+    "active_skill", "support_skill", "passive_skill", "activation_medium_skill",
+    "magnificent_support_skill", "noble_support_skill", "modularization_skill",
+    "talent", "path_of_progression", "nether_kings_divinity", "pactspirit", "destiny",
+}
+BOOTSTRAP_ROUTE_SYSTEM = {
+    "/cn/Active_Skill/": "active_skill",
+    "/cn/Support_Skill/": "support_skill",
+    "/cn/Passive_Skill/": "passive_skill",
+    "/cn/Activation_Medium_Skill/": "activation_medium_skill",
+    "/cn/Magnificent_Support_Skill/": "magnificent_support_skill",
+    "/cn/Noble_Support_Skill/": "noble_support_skill",
+    "/cn/Modularization_Skill/": "modularization_skill",
+    "/cn/Legendary_Gear/": "legendary_gear",
+    "/cn/Divinity_Slate/": "path_of_progression",
+    "/cn/Nether_Kings_Divinity/": "nether_kings_divinity",
+    "/cn/Destiny/": "destiny",
+}
+BOOTSTRAP_SUPPORT_SYSTEMS = {"help", "tip", "codex"}
+BOOTSTRAP_SYSTEM_PRIORITY = {
+    "hero": 0,
+    "active_skill": 0,
+    "support_skill": 0,
+    "passive_skill": 0,
+    "activation_medium_skill": 0,
+    "magnificent_support_skill": 0,
+    "noble_support_skill": 0,
+    "modularization_skill": 0,
+    "talent": 0,
+    "pactspirit": 0,
+    "legendary_gear": 0,
+    "inventory": 1,
+    "craft": 2,
 }
 
 
@@ -387,11 +471,304 @@ def clean_summary(value: str, route: str, titles: list[str]) -> str:
     return " ".join(text.split())
 
 
+class _BootstrapPageText(HTMLParser):
+    """Collect deterministic title/body fingerprints from a Raw snapshot."""
+
+    def __init__(self) -> None:
+        super().__init__(convert_charrefs=True)
+        self.title: list[str] = []
+        self.body: list[str] = []
+        self.in_title = False
+        self.blocked = 0
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag == "title":
+            self.in_title = True
+        if tag in {"script", "style", "noscript"}:
+            self.blocked += 1
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag == "title":
+            self.in_title = False
+        if tag in {"script", "style", "noscript"} and self.blocked:
+            self.blocked -= 1
+
+    def handle_data(self, data: str) -> None:
+        value = " ".join(data.split())
+        if not value or self.blocked:
+            return
+        if self.in_title:
+            self.title.append(value)
+        self.body.append(value)
+
+
+def _bootstrap_source_role(system_id: str, category_map: dict[str, dict[str, str]]) -> str:
+    if system_id == "recovered_internal_pages":
+        return "recovered"
+    if system_id == "hyperlink":
+        return "secondary"
+    if system_id in BOOTSTRAP_SUPPORT_SYSTEMS:
+        return "support"
+    if system_id in category_map or system_id in {"inventory", "legendary_gear", "craft"}:
+        return "primary"
+    return "source"
+
+
+def _bootstrap_entity_id(route: str) -> str:
+    slug = unquote(route).removeprefix("/cn/").removesuffix("/")
+    return f"tlidb:cn:{slug}"
+
+
+def _bootstrap_raw_path(repo: Path, system_id: str, entry: dict[str, Any]) -> Path:
+    slug = str(entry.get("slug") or entry.get("id") or "")
+    return (
+        _raw_manifests(repo) / system_id / "raw_html"
+        / f"{quote(slug, safe='-_.')}.html"
+    )
+
+
+def _bootstrap_fingerprint(path: Path) -> dict[str, str] | None:
+    if not path.is_file() or not path.stat().st_size:
+        return None
+    parser = _BootstrapPageText()
+    parser.feed(path.read_text(encoding="utf-8", errors="replace"))
+    title = " ".join(parser.title)
+    body = " ".join(parser.body)
+    return {
+        "title": hashlib.sha256(title.encode()).hexdigest(),
+        "body": hashlib.sha256(body.encode()).hexdigest(),
+    }
+
+
+def _bootstrap_category_map(repo: Path) -> tuple[dict[str, dict[str, str]], dict[str, str]]:
+    data = json.loads(
+        (repo / "config/game_category_mapping.json").read_text(encoding="utf-8")
+    )
+    systems: dict[str, dict[str, str]] = {}
+    names: dict[str, str] = {}
+    for category in data.get("categories", []):
+        names[category["id"]] = category["name_zh"]
+        for system_id in category.get("systems", []):
+            systems[system_id] = {"id": category["id"], "name_zh": category["name_zh"]}
+    return systems, names
+
+
+def _bootstrap_manifest_sources(repo: Path) -> dict[str, list[dict[str, Any]]]:
+    root = json.loads(_system_manifest_path(repo).read_text(encoding="utf-8"))
+    manifests: list[tuple[int, str, Path]] = []
+    for system in root.get("systems", []):
+        manifest_path = system.get("manifest_path")
+        if manifest_path:
+            manifests.append((
+                int(system.get("source_order", 10_000)),
+                str(system["system_id"]),
+                _manifest_reference(repo, str(manifest_path)),
+            ))
+    recovered = _source_manifest_path(repo, "recovered_internal_pages")
+    if recovered.is_file():
+        manifests.append((100_000, "recovered_internal_pages", recovered))
+
+    grouped: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for system_order, system_id, path in sorted(manifests):
+        if not path.is_file():
+            continue
+        data = json.loads(path.read_text(encoding="utf-8"))
+        seen: set[tuple[str, str]] = set()
+        entries = sorted(
+            data.get("entries", []),
+            key=lambda item: (
+                int(item.get("source_order", 10_000_000)),
+                str(item.get("id") or item.get("slug") or ""),
+            ),
+        )
+        for entry in entries:
+            url = entry.get("url") or entry.get("path")
+            if not url:
+                continue
+            route = entity_route_key(str(url))
+            source_id = str(entry.get("id") or entry.get("slug") or "")
+            identity = (route, source_id)
+            if identity in seen:
+                continue
+            seen.add(identity)
+            raw_path = _bootstrap_raw_path(repo, system_id, entry)
+            grouped[route].append({
+                "system_id": system_id,
+                "system_order": system_order,
+                "id": source_id,
+                "title": entry.get("name_zh") or entry.get("name") or source_id,
+                "raw_path": raw_path,
+                "raw_available": raw_path.is_file() and raw_path.stat().st_size > 0,
+            })
+    return grouped
+
+
+def _bootstrap_classification(system_id: str | None) -> dict[str, str | None]:
+    value = BOOTSTRAP_SYSTEM_CLASSIFICATION.get(str(system_id))
+    if value is None:
+        return {
+            "content_category_id": None,
+            "content_category_name_zh": None,
+            "content_subcategory_id": None,
+            "content_subcategory_name_zh": None,
+        }
+    category_id, category_name, subcategory_id, subcategory_name = value
+    return {
+        "content_category_id": category_id,
+        "content_category_name_zh": category_name,
+        "content_subcategory_id": subcategory_id,
+        "content_subcategory_name_zh": subcategory_name,
+    }
+
+
+def _bootstrap_owner(sources: list[dict[str, Any]]) -> dict[str, Any]:
+    return min(
+        sources,
+        key=lambda source: (
+            BOOTSTRAP_SYSTEM_PRIORITY.get(source["system_id"], 100),
+            source["system_order"],
+            source["system_id"],
+            source["id"],
+        ),
+    )
+
+
+def _bootstrap_v2_from_sources(repo: Path) -> tuple[dict[str, Any], dict[str, Any]]:
+    """Reconstruct the v2 identity set directly from tracked rules and source data."""
+    grouped = _bootstrap_manifest_sources(repo)
+    category_map, category_names = _bootstrap_category_map(repo)
+    entities: dict[str, dict[str, Any]] = {}
+    skipped_review = 0
+
+    for route in sorted(grouped):
+        source_rows = grouped[route]
+        if len(source_rows) < 2:
+            continue
+        fingerprints = [_bootstrap_fingerprint(source["raw_path"]) for source in source_rows]
+        raw_complete = all(fingerprints)
+        same_title = raw_complete and len({item["title"] for item in fingerprints if item}) == 1
+        same_body = raw_complete and len({item["body"] for item in fingerprints if item}) == 1
+        confidence = "high" if same_title and same_body else "medium"
+        mapped_categories = {
+            category_map[source["system_id"]]["id"]
+            for source in source_rows if source["system_id"] in category_map
+        }
+        category = (
+            next(iter(mapped_categories)) if len(mapped_categories) == 1
+            else "mixed" if mapped_categories else None
+        )
+        primary = [
+            source for source in source_rows
+            if _bootstrap_source_role(source["system_id"], category_map) == "primary"
+        ]
+        medium_auto = (
+            category not in {None, "mixed"}
+            and len(primary) >= 2
+            and len({source["title"] for source in primary}) == 1
+            and all(source["raw_available"] for source in primary)
+        )
+        if confidence != "high" and not medium_auto:
+            skipped_review += 1
+            continue
+
+        owner = _bootstrap_owner(source_rows)
+        agreeing = [
+            source for source in source_rows
+            if source["system_id"] in BOOTSTRAP_SYSTEM_CLASSIFICATION
+            and BOOTSTRAP_SYSTEM_CLASSIFICATION[source["system_id"]][0] == category
+            and _bootstrap_source_role(source["system_id"], category_map) == "primary"
+        ]
+        classification_owner = min(
+            agreeing,
+            key=lambda source: (source["system_order"], source["system_id"]),
+        ) if len(agreeing) >= 2 else owner
+        title_source = min(
+            source_rows,
+            key=lambda source: (
+                0 if category and category_map.get(source["system_id"], {}).get("id") == category else 1,
+                BOOTSTRAP_SYSTEM_PRIORITY.get(source["system_id"], 100),
+                0 if CHINESE.search(str(source["title"] or "")) else 1,
+                source["system_id"],
+            ),
+        )
+        entity = {
+            "entity_id": _bootstrap_entity_id(route),
+            "title": str(title_source["title"] or owner["id"]),
+            "canonical_route": route,
+            **_bootstrap_classification(classification_owner["system_id"]),
+            "sources": [
+                {
+                    "system_id": source["system_id"],
+                    "role": _bootstrap_source_role(source["system_id"], category_map),
+                }
+                for source in source_rows
+            ],
+            "confidence": confidence,
+        }
+        if route in BOOTSTRAP_ROUTE_SYSTEM:
+            entity.update(_bootstrap_classification(BOOTSTRAP_ROUTE_SYSTEM[route]))
+        if confidence == "medium":
+            entity["merge_class"] = "A"
+        entities[route] = entity
+
+    for route in sorted(grouped):
+        if route in entities:
+            continue
+        candidates = [
+            source for source in grouped[route]
+            if source["system_id"] in BOOTSTRAP_PRIMARY_SYSTEMS
+            and source["raw_available"]
+        ]
+        if not candidates:
+            continue
+        owner = min(candidates, key=lambda source: (source["system_order"], source["system_id"]))
+        entities[route] = {
+            "entity_id": _bootstrap_entity_id(route),
+            "title": clean_title(str(owner["title"] or owner["id"])),
+            "canonical_route": route,
+            **_bootstrap_classification(owner["system_id"]),
+            "sources": [{"system_id": owner["system_id"], "role": "primary"}],
+            "confidence": "primary",
+        }
+
+    result = sorted(entities.values(), key=lambda entity: entity["canonical_route"])
+    return {"schema_version": 2, "entities": result}, {
+        "source_route_count": len(grouped),
+        "bootstrap_entity_count": len(result),
+        "skipped_review_count": skipped_review,
+    }
+
+
+def _bootstrap_plain_text(repo: Path, entity: dict[str, Any]) -> str:
+    skill_systems = {
+        "active_skill", "support_skill", "passive_skill", "activation_medium_skill",
+        "magnificent_support_skill", "noble_support_skill", "modularization_skill",
+    }
+    slug = entity["canonical_route"].removeprefix("/cn/").removesuffix("/")
+    systems = [
+        source.get("system_id") or source.get("source_type")
+        for source in entity.get("sources", [])
+    ]
+    for system_id in systems:
+        if not system_id:
+            continue
+        path = (
+            _raw_manifests(repo) / str(system_id) / "raw_html"
+            / f"{quote(slug, safe='-_.')}.html"
+        )
+        if not path.is_file() or not path.stat().st_size:
+            continue
+        inspector = TextInspector(visible_skill_content_only=system_id in skill_systems)
+        inspector.feed(path.read_text(encoding="utf-8", errors="replace"))
+        return " ".join(" ".join(inspector.text).split())
+    return ""
+
+
 def _manifest_titles(repo: Path) -> dict[str, list[str]]:
     result: dict[str, list[str]] = defaultdict(list)
-    system_manifest = json.loads((repo / "sources/system_manifest.json").read_text(encoding="utf-8"))
-    paths = [repo / item["manifest_path"] for item in system_manifest.get("systems", []) if item.get("manifest_path")]
-    recovered = repo / "sources/recovered_internal_pages_manifest.json"
+    system_manifest = json.loads(_system_manifest_path(repo).read_text(encoding="utf-8"))
+    paths = [_manifest_reference(repo, item["manifest_path"]) for item in system_manifest.get("systems", []) if item.get("manifest_path")]
+    recovered = _source_manifest_path(repo, "recovered_internal_pages")
     if recovered.is_file():
         paths.append(recovered)
     for path in paths:
@@ -427,7 +804,7 @@ def _raw_heading(repo: Path, entity: dict[str, Any], search_page: dict[str, Any]
     if search_page and search_page.get("system_id"):
         systems.insert(0, search_page["system_id"])
     for system_id in dict.fromkeys(system for system in systems if system):
-        path = repo / "data/raw/manifests" / system_id / "raw_html" / f"{quote(slug, safe='-_.')}.html"
+        path = _raw_manifests(repo) / system_id / "raw_html" / f"{quote(slug, safe='-_.')}.html"
         if not path.is_file():
             continue
         parser = _HeadingParser()
@@ -444,7 +821,7 @@ def _raw_heading(repo: Path, entity: dict[str, Any], search_page: dict[str, Any]
 
 
 def _equipment_summary(repo: Path, slug: str, title_zh: str) -> str:
-    path = repo / "data/raw/manifests/inventory/raw_html" / f"{quote(slug, safe='-_.')}.html"
+    path = _raw_manifests(repo) / "inventory/raw_html" / f"{quote(slug, safe='-_.')}.html"
     if not path.is_file():
         return title_zh
     parser = _EquipmentSummaryParser()
@@ -466,11 +843,11 @@ def _equipment_summary(repo: Path, slug: str, title_zh: str) -> str:
 
 def _legendary_entities(repo: Path) -> tuple[set[str], dict[str, dict[str, Any]]]:
     manifest = json.loads(
-        (repo / "sources/legendary_gear_manifest.json").read_text(encoding="utf-8")
+        _source_manifest_path(repo, "legendary_gear").read_text(encoding="utf-8")
     )
     ids = {entry["id"] for entry in manifest.get("entries", [])}
     result: dict[str, dict[str, Any]] = {}
-    raw_root = repo / "data/raw/manifests/legendary_gear/raw_html"
+    raw_root = _raw_manifests(repo) / "legendary_gear/raw_html"
     for entry in manifest.get("entries", []):
         path = raw_root / f"{quote(entry['slug'], safe='-_.')}.html"
         if not path.is_file() or not path.stat().st_size:
@@ -505,7 +882,7 @@ def _unique_text(values: list[str]) -> list[str]:
 
 
 def _vorax_entities(repo: Path) -> dict[str, dict[str, Any]]:
-    raw_root = repo / "data/raw/manifests/inventory/raw_html"
+    raw_root = _raw_manifests(repo) / "inventory/raw_html"
     result: dict[str, dict[str, Any]] = {}
     for slug in VORAX_ENTITY_IDS:
         path = raw_root / f"{quote(slug, safe='-_.')}.html"
@@ -539,7 +916,7 @@ def _vorax_entities(repo: Path) -> dict[str, dict[str, Any]]:
 
 
 def _equipment_related_system_entities(repo: Path) -> list[dict[str, Any]]:
-    help_root = repo / "data/raw/manifests/help/raw_html"
+    help_root = _raw_manifests(repo) / "help/raw_html"
     definitions = (
         {
             "slug": "Blending_Rituals",
@@ -611,9 +988,9 @@ def _equipment_related_system_entities(repo: Path) -> list[dict[str, Any]]:
 
 def _talent_entities(repo: Path) -> dict[str, dict[str, Any]]:
     manifest = json.loads(
-        (repo / "sources/talent_manifest.json").read_text(encoding="utf-8")
+        _source_manifest_path(repo, "talent").read_text(encoding="utf-8")
     )
-    raw_root = repo / "data/raw/manifests/talent/raw_html"
+    raw_root = _raw_manifests(repo) / "talent/raw_html"
     result = {}
     for entry in manifest.get("entries", []):
         path = raw_root / f"{quote(entry['slug'], safe='-_.')}.html"
@@ -649,7 +1026,7 @@ def _talent_entities(repo: Path) -> dict[str, dict[str, Any]]:
 
 
 def _ethereal_prism_entity(repo: Path) -> dict[str, Any] | None:
-    path = repo / "data/raw/manifests/inventory/raw_html/Ethereal_Prism.html"
+    path = _raw_manifests(repo) / "inventory/raw_html/Ethereal_Prism.html"
     if not path.is_file() or not path.stat().st_size:
         return None
     parser = EtherealPrismInspector()
@@ -681,9 +1058,9 @@ def _ethereal_prism_entity(repo: Path) -> dict[str, Any] | None:
 
 def _hero_entities(repo: Path) -> dict[str, dict[str, Any]]:
     manifest = json.loads(
-        (repo / "sources/hero_manifest.json").read_text(encoding="utf-8")
+        _source_manifest_path(repo, "hero").read_text(encoding="utf-8")
     )
-    raw_root = repo / "data/raw/manifests/hero/raw_html"
+    raw_root = _raw_manifests(repo) / "hero/raw_html"
     result: dict[str, dict[str, Any]] = {}
     for entry in manifest.get("entries", []):
         path = raw_root / f"{quote(entry['slug'], safe='-_.')}.html"
@@ -722,8 +1099,8 @@ def _hero_entities(repo: Path) -> dict[str, dict[str, Any]]:
 
 
 def _memory_system_entity(repo: Path) -> dict[str, Any] | None:
-    hero_path = repo / "data/raw/manifests/inventory/raw_html/Hero_Memories.html"
-    revival_path = repo / "data/raw/manifests/help/raw_html/Memory_Revival.html"
+    hero_path = _raw_manifests(repo) / "inventory/raw_html/Hero_Memories.html"
+    revival_path = _raw_manifests(repo) / "help/raw_html/Memory_Revival.html"
     if any(
         not path.is_file() or not path.stat().st_size
         for path in (hero_path, revival_path)
@@ -759,13 +1136,18 @@ def _memory_system_entity(repo: Path) -> dict[str, Any] | None:
 
 def _pact_fate_summaries(repo: Path, system_id: str, entity_kind: str) -> dict[str, str]:
     manifest = json.loads(
-        (repo / f"sources/{system_id}_manifest.json").read_text(encoding="utf-8")
+        _source_manifest_path(repo, system_id).read_text(encoding="utf-8")
     )
-    raw_root = repo / "data/raw/manifests" / system_id / "raw_html"
+    raw_root = _raw_manifests(repo) / system_id / "raw_html"
     result: dict[str, str] = {}
     for entry in manifest.get("entries", []):
         slug = entry.get("slug") or entry.get("id")
         path = raw_root / f"{quote(slug, safe='-_.')}.html"
+        if not path.is_file() or not path.stat().st_size:
+            path = (
+                _raw_manifests(repo) / "recovered_internal_pages/raw_html"
+                / f"{quote(slug, safe='-_.')}.html"
+            )
         if not path.is_file() or not path.stat().st_size:
             continue
         parser = _PactFateSummaryParser(entity_kind)
@@ -778,7 +1160,7 @@ def _pact_fate_summaries(repo: Path, system_id: str, entity_kind: str) -> dict[s
 
 
 def _overview_routes(repo: Path) -> set[str]:
-    data = json.loads((repo / "sources/system_manifest.json").read_text(encoding="utf-8"))
+    data = json.loads(_system_manifest_path(repo).read_text(encoding="utf-8"))
     return {
         entity_route_key(item["index_url"])
         for item in data.get("systems", [])
@@ -786,16 +1168,14 @@ def _overview_routes(repo: Path) -> set[str]:
     }
 
 
-def build_entity_index_v3(repo: Path) -> tuple[dict[str, Any], dict[str, Any]]:
-    v2 = json.loads((repo / "data/generated/entity-index-v2.json").read_text(encoding="utf-8"))
-    search = json.loads((repo / "local_wiki/ss13/site/search-index.json").read_text(encoding="utf-8"))
-    search_by_route = {
-        entity_route_key(page.get("route") or page.get("source_url") or ""): page
-        for page in search.get("pages", [])
-        if page.get("route") or page.get("source_url")
-    }
+def build_entity_index_v3(
+    repo: Path, season_context: SeasonContext | None = None
+) -> tuple[dict[str, Any], dict[str, Any]]:
+    global _SEASON_CONTEXT
+    _SEASON_CONTEXT = season_context or SeasonContext(repo, DEFAULT_SEASON)
+    v2, bootstrap_report = _bootstrap_v2_from_sources(repo)
     manifest_titles = _manifest_titles(repo)
-    i18n_titles = _i18n_titles(repo / "data/raw/i18n/ss13/files/i18n/cn.json")
+    i18n_titles = _i18n_titles(_SEASON_CONTEXT.readable_i18n_file())
     overview_routes = _overview_routes(repo)
     legendary_ids, legendary_entities = _legendary_entities(repo)
     vorax_entities = _vorax_entities(repo)
@@ -813,8 +1193,8 @@ def build_entity_index_v3(repo: Path) -> tuple[dict[str, Any], dict[str, Any]]:
         route = entity_route_key(old["canonical_route"])
         if route in {"/cn/Hero/", "/cn/Talent/"}:
             continue
-        page = search_by_route.get(route)
-        page_heading = _raw_heading(repo, old, page)
+        page = None
+        page_heading = _raw_heading(repo, old, None)
         candidates: list[tuple[str, str | None]] = [
             ("page_chinese_title", page_heading),
             ("manifest_name_zh", next(iter(manifest_titles.get(route, [])), None)),
@@ -833,7 +1213,7 @@ def build_entity_index_v3(repo: Path) -> tuple[dict[str, Any], dict[str, Any]]:
         ordinary_equipment = slug in ORDINARY_EQUIPMENT_IDS
         entity_visibility = "hidden" if route in overview_routes else "visible"
         visibility[entity_visibility] += 1
-        summary_source = (page or {}).get("summary_display") or (page or {}).get("plain_text") or ""
+        summary_source = _bootstrap_plain_text(repo, old)
         summary = (_equipment_summary(repo, slug, str(title_zh)) if ordinary_equipment else
                    clean_summary(
                        summary_source,
@@ -894,7 +1274,7 @@ def build_entity_index_v3(repo: Path) -> tuple[dict[str, Any], dict[str, Any]]:
                     {"source_type": "legendary_gear", "role": "main_effect"},
                     {"source_type": "corrosion", "role": "corrosion"},
                 ],
-                "entity_type": "equipment",
+                "entity_type": "legendary_equipment",
             })
         elif slug in vorax_entities:
             vorax = vorax_entities[slug]
@@ -1014,6 +1394,38 @@ def build_entity_index_v3(repo: Path) -> tuple[dict[str, Any], dict[str, Any]]:
         visibility["visible"] += 1
         title_sources["hero_manifest_name_zh"] += 1
 
+    existing_routes = {entity["canonical_route"] for entity in entities}
+    destiny_manifest = json.loads(
+        _source_manifest_path(repo, "destiny").read_text(encoding="utf-8")
+    )
+    for entry in destiny_manifest.get("entries", []):
+        slug = entry.get("slug") or entry.get("id")
+        route = entity_route_key(entry.get("url") or f"/cn/{slug}/")
+        if route in existing_routes or slug not in fate_summaries:
+            continue
+        title = entry.get("name_zh") or entry.get("name") or entry.get("id") or slug
+        entities.append({
+            "entity_id": f"tlidb:cn:{slug}",
+            "title": title,
+            "canonical_route": route,
+            "content_category_id": "pact_spirit",
+            "content_category_name_zh": "契灵系统",
+            "content_subcategory_id": "pact_spirit_destiny",
+            "content_subcategory_name_zh": "命运",
+            "sources": [
+                {"system_id": "destiny", "role": "primary"},
+                {"system_id": "recovered_internal_pages", "role": "source"},
+            ],
+            "confidence": "primary",
+            "entity_title_zh": title,
+            "entity_visibility": "visible",
+            "clean_summary": fate_summaries[slug],
+            "entity_type": "fate",
+        })
+        existing_routes.add(route)
+        visibility["visible"] += 1
+        title_sources["destiny_manifest_name_zh"] += 1
+
     entities.sort(key=lambda item: item["canonical_route"])
     index = {"schema_version": 3, "entities": entities}
     report = {
@@ -1023,6 +1435,7 @@ def build_entity_index_v3(repo: Path) -> tuple[dict[str, Any], dict[str, Any]]:
         "hidden_entities": visibility["hidden"],
         "title_source_distribution": dict(sorted(title_sources.items())),
         "empty_clean_summary_count": sum(not item["clean_summary"] for item in entities),
+        "fresh_bootstrap": bootstrap_report,
         "warnings": [],
         "errors": [],
     }
@@ -1067,9 +1480,9 @@ def equipment_entity_v2_report(index: dict[str, Any]) -> dict[str, Any]:
 def equipment_craft_enrichment_filter_v2_report(
     repo: Path, index: dict[str, Any]
 ) -> dict[str, Any]:
-    craft = json.loads((repo / "sources/craft_manifest.json").read_text(encoding="utf-8"))
+    craft = json.loads(_source_manifest_path(repo, "craft").read_text(encoding="utf-8"))
     legendary = json.loads(
-        (repo / "sources/legendary_gear_manifest.json").read_text(encoding="utf-8")
+        _source_manifest_path(repo, "legendary_gear").read_text(encoding="utf-8")
     )
     legendary_ids = {entry["id"] for entry in legendary.get("entries", [])}
     equipment = [
@@ -1369,10 +1782,189 @@ def pact_fate_search_cleanup_v1_report(index: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+def fresh_bootstrap_report(
+    index: dict[str, Any], reference: dict[str, Any] | None = None
+) -> dict[str, Any]:
+    entities = index.get("entities", [])
+    current = (reference or {}).get("entities", [])
+    new_by_id = {item["entity_id"]: item for item in entities}
+    old_by_id = {item["entity_id"]: item for item in current}
+    shared = sorted(new_by_id.keys() & old_by_id.keys())
+
+    def diffs(field: str) -> list[dict[str, Any]]:
+        return [
+            {
+                "entity_id": entity_id,
+                "current": old_by_id[entity_id].get(field),
+                "fresh": new_by_id[entity_id].get(field),
+            }
+            for entity_id in shared
+            if old_by_id[entity_id].get(field) != new_by_id[entity_id].get(field)
+        ]
+
+    classification = [
+        entity_id for entity_id in shared
+        if any(
+            old_by_id[entity_id].get(field) != new_by_id[entity_id].get(field)
+            for field in (
+                "content_category_id", "content_category_name_zh",
+                "content_subcategory_id", "content_subcategory_name_zh",
+            )
+        )
+    ]
+    counts = Counter(item.get("entity_type") or "legacy_or_skill" for item in entities)
+    visible_skill = sum(
+        item.get("content_category_id") == "skill"
+        and item.get("entity_visibility") == "visible"
+        for item in entities
+    )
+    ordinary = sum(
+        item.get("content_subcategory_id") == "equipment_craft"
+        and item.get("entity_type") == "equipment"
+        for item in entities
+    )
+    vorax = sum(item.get("content_subcategory_id") == "equipment_vorax" for item in entities)
+    legendary = sum(item.get("entity_type") == "legendary_equipment" for item in entities)
+    talent = sum(item.get("entity_type") == "talent" for item in entities)
+    fate_routes = {
+        "/cn/Micro_Fate:_Deterioration_Duration/",
+        "/cn/Micro_Fate:_Trauma_Damage_Mitigation/",
+    }
+    recovered_fate = [
+        item for item in entities if item.get("canonical_route") in fate_routes
+    ]
+    legendary_ownership_errors = [
+        item["entity_id"] for item in entities
+        if item.get("entity_type") == "legendary_equipment"
+        and not any(
+            source.get("source_type") == "legendary_gear"
+            or source.get("system_id") == "legendary_gear"
+            for source in item.get("sources", [])
+        )
+    ]
+    missing = sorted(old_by_id.keys() - new_by_id.keys())
+    extra = sorted(new_by_id.keys() - old_by_id.keys())
+    field_diffs = {
+        "classification_diffs": classification,
+        "visibility_diffs": diffs("entity_visibility"),
+        "route_diffs": diffs("canonical_route"),
+        "entity_type_diffs": diffs("entity_type"),
+    }
+    source_truth_refresh = {
+        "title_diffs": len(diffs("title")),
+        "entity_title_zh_diffs": len(diffs("entity_title_zh")),
+        "confidence_diffs": len(diffs("confidence")),
+        "clean_summary_diffs": len(diffs("clean_summary")),
+        "classification": (
+            "expected_source_truth_refresh: presentation text is re-extracted from current "
+            "Manifest/Raw and confidence is recalculated from current Raw fingerprints; "
+            "legacy Search/audit values are not copied forward"
+        ),
+    }
+    regression_same = (
+        not missing and not extra and not any(field_diffs.values())
+        if reference is not None else None
+    )
+    bootstrap_supported = bool(entities) and index.get("schema_version") == 3
+    digest = hashlib.sha256(
+        json.dumps(index, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode()
+    ).hexdigest()
+    return {
+        "schema_version": 1,
+        "old_dependency_graph": [
+            "entity-dedup-audit.json -> entity-index.json",
+            "entity-index.json + entity-coverage-v2-audit.json + local search-index.json -> entity-index-v2.json",
+            "entity-index-v2.json + local search-index.json + Raw/Manifest -> entity-index-v3.json",
+        ],
+        "new_dependency_graph": [
+            "system/child manifests + Raw HTML + tracked config/rules -> entity-index-v3.json",
+            "entity-index-v3.json -> optional validation/audit reports",
+        ],
+        "required_inputs": [
+            "sources/system_manifest.json", "sources/<system>_manifest.json",
+            "data/raw/manifests/<system>/raw_html/", "config/game_category_mapping.json",
+            "tracked deterministic classification/source-priority rules",
+        ],
+        "removed_required_inputs": [
+            "data/reports/**", "local_wiki/**", "search-index.json",
+            "entity-index.json", "entity-index-v2.json", "structured-search-index.json",
+        ],
+        "fresh_bootstrap_supported": bootstrap_supported,
+        "fresh_entity_bootstrap_ready": bootstrap_supported and regression_same is not False,
+        "entity_counts": {
+            "current_count": len(current),
+            "fresh_bootstrap_count": len(entities),
+            "ordinary_equipment": ordinary,
+            "legendary_equipment": legendary,
+            "vorax": vorax,
+            "memory": counts["memory_system"],
+            "equipment_related": counts["equipment_related_system"],
+            "ethereal_prism": counts["talent_system"],
+            "pact": counts["pact_spirit"],
+            "fate": counts["fate"],
+            "hero_trait": counts["hero"],
+            "talent": talent,
+            "skill_visible": visible_skill,
+        },
+        "regression_comparison": {
+            "same": regression_same,
+            "same_entity_ids": not missing and not extra,
+            "missing": missing,
+            "extra": extra,
+            **field_diffs,
+            "non_contract_source_truth_refresh": source_truth_refresh,
+        },
+        "source_priority_validation": {
+            "legendary_over_craft": not legendary_ownership_errors,
+            "legendary_ownership_errors": legendary_ownership_errors,
+        },
+        "recovered_fate_validation": {
+            "expected": 2,
+            "actual": len(recovered_fate),
+            "valid": len(recovered_fate) == 2 and all(
+                item.get("entity_type") == "fate"
+                and item.get("content_subcategory_id") == "pact_spirit_destiny"
+                for item in recovered_fate
+            ),
+        },
+        "legacy_visibility_validation": {
+            "hidden_entities": sum(item.get("entity_visibility") == "hidden" for item in entities),
+            "hidden_entity_count_matches_current": sum(
+                item.get("entity_visibility") == "hidden" for item in entities
+            ) == sum(item.get("entity_visibility") == "hidden" for item in current),
+            "warehouse_metadata_deterministic": all(
+                item.get("content_subcategory_id") == "equipment_type"
+                for item in entities
+                if item.get("entity_id") == "tlidb:cn:Sandlord_Season"
+            ),
+        },
+        "determinism_validation": {
+            "stable_sort": [item["canonical_route"] for item in entities]
+            == sorted(item["canonical_route"] for item in entities),
+            "canonical_sha256": digest,
+            "does_not_use_mtime_or_generated_state": True,
+        },
+        "consumer_compatibility": {
+            "schema_version": index.get("schema_version"),
+            "schema_unchanged": index.get("schema_version") == 3,
+            "required_fields_present": all(
+                all(field in item for field in ("entity_id", "canonical_route", "sources"))
+                for item in entities
+            ),
+            "builder_and_structured_changes_required": False,
+        },
+        "errors": (
+            [] if regression_same is not False
+            else ["Fresh bootstrap differs from current Entity model."]
+        ),
+    }
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--repo", type=Path, default=Path.cwd())
-    parser.add_argument("--output", type=Path, default=Path("data/generated/entity-index-v3.json"))
+    parser.add_argument("--season", default=DEFAULT_SEASON)
+    parser.add_argument("--output", type=Path)
     parser.add_argument(
         "--report",
         type=Path,
@@ -1430,52 +2022,82 @@ def main() -> int:
         type=Path,
         default=Path("data/reports/local-wiki/pact-fate-search-cleanup-v1.json"),
     )
+    parser.add_argument(
+        "--fresh-bootstrap-report",
+        type=Path,
+        default=Path("data/reports/local-wiki/entity-v3-fresh-bootstrap-v1-report.json"),
+    )
+    parser.add_argument(
+        "--reference-index",
+        type=Path,
+        default=None,
+        help="Optional regression reference; never used as a generation input.",
+    )
     args = parser.parse_args()
     repo = args.repo.resolve()
-    index, report = build_entity_index_v3(repo)
-    output = args.output if args.output.is_absolute() else repo / args.output
-    report_path = args.report if args.report.is_absolute() else repo / args.report
-    equipment_report_path = (args.equipment_report if args.equipment_report.is_absolute()
-                             else repo / args.equipment_report)
+    context = SeasonContext(repo, args.season)
+    output_arg = args.output or context.entity_output
+    output = output_arg if output_arg.is_absolute() else repo / output_arg
+    reference_path = args.reference_index
+    if reference_path is None:
+        reference_path = context.readable_entity_output()
+    elif not reference_path.is_absolute():
+        reference_path = repo / reference_path
+    reference = (
+        json.loads(reference_path.read_text(encoding="utf-8"))
+        if reference_path.is_file() else None
+    )
+    index, report = build_entity_index_v3(repo, context)
+    def scoped_report(path: Path) -> Path:
+        if args.season != DEFAULT_SEASON:
+            return context.report_root / path.name
+        return path if path.is_absolute() else repo / path
+
+    report_path = scoped_report(args.report)
+    equipment_report_path = scoped_report(args.equipment_report)
     craft_filter_report_path = (
         args.equipment_craft_filter_report
         if args.equipment_craft_filter_report.is_absolute()
-        else repo / args.equipment_craft_filter_report
+        else scoped_report(args.equipment_craft_filter_report)
     )
     legendary_report_path = (
         args.legendary_gear_report if args.legendary_gear_report.is_absolute()
-        else repo / args.legendary_gear_report
+        else scoped_report(args.legendary_gear_report)
     )
     vorax_report_path = (
         args.vorax_equipment_report if args.vorax_equipment_report.is_absolute()
-        else repo / args.vorax_equipment_report
+        else scoped_report(args.vorax_equipment_report)
     )
     equipment_related_report_path = (
         args.equipment_related_system_report
         if args.equipment_related_system_report.is_absolute()
-        else repo / args.equipment_related_system_report
+        else scoped_report(args.equipment_related_system_report)
     )
     talent_report_path = (
         args.talent_system_report
         if args.talent_system_report.is_absolute()
-        else repo / args.talent_system_report
+        else scoped_report(args.talent_system_report)
     )
     ethereal_prism_report_path = (
         args.ethereal_prism_report
         if args.ethereal_prism_report.is_absolute()
-        else repo / args.ethereal_prism_report
+        else scoped_report(args.ethereal_prism_report)
     )
     hero_report_path = (
         args.hero_report if args.hero_report.is_absolute()
-        else repo / args.hero_report
+        else scoped_report(args.hero_report)
     )
     memory_system_report_path = (
         args.memory_system_report if args.memory_system_report.is_absolute()
-        else repo / args.memory_system_report
+        else scoped_report(args.memory_system_report)
     )
     pact_fate_report_path = (
         args.pact_fate_search_report if args.pact_fate_search_report.is_absolute()
-        else repo / args.pact_fate_search_report
+        else scoped_report(args.pact_fate_search_report)
+    )
+    fresh_report_path = (
+        args.fresh_bootstrap_report if args.fresh_bootstrap_report.is_absolute()
+        else scoped_report(args.fresh_bootstrap_report)
     )
     output.parent.mkdir(parents=True, exist_ok=True)
     report_path.parent.mkdir(parents=True, exist_ok=True)
@@ -1489,6 +2111,7 @@ def main() -> int:
     hero_report_path.parent.mkdir(parents=True, exist_ok=True)
     memory_system_report_path.parent.mkdir(parents=True, exist_ok=True)
     pact_fate_report_path.parent.mkdir(parents=True, exist_ok=True)
+    fresh_report_path.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps(index, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     equipment_report_path.write_text(
@@ -1547,6 +2170,10 @@ def main() -> int:
         json.dumps(
             pact_fate_search_cleanup_v1_report(index), ensure_ascii=False, indent=2
         ) + "\n",
+        encoding="utf-8",
+    )
+    fresh_report_path.write_text(
+        json.dumps(fresh_bootstrap_report(index, reference), ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
     return 0

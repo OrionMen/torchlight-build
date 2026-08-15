@@ -16,6 +16,7 @@ from urllib.parse import quote, urlsplit
 from urllib.request import Request, urlopen
 
 from crawler.fetch_manifest import ROOT, USER_AGENT, request_url_for, ssl_context, write_json
+from crawler.season_context import DEFAULT_SEASON, SeasonContext
 
 
 class RateLimiter:
@@ -617,13 +618,14 @@ def orchestrate(
 
 def parse_args(argv=None):
     parser = argparse.ArgumentParser(description="Fetch raw HTML for all confirmed system manifests")
-    parser.add_argument("--system-manifest", type=Path, default=Path("sources/system_manifest.json"))
+    parser.add_argument("--season", default=DEFAULT_SEASON)
+    parser.add_argument("--system-manifest", type=Path)
     selection = parser.add_mutually_exclusive_group(required=True)
     selection.add_argument("--system-id")
     selection.add_argument("--all", action="store_true")
     selection.add_argument("--manifest", type=Path)
-    parser.add_argument("--output-root", type=Path, default=Path("data/raw/manifests"))
-    parser.add_argument("--report", type=Path, default=Path("data/reports/fetch-all/all-fetch-report.json"))
+    parser.add_argument("--output-root", type=Path)
+    parser.add_argument("--report", type=Path)
     parser.add_argument("--force", action="store_true")
     parser.add_argument("--max-workers", type=int, default=4)
     parser.add_argument("--rate-limit", type=float, default=0.5)
@@ -640,9 +642,13 @@ def main(argv=None) -> int:
     try:
         if args.max_workers < 1 or args.rate_limit < 0 or args.timeout <= 0 or args.retries < 0:
             raise ValueError("invalid max-workers, rate-limit, timeout, or retries")
-        manifest_path = args.system_manifest if args.system_manifest.is_absolute() else ROOT / args.system_manifest
-        output_root = args.output_root if args.output_root.is_absolute() else ROOT / args.output_root
-        report_path = args.report if args.report.is_absolute() else ROOT / args.report
+        context = SeasonContext(ROOT, args.season)
+        manifest_path = args.system_manifest or context.readable_system_manifest()
+        manifest_path = manifest_path if manifest_path.is_absolute() else ROOT / manifest_path
+        output_root = args.output_root or context.raw_manifest_root
+        output_root = output_root if output_root.is_absolute() else ROOT / output_root
+        report_path = args.report or context.report_root / "all-fetch-report.json"
+        report_path = report_path if report_path.is_absolute() else ROOT / report_path
         if args.manifest:
             direct_path = args.manifest if args.manifest.is_absolute() else ROOT / args.manifest
             direct = load_source_manifest(direct_path)
@@ -652,6 +658,12 @@ def main(argv=None) -> int:
             requested_id = direct_system_id
         else:
             system_manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            for system in system_manifest.get("systems", []):
+                reference = system.get("manifest_path")
+                if reference:
+                    scoped = manifest_path.parent / Path(reference).name
+                    if scoped.is_file() or args.season != DEFAULT_SEASON:
+                        system["manifest_path"] = str(scoped)
             requested_id = None if args.all else args.system_id
         progress = ProgressReporter(quiet=args.quiet)
         report = orchestrate(

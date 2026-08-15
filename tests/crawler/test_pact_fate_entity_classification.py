@@ -37,12 +37,9 @@ class PactFateEntityClassificationTest(unittest.TestCase):
     def test_all_fate_entities_have_type_and_category(self):
         entities = [
             entity for entity in self.index["entities"]
-            if any(
-                source.get("system_id") == "destiny"
-                for source in entity.get("sources", [])
-            )
+            if entity.get("entity_type") == "fate"
         ]
-        self.assertEqual(191, len(entities))
+        self.assertEqual(193, len(entities))
         for entity in entities:
             self.assertEqual("fate", entity["entity_type"])
             self.assertEqual("pact_spirit", entity["content_category_id"])
@@ -67,7 +64,7 @@ class PactFateEntityClassificationTest(unittest.TestCase):
                 self.entities,
                 self.tree,
             )
-            self.assertEqual("route_override", source)
+            self.assertEqual("entity_override", source)
             self.assertEqual("pact_spirit", classification["content_category_id"])
             self.assertEqual(
                 "pact_spirit_destiny",

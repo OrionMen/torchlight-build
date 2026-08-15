@@ -14,6 +14,7 @@ from collections import Counter, defaultdict
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import quote, unquote, urldefrag, urljoin, urlsplit, urlunsplit
+from crawler.season_context import DEFAULT_SEASON, SeasonContext
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -62,7 +63,7 @@ SEARCH_SKILL_SYSTEMS = {
     "magnificent_support_skill", "noble_support_skill", "modularization_skill",
 }
 ENTITY_CLEAN_SUMMARY_TYPES = {
-    "equipment", "equipment_related_system", "memory_system", "talent",
+    "equipment", "legendary_equipment", "equipment_related_system", "memory_system", "talent",
     "pact_spirit", "fate",
 }
 HTML_VOID_ELEMENTS = {
@@ -147,6 +148,29 @@ def search_summary_display(plain_text):
     text = SEARCH_TIER_NAME.sub(" ", text)
     text = SEARCH_ENCODED_TOKEN.sub(" ", text)
     return " ".join(text.split())
+
+
+LEGACY_DIVINITY_SLATE_SUBCATEGORY = "talent_divinity_slate"
+
+
+def is_legacy_divinity_slate_search_content(search_document):
+    return (
+        search_document.get("content_subcategory_id")
+        == LEGACY_DIVINITY_SLATE_SUBCATEGORY
+    )
+
+
+def apply_search_visibility_policy(search_document):
+    """Hide legacy-only results without hiding current classified content."""
+    legacy_inventory_fallback = (
+        search_document.get("system_id") == "inventory"
+        and search_document.get("content_category_id") is None
+        and search_document.get("content_subcategory_id") is None
+        and search_document.get("entity_type") is None
+    )
+    if legacy_inventory_fallback or is_legacy_divinity_slate_search_content(search_document):
+        search_document["entity_visibility"] = "hidden"
+    return search_document
 
 
 def load_native_i18n(i18n_root):
@@ -702,36 +726,264 @@ class HTMLRewriter(HTMLParser):
 
 
 def local_assets():
-    return {
+    assets = {
         "_local/search/index.html": """<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TLIDB Local Search</title><link rel="stylesheet" href="styles.css"><script defer src="app.js"></script></head><body><main><h1>TLIDB Local Search</h1><div class="search-layout"><nav id="content-tree" aria-label="游戏内容分类"></nav><section class="search-main"><input id="search" type="search" placeholder="搜索全部本地页面" autocomplete="off"><p id="status">正在载入索引……</p><div id="results"></div></section></div></main></body></html>""",
-        "_local/search/styles.css": """body{margin:0;background:#f5f6f8;color:#20242a;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{max-width:1180px;margin:auto;padding:24px}.search-layout{display:grid;grid-template-columns:220px minmax(0,1fr);gap:24px;align-items:start}#search{box-sizing:border-box;width:100%;padding:12px;font-size:18px}#content-tree{position:sticky;top:16px;padding:10px;background:#fff;border-radius:8px}.tree-all,.tree-primary,.tree-child{box-sizing:border-box;width:100%;border:0;background:transparent;color:#334155;text-align:left;cursor:pointer;border-radius:6px}.tree-all,.tree-primary{padding:9px 10px;font-size:16px;font-weight:650}.tree-child{padding:7px 10px 7px 28px;font-size:14px}.tree-all:hover,.tree-primary:hover,.tree-child:hover,.tree-selected{background:#e2e8f0;color:#0f172a}.tree-category{margin-top:4px}.tree-children[hidden]{display:none}.group{margin-top:24px}.result{margin:10px 0;padding:12px;background:#fff;border-radius:6px}.result a{color:#075985;text-decoration:none}.entity-card{border-left:4px solid #0f766e}.entity-meta{display:flex;gap:8px;align-items:center;margin-top:6px;color:#475569;font-size:14px}.entity-category{padding:2px 7px;border-radius:999px;background:#ccfbf1;color:#115e59}.entity-sources{margin:7px 0 0;color:#475569;font-size:14px}mark{background:#ffe58f}@media(max-width:760px){.search-layout{grid-template-columns:1fr}#content-tree{position:static}.tree-category{display:inline-block;vertical-align:top;width:calc(50% - 4px)}}""",
+        "_local/search/styles.css": """body{margin:0;background:#f5f6f8;color:#20242a;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{max-width:1180px;margin:auto;padding:24px}.search-layout{display:grid;grid-template-columns:220px minmax(0,1fr);gap:24px;align-items:start}#search{box-sizing:border-box;width:100%;padding:12px;font-size:18px}#content-tree{position:sticky;top:16px;padding:10px;background:#fff;border-radius:8px}.tree-all,.tree-primary,.tree-child{box-sizing:border-box;width:100%;border:0;background:transparent;color:#334155;text-align:left;cursor:pointer;border-radius:6px}.tree-all,.tree-primary{padding:9px 10px;font-size:16px;font-weight:650}.tree-child{padding:7px 10px 7px 28px;font-size:14px}.tree-all:hover,.tree-primary:hover,.tree-child:hover,.tree-selected{background:#e2e8f0;color:#0f172a}.tree-category{margin-top:4px}.tree-children[hidden]{display:none}.group{margin-top:24px}.result{margin:10px 0;padding:12px;background:#fff;border-radius:6px}.result a{color:#075985;text-decoration:none}.entity-card{border-left:4px solid #0f766e}.entity-meta{display:flex;gap:8px;align-items:center;margin-top:6px;color:#475569;font-size:14px}.entity-category{padding:2px 7px;border-radius:999px;background:#ccfbf1;color:#115e59}.entity-sources{margin:7px 0 0;color:#475569;font-size:14px}.structured-entity{border-left:4px solid #7c3aed}.structured-records{margin:10px 0 0;padding:0;list-style:none}.structured-record{padding:9px 0;border-top:1px solid #e2e8f0}.structured-record-type{display:inline-block;margin-right:8px;padding:2px 7px;border-radius:999px;background:#ede9fe;color:#5b21b6;font-size:12px}.structured-more{margin:8px 0 0;color:#64748b;font-size:13px}mark{background:#ffe58f}.structured-record-highlight{background:#fef08a!important;outline:3px solid #f59e0b;transition:background 1s ease,outline 1s ease}@media(max-width:760px){.search-layout{grid-template-columns:1fr}#content-tree{position:static}.tree-category{display:inline-block;vertical-align:top;width:calc(50% - 4px)}}""",
         "_local/search/app.js": """(()=>{
 const q=document.querySelector('#search'),tree=document.querySelector('#content-tree'),out=document.querySelector('#results'),status=document.querySelector('#status');
 const esc=s=>String(s).replace(/[&<>\"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;',\"'\":'&#39;'}[c]));
 const hi=(s,k)=>{const i=s.toLocaleLowerCase().indexOf(k);return i<0?esc(s):esc(s.slice(0,i))+'<mark>'+esc(s.slice(i,i+k.length))+'</mark>'+esc(s.slice(i+k.length))};
-let pages=[],contentTree={search_categories:[],hidden_systems:[]},hiddenSystems=new Set,selectedCategory=null,selectedSubcategory=null;
+let pages=[],structuredRecords=[],contentTree={search_categories:[],hidden_systems:[]},hiddenSystems=new Set,selectedCategory=null,selectedSubcategory=null;
+const STRUCTURED_LIMIT=8;
 const visibleSubcategories=categoryId=>new Set((contentTree.search_categories.find(category=>category.id===categoryId)?.children||[]).filter(child=>child.search_visibility!=='hidden').map(child=>child.id));
-const matchesContentTree=x=>{if(x.entity_visibility==='hidden'||hiddenSystems.has(x.system_id))return false;if(selectedSubcategory)return x.content_category_id===selectedCategory&&x.content_subcategory_id===selectedSubcategory;if(selectedCategory)return x.content_category_id===selectedCategory&&visibleSubcategories(selectedCategory).has(x.content_subcategory_id);return true};
+const isLegacyInventoryFallback=x=>x.system_id==='inventory'&&!x.content_category_id&&!x.content_subcategory_id&&!x.entity_type;
+const isLegacyDivinitySlate=x=>x.content_subcategory_id==='talent_divinity_slate';
+const matchesContentTree=x=>{if(x.entity_visibility==='hidden'||hiddenSystems.has(x.system_id)||isLegacyInventoryFallback(x)||isLegacyDivinitySlate(x))return false;if(selectedSubcategory)return x.content_category_id===selectedCategory&&x.content_subcategory_id===selectedSubcategory;if(selectedCategory)return x.content_category_id===selectedCategory&&visibleSubcategories(selectedCategory).has(x.content_subcategory_id);return true};
+const matchesStructuredTree=x=>{if(isLegacyDivinitySlate(x))return false;if(selectedSubcategory)return x.content_category_id===selectedCategory&&x.content_subcategory_id===selectedSubcategory;if(selectedCategory)return x.content_category_id===selectedCategory&&visibleSubcategories(selectedCategory).has(x.content_subcategory_id);return true};
 const setSelectedButton=button=>{tree.querySelectorAll('button').forEach(item=>item.classList.toggle('tree-selected',item===button))};
 const selectFilter=(categoryId,subcategoryId,button)=>{selectedCategory=categoryId;selectedSubcategory=subcategoryId;setSelectedButton(button);run()};
 const renderContentTree=()=>{tree.innerHTML='';const all=document.createElement('button');all.type='button';all.className='tree-all tree-selected';all.textContent='全部';all.addEventListener('click',()=>selectFilter(null,null,all));tree.append(all);contentTree.search_categories.filter(category=>category.search_visibility==='primary').forEach(category=>{const section=document.createElement('div');section.className='tree-category';const primary=document.createElement('button');primary.type='button';primary.className='tree-primary';primary.textContent=category.name_zh;primary.setAttribute('aria-expanded','false');const children=document.createElement('div');children.className='tree-children';children.hidden=true;primary.addEventListener('click',()=>{children.hidden=!children.hidden;primary.setAttribute('aria-expanded',String(!children.hidden));selectFilter(category.id,null,primary)});category.children.filter(child=>child.search_visibility!=='hidden').forEach(child=>{const button=document.createElement('button');button.type='button';button.className='tree-child';button.textContent=child.name_zh;button.addEventListener('click',()=>selectFilter(category.id,child.id,button));children.append(button)});section.append(primary,children);tree.append(section)})};
-const collectEntitySources=()=>{const all=new Map;pages.forEach(x=>{if(!x.entity_id||hiddenSystems.has(x.system_id))return;if(!all.has(x.entity_id))all.set(x.entity_id,new Set);all.get(x.entity_id).add(x.content_subcategory_name_zh||x.system_name_zh||x.system_id)});return all};
+const collectEntitySources=()=>{const all=new Map;pages.forEach(x=>{if(!x.entity_id||hiddenSystems.has(x.system_id)||isLegacyInventoryFallback(x)||isLegacyDivinitySlate(x))return;if(!all.has(x.entity_id))all.set(x.entity_id,new Set);all.get(x.entity_id).add(x.content_subcategory_name_zh||x.system_name_zh||x.system_id)});return all};
 const collapseEntityHits=(hits,allSources)=>{const display=[],entities=new Map;hits.forEach(v=>{const id=v.x.entity_id;if(!id){display.push({...v,kind:'page'});return}if(!entities.has(id)){const item={...v,kind:'entity',sources:new Set(allSources.get(id)||[])};entities.set(id,item);display.push(item)}else{entities.get(id).sources.add(v.x.system_name_zh||v.x.system_id)}});return display};
 const resultHref=(x,raw)=>encodeURI('../../'+x.route)+'?local_search='+encodeURIComponent(raw);
+const structuredHref=x=>{const view=x.source_locator.view_state||{},data={structured_record:x.record_id,structured_key:x.source_locator.stable_key,structured_section:x.source_locator.dom_id||x.source_locator.section_key};if(x.tier)data.structured_tier=x.tier;if(x.source_locator.legendary_state)data.structured_state=x.source_locator.legendary_state;if(view.vorax_tab)data.structured_vorax_tab=view.vorax_tab;if(view.memory_section)data.structured_memory_section=view.memory_section;if(view.equipment_related_section)data.structured_equipment_related_section=view.equipment_related_section;if(view.ethereal_prism_section)data.structured_ethereal_prism_section=view.ethereal_prism_section;if(view.pact_contract)data.structured_pact_contract='1';if(view.pact_data_id)data.structured_pact_data_id=view.pact_data_id;if(view.pact_data_level)data.structured_pact_data_level=view.pact_data_level;if(view.fate_state)data.structured_fate_state=view.fate_state;if(view.season_container)data.structured_container=view.season_container;if(view.legendary_filter==='clear'||view.filter_reset)data.structured_reset_filter='1';if(view.datatable_ready)data.structured_datatable_ready='1';if(x.source_locator.section_selector)data.structured_section_selector=x.source_locator.section_selector;const p=new URLSearchParams(data),route=String(x.route).replace(/^[/]+/,'');return encodeURI('../../'+route)+'?'+p.toString()};
+const structuredHits=k=>structuredRecords.map((x,index)=>{const text=String(x.search_text||x.text).toLocaleLowerCase(),pos=text.indexOf(k);return{x,index,score:text===k?0:1,pos}}).filter(v=>v.pos>=0).filter(v=>matchesStructuredTree(v.x)).sort((a,b)=>a.score-b.score||a.index-b.index);
+const groupStructured=hits=>{const groups=new Map;hits.forEach(hit=>{const id=hit.x.entity_id;if(!groups.has(id))groups.set(id,{entity_id:id,entity_title:hit.x.entity_title,category:hit.x.content_category_name_zh,subcategory:hit.x.content_subcategory_name_zh,records:[]});groups.get(id).records.push(hit)});return [...groups.values()]};
 const run=()=>{const raw=q.value.trim(),k=raw.toLocaleLowerCase();out.innerHTML='';if(!k){status.textContent=`当前分类包含 ${pages.filter(matchesContentTree).length} 个页面。`;return}
 const hits=pages.map(x=>{const t=x.title.toLocaleLowerCase(),p=x.plain_text.toLocaleLowerCase(),ti=t.indexOf(k),pi=p.indexOf(k);return{x,score:ti>=0?0:1,pos:pi}}).filter(v=>v.score===0||v.pos>=0).filter(v=>matchesContentTree(v.x)).sort((a,b)=>a.score-b.score||a.x.title.localeCompare(b.x.title));
-const displayHits=collapseEntityHits(hits,collectEntitySources());status.textContent=`找到 ${displayHits.length} 个结果。`;const groups=new Map;
+const normalizeRoute=route=>decodeURIComponent(String(route||'').split('?')[0].split('#')[0]).replace(/\/+$/,'')||'/';
+const structured=structuredHits(k),structuredGroups=groupStructured(structured),structuredEntities=new Set(structuredGroups.map(group=>group.entity_id)),structuredRoutes=new Set(structured.map(hit=>normalizeRoute(hit.x.route)));
+const displayHits=collapseEntityHits(hits.filter(hit=>!structuredEntities.has(hit.x.entity_id)&&!structuredRoutes.has(normalizeRoute(hit.x.route))),collectEntitySources());status.textContent=`找到 ${displayHits.length+structured.length} 个结果（${structured.length} 条结构化记录）。`;const groups=new Map;
 const resultGroup=x=>({id:x.content_subcategory_id||x.content_category_id||x.system_id,name:x.content_subcategory_name_zh||x.content_category_name_zh||x.system_name_zh||x.system_id});
 displayHits.forEach(v=>{const group=resultGroup(v.x);if(!groups.has(group.id))groups.set(group.id,{name:group.name,items:[]});groups.get(group.id).items.push(v)});
+if(structuredGroups.length){const section=document.createElement('section'),structuredGroupName=structuredGroups[0].subcategory||structuredGroups[0].category||'Structured Records';section.className='group structured-group';section.innerHTML=`<h2>${esc(structuredGroupName)} (${structured.length})</h2>`;structuredGroups.forEach(group=>{const card=document.createElement('div');card.className='result structured-entity';const shown=group.records.slice(0,STRUCTURED_LIMIT),remaining=group.records.length-shown.length;card.innerHTML=`<strong>${hi(group.entity_title,k)}</strong><div class="entity-meta"><span class="entity-category">${esc(group.category||'未分类')} / ${esc(group.subcategory||'未分类')}</span></div><ul class="structured-records">${shown.map(hit=>`<li class="structured-record"><a href="${structuredHref(hit.x)}"><span class="structured-record-type">${hi(hit.x.section_name,k)}</span>${hi(hit.x.text,k)}</a></li>`).join('')}</ul>${remaining>0?`<p class="structured-more">还有 ${remaining} 条匹配</p>`:''}`;section.append(card)});out.append(section)}
 groups.forEach((group,id)=>{const items=group.items,section=document.createElement('section');section.className='group';section.innerHTML=`<h2>${esc(group.name||id)} (${items.length})</h2>`;
 items.forEach(item=>{const x=item.x,entity=item.kind==='entity',displayTitle=entity?(x.entity_title||x.title_display||x.title):(x.title_display||x.title),summary=x.summary_display||x.plain_text,displayPos=summary.toLocaleLowerCase().indexOf(k),start=Math.max(0,(displayPos<0?0:displayPos)-60),d=document.createElement('div');d.className=entity?'result entity-card':'result';const meta=entity?`<div class=\"entity-meta\"><span class=\"entity-category\">${esc(x.content_category_name_zh||x.entity_category_name_zh||x.entity_category||'未分类')}</span></div><p class=\"entity-sources\">来源：${[...item.sources].map(esc).join('、')}</p>`:'';d.innerHTML=`<a href=\"${resultHref(x,raw)}\"><strong>${hi(displayTitle,k)}</strong></a>${meta}<p>${hi(summary.slice(start,start+140),k)}</p>`;section.append(d)});out.append(section)})};
-Promise.all([fetch('../../search-index.json').then(r=>r.json()),fetch('game-content-tree.json').then(r=>r.json())]).then(([index,treeConfig])=>{pages=index.pages||index;contentTree=treeConfig;hiddenSystems=new Set(contentTree.hidden_systems.map(item=>item.system_id));renderContentTree();const initial=new URLSearchParams(location.search).get('q')||'';q.value=initial;run()}).catch(e=>status.textContent=`索引或分类树加载失败：${e}`);q.addEventListener('input',run)})();""",
-        "_local/mirror.js": """(()=>{const term=new URLSearchParams(location.search).get('local_search');if(!term)return;const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{acceptNode:n=>n.parentElement&& !/^(SCRIPT|STYLE|MARK)$/.test(n.parentElement.tagName)&&n.data.toLocaleLowerCase().includes(term.toLocaleLowerCase())?NodeFilter.FILTER_ACCEPT:NodeFilter.FILTER_REJECT});const node=walker.nextNode();if(!node)return;const i=node.data.toLocaleLowerCase().indexOf(term.toLocaleLowerCase()),mark=document.createElement('mark');mark.textContent=node.data.slice(i,i+term.length);node.parentNode.insertBefore(document.createTextNode(node.data.slice(0,i)),node);node.parentNode.insertBefore(mark,node);node.data=node.data.slice(i+term.length);mark.scrollIntoView({block:'center'})})();""",
+const loadStructured=()=>fetch('../../structured-search-index.json').then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json()}).then(index=>index.schema_version===1&&Array.isArray(index.records)?index.records:[]).catch(()=>[]);
+Promise.all([fetch('../../search-index.json').then(r=>r.json()),fetch('game-content-tree.json').then(r=>r.json()),loadStructured()]).then(([index,treeConfig,structured])=>{pages=index.pages||index;structuredRecords=structured;contentTree=treeConfig;hiddenSystems=new Set(contentTree.hidden_systems.map(item=>item.system_id));renderContentTree();const initial=new URLSearchParams(location.search).get('q')||'';q.value=initial;run()}).catch(e=>status.textContent=`索引或分类树加载失败：${e}`);q.addEventListener('input',run)})();""",
+        "_local/mirror.js": """(()=>{const skillHoverPrefix='/cache/cn/Torchlight_ItemBase_hover/',skillPopupFallback='无本地预览',currentSkillCard=documentNode=>{const cards=[...documentNode.querySelectorAll('.card.ui_item.popupItem:not(.previousItem)')];return cards.find(card=>{const pane=card.closest('.tab-pane');return!pane||(pane.classList.contains('active')&&pane.classList.contains('show'))})||null},hasSkillCardContract=card=>!!(card&&card.querySelector('.tag,[data-src="simpleMods"],[data-src="detailMods"],[data-block="weapon_restrict_description"]')),currentPageIsSkill=hasSkillCardContract(currentSkillCard(document)),isCategorySkillReference=reference=>{const item=reference.closest('.d-flex.border-top.rounded');return!!(item&&item.querySelector('[data-skilltagid]'))},isSkillReference=reference=>reference.matches('a[href][data-hover]')&&(currentPageIsSkill||isCategorySkillReference(reference)),isKnownSkillHover=reference=>reference.dataset.hover.startsWith(skillHoverPrefix),skillPopupCache=typeof Tippy!=='undefined'&&Tippy.tippy_caches?Tippy.tippy_caches:(window.__localSkillPopupCache=window.__localSkillPopupCache||{}),skillPopupInflight=new Map,loadLocalSkillPopup=reference=>{const key=reference.dataset.hover;if(key in skillPopupCache)return Promise.resolve(skillPopupCache[key]);if(skillPopupInflight.has(key))return skillPopupInflight.get(key);let localUrl;try{localUrl=new URL(reference.getAttribute('href'),location.href)}catch(_){return Promise.resolve(null)}if(localUrl.origin!==location.origin)return Promise.resolve(null);const request=fetch(localUrl.href,{credentials:'same-origin'}).then(response=>{if(!response.ok)throw new Error(`HTTP ${response.status}`);return response.text()}).then(html=>{const documentNode=new DOMParser().parseFromString(html,'text/html'),card=currentSkillCard(documentNode);if(!hasSkillCardContract(card))return null;const payload=card.outerHTML;skillPopupCache[key]=payload;return payload}).catch(()=>null).finally(()=>skillPopupInflight.delete(key));skillPopupInflight.set(key,request);return request},installSkillPopupResolver=()=>{if(typeof tippy!=='function')return;document.querySelectorAll('a[href][data-hover]').forEach(reference=>{if(!isSkillReference(reference))return;if(reference._tippy)reference._tippy.destroy();tippy(reference,{maxWidth:'none',content:isKnownSkillHover(reference)?'Loading...':skillPopupFallback,allowHTML:true,onShow(tip){const token=(tip._localSkillPopupToken||0)+1;tip._localSkillPopupToken=token;if(!isKnownSkillHover(reference)){tip.setContent(skillPopupFallback);return}const key=reference.dataset.hover;if(key in skillPopupCache){tip.setContent(skillPopupCache[key]);return}tip.setContent('Loading...');loadLocalSkillPopup(reference).then(payload=>{if(tip._localSkillPopupToken===token)tip.setContent(payload||skillPopupFallback)})},onHidden(tip){tip._localSkillPopupToken=(tip._localSkillPopupToken||0)+1;tip.setContent(isKnownSkillHover(reference)?'Loading...':skillPopupFallback)},placement:'auto'})})};if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>setTimeout(installSkillPopupResolver,0),{once:true});else setTimeout(installSkillPopupResolver,0);const params=new URLSearchParams(location.search),recordId=params.get('structured_record'),stableKey=params.get('structured_key'),section=params.get('structured_section'),tier=params.get('structured_tier'),voraxTab=params.get('structured_vorax_tab'),memorySection=params.get('structured_memory_section'),equipmentRelatedSection=params.get('structured_equipment_related_section'),etherealPrismSection=params.get('structured_ethereal_prism_section'),pactContract=params.get('structured_pact_contract')==='1',pactDataId=params.get('structured_pact_data_id'),pactDataLevel=params.get('structured_pact_data_level'),fateState=params.get('structured_fate_state'),container=params.get('structured_container'),resetFilter=params.get('structured_reset_filter')==='1',datatableReady=params.get('structured_datatable_ready')==='1',sectionSelector=params.get('structured_section_selector');if(recordId){const modifier=stableKey&&stableKey.startsWith('modifier:')?stableKey.slice('modifier:'.length):null,memorySections={base_attribute:'基础属性',fixed_affix:'固有词缀',random_affix:'随机词缀',revival_affix:'复苏词缀',revival_moon_affix:'复苏词缀（月相）'},equipmentRelatedSections={fragrance:'调香秘仪',tower_sequence:'高塔序列'},etherealPrismSections={base_affixes:'基础词缀',random_affixes:'随机词缀'},memoryDom=memorySections[memorySection]||equipmentRelatedSections[equipmentRelatedSection]||etherealPrismSections[etherealPrismSection]||section,pane=memoryDom?document.getElementById(memoryDom):null,fateCard=fateState==='current'?document.querySelector('.card.ui_item.popupItem:not(.previousItem)'):null,pactGrid=pactContract?[...document.querySelectorAll('.row')].find(row=>row.querySelector('.d-flex.border.rounded img[data-id][data-level]')&&!row.closest('.tab-pane[id$="_NPC"]:not(.active):not(.show)')):null,trigger=memoryDom?[...document.querySelectorAll('[data-bs-target]')].find(node=>node.getAttribute('data-bs-target')===`#${memoryDom}`):null,tierValues={t0_plus:'0+',t0:'0',t1:'1',t2:'2'};let located=false;const currentRoot=()=>pactContract?pactGrid:fateState?fateCard:container==='current'&&voraxTab==='entity'?(pane&&(pane.querySelector('.popupItem:not(.previousItem)')||pane)):equipmentRelatedSection==='tower_sequence'||etherealPrismSection?(pane&&(pane.querySelector('table.DataTable tbody')||pane)):pane;const outerModifierTarget=root=>{if(!modifier||!root)return null;if(!etherealPrismSection)return[...root.querySelectorAll('[data-modifier-id]')].find(node=>node.getAttribute('data-modifier-id')===modifier)||null;return[...root.querySelectorAll('tr')].map(row=>row.querySelector('[data-modifier-id]')).find(node=>node&&node.getAttribute('data-modifier-id')===modifier)||null};const pactTarget=()=>{if(!pactGrid||!pactDataId||!pactDataLevel)return null;const icon=[...pactGrid.querySelectorAll('.d-flex.border.rounded img[data-id][data-level]')].find(node=>node.getAttribute('data-id')===pactDataId&&node.getAttribute('data-level')===pactDataLevel);return icon&&icon.closest('.d-flex.border.rounded')};const locate=()=>{if(located)return;const root=currentRoot();if(!root)return;const target=pactContract?pactTarget():modifier?outerModifierTarget(root):sectionSelector?root.querySelector(sectionSelector):null,landing=target||root;located=true;if(landing&&landing.scrollIntoView)requestAnimationFrame(()=>{landing.scrollIntoView({block:'center'});if(target){const row=target.closest('tr,div.col,div.t0,div.t1,[data-block],.d-flex.border.rounded')||target,oldBackground=row.style.backgroundColor,oldOutline=row.style.outline;row.style.backgroundColor='#fef08a';row.style.outline='3px solid #f59e0b';setTimeout(()=>{row.style.backgroundColor=oldBackground;row.style.outline=oldOutline},4500)}})};const waitForViewAndLocate=(attempt=0)=>{if(datatableReady){const table=pane&&pane.querySelector('table.DataTable'),ready=table&&window.jQuery&&jQuery.fn.DataTable&&jQuery.fn.DataTable.isDataTable(table);if(!ready&&attempt<20){setTimeout(()=>waitForViewAndLocate(attempt+1),50);return}}requestAnimationFrame(()=>requestAnimationFrame(locate))};const applyTierAndLocate=()=>{if(!pane)return;if(resetFilter){const filter=pane.querySelector('input[name="filter"]');if(filter){filter.value='';filter.dispatchEvent(new Event('input',{bubbles:true}));filter.dispatchEvent(new Event('change',{bubbles:true}))}}const controls=[...pane.querySelectorAll('input[type="radio"][name="showDetail"]')],desired=tierValues[tier]||'all',control=controls.find(node=>node.value===desired)||controls.find(node=>node.value==='all');if(control){control.checked=true;control.dispatchEvent(new Event('change',{bubbles:true}))}waitForViewAndLocate()};if(trigger&&pane){trigger.addEventListener('shown.bs.tab',applyTierAndLocate,{once:true});try{if(window.bootstrap&&bootstrap.Tab)bootstrap.Tab.getOrCreateInstance(trigger).show();else{document.querySelectorAll('.tab-pane.active,.tab-pane.show').forEach(node=>node.classList.remove('active','show'));document.querySelectorAll('[data-bs-toggle="tab"].active').forEach(node=>node.classList.remove('active'));pane.classList.add('active','show');trigger.classList.add('active');trigger.click();applyTierAndLocate()}}catch(_){applyTierAndLocate()}setTimeout(applyTierAndLocate,500)}else waitForViewAndLocate();return}const term=params.get('local_search');if(!term)return;const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{acceptNode:n=>n.parentElement&&!/^(SCRIPT|STYLE|MARK)$/.test(n.parentElement.tagName)&&n.data.toLocaleLowerCase().includes(term.toLocaleLowerCase())?NodeFilter.FILTER_ACCEPT:NodeFilter.FILTER_REJECT});const node=walker.nextNode();if(!node)return;const i=node.data.toLocaleLowerCase().indexOf(term.toLocaleLowerCase()),mark=document.createElement('mark');mark.textContent=node.data.slice(i,i+term.length);node.parentNode.insertBefore(document.createTextNode(node.data.slice(0,i)),node);node.parentNode.insertBefore(mark,node);node.data=node.data.slice(i+term.length);mark.scrollIntoView({block:'center'})})();""",
+        "_local/legendary-landing.js": """(()=>{const p=new URLSearchParams(location.search),state=p.get('structured_state');if(!state)return;const key=p.get('structured_key')||'',modifier=key.startsWith('modifier:')?key.slice('modifier:'.length):null,cards=state==='current'?[...document.querySelectorAll('.card.ui_item.popupItem:not(.previousItem)')]:state==='corruption'?[...document.querySelectorAll('.card.ui_item:not(.popupItem)')].filter(card=>card.querySelector('.tierParent [data-modifier-id]')):[],target=modifier?cards.flatMap(card=>[...card.querySelectorAll('[data-modifier-id]')]).find(node=>node.getAttribute('data-modifier-id')===modifier):null,landing=target||cards[0];if(!landing)return;requestAnimationFrame(()=>{landing.scrollIntoView({block:'center'});if(target){const row=target.closest('div.t0,div.t1,tr')||target,background=row.style.backgroundColor,outline=row.style.outline;row.style.backgroundColor='#fef08a';row.style.outline='3px solid #f59e0b';setTimeout(()=>{row.style.backgroundColor=background;row.style.outline=outline},4500)}})})();""",
     }
+    search = assets["_local/search/app.js"]
+    search = search.replace(
+        "if(x.tier)data.structured_tier=x.tier;",
+        "if(x.tier)data.structured_tier=x.tier;"
+        "if(view.hero_trait_tab)data.structured_hero_trait_tab=view.hero_trait_tab;"
+        "if(view.hero_trait_asset_key)data.structured_hero_trait_asset=view.hero_trait_asset_key;"
+        "if(view.hero_trait_asset_occurrence)data.structured_hero_trait_occurrence=view.hero_trait_asset_occurrence;"
+        "if(x.trait_level!==null&&x.trait_level!==undefined)"
+        "data.structured_hero_trait_level=x.trait_level;",
+    )
+    search = search.replace(
+        "if(view.vorax_tab)data.structured_vorax_tab=view.vorax_tab;",
+        "if(view.talent_container)data.structured_talent_container=view.talent_container;"
+        "if(view.talent_root)data.structured_talent_root='1';"
+        "if(x.talent_id)data.structured_talent_id=x.talent_id;"
+        "if(view.vorax_tab)data.structured_vorax_tab=view.vorax_tab;",
+    )
+    search = search.replace(
+        "if(view.vorax_tab)data.structured_vorax_tab=view.vorax_tab;",
+        "if(view.skill_current_pane)data.structured_skill_pane=view.skill_current_pane;"
+        "if(view.skill_effect)data.structured_skill_effect='1';"
+        "if(view.skill_growth)data.structured_skill_growth='1';"
+        "if(view.skill_modifier_id)data.structured_skill_modifier=view.skill_modifier_id;"
+        "if(view.skill_modifier_tier!==null&&view.skill_modifier_tier!==undefined)"
+        "data.structured_skill_modifier_tier=view.skill_modifier_tier;"
+        "if(view.vorax_tab)data.structured_vorax_tab=view.vorax_tab;",
+    )
+    assets["_local/search/app.js"] = search
+
+    landing = assets["_local/mirror.js"]
+    landing = landing.replace(
+        "isCategorySkillReference=reference=>{const item=reference.closest("
+        "'.d-flex.border-top.rounded');return!!(item&&item.querySelector("
+        "'[data-skilltagid]'))},isSkillReference=reference=>reference.matches("
+        "'a[href][data-hover]')&&(currentPageIsSkill||"
+        "isCategorySkillReference(reference)),",
+        "isCategorySkillReference=reference=>{const item=reference.closest("
+        "'.d-flex.border-top.rounded');return!!(item&&item.querySelector("
+        "'[data-skilltagid]'))},isDetailSkillReference=reference=>{const card="
+        "reference.closest('.card');if(hasSkillCardContract(card))return true;"
+        "const header=card&&card.querySelector('.card-header');return!!("
+        "currentPageIsSkill&&header&&header.textContent.trim()==='Alts')},"
+        "isSkillReference=reference=>reference.matches('a[href][data-hover]')&&"
+        "(isCategorySkillReference(reference)||isDetailSkillReference(reference)),",
+    )
+    landing = landing.replace(
+        "skillPopupCache=typeof Tippy!=='undefined'&&Tippy.tippy_caches?"
+        "Tippy.tippy_caches:(window.__localSkillPopupCache="
+        "window.__localSkillPopupCache||{}),",
+        "skillPopupCache=window.__localSkillPopupCache="
+        "window.__localSkillPopupCache||{},",
+    )
+    landing = landing.replace(
+        "installSkillPopupResolver=()=>{if(typeof tippy!=='function')return;"
+        "document.querySelectorAll('a[href][data-hover]').forEach(reference=>{"
+        "if(!isSkillReference(reference))return;if(reference._tippy)"
+        "reference._tippy.destroy();tippy(reference,{maxWidth:'none',"
+        "content:isKnownSkillHover(reference)?'Loading...':skillPopupFallback,"
+        "allowHTML:true,onShow(tip){const token=(tip._localSkillPopupToken||0)+1;"
+        "tip._localSkillPopupToken=token;if(!isKnownSkillHover(reference)){"
+        "tip.setContent(skillPopupFallback);return}const key=reference.dataset.hover;"
+        "if(key in skillPopupCache){tip.setContent(skillPopupCache[key]);return}"
+        "tip.setContent('Loading...');loadLocalSkillPopup(reference).then(payload=>{"
+        "if(tip._localSkillPopupToken===token)tip.setContent(payload||"
+        "skillPopupFallback)})},onHidden(tip){tip._localSkillPopupToken="
+        "(tip._localSkillPopupToken||0)+1;tip.setContent(isKnownSkillHover(reference)?"
+        "'Loading...':skillPopupFallback)},placement:'auto'})})};",
+        "applySkillPopupResolver=reference=>{const instance=reference._tippy;"
+        "if(!instance)return false;if(reference.dataset.localSkillPopup==='1')"
+        "return true;reference.dataset.localSkillPopup='1';const content="
+        "isKnownSkillHover(reference)?'Loading...':skillPopupFallback;"
+        "instance.setProps({maxWidth:'none',content,allowHTML:true,onShow(tip){"
+        "const token=(tip._localSkillPopupToken||0)+1;tip._localSkillPopupToken="
+        "token;if(!isKnownSkillHover(reference)){tip.setContent(skillPopupFallback);"
+        "return}const key=reference.dataset.hover;if(key in skillPopupCache){"
+        "tip.setContent(skillPopupCache[key]);return}tip.setContent('Loading...');"
+        "loadLocalSkillPopup(reference).then(payload=>{if(tip._localSkillPopupToken"
+        "===token)tip.setContent(payload||skillPopupFallback)})},onHidden(tip){"
+        "tip._localSkillPopupToken=(tip._localSkillPopupToken||0)+1;"
+        "tip.setContent(isKnownSkillHover(reference)?'Loading...':"
+        "skillPopupFallback)},placement:'auto'});instance.setContent(content);"
+        "return true},installSkillPopupResolver=(attempt=0)=>{let pending=false;"
+        "document.querySelectorAll('a[href][data-hover]').forEach(reference=>{"
+        "if(!isSkillReference(reference))return;if(!applySkillPopupResolver(reference))"
+        "pending=true});if(pending&&attempt<40)setTimeout(()=>"
+        "installSkillPopupResolver(attempt+1),50)};",
+    )
+    landing = landing.replace(
+        "tier=params.get('structured_tier'),",
+        "tier=params.get('structured_tier'),"
+        "heroTraitTab=params.get('structured_hero_trait_tab'),"
+        "heroTraitAsset=params.get('structured_hero_trait_asset'),"
+        "heroTraitOccurrence=params.get('structured_hero_trait_occurrence'),"
+        "heroTraitLevel=params.get('structured_hero_trait_level'),",
+    )
+    landing = landing.replace(
+        "heroTraitLevel=params.get('structured_hero_trait_level'),",
+        "heroTraitLevel=params.get('structured_hero_trait_level'),"
+        "talentContainer=params.get('structured_talent_container'),"
+        "talentRoot=params.get('structured_talent_root')==='1',"
+        "talentId=params.get('structured_talent_id'),",
+    )
+    landing = landing.replace(
+        "talentId=params.get('structured_talent_id'),",
+        "talentId=params.get('structured_talent_id'),"
+        "skillPane=params.get('structured_skill_pane'),"
+        "skillEffect=params.get('structured_skill_effect')==='1',"
+        "skillGrowth=params.get('structured_skill_growth')==='1',"
+        "skillModifier=params.get('structured_skill_modifier'),"
+        "skillModifierTier=params.get('structured_skill_modifier_tier'),",
+    )
+    landing = landing.replace(
+        "etherealPrismSections[etherealPrismSection]||section,",
+        "etherealPrismSections[etherealPrismSection]||"
+        "(heroTraitTab?heroTraitTab.replace(/^#/,''):null)||section,",
+    )
+    landing = landing.replace(
+        "(heroTraitTab?heroTraitTab.replace(/^#/,''):null)||section,",
+        "(heroTraitTab?heroTraitTab.replace(/^#/,''):null)||"
+        "(talentContainer?talentContainer.replace(/^#/,''):null)||section,",
+    )
+    landing = landing.replace(
+        "pane=memoryDom?document.getElementById(memoryDom):null,fateCard=",
+        "skillPageRoot=document.querySelector('.page-content[role=\"main\"]')||"
+        "document.querySelector('.page-content')||document.body,"
+        "skillPaneNode=skillPane?document.getElementById(skillPane):null,"
+        "pane=skillPaneNode||(memoryDom?document.getElementById(memoryDom):null),"
+        "talentRootNode=talentRoot?(document.querySelector('.page-content[role=\"main\"]')||"
+        "document.querySelector('.page-content')||document.body):null,fateCard=",
+    )
+    landing = landing.replace(
+        "trigger=memoryDom?[...document.querySelectorAll('[data-bs-target]')].find(node=>"
+        "node.getAttribute('data-bs-target')===`#${memoryDom}`):null,",
+        "trigger=(skillPane||memoryDom)?[...document.querySelectorAll('[data-bs-target]')].find(node=>"
+        "node.getAttribute('data-bs-target')===`#${skillPane||memoryDom}`):null,",
+    )
+    landing = landing.replace(
+        "const currentRoot=()=>pactContract?",
+        "const currentRoot=()=>heroTraitTab?pane:pactContract?",
+    )
+    landing = landing.replace(
+        "const currentRoot=()=>heroTraitTab?pane:pactContract?",
+        "const currentRoot=()=>heroTraitTab?pane:talentContainer?pane:talentRoot?talentRootNode:pactContract?",
+    )
+    landing = landing.replace(
+        "const currentRoot=()=>heroTraitTab?pane:talentContainer?pane:talentRoot?talentRootNode:pactContract?",
+        "const currentRoot=()=>skillEffect?((skillPaneNode||skillPageRoot).querySelector("
+        "'.card.ui_item.popupItem:not(.previousItem)')||(skillPaneNode||skillPageRoot)):"
+        "skillGrowth?(skillPaneNode||skillPageRoot):heroTraitTab?pane:talentContainer?pane:"
+        "talentRoot?talentRootNode:pactContract?",
+    )
+    landing = landing.replace(
+        "const pactTarget=()=>{",
+        "const heroTraitTarget=()=>{if(!pane||!heroTraitAsset||!heroTraitOccurrence)return null;"
+        "const nodes=[...pane.querySelectorAll('.d-flex.border-top.rounded')].filter(node=>"
+        "[...node.querySelectorAll('img[alt]')].some(icon=>icon.getAttribute('alt')===heroTraitAsset));"
+        "const node=nodes[Number(heroTraitOccurrence)-1];if(!node)return null;"
+        "if(heroTraitLevel!==null){const label=`等级 ${heroTraitLevel}`,tiers=[...node.querySelectorAll('.tierLevel')],"
+        "tier=tiers.find(item=>item.textContent.trim()===label);if(!tier)return null;"
+        "let cursor=tier.nextElementSibling;while(cursor&&!cursor.matches('.tierLevel,hr')){"
+        "if(cursor.matches('[data-src=\"affix\"]'))return cursor;"
+        "const affix=cursor.querySelector&&cursor.querySelector('[data-src=\"affix\"]');if(affix)return affix;"
+        "cursor=cursor.nextElementSibling}return null}return node.querySelector('[data-src=\"affix\"]')};"
+        "const pactTarget=()=>{",
+    )
+    landing = landing.replace(
+        "const heroTraitTarget=()=>{",
+        "const talentTarget=()=>{const root=currentRoot();if(!root||!talentId)return null;"
+        "const marker=[...root.querySelectorAll('[data-talent-id]')].find(node=>"
+        "node.getAttribute('data-talent-id')===talentId);"
+        "return marker&&(marker.closest('.d-flex.border-top.rounded')||marker)};"
+        "const heroTraitTarget=()=>{",
+    )
+    landing = landing.replace(
+        "const talentTarget=()=>{",
+        "const skillGrowthTarget=root=>{if(!root||!skillModifier)return null;"
+        "return[...root.querySelectorAll('[data-modifier-id]')].find(node=>"
+        "node.getAttribute('data-modifier-id')===skillModifier&&!node.closest('.previousItem')&&"
+        "!node.closest('.tab-pane:not(.active):not(.show)')&&"
+        "(skillModifierTier===null||skillModifierTier===''||"
+        "((node.closest('tr')&&node.closest('tr').querySelector('td')&&"
+        "node.closest('tr').querySelector('td').textContent)||'').trim()===skillModifierTier))||null};"
+        "const talentTarget=()=>{",
+    )
+    landing = landing.replace(
+        "const target=pactContract?pactTarget():",
+        "const target=heroTraitTab?heroTraitTarget():pactContract?pactTarget():",
+    )
+    landing = landing.replace(
+        "const target=heroTraitTab?heroTraitTarget():pactContract?",
+        "const target=talentId?talentTarget():heroTraitTab?heroTraitTarget():pactContract?",
+    )
+    landing = landing.replace(
+        "const target=talentId?talentTarget():heroTraitTab?heroTraitTarget():pactContract?",
+        "const target=skillEffect?root:skillGrowth?skillGrowthTarget(root):talentId?"
+        "talentTarget():heroTraitTab?heroTraitTarget():pactContract?",
+    )
+    landing = landing.replace(
+        "const waitForViewAndLocate=(attempt=0)=>{if(datatableReady)",
+        "const waitForViewAndLocate=(attempt=0)=>{if(resetFilter){const root=currentRoot(),"
+        "filter=root&&root.querySelector('input[name=\"filter\"]');if(filter){filter.value='';"
+        "filter.dispatchEvent(new Event('input',{bubbles:true}));"
+        "filter.dispatchEvent(new Event('change',{bubbles:true}))}}if(datatableReady)",
+    )
+    landing = landing.replace(
+        "const table=pane&&pane.querySelector('table.DataTable'),ready=",
+        "const tableRoot=pane||currentRoot(),table=tableRoot&&"
+        "tableRoot.querySelector('table.DataTable'),ready=",
+    )
+    landing = landing.replace(
+        "target.closest('tr,div.col,div.t0,div.t1,[data-block],.d-flex.border.rounded')",
+        "target.closest('tr,.card.ui_item.popupItem,div.col,div.t0,div.t1,[data-block],"
+        ".d-flex.border.rounded')",
+    )
+    assets["_local/mirror.js"] = landing
+    return assets
 
 
 def inject_local_tools(document, web_prefix):
-    script = f'<script defer src="{web_prefix}_local/mirror.js"></script>'
+    script = f'<script defer src="{web_prefix}_local/legendary-landing.js"></script><script defer src="{web_prefix}_local/mirror.js"></script>'
     if re.search(r"</head\s*>", document, re.I): document = re.sub(r"</head\s*>", script + "</head>", document, count=1, flags=re.I)
     else: document = script + document
     button = f'<a href="{web_prefix}_local/search/" style="position:fixed;right:12px;bottom:12px;z-index:2147483647;padding:8px 12px;background:#111827;color:white;border-radius:6px;text-decoration:none;font:14px sans-serif">🔍 Local Search</a>'
@@ -757,11 +1009,12 @@ def build(season, raw_root, asset_manifest_path, asset_root, output, system_id=N
           supplemental_manifest_path=None, i18n_root=None, game_category_mapping_path=None,
           entity_index_path=None, search_entity_report_path=None,
           game_content_tree_path=None, content_tree_report_path=None,
-          search_entity_v2_report_path=None):
+          search_entity_v2_report_path=None, structured_search_index_path=None):
     started = time.monotonic(); warnings = []; errors = []
-    catalog_path = catalog_path or output.parent / "catalog.json"
-    search_index_path = search_index_path or output.parent / "search-index.json"
-    catalog = load_json(catalog_path); old_search = load_json(search_index_path)
+    catalog_path = catalog_path or output / "catalog.json"
+    search_index_path = search_index_path or output / "search-index.json"
+    catalog = load_json(catalog_path) if catalog_path.is_file() else {"pages": []}
+    old_search = load_json(search_index_path) if search_index_path.is_file() else {"pages": []}
     known_missing = []
     translations = load_native_i18n(i18n_root)
     game_categories = load_game_category_mapping(game_category_mapping_path)
@@ -904,6 +1157,7 @@ def build(season, raw_root, asset_manifest_path, asset_root, output, system_id=N
                     search_document, entities, content_tree
                 )
                 search_document.update(content_fields)
+                apply_search_visibility_policy(search_document)
                 content_classification_sources[content_source] += 1
                 search_pages.append(search_document)
                 totals["routes_generated"] += 1
@@ -927,6 +1181,13 @@ def build(season, raw_root, asset_manifest_path, asset_root, output, system_id=N
             shutil.copy2(game_content_tree_path, tree_target)
         else:
             warnings.append(f"Game Content Tree config not found: {game_content_tree_path}")
+    if structured_search_index_path is not None:
+        if structured_search_index_path.is_file():
+            shutil.copy2(structured_search_index_path, output / "structured-search-index.json")
+        else:
+            warnings.append(
+                f"Structured Search Index not found; v1 search fallback remains active: {structured_search_index_path}"
+            )
     index_target = output / "cn/index.html"; index_target.parent.mkdir(parents=True, exist_ok=True)
     first_route = canonical_pages[0]["route"].removesuffix("index.html") if canonical_pages else "../_local/search/"
     index_target.write_text(f'<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0;url=/{web_prefix.strip("/")}/{first_route}"><a href="{web_prefix}_local/search/">Local Search</a>', encoding="utf-8")
@@ -986,40 +1247,56 @@ def build(season, raw_root, asset_manifest_path, asset_root, output, system_id=N
 
 def parse_args(argv=None):
     parser = argparse.ArgumentParser(description="Build the offline TLIDB SS13 Full Mirror from Raw HTML and Raw Assets")
-    parser.add_argument("--season", default="ss13"); parser.add_argument("--raw-root", type=Path, default=Path("data/raw/manifests"))
-    parser.add_argument("--asset-manifest", type=Path, default=Path("data/raw/assets/ss13/asset-manifest.json"))
-    parser.add_argument("--asset-root", type=Path, default=Path("data/raw/assets/ss13/files")); parser.add_argument("--output", type=Path, default=Path("local_wiki/ss13/site"))
-    parser.add_argument("--system-manifest", type=Path, default=Path("sources/system_manifest.json"))
+    parser.add_argument("--season", default=DEFAULT_SEASON); parser.add_argument("--raw-root", type=Path)
+    parser.add_argument("--asset-manifest", type=Path)
+    parser.add_argument("--asset-root", type=Path); parser.add_argument("--output", type=Path)
+    parser.add_argument("--system-manifest", type=Path)
     parser.add_argument("--supplemental-manifest", type=Path,
-                        default=Path("sources/recovered_internal_pages_manifest.json"))
-    parser.add_argument("--i18n-root", type=Path, default=Path("data/raw/i18n/ss13/files"))
+                        default=None)
+    parser.add_argument("--i18n-root", type=Path)
     parser.add_argument("--game-category-mapping", type=Path,
                         default=Path("config/game_category_mapping.json"))
-    parser.add_argument("--entity-index", type=Path, default=Path("data/generated/entity-index-v3.json"))
+    parser.add_argument("--entity-index", type=Path)
     parser.add_argument("--search-entity-report", type=Path,
-                        default=Path("data/reports/local-wiki/search-entity-integration-report.json"))
+                        default=None)
     parser.add_argument("--game-content-tree", type=Path,
                         default=Path("config/game_content_tree.json"))
     parser.add_argument("--content-tree-report", type=Path,
-                        default=Path("data/reports/local-wiki/content-tree-index-integration-report.json"))
+                        default=None)
     parser.add_argument("--search-entity-v2-report", type=Path,
-                        default=Path("data/reports/local-wiki/search-entity-v2-integration-report.json"))
+                        default=None)
+    parser.add_argument("--structured-search-index", type=Path,
+                        default=None)
     parser.add_argument("--system-id"); parser.add_argument("--force", action="store_true"); return parser.parse_args(argv)
 
 
 def main(argv=None):
     args = parse_args(argv)
     try:
-        report = build(args.season, resolve(args.raw_root), resolve(args.asset_manifest), resolve(args.asset_root), resolve(args.output), args.system_id, args.force,
-                       system_manifest_path=resolve(args.system_manifest),
-                       supplemental_manifest_path=resolve(args.supplemental_manifest),
-                       i18n_root=resolve(args.i18n_root),
+        context = SeasonContext(ROOT, args.season)
+        raw_root = resolve(args.raw_root) if args.raw_root else context.readable_raw_manifest_root()
+        asset_manifest = resolve(args.asset_manifest) if args.asset_manifest else context.readable_asset_manifest()
+        asset_root = resolve(args.asset_root) if args.asset_root else context.readable_asset_files()
+        output = resolve(args.output) if args.output else context.mirror_output
+        system_manifest = resolve(args.system_manifest) if args.system_manifest else context.readable_system_manifest()
+        supplemental = resolve(args.supplemental_manifest) if args.supplemental_manifest else context.readable_source_manifest("recovered_internal_pages")
+        i18n_root = resolve(args.i18n_root) if args.i18n_root else context.readable_i18n_root()
+        entity_index = resolve(args.entity_index) if args.entity_index else context.readable_entity_output()
+        structured_index = resolve(args.structured_search_index) if args.structured_search_index else context.readable_structured_index()
+        search_entity_report = resolve(args.search_entity_report) if args.search_entity_report else context.report_root / "search-entity-integration-report.json"
+        content_tree_report = resolve(args.content_tree_report) if args.content_tree_report else context.report_root / "content-tree-index-integration-report.json"
+        search_entity_v2_report = resolve(args.search_entity_v2_report) if args.search_entity_v2_report else context.report_root / "search-entity-v2-integration-report.json"
+        report = build(args.season, raw_root, asset_manifest, asset_root, output, args.system_id, args.force,
+                       system_manifest_path=system_manifest,
+                       supplemental_manifest_path=supplemental,
+                       i18n_root=i18n_root,
                        game_category_mapping_path=resolve(args.game_category_mapping),
-                       entity_index_path=resolve(args.entity_index),
-                       search_entity_report_path=resolve(args.search_entity_report),
+                       entity_index_path=entity_index,
+                       search_entity_report_path=search_entity_report,
                        game_content_tree_path=resolve(args.game_content_tree),
-                       content_tree_report_path=resolve(args.content_tree_report),
-                       search_entity_v2_report_path=resolve(args.search_entity_v2_report))
+                       content_tree_report_path=content_tree_report,
+                       search_entity_v2_report_path=search_entity_v2_report,
+                       structured_search_index_path=structured_index)
         return 1 if report["errors"] else 0
     except Exception as exc:
         print(f"Full Mirror build failed: {exc}", file=sys.stderr); return 1

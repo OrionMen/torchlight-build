@@ -14,6 +14,7 @@ from crawler.build_full_wiki_mirror import (
     load_game_content_tree,
     load_entity_index,
     local_assets,
+    apply_search_visibility_policy,
     output_path_for_route,
     route_for_source,
     resolve_content_tree_classification,
@@ -287,7 +288,9 @@ class FullWikiMirrorBuilderTest(unittest.TestCase):
             self.assertNotIn("landing_anchor", search_js)
             self.assertIn("?local_search=", search_js)
             self.assertNotIn("location.hash", mirror_js)
-            self.assertNotIn("bootstrap.Tab", mirror_js)
+            self.assertIn("if(recordId)", mirror_js)
+            self.assertIn("bootstrap.Tab", mirror_js)
+            self.assertIn("data-modifier-id", mirror_js)
 
     def test_search_result_url_has_no_fragment_logic(self):
         search_js = local_assets()["_local/search/app.js"]
@@ -764,10 +767,6 @@ class FullWikiMirrorBuilderTest(unittest.TestCase):
 
         cases = [
             (
-                {"system_id": "inventory", "route": "/cn/Divinity_Slate/"},
-                ("talent_board", "talent_divinity_slate", "route_override"),
-            ),
-            (
                 {"system_id": "inventory", "route": "/cn/Active_Skill/"},
                 ("skill", "skill_active", "route_override"),
             ),
@@ -789,6 +788,17 @@ class FullWikiMirrorBuilderTest(unittest.TestCase):
             self.assertEqual(expected, (
                 fields["content_category_id"], fields["content_subcategory_id"], source,
             ))
+
+    def test_legacy_divinity_slate_classification_is_not_search_visible(self):
+        document = {
+            "system_id": "inventory",
+            "entity_visibility": "visible",
+            "content_category_id": "talent_board",
+            "content_subcategory_id": "talent_divinity_slate",
+        }
+        apply_search_visibility_policy(document)
+        self.assertEqual("talent_divinity_slate", document["content_subcategory_id"])
+        self.assertEqual("hidden", document["entity_visibility"])
 
     def test_inventory_equipment_classification_requires_confirmed_entity(self):
         tree = load_game_content_tree(

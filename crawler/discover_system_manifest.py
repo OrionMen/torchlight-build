@@ -17,6 +17,7 @@ from crawler.discover_manifest import (
     links_in,
     write_json,
 )
+from crawler.season_context import DEFAULT_SEASON, SeasonContext
 from crawler.discover_systems import dom_locator
 
 
@@ -241,9 +242,10 @@ def discover_system(
 
 def parse_args(argv=None):
     parser = argparse.ArgumentParser(description="Discover one TLIDB system page manifest")
-    parser.add_argument("--system-manifest", required=True, type=Path)
+    parser.add_argument("--season", default=DEFAULT_SEASON)
+    parser.add_argument("--system-manifest", type=Path)
     parser.add_argument("--system-id", required=True)
-    parser.add_argument("--output", required=True, type=Path)
+    parser.add_argument("--output", type=Path)
     parser.add_argument("--report", type=Path)
     parser.add_argument("--timeout", type=float, default=20.0)
     parser.add_argument("--debug", action="store_true")
@@ -253,14 +255,17 @@ def parse_args(argv=None):
 def main(argv=None) -> int:
     args = parse_args(argv)
     try:
-        manifest_path = args.system_manifest if args.system_manifest.is_absolute() else ROOT / args.system_manifest
+        context = SeasonContext(ROOT, args.season)
+        manifest_path = args.system_manifest or context.readable_system_manifest()
+        manifest_path = manifest_path if manifest_path.is_absolute() else ROOT / manifest_path
         system = load_system(manifest_path, args.system_id)
         if system.get("discovery_status") != "confirmed":
             raise ValueError(f"system is not confirmed: {args.system_id}")
         manifest, report = discover_system(system, args.timeout)
-        output = args.output if args.output.is_absolute() else ROOT / args.output
+        output_arg = args.output or context.source_manifest(args.system_id)
+        output = output_arg if output_arg.is_absolute() else ROOT / output_arg
         write_json(output, manifest)
-        report_path = args.report or Path(f"data/reports/system-discovery/{args.system_id}-manifest-report.json")
+        report_path = args.report or context.report_root / f"{args.system_id}-manifest-report.json"
         report_path = report_path if report_path.is_absolute() else ROOT / report_path
         write_json(report_path, report)
         print("System manifest discovery")

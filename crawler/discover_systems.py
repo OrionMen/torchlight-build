@@ -16,6 +16,7 @@ from crawler.discover_manifest import (
     download_index,
     write_json,
 )
+from crawler.season_context import DEFAULT_SEASON, SeasonContext
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -205,8 +206,9 @@ def merge_systems(discovered: list[dict]) -> tuple[list[dict], int, int]:
 def parse_args(argv=None):
     parser = argparse.ArgumentParser(description="Discover TLIDB top-level systems")
     parser.add_argument("--url", action="append", required=True, dest="urls")
-    parser.add_argument("--output", required=True, type=Path)
-    parser.add_argument("--report", type=Path, default=Path("data/reports/system-discovery/system-discovery-report.json"))
+    parser.add_argument("--season", default=DEFAULT_SEASON)
+    parser.add_argument("--output", type=Path)
+    parser.add_argument("--report", type=Path)
     parser.add_argument("--timeout", type=float, default=20.0)
     parser.add_argument("--debug", action="store_true")
     return parser.parse_args(argv)
@@ -241,6 +243,11 @@ def main(argv=None) -> int:
                     traceback.print_exc()
 
         systems, duplicate_ids, merged_duplicate_urls = merge_systems(all_systems)
+        context = SeasonContext(ROOT, args.season)
+        for item in systems:
+            item["manifest_path"] = str(
+                Path("sources/seasons") / args.season / Path(item["manifest_path"]).name
+            )
         duplicate_urls += merged_duplicate_urls
         confirmed = sum(item["discovery_status"] == "confirmed" for item in systems)
         candidates = sum(item["discovery_status"] == "candidate" for item in systems)
@@ -253,7 +260,8 @@ def main(argv=None) -> int:
             "system_count": len(systems),
             "systems": systems,
         }
-        output = args.output if args.output.is_absolute() else ROOT / args.output
+        output_arg = args.output or context.system_manifest
+        output = output_arg if output_arg.is_absolute() else ROOT / output_arg
         write_json(output, manifest)
         report_systems = []
         for item in systems:
@@ -289,7 +297,8 @@ def main(argv=None) -> int:
             "warnings": warnings,
             "errors": errors,
         }
-        report_path = args.report if args.report.is_absolute() else ROOT / args.report
+        report_path = args.report or context.report_root / "system-discovery-report.json"
+        report_path = report_path if report_path.is_absolute() else ROOT / report_path
         write_json(report_path, report)
         print("System discovery")
         print(f"- confirmed: {confirmed}")

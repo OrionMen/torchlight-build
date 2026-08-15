@@ -7,6 +7,7 @@ usage() {
 Usage: ./scripts/fetch_all_sources.sh [options]
 
 Options:
+  --season ID          Season namespace (default: ss13)
   --system-id ID       Fetch one confirmed system
   --manifest PATH      Fetch one standalone source manifest
   --force              Re-download pages already in cache
@@ -20,6 +21,7 @@ EOF
 }
 
 system_id=""
+season="ss13"
 manifest_path=""
 force=0
 max_workers="4"
@@ -28,6 +30,11 @@ quiet=0
 
 while [ "$#" -gt 0 ]; do
   case "$1" in
+    --season)
+      [ "$#" -ge 2 ] || { echo "Missing value for --season" >&2; exit 2; }
+      season="$2"
+      shift 2
+      ;;
     --system-id)
       [ "$#" -ge 2 ] || { echo "Missing value for --system-id" >&2; exit 2; }
       system_id="$2"
@@ -73,15 +80,19 @@ if [ -n "$system_id" ] && [ -n "$manifest_path" ]; then
   exit 2
 fi
 
-fetch_args=(--max-workers "$max_workers" --rate-limit "$rate_limit")
+season_manifest="sources/seasons/$season/system_manifest.json"
+if [ "$season" = "ss13" ] && [ ! -f "$season_manifest" ]; then
+  season_manifest="sources/system_manifest.json"
+fi
+fetch_args=(--season "$season" --max-workers "$max_workers" --rate-limit "$rate_limit")
 
 if [ -n "$manifest_path" ]; then
   fetch_args+=(--manifest "$manifest_path")
 elif [ -n "$system_id" ]; then
-  fetch_args+=(--system-manifest sources/system_manifest.json)
+  fetch_args+=(--system-manifest "$season_manifest")
   fetch_args+=(--system-id "$system_id")
 else
-  fetch_args+=(--system-manifest sources/system_manifest.json)
+  fetch_args+=(--system-manifest "$season_manifest")
   fetch_args+=(--all)
 fi
 

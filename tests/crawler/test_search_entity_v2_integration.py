@@ -3,6 +3,7 @@ import unittest
 from pathlib import Path
 
 from crawler.build_full_wiki_mirror import (
+    apply_search_visibility_policy,
     entity_fields_for_route,
     load_entity_index,
     load_game_content_tree,
@@ -48,11 +49,13 @@ class SearchEntityV2IntegrationTest(unittest.TestCase):
         self.assertEqual("skill_active", content["content_subcategory_id"])
         self.assertEqual("entity_override", source)
 
-    def test_divinity_slate_uses_entity_category(self):
-        _, content, source = self.classification("/cn/Divinity_Slate/", "inventory")
-        self.assertEqual("talent_board", content["content_category_id"])
-        self.assertEqual("talent_divinity_slate", content["content_subcategory_id"])
+    def test_divinity_slate_legacy_entity_is_not_search_visible(self):
+        entity, content, source = self.classification("/cn/Divinity_Slate/", "inventory")
+        document = {"system_id": "inventory", **entity, **content}
+        apply_search_visibility_policy(document)
         self.assertEqual("entity_override", source)
+        self.assertEqual("talent_divinity_slate", document["content_subcategory_id"])
+        self.assertEqual("hidden", document["entity_visibility"])
 
     def test_trinity_has_one_stable_entity(self):
         craft = entity_fields_for_route("/cn/Trinity/", self.entities)
