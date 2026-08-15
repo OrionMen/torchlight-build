@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import sys
 from collections import Counter, OrderedDict
 from html.parser import HTMLParser
 from pathlib import Path
@@ -96,7 +97,18 @@ def main(argv=None):
     raw_root = resolve(args.raw_root) if args.raw_root else context.readable_raw_manifest_root()
     site = resolve(args.site) if args.site else context.mirror_output
     output = resolve(args.output) if args.output else context.report_root / "i18n-discovery.json"
+    if not raw_root.is_dir():
+        print(f"i18n discovery failed: Raw root is not a directory: {raw_root}", file=sys.stderr)
+        return 1
     report = scan([raw_root, site])
+    report["input_mode"] = "raw_plus_site" if site.is_dir() else "raw_only"
+    report["raw_root"] = str(raw_root)
+    report["site_root"] = str(site)
+    report["site_available"] = site.is_dir()
+    if not site.is_dir():
+        report["warnings"].append(
+            "Optional generated site is unavailable; discovery completed from Raw only."
+        )
     write_json(output, report)
     print(f"i18n resources: {report['resource_count']}")
     return 0
