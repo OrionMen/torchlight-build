@@ -47,6 +47,19 @@ class SeasonRebuildOrchestratorV1Test(unittest.TestCase):
         dry_run("--season", context.season, "--dry-run")
         self.assertEqual(before, [path.exists() for path in paths])
 
+    def test_candidate_backup_follows_stage_one_season_manifest(self) -> None:
+        output = dry_run("--season", "test14", "--dry-run")
+        self.assertIn(
+            "crawler.verify_candidate_systems --system-manifest sources/seasons/test14/system_manifest.json",
+            output,
+        )
+        verifier_source = (ROOT / "crawler/verify_candidate_systems.py").read_text(encoding="utf-8")
+        self.assertIn("backup_path_for_manifest(manifest_path)", verifier_source)
+        self.assertNotIn(
+            'ROOT / "sources/system_manifest.before_candidate_verification.json"',
+            verifier_source,
+        )
+
     def test_asset_i18n_and_builder_use_custom_paths(self) -> None:
         output = dry_run("--season", "test14", "--dry-run")
         self.assertIn("--asset-root data/raw/assets/test14/files", output)

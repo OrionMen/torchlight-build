@@ -40,8 +40,9 @@ class CandidateSystemApplyTest(unittest.TestCase):
             apply_results(manifest_path, manifest, results, backup_path, False, "2026-01-01T00:00:00+00:00")
             applied = json.loads(manifest_path.read_text(encoding="utf-8"))
             self.assertTrue(backup_path.is_file())
-            with self.assertRaises(FileExistsError):
-                apply_results(manifest_path, applied, results, backup_path, False, "later")
+            first_applied_bytes = manifest_path.read_bytes()
+            apply_results(manifest_path, applied, results, backup_path, False, "later")
+            self.assertEqual(first_applied_bytes, backup_path.read_bytes())
 
         self.assertEqual(applied["systems"][:2], original_known)
         self.assertEqual([item["source_order"] for item in applied["systems"]], [0, 1, 2, 3, 4])

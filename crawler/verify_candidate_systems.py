@@ -3,9 +3,10 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
 import re
-import shutil
 import sys
+import tempfile
 import traceback
 from collections import Counter
 from datetime import datetime, timezone
@@ -235,6 +236,30 @@ def public_result(result: dict) -> dict:
     return {key: value for key, value in result.items() if not key.startswith("_")}
 
 
+def backup_path_for_manifest(manifest_path: Path) -> Path:
+    """Keep the pre-apply snapshot in the manifest's own namespace."""
+    return manifest_path.with_name(
+        f"{manifest_path.stem}.before_candidate_verification{manifest_path.suffix}"
+    )
+
+
+def atomic_replace_bytes(path: Path, content: bytes) -> None:
+    """Replace *path* atomically using a temporary file in the same directory."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary_path: Path | None = None
+    try:
+        with tempfile.NamedTemporaryFile(dir=path.parent, prefix=f".{path.name}.", delete=False) as handle:
+            temporary_path = Path(handle.name)
+            handle.write(content)
+            handle.flush()
+            os.fsync(handle.fileno())
+        os.replace(temporary_path, path)
+        temporary_path = None
+    finally:
+        if temporary_path is not None:
+            temporary_path.unlink(missing_ok=True)
+
+
 def apply_results(
     manifest_path: Path,
     manifest: dict,
@@ -243,10 +268,11 @@ def apply_results(
     force: bool,
     verified_at: str,
 ) -> None:
-    if backup_path.exists() and not force:
-        raise FileExistsError(f"backup already exists: {backup_path}")
-    backup_path.parent.mkdir(parents=True, exist_ok=True)
-    shutil.copy2(manifest_path, backup_path)
+    # A backup is a per-apply diagnostic/rollback snapshot. Refreshing it is
+    # intentional: Stage 1 regenerates the manifest before every rebuild, so a
+    # stale snapshot must neither block Stage 2 nor represent another run.
+    _ = force  # Retained for CLI/API compatibility; backup refresh is always safe.
+    atomic_replace_bytes(backup_path, manifest_path.read_bytes())
     by_id = {result["system_id"]: result for result in results}
     for system in manifest["systems"]:
         original_id = system.get("system_id")
@@ -278,7 +304,8 @@ def apply_results(
             system["entry_count"] = None
         else:
             system["discovery_status"] = "candidate"
-    write_json(manifest_path, manifest)
+    encoded_manifest = (json.dumps(manifest, ensure_ascii=False, indent=2) + "\n").encode("utf-8")
+    atomic_replace_bytes(manifest_path, encoded_manifest)
 
 
 def build_report(results: list[dict], candidate_input_count: int, applied: bool, backup_path: Path | None) -> dict:
@@ -408,7 +435,7 @@ def main(argv=None) -> int:
                 result["warnings"].append(f"preview exists and was not overwritten: {preview_path}")
             else:
                 write_json(preview_path, preview_manifest(result))
-        backup_path = ROOT / "sources/system_manifest.before_candidate_verification.json" if args.apply else None
+        backup_path = backup_path_for_manifest(manifest_path) if args.apply else None
         verified_at = datetime.now(timezone.utc).isoformat()
         if args.apply:
             apply_results(manifest_path, manifest, results, backup_path, args.force, verified_at)
