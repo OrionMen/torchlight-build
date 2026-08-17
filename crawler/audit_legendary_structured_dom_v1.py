@@ -11,6 +11,7 @@ from typing import Any, Sequence
 from urllib.parse import quote
 
 from crawler.recover_legendary_refetch_v1 import NON_EQUIPMENT_IDS
+from crawler.season_context import DEFAULT_SEASON, SeasonContext
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -178,11 +179,19 @@ def _template_group(evidence: dict[str, Any]) -> str:
     return "standard_current_history_corrosion_drop"
 
 
-def build_audit(repo: Path = ROOT) -> dict[str, Any]:
-    manifest = json.loads((repo / "sources/legendary_gear_manifest.json").read_text(encoding="utf-8"))
-    raw_root = repo / "data/raw/manifests/legendary_gear/raw_html"
+def build_audit(
+    repo: Path = ROOT, season: str = DEFAULT_SEASON
+) -> dict[str, Any]:
+    context = SeasonContext(repo, season)
+    manifest_path = context.readable_source_manifest("legendary_gear")
+    raw_root = context.readable_raw_manifest_root() / "legendary_gear/raw_html"
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    expected_pages = sum(
+        entry["id"] not in NON_EQUIPMENT_IDS for entry in manifest.get("entries", [])
+    )
     pages: list[dict[str, Any]] = []
     errors: list[str] = []
+    warnings: list[str] = []
     for entry in manifest.get("entries", []):
         if entry["id"] in NON_EQUIPMENT_IDS:
             continue
@@ -214,21 +223,30 @@ def build_audit(repo: Path = ROOT) -> dict[str, Any]:
         })
 
     by_id = {page["id"]: page for page in pages}
-    single = min(
-        (page for page in pages if page["legendary_affix_count"] > 0),
-        key=lambda page: page["legendary_affix_count"],
-    )
-    multiple = max(pages, key=lambda page: page["legendary_affix_count"])
-    history = next(page for page in pages if page["historical_card_count"])
-    corruption = next(page for page in pages if page["corrosion_effect_count"])
-    case_ids = {
-        "necklace_of_firebird": "Necklace_of_Firebird",
-        "single_legendary_effect": single["id"],
-        "multiple_legendary_effects": multiple["id"],
-        "ss13_and_history": history["id"],
-        "corrosion": corruption["id"],
+    single_candidates = [page for page in pages if page["legendary_affix_count"] > 0]
+    multiple_candidates = list(pages)
+    history_candidates = [page for page in pages if page["historical_card_count"]]
+    corruption_candidates = [page for page in pages if page["corrosion_effect_count"]]
+    selected_cases = {
+        "necklace_of_firebird": by_id.get("Necklace_of_Firebird"),
+        "single_legendary_effect": (
+            min(single_candidates, key=lambda page: page["legendary_affix_count"])
+            if single_candidates else None
+        ),
+        "multiple_legendary_effects": (
+            max(multiple_candidates, key=lambda page: page["legendary_affix_count"])
+            if multiple_candidates else None
+        ),
+        "ss13_and_history": history_candidates[0] if history_candidates else None,
+        "corrosion": corruption_candidates[0] if corruption_candidates else None,
     }
-    case_studies = {key: by_id[page_id] for key, page_id in case_ids.items()}
+    unavailable_cases = [key for key, value in selected_cases.items() if value is None]
+    warnings.extend(
+        f"case study unavailable: {case_id}" for case_id in unavailable_cases
+    )
+    case_studies = {
+        key: value for key, value in selected_cases.items() if value is not None
+    }
 
     current_modifier_total = sum(
         page["base_stat_count"] + page["legendary_affix_count"] for page in pages
@@ -240,8 +258,8 @@ def build_audit(repo: Path = ROOT) -> dict[str, Any]:
         if not page["current_versions"] or any("SS13" not in value for value in page["current_versions"])
     ]
     historical_pages = [page for page in pages if page["historical_card_count"]]
-    if len(pages) != 332:
-        errors.append(f"expected 332 audited pages, got {len(pages)}")
+    if len(pages) != expected_pages:
+        errors.append(f"expected {expected_pages} audited pages, got {len(pages)}")
     if sum(group["page_count"] for group in template_groups) != len(pages):
         errors.append("template groups do not cover every audited page")
     if current_detection_misses:
@@ -249,6 +267,11 @@ def build_audit(repo: Path = ROOT) -> dict[str, Any]:
 
     return {
         "schema_version": 1,
+        "season_id": season,
+        "input_paths": {
+            "manifest": str(manifest_path),
+            "raw_root": str(raw_root),
+        },
         "legendary_pages": len(pages),
         "excluded_non_equipment_pages": sorted(NON_EQUIPMENT_IDS),
         "template_groups": template_groups,
@@ -349,12 +372,22 @@ def build_audit(repo: Path = ROOT) -> dict[str, Any]:
             "exclude": ["modifier prose", "numeric rolls", "requirement level", "lore", "image URL"],
         },
         "case_studies": case_studies,
+        "case_study_selection": {
+            "candidate_counts": {
+                "single_legendary_effect": len(single_candidates),
+                "multiple_legendary_effects": len(multiple_candidates),
+                "ss13_and_history": len(history_candidates),
+                "corrosion": len(corruption_candidates),
+            },
+            "unavailable": unavailable_cases,
+        },
         "parser_recommendation": (
             "Use one parameterized Legendary parser with four DOM template groups, not per-page parsers. "
             "Select current cards by popupItem without previousItem, reject historical cards before record "
             "extraction, and emit base-stat, legendary-affix, and corruption records keyed by scoped "
             "data-modifier-id. Keep requirement, lore, drop source, images, and UI data out of Structured Search."
         ),
+        "warnings": warnings,
         "errors": errors,
     }
 
@@ -362,11 +395,17 @@ def build_audit(repo: Path = ROOT) -> dict[str, Any]:
 def main(argv: Sequence[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--repo", type=Path, default=ROOT)
+    parser.add_argument("--season", default=DEFAULT_SEASON)
     parser.add_argument("--output", type=Path, default=DEFAULT_REPORT)
     args = parser.parse_args(argv)
     repo = args.repo.resolve()
-    report = build_audit(repo)
-    output = args.output if args.output.is_absolute() else repo / args.output
+    report = build_audit(repo, args.season)
+    context = SeasonContext(repo, args.season)
+    output = (
+        context.report_root / DEFAULT_REPORT.name
+        if args.output == DEFAULT_REPORT else
+        args.output if args.output.is_absolute() else repo / args.output
+    )
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return 1 if report["errors"] else 0

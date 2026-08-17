@@ -32,6 +32,7 @@ class LegendaryEquipmentParser(StructuredParser):
         identities=Counter((r["record_type"],r["stable_key"]) for r in records)
         descriptor={
             "current_card_count":len(current),"historical_card_count":len(historical),"corrosion_card_count":len(corrosion),
+            "historical_modifier_count":sum(len(card["modifiers"]) for card in historical),
             "current_class_contract":all("popupItem" in c["classes"] and "previousItem" not in c["classes"] for c in current),
             "historical_exclusion_contract":all("previousItem" in c["classes"] for c in historical),
             "tier_parent_record_count":sum(r["in_tier_parent"] for r in records),"modifier_record_count":len(records),
