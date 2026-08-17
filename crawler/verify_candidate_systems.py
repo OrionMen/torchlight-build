@@ -127,6 +127,11 @@ def verify_html(
     unique_count = len(entries) if container is not None else 0
     occurrence_count = entry_report.get("extracted_link_occurrence_count", 0) if container is not None else 0
     duplicate_count = entry_report.get("duplicate_count", 0) if container is not None else 0
+    directory_signature = entry_report.get("directory_signature")
+    if directory_signature:
+        unique_count = len(entries)
+        occurrence_count = entry_report.get("extracted_link_occurrence_count", 0)
+        duplicate_count = entry_report.get("duplicate_count", 0)
     repeated_count = repeated_entry_count(container, index_url)
     text = root.text()
     paragraphs = [item for item in root.descendants() if item.tag == "p" and item.text()]
@@ -143,6 +148,10 @@ def verify_html(
             errors.append(f"HTTP {http_status}")
         if redirected_elsewhere:
             errors.append(f"redirected to unrelated page: {final_url}")
+    elif directory_signature and unique_count >= 2:
+        classification = "confirmed_directory"
+        confidence = entry_report.get("discovery_confidence", 0.95)
+        reason_zh = "检测到结构稳定的顶层相对链接目录。"
     elif relation_evidence(container, container_label) and unique_count >= 2 and repeated_count >= 2:
         classification = "relation_index"
         confidence = 0.9
@@ -183,8 +192,12 @@ def verify_html(
         "html_sha256": hashlib.sha256(body).hexdigest(),
         "classification": classification,
         "classification_confidence": confidence,
-        "detected_list_container": container is not None,
-        "container_locator": dom_locator(container) if container else None,
+        "detected_list_container": container is not None or bool(directory_signature),
+        "container_locator": (
+            entry_report.get("detected_list_container")
+            if directory_signature else dom_locator(container) if container else None
+        ),
+        "directory_signature": directory_signature,
         "raw_internal_link_count": raw_internal,
         "candidate_entry_link_count": occurrence_count,
         "unique_entry_count": unique_count,

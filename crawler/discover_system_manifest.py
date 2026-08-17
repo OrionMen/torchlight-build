@@ -8,6 +8,7 @@ import sys
 import traceback
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.parse import urlsplit
 
 from crawler.discover_manifest import (
     DOMParser,
@@ -26,6 +27,9 @@ LIST_HINTS = (
     "list", "cards", "grid", "entries", "items", "catalog", "directory",
     "index", "relation", "mapping",
 )
+INVENTORY_SYSTEM_IDS = {"inventory", "candidate_inventory"}
+INVENTORY_MIN_DIRECT_ENTRIES = 10
+INVENTORY_MIN_ITEM_TYPE_MARKERS = 3
 
 
 def discovery_confidence(report: dict) -> float:
@@ -55,6 +59,78 @@ def accepted_links(node: Element, index_url: str) -> list[Element]:
         for link in links_in(node)
         if classify_href(link.attrs.get("href"), index_url)[2] == "accepted" and link.text()
     ]
+
+
+def inventory_directory_entries(
+    root: Element, index_url: str, system_id: str
+) -> tuple[list[dict], dict] | None:
+    """Recognize TLIDB's flat Inventory directory without entity-name assumptions.
+
+    Inventory is structurally different from the card/list directories: its
+    entries are direct relative leaf links spread across several sections.  A
+    generic "best container" therefore sees only one section.  The contract is
+    intentionally based on route shape plus repeated item-type markers, not a
+    season-specific count or any particular equipment slug.
+    """
+    if system_id not in INVENTORY_SYSTEM_IDS:
+        return None
+    candidates: list[Element] = []
+    marker_count = 0
+    for link in (item for item in root.descendants() if item.tag == "a"):
+        raw_href = str(link.attrs.get("href") or "").strip()
+        parsed = urlsplit(raw_href)
+        if (
+            not raw_href
+            or raw_href.startswith(("/", "#"))
+            or parsed.scheme
+            or parsed.netloc
+            or not parsed.path
+            or "/" in parsed.path
+            or parsed.path in {".", ".."}
+        ):
+            continue
+        canonical, slug, reason = classify_href(raw_href, index_url)
+        if reason != "accepted" or not slug:
+            continue
+        candidates.append(link)
+        if str(link.attrs.get("data-i18n") or "").startswith("item_type_list|name|"):
+            marker_count += 1
+
+    entries = []
+    seen: set[str] = set()
+    duplicates = 0
+    for link in candidates:
+        canonical, slug, _reason = classify_href(link.attrs.get("href"), index_url)
+        if canonical in seen:
+            duplicates += 1
+            continue
+        seen.add(canonical)
+        entries.append({
+            "id": slug,
+            "slug": slug,
+            "name_zh": link.text() or slug,
+            "url": canonical,
+            "source_order": len(entries),
+            "source_locator": {
+                "dom_locator": "document[flat-relative-directory]",
+                "container_label": "inventory direct relative links",
+                "link_text": link.text() or slug,
+                "raw_href": link.attrs.get("href"),
+            },
+        })
+
+    signature = (
+        len(entries) >= INVENTORY_MIN_DIRECT_ENTRIES
+        and marker_count >= INVENTORY_MIN_ITEM_TYPE_MARKERS
+    )
+    if not signature:
+        return None
+    return entries, {
+        "directory_signature": "flat_relative_inventory_directory",
+        "direct_relative_entry_count": len(entries),
+        "item_type_marker_count": marker_count,
+        "duplicate_count": duplicates,
+    }
 
 
 def locate_system_container(root: Element, index_url: str) -> tuple[Element | None, int | None, str]:
@@ -97,6 +173,34 @@ def discover_entries_from_html(
     parser = DOMParser()
     parser.feed(html)
     all_links = [item for item in parser.root.descendants() if item.tag == "a" and "href" in item.attrs]
+    inventory = inventory_directory_entries(parser.root, index_url, system_id)
+    if inventory is not None:
+        entries, evidence = inventory
+        duplicate_count = evidence["duplicate_count"]
+        warnings = (
+            [f"{duplicate_count} duplicate link occurrence(s) removed"]
+            if duplicate_count else []
+        )
+        report = {
+            "system_id": system_id,
+            "index_url": index_url,
+            "detected_list_container": "document[flat-relative-directory]",
+            "container_label": "inventory direct relative links",
+            "displayed_count": None,
+            "extracted_link_occurrence_count": len(entries) + duplicate_count,
+            "extracted_unique_count": len(entries),
+            "duplicate_count": duplicate_count,
+            "duplicate_urls": [],
+            "duplicate_ids": [],
+            "outside_container_count": len(all_links) - len(entries) - duplicate_count,
+            "warnings": warnings,
+            "errors": [],
+            "displayed_count_mismatch": None,
+            "warning_count": len(warnings),
+            "discovery_confidence": 0.95,
+            **evidence,
+        }
+        return entries, report
     container, displayed_count, label = locate_system_container(parser.root, index_url)
     report = {
         "system_id": system_id,

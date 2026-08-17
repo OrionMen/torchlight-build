@@ -5,7 +5,9 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
 import re
+import tempfile
 from collections import Counter, defaultdict
 from html.parser import HTMLParser
 from pathlib import Path
@@ -18,6 +20,7 @@ from crawler.audit_fragrance_tower_equipment_v1 import EquipmentSystemPageInspec
 from crawler.audit_vorax_equipment_v1 import VORAX_ENTITY_IDS, inspect_vorax_html
 from crawler.audit_talent_system_entity_v1 import TalentPageInspector
 from crawler.build_full_wiki_mirror import TextInspector, entity_route_key
+from crawler.discover_system_manifest import discover_entries_from_html
 from crawler.parse_hero import parse_hero_html
 from crawler.season_context import DEFAULT_SEASON, SeasonContext
 
@@ -527,6 +530,46 @@ def _bootstrap_raw_path(repo: Path, system_id: str, entry: dict[str, Any]) -> Pa
     )
 
 
+def _canonical_raw_snapshot(repo: Path, system_id: str, slug: str) -> Path:
+    """Resolve an already-fetched canonical page without inventing source data."""
+    filename = f"{quote(slug, safe='-_.')}.html"
+    preferred = _raw_manifests(repo) / system_id / "raw_html" / filename
+    if preferred.is_file() and preferred.stat().st_size:
+        return preferred
+    raw_root = _raw_manifests(repo)
+    if not raw_root.is_dir():
+        return preferred
+    for system_root in sorted(raw_root.iterdir()):
+        candidate = system_root / "raw_html" / filename
+        if candidate.is_file() and candidate.stat().st_size:
+            return candidate
+    return preferred
+
+
+def _inventory_snapshot_entries(repo: Path) -> tuple[list[dict[str, Any]], Path | None]:
+    """Read a cached canonical Inventory index using the tracked DOM contract."""
+    manifest = json.loads(_system_manifest_path(repo).read_text(encoding="utf-8"))
+    candidate = next((
+        item for item in manifest.get("systems", [])
+        if item.get("system_id") in {"inventory", "candidate_inventory"}
+        or item.get("index_slug") == "Inventory"
+    ), None)
+    if candidate is None:
+        return [], None
+    index_url = str(candidate.get("index_url") or "")
+    if entity_route_key(index_url) != "/cn/Inventory/":
+        return [], None
+    path = _canonical_raw_snapshot(repo, "inventory", "Inventory")
+    if not path.is_file() or not path.stat().st_size:
+        return [], None
+    entries, report = discover_entries_from_html(
+        path.read_text(encoding="utf-8", errors="replace"), index_url, "inventory"
+    )
+    if report.get("directory_signature") != "flat_relative_inventory_directory":
+        return [], None
+    return entries, path
+
+
 def _bootstrap_fingerprint(path: Path) -> dict[str, str] | None:
     if not path.is_file() or not path.stat().st_size:
         return None
@@ -599,6 +642,30 @@ def _bootstrap_manifest_sources(repo: Path) -> dict[str, list[dict[str, Any]]]:
                 "title": entry.get("name_zh") or entry.get("name") or source_id,
                 "raw_path": raw_path,
                 "raw_available": raw_path.is_file() and raw_path.stat().st_size > 0,
+            })
+
+    # Fresh runs before this fix may already have fetched the same canonical
+    # /cn/Inventory page through another manifest while candidate_inventory was
+    # left in needs-review.  Use that exact cached index as deterministic source
+    # membership for Stage 5; the fixed verifier will produce the formal
+    # inventory manifest on the next Stage 2 run.
+    has_inventory_manifest = any(
+        source["system_id"] == "inventory"
+        for sources in grouped.values() for source in sources
+    )
+    if not has_inventory_manifest:
+        inventory_entries, _snapshot = _inventory_snapshot_entries(repo)
+        for entry in inventory_entries:
+            route = entity_route_key(str(entry["url"]))
+            raw_path = _canonical_raw_snapshot(repo, "inventory", str(entry["slug"]))
+            grouped[route].append({
+                "system_id": "inventory",
+                "system_order": 1,
+                "id": str(entry["id"]),
+                "title": entry.get("name_zh") or entry["id"],
+                "raw_path": raw_path,
+                "raw_available": raw_path.is_file() and raw_path.stat().st_size > 0,
+                "bootstrap_source": "cached_canonical_inventory_index",
             })
     return grouped
 
@@ -804,7 +871,7 @@ def _raw_heading(repo: Path, entity: dict[str, Any], search_page: dict[str, Any]
     if search_page and search_page.get("system_id"):
         systems.insert(0, search_page["system_id"])
     for system_id in dict.fromkeys(system for system in systems if system):
-        path = _raw_manifests(repo) / system_id / "raw_html" / f"{quote(slug, safe='-_.')}.html"
+        path = _canonical_raw_snapshot(repo, str(system_id), slug)
         if not path.is_file():
             continue
         parser = _HeadingParser()
@@ -821,7 +888,7 @@ def _raw_heading(repo: Path, entity: dict[str, Any], search_page: dict[str, Any]
 
 
 def _equipment_summary(repo: Path, slug: str, title_zh: str) -> str:
-    path = _raw_manifests(repo) / "inventory/raw_html" / f"{quote(slug, safe='-_.')}.html"
+    path = _canonical_raw_snapshot(repo, "inventory", slug)
     if not path.is_file():
         return title_zh
     parser = _EquipmentSummaryParser()
@@ -882,10 +949,9 @@ def _unique_text(values: list[str]) -> list[str]:
 
 
 def _vorax_entities(repo: Path) -> dict[str, dict[str, Any]]:
-    raw_root = _raw_manifests(repo) / "inventory/raw_html"
     result: dict[str, dict[str, Any]] = {}
     for slug in VORAX_ENTITY_IDS:
-        path = raw_root / f"{quote(slug, safe='-_.')}.html"
+        path = _canonical_raw_snapshot(repo, "inventory", slug)
         if not path.is_file() or not path.stat().st_size:
             continue
         html = path.read_text(encoding="utf-8", errors="replace")
@@ -1026,7 +1092,7 @@ def _talent_entities(repo: Path) -> dict[str, dict[str, Any]]:
 
 
 def _ethereal_prism_entity(repo: Path) -> dict[str, Any] | None:
-    path = _raw_manifests(repo) / "inventory/raw_html/Ethereal_Prism.html"
+    path = _canonical_raw_snapshot(repo, "inventory", "Ethereal_Prism")
     if not path.is_file() or not path.stat().st_size:
         return None
     parser = EtherealPrismInspector()
@@ -1099,7 +1165,7 @@ def _hero_entities(repo: Path) -> dict[str, dict[str, Any]]:
 
 
 def _memory_system_entity(repo: Path) -> dict[str, Any] | None:
-    hero_path = _raw_manifests(repo) / "inventory/raw_html/Hero_Memories.html"
+    hero_path = _canonical_raw_snapshot(repo, "inventory", "Hero_Memories")
     revival_path = _raw_manifests(repo) / "help/raw_html/Memory_Revival.html"
     if any(
         not path.is_file() or not path.stat().st_size
@@ -1504,17 +1570,36 @@ def equipment_craft_enrichment_filter_v2_report(
         if entry["id"] not in legendary_ids and entry["id"] not in ORDINARY_EQUIPMENT_IDS]
     accepted_by_id = {item["entity_id"]: item for item in accepted}
     rejected_by_id = {item["id"]: item for item in rejected}
+    accepted_example_ids = ("STR_Helmet", "Belt", "Crossbow")
+    rejected_example_ids = (
+        "Memory_of_Origin", "Memory_of_Progress", "Memory_of_Discipline"
+    )
+    missing_accepted = [
+        slug for slug in accepted_example_ids
+        if f"tlidb:cn:{slug}" not in accepted_by_id
+    ]
+    missing_rejected = [
+        slug for slug in rejected_example_ids if slug not in rejected_by_id
+    ]
     return {
         "schema_version": 2,
         "total_equipment_entities": len(equipment),
         "accepted_craft_sources": accepted,
         "rejected_craft_sources": rejected,
         "examples": {
-            "accepted": [accepted_by_id[f"tlidb:cn:{slug}"]
-                         for slug in ("STR_Helmet", "Belt", "Crossbow")],
-            "rejected": [rejected_by_id[slug] for slug in (
-                "Memory_of_Origin", "Memory_of_Progress", "Memory_of_Discipline"
-            )],
+            "accepted": [
+                accepted_by_id[f"tlidb:cn:{slug}"]
+                for slug in accepted_example_ids
+                if f"tlidb:cn:{slug}" in accepted_by_id
+            ],
+            "rejected": [
+                rejected_by_id[slug]
+                for slug in rejected_example_ids if slug in rejected_by_id
+            ],
+            "unavailable": {
+                "accepted": missing_accepted,
+                "rejected": missing_rejected,
+            },
         },
         "summary": {
             "accepted_count": len(accepted),
@@ -1525,9 +1610,90 @@ def equipment_craft_enrichment_filter_v2_report(
                 )) for entity in equipment
             ),
         },
-        "warnings": [],
+        "warnings": [
+            f"Report sample unavailable: {slug}"
+            for slug in (*missing_accepted, *missing_rejected)
+        ],
         "errors": [],
     }
+
+
+def entity_stage_readiness(repo: Path, index: dict[str, Any]) -> dict[str, Any]:
+    """Validate production source coverage before any generated output is replaced."""
+    manifest = json.loads(_system_manifest_path(repo).read_text(encoding="utf-8"))
+    systems = manifest.get("systems", [])
+    inventory = next(
+        (
+            item for item in systems
+            if item.get("system_id") == "inventory"
+            and item.get("discovery_status") == "confirmed"
+        ),
+        None,
+    )
+    unresolved_inventory = next(
+        (
+            item for item in systems
+            if (
+                item.get("system_id") == "candidate_inventory"
+                or item.get("index_slug") == "Inventory"
+            )
+            and item.get("discovery_status") != "confirmed"
+        ),
+        None,
+    )
+    ordinary_ids = {
+        item["entity_id"] for item in index.get("entities", [])
+        if item.get("entity_type") == "equipment"
+        and item.get("content_subcategory_id") == "equipment_craft"
+    }
+    expected_ids = {f"tlidb:cn:{slug}" for slug in ORDINARY_EQUIPMENT_IDS}
+    missing = sorted(expected_ids - ordinary_ids)
+    snapshot_entries, snapshot_path = _inventory_snapshot_entries(repo)
+    inventory_source_available = inventory is not None or bool(snapshot_entries)
+    errors = []
+    if not inventory_source_available:
+        errors.append("production-required Inventory source is unavailable")
+    if missing:
+        errors.append(
+            f"ordinary equipment coverage is incomplete: {len(ordinary_ids)}/"
+            f"{len(expected_ids)}"
+        )
+    return {
+        "ready": not errors,
+        "inventory_confirmed": inventory is not None,
+        "inventory_source_mode": (
+            "formal_manifest" if inventory is not None
+            else "cached_canonical_index" if snapshot_entries else None
+        ),
+        "inventory_manifest": inventory.get("manifest_path") if inventory else None,
+        "inventory_snapshot": str(snapshot_path) if snapshot_path else None,
+        "inventory_snapshot_entry_count": len(snapshot_entries),
+        "inventory_candidate_unresolved": unresolved_inventory is not None,
+        "ordinary_equipment_expected": len(expected_ids),
+        "ordinary_equipment_generated": len(ordinary_ids),
+        "missing_ordinary_equipment": missing,
+        "errors": errors,
+    }
+
+
+def atomic_write_json(path: Path, payload: dict[str, Any]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary: Path | None = None
+    try:
+        with tempfile.NamedTemporaryFile(
+            mode="w", encoding="utf-8", dir=path.parent,
+            prefix=f".{path.name}.", delete=False,
+        ) as handle:
+            temporary = Path(handle.name)
+            json.dump(payload, handle, ensure_ascii=False, indent=2)
+            handle.write("\n")
+            handle.flush()
+            os.fsync(handle.fileno())
+        os.replace(temporary, path)
+        temporary = None
+    finally:
+        if temporary is not None:
+            temporary.unlink(missing_ok=True)
 
 
 def legendary_gear_entity_v1_report(repo: Path, index: dict[str, Any]) -> dict[str, Any]:
@@ -1540,10 +1706,12 @@ def legendary_gear_entity_v1_report(repo: Path, index: dict[str, Any]) -> dict[s
         entity["canonical_route"].removeprefix("/cn/").removesuffix("/"): entity
         for entity in entities
     }
-    examples = [by_slug[slug] for slug in (
+    example_slugs = (
         "Thunder_Channeling_Prosthetics", "Crosser", "Frozen_Sight",
         "Glorious_Journey", "Omniscient_Prototype", "Awaiting",
-    )]
+    )
+    examples = [by_slug[slug] for slug in example_slugs if slug in by_slug]
+    missing_examples = [slug for slug in example_slugs if slug not in by_slug]
     return {
         "schema_version": 1,
         "total_entities": len(entities),
@@ -1558,7 +1726,9 @@ def legendary_gear_entity_v1_report(repo: Path, index: dict[str, Any]) -> dict[s
             "subcategory": entity["content_subcategory_name_zh"],
             "sources": entity["sources"],
         } for entity in examples],
-        "warnings": [],
+        "warnings": [
+            f"Report sample unavailable: {slug}" for slug in missing_examples
+        ],
         "errors": [],
     }
 
@@ -1566,10 +1736,24 @@ def legendary_gear_entity_v1_report(repo: Path, index: dict[str, Any]) -> dict[s
 def vorax_equipment_entity_v1_report(repo: Path, index: dict[str, Any]) -> dict[str, Any]:
     extracted = _vorax_entities(repo)
     by_id = {entity["entity_id"]: entity for entity in index.get("entities", [])}
-    entities = [by_id[f"tlidb:cn:{slug}"] for slug in VORAX_ENTITY_IDS]
-    examples = [by_id[f"tlidb:cn:{slug}"] for slug in (
+    entities = [
+        by_id[f"tlidb:cn:{slug}"] for slug in VORAX_ENTITY_IDS
+        if f"tlidb:cn:{slug}" in by_id
+    ]
+    example_slugs = (
         "Vorax_Limb:_Head", "Vorax_Limb:_Legs", "Vorax_Aberrant_Limb:_Digits"
-    )]
+    )
+    examples = [
+        by_id[f"tlidb:cn:{slug}"] for slug in example_slugs
+        if f"tlidb:cn:{slug}" in by_id and slug in extracted
+    ]
+    missing_entities = [
+        slug for slug in VORAX_ENTITY_IDS if f"tlidb:cn:{slug}" not in by_id
+    ]
+    missing_examples = [
+        slug for slug in example_slugs
+        if f"tlidb:cn:{slug}" not in by_id or slug not in extracted
+    ]
     return {
         "schema_version": 1,
         "total_entities": len(entities),
@@ -1592,8 +1776,13 @@ def vorax_equipment_entity_v1_report(repo: Path, index: dict[str, Any]) -> dict[
             ]["legendary_quality"]),
         } for entity in examples],
         "excluded_pages": ["Inventory", "Vorax_Season", "Vorax_Exchange_Material"],
-        "warnings": ([] if len(extracted) == len(VORAX_ENTITY_IDS)
-                     else [f"Expected {len(VORAX_ENTITY_IDS)} Vorax entities, got {len(extracted)}."]),
+        "warnings": (
+            ([] if len(extracted) == len(VORAX_ENTITY_IDS) else [
+                f"Expected {len(VORAX_ENTITY_IDS)} Vorax entities, got {len(extracted)}."
+            ])
+            + [f"Entity unavailable: {slug}" for slug in missing_entities]
+            + [f"Report sample unavailable: {slug}" for slug in missing_examples]
+        ),
         "errors": [],
     }
 
@@ -1960,7 +2149,7 @@ def fresh_bootstrap_report(
     }
 
 
-def main() -> int:
+def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--repo", type=Path, default=Path.cwd())
     parser.add_argument("--season", default=DEFAULT_SEASON)
@@ -2033,7 +2222,7 @@ def main() -> int:
         default=None,
         help="Optional regression reference; never used as a generation input.",
     )
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
     repo = args.repo.resolve()
     context = SeasonContext(repo, args.season)
     output_arg = args.output or context.entity_output
@@ -2048,6 +2237,10 @@ def main() -> int:
         if reference_path.is_file() else None
     )
     index, report = build_entity_index_v3(repo, context)
+    readiness = entity_stage_readiness(repo, index)
+    report["production_readiness"] = readiness
+    if not readiness["ready"]:
+        raise RuntimeError("; ".join(readiness["errors"]))
     def scoped_report(path: Path) -> Path:
         if args.season != DEFAULT_SEASON:
             return context.report_root / path.name
@@ -2099,83 +2292,26 @@ def main() -> int:
         args.fresh_bootstrap_report if args.fresh_bootstrap_report.is_absolute()
         else scoped_report(args.fresh_bootstrap_report)
     )
-    output.parent.mkdir(parents=True, exist_ok=True)
-    report_path.parent.mkdir(parents=True, exist_ok=True)
-    equipment_report_path.parent.mkdir(parents=True, exist_ok=True)
-    craft_filter_report_path.parent.mkdir(parents=True, exist_ok=True)
-    legendary_report_path.parent.mkdir(parents=True, exist_ok=True)
-    vorax_report_path.parent.mkdir(parents=True, exist_ok=True)
-    equipment_related_report_path.parent.mkdir(parents=True, exist_ok=True)
-    talent_report_path.parent.mkdir(parents=True, exist_ok=True)
-    ethereal_prism_report_path.parent.mkdir(parents=True, exist_ok=True)
-    hero_report_path.parent.mkdir(parents=True, exist_ok=True)
-    memory_system_report_path.parent.mkdir(parents=True, exist_ok=True)
-    pact_fate_report_path.parent.mkdir(parents=True, exist_ok=True)
-    fresh_report_path.parent.mkdir(parents=True, exist_ok=True)
-    output.write_text(json.dumps(index, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    equipment_report_path.write_text(
-        json.dumps(equipment_entity_v2_report(index), ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
-    )
-    craft_filter_report_path.write_text(
-        json.dumps(
-            equipment_craft_enrichment_filter_v2_report(repo, index),
-            ensure_ascii=False,
-            indent=2,
-        ) + "\n",
-        encoding="utf-8",
-    )
-    legendary_report_path.write_text(
-        json.dumps(legendary_gear_entity_v1_report(repo, index), ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
-    )
-    vorax_report_path.write_text(
-        json.dumps(vorax_equipment_entity_v1_report(repo, index), ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
-    )
-    equipment_related_report_path.write_text(
-        json.dumps(
-            equipment_related_system_entity_v1_report(index),
-            ensure_ascii=False,
-            indent=2,
-        ) + "\n",
-        encoding="utf-8",
-    )
-    talent_report_path.write_text(
-        json.dumps(
-            talent_system_entity_v1_report(index), ensure_ascii=False, indent=2
-        ) + "\n",
-        encoding="utf-8",
-    )
-    ethereal_prism_report_path.write_text(
-        json.dumps(
-            ethereal_prism_entity_v1_report(repo, index),
-            ensure_ascii=False,
-            indent=2,
-        ) + "\n",
-        encoding="utf-8",
-    )
-    hero_report_path.write_text(
-        json.dumps(hero_entity_v1_report(index), ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
-    )
-    memory_system_report_path.write_text(
-        json.dumps(
-            memory_system_entity_v1_report(index), ensure_ascii=False, indent=2
-        ) + "\n",
-        encoding="utf-8",
-    )
-    pact_fate_report_path.write_text(
-        json.dumps(
-            pact_fate_search_cleanup_v1_report(index), ensure_ascii=False, indent=2
-        ) + "\n",
-        encoding="utf-8",
-    )
-    fresh_report_path.write_text(
-        json.dumps(fresh_bootstrap_report(index, reference), ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
-    )
+    # Build every optional report before touching the production Entity output.
+    # A missing audit sample or a report bug must never leave a partial index.
+    payloads = [
+        (report_path, report),
+        (equipment_report_path, equipment_entity_v2_report(index)),
+        (craft_filter_report_path, equipment_craft_enrichment_filter_v2_report(repo, index)),
+        (legendary_report_path, legendary_gear_entity_v1_report(repo, index)),
+        (vorax_report_path, vorax_equipment_entity_v1_report(repo, index)),
+        (equipment_related_report_path, equipment_related_system_entity_v1_report(index)),
+        (talent_report_path, talent_system_entity_v1_report(index)),
+        (ethereal_prism_report_path, ethereal_prism_entity_v1_report(repo, index)),
+        (hero_report_path, hero_entity_v1_report(index)),
+        (memory_system_report_path, memory_system_entity_v1_report(index)),
+        (pact_fate_report_path, pact_fate_search_cleanup_v1_report(index)),
+        (fresh_report_path, fresh_bootstrap_report(index, reference)),
+    ]
+    for path, payload in payloads:
+        atomic_write_json(path, payload)
+    # Entity output is the final publication step.
+    atomic_write_json(output, index)
     return 0
 
 
