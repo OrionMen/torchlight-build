@@ -179,7 +179,30 @@ def _provenance_key(item: dict[str, Any]) -> tuple[str, str, str, str]:
     )
 
 
-def discover_recovered_pages(system_manifest_path: Path, raw_root: Path) -> dict[str, Any]:
+def load_rejected_routes(path: Path | None) -> set[str]:
+    if path is None or not path.is_file():
+        return set()
+    value = _load_json(path)
+    if value.get("schema_version") != 1 or value.get("system_id") != "recovered_internal_pages":
+        raise RecoveredDiscoveryError(f"invalid recovered rejected state: {path}")
+    entries = value.get("entries")
+    if not isinstance(entries, list):
+        raise RecoveredDiscoveryError("recovered rejected state entries must be a list")
+    routes = set()
+    for entry in entries:
+        route = entry.get("route")
+        if not isinstance(route, str) or canonical_internal_page(route, "https://tlidb.com/cn/") is None:
+            raise RecoveredDiscoveryError("recovered rejected state contains an invalid route")
+        routes.add(route)
+    return routes
+
+
+def discover_recovered_pages(
+    system_manifest_path: Path,
+    raw_root: Path,
+    rejected_routes: set[str] | None = None,
+) -> dict[str, Any]:
+    rejected_routes = rejected_routes or set()
     formal_routes, formal_pages, inventory = _formal_sources(system_manifest_path, raw_root)
     recovered_available, recovered_pages = _recovered_raw_sources(raw_root)
     provenance: dict[str, dict[tuple[str, str, str, str], dict[str, Any]]] = defaultdict(dict)
@@ -208,7 +231,9 @@ def discover_recovered_pages(system_manifest_path: Path, raw_root: Path) -> dict
     canonical_routes = sorted(provenance)
     missing_routes = [route for route in canonical_routes if route not in formal_routes]
     confirmed_routes = [route for route in missing_routes if route in recovered_available]
-    pending_routes = [route for route in missing_routes if route not in recovered_available]
+    unfetched_routes = [route for route in missing_routes if route not in recovered_available]
+    rejected_routes_seen = [route for route in unfetched_routes if route in rejected_routes]
+    pending_routes = [route for route in unfetched_routes if route not in rejected_routes]
     recovered_raw_now_manifested = [
         {
             "route": route,
@@ -227,6 +252,14 @@ def discover_recovered_pages(system_manifest_path: Path, raw_root: Path) -> dict
             "discovered_from": sorted(provenance[route].values(), key=_provenance_key),
             "raw_size": recovered_available[route]["raw_path"].stat().st_size,
         })
+    pending_candidates = []
+    for route in pending_routes:
+        identity = canonical_internal_page(route, "https://tlidb.com/cn/")
+        assert identity is not None
+        pending_candidates.append({
+            **identity,
+            "discovered_from": sorted(provenance[route].values(), key=_provenance_key),
+        })
     return {
         "schema_version": 1,
         "source_inventory": {
@@ -240,6 +273,8 @@ def discover_recovered_pages(system_manifest_path: Path, raw_root: Path) -> dict
         "recovered_candidates": len(candidates),
         "pending_unfetched_count": len(pending_routes),
         "pending_unfetched_routes": pending_routes,
+        "pending_candidates": pending_candidates,
+        "rejected_routes_seen": rejected_routes_seen,
         "recovered_raw_now_manifested": recovered_raw_now_manifested,
         "candidates": candidates,
     }
@@ -283,15 +318,16 @@ def build_manifest(discovery: dict[str, Any], *, max_rounds: int = MAX_CONVERGEN
 
 def build_pending_fetch_manifest(discovery: dict[str, Any]) -> dict[str, Any]:
     entries = []
-    for route in discovery.get("pending_unfetched_routes", []):
-        identity = canonical_internal_page(route, "https://tlidb.com/cn/")
-        if identity is None:
-            continue
+    for candidate in discovery.get("pending_candidates", []):
+        identity = canonical_internal_page(candidate.get("route", ""), "https://tlidb.com/cn/")
+        if identity is None or not candidate.get("discovered_from"):
+            raise RecoveredDiscoveryError("pending candidate requires route and provenance")
         entries.append({
             "id": identity["page_id"],
             "slug": identity["page_id"],
             "url": identity["url"],
             "request_url": identity["request_url"],
+            "source_examples": sorted(candidate["discovered_from"], key=_provenance_key),
         })
     return {
         "schema_version": 1,
@@ -332,8 +368,11 @@ def generate_manifest(
     output_path: Path,
     *,
     max_rounds: int = MAX_CONVERGENCE_ROUNDS,
+    rejected_routes: set[str] | None = None,
 ) -> tuple[dict[str, Any], dict[str, Any]]:
-    discovery = discover_recovered_pages(system_manifest_path, raw_root)
+    discovery = discover_recovered_pages(
+        system_manifest_path, raw_root, rejected_routes=rejected_routes
+    )
     manifest = build_manifest(discovery, max_rounds=max_rounds)
     write_atomic_json(output_path, manifest)
     return manifest, discovery
@@ -392,6 +431,7 @@ def build_bootstrap_report(
         "already_manifested": discovery["already_manifested"],
         "recovered_candidates": discovery["recovered_candidates"],
         "pending_unfetched_count": discovery["pending_unfetched_count"],
+        "rejected_candidate_count": len(discovery.get("rejected_routes_seen", [])),
         "reference_recovered_count": len(reference_routes),
         "reference_required_count": len(required_reference_routes),
         "fresh_recovered_count": len(fresh_routes),
@@ -445,6 +485,7 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
     parser.add_argument("--report", type=Path, default=Path("data/reports/local-wiki/recovered-internal-pages-fresh-bootstrap-v1-report.json"))
     parser.add_argument("--reference-manifest", type=Path)
     parser.add_argument("--pending-output", type=Path)
+    parser.add_argument("--rejected-state", type=Path)
     parser.add_argument("--max-rounds", type=int, default=MAX_CONVERGENCE_ROUNDS)
     return parser.parse_args(argv)
 
@@ -455,9 +496,11 @@ def _resolve(path: Path) -> Path:
 
 def main(argv: Sequence[str] | None = None) -> int:
     args = parse_args(argv)
+    rejected_state = _resolve(args.rejected_state) if args.rejected_state else None
     manifest, discovery = generate_manifest(
         _resolve(args.system_manifest), _resolve(args.raw_root), _resolve(args.output),
         max_rounds=args.max_rounds,
+        rejected_routes=load_rejected_routes(rejected_state),
     )
     if args.pending_output:
         write_atomic_json(_resolve(args.pending_output), build_pending_fetch_manifest(discovery))

@@ -44,6 +44,7 @@ report_root="data/reports/local-wiki/$season"
 site_root="local_wiki/$season/site"
 recovered_manifest="$source_root/recovered_internal_pages_manifest.json"
 recovered_pending="$report_root/recovered-pending-manifest.json"
+recovered_rejected="$report_root/recovered-rejected-pages.json"
 
 run_cmd() {
   if [ "$dry_run" -eq 1 ]; then
@@ -85,25 +86,34 @@ if [ "$dry_run" -eq 1 ]; then
     --system-manifest "$system_manifest" --raw-root "$raw_root" \
     --output "$recovered_manifest" --report "$report_root/recovered-pages-report.json" \
     --pending-output "$recovered_pending" \
+    --rejected-state "$recovered_rejected" \
     --max-rounds "$max_rounds"
   run_cmd python3 -m crawler.fetch_all_manifests --season "$season" \
-    --manifest "$recovered_pending" --output-root "$raw_root"
+    --manifest "$recovered_pending" --output-root "$raw_root" \
+    --report "$report_root/recovered-pending-fetch-report.json" \
+    --recovered-rejected-output "$recovered_rejected"
   printf '  repeat until pending=0, unchanged, or %s rounds\n' "$max_rounds"
 else
-  previous_pending=""
+  previous_pending_hash=""
+  pending=""
   for ((round=1; round<=max_rounds; round++)); do
     run_cmd python3 -m crawler.discover_recovered_internal_pages \
       --system-manifest "$system_manifest" --raw-root "$raw_root" \
       --output "$recovered_manifest" --report "$report_root/recovered-pages-report.json" \
       --pending-output "$recovered_pending" \
+      --rejected-state "$recovered_rejected" \
       --max-rounds "$max_rounds"
     pending="$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1]))["entry_count"])' "$recovered_pending")"
     [ "$pending" = "0" ] && break
-    [ "$pending" = "$previous_pending" ] && break
-    previous_pending="$pending"
+    pending_hash="$(python3 -c 'import hashlib,sys; print(hashlib.sha256(open(sys.argv[1],"rb").read()).hexdigest())' "$recovered_pending")"
+    [ "$pending_hash" = "$previous_pending_hash" ] && break
+    previous_pending_hash="$pending_hash"
     run_cmd python3 -m crawler.fetch_all_manifests --season "$season" \
-      --manifest "$recovered_pending" --output-root "$raw_root"
+      --manifest "$recovered_pending" --output-root "$raw_root" \
+      --report "$report_root/recovered-pending-fetch-report.json" \
+      --recovered-rejected-output "$recovered_rejected"
   done
+  [ "$pending" = "0" ] || { echo "Recovered convergence did not reach zero pending routes" >&2; exit 1; }
 fi
 
 stage "5 entity-v3"

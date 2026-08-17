@@ -3,7 +3,9 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
 import sys
+import tempfile
 import threading
 import time
 import traceback
@@ -12,7 +14,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Callable, TextIO
 from urllib.error import HTTPError, URLError
-from urllib.parse import quote, urlsplit
+from urllib.parse import quote, unquote, urlsplit
 from urllib.request import Request, urlopen
 
 from crawler.fetch_manifest import ROOT, USER_AGENT, request_url_for, ssl_context, write_json
@@ -62,6 +64,67 @@ def entry_with_known_missing(
             "reason": match.get("reason", "upstream_permanent_missing"),
         },
     }
+
+
+def canonical_recovered_route(url: str) -> str:
+    path = unquote(urlsplit(url).path).rstrip("/")
+    return f"{path}/"
+
+
+def write_atomic_json(path: Path, value: dict) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    descriptor, temporary_name = tempfile.mkstemp(
+        prefix=f".{path.name}.", suffix=".tmp", dir=path.parent
+    )
+    temporary = Path(temporary_name)
+    try:
+        with os.fdopen(descriptor, "w", encoding="utf-8") as handle:
+            json.dump(value, handle, ensure_ascii=False, indent=2)
+            handle.write("\n")
+            handle.flush()
+            os.fsync(handle.fileno())
+        json.loads(temporary.read_text(encoding="utf-8"))
+        os.replace(temporary, path)
+    except BaseException:
+        temporary.unlink(missing_ok=True)
+        raise
+
+
+def update_recovered_rejected_state(
+    path: Path, season: str, rejected_entries: list[dict]
+) -> dict:
+    existing: dict[str, dict] = {}
+    if path.is_file():
+        value = json.loads(path.read_text(encoding="utf-8"))
+        if (
+            value.get("schema_version") != 1
+            or value.get("season_id") != season
+            or value.get("system_id") != "recovered_internal_pages"
+        ):
+            raise ValueError(f"invalid recovered rejected state: {path}")
+        for entry in value.get("entries", []):
+            existing[entry["route"]] = entry
+    for entry in rejected_entries:
+        route = canonical_recovered_route(entry["url"])
+        existing[route] = {
+            "id": entry.get("id"),
+            "slug": entry.get("slug"),
+            "url": entry["url"],
+            "route": route,
+            "http_status": 404,
+            "status": "rejected_permanent_404",
+            "reason": "recovered_candidate_detail_not_found",
+            "source_examples": entry.get("source_examples", []),
+        }
+    state = {
+        "schema_version": 1,
+        "season_id": season,
+        "system_id": "recovered_internal_pages",
+        "entry_count": len(existing),
+        "entries": [existing[route] for route in sorted(existing)],
+    }
+    write_atomic_json(path, state)
+    return state
 
 
 class RateLimiter:
@@ -182,6 +245,7 @@ class ProgressReporter:
         self.cache_hit = 0
         self.failed = 0
         self.known_missing = 0
+        self.rejected = 0
         self.retry_count = 0
         self.system_id = ""
 
@@ -218,6 +282,7 @@ class ProgressReporter:
         self.cache_hit += int(status == "cache_hit")
         self.failed += int(status == "failed")
         self.known_missing += int(status == "known_missing_detail")
+        self.rejected += int(status == "rejected_permanent_404")
         self.retry_count += result.get("retry_count", 0)
         if self.quiet or (not self.tty and system_completed % 10 and system_completed != system_total):
             return
@@ -229,7 +294,8 @@ class ProgressReporter:
         line = (
             f"[{self.system_id}] {system_completed}/{system_total} | "
             f"Overall {self.overall_completed}/{self.total_pages} | DL {self.downloaded} | "
-            f"Cache {self.cache_hit} | Missing {self.known_missing} | Fail {self.failed} | Retry {self.retry_count} | "
+            f"Cache {self.cache_hit} | Missing {self.known_missing} | "
+            f"Rejected {self.rejected} | Fail {self.failed} | Retry {self.retry_count} | "
             f"{speed_text} | ETA {eta_text}"
         )
         print(line, end="\r" if self.tty else "\n", file=self.output, flush=True)
@@ -246,13 +312,17 @@ class ProgressReporter:
         print(f"  Cache: {report['cache_hit']}", file=self.output)
         print(f"  Failed: {report['failed']}", file=self.output)
         print(f"  Known missing: {report['known_missing']}", file=self.output)
+        print(f"  Rejected recovered: {report['rejected_permanent_404']}", file=self.output)
         print(f"  Retry: {report['retry_count']}", file=self.output)
         print(f"  Elapsed: {format_duration(report['elapsed'])}", file=self.output, flush=True)
         for error in report["errors"]:
             print(f"  Error: {error.get('error', error)}", file=self.output, flush=True)
 
     def finished(self, report: dict, report_path: Path) -> None:
-        completed = report["downloaded"] + report["cache_hit"] + report["known_missing"] + report["failed"]
+        completed = (
+            report["downloaded"] + report["cache_hit"] + report["known_missing"]
+            + report["rejected_permanent_404"] + report["failed"]
+        )
         speed, _ = progress_metrics(completed, report["page_count"], report["elapsed"])
         try:
             display_path = report_path.relative_to(ROOT)
@@ -265,6 +335,7 @@ class ProgressReporter:
             ("Downloaded", report["downloaded"]), ("Cache", report["cache_hit"]),
             ("Failed", report["failed"]), ("Retry", report["retry_count"]),
             ("Known missing", report["known_missing"]),
+            ("Rejected recovered", report["rejected_permanent_404"]),
             ("Elapsed", format_duration(report["elapsed"])),
             ("Average speed", "-" if speed is None else f"{speed:.2f} page/s"),
             ("Bytes", human_bytes(report["bytes"])), ("Report", display_path),
@@ -344,6 +415,21 @@ def cache_result(
     }, None
 
 
+def rejected_recovered_result(entry: dict, retry_count: int = 0) -> dict:
+    return {
+        "id": entry.get("id"),
+        "slug": entry.get("slug"),
+        "url": entry.get("url"),
+        "status": "rejected_permanent_404",
+        "http_status": 404,
+        "reason": "recovered_candidate_detail_not_found",
+        "source_examples": entry.get("source_examples", []),
+        "bytes": 0,
+        "retry_count": retry_count,
+        "cache_hit": False,
+    }
+
+
 def fetch_entry(
     entry: dict,
     output_dir: Path,
@@ -354,6 +440,7 @@ def fetch_entry(
     fetcher: Callable[[str, float], dict] = fetch_once,
     sleep: Callable[[float], None] = time.sleep,
     backoff_base: float = 0.5,
+    reject_recovered_404: bool = False,
 ) -> dict:
     slug = entry.get("slug")
     url = entry.get("url")
@@ -394,6 +481,8 @@ def fetch_entry(
             response = fetcher(fetch_url, timeout)
             body = response["body"]
             status = response["http_status"]
+            if status == 404 and reject_recovered_404:
+                return rejected_recovered_result(entry, attempt)
             if status != 200:
                 raise ValueError(f"HTTP {status}")
             if not isinstance(body, bytes):
@@ -439,7 +528,13 @@ def fetch_entry(
             if invalid_cache:
                 result["invalid_cache"] = invalid_cache
             return result
-        except (HTTPError, URLError, TimeoutError, OSError, ValueError, KeyError) as exc:
+        except HTTPError as exc:
+            if exc.code == 404 and reject_recovered_404:
+                return rejected_recovered_result(entry, attempt)
+            error = str(exc)
+            if attempt < retries:
+                sleep(backoff_base * (2 ** attempt))
+        except (URLError, TimeoutError, OSError, ValueError, KeyError) as exc:
             error = str(exc)
             if attempt < retries:
                 sleep(backoff_base * (2 ** attempt))
@@ -471,6 +566,7 @@ def fetch_system(
     sleep: Callable[[float], None] = time.sleep,
     progress_callback: Callable[[dict, int, int], None] | None = None,
     known_missing_contract: dict[tuple[str, str], dict] | None = None,
+    reject_recovered_404: bool = False,
 ) -> dict:
     started = time.monotonic()
     report = {
@@ -483,6 +579,8 @@ def fetch_system(
         "cache_hit": 0,
         "failed": 0,
         "known_missing": 0,
+        "rejected_permanent_404": 0,
+        "rejected_entries": [],
         "invalid_empty_cache_count": 0,
         "invalid_empty_cache_examples": [],
         "retry_count": 0,
@@ -513,6 +611,8 @@ def fetch_system(
                     rate_limiter,
                     fetcher,
                     sleep,
+                    0.5,
+                    reject_recovered_404,
                 ): index
                 for index, entry in enumerate(entries)
             }
@@ -539,6 +639,9 @@ def fetch_system(
             report["cache_hit"] += int(result["status"] == "cache_hit")
             report["failed"] += int(result["status"] == "failed")
             report["known_missing"] += int(result["status"] == "known_missing_detail")
+            if result["status"] == "rejected_permanent_404":
+                report["rejected_permanent_404"] += 1
+                report["rejected_entries"].append(result)
             invalid_cache = result.get("invalid_cache") or {}
             if invalid_cache.get("reason") == "empty_html":
                 report["invalid_empty_cache_count"] += 1
@@ -586,6 +689,7 @@ def orchestrate(
     sleep: Callable[[float], None] = time.sleep,
     progress: ProgressReporter | None = None,
     known_missing_contract: dict[tuple[str, str], dict] | None = None,
+    reject_recovered_404: bool = False,
 ) -> dict:
     started = time.monotonic()
     started_at = datetime.now(timezone.utc).isoformat()
@@ -616,6 +720,9 @@ def orchestrate(
             sleep=sleep,
             progress_callback=progress.page_completed if progress is not None else None,
             known_missing_contract=known_missing_contract,
+            reject_recovered_404=(
+                reject_recovered_404 and system_id == "recovered_internal_pages"
+            ),
         )
         reports.append(system_report)
         if progress is not None:
@@ -632,6 +739,12 @@ def orchestrate(
         "cache_hit": sum(item["cache_hit"] for item in reports),
         "failed": sum(item["failed"] for item in reports),
         "known_missing": sum(item["known_missing"] for item in reports),
+        "rejected_permanent_404": sum(
+            item["rejected_permanent_404"] for item in reports
+        ),
+        "rejected_entries": [
+            entry for item in reports for entry in item["rejected_entries"]
+        ],
         "invalid_empty_cache_count": sum(
             item["invalid_empty_cache_count"] for item in reports
         ),
@@ -655,6 +768,7 @@ def orchestrate(
                 for key in (
                     "system_id", "manifest_count", "downloaded", "cache_hit",
                     "known_missing", "invalid_empty_cache_count",
+                    "rejected_permanent_404",
                     "invalid_empty_cache_examples", "failed", "retry_count",
                     "bytes", "elapsed", "warnings", "errors",
                 )
@@ -678,6 +792,7 @@ def parse_args(argv=None):
     selection.add_argument("--manifest", type=Path)
     parser.add_argument("--output-root", type=Path)
     parser.add_argument("--report", type=Path)
+    parser.add_argument("--recovered-rejected-output", type=Path)
     parser.add_argument("--force", action="store_true")
     parser.add_argument("--max-workers", type=int, default=4)
     parser.add_argument("--rate-limit", type=float, default=0.5)
@@ -701,6 +816,7 @@ def main(argv=None) -> int:
         output_root = output_root if output_root.is_absolute() else ROOT / output_root
         report_path = args.report or context.report_root / "all-fetch-report.json"
         report_path = report_path if report_path.is_absolute() else ROOT / report_path
+        direct_system_id = None
         if args.manifest:
             direct_path = args.manifest if args.manifest.is_absolute() else ROOT / args.manifest
             direct = load_source_manifest(direct_path)
@@ -717,6 +833,10 @@ def main(argv=None) -> int:
                     if scoped.is_file() or args.season != DEFAULT_SEASON:
                         system["manifest_path"] = str(scoped)
             requested_id = None if args.all else args.system_id
+        if args.recovered_rejected_output and direct_system_id != "recovered_internal_pages":
+            raise ValueError(
+                "--recovered-rejected-output requires a recovered_internal_pages direct manifest"
+            )
         progress = ProgressReporter(quiet=args.quiet)
         known_missing_contract = load_known_missing_contract(
             known_missing_config_path(args.season), args.season
@@ -733,7 +853,14 @@ def main(argv=None) -> int:
             args.retries,
             progress=progress,
             known_missing_contract=known_missing_contract,
+            reject_recovered_404=bool(args.recovered_rejected_output),
         )
+        if args.recovered_rejected_output:
+            rejected_output = args.recovered_rejected_output
+            rejected_output = rejected_output if rejected_output.is_absolute() else ROOT / rejected_output
+            update_recovered_rejected_state(
+                rejected_output, args.season, report["rejected_entries"]
+            )
         return 1 if report["failed"] or report["errors"] else 0
     except KeyboardInterrupt:
         if progress is None:
