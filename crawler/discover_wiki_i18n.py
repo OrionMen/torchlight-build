@@ -84,6 +84,7 @@ def parse_args(argv=None):
     parser = argparse.ArgumentParser(description="Discover TLIDB native i18n JSON references")
     parser.add_argument("--season", default=DEFAULT_SEASON)
     parser.add_argument("--raw-root", type=Path)
+    parser.add_argument("--asset-files", type=Path)
     parser.add_argument("--site", type=Path)
     parser.add_argument("--output", type=Path)
     return parser.parse_args(argv)
@@ -95,19 +96,30 @@ def resolve(path): return path if path.is_absolute() else ROOT / path
 def main(argv=None):
     args = parse_args(argv); context = SeasonContext(ROOT, args.season)
     raw_root = resolve(args.raw_root) if args.raw_root else context.readable_raw_manifest_root()
-    site = resolve(args.site) if args.site else context.mirror_output
+    asset_files = resolve(args.asset_files) if args.asset_files else context.asset_root / "files"
+    site = resolve(args.site) if args.site is not None else None
     output = resolve(args.output) if args.output else context.report_root / "i18n-discovery.json"
     if not raw_root.is_dir():
         print(f"i18n discovery failed: Raw root is not a directory: {raw_root}", file=sys.stderr)
         return 1
-    report = scan([raw_root, site])
-    report["input_mode"] = "raw_plus_site" if site.is_dir() else "raw_only"
+    roots = [raw_root]
+    if asset_files.is_dir():
+        roots.append(asset_files)
+    if site is not None and site.is_dir():
+        roots.append(site)
+    report = scan(roots)
+    inputs = ["raw"]
+    if asset_files.is_dir(): inputs.append("assets")
+    if site is not None and site.is_dir(): inputs.append("site")
+    report["input_mode"] = "raw_only" if inputs == ["raw"] else "_plus_".join(inputs)
     report["raw_root"] = str(raw_root)
-    report["site_root"] = str(site)
-    report["site_available"] = site.is_dir()
-    if not site.is_dir():
+    report["asset_files_root"] = str(asset_files)
+    report["asset_files_available"] = asset_files.is_dir()
+    report["site_root"] = str(site) if site is not None else None
+    report["site_available"] = site is not None and site.is_dir()
+    if site is not None and not site.is_dir():
         report["warnings"].append(
-            "Optional generated site is unavailable; discovery completed from Raw only."
+            "Optional generated site is unavailable; discovery completed without it."
         )
     write_json(output, report)
     print(f"i18n resources: {report['resource_count']}")

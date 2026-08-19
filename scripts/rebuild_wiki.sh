@@ -156,7 +156,8 @@ fi
 
 stage "9 i18n"
 run_cmd python3 -m crawler.discover_wiki_i18n --season "$season" \
-  --raw-root "$raw_root" --site "$site_root" --output "$report_root/i18n-discovery.json"
+  --raw-root "$raw_root" --asset-files "$asset_root/files" \
+  --output "$report_root/i18n-discovery.json"
 run_cmd python3 -m crawler.fetch_wiki_i18n --season "$season" \
   --discovery "$report_root/i18n-discovery.json" --output "$i18n_root"
 
