@@ -2,7 +2,7 @@ import hashlib
 import json
 import tempfile
 import unittest
-from io import StringIO
+from io import BytesIO, StringIO, TextIOWrapper
 from pathlib import Path
 from unittest.mock import patch
 
@@ -15,6 +15,7 @@ from crawler.fetch_all_manifests import (
     orchestrate,
     precompute_page_count,
     progress_metrics,
+    write_atomic_json,
 )
 
 
@@ -264,6 +265,43 @@ class FetchAllManifestsTest(unittest.TestCase):
             self.assertEqual(cached.read_bytes(), b"keep")
             self.assertIn("Interrupted by user.", output.getvalue())
             self.assertIn("remain cached", output.getvalue())
+
+    def test_progress_status_markers_are_gbk_safe_and_readable(self):
+        raw_output = BytesIO()
+        output = TextIOWrapper(raw_output, encoding="gbk")
+        reporter = ProgressReporter(output=output, tty=False)
+        reporter.start(2, 2, 1, 0, [{"system_id": "missing", "warning": "manifest unreadable"}])
+        base_report = {
+            "manifest_count": 1,
+            "downloaded": 1,
+            "cache_hit": 0,
+            "failed": 0,
+            "known_missing": 0,
+            "rejected_permanent_404": 0,
+            "retry_count": 0,
+            "elapsed": 0,
+            "errors": [],
+        }
+        reporter.system_complete({**base_report, "system_id": "active_skill"})
+        reporter.system_complete({
+            **base_report,
+            "system_id": "broken_system",
+            "downloaded": 0,
+            "failed": 1,
+            "errors": [{"error": "failed"}],
+        })
+        output.flush()
+        rendered = raw_output.getvalue().decode("gbk")
+        self.assertIn("Warning [missing]: manifest unreadable", rendered)
+        self.assertIn("[OK] active_skill complete", rendered)
+        self.assertIn("[FAIL] broken_system complete with failures", rendered)
+        with tempfile.TemporaryDirectory() as temporary:
+            report_path = Path(temporary) / "report.json"
+            write_atomic_json(report_path, {"title": "淬火之鸟的颈链"})
+            self.assertEqual(
+                json.loads(report_path.read_text(encoding="utf-8"))["title"],
+                "淬火之鸟的颈链",
+            )
 
 
 if __name__ == "__main__":

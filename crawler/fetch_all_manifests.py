@@ -304,7 +304,7 @@ class ProgressReporter:
         if self.tty and not self.quiet:
             print(file=self.output)
         failed = report["failed"] or report["errors"]
-        label = "!" if failed else "✓"
+        label = "[FAIL]" if failed else "[OK]"
         suffix = " complete with failures" if failed else " complete"
         print(f"{label} {report['system_id']}{suffix}", file=self.output)
         print(f"  Pages: {report['manifest_count']}", file=self.output)

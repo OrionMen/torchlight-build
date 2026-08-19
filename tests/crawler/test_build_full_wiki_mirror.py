@@ -7,6 +7,7 @@ from pathlib import Path
 from crawler.build_full_wiki_mirror import (
     CSSRewriter,
     HTMLRewriter,
+    asset_integrity,
     build,
     canonical_page_key,
     content_tree_fields_for_system,
@@ -357,13 +358,71 @@ class FullWikiMirrorBuilderTest(unittest.TestCase):
         rewriter.feed(raw); rewriter.close()
         self.assertEqual("".join(rewriter.output), raw)
 
+    def test_local_asset_integrity_tracks_final_bytes_and_external_sri_is_preserved(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            css = root / "site.css"
+            script = root / "app.js"
+            css.write_bytes(b"body{color:#123}")
+            script.write_bytes(b"console.log('localized')")
+            css_url = "https://cdn.tlidb.com/site.css"
+            script_url = "https://cdn.tlidb.com/app.js"
+            assets = {
+                css_url: {"local_relative_path": "css/site.css"},
+                script_url: {"local_relative_path": "js/app.js"},
+            }
+            final_integrities = {
+                css_url: asset_integrity(css),
+                script_url: asset_integrity(script),
+            }
+            raw = (
+                f'<link rel="stylesheet" href="{css_url}" integrity="{final_integrities[css_url]}">'
+                f'<script src="{script_url}" integrity="sha384-stale"></script>'
+                '<script src="https://example.com/external.js" integrity="sha384-external"></script>'
+            )
+            rewriter = HTMLRewriter(
+                "https://tlidb.com/cn/Page", {}, assets, "/local/",
+                CSSRewriter(assets, "/local/"), final_integrities,
+            )
+            rewriter.feed(raw)
+            rewriter.close()
+            rendered = "".join(rewriter.output)
+            self.assertIn('href="/local/assets/css/site.css"', rendered)
+            self.assertIn(f'integrity="{final_integrities[css_url]}"', rendered)
+            self.assertIn('src="/local/assets/js/app.js"', rendered)
+            self.assertIn(f'integrity="{final_integrities[script_url]}"', rendered)
+            self.assertNotIn("sha384-stale", rendered)
+            self.assertIn(
+                'src="https://example.com/external.js" integrity="sha384-external"', rendered
+            )
+            self.assertEqual(rewriter.stats["local_asset_integrity_recomputed"], 2)
+
+    def test_unverifiable_rewritten_local_asset_drops_only_its_integrity(self):
+        url = "https://cdn.tlidb.com/app.js"
+        assets = {url: {"local_relative_path": "js/app.js"}}
+        raw = (
+            f'<script src="{url}" integrity="sha384-stale" crossorigin="anonymous"></script>'
+            '<script src="https://example.com/app.js" integrity="sha384-external"></script>'
+        )
+        rewriter = HTMLRewriter(
+            "https://tlidb.com/cn/Page", {}, assets, "/local/",
+            CSSRewriter(assets, "/local/"), {},
+        )
+        rewriter.feed(raw)
+        rewriter.close()
+        rendered = "".join(rewriter.output)
+        self.assertIn('src="/local/assets/js/app.js" crossorigin="anonymous"', rendered)
+        self.assertNotIn("sha384-stale", rendered)
+        self.assertIn('integrity="sha384-external"', rendered)
+        self.assertEqual(rewriter.stats["unverifiable_local_asset_integrity_removed"], 1)
+
     def test_builds_full_document_rewrites_dependencies_and_preserves_raw(self):
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary); raw_root = root / "raw"; asset_root = root / "asset-files"
             page_dir = raw_root / "hero/raw_html"; other_dir = raw_root / "help/raw_html"; duplicate_dir = raw_root / "hyperlink/raw_html"
             page_dir.mkdir(parents=True); other_dir.mkdir(parents=True); duplicate_dir.mkdir(parents=True)
             raw_page = """<!DOCTYPE html><html id="root"><head>
-<link rel="stylesheet" href="https://cdn.tlidb.com/css/site.css"><script src="https://cdn.tlidb.com/js/app.js"></script>
+<link rel="stylesheet" href="https://cdn.tlidb.com/css/site.css" integrity="sha384-upstream-css"><script src="https://cdn.tlidb.com/js/app.js" integrity="sha384-upstream-js"></script>
 <script src="https://s.nitropay.com/ad.js"></script><style>.hero{background:url('https://cdn.tlidb.com/image/bg.png')}</style>
 </head><body class="original" data-page="hero" style="background:url(https://cdn.tlidb.com/image/bg.png)">
 <nav data-bs-toggle="dropdown"></nav><div data-bs-toggle="tooltip" data-bs-title="提示"></div>
@@ -418,6 +477,14 @@ class FullWikiMirrorBuilderTest(unittest.TestCase):
             self.assertIn('/local_wiki/ss13/site/assets/image/ee/bg.png 2x', rendered)
             self.assertIn('/local_wiki/ss13/site/assets/css/aa/site.css', rendered)
             self.assertIn('/local_wiki/ss13/site/assets/js/cc/app.js', rendered)
+            self.assertIn(
+                f'integrity="{asset_integrity(output / "assets/css/aa/site.css")}"', rendered
+            )
+            self.assertIn(
+                f'integrity="{asset_integrity(output / "assets/js/cc/app.js")}"', rendered
+            )
+            self.assertNotIn("sha384-upstream-css", rendered)
+            self.assertNotIn("sha384-upstream-js", rendered)
             self.assertIn('/local_wiki/ss13/site/cn/Other/?q=1#part', rendered)
             self.assertIn('/local_wiki/ss13/site/cn/Other/?x=2#section', rendered)
             self.assertIn('https://example.com/keep', rendered)

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import base64
 import hashlib
 import html
 import json
@@ -599,6 +600,16 @@ def append_or_replace_attribute(raw, name, value):
     return re.sub(r"\s*/?>$", lambda m: f' {name}="{html.escape(value, quote=True)}"{m.group(0)}', raw)
 
 
+def remove_attribute(raw, name):
+    pattern = re.compile(r"\s+" + (ATTR % re.escape(name)), re.I | re.S)
+    return pattern.sub("", raw, count=1)
+
+
+def asset_integrity(path):
+    digest = hashlib.sha384(path.read_bytes()).digest()
+    return "sha384-" + base64.b64encode(digest).decode("ascii")
+
+
 class TextInspector(HTMLParser):
     def __init__(self, visible_skill_content_only=False, excluded_section_ids=None):
         super().__init__(convert_charrefs=True)
@@ -702,9 +713,11 @@ class CSSRewriter:
 
 
 class HTMLRewriter(HTMLParser):
-    def __init__(self, base_url, route_map, asset_map, web_prefix, css_rewriter):
+    def __init__(self, base_url, route_map, asset_map, web_prefix, css_rewriter,
+                 local_asset_integrities=None):
         super().__init__(convert_charrefs=False)
         self.base_url = base_url; self.route_map = route_map; self.asset_map = asset_map
+        self.local_asset_integrities = local_asset_integrities or {}
         self.web_prefix = web_prefix; self.search_url = web_prefix + "_local/search/"; self.css = css_rewriter
         self.output = []; self.skip_tag = None; self.skip_depth = 0; self.in_style = False; self.in_script = False
         self.stats = Counter(); self.unresolved_internal = set(); self.runtime_examples = []
@@ -751,6 +764,27 @@ class HTMLRewriter(HTMLParser):
         lower = html.unescape(raw).lower()
         return any(part in lower for part in TRACKING)
 
+    def rewrite_asset_attributes(self, raw, tag, attrs):
+        attributes = dict(attrs)
+        rewritten_asset_url = None
+        for attr in ASSET_ATTRS.get(tag, ()):
+            if attr != "srcset" and attributes.get(attr):
+                absolute = normalized_url(attributes[attr], self.base_url)
+                if absolute in self.asset_map:
+                    rewritten_asset_url = absolute
+            raw = replace_attribute(
+                raw, attr, self.srcset if attr == "srcset" else self.asset_value
+            )
+        if rewritten_asset_url and "integrity" in attributes:
+            final_integrity = self.local_asset_integrities.get(rewritten_asset_url)
+            if final_integrity:
+                raw = append_or_replace_attribute(raw, "integrity", final_integrity)
+                self.stats["local_asset_integrity_recomputed"] += 1
+            else:
+                raw = remove_attribute(raw, "integrity")
+                self.stats["unverifiable_local_asset_integrity_removed"] += 1
+        return raw
+
     def handle_starttag(self, tag, attrs):
         if self.skip_tag:
             if tag == self.skip_tag: self.skip_depth += 1
@@ -760,8 +794,7 @@ class HTMLRewriter(HTMLParser):
             self.skip_tag = tag; self.skip_depth = 1; self.stats["tracking_elements_removed"] += 1; return
         if tag in {"link", "img", "source"} and self.is_tracking_element(raw):
             self.stats["tracking_elements_removed"] += 1; return
-        for attr in ASSET_ATTRS.get(tag, ()):
-            raw = replace_attribute(raw, attr, self.srcset if attr == "srcset" else self.asset_value)
+        raw = self.rewrite_asset_attributes(raw, tag, attrs)
         if tag == "a": raw = replace_attribute(raw, "href", self.internal_href)
         if tag == "form":
             before = raw; raw = replace_attribute(raw, "action", lambda _: self.search_url)
@@ -776,8 +809,7 @@ class HTMLRewriter(HTMLParser):
         if self.skip_tag: return
         raw = self.get_starttag_text()
         if self.is_tracking_element(raw): self.stats["tracking_elements_removed"] += 1; return
-        for attr in ASSET_ATTRS.get(tag, ()):
-            raw = replace_attribute(raw, attr, self.srcset if attr == "srcset" else self.asset_value)
+        raw = self.rewrite_asset_attributes(raw, tag, attrs)
         self.output.append(raw)
 
     def handle_endtag(self, tag):
@@ -1123,6 +1155,7 @@ def build(season, raw_root, asset_manifest_path, asset_root, output, system_id=N
     output.mkdir(parents=True, exist_ok=True)
     print("=" * 60); print("TLIDB Full Mirror Build"); print(f"Season: {season}"); print(f"Pages: {len(catalog_pages)}"); print(f"Assets: {len(assets)}"); print("=" * 60)
     assets_copied = 0; assets_missing = []; css_rewrites = 0; css_unresolved = Counter(); runtime_examples = []; runtime_asset_count = 0
+    local_asset_integrities = {}
     resolution_totals = Counter()
     for item in assets:
         source = asset_root / item["local_relative_path"]; target = output / "assets" / item["local_relative_path"]
@@ -1140,6 +1173,7 @@ def build(season, raw_root, asset_manifest_path, asset_root, output, system_id=N
                     if value: runtime_examples.append({"asset": item["source_url"], "reference": value})
                 target.write_text(rewrite_i18n_runtime_paths(script, web_prefix), encoding="utf-8")
             else: shutil.copy2(source, target)
+        local_asset_integrities[item["source_url"]] = asset_integrity(target)
         assets_copied += 1
     i18n_files_copied = copy_i18n_files(i18n_root, output)
     print(f"[Assets] {assets_copied}/{len(assets)}")
@@ -1206,7 +1240,10 @@ def build(season, raw_root, asset_manifest_path, asset_root, output, system_id=N
                     visible_skill_content_only=skill_page,
                     excluded_section_ids=excluded_section_ids,
                 ); inspector.feed(raw)
-                css = CSSRewriter(asset_map, web_prefix); rewriter = HTMLRewriter(page["source_url"], route_map, asset_map, web_prefix, css); rewriter.feed(raw); rewriter.close()
+                css = CSSRewriter(asset_map, web_prefix); rewriter = HTMLRewriter(
+                    page["source_url"], route_map, asset_map, web_prefix, css,
+                    local_asset_integrities,
+                ); rewriter.feed(raw); rewriter.close()
                 rendered = inject_local_tools("".join(rewriter.output), web_prefix)
                 target = output_path_for_route(output, page["route"])
                 target.parent.mkdir(parents=True, exist_ok=True); target.write_text(rendered, encoding="utf-8")
