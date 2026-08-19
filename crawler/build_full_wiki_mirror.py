@@ -321,6 +321,86 @@ def entity_fields_for_route(route, entities):
     }
 
 
+def load_structured_record_ownership(structured_search_index_path):
+    if structured_search_index_path is None or not structured_search_index_path.is_file():
+        return {}
+    data = load_json(structured_search_index_path)
+    ownership = defaultdict(set)
+    for record in data.get("records", []):
+        locator = record.get("source_locator") or {}
+        stable_key = locator.get("stable_key")
+        entity_id = record.get("entity_id")
+        route = record.get("route")
+        if (locator.get("locator_level") == "record" and stable_key
+                and entity_id and route):
+            ownership[stable_key].add((entity_id, entity_route_key(route)))
+    return dict(ownership)
+
+
+class StructuredSectionInspector(HTMLParser):
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.element_stack = []
+        self.section_keys = defaultdict(set)
+
+    def handle_starttag(self, tag, attrs):
+        attributes = dict(attrs)
+        stable_key = None
+        if attributes.get("data-modifier-id"):
+            stable_key = f"modifier:{attributes['data-modifier-id']}"
+        for frame in self.element_stack:
+            if stable_key:
+                frame["stable_keys"].add(stable_key)
+        if tag not in HTML_VOID_ELEMENTS:
+            frame = {
+                "tag": tag,
+                "section_id": attributes.get("id"),
+                "stable_keys": set(),
+            }
+            if stable_key:
+                frame["stable_keys"].add(stable_key)
+            self.element_stack.append(frame)
+
+    def handle_endtag(self, tag):
+        for index in range(len(self.element_stack) - 1, -1, -1):
+            if self.element_stack[index]["tag"] == tag:
+                removed = self.element_stack[index:]
+                del self.element_stack[index:]
+                for frame in removed:
+                    if frame["section_id"] and frame["stable_keys"]:
+                        self.section_keys[frame["section_id"]].update(frame["stable_keys"])
+                break
+
+
+def structured_owned_section_ids(raw, page_route, structured_ownership):
+    if not structured_ownership:
+        return set()
+    inspector = StructuredSectionInspector()
+    inspector.feed(raw)
+    current_route = entity_route_key(page_route)
+    owned = set()
+    for section_id, stable_keys in inspector.section_keys.items():
+        if not stable_keys or not all(key in structured_ownership for key in stable_keys):
+            continue
+        owners = {
+            owner
+            for stable_key in stable_keys
+            for owner in structured_ownership[stable_key]
+        }
+        entity_ids = {entity_id for entity_id, _ in owners}
+        owner_routes = {route for _, route in owners}
+        if len(entity_ids) == 1 and current_route not in owner_routes:
+            owned.add(section_id)
+    return owned
+
+
+def select_search_plain_text(page_entity, extracted_plain, cached_plain, skill_page):
+    authoritative = (page_entity or {}).get("clean_summary")
+    if authoritative:
+        return authoritative
+    return extracted_plain if skill_page else (cached_plain or extracted_plain)
+
+
 def resolve_content_tree_classification(page, entities, content_tree):
     route = entity_route_key(page.get("route") or page.get("source_url") or "")
     entity = entities.get(route)
@@ -520,18 +600,21 @@ def append_or_replace_attribute(raw, name, value):
 
 
 class TextInspector(HTMLParser):
-    def __init__(self, visible_skill_content_only=False):
+    def __init__(self, visible_skill_content_only=False, excluded_section_ids=None):
         super().__init__(convert_charrefs=True)
         self.visible_skill_content_only = visible_skill_content_only
+        self.excluded_section_ids = set(excluded_section_ids or ())
         self.skip = 0; self.text = []; self.title = ""; self.in_title = False
         self.element_stack = []
 
     def _excluded(self, tag, attrs):
         if tag in {"script", "style", "nav", "footer"}:
             return True
+        attributes = dict(attrs)
+        if attributes.get("id") in self.excluded_section_ids:
+            return True
         if not self.visible_skill_content_only:
             return False
-        attributes = dict(attrs)
         classes = set((attributes.get("class") or "").lower().split())
         locator = f"{attributes.get('id') or ''} {attributes.get('class') or ''}".lower()
         style = (attributes.get("style") or "").lower()
@@ -1020,6 +1103,7 @@ def build(season, raw_root, asset_manifest_path, asset_root, output, system_id=N
     game_categories = load_game_category_mapping(game_category_mapping_path)
     content_tree = load_game_content_tree(game_content_tree_path)
     entities = load_entity_index(entity_index_path)
+    structured_ownership = load_structured_record_ownership(structured_search_index_path)
     if system_manifest_path is not None:
         catalog_pages, systems_included, known_missing = pages_from_system_manifest(
             system_manifest_path, system_id, translations
@@ -1113,7 +1197,15 @@ def build(season, raw_root, asset_manifest_path, asset_root, output, system_id=N
             try:
                 raw = page["raw_path"].read_text(encoding="utf-8")
                 skill_page = page["system_id"] in SEARCH_SKILL_SYSTEMS
-                inspector = TextInspector(visible_skill_content_only=skill_page); inspector.feed(raw)
+                page_entity = entities.get(entity_route_key(page["route"]))
+                excluded_section_ids = (
+                    structured_owned_section_ids(raw, page["route"], structured_ownership)
+                    if page_entity is None else set()
+                )
+                inspector = TextInspector(
+                    visible_skill_content_only=skill_page,
+                    excluded_section_ids=excluded_section_ids,
+                ); inspector.feed(raw)
                 css = CSSRewriter(asset_map, web_prefix); rewriter = HTMLRewriter(page["source_url"], route_map, asset_map, web_prefix, css); rewriter.feed(raw); rewriter.close()
                 rendered = inject_local_tools("".join(rewriter.output), web_prefix)
                 target = output_path_for_route(output, page["route"])
@@ -1125,15 +1217,11 @@ def build(season, raw_root, asset_manifest_path, asset_root, output, system_id=N
                 old = search_by_key.get((page["system_id"], page["id"]), {})
                 title = old.get("title") or " ".join(inspector.title.split()) or page.get("title") or page["id"]
                 extracted_plain = " ".join(" ".join(inspector.text).split())
-                page_entity = entities.get(entity_route_key(page["route"]))
-                entity_search_text = (
-                    (page_entity or {}).get("entity_type")
-                    in ENTITY_CLEAN_SUMMARY_TYPES
+                plain = select_search_plain_text(
+                    page_entity, extracted_plain,
+                    None if excluded_section_ids else old.get("plain_text"),
+                    skill_page,
                 )
-                if entity_search_text:
-                    plain = (page_entity or {}).get("clean_summary") or extracted_plain
-                else:
-                    plain = extracted_plain if skill_page else (old.get("plain_text") or extracted_plain)
                 game_category = game_categories.get(page["system_id"], {})
                 search_document = {"system_id": page["system_id"],
                                      "system_name_zh": page.get("system_name_zh") or page["system_id"],
